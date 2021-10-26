@@ -351,47 +351,47 @@
   },
   {
     "name": "algernon",
-    "version": "1.12.12",
+    "version": "1.12.14",
     "description": "Small self-contained web server with Lua, Markdown, QUIC, Redis and PostgreSQL support",
     "homepage": "https://algernon.roboticoverlords.org/",
     "depends": [],
-    "srcurl": "https://github.com/xyproto/algernon/archive/1.12.12.tar.gz",
+    "srcurl": "https://github.com/xyproto/algernon/archive/1.12.14.tar.gz",
     "maintainer": "@termux"
   },
   {
     "name": "alpine",
-    "version": "2.24.2",
+    "version": "2.25",
     "description": "Fast, easy to use email client",
-    "homepage": "https://repo.or.cz/alpine.git",
+    "homepage": "http://alpine.x10host.com/",
     "depends": ["libcrypt", "ncurses", "openssl-tool"],
-    "srcurl": "https://repo.or.cz/alpine.git/snapshot/refs/tags/v2.24.2.tar.gz",
+    "srcurl": "http://alpine.x10host.com/alpine/release/src/alpine-2.25.tar.xz",
     "maintainer": "@termux"
   },
   {
     "name": "android-tools",
-    "version": "31.0.0p1",
+    "version": "31.0.2",
     "description": "Android platform tools",
     "homepage": "https://developer.android.com/",
     "depends": ["libc++", "libusb", "pcre2", "googletest", "libprotobuf", "brotli", "zstd", "liblz4"],
-    "srcurl": "https://github.com/nmeum/android-tools/releases/download/31.0.0p1/android-tools-31.0.0p1.tar.xz",
+    "srcurl": "https://github.com/nmeum/android-tools/releases/download/31.0.2/android-tools-31.0.2.tar.xz",
     "maintainer": "@termux"
   },
   {
     "name": "angle-grinder",
-    "version": "0.17.0",
+    "version": "0.18.0",
     "description": "Slice and dice logs on the command line",
     "homepage": "https://github.com/rcoh/angle-grinder",
     "depends": [],
-    "srcurl": "https://github.com/rcoh/angle-grinder/archive/v0.17.0.tar.gz",
+    "srcurl": "https://github.com/rcoh/angle-grinder/archive/v0.18.0.tar.gz",
     "maintainer": "@termux"
   },
   {
     "name": "ant",
-    "version": "1.10.11",
+    "version": "1.10.12",
     "description": "Java based build tool like make",
     "homepage": "http://ant.apache.org/",
     "depends": ["openjdk-17"],
-    "srcurl": "http://apache.mirrors.spacedump.net//ant/binaries/apache-ant-1.10.11-bin.tar.bz2",
+    "srcurl": "http://apache.mirrors.spacedump.net//ant/binaries/apache-ant-1.10.12-bin.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -414,11 +414,11 @@
   },
   {
     "name": "apache2",
-    "version": "1:2.4.50",
+    "version": "1:2.4.51",
     "description": "Apache Web Server",
     "homepage": "https://httpd.apache.org",
     "depends": ["apr", "apr-util", "pcre", "openssl", "libcrypt", "libandroid-support", "libnghttp2", "libexpat", "libuuid", "zlib"],
-    "srcurl": "https://www.apache.org/dist/httpd/httpd-2.4.50.tar.bz2",
+    "srcurl": "https://www.apache.org/dist/httpd/httpd-2.4.51.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -449,11 +449,11 @@
   },
   {
     "name": "apt",
-    "version": "2.3.9",
+    "version": "2.3.11",
     "description": "Front-end for the dpkg package manager",
     "homepage": "https://packages.debian.org/apt",
     "depends": ["coreutils", "dpkg", "findutils", "gpgv", "grep", "libandroid-glob", "libbz2", "libc++", "libcurl", "libgnutls", "liblz4", "liblzma", "sed", "termux-licenses", "xxhash", "zlib"],
-    "srcurl": "https://deb.debian.org/debian/pool/main/a/apt/apt_2.3.9.tar.xz",
+    "srcurl": "https://deb.debian.org/debian/pool/main/a/apt/apt_2.3.11.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -609,6 +609,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "atomvm",
+    "version": "0.git82624fbf",
+    "description": "The minimal Erlang VM implementation",
+    "homepage": "https://github.com/bettio/AtomVM",
+    "depends": ["zlib"],
+    "srcurl": "https://github.com/bettio/AtomVM/archive/82624fbf68ad8a0c8815456adbd33de98e4901ea.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "attr",
     "version": "2.5.1",
     "description": "Utilities for manipulating filesystem extended attributes",
@@ -735,13 +744,30 @@
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
+    "name": "bftpd",
+    "version": "5.7",
+    "description": "Small, easy-to-configure FTP server",
+    "homepage": "http://bftpd.sourceforge.net/",
+    "depends": ["libcrypt"],
+    "srcurl": "https://kumisystems.dl.sourceforge.net/project/bftpd/bftpd/bftpd-5.7/bftpd-5.7.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "bgrep",
     "version": "1.0",
     "description": "Binary string grep tool",
     "homepage": "https://debugmo.de/2009/04/bgrep-a-binary-grep/",
     "depends": [],
     "srcurl": "https://github.com/rsharo/bgrep/archive/bgrep-1.0.tar.gz",
-    "maintainer": "Rabby Sheikh @xploitednoob"
+    "maintainer": "@termux"
+  },
+  {
+    "name": "biber",
+    "version": "2.16",
+    "description": "A Unicode-capable BibTeX replacement for biblatex users",
+    "homepage": "http://biblatex-biber.sourceforge.net",
+    "depends": ["perl", "libxslt", "libxml2", "(>>", "2.9.10-3)", "openssl-tool", "make", "clang", "pkg-config"],
+    "maintainer": "Henrik Grimler @Grimler91"
   },
   {
     "name": "binaryen",
@@ -786,7 +812,7 @@
     "homepage": "https://github.com/StackExchange/blackbox",
     "depends": ["gnupg"],
     "srcurl": "https://github.com/StackExchange/blackbox/archive/v2.0.0.tar.gz",
-    "maintainer": "Rabby Sheikh @xploitednoob"
+    "maintainer": "@termux"
   },
   {
     "name": "blogc",
@@ -915,11 +941,11 @@
   },
   {
     "name": "c-ares",
-    "version": "1.17.2",
+    "version": "1.18.0",
     "description": "Library for asynchronous DNS requests (including name resolves)",
     "homepage": "https://c-ares.haxx.se",
     "depends": [],
-    "srcurl": "https://github.com/c-ares/c-ares/archive/cares-1_17_2.tar.gz",
+    "srcurl": "https://github.com/c-ares/c-ares/archive/cares-1_18_0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -933,11 +959,11 @@
   },
   {
     "name": "ca-certificates",
-    "version": "20211001",
+    "version": "1:2021-10-26",
     "description": "Common CA certificates",
     "homepage": "https://curl.se/docs/caextract.html",
     "depends": [],
-    "srcurl": "https://curl.se/ca/cacert.pem",
+    "srcurl": "https://curl.se/ca/cacert-2021-10-26.pem",
     "maintainer": "@termux"
   },
   {
@@ -1031,6 +1057,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "ccls",
+    "version": "0.20210330",
+    "description": "C/C++/ObjC language server",
+    "homepage": "https://github.com/MaskRay/ccls",
+    "depends": ["libllvm"],
+    "srcurl": "https://github.com/MaskRay/ccls/archive/0.20210330.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "ccrypt",
     "version": "1.11",
     "description": "Secure encryption and decryption of files and streams utility",
@@ -1046,7 +1081,7 @@
     "homepage": "https://cfengine.com/",
     "depends": ["liblmdb", "openssl", "libandroid-glob", "pcre", "libyaml", "libxml2"],
     "srcurl": "https://github.com/cfengine/core/archive/3.18.0.zip",
-    "maintainer": "@cfengine"
+    "maintainer": "@craigcomstock"
   },
   {
     "name": "cgdb",
@@ -1073,15 +1108,15 @@
     "homepage": "https://libcheck.github.io/check",
     "depends": ["libtool", "pkg-config", "texinfo"],
     "srcurl": "https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz",
-    "maintainer": "Rabby Sheikh @xploitednoob"
+    "maintainer": "@termux"
   },
   {
     "name": "chezmoi",
-    "version": "2.6.1",
+    "version": "2.7.3",
     "description": "Manage your dotfiles across multiple machines",
     "homepage": "https://chezmoi.io",
     "depends": [],
-    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.6.1.tar.gz",
+    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.7.3.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91"
   },
   {
@@ -1212,11 +1247,11 @@
   },
   {
     "name": "command-not-found",
-    "version": "1.63",
+    "version": "1.66",
     "description": "Suggest installation of packages in interactive shell sessions",
     "homepage": "https://github.com/termux/command-not-found",
     "depends": [],
-    "srcurl": "https://github.com/termux/command-not-found/archive/1.63.tar.gz",
+    "srcurl": "https://github.com/termux/command-not-found/archive/1.66.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1230,11 +1265,11 @@
   },
   {
     "name": "coreutils",
-    "version": "8.32",
+    "version": "9.0",
     "description": "Basic file, shell and text manipulation utilities from the GNU project",
     "homepage": "https://www.gnu.org/software/coreutils/",
     "depends": ["libandroid-support", "libgmp", "libiconv"],
-    "srcurl": "https://mirrors.kernel.org/gnu/coreutils/coreutils-8.32.tar.xz",
+    "srcurl": "https://mirrors.kernel.org/gnu/coreutils/coreutils-9.0.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -1262,6 +1297,15 @@
     "homepage": "https://www.gnu.org/software/cpio/",
     "depends": ["tar"],
     "srcurl": "https://mirrors.kernel.org/gnu/cpio/cpio-2.13.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "cppcheck",
+    "version": "2.6",
+    "description": "tool for static C/C++ code analysis",
+    "homepage": "https://github.com/danmar/cppcheck",
+    "depends": [],
+    "srcurl": "https://github.com/danmar/cppcheck/archive/2.6.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1382,11 +1426,11 @@
   },
   {
     "name": "dar",
-    "version": "2.7.1",
+    "version": "2.7.2",
     "description": "A full featured command-line backup tool, short for Disk ARchive",
     "homepage": "http://dar.linux.free.fr/",
     "depends": ["attr", "libbz2", "libgcrypt", "liblzma", "liblzo", "zlib"],
-    "srcurl": "http://downloads.sourceforge.net/project/dar/dar/2.7.1/dar-2.7.1.tar.gz",
+    "srcurl": "http://downloads.sourceforge.net/project/dar/dar/2.7.2/dar-2.7.2.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1530,7 +1574,7 @@
     "homepage": "http://dirb.sourceforge.net/",
     "depends": ["libcurl"],
     "srcurl": "https://sourceforge.net/projects/dirb/files/dirb/2.22/dirb222.tar.gz",
-    "maintainer": "Rabby Sheikh @xploitednoob"
+    "maintainer": "@termux"
   },
   {
     "name": "direnv",
@@ -1560,6 +1604,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "distcc",
+    "version": "3.4",
+    "description": "Distributed C/C++ compiler.",
+    "homepage": "http://distcc.org/",
+    "depends": ["libpopt"],
+    "srcurl": "https://github.com/distcc/distcc/releases/download/v3.4/distcc-3.4.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "djvulibre",
     "version": "3.5.28",
     "description": "Suite to create, manipulate and view DjVu ('déjà vu') documents",
@@ -1584,7 +1637,7 @@
     "homepage": "https://github.com/resurrecting-open-source-projects/dnsmap",
     "depends": [],
     "srcurl": "https://github.com/resurrecting-open-source-projects/dnsmap/archive/0.36.tar.gz",
-    "maintainer": "Rabby Sheikh @xploitednoob"
+    "maintainer": "@termux"
   },
   {
     "name": "dnsutils",
@@ -1619,6 +1672,15 @@
     "depends": [],
     "srcurl": "https://github.com/docopt/docopt.cpp/archive/v0.6.3.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91"
+  },
+  {
+    "name": "dog",
+    "version": "0.1.0",
+    "description": "A command-line DNS client.",
+    "homepage": "https://dns.lookup.dog/",
+    "depends": ["openssl", "resolv-conf"],
+    "srcurl": "https://github.com/ogham/dog/archive/refs/tags/v0.1.0.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "dos2unix",
@@ -1783,6 +1845,15 @@
     "maintainer": "Oliver Schmidhauser @Neo-Oli"
   },
   {
+    "name": "edbrowse",
+    "version": "3.8.0",
+    "description": "Line based editor, browser, and mail client",
+    "homepage": "https://edbrowse.org/",
+    "depends": ["libandroid-glob", "libcurl", "pcre2", "readline", "tidy"],
+    "srcurl": "https://github.com/CMB/edbrowse/archive/refs/tags/v3.8.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "eja",
     "version": "13.11.25",
     "description": "eja micro web server",
@@ -1801,12 +1872,21 @@
     "maintainer": "@termux"
   },
   {
+    "name": "electrum",
+    "version": "4.0.5",
+    "description": "Electrum is a lightweight Bitcoin wallet.",
+    "homepage": "https://electrum.org",
+    "depends": ["python", "libsecp256k1"],
+    "srcurl": "https://download.electrum.org/4.0.5/Electrum-4.0.5.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "elinks",
-    "version": "0.13.GIT",
+    "version": "0.14.3",
     "description": "Full-Featured Text WWW Browser",
-    "homepage": "http://elinks.or.cz",
+    "homepage": "https://github.com/rkd77/elinks",
     "depends": ["libexpat", "libiconv", "libidn", "openssl", "libbz2", "zlib"],
-    "srcurl": "https://github.com/termux/distfiles/releases/download/2021.01.04/elinks-v0.13.GIT.tar.gz",
+    "srcurl": "https://github.com/rkd77/elinks/releases/download/v0.14.3/elinks-0.14.3.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -1841,7 +1921,7 @@
     "version": "2.0.31",
     "description": "Emscripten: An LLVM-to-WebAssembly Compiler",
     "homepage": "https://emscripten.org",
-    "depends": ["python", "nodejs", "debianutils"],
+    "depends": [],
     "srcurl": "https://github.com/emscripten-core/emscripten.git",
     "maintainer": "@truboxl"
   },
@@ -1855,6 +1935,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "enscript",
+    "version": "1.6.6",
+    "description": "Enscript converts ASCII text files to PostScript, HTML, RTF, ANSI and overstrikes",
+    "homepage": "https://www.gnu.org/software/enscript/",
+    "depends": ["cups", "perl"],
+    "srcurl": "https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "entr",
     "version": "5.0",
     "description": "Event Notify Test Runner - run arbitrary commands when files change",
@@ -1865,11 +1954,11 @@
   },
   {
     "name": "erlang",
-    "version": "22.3.4",
+    "version": "22.3.4.22",
     "description": "General-purpose concurrent functional programming language",
     "homepage": "https://www.erlang.org/",
     "depends": ["openssl", "ncurses", "zlib"],
-    "srcurl": "https://github.com/erlang/otp/archive/OTP-22.3.4.tar.gz",
+    "srcurl": "https://github.com/erlang/otp/archive/OTP-22.3.4.22.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1919,11 +2008,11 @@
   },
   {
     "name": "exiv2",
-    "version": "0.27.5-RC3",
+    "version": "1:0.27.5",
     "description": "Exif, Iptc and XMP metadata manipulation library and tools",
     "homepage": "https://exiv2.org/",
     "depends": ["libandroid-support", "libc++", "libexpat", "zlib"],
-    "srcurl": "https://github.com/Exiv2/exiv2/archive/v0.27.5-RC3.tar.gz",
+    "srcurl": "https://github.com/Exiv2/exiv2/archive/v0.27.5.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1978,7 +2067,16 @@
     "homepage": "https://github.com/nu774/fdkaac",
     "depends": ["libfdk-aac"],
     "srcurl": "https://github.com/nu774/fdkaac/archive/refs/tags/v1.0.2.tar.gz",
-    "maintainer": "DLC01"
+    "maintainer": "@DLC01"
+  },
+  {
+    "name": "fdroidcl",
+    "version": "0.5.0",
+    "description": "F-Droid client",
+    "homepage": "https://github.com/mvdan/fdroidcl",
+    "depends": ["android-tools"],
+    "srcurl": "https://github.com/mvdan/fdroidcl/archive/v0.5.0.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "fdupes",
@@ -1988,6 +2086,15 @@
     "depends": ["ncurses", "pcre2"],
     "srcurl": "https://github.com/adrianlopezroche/fdupes/archive/v2.1.2.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "fetchmail",
+    "version": "6.4.22",
+    "description": "A remote-mail retrieval utility",
+    "homepage": "https://www.fetchmail.info/",
+    "depends": ["libcrypt", "openssl"],
+    "srcurl": "https://sourceforge.net/projects/fetchmail/files/branch_6.4/fetchmail-6.4.22.tar.xz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "ffmpeg",
@@ -2000,11 +2107,11 @@
   },
   {
     "name": "ffsend",
-    "version": "0.2.73",
+    "version": "0.2.74",
     "description": "A fully featured Firefox Send client",
     "homepage": "https://gitlab.com/timvisee/ffsend",
     "depends": ["openssl"],
-    "srcurl": "https://gitlab.com/timvisee/ffsend/-/archive/v0.2.73/ffsend-v0.2.73.tar.gz",
+    "srcurl": "https://gitlab.com/timvisee/ffsend/-/archive/v0.2.74/ffsend-v0.2.74.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2027,11 +2134,11 @@
   },
   {
     "name": "file",
-    "version": "5.40",
+    "version": "5.41",
     "description": "Command-line tool that tells you in words what kind of data a file contains",
     "homepage": "https://darwinsys.com/file/",
     "depends": ["zlib"],
-    "srcurl": "ftp://ftp.astron.com/pub/file/file-5.40.tar.gz",
+    "srcurl": "ftp://ftp.astron.com/pub/file/file-5.41.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2095,15 +2202,15 @@
     "homepage": "https://github.com/FluidSynth/fluidsynth",
     "depends": ["glib", "pulseaudio"],
     "srcurl": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.2.3.tar.gz",
-    "maintainer": "@yonle <yonle@protonmail.com>"
+    "maintainer": "Yonle <yonle@protonmail.com>"
   },
   {
     "name": "flyctl",
-    "version": "0.0.245",
+    "version": "0.0.248",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.245.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.248.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>"
   },
   {
@@ -2216,11 +2323,11 @@
   },
   {
     "name": "fzf",
-    "version": "0.27.2",
+    "version": "0.27.3",
     "description": "Command-line fuzzy finder",
     "homepage": "https://github.com/junegunn/fzf",
     "depends": ["bash", "findutils"],
-    "srcurl": "https://github.com/junegunn/fzf/archive/0.27.2.tar.gz",
+    "srcurl": "https://github.com/junegunn/fzf/archive/0.27.3.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2305,11 +2412,11 @@
   },
   {
     "name": "gegl",
-    "version": "0.4.30",
+    "version": "0.4.32",
     "description": "Data flow based image processing framework",
     "homepage": "https://gegl.org/",
     "depends": ["libandroid-support", "libc++", "ffmpeg", "babl", "json-glib", "libjpeg-turbo", "libpng", "libjasper", "littlecms", "libtiff", "librsvg", "zlib"],
-    "srcurl": "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.30.tar.xz",
+    "srcurl": "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.32.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -2377,11 +2484,11 @@
   },
   {
     "name": "gh",
-    "version": "2.0.0",
+    "version": "2.2.0",
     "description": "GitHub’s official command line tool",
     "homepage": "https://cli.github.com/",
     "depends": [],
-    "srcurl": "https://github.com/cli/cli/archive/v2.0.0.tar.gz",
+    "srcurl": "https://github.com/cli/cli/archive/v2.2.0.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm"
   },
   {
@@ -2422,11 +2529,11 @@
   },
   {
     "name": "git",
-    "version": "2.33.0",
+    "version": "2.33.1",
     "description": "Fast, scalable, distributed revision control system",
     "homepage": "https://git-scm.com/",
     "depends": ["libcurl", "libiconv", "less", "openssl", "pcre2", "zlib"],
-    "srcurl": "https://www.kernel.org/pub/software/scm/git/git-2.33.0.tar.xz",
+    "srcurl": "https://www.kernel.org/pub/software/scm/git/git-2.33.1.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -2472,6 +2579,15 @@
     "homepage": "https://gitea.io",
     "depends": ["dash", "git"],
     "srcurl": "https://github.com/go-gitea/gitea/archive/v1.14.6.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
+    "name": "gitflow-avh",
+    "version": "1.12.3",
+    "description": "Extend git with Vincent Driessen's branching model. The AVH Edition adds more functionality.",
+    "homepage": "https://github.com/petervanderdoes/gitflow/",
+    "depends": ["dash", "git"],
+    "srcurl": "https://github.com/petervanderdoes/gitflow/archive/1.12.3.tar.gz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
@@ -2583,11 +2699,11 @@
   },
   {
     "name": "goaccess",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "An open source real-time web log analyzer and interactive viewer",
     "homepage": "http://goaccess.io",
     "depends": ["ncurses", "openssl"],
-    "srcurl": "https://tar.goaccess.io/goaccess-1.5.1.tar.gz",
+    "srcurl": "https://tar.goaccess.io/goaccess-1.5.2.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2610,11 +2726,11 @@
   },
   {
     "name": "golang",
-    "version": "3:1.17.1",
+    "version": "3:1.17.2",
     "description": "Go programming language compiler",
     "homepage": "https://golang.org/",
     "depends": ["clang"],
-    "srcurl": "https://storage.googleapis.com/golang/go1.17.1.src.tar.gz",
+    "srcurl": "https://storage.googleapis.com/golang/go1.17.2.src.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2682,11 +2798,11 @@
   },
   {
     "name": "gping",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "description": "Ping, but with a graph",
     "homepage": "https://github.com/orf/gping",
     "depends": [],
-    "srcurl": "https://github.com/orf/gping/archive/refs/tags/gping-v1.2.5.zip",
+    "srcurl": "https://github.com/orf/gping/archive/refs/tags/gping-v1.2.6.zip",
     "maintainer": "Krishna kanhaiya @kcubeterm"
   },
   {
@@ -2700,7 +2816,7 @@
   },
   {
     "name": "gradle",
-    "version": "7.2",
+    "version": "1:7.2",
     "description": "Powerful build system for the JVM",
     "homepage": "https://gradle.org/",
     "depends": ["openjdk-17"],
@@ -2816,6 +2932,24 @@
     "maintainer": "@termux"
   },
   {
+    "name": "guile",
+    "version": "2.2.7",
+    "description": "Portable, embeddable Scheme implementation written in C",
+    "homepage": "http://www.gnu.org/software/guile/",
+    "depends": ["libandroid-support", "libffi", "libgc", "libgmp", "libltdl", "libunistring"],
+    "srcurl": "https://ftp.gnu.org/gnu/guile/guile-2.2.7.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
+    "name": "guile18",
+    "version": "1.8.8",
+    "description": "Portable, embeddable Scheme implementation written in C. (legacy branch)",
+    "homepage": "http://www.gnu.org/software/guile/",
+    "depends": ["libcrypt", "libgmp", "libltdl", "ncurses", "readline"],
+    "srcurl": "ftp://ftp.gnu.org/pub/gnu/guile/guile-1.8.8.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "gumbo-parser",
     "version": "0.10.1",
     "description": "An HTML5 parsing library",
@@ -2832,6 +2966,15 @@
     "depends": [],
     "srcurl": "https://mirrors.kernel.org/gnu/gzip/gzip-1.11.tar.xz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "haproxy",
+    "version": "2.4.2",
+    "description": "The Reliable, High Performance TCP/HTTP Load Balancer",
+    "homepage": "https://www.haproxy.org/",
+    "depends": ["liblua53", "openssl", "pcre", "zlib"],
+    "srcurl": "http://www.haproxy.org/download/2.4/src/haproxy-2.4.2.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "harfbuzz",
@@ -2858,15 +3001,15 @@
     "homepage": "https://helix-editor.com/",
     "depends": [],
     "srcurl": "https://github.com/helix-editor/helix.git",
-    "maintainer": "@MrAdityaAlok <dev.aditya.alok@gmail.com>"
+    "maintainer": "MrAdityaAlok <dev.aditya.alok@gmail.com>"
   },
   {
     "name": "helm",
-    "version": "3.7.0",
+    "version": "3.7.1",
     "description": "Helm helps you manage Kubernetes applications",
     "homepage": "https://helm.sh",
     "depends": [],
-    "srcurl": "https://github.com/helm/helm/archive/v3.7.0.tar.gz",
+    "srcurl": "https://github.com/helm/helm/archive/v3.7.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3058,11 +3201,11 @@
   },
   {
     "name": "hyperfine",
-    "version": "1.11.0",
+    "version": "1.12.0",
     "description": "A command-line benchmarking tool",
     "homepage": "https://github.com/sharkdp/hyperfine",
     "depends": [],
-    "srcurl": "https://github.com/sharkdp/hyperfine/archive/v1.11.0.tar.gz",
+    "srcurl": "https://github.com/sharkdp/hyperfine/archive/v1.12.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3094,11 +3237,11 @@
   },
   {
     "name": "imagemagick",
-    "version": "7.1.0.9",
+    "version": "7.1.0.10",
     "description": "Suite to create, edit, compose, or convert images in a variety of formats",
     "homepage": "https://www.imagemagick.org/",
-    "depends": ["fftw", "fontconfig", "freetype", "fribidi", "glib", "harfbuzz", "libandroid-support", "libbz2", "libcairo", "libffi", "libgraphite", "libheif", "libjpeg-turbo", "libjxl", "liblzma", "libpixman", "libpng", "librsvg", "libtiff", "libuuid", "libwebp", "libx11", "libxau", "libxcb", "libxdmcp", "libxext", "libxml2", "littlecms", "openjpeg", "pango", "pcre", "zlib"],
-    "srcurl": "https://download.imagemagick.org/ImageMagick/download/ImageMagick-7.1.0-9.tar.lz",
+    "depends": ["fftw", "fontconfig", "freetype", "fribidi", "glib", "harfbuzz", "libandroid-support", "libbz2", "libcairo", "libffi", "libgraphite", "libheif", "libjpeg-turbo", "libjxl", "liblzma", "libpixman", "libpng", "librsvg", "libtiff", "libuuid", "libwebp", "libx11", "libxau", "libxcb", "libxdmcp", "libxext", "libxml2", "littlecms", "openjpeg", "pango", "pcre", "zlib", "zstd"],
+    "srcurl": "https://download.imagemagick.org/ImageMagick/download/ImageMagick-7.1.0-10.tar.lz",
     "maintainer": "@termux"
   },
   {
@@ -3145,6 +3288,15 @@
     "depends": [],
     "srcurl": "https://github.com/rvoicilas/inotify-tools/archive/3.20.11.0.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "intltool",
+    "version": "0.51.0",
+    "description": "The internationalization tool collection",
+    "homepage": "https://launchpad.net/intltool",
+    "depends": ["perl"],
+    "srcurl": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+    "maintainer": "@suhan-paradkar"
   },
   {
     "name": "inxi",
@@ -3256,11 +3408,11 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.4.1",
+    "version": "2.5.0",
     "description": "A CLI for JFrog products.",
     "homepage": "https://jfrog.com/getcli",
     "depends": ["libc++"],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.4.1.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.5.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3282,13 +3434,22 @@
     "maintainer": "@termux"
   },
   {
+    "name": "jigdo",
+    "version": "0.8.0",
+    "description": "Distribute large images by sending and receiving the files that make them up",
+    "homepage": "http://atterer.org/jigdo/",
+    "depends": ["libbz2", "libc++", "libdb", "wget", "zlib"],
+    "srcurl": "https://www.einval.com/~steve/software/jigdo/download/jigdo-0.8.0.tar.xz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "jo",
     "version": "1.4",
     "description": "JSON output from a shell",
     "homepage": "https://jpmens.net/2016/03/05/a-shell-command-to-create-json-jo/",
     "depends": [],
     "srcurl": "https://github.com/jpmens/jo/releases/download/1.4/jo-1.4.tar.gz",
-    "maintainer": "Rabby Sheikh @xploitednoob"
+    "maintainer": "@termux"
   },
   {
     "name": "joe",
@@ -3490,11 +3651,11 @@
   },
   {
     "name": "kubectl",
-    "version": "1.21.3",
+    "version": "1.22.0",
     "description": "Kubernetes.io client binary",
     "homepage": "https://kubernetes.io/",
     "depends": [],
-    "srcurl": "https://dl.k8s.io/v1.21.3/kubernetes-src.tar.gz",
+    "srcurl": "https://dl.k8s.io/v1.22.0/kubernetes-src.tar.gz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
@@ -3517,11 +3678,11 @@
   },
   {
     "name": "lazygit",
-    "version": "0.29",
+    "version": "0.30.1",
     "description": "Simple terminal UI for git commands",
     "homepage": "https://github.com/jesseduffield/lazygit",
     "depends": [],
-    "srcurl": "https://github.com/jesseduffield/lazygit/archive/v0.29.tar.gz",
+    "srcurl": "https://github.com/jesseduffield/lazygit/archive/v0.30.1.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm"
   },
   {
@@ -3580,11 +3741,11 @@
   },
   {
     "name": "lesspipe",
-    "version": "1.89",
+    "version": "1.90",
     "description": "An input filter for the pager less",
     "homepage": "http://www-zeuthen.desy.de/~friebel/unix/lesspipe.html",
     "depends": ["less"],
-    "srcurl": "https://github.com/wofr06/lesspipe/archive/1.89.tar.gz",
+    "srcurl": "https://github.com/wofr06/lesspipe/archive/1.90.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3598,11 +3759,11 @@
   },
   {
     "name": "lf",
-    "version": "24",
+    "version": "26",
     "description": "Terminal file manager",
     "homepage": "https://github.com/gokcehan/lf",
     "depends": [],
-    "srcurl": "https://github.com/gokcehan/lf/archive/r24.tar.gz",
+    "srcurl": "https://github.com/gokcehan/lf/archive/r26.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3651,7 +3812,7 @@
   },
   {
     "name": "libandroid-spawn",
-    "version": "0.2",
+    "version": "0.3",
     "description": "Shared library for the posix_spawn system function",
     "homepage": "https://man7.org/linux/man-pages/man3/posix_spawn.3.html",
     "depends": [],
@@ -3685,7 +3846,7 @@
   },
   {
     "name": "libaom",
-    "version": "3.1.2",
+    "version": "3.2.0",
     "description": "AV1 Video Codec Library",
     "homepage": "https://aomedia.org/",
     "depends": [],
@@ -3736,6 +3897,15 @@
     "depends": [],
     "srcurl": "https://libbsd.freedesktop.org/releases/libbsd-0.10.0.tar.xz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "libburn",
+    "version": "1.5.4",
+    "description": "Library for reading, mastering and writing optical discs",
+    "homepage": "https://dev.lovelyhq.com/libburnia",
+    "depends": [],
+    "srcurl": "http://files.libburnia-project.org/releases/libburn-1.5.4.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "libbz2",
@@ -3931,7 +4101,7 @@
     "homepage": "https://www.videolan.org/developers/libdvbcsa.html",
     "depends": [],
     "srcurl": "https://download.videolan.org/pub/videolan/libdvbcsa/1.1.0/libdvbcsa-1.1.0.tar.gz",
-    "maintainer": "@MrAdityaAlok <dev.aditya.alok@gmail.com>"
+    "maintainer": "MrAdityaAlok <dev.aditya.alok@gmail.com>"
   },
   {
     "name": "libebml",
@@ -4003,7 +4173,7 @@
     "homepage": "https://github.com/mstorsjo/fdk-aac",
     "depends": [],
     "srcurl": "https://github.com/mstorsjo/fdk-aac/archive/refs/tags/v2.0.2.tar.gz",
-    "maintainer": "DLC01"
+    "maintainer": "@DLC01"
   },
   {
     "name": "libffi",
@@ -4043,11 +4213,11 @@
   },
   {
     "name": "libgd",
-    "version": "2.3.3",
+    "version": "1:2.3.2",
     "description": "GD is an open source code library for the dynamic creation of images by programmers",
     "homepage": "https://libgd.github.io/",
     "depends": ["freetype", "fontconfig", "libiconv", "libjpeg-turbo", "libpng", "libtiff", "libwebp", "zlib"],
-    "srcurl": "https://github.com/libgd/libgd/releases/download/gd-2.3.3/libgd-2.3.3.tar.gz",
+    "srcurl": "https://github.com/libgd/libgd/releases/download/gd-2.3.2/libgd-2.3.2.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4151,11 +4321,11 @@
   },
   {
     "name": "libical",
-    "version": "3.0.10",
+    "version": "3.0.11",
     "description": "Libical is an Open Source implementation of the iCalendar protocols and protocol data units",
     "homepage": "http://libical.github.io/libical/",
     "depends": ["libc++", "libicu", "libxml2"],
-    "srcurl": "https://github.com/libical/libical/releases/download/v3.0.10/libical-3.0.10.tar.gz",
+    "srcurl": "https://github.com/libical/libical/releases/download/v3.0.11/libical-3.0.11.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4231,6 +4401,24 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libisoburn",
+    "version": "1.5.4",
+    "description": "Frontend for libraries libburn and libisofs",
+    "homepage": "https://dev.lovelyhq.com/libburnia",
+    "depends": ["libburn", "libisofs", "readline"],
+    "srcurl": "http://files.libburnia-project.org/releases/libisoburn-1.5.4.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
+    "name": "libisofs",
+    "version": "1.5.4",
+    "description": "Library to pack up hard disk files and directories into a ISO 9660 disk image",
+    "homepage": "https://dev.lovelyhq.com/libburnia",
+    "depends": ["libiconv", "zlib"],
+    "srcurl": "http://files.libburnia-project.org/releases/libisofs-1.5.4.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "libjansson",
     "version": "2.14",
     "description": "C library for encoding, decoding and manipulating JSON data",
@@ -4277,11 +4465,11 @@
   },
   {
     "name": "libllvm",
-    "version": "12.0.1",
+    "version": "13.0.0",
     "description": "Modular compiler and toolchain technologies library",
     "homepage": "https://clang.llvm.org/",
-    "depends": ["binutils", "libc++", "ncurses", "ndk-sysroot", "libffi", "zlib", "libxml2"],
-    "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.1/llvm-project-12.0.1.src.tar.xz",
+    "depends": ["libc++", "ncurses", "libffi", "zlib", "libxml2"],
+    "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/llvm-project-13.0.0.src.tar.xz",
     "maintainer": "@buttaface"
   },
   {
@@ -4403,11 +4591,11 @@
   },
   {
     "name": "libmediainfo",
-    "version": "21.03",
+    "version": "21.09",
     "description": "Library for reading information from media files",
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": ["libcurl", "libzen", "zlib"],
-    "srcurl": "https://mediaarea.net/download/source/libmediainfo/21.03/libmediainfo_21.03.tar.gz",
+    "srcurl": "https://mediaarea.net/download/source/libmediainfo/21.09/libmediainfo_21.09.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4547,11 +4735,11 @@
   },
   {
     "name": "libnghttp2",
-    "version": "1.45.1",
+    "version": "1.46.0",
     "description": "nghttp HTTP 2.0 library",
     "homepage": "https://nghttp2.org/",
     "depends": [],
-    "srcurl": "https://github.com/nghttp2/nghttp2/releases/download/v1.45.1/nghttp2-1.45.1.tar.xz",
+    "srcurl": "https://github.com/nghttp2/nghttp2/releases/download/v1.46.0/nghttp2-1.46.0.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -4589,6 +4777,15 @@
     "depends": ["libogg"],
     "srcurl": "http://downloads.xiph.org/releases/liboggz/liboggz-1.1.1.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "libopenfec",
+    "version": "1.4.2.4",
+    "description": "Application-Level Forward Erasure Correction implementation library",
+    "homepage": "http://openfec.org",
+    "depends": [],
+    "srcurl": "https://github.com/roc-project/openfec/archive/v1.4.2.4.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "libopenmpt",
@@ -4700,11 +4897,11 @@
   },
   {
     "name": "libprotobuf",
-    "version": "2:3.18.1",
+    "version": "2:3.19.0",
     "description": "Protocol buffers C++ library",
     "homepage": "https://github.com/protocolbuffers/protobuf",
     "depends": ["libc++", "zlib"],
-    "srcurl": "https://github.com/protocolbuffers/protobuf/archive/v3.18.1.tar.gz",
+    "srcurl": "https://github.com/protocolbuffers/protobuf/archive/v3.19.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4763,11 +4960,11 @@
   },
   {
     "name": "librsvg",
-    "version": "2.50.7",
+    "version": "2.52.1",
     "description": "Library to render SVG files using cairo",
     "homepage": "https://wiki.gnome.org/action/show/Projects/LibRsvg",
     "depends": ["gdk-pixbuf", "libcairo", "libcroco", "pango", "zlib"],
-    "srcurl": "http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.50/librsvg-2.50.7.tar.xz",
+    "srcurl": "http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.52/librsvg-2.52.1.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -4841,6 +5038,15 @@
     "depends": [],
     "srcurl": "https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "libsixel",
+    "version": "1.8.6",
+    "description": "Encoder/decoder implementation for DEC SIXEL graphics",
+    "homepage": "https://saitoha.github.io/libsixel/",
+    "depends": ["libcurl", "libjpeg-turbo", "libpng"],
+    "srcurl": "https://github.com/saitoha/libsixel/archive/v1.8.6.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "libslirp",
@@ -4925,11 +5131,11 @@
   },
   {
     "name": "libsqlite-tcl",
-    "version": "3.35.5",
+    "version": "3.36.0",
     "description": "tcl bindings for SQLite",
     "homepage": "https://www.sqlite.org",
     "depends": ["libsqlite", "tcl"],
-    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3350500.tar.gz",
+    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4976,6 +5182,15 @@
     "depends": [],
     "srcurl": "https://gitlab.com/gnutls/libtasn1.git",
     "maintainer": "@termux"
+  },
+  {
+    "name": "libtd",
+    "version": "1.7.0",
+    "description": "Library for building Telegram clients",
+    "homepage": "https://core.telegram.org/tdlib/",
+    "depends": ["readline", "openssl", "(>=", "1.1.1)", "zlib"],
+    "srcurl": "https://github.com/tdlib/td/archive/v1.7.0.tar.gz",
+    "maintainer": "Termux members @termux"
   },
   {
     "name": "libtermkey",
@@ -5420,11 +5635,11 @@
   },
   {
     "name": "links",
-    "version": "2.24",
+    "version": "2.25",
     "description": "Links is a text and graphics mode WWW browser",
     "homepage": "http://links.twibright.com",
     "depends": ["brotli", "libbz2", "libevent", "liblzma", "libpng", "librsvg", "libtiff", "libx11", "openssl", "zlib", "zstd"],
-    "srcurl": "http://links.twibright.com/download/links-2.24.tar.gz",
+    "srcurl": "http://links.twibright.com/download/links-2.25.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5447,11 +5662,11 @@
   },
   {
     "name": "lnd",
-    "version": "0.13.0-beta",
+    "version": "0.13.3-beta",
     "description": "Lightning Network Daemon",
     "homepage": "https://github.com/lightningnetwork/lnd",
     "depends": ["bitcoin"],
-    "srcurl": "https://github.com/lightningnetwork/lnd/archive/v0.13.0-beta.tar.gz",
+    "srcurl": "https://github.com/lightningnetwork/lnd/archive/v0.13.3-beta.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5461,7 +5676,7 @@
     "homepage": "https://github.com/logrotate/logrotate",
     "depends": ["libpopt", "libandroid-glob"],
     "srcurl": "https://github.com/logrotate/logrotate/releases/download/3.18.1/logrotate-3.18.1.tar.xz",
-    "maintainer": "Rabby Sheikh @shoya0x00"
+    "maintainer": "@termux"
   },
   {
     "name": "loksh",
@@ -5515,7 +5730,7 @@
     "homepage": "https://github.com/sumneko/lua-language-server",
     "depends": [],
     "srcurl": "https://github.com/sumneko/lua-language-server.git",
-    "maintainer": "@MrAdityaAlok <dev.aditya.alok@gmail.com>"
+    "maintainer": "MrAdityaAlok <dev.aditya.alok@gmail.com>"
   },
   {
     "name": "lua-lpeg",
@@ -5537,11 +5752,11 @@
   },
   {
     "name": "luv",
-    "version": "1.42.0-0",
+    "version": "1.42.0-1",
     "description": "Bare libuv bindings for lua",
     "homepage": "https://github.com/luvit/luv",
     "depends": ["libluajit", "libuv"],
-    "srcurl": "https://github.com/luvit/luv/releases/download/1.42.0-0/luv-1.42.0-0.tar.gz",
+    "srcurl": "https://github.com/luvit/luv/releases/download/1.42.0-1/luv-1.42.0-1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5600,11 +5815,11 @@
   },
   {
     "name": "macchina",
-    "version": "1.1.7",
+    "version": "3.0.0",
     "description": "A system information fetcher, with an emphasis on performance and minimalism.",
     "homepage": "https://github.com/Macchina-CLI/macchina",
     "depends": [],
-    "srcurl": "https://github.com/Macchina-CLI/macchina/archive/v1.1.7.tar.gz",
+    "srcurl": "https://github.com/Macchina-CLI/macchina/archive/v3.0.0.tar.gz",
     "maintainer": "Max Ferrer @PandaFoss"
   },
   {
@@ -5662,6 +5877,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "maven",
+    "version": "3.8.3",
+    "description": "A Java software project management and comprehension tool",
+    "homepage": "https://maven.apache.org/",
+    "depends": ["openjdk-17"],
+    "srcurl": "https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz",
+    "maintainer": "@masterjavaofficial"
+  },
+  {
     "name": "mbedtls",
     "version": "3.0.0",
     "description": "Light-weight cryptographic and SSL/TLS library",
@@ -5699,11 +5923,11 @@
   },
   {
     "name": "mediainfo",
-    "version": "21.03",
+    "version": "21.09",
     "description": "Command-line utility for reading information from media files",
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": ["libmediainfo"],
-    "srcurl": "https://mediaarea.net/download/source/mediainfo/21.03/mediainfo_21.03.tar.gz",
+    "srcurl": "https://mediaarea.net/download/source/mediainfo/21.09/mediainfo_21.09.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -5717,11 +5941,11 @@
   },
   {
     "name": "memcached",
-    "version": "1.6.9",
+    "version": "1.6.12",
     "description": "Free & open source, high-performance, distributed memory object caching system",
     "homepage": "https://memcached.org/",
     "depends": ["libevent", "libsasl"],
-    "srcurl": "https://www.memcached.org/files/memcached-1.6.9.tar.gz",
+    "srcurl": "https://www.memcached.org/files/memcached-1.6.12.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5744,12 +5968,12 @@
   },
   {
     "name": "microsocks",
-    "version": "2020.08.14-5795a84c",
+    "version": "1:1.0.2",
     "description": "tiny, portable SOCKS5 server with very moderate resource usage",
     "homepage": "https://github.com/rofl0r/microsocks",
     "depends": [],
-    "srcurl": "https://github.com/rofl0r/microsocks/archive/5795a84c4fbd61685690a8cd6d43969efc083614.tar.gz",
-    "maintainer": "Rabby Sheikh @xploitednoob"
+    "srcurl": "https://github.com/rofl0r/microsocks/archive/v1.0.2.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "mime-support",
@@ -5789,20 +6013,20 @@
   },
   {
     "name": "miniserve",
-    "version": "0.14.0",
+    "version": "0.17.0",
     "description": "Tool to serve files via HTTP",
     "homepage": "https://github.com/svenstaro/miniserve",
     "depends": ["libbz2"],
-    "srcurl": "https://github.com/svenstaro/miniserve/archive/v0.14.0.tar.gz",
+    "srcurl": "https://github.com/svenstaro/miniserve/archive/v0.17.0.tar.gz",
     "maintainer": "@termux"
   },
   {
     "name": "minisign",
-    "version": "0.9",
+    "version": "0.10",
     "description": "A dead simple tool to sign files and verify signatures",
     "homepage": "https://jedisct1.github.io/minisign/",
     "depends": ["libsodium"],
-    "srcurl": "https://github.com/jedisct1/minisign/archive/0.9.tar.gz",
+    "srcurl": "https://github.com/jedisct1/minisign/archive/0.10.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5960,20 +6184,20 @@
   },
   {
     "name": "mtools",
-    "version": "4.0.32",
+    "version": "4.0.35",
     "description": "Tool for manipulating FAT images.",
     "homepage": "https://www.gnu.org/software/mtools/",
     "depends": ["libandroid-support", "libiconv"],
-    "srcurl": "https://mirrors.kernel.org/gnu/mtools/mtools-4.0.32.tar.bz2",
+    "srcurl": "https://mirrors.kernel.org/gnu/mtools/mtools-4.0.35.tar.lz",
     "maintainer": "@termux"
   },
   {
     "name": "mu",
-    "version": "1.6.6",
+    "version": "1.6.8",
     "description": "Maildir indexer/searcher and Emacs client (mu4e)",
     "homepage": "https://www.djcbsoftware.nl/code/mu/",
     "depends": ["glib", "libc++", "libxapian", "libgmime"],
-    "srcurl": "https://github.com/djcb/mu/releases/download/1.6.6/mu-1.6.6.tar.xz",
+    "srcurl": "https://github.com/djcb/mu/releases/download/1.6.8/mu-1.6.8.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -6032,11 +6256,11 @@
   },
   {
     "name": "nano",
-    "version": "5.8",
+    "version": "5.9",
     "description": "Small, free and friendly text editor",
     "homepage": "https://www.nano-editor.org/",
     "depends": ["libandroid-support", "libandroid-glob", "ncurses"],
-    "srcurl": "https://nano-editor.org/dist/latest/nano-5.8.tar.xz",
+    "srcurl": "https://nano-editor.org/dist/latest/nano-5.9.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -6237,11 +6461,11 @@
   },
   {
     "name": "nlohmann-json",
-    "version": "3.10.2",
+    "version": "3.10.4",
     "description": "JSON for Modern C++",
     "homepage": "https://github.com/nlohmann/json",
     "depends": [],
-    "srcurl": "https://github.com/nlohmann/json/archive/v3.10.2.tar.gz",
+    "srcurl": "https://github.com/nlohmann/json/archive/v3.10.4.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -6254,6 +6478,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "nmh",
+    "version": "1.7.1",
+    "description": "Powerful electronic mail handling system",
+    "homepage": "http://www.nongnu.org/nmh/",
+    "depends": ["gdbm", "libdb", "libiconv", "libsasl", "openssl"],
+    "srcurl": "http://download.savannah.nongnu.org/releases/nmh/nmh-1.7.1.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "nnn",
     "version": "4.3",
     "description": "Free, fast, friendly file browser",
@@ -6263,21 +6496,30 @@
     "maintainer": "@termux"
   },
   {
+    "name": "no-more-secrets",
+    "version": "1.0.1",
+    "description": "This project provides a command line tool called nms that recreates the famous data decryption effect.",
+    "homepage": "https://github.com/bartobri/no-more-secrets",
+    "depends": ["libandroid-support", "ncurses"],
+    "srcurl": "https://github.com/bartobri/no-more-secrets/archive/refs/tags/v1.0.1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "nodejs",
-    "version": "16.10.0",
+    "version": "16.12.0",
     "description": "Open Source, cross-platform JavaScript runtime environment",
     "homepage": "https://nodejs.org/",
     "depends": ["libc++", "openssl", "c-ares", "libicu", "zlib"],
-    "srcurl": "https://nodejs.org/dist/v16.10.0/node-v16.10.0.tar.xz",
+    "srcurl": "https://nodejs.org/dist/v16.12.0/node-v16.12.0.tar.xz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>"
   },
   {
     "name": "nodejs-lts",
-    "version": "14.18.0",
+    "version": "14.18.1",
     "description": "Open Source, cross-platform JavaScript runtime environment",
     "homepage": "https://nodejs.org/",
     "depends": ["libc++", "openssl", "c-ares", "libicu", "zlib"],
-    "srcurl": "https://nodejs.org/dist/v14.18.0/node-v14.18.0.tar.xz",
+    "srcurl": "https://nodejs.org/dist/v14.18.1/node-v14.18.1.tar.xz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>"
   },
   {
@@ -6417,11 +6659,11 @@
   },
   {
     "name": "openethereum",
-    "version": "3.3.0-rc.8",
+    "version": "3.3.0-rc.10",
     "description": "Lightweight Ethereum Client",
     "homepage": "https://openethereum.github.io",
     "depends": [],
-    "srcurl": "https://github.com/openethereum/openethereum/archive/v3.3.0-rc.8.zip",
+    "srcurl": "https://github.com/openethereum/openethereum/archive/v3.3.0-rc.10.zip",
     "maintainer": "@termux"
   },
   {
@@ -6443,12 +6685,21 @@
     "maintainer": "@termux"
   },
   {
+    "name": "openldap",
+    "version": "2.5.4",
+    "description": "OpenLDAP server",
+    "homepage": "https://openldap.org",
+    "depends": ["libsasl", "libuuid", "openssl"],
+    "srcurl": "ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.5.4.tgz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "openssh",
-    "version": "8.7p1",
+    "version": "8.8p1",
     "description": "Secure shell for logging into a remote machine",
     "homepage": "https://www.openssh.com/",
     "depends": ["libandroid-support", "ldns", "openssl", "libedit", "termux-auth", "krb5", "zlib"],
-    "srcurl": "https://fastly.cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-8.7p1.tar.gz",
+    "srcurl": "https://fastly.cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-8.8p1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -6498,11 +6749,11 @@
   },
   {
     "name": "ovmf",
-    "version": "20210421.18.g15ee7b7689",
+    "version": "20210804.56.g769e63999f",
     "description": "Open Virtual Machine Firmware",
     "homepage": "https://www.tianocore.org/",
     "depends": [],
-    "srcurl": "https://www.kraxel.org/repos/jenkins/edk2/edk2.git-aarch64-0-20210421.18.g15ee7b7689.noarch.rpm",
+    "srcurl": "https://www.kraxel.org/repos/jenkins/edk2/edk2.git-aarch64-0-20210804.56.g769e63999f.noarch.rpm",
     "maintainer": "@termux"
   },
   {
@@ -6522,6 +6773,23 @@
     "depends": ["libc++", "libiconv"],
     "srcurl": "https://github.com/jinfeihan57/p7zip/archive/v17.04.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "pacman",
+    "version": "6.0.1",
+    "description": "a simple library-based package manager",
+    "homepage": "https://archlinux.org/pacman/",
+    "depends": ["bash", "libarchive", "curl", "gpgme"],
+    "srcurl": "https://sources.archlinux.org/other/pacman/pacman-6.0.1.tar.xz",
+    "maintainer": "@Maxython"
+  },
+  {
+    "name": "pandoc",
+    "version": "2.13",
+    "description": "Universal markup converter",
+    "homepage": "https://pandoc.org/",
+    "depends": [],
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "pango",
@@ -6690,17 +6958,17 @@
     "version": "8.0.6",
     "description": "Server-side, HTML-embedded scripting language",
     "homepage": "https://php.net",
-    "depends": ["freetype", "libandroid-glob", "libandroid-support", "libbz2", "libcrypt", "libcurl", "libgd", "libgmp", "libiconv", "liblzma", "libsqlite", "libxml2", "libxslt", "libzip", "oniguruma", "openssl", "pcre2", "readline", "zlib", "libicu", "libffi", "tidy"],
+    "depends": ["freetype", "libandroid-glob", "libandroid-support", "libbz2", "libcrypt", "libcurl", "libgd", "libgmp", "libiconv", "liblzma", "libsqlite", "libxml2", "libxslt", "libzip", "oniguruma", "openssl", "pcre2", "readline", "zlib", "libicu", "libffi", "tidy", "zstd"],
     "srcurl": "https://github.com/php/php-src/archive/php-8.0.6.tar.gz",
     "maintainer": "@termux"
   },
   {
     "name": "php-apcu",
-    "version": "5.1.20",
+    "version": "5.1.21",
     "description": "APCu - APC User Cache",
     "homepage": "http://php.net/apcu",
     "depends": ["php"],
-    "srcurl": "https://github.com/krakjoe/apcu/archive/refs/tags/v5.1.20.tar.gz",
+    "srcurl": "https://github.com/krakjoe/apcu/archive/refs/tags/v5.1.21.tar.gz",
     "maintainer": "ian4hu <hu2008yinxiang@163.com>"
   },
   {
@@ -6822,11 +7090,11 @@
   },
   {
     "name": "pngquant",
-    "version": "2.15.1",
+    "version": "2.16.0",
     "description": "PNG image optimising utility",
     "homepage": "https://pngquant.org",
     "depends": ["libpng", "littlecms", "zlib"],
-    "srcurl": "https://github.com/pornel/pngquant/archive/2.15.1.tar.gz",
+    "srcurl": "https://github.com/pornel/pngquant/archive/2.16.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -6908,15 +7176,15 @@
     "homepage": "https://proot-me.github.io/",
     "depends": ["libtalloc"],
     "srcurl": "https://github.com/termux/proot/archive/b56071ff3f849ee1e7981e1088e6b3f3375e04e4.zip",
-    "maintainer": "@termux"
+    "maintainer": "Michal Bednarski @michalbednarski"
   },
   {
     "name": "proot-distro",
-    "version": "2.6.3",
+    "version": "2.8.0",
     "description": "Termux official utility for managing proot'ed Linux distributions",
     "homepage": "https://github.com/termux/proot-distro",
     "depends": ["bash", "bzip2", "coreutils", "curl", "findutils", "gzip", "ncurses-utils", "proot", "(>=", "5.1.107-32)", "sed", "tar", "xz-utils"],
-    "srcurl": "https://github.com/termux/proot-distro/archive/v2.6.3.tar.gz",
+    "srcurl": "https://github.com/termux/proot-distro/archive/v2.8.0.tar.gz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
@@ -6939,11 +7207,11 @@
   },
   {
     "name": "proxmark3-git",
-    "version": "2021.09.07-bac58d2a",
+    "version": "2021.10.24-60f0fe7b",
     "description": "The Swiss Army Knife of RFID Research - RRG/Iceman repo",
     "homepage": "https://github.com/RfidResearchGroup/proxmark3",
     "depends": ["libbz2", "libc++", "readline"],
-    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/bac58d2a66a9ed3fc72e4ca342db34e30556fae7.tar.gz",
+    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/60f0fe7b4e3d2c7cdb06ebd4969f80d229921beb.tar.gz",
     "maintainer": "Marlin Sööse <marlin.soose@laro.se>"
   },
   {
@@ -6966,11 +7234,11 @@
   },
   {
     "name": "psutils",
-    "version": "2.06",
+    "version": "2.07",
     "description": "A set of postscript utilities",
     "homepage": "https://github.com/rrthomas/psutils",
     "depends": ["ghostscript", "perl"],
-    "srcurl": "https://github.com/rrthomas/psutils/releases/download/v2.06/psutils-2.06.tar.gz",
+    "srcurl": "https://github.com/rrthomas/psutils/releases/download/v2.07/psutils-2.07.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7047,11 +7315,11 @@
   },
   {
     "name": "qalc",
-    "version": "3.20.1",
+    "version": "3.21.0",
     "description": "Powerful and easy to use command line calculator",
     "homepage": "https://qalculate.github.io/",
     "depends": ["libc++", "libiconv", "libcurl", "libmpfr", "libxml2", "readline", "libgmp", "zlib"],
-    "srcurl": "https://github.com/Qalculate/libqalculate/releases/download/v3.20.1/libqalculate-3.20.1.tar.gz",
+    "srcurl": "https://github.com/Qalculate/libqalculate/releases/download/v3.21.0/libqalculate-3.21.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7059,7 +7327,7 @@
     "version": "1:6.1.0",
     "description": "A generic and open source machine emulator and virtualizer (headless)",
     "homepage": "https://www.qemu.org",
-    "depends": ["glib", "libbz2", "libc++", "libcurl", "libgnutls", "libiconv", "libjpeg-turbo", "liblzo", "libnettle", "libnfs", "libpixman", "libpng", "libspice-server", "libssh", "libusb", "libusbredir", "ncurses", "qemu-common", "resolv-conf", "zlib", "zstd"],
+    "depends": ["glib", "libbz2", "libc++", "libcurl", "libgnutls", "libiconv", "libjpeg-turbo", "liblzo", "libnettle", "libnfs", "libpixman", "libpng", "libspice-server", "libssh", "libusb", "libusbredir", "ncurses", "pulseaudio", "qemu-common", "resolv-conf", "zlib", "zstd"],
     "srcurl": "https://download.qemu.org/qemu-6.1.0.tar.xz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
@@ -7074,12 +7342,21 @@
   },
   {
     "name": "quickjs",
-    "version": "1:20201108",
+    "version": "1:20210327",
     "description": "QuickJS is a small and embeddable Javascript engine",
     "homepage": "https://bellard.org/quickjs/",
     "depends": [],
-    "srcurl": "https://bellard.org/quickjs/quickjs-2020-11-08.tar.xz",
+    "srcurl": "https://bellard.org/quickjs/quickjs-2021-03-27.tar.xz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "racket",
+    "version": "7.4",
+    "description": "Full-spectrum programming language going beyond Lisp and Scheme",
+    "homepage": "https://racket-lang.org",
+    "depends": ["libffi", "libiconv"],
+    "srcurl": "https://www.cs.utah.edu/plt/installers/7.4/racket-minimal-7.4-src-builtpkgs.tgz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "radare2",
@@ -7106,6 +7383,15 @@
     "homepage": "https://ranger.github.io/",
     "depends": ["python", "file"],
     "srcurl": "https://github.com/ranger/ranger/archive/v1.9.3.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "rapidjson",
+    "version": "1.1.0",
+    "description": "fast JSON parser/generator for C++ with SAX/DOM style API",
+    "homepage": "https://github.com/Tencent/rapidjson/",
+    "depends": [],
+    "srcurl": "https://github.com/Tencent/rapidjson/archive/v1.1.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7218,11 +7504,11 @@
   },
   {
     "name": "remind",
-    "version": "1:03.03.07",
+    "version": "1:03.03.09",
     "description": "Sophisticated calendar and alarm program",
     "homepage": "https://dianne.skoll.ca/projects/remind/",
     "depends": ["libandroid-glob"],
-    "srcurl": "https://dianne.skoll.ca/projects/remind/download/remind-03.03.07.tar.gz",
+    "srcurl": "https://fossies.org/linux/misc/remind-03.03.09.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -7252,6 +7538,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "restic-server",
+    "version": "0.10.0",
+    "description": "Restic's REST backend API server",
+    "homepage": "https://restic.net/",
+    "depends": [],
+    "srcurl": "https://github.com/restic/rest-server/archive/v0.10.0.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "rgbds",
     "version": "0.5.1",
     "description": "Rednex Game Boy Development System - An assembly toolchain for the Nintendo Game Boy & Game Boy Color",
@@ -7271,11 +7566,11 @@
   },
   {
     "name": "rinetd",
-    "version": "2019.10.22-0973bd2d",
+    "version": "1:0.73",
     "description": "A user-mode TCP port redirection server",
-    "homepage": "https://github.com/boutell/rinetd",
+    "homepage": "https://github.com/samhocevar/rinetd",
     "depends": [],
-    "srcurl": "https://github.com/boutell/rinetd/archive/0973bd2d1c187da9706fd83c8aa68fabc1775a31.tar.gz",
+    "srcurl": "https://github.com/samhocevar/rinetd/releases/download/v0.73/rinetd-0.73.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -7283,7 +7578,7 @@
     "version": "13.0.0",
     "description": "Search tool like grep and The Silver Searcher",
     "homepage": "https://github.com/BurntSushi/ripgrep",
-    "depends": [],
+    "depends": ["pcre2"],
     "srcurl": "https://github.com/BurntSushi/ripgrep/archive/13.0.0.tar.gz",
     "maintainer": "@termux"
   },
@@ -7387,12 +7682,12 @@
   },
   {
     "name": "rust",
-    "version": "1.53.0",
+    "version": "1.56.0",
     "description": "Systems programming language focused on safety, speed and concurrency",
     "homepage": "https://www.rust-lang.org/",
     "depends": ["libc++", "clang", "openssl", "lld", "zlib", "libllvm"],
-    "srcurl": "https://static.rust-lang.org/dist/rustc-1.53.0-src.tar.xz",
-    "maintainer": "Kevin Cotugno @kcotugno"
+    "srcurl": "https://static.rust-lang.org/dist/rustc-1.56.0-src.tar.xz",
+    "maintainer": "@termux"
   },
   {
     "name": "rust-analyzer",
@@ -7411,6 +7706,15 @@
     "depends": ["nmap"],
     "srcurl": "https://github.com/RustScan/RustScan/archive/2.0.1.tar.gz",
     "maintainer": "Krishna Kanhaiya @kcubeterm"
+  },
+  {
+    "name": "samba",
+    "version": "4.14.8",
+    "description": "SMB/CIFS fileserver",
+    "homepage": "https://www.samba.org/",
+    "depends": ["libbsd", "libcap", "libcrypt", "libgnutls", "libiconv", "libicu", "libpopt", "libtalloc", "libtirpc", "ncurses", "openssl", "readline", "zlib"],
+    "srcurl": "https://download.samba.org/pub/samba/samba-4.14.8.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "samefile",
@@ -7575,11 +7879,11 @@
   },
   {
     "name": "shell2http",
-    "version": "1.13",
+    "version": "1.14.1",
     "description": "Executing shell commands via HTTP server",
     "homepage": "https://github.com/msoap/shell2http",
     "depends": [],
-    "srcurl": "https://github.com/msoap/shell2http/archive/1.13.tar.gz",
+    "srcurl": "https://github.com/msoap/shell2http/archive/v1.14.1.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm"
   },
   {
@@ -7617,6 +7921,15 @@
     "depends": [],
     "srcurl": "https://github.com/go-shiori/shiori/archive/v1.5.0.tar.gz",
     "maintainer": "Krishna Kanhaiya @kcubeterm"
+  },
+  {
+    "name": "shtool",
+    "version": "2.0.8",
+    "description": "compilation of small but very stable and portable shell scripts into a single shell tool",
+    "homepage": "http://www.gnu.org/software/shtool/",
+    "depends": ["perl"],
+    "srcurl": "http://mirrors.kernel.org/gnu/shtool/shtool-2.0.8.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "silicon",
@@ -7665,12 +7978,21 @@
   },
   {
     "name": "slides",
-    "version": "0.5.0",
+    "version": "0.6.2",
     "description": "Slides in your terminal",
     "homepage": "https://github.com/maaslalani/slides",
     "depends": [],
-    "srcurl": "https://github.com/maaslalani/slides/archive/v0.5.0.tar.gz",
+    "srcurl": "https://github.com/maaslalani/slides/archive/v0.6.2.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>"
+  },
+  {
+    "name": "smalltalk",
+    "version": "3.2.91",
+    "description": "A free implementation of the Smalltalk-80 language",
+    "homepage": "http://smalltalk.gnu.org/",
+    "depends": ["glib", "libandroid-support", "libffi", "libltdl", "libsigsegv", "zlib"],
+    "srcurl": "ftp://alpha.gnu.org/gnu/smalltalk/smalltalk-3.2.91.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
   },
   {
     "name": "socat",
@@ -7751,7 +8073,7 @@
     "homepage": "https://github.com/AgentD/squashfs-tools-ng",
     "depends": ["zlib", "liblz4", "liblzo", "zstd"],
     "srcurl": "https://github.com/AgentD/squashfs-tools-ng/archive/v1.1.2.tar.gz",
-    "maintainer": "WMCB-Tech @marcusz"
+    "maintainer": "@WMCB-Tech"
   },
   {
     "name": "squid",
@@ -7761,6 +8083,15 @@
     "depends": ["libc++", "libcrypt", "libxml2", "libltdl", "libgnutls", "resolv-conf"],
     "srcurl": "http://squid.mirror.globo.tech/archive/4/squid-4.16.tar.xz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "srelay",
+    "version": "0.4.8p3",
+    "description": "A Free SOCKS proxy server",
+    "homepage": "https://sourceforge.net/projects/socks-relay",
+    "depends": ["libcrypt"],
+    "srcurl": "http://downloads.sourceforge.net/sourceforge/socks-relay/srelay-0.4.8p3.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "sshpass",
@@ -7881,11 +8212,11 @@
   },
   {
     "name": "stylua",
-    "version": "0.10.1",
+    "version": "0.11.0",
     "description": "An opinionated Lua code formatter",
     "homepage": "https://github.com/JohnnyMorganz/StyLua",
     "depends": [],
-    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.10.1.tar.gz",
+    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.11.0.tar.gz",
     "maintainer": "@shadmansaleh"
   },
   {
@@ -7896,6 +8227,15 @@
     "depends": ["apr", "apr-util", "serf", "libexpat", "libsqlite", "liblz4", "utf8proc", "zlib"],
     "srcurl": "https://www.apache.org/dist/subversion/subversion-1.14.1.tar.bz2",
     "maintainer": "@termux"
+  },
+  {
+    "name": "surfraw",
+    "version": "2.3.0",
+    "description": "Shell Users' Revolutionary Front Rage Against the Web",
+    "homepage": "https://gitlab.com/surfraw/Surfraw",
+    "depends": ["lynx", "perl"],
+    "srcurl": "https://gitlab.com/surfraw/Surfraw/-/archive/surfraw-2.3.0/Surfraw-surfraw-2.3.0.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "swaks",
@@ -7920,7 +8260,7 @@
     "version": "5.5",
     "description": "Swift is a high-performance system programming language",
     "homepage": "https://swift.org/",
-    "depends": ["binutils-gold", "clang", "libc++", "ndk-sysroot", "libandroid-glob", "libandroid-spawn", "libcurl", "libicu", "libicu-static", "libsqlite", "libuuid", "libxml2", "libdispatch", "llbuild"],
+    "depends": ["lld", "clang", "libc++", "ndk-sysroot", "libandroid-glob", "libandroid-spawn", "libcurl", "libicu", "libicu-static", "libsqlite", "libuuid", "libxml2", "libdispatch", "llbuild"],
     "srcurl": "https://github.com/apple/swift/archive/swift-5.5-RELEASE.tar.gz",
     "maintainer": "@buttaface"
   },
@@ -7989,11 +8329,11 @@
   },
   {
     "name": "taskwarrior",
-    "version": "2.5.3",
+    "version": "2.6.1",
     "description": "Utility for managing your TODO list",
     "homepage": "https://taskwarrior.org",
     "depends": ["libc++", "libgnutls", "libuuid", "libandroid-glob"],
-    "srcurl": "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.5.3/task-2.5.3.tar.gz",
+    "srcurl": "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6.1/task-2.6.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8022,6 +8362,14 @@
     "depends": ["libc++", "zlib"],
     "srcurl": "https://github.com/silnrsi/teckit/archive/v2.5.10.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91"
+  },
+  {
+    "name": "telegram-cli",
+    "version": "1:1.4.1",
+    "description": "Telegram messenger CLI",
+    "homepage": "https://github.com/vysheng/tg",
+    "depends": ["libconfig", "libevent", "libjansson", "openssl", "readline", "zlib"],
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "teleport-tsh",
@@ -8096,11 +8444,11 @@
   },
   {
     "name": "termux-elf-cleaner",
-    "version": "1.7",
+    "version": "1.10",
     "description": "Cleaner of ELF files for Android",
     "homepage": "https://github.com/termux/termux-elf-cleaner",
     "depends": ["libc++"],
-    "srcurl": "https://github.com/termux/termux-elf-cleaner/archive/v1.7.tar.gz",
+    "srcurl": "https://github.com/termux/termux-elf-cleaner/archive/v1.10.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8139,7 +8487,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "0.140",
+    "version": "0.145",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.com/",
     "depends": ["bzip2", "coreutils", "curl", "dash", "diffutils", "findutils", "gawk", "grep", "gzip", "less", "procps", "psmisc", "sed", "tar", "termux-am", "termux-exec", "util-linux", "xz-utils", "dialog"],
@@ -8179,6 +8527,15 @@
     "homepage": "https://www.tug.org/texlive/",
     "depends": ["libc++", "libiconv", "freetype", "libpng", "libgd", "libgmp", "libmpfr", "libicu", "liblua52", "libgraphite", "harfbuzz", "harfbuzz-icu", "teckit", "libpixman", "libcairo", "zlib", "zziplib"],
     "srcurl": "https://github.com/TeX-Live/texlive-source/archive/svn58837.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
+  },
+  {
+    "name": "texlive-installer",
+    "version": "20210325",
+    "description": "Wrapper around texlive's install-tl script",
+    "homepage": "https://www.tug.org/texlive/",
+    "depends": ["perl", "texlive-bin", "(>=", "20200406-4)", "gnupg", "curl", "lz4", "xz-utils"],
+    "srcurl": "ftp://ftp.tug.org/texlive/historic/2021/install-tl-unx.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91"
   },
   {
@@ -8431,7 +8788,7 @@
     "homepage": "https://tvheadend.org/",
     "depends": ["libiconv", "ffmpeg", "libopus", "libx264", "libx265", "libvpx", "libfdk-aac", "libogg", "libtheora", "libvorbis", "pngquant"],
     "srcurl": "https://github.com/tvheadend/tvheadend/archive/v4.2.8.tar.gz",
-    "maintainer": "@MrAdityaAlok <dev.aditya.alok@gmail.com>"
+    "maintainer": "MrAdityaAlok <dev.aditya.alok@gmail.com>"
   },
   {
     "name": "tweego",
@@ -8495,14 +8852,6 @@
     "depends": ["libiconv", "openssh", "zlib"],
     "srcurl": "https://github.com/twogood/unshield/archive/1.4.3.tar.gz",
     "maintainer": "@termux"
-  },
-  {
-    "name": "unstable-repo",
-    "version": "8.0",
-    "description": "Package repository containing new/unstable programs and libraries.",
-    "homepage": "https://github.com/termux/unstable-packages",
-    "depends": ["termux-keyring"],
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "unzip",
@@ -8641,20 +8990,20 @@
   },
   {
     "name": "vim",
-    "version": "8.2.3450",
+    "version": "8.2.3500",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": ["libiconv", "ncurses", "vim-runtime"],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3450.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.3500.tar.gz",
     "maintainer": "@termux"
   },
   {
     "name": "vim-python",
-    "version": "8.2.3450",
+    "version": "8.2.3500",
     "description": "Vi IMproved - enhanced vi editor - with python support",
     "homepage": "https://www.vim.org",
     "depends": ["libiconv", "ncurses", "vim-runtime", "python"],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3450.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.3500.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8784,12 +9133,12 @@
   },
   {
     "name": "wget2",
-    "version": "1.99.2",
+    "version": "2.0.0",
     "description": "The successor of GNU Wget, a file and recursive website downloader",
     "homepage": "https://gitlab.com/gnuwget/wget2",
     "depends": ["gpgme", "libandroid-glob", "libassuan", "libgnutls", "libgpg-error", "pcre2"],
-    "srcurl": "https://mirrors.kernel.org/gnu/wget/wget2-1.99.2.tar.gz",
-    "maintainer": "Rabby Sheikh @shoya0x00"
+    "srcurl": "https://mirrors.kernel.org/gnu/wget/wget2-2.0.0.tar.lz",
+    "maintainer": "@termux"
   },
   {
     "name": "wireguard-tools",
@@ -8882,11 +9231,11 @@
   },
   {
     "name": "xmake",
-    "version": "2.5.7",
+    "version": "2.5.8",
     "description": "A cross-platform build utility based on Lua",
     "homepage": "https://xmake.io/",
     "depends": [],
-    "srcurl": "https://github.com/xmake-io/xmake/releases/download/v2.5.7/xmake-v2.5.7.tar.gz",
+    "srcurl": "https://github.com/xmake-io/xmake/releases/download/v2.5.8/xmake-v2.5.8.tar.gz",
     "maintainer": "Ruki Wang @waruqi"
   },
   {
@@ -8989,6 +9338,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "yara",
+    "version": "4.1.0",
+    "description": "Tool aimed at helping malware researchers to identify and classify malware samples",
+    "homepage": "https://github.com/VirusTotal/yara",
+    "depends": ["file", "openssl"],
+    "srcurl": "https://github.com/VirusTotal/yara/archive/v4.1.0.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "yarn",
     "version": "1.22.15",
     "description": "Fast, reliable, and secure dependency management",
@@ -9034,6 +9392,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "zeronet",
+    "version": "0.7.1",
+    "description": "Decentralized websites using Bitcoin crypto and BitTorrent network",
+    "homepage": "https://zeronet.io/",
+    "depends": ["bash", "clang", "make", "openssl-tool", "pkg-config", "python"],
+    "srcurl": "https://github.com/HelloZeroNet/ZeroNet/archive/v0.7.1.tar.gz",
+    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
     "name": "zile",
     "version": "2.4.15",
     "description": "Lightweight clone of the Emacs text editor",
@@ -9062,11 +9429,11 @@
   },
   {
     "name": "zoxide",
-    "version": "0.7.3",
+    "version": "0.7.8",
     "description": "A faster way to navigate your filesystem",
     "homepage": "https://github.com/ajeetdsouza/zoxide",
     "depends": [],
-    "srcurl": "https://github.com/ajeetdsouza/zoxide/archive/v0.7.3.tar.gz",
+    "srcurl": "https://github.com/ajeetdsouza/zoxide/archive/v0.7.8.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9152,11 +9519,11 @@
   },
   {
     "name": "dnsmasq",
-    "version": "2.85",
+    "version": "2.86",
     "description": "Dnsmasq provides network infrastructure for small networks",
     "homepage": "http://www.thekelleys.org.uk/dnsmasq/doc.html",
     "depends": [],
-    "srcurl": "http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.85.tar.xz",
+    "srcurl": "http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.86.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -9323,11 +9690,11 @@
   },
   {
     "name": "libpcsclite",
-    "version": "1.9.3",
+    "version": "1.9.4",
     "description": "Middleware to access a smart card using SCard API (PC/SC).",
     "homepage": "https://pcsclite.apdu.fr/",
     "depends": ["libusb", "python"],
-    "srcurl": "https://pcsclite.apdu.fr/files/pcsc-lite-1.9.3.tar.bz2",
+    "srcurl": "https://pcsclite.apdu.fr/files/pcsc-lite-1.9.4.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -9557,11 +9924,11 @@
   },
   {
     "name": "glpk",
-    "version": "4.65",
+    "version": "5.0",
     "description": "GNU Linear Programming Kit: solve LP, MIP and other problems",
     "homepage": "https://www.gnu.org/software/glpk/",
     "depends": ["libgmp"],
-    "srcurl": "https://ftp.gnu.org/gnu/glpk/glpk-4.65.tar.gz",
+    "srcurl": "https://ftp.gnu.org/gnu/glpk/glpk-5.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9647,11 +10014,11 @@
   },
   {
     "name": "mapserver",
-    "version": "7.6.2",
+    "version": "7.6.4",
     "description": "MapServer is CGI-based platform for publishing spatial data and interactive mapping applications to the web",
     "homepage": "https://mapserver.org/",
     "depends": ["libc++", "libiconv", "freetype", "libcurl", "libcairo", "libxml2", "openjpeg", "proj", "gdal", "libprotobuf-c"],
-    "srcurl": "https://download.osgeo.org/mapserver/mapserver-7.6.2.tar.gz",
+    "srcurl": "https://download.osgeo.org/mapserver/mapserver-7.6.4.tar.gz",
     "maintainer": "Bjoern Schilberg @BjoernSchilberg"
   },
   {
@@ -9752,354 +10119,6 @@
     "depends": ["perl", "texlive-bin", "(>=", "20200406-4)"],
     "srcurl": "ftp://ftp.tug.org/texlive/historic/2020/texlive-20200406-texmf.tar.xz",
     "maintainer": "Henrik Grimler @Grimler91"
-  },
-  {
-    "name": "atomvm",
-    "version": "0.git82624fbf",
-    "description": "The minimal Erlang VM implementation",
-    "homepage": "https://github.com/bettio/AtomVM",
-    "depends": ["zlib"],
-    "srcurl": "https://github.com/bettio/AtomVM/archive/82624fbf68ad8a0c8815456adbd33de98e4901ea.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "bftpd",
-    "version": "5.7",
-    "description": "Small, easy-to-configure FTP server",
-    "homepage": "http://bftpd.sourceforge.net/",
-    "depends": ["libcrypt"],
-    "srcurl": "https://kumisystems.dl.sourceforge.net/project/bftpd/bftpd/bftpd-5.7/bftpd-5.7.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "biber",
-    "version": "2.16",
-    "description": "A Unicode-capable BibTeX replacement for biblatex users",
-    "homepage": "http://biblatex-biber.sourceforge.net",
-    "depends": ["perl", "libxslt", "libxml2", "(>>", "2.9.10-3)", "openssl-tool", "make", "clang", "pkg-config"],
-    "maintainer": "Henrik Grimler @Grimler91"
-  },
-  {
-    "name": "ccls",
-    "version": "0.20210330",
-    "description": "C/C++/ObjC language server",
-    "homepage": "https://github.com/MaskRay/ccls",
-    "depends": ["libllvm"],
-    "srcurl": "https://github.com/MaskRay/ccls/archive/0.20210330.tar.gz",
-    "maintainer": "Termux members @termux"
-  },
-  {
-    "name": "cppcheck",
-    "version": "2.5",
-    "description": "tool for static C/C++ code analysis",
-    "homepage": "https://github.com/danmar/cppcheck",
-    "depends": [],
-    "srcurl": "https://github.com/danmar/cppcheck/archive/2.5.tar.gz",
-    "maintainer": "Termux members @termux"
-  },
-  {
-    "name": "distcc",
-    "version": "3.4",
-    "description": "Distributed C/C++ compiler.",
-    "homepage": "http://distcc.org/",
-    "depends": ["libpopt"],
-    "srcurl": "https://github.com/distcc/distcc/releases/download/v3.4/distcc-3.4.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "electrum",
-    "version": "4.0.5",
-    "description": "Electrum is a lightweight Bitcoin wallet.",
-    "homepage": "https://electrum.org",
-    "depends": ["python", "libsecp256k1"],
-    "srcurl": "https://download.electrum.org/4.0.5/Electrum-4.0.5.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "enscript",
-    "version": "1.6.6",
-    "description": "Enscript converts ASCII text files to PostScript, HTML, RTF, ANSI and overstrikes",
-    "homepage": "https://www.gnu.org/software/enscript/",
-    "depends": ["cups", "perl"],
-    "srcurl": "https://ftp.gnu.org/gnu/enscript/enscript-1.6.6.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "fdroidcl",
-    "version": "0.5.0",
-    "description": "F-Droid client",
-    "homepage": "https://github.com/mvdan/fdroidcl",
-    "depends": [],
-    "srcurl": "https://github.com/mvdan/fdroidcl/archive/v0.5.0.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "fetchmail",
-    "version": "6.4.19",
-    "description": "A remote-mail retrieval utility",
-    "homepage": "https://www.fetchmail.info/",
-    "depends": ["libcrypt", "openssl"],
-    "srcurl": "https://sourceforge.net/projects/fetchmail/files/branch_6.4/fetchmail-6.4.19.tar.xz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "gitflow-avh",
-    "version": "1.12.3",
-    "description": "Extend git with Vincent Driessen's branching model. The AVH Edition adds more functionality.",
-    "homepage": "https://github.com/petervanderdoes/gitflow/",
-    "depends": ["dash", "git"],
-    "srcurl": "https://github.com/petervanderdoes/gitflow/archive/1.12.3.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "guile",
-    "version": "2.2.7",
-    "description": "Portable, embeddable Scheme implementation written in C",
-    "homepage": "http://www.gnu.org/software/guile/",
-    "depends": ["libandroid-support", "libffi", "libgc", "libgmp", "libltdl", "libunistring"],
-    "srcurl": "https://ftp.gnu.org/gnu/guile/guile-2.2.7.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "guile18",
-    "version": "1.8.8",
-    "description": "Portable, embeddable Scheme implementation written in C. (legacy branch)",
-    "homepage": "http://www.gnu.org/software/guile/",
-    "depends": ["libcrypt", "libgmp", "libltdl", "ncurses", "readline"],
-    "srcurl": "ftp://ftp.gnu.org/pub/gnu/guile/guile-1.8.8.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "haproxy",
-    "version": "2.4.2",
-    "description": "The Reliable, High Performance TCP/HTTP Load Balancer",
-    "homepage": "https://www.haproxy.org/",
-    "depends": ["liblua53", "openssl", "pcre", "zlib"],
-    "srcurl": "http://www.haproxy.org/download/2.4/src/haproxy-2.4.2.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "intltool",
-    "version": "0.51.0",
-    "description": "The internationalization tool collection",
-    "homepage": "https://launchpad.net/intltool",
-    "depends": ["perl"],
-    "srcurl": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
-    "maintainer": "@suhan-paradkar"
-  },
-  {
-    "name": "jigdo",
-    "version": "0.8.0",
-    "description": "Distribute large images by sending and receiving the files that make them up",
-    "homepage": "http://atterer.org/jigdo/",
-    "depends": ["libbz2", "libc++", "libdb", "wget", "zlib"],
-    "srcurl": "https://www.einval.com/~steve/software/jigdo/download/jigdo-0.8.0.tar.xz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "libburn",
-    "version": "1.5.4",
-    "description": "Library for reading, mastering and writing optical discs",
-    "homepage": "https://dev.lovelyhq.com/libburnia",
-    "depends": [],
-    "srcurl": "http://files.libburnia-project.org/releases/libburn-1.5.4.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "libisoburn",
-    "version": "1.5.4",
-    "description": "Frontend for libraries libburn and libisofs",
-    "homepage": "https://dev.lovelyhq.com/libburnia",
-    "depends": ["libburn", "libisofs", "readline"],
-    "srcurl": "http://files.libburnia-project.org/releases/libisoburn-1.5.4.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "libisofs",
-    "version": "1.5.4",
-    "description": "Library to pack up hard disk files and directories into a ISO 9660 disk image",
-    "homepage": "https://dev.lovelyhq.com/libburnia",
-    "depends": ["libiconv", "zlib"],
-    "srcurl": "http://files.libburnia-project.org/releases/libisofs-1.5.4.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "libopenfec",
-    "version": "1.4.2.4",
-    "description": "Application-Level Forward Erasure Correction implementation library",
-    "homepage": "http://openfec.org",
-    "depends": [],
-    "srcurl": "https://github.com/roc-project/openfec/archive/v1.4.2.4.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "libsixel",
-    "version": "1.8.6",
-    "description": "Encoder/decoder implementation for DEC SIXEL graphics",
-    "homepage": "https://saitoha.github.io/libsixel/",
-    "depends": ["libcurl", "libjpeg-turbo", "libpng"],
-    "srcurl": "https://github.com/saitoha/libsixel/archive/v1.8.6.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "libtd",
-    "version": "1.7.0",
-    "description": "Library for building Telegram clients",
-    "homepage": "https://core.telegram.org/tdlib/",
-    "depends": ["readline", "openssl", "(>=", "1.1.1)", "zlib"],
-    "srcurl": "https://github.com/tdlib/td/archive/v1.7.0.tar.gz",
-    "maintainer": "Termux members @termux"
-  },
-  {
-    "name": "nmh",
-    "version": "1.7.1",
-    "description": "Powerful electronic mail handling system",
-    "homepage": "http://www.nongnu.org/nmh/",
-    "depends": ["gdbm", "libdb", "libiconv", "libsasl", "openssl"],
-    "srcurl": "http://download.savannah.nongnu.org/releases/nmh/nmh-1.7.1.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "openldap",
-    "version": "2.5.4",
-    "description": "OpenLDAP server",
-    "homepage": "https://openldap.org",
-    "depends": ["libsasl", "libuuid", "openssl"],
-    "srcurl": "ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.5.4.tgz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "pandoc",
-    "version": "2.13",
-    "description": "Universal markup converter",
-    "homepage": "https://pandoc.org/",
-    "depends": [],
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "racket",
-    "version": "7.4",
-    "description": "Full-spectrum programming language going beyond Lisp and Scheme",
-    "homepage": "https://racket-lang.org",
-    "depends": ["libffi", "libiconv"],
-    "srcurl": "https://www.cs.utah.edu/plt/installers/7.4/racket-minimal-7.4-src-builtpkgs.tgz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "rapidjson",
-    "version": "1.1.0",
-    "description": "fast JSON parser/generator for C++ with SAX/DOM style API",
-    "homepage": "https://github.com/Tencent/rapidjson/",
-    "depends": [],
-    "srcurl": "https://github.com/Tencent/rapidjson/archive/v1.1.0.tar.gz",
-    "maintainer": "Termux members @termux"
-  },
-  {
-    "name": "restic-server",
-    "version": "0.10.0",
-    "description": "Restic's REST backend API server",
-    "homepage": "https://restic.net/",
-    "depends": [],
-    "srcurl": "https://github.com/restic/rest-server/archive/v0.10.0.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "samba",
-    "version": "4.14.7",
-    "description": "SMB/CIFS fileserver",
-    "homepage": "https://www.samba.org/",
-    "depends": ["libbsd", "libcap", "libcrypt", "libgnutls", "libiconv", "libicu", "libpopt", "libtalloc", "libtirpc", "ncurses", "openssl", "readline", "zlib"],
-    "srcurl": "https://download.samba.org/pub/samba/samba-4.14.7.tar.gz",
-    "maintainer": "Termux members @termux"
-  },
-  {
-    "name": "shtool",
-    "version": "2.0.8",
-    "description": "compilation of small but very stable and portable shell scripts into a single shell tool",
-    "homepage": "http://www.gnu.org/software/shtool/",
-    "depends": ["perl"],
-    "srcurl": "http://mirrors.kernel.org/gnu/shtool/shtool-2.0.8.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "smalltalk",
-    "version": "3.2.91",
-    "description": "A free implementation of the Smalltalk-80 language",
-    "homepage": "http://smalltalk.gnu.org/",
-    "depends": ["glib", "libandroid-support", "libffi", "libltdl", "libsigsegv", "zlib"],
-    "srcurl": "ftp://alpha.gnu.org/gnu/smalltalk/smalltalk-3.2.91.tar.gz",
-    "maintainer": "Henrik Grimler @Grimler91"
-  },
-  {
-    "name": "srelay",
-    "version": "0.4.8p3",
-    "description": "A Free SOCKS proxy server",
-    "homepage": "https://sourceforge.net/projects/socks-relay",
-    "depends": ["libcrypt"],
-    "srcurl": "http://downloads.sourceforge.net/sourceforge/socks-relay/srelay-0.4.8p3.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "surfraw",
-    "version": "2.3.0",
-    "description": "Shell Users' Revolutionary Front Rage Against the Web",
-    "homepage": "https://gitlab.com/surfraw/Surfraw",
-    "depends": ["lynx", "perl"],
-    "srcurl": "https://gitlab.com/surfraw/Surfraw/repository/surfraw-2.3.0/archive.tar.bz2",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "tcc",
-    "version": "1:0.9.27",
-    "description": "Tiny C Compiler",
-    "homepage": "https://bellard.org/tcc/",
-    "depends": [],
-    "srcurl": "https://repo.or.cz/tinycc.git/snapshot/fef838db2d124db3f1357385972371ccba7af2c6.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "telegram-cli",
-    "version": "1:1.4.1",
-    "description": "Telegram messenger CLI",
-    "homepage": "https://github.com/vysheng/tg",
-    "depends": ["libconfig", "libevent", "libjansson", "openssl", "readline", "zlib"],
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "texlive-installer",
-    "version": "20210325",
-    "description": "Wrapper around texlive's install-tl script",
-    "homepage": "https://www.tug.org/texlive/",
-    "depends": ["perl", "texlive-bin", "(>=", "20200406-4)", "gnupg", "curl", "lz4", "xz-utils"],
-    "srcurl": "ftp://ftp.tug.org/texlive/historic/2021/install-tl-unx.tar.gz",
-    "maintainer": "Henrik Grimler @Grimler91"
-  },
-  {
-    "name": "vlang",
-    "version": "0.2.2",
-    "description": "Simple, fast, safe, compiled language for developing maintainable software",
-    "homepage": "https://github.com/vlang/v",
-    "depends": ["clang"],
-    "srcurl": "https://github.com/vlang/v/archive/0.2.2.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "yara",
-    "version": "4.1.0",
-    "description": "Tool aimed at helping malware researchers to identify and classify malware samples",
-    "homepage": "https://github.com/VirusTotal/yara",
-    "depends": ["file", "openssl"],
-    "srcurl": "https://github.com/VirusTotal/yara/archive/v4.1.0.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
-  },
-  {
-    "name": "zeronet",
-    "version": "0.7.1",
-    "description": "Decentralized websites using Bitcoin crypto and BitTorrent network",
-    "homepage": "https://zeronet.io/",
-    "depends": ["bash", "clang", "make", "openssl-tool", "pkg-config", "python"],
-    "srcurl": "https://github.com/HelloZeroNet/ZeroNet/archive/v0.7.1.tar.gz",
-    "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
     "name": "adwaita-icon-theme",
@@ -10292,11 +10311,11 @@
   },
   {
     "name": "extra-cmake-modules",
-    "version": "5.82.0",
+    "version": "5.87.0",
     "description": "Extra CMake modules (KDE)",
     "homepage": "https://www.kde.org/",
     "depends": ["cmake"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.82/extra-cmake-modules-5.82.0.tar.xz",
+    "srcurl": "http://download.kde.org/stable/frameworks/5.87/extra-cmake-modules-5.87.0.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
@@ -10343,6 +10362,24 @@
     "depends": ["fontconfig", "glu", "libc++", "libjpeg-turbo", "libpng", "libx11", "libxcursor", "libxext", "libxfixes", "libxft", "libxinerama", "libxrender", "mesa", "zlib"],
     "srcurl": "https://www.fltk.org/pub/fltk/1.3.7/fltk-1.3.7-source.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "fluent-gtk-theme",
+    "version": "2021.10.03",
+    "description": "Fluent is a Fluent design theme for GNOME/GTK based desktop environments",
+    "homepage": "https://github.com/vinceliuice/Fluent-gtk-theme",
+    "depends": ["gtk3"],
+    "srcurl": "https://github.com/vinceliuice/Fluent-gtk-theme/archive/refs/tags/2021-10-03.tar.gz",
+    "maintainer": "@Yisus7u7 <jesuspixel5@gmail.com>"
+  },
+  {
+    "name": "fluent-icon-theme",
+    "version": "2021.10.07",
+    "description": "Fluent icon theme for linux desktops",
+    "homepage": "https://github.com/vinceliuice/Fluent-icon-theme",
+    "depends": ["hicolor-icon-theme"],
+    "srcurl": "https://github.com/vinceliuice/Fluent-icon-theme/archive/2021-10-07.tar.gz",
+    "maintainer": "@Yisus7u7 <jesuspixel5@gmail.com>"
   },
   {
     "name": "fluxbox",
@@ -10420,8 +10457,8 @@
     "name": "gl4es",
     "version": "1.1.4",
     "description": "OpenGL driver for GLES devices",
-    "homepage": "http://ptitseb.github.io/gl4es/",
-    "depends": ["libandroid-shmem", "libexpat", "libdrm", "libx11", "libxdamage", "libxext", "libxml2", "libxshmfence", "zlib"],
+    "homepage": "https://ptitseb.github.io/gl4es/",
+    "depends": ["libx11"],
     "srcurl": "https://github.com/ptitSeb/gl4es.git",
     "maintainer": "@suhan-paradkar"
   },
@@ -10432,15 +10469,6 @@
     "homepage": "https://glade.gnome.org/",
     "depends": ["atk", "fontconfig", "freetype", "gdk-pixbuf", "glib", "gtk3", "libcairo", "libxml2", "pango", "xsltproc", "libglade"],
     "srcurl": "https://github.com/GNOME/glade/archive/refs/tags/GLADE_3_38_2.tar.gz",
-    "maintainer": "@termux"
-  },
-  {
-    "name": "glew",
-    "version": "2.2.0",
-    "description": "The OpenGL Extension Wrangler Library",
-    "homepage": "http://glew.sourceforge.net/",
-    "depends": ["glu", "libxi", "libxmu"],
-    "srcurl": "https://downloads.sourceforge.net/glew/glew-2.2.0.tgz",
     "maintainer": "@termux"
   },
   {
@@ -10569,42 +10597,6 @@
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
-    "name": "kauth",
-    "version": "5.71.0",
-    "description": "Framework which lets applications perform actions as a privileged user (KDE)",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase", "kcoreaddons"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kauth-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "kcodecs",
-    "version": "5.71.0",
-    "description": "Method collection to manipulate strings using various encodings (KDE)",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kcodecs-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "kconfig",
-    "version": "5.71.0",
-    "description": "Advanced configuration system (KDE)",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kconfig-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "kcoreaddons",
-    "version": "5.71.0",
-    "description": "Utilities for core application functionality and accessing the OS (KDE)",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase", "shared-mime-info"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kcoreaddons-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
     "name": "keepassxc",
     "version": "2.6.6",
     "description": "Cross-platform community-driven port of Keepass password manager",
@@ -10612,15 +10604,6 @@
     "depends": ["argon2", "libcurl", "libgcrypt", "libqrencode", "libsodium", "libxtst", "qt5-qtbase", "qt5-qtsvg", "qt5-qtx11extras"],
     "srcurl": "https://github.com/keepassxreboot/keepassxc/releases/download/2.6.6/keepassxc-2.6.6-src.tar.xz",
     "maintainer": "@termux"
-  },
-  {
-    "name": "kguiaddons",
-    "version": "5.71.0",
-    "description": "The KDE GUI Add-ons",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase", "qt5-qtx11extras"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
     "name": "ki18n",
@@ -10641,48 +10624,12 @@
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
-    "name": "kitemmodels",
-    "version": "5.71.0",
-    "description": "Set of item models extending the Qt model-view framework (KDE)",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kitemmodels-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "kitemviews",
-    "version": "5.71.0",
-    "description": "Set of item views extending the Qt model-view framework (KDE)",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kitemviews-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
     "name": "kvantum",
     "version": "0.20.1",
     "description": "SVG-based theme engine for Qt5",
     "homepage": "https://github.com/tsujan/Kvantum",
     "depends": ["qt5-qtbase", "qt5-qtx11extras", "qt5-qtsvg", "kwindowsystem"],
     "srcurl": "https://github.com/tsujan/Kvantum/releases/download/V0.20.1/Kvantum-0.20.1.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "kwidgetsaddons",
-    "version": "5.71.0",
-    "description": "Large set of desktop Qt widgets (KDE)",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kwidgetsaddons-5.71.0.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "kwindowsystem",
-    "version": "5.71.0",
-    "description": "KDE Access to window manager",
-    "homepage": "https://www.kde.org/",
-    "depends": ["qt5-qtbase", "qt5-qtx11extras"],
-    "srcurl": "http://download.kde.org/stable/frameworks/5.71/-5.71.0.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
@@ -11283,7 +11230,7 @@
     "version": "1.25.0",
     "description": "mate-menus contains the libmate-menu library, the layout configuration",
     "homepage": "https://mate-menus.mate-desktop.dev/",
-    "depends": [],
+    "depends": ["glib"],
     "srcurl": "https://github.com/mate-desktop/mate-menus/releases/download/v1.25.0/mate-menus-1.25.0.tar.xz",
     "maintainer": "Termux members @termux"
   },
@@ -11340,15 +11287,6 @@
     "depends": ["libandroid-shmem", "libexpat", "libdrm", "libx11", "libxdamage", "libxext", "libxml2", "libxshmfence", "zlib"],
     "srcurl": "https://mesa.freedesktop.org/archive/older-versions/17.x/mesa-17.3.9.tar.xz",
     "maintainer": "@termux"
-  },
-  {
-    "name": "mesa-demos",
-    "version": "8.4.0",
-    "description": "OpenGL demonstration and test programs",
-    "homepage": "https://www.mesa3d.org",
-    "depends": ["libx11", "mesa", "libdrm", "freetype", "libxext", "glew", "freeglut"],
-    "srcurl": "https://archive.mesa3d.org//demos/mesa-demos-8.4.0.tar.bz2",
-    "maintainer": "Rafael Kitover <rkitover@gmail.com>"
   },
   {
     "name": "mpv-x",
@@ -11459,15 +11397,6 @@
     "maintainer": "@termux"
   },
   {
-    "name": "otter-browser",
-    "version": "1.0.02",
-    "description": "Web browser with aspects of Opera (12.x)",
-    "homepage": "https://otter-browser.org",
-    "depends": ["qt5-qtbase", "qt5-qtsvg", "qt5-qtxmlpatterns", "qt5-qtwebkit", "qt5-qtmultimedia", "hunspell"],
-    "srcurl": "https://github.com/OtterBrowser/otter-browser/archive/refs/tags/v1.0.02.tar.gz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
     "name": "papirus-icon-theme",
     "version": "20210802",
     "description": "Papirus is a free and open source icon theme, based on Paper Icon Set",
@@ -11502,6 +11431,15 @@
     "depends": ["qt5-qtbase", "qt5-qtx11extras", "libfm-qt", "liblxqt", "lxmenu-data"],
     "srcurl": "https://github.com/lxqt/pcmanfm-qt/releases/download/0.17.0/pcmanfm-qt-0.17.0.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
+    "name": "picom",
+    "version": "8.2",
+    "description": "A lightweight compositor for X11",
+    "homepage": "https://github.com/yshui/picom",
+    "depends": ["libx11", "libxcb", "xcb-util", "xcb-util-image", "xcb-util-renderutil", "libxext", "xorgproto", "libpixman", "dbus", "libconfig", "mesa", "pcre", "libev", "uthash"],
+    "srcurl": "https://github.com/yshui/picom/archive/refs/tags/v8.2.tar.gz",
+    "maintainer": "Rafael Kitover <rkitover@gmail.com>"
   },
   {
     "name": "pidgin",
@@ -11580,7 +11518,7 @@
     "version": "1:6.1.0",
     "description": "A generic and open source machine emulator and virtualizer",
     "homepage": "https://www.qemu.org",
-    "depends": ["glib", "libbz2", "libc++", "libcurl", "libgnutls", "libiconv", "libjpeg-turbo", "liblzo", "libnettle", "libnfs", "libpixman", "libpng", "libspice-server", "libssh", "libusb", "libusbredir", "libx11", "ncurses", "qemu-common", "resolv-conf", "sdl2", "sdl2-image", "zlib", "zstd"],
+    "depends": ["glib", "gtk3", "libbz2", "libc++", "libcurl", "libgnutls", "libiconv", "libjpeg-turbo", "liblzo", "libnettle", "libnfs", "libpixman", "libpng", "libspice-server", "libssh", "libusb", "libusbredir", "libx11", "ncurses", "pulseaudio", "qemu-common", "resolv-conf", "sdl2", "sdl2-image", "zlib", "zstd"],
     "srcurl": "https://download.qemu.org/qemu-6.1.0.tar.xz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
@@ -11600,15 +11538,6 @@
     "homepage": "https://riverbankcomputing.com/software/qscintilla",
     "depends": ["qt5-qtbase"],
     "srcurl": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.12.1/QScintilla_src-2.12.1.tar.gz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "qt-creator",
-    "version": "4.12.4",
-    "description": "Integrated Development Environment for Qt",
-    "homepage": "https://www.qt.io/",
-    "depends": ["qt5-qtbase", "qt5-qtdeclarative", "qt5-qtxmlpatterns", "qt5-qttools", "qt5-qtx11extras", "qt5-qtsvg", "llvm", "clang"],
-    "srcurl": "https://github.com/qt-creator/qt-creator/archive/refs/tags/v4.12.4.tar.gz",
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
@@ -11699,15 +11628,6 @@
     "homepage": "https://www.qt.io/",
     "depends": ["qt5-qtbase", "qt5-qtdeclarative", "qt5-qtwebsockets"],
     "srcurl": "https://download.qt.io/official_releases/qt/5.12/5.12.11/submodules/qtwebchannel-everywhere-src-5.12.11.tar.xz",
-    "maintainer": "Simeon Huang <symeon@librehat.com>"
-  },
-  {
-    "name": "qt5-qtwebkit",
-    "version": "5.212.0-alpha4",
-    "description": "Qt 5 WebKit Library",
-    "homepage": "https://github.com/qtwebkit/qtwebkit",
-    "depends": ["qt5-qtbase", "qt5-qtdeclarative", "qt5-qtlocation", "qt5-qtmultimedia", "qt5-qtsensors", "zlib", "libxslt", "libxcomposite", "libhyphen", "libwebp"],
-    "srcurl": "https://github.com/qtwebkit/qtwebkit/releases/download/qtwebkit-5.212.0-alpha4/qtwebkit-5.212.0-alpha4.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
@@ -12035,20 +11955,11 @@
   },
   {
     "name": "vim-gtk",
-    "version": "8.2.3300",
+    "version": "8.2.3500",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": ["gdk-pixbuf", "glib", "gtk3", "libcairo", "libcanberra", "libice", "libiconv", "liblua53", "libsm", "libx11", "libxpm", "libxt", "ncurses", "pango", "python"],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3300.tar.gz",
-    "maintainer": "@termux"
-  },
-  {
-    "name": "webkit2gtk",
-    "version": "2.32.3",
-    "description": "A full-featured port of the WebKit rendering engine",
-    "homepage": "https://webkitgtk.org",
-    "depends": ["enchant", "gst-plugins-base", "gstreamer", "gtk3", "libcairo", "libgcrypt", "libhyphen", "libicu", "libnotify", "libsoup", "libtasn1", "libwebp", "libxslt", "libxt", "openjpeg", "woff2"],
-    "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.32.3.tar.xz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.3500.tar.gz",
     "maintainer": "@termux"
   },
   {
