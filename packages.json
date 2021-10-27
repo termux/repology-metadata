@@ -2547,11 +2547,11 @@
   },
   {
     "name": "git-delta",
-    "version": "0.8.3",
+    "version": "0.9.0",
     "description": "A syntax-highlighter for git and diff output",
     "homepage": "https://github.com/dandavison/delta",
     "depends": ["git"],
-    "srcurl": "https://github.com/dandavison/delta/archive/0.8.3.tar.gz",
+    "srcurl": "https://github.com/dandavison/delta/archive/0.9.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3579,11 +3579,11 @@
   },
   {
     "name": "keybase",
-    "version": "5.6.1",
+    "version": "5.8.1",
     "description": "Key directory that maps social media identities to encryption keys",
     "homepage": "https://keybase.io",
     "depends": [],
-    "srcurl": "https://github.com/keybase/client/archive/v5.6.1.tar.gz",
+    "srcurl": "https://github.com/keybase/client/archive/v5.8.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -10597,6 +10597,42 @@
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
+    "name": "kauth",
+    "version": "5.71.0",
+    "description": "Framework which lets applications perform actions as a privileged user (KDE)",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase", "kcoreaddons"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kauth-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
+    "name": "kcodecs",
+    "version": "5.71.0",
+    "description": "Method collection to manipulate strings using various encodings (KDE)",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kcodecs-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
+    "name": "kconfig",
+    "version": "5.71.0",
+    "description": "Advanced configuration system (KDE)",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kconfig-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
+    "name": "kcoreaddons",
+    "version": "5.71.0",
+    "description": "Utilities for core application functionality and accessing the OS (KDE)",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase", "shared-mime-info"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kcoreaddons-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
     "name": "keepassxc",
     "version": "2.6.6",
     "description": "Cross-platform community-driven port of Keepass password manager",
@@ -10604,6 +10640,15 @@
     "depends": ["argon2", "libcurl", "libgcrypt", "libqrencode", "libsodium", "libxtst", "qt5-qtbase", "qt5-qtsvg", "qt5-qtx11extras"],
     "srcurl": "https://github.com/keepassxreboot/keepassxc/releases/download/2.6.6/keepassxc-2.6.6-src.tar.xz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "kguiaddons",
+    "version": "5.71.0",
+    "description": "The KDE GUI Add-ons",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase", "qt5-qtx11extras"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
     "name": "ki18n",
@@ -10624,12 +10669,48 @@
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
+    "name": "kitemmodels",
+    "version": "5.71.0",
+    "description": "Set of item models extending the Qt model-view framework (KDE)",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kitemmodels-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
+    "name": "kitemviews",
+    "version": "5.71.0",
+    "description": "Set of item views extending the Qt model-view framework (KDE)",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kitemviews-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
     "name": "kvantum",
     "version": "0.20.1",
     "description": "SVG-based theme engine for Qt5",
     "homepage": "https://github.com/tsujan/Kvantum",
     "depends": ["qt5-qtbase", "qt5-qtx11extras", "qt5-qtsvg", "kwindowsystem"],
     "srcurl": "https://github.com/tsujan/Kvantum/releases/download/V0.20.1/Kvantum-0.20.1.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
+    "name": "kwidgetsaddons",
+    "version": "5.71.0",
+    "description": "Large set of desktop Qt widgets (KDE)",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/kwidgetsaddons-5.71.0.tar.xz",
+    "maintainer": "Simeon Huang <symeon@librehat.com>"
+  },
+  {
+    "name": "kwindowsystem",
+    "version": "5.71.0",
+    "description": "KDE Access to window manager",
+    "homepage": "https://www.kde.org/",
+    "depends": ["qt5-qtbase", "qt5-qtx11extras"],
+    "srcurl": "http://download.kde.org/stable/frameworks/5.71/-5.71.0.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>"
   },
   {
