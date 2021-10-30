@@ -369,11 +369,11 @@
   },
   {
     "name": "android-tools",
-    "version": "31.0.2",
+    "version": "31.0.3",
     "description": "Android platform tools",
     "homepage": "https://developer.android.com/",
     "depends": ["libc++", "libusb", "pcre2", "googletest", "libprotobuf", "brotli", "zstd", "liblz4"],
-    "srcurl": "https://github.com/nmeum/android-tools/releases/download/31.0.2/android-tools-31.0.2.tar.xz",
+    "srcurl": "https://github.com/nmeum/android-tools/releases/download/31.0.3/android-tools-31.0.3.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -1301,11 +1301,11 @@
   },
   {
     "name": "cppcheck",
-    "version": "2.6",
+    "version": "2.6.1",
     "description": "tool for static C/C++ code analysis",
     "homepage": "https://github.com/danmar/cppcheck",
     "depends": [],
-    "srcurl": "https://github.com/danmar/cppcheck/archive/2.6.tar.gz",
+    "srcurl": "https://github.com/danmar/cppcheck/archive/2.6.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1506,11 +1506,11 @@
   },
   {
     "name": "debianutils",
-    "version": "4.11.2",
+    "version": "5.5",
     "description": "Small utilities which are used primarily by the installation scripts of Debian packages",
     "homepage": "https://packages.debian.org/debianutils",
     "depends": [],
-    "srcurl": "http://ftp.debian.org/debian/pool/main/d/debianutils/debianutils_4.11.2.tar.xz",
+    "srcurl": "http://ftp.debian.org/debian/pool/main/d/debianutils/debianutils_5.5.orig.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -1972,11 +1972,11 @@
   },
   {
     "name": "et",
-    "version": "6.0.13",
+    "version": "6.1.8",
     "description": "A remote shell that automatically reconnects without interrupting the session",
     "homepage": "https://eternalterminal.dev",
-    "depends": ["libc++", "protobuf", "libsodium"],
-    "srcurl": "https://github.com/MisterTea/EternalTerminal/archive/et-v6.0.13.tar.gz",
+    "depends": ["libc++", "protobuf", "libsodium", "openssl"],
+    "srcurl": "https://github.com/MisterTea/EternalTerminal/archive/et-v6.1.8.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2098,11 +2098,11 @@
   },
   {
     "name": "ffmpeg",
-    "version": "4.4",
+    "version": "4.4.1",
     "description": "Tools and libraries to manipulate a wide range of multimedia formats and protocols",
     "homepage": "https://ffmpeg.org",
     "depends": ["libaom", "libass", "libbz2", "libdav1d", "libiconv", "librav1e", "libsoxr", "libx264", "libx265", "xvidcore", "libvorbis", "libmp3lame", "libopus", "libvpx", "libgnutls", "libandroid-glob", "freetype", "zlib", "liblzma", "libvidstab", "libwebp"],
-    "srcurl": "https://www.ffmpeg.org/releases/ffmpeg-4.4.tar.xz",
+    "srcurl": "https://www.ffmpeg.org/releases/ffmpeg-4.4.1.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -5824,11 +5824,11 @@
   },
   {
     "name": "mailutils",
-    "version": "3.12",
+    "version": "3.13",
     "description": "Mailutils is a swiss army knife of electronic mail handling. ",
     "homepage": "https://mailutils.org/",
     "depends": [],
-    "srcurl": "https://ftp.gnu.org/gnu/mailutils/mailutils-3.12.tar.xz",
+    "srcurl": "https://ftp.gnu.org/gnu/mailutils/mailutils-3.13.tar.xz",
     "maintainer": "@suhan-paradkar"
   },
   {
@@ -6491,7 +6491,7 @@
     "version": "4.3",
     "description": "Free, fast, friendly file browser",
     "homepage": "https://github.com/jarun/nnn",
-    "depends": ["debianutils", "file", "findutils", "readline", "wget", "libandroid-support", "lzip"],
+    "depends": ["file", "findutils", "readline", "wget", "libandroid-support", "lzip"],
     "srcurl": "https://github.com/jarun/nnn/archive/v4.3.tar.gz",
     "maintainer": "@termux"
   },
@@ -6820,11 +6820,11 @@
   },
   {
     "name": "parallel",
-    "version": "20210922",
+    "version": "20211022",
     "description": "GNU Parallel is a shell tool for executing jobs in parallel using one or more machines",
     "homepage": "https://www.gnu.org/software/parallel/",
     "depends": ["perl"],
-    "srcurl": "https://mirrors.kernel.org/gnu/parallel/parallel-20210922.tar.bz2",
+    "srcurl": "https://mirrors.kernel.org/gnu/parallel/parallel-20211022.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -7184,7 +7184,7 @@
     "description": "Emulate chroot, bind mount and binfmt_misc for non-root users",
     "homepage": "https://proot-me.github.io/",
     "depends": ["libtalloc"],
-    "srcurl": "https://github.com/termux/proot/archive/b56071ff3f849ee1e7981e1088e6b3f3375e04e4.zip",
+    "srcurl": "https://github.com/termux/proot/archive/4d830472ef89e8ef6245140e26fa934f71b0aa47.zip",
     "maintainer": "Michal Bednarski @michalbednarski"
   },
   {
@@ -7198,10 +7198,10 @@
   },
   {
     "name": "proton-bridge",
-    "version": "1.5.7",
+    "version": "1.8.10",
     "description": "ProtonMail Bridge application",
     "homepage": "https://github.com/ProtonMail/proton-bridge",
-    "depends": [],
+    "depends": ["libsecret"],
     "srcurl": "https://github.com/ProtonMail/proton-bridge.git",
     "maintainer": "Radomír Polách <rp@t4d.cz>"
   },
@@ -7852,11 +7852,11 @@
   },
   {
     "name": "sensible-utils",
-    "version": "0.0.14",
+    "version": "0.0.17",
     "description": "Small utilities used by programs to sensibly select and spawn an appropriate browser, editor, or pager",
     "homepage": "https://packages.debian.org/sid/sensible-utils",
     "depends": [],
-    "srcurl": "http://ftp.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.14.tar.xz",
+    "srcurl": "http://ftp.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.17.tar.xz",
     "maintainer": "@termux"
   },
   {
