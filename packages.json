@@ -9519,11 +9519,11 @@
   },
   {
     "name": "bettercap",
-    "version": "2.29",
+    "version": "2.32.0",
     "description": "The Swiss Army knife for 802.11, BLE and Ethernet networks reconnaissance and MITM attacks",
     "homepage": "https://www.bettercap.org",
-    "depends": ["libpcap", "libusb"],
-    "srcurl": "https://github.com/bettercap/bettercap/archive/v2.29.tar.gz",
+    "depends": ["libpcap", "libusb", "libnetfilter-queue"],
+    "srcurl": "https://github.com/bettercap/bettercap/archive/v2.32.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9714,6 +9714,15 @@
     "depends": [],
     "srcurl": "https://github.com/libfuse/libfuse/archive/fuse-3.10.3.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91"
+  },
+  {
+    "name": "libnetfilter-queue",
+    "version": "1.0.5",
+    "description": "libnetfilter_queue is a userspace library providing an API to packets that have been queued by the kernel packet filter.",
+    "homepage": "https://www.netfilter.org/projects/libnetfilter_queue/index.html",
+    "depends": ["libnfnetlink", "libmnl"],
+    "srcurl": "http://ftp.netfilter.org/pub/libnetfilter_queue/libnetfilter_queue-1.0.5.tar.bz2",
+    "maintainer": "@termux"
   },
   {
     "name": "libnfnetlink",
