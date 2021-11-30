@@ -1097,7 +1097,7 @@
     "version": "0.5.3",
     "description": "A Boulder Dash like game for consoles/terminals",
     "homepage": "https://github.com/AMDmi3/cavezofphear",
-    "depends": ["ncurses"],
+    "depends": ["libandroid-support", "ncurses"],
     "srcurl": "https://github.com/AMDmi3/cavezofphear/archive/refs/tags/0.5.3.tar.gz",
     "maintainer": "Dmitry Marakasov <amdmi3@amdmi3.ru>"
   },
@@ -1193,11 +1193,11 @@
   },
   {
     "name": "chezmoi",
-    "version": "2.9.0",
+    "version": "2.9.1",
     "description": "Manage your dotfiles across multiple machines",
     "homepage": "https://chezmoi.io",
     "depends": [],
-    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.9.0.tar.gz",
+    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.9.1.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91"
   },
   {
@@ -1644,7 +1644,7 @@
     "version": "1.3-20210621",
     "description": "Application used in shell scripts which displays text user interface widgets",
     "homepage": "https://invisible-island.net/dialog/",
-    "depends": ["ncurses"],
+    "depends": ["libandroid-support", "ncurses"],
     "srcurl": "https://fossies.org/linux/misc/dialog-1.3-20210621.tgz",
     "maintainer": "@termux"
   },
@@ -2368,11 +2368,11 @@
   },
   {
     "name": "fossil",
-    "version": "2.16",
+    "version": "2.17",
     "description": "DSCM with built-in wiki, http interface and server, tickets database",
     "homepage": "https://www.fossil-scm.org",
     "depends": ["libsqlite", "openssl", "zlib"],
-    "srcurl": "https://www.fossil-scm.org/home/tarball/version-2.16/fossil-src-2.16.tar.gz",
+    "srcurl": "https://www.fossil-scm.org/home/tarball/version-2.17/fossil-src-2.17.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2656,11 +2656,11 @@
   },
   {
     "name": "git",
-    "version": "2.34.0",
+    "version": "2.34.1",
     "description": "Fast, scalable, distributed revision control system",
     "homepage": "https://git-scm.com/",
     "depends": ["libcurl", "libiconv", "less", "openssl", "pcre2", "zlib"],
-    "srcurl": "https://www.kernel.org/pub/software/scm/git/git-2.34.0.tar.xz",
+    "srcurl": "https://www.kernel.org/pub/software/scm/git/git-2.34.1.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -5348,20 +5348,20 @@
   },
   {
     "name": "libsqlite",
-    "version": "3.36.0",
+    "version": "3.37.0",
     "description": "Library implementing a self-contained and transactional SQL database engine",
     "homepage": "https://www.sqlite.org",
     "depends": ["zlib"],
-    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz",
+    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3370000.tar.gz",
     "maintainer": "@termux"
   },
   {
     "name": "libsqlite-tcl",
-    "version": "3.36.0",
+    "version": "3.37.0",
     "description": "tcl bindings for SQLite",
     "homepage": "https://www.sqlite.org",
     "depends": ["libsqlite", "tcl"],
-    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz",
+    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3370000.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -6170,7 +6170,7 @@
     "version": "1.0.15",
     "description": "Command-line based markdown presentation tool",
     "homepage": "https://github.com/visit1985/mdp",
-    "depends": ["ncurses"],
+    "depends": ["libandroid-support", "ncurses"],
     "srcurl": "https://github.com/visit1985/mdp/archive/1.0.15.tar.gz",
     "maintainer": "@termux"
   },
@@ -9270,11 +9270,11 @@
   },
   {
     "name": "unrar",
-    "version": "6.0.7",
+    "version": "6.1.2",
     "description": "Tool for extracting files from .rar archives",
     "homepage": "https://www.rarlab.com/",
     "depends": ["libandroid-support", "libc++"],
-    "srcurl": "https://www.rarlab.com/rar/unrarsrc-6.0.7.tar.gz",
+    "srcurl": "https://www.rarlab.com/rar/unrarsrc-6.1.2.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9342,11 +9342,11 @@
   },
   {
     "name": "util-linux",
-    "version": "2.37",
+    "version": "2.37.2",
     "description": "Miscellaneous system utilities",
     "homepage": "https://en.wikipedia.org/wiki/Util-linux",
     "depends": ["ncurses", "libcrypt", "zlib"],
-    "srcurl": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.tar.xz",
+    "srcurl": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -9423,20 +9423,20 @@
   },
   {
     "name": "vim",
-    "version": "8.2.3500",
+    "version": "8.2.3700",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": ["libiconv", "ncurses", "vim-runtime"],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3500.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.3700.tar.gz",
     "maintainer": "@termux"
   },
   {
     "name": "vim-python",
-    "version": "8.2.3500",
+    "version": "8.2.3700",
     "description": "Vi IMproved - enhanced vi editor - with python support",
     "homepage": "https://www.vim.org",
     "depends": ["libiconv", "ncurses", "vim-runtime", "python"],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3500.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.3700.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -12613,11 +12613,11 @@
   },
   {
     "name": "vim-gtk",
-    "version": "8.2.3500",
+    "version": "8.2.3700",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": ["gdk-pixbuf", "glib", "gtk3", "libcairo", "libcanberra", "libice", "libiconv", "liblua53", "libsm", "libx11", "libxpm", "libxt", "ncurses", "pango", "python"],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3500.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.3700.tar.gz",
     "maintainer": "@termux"
   },
   {
