@@ -381,7 +381,7 @@
     "version": "2.25",
     "description": "Fast, easy to use email client",
     "homepage": "http://alpine.x10host.com/",
-    "depends": ["libcrypt", "ncurses", "openssl-tool"],
+    "depends": ["coreutils", "libcrypt", "ncurses", "openssl-tool"],
     "srcurl": "http://alpine.x10host.com/alpine/release/src/alpine-2.25.tar.xz",
     "maintainer": "@termux"
   },
@@ -446,6 +446,15 @@
     "homepage": "https://httpd.apache.org",
     "depends": ["apr", "apr-util", "pcre", "openssl", "libcrypt", "libandroid-support", "libnghttp2", "libexpat", "libuuid", "zlib"],
     "srcurl": "https://www.apache.org/dist/httpd/httpd-2.4.51.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "apkeep",
+    "version": "0.7.0",
+    "description": "A command-line tool for downloading APK files from various sources",
+    "homepage": "https://github.com/EFForg/apkeep",
+    "depends": ["openssl"],
+    "srcurl": "https://github.com/EFForg/apkeep/archive/refs/tags/0.7.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1165,6 +1174,15 @@
     "maintainer": "@craigcomstock"
   },
   {
+    "name": "cgal",
+    "version": "5.3",
+    "description": "Computational Geometry Algorithms Library",
+    "homepage": "https://www.cgal.org/",
+    "depends": ["boost", "libc++", "libgmp", "libmpfr", "zlib"],
+    "srcurl": "https://github.com/CGAL/cgal/releases/download/v5.3/CGAL-5.3.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "cgdb",
     "version": "0.7.1",
     "description": "A lightweight curses (terminal-based) interface to the GNU Debugger (GDB)",
@@ -1828,11 +1846,11 @@
   },
   {
     "name": "double-conversion",
-    "version": "3.1.5",
+    "version": "3.1.6",
     "description": "Binary-decimal and decimal-binary routines for IEEE doubles",
     "homepage": "https://github.com/google/double-conversion",
     "depends": [],
-    "srcurl": "https://github.com/google/double-conversion/archive/v3.1.5.tar.gz",
+    "srcurl": "https://github.com/google/double-conversion/archive/v3.1.6.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1977,6 +1995,15 @@
     "homepage": "https://edbrowse.org/",
     "depends": ["libandroid-glob", "libcurl", "pcre2", "readline", "tidy"],
     "srcurl": "https://github.com/CMB/edbrowse/archive/refs/tags/v3.8.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "eigen",
+    "version": "3.3.9",
+    "description": "Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms",
+    "homepage": "http://eigen.tuxfamily.org",
+    "depends": [],
+    "srcurl": "https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2475,6 +2502,15 @@
     "maintainer": "Krishna Kanhaiya @kcubeterm"
   },
   {
+    "name": "gap",
+    "version": "4.11.1",
+    "description": "GAP is a system for computational discrete algebra, with particular emphasis on Computational Group Theory",
+    "homepage": "https://www.gap-system.org/",
+    "depends": ["readline", "libgmp", "zlib"],
+    "srcurl": "https://github.com/gap-system/gap/releases/download/v4.11.1/gap-4.11.1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "gatling",
     "version": "0.15",
     "description": "A high performance http, ftp and smb server",
@@ -2508,6 +2544,15 @@
     "homepage": "https://www.gnu.org/software/gcal/",
     "depends": ["ncurses"],
     "srcurl": "https://mirrors.kernel.org/gnu/gcal/gcal-4.1.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "gdal",
+    "version": "3.3.2",
+    "description": "A translator library for raster and vector geospatial data formats",
+    "homepage": "https://gdal.org",
+    "depends": ["libc++", "openjpeg", "libcurl", "libtiff", "libpng", "proj", "libiconv", "libsqlite", "libgeos", "libspatialite", "libexpat", "postgresql", "netcdf-c"],
+    "srcurl": "https://download.osgeo.org/gdal/3.3.2/gdal-3.3.2.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -2754,6 +2799,15 @@
     "maintainer": "@charmbracelet"
   },
   {
+    "name": "glpk",
+    "version": "5.0",
+    "description": "GNU Linear Programming Kit: solve LP, MIP and other problems",
+    "homepage": "https://www.gnu.org/software/glpk/",
+    "depends": ["libgmp"],
+    "srcurl": "https://ftp.gnu.org/gnu/glpk/glpk-5.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "glulxe",
     "version": "0.5.4",
     "description": "Interpreter for the Glulx portable VM for interactive fiction (IF) games",
@@ -2778,6 +2832,15 @@
     "homepage": "https://gn.googlesource.com/gn",
     "depends": [],
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>"
+  },
+  {
+    "name": "gnucap",
+    "version": "20210107",
+    "description": "The Gnu Circuit Analysis Package",
+    "homepage": "https://www.gnu.org/software/gnucap/gnucap.html",
+    "depends": ["libc++", "readline"],
+    "srcurl": "https://gitlab.com/gnucap/gnucap/-/archive/20210107/gnucap-20210107.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
   },
   {
     "name": "gnuchess",
@@ -4420,6 +4483,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libfreexl",
+    "version": "1.0.6",
+    "description": "Library to extract valid data from within an Excel (.xls) spreadsheet",
+    "homepage": "https://www.gaia-gis.it/fossil/freexl",
+    "depends": ["libiconv"],
+    "srcurl": "https://www.gaia-gis.it/gaia-sins/freexl-1.0.6.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libgc",
     "version": "8.0.6",
     "description": "Library providing the Boehm-Demers-Weiser conservative garbage collector",
@@ -4445,6 +4517,15 @@
     "depends": ["freetype", "fontconfig", "libiconv", "libjpeg-turbo", "libpng", "libtiff", "libwebp", "zlib"],
     "srcurl": "https://github.com/libgd/libgd/releases/download/gd-2.3.3/libgd-2.3.3.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "libgeos",
+    "version": "3.10.1",
+    "description": "Geometry Engine, C++ port of the Java Topology Suite",
+    "homepage": "https://geos.osgeo.org/",
+    "depends": ["libc++"],
+    "srcurl": "https://github.com/libgeos/geos/archive/3.10.1.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
   },
   {
     "name": "libgfshare",
@@ -4525,6 +4606,15 @@
     "homepage": "https://www.gnu.org/software/gsasl",
     "depends": ["libidn"],
     "srcurl": "https://ftp.gnu.org/gnu/gsasl/libgsasl-1.10.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libhdf5",
+    "version": "1.12.0",
+    "description": "Hierarchical Data Format 5 (HDF5)",
+    "homepage": "https://portal.hdfgroup.org/display/support",
+    "depends": ["libc++", "libzopfli", "zlib"],
+    "srcurl": "https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.12/hdf5-1.12.0/src/hdf5-1.12.0.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -5050,6 +5140,24 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libosmium",
+    "version": "2.17.0",
+    "description": "Library for reading from and writing to OSM files in XML and PBF formats",
+    "homepage": "https://osmcode.org/libosmium/",
+    "depends": ["libprotobuf", "libosmpbf", "libprotozero", "libexpat", "zlib", "libbz2", "boost", "gdal", "proj", "liblz4"],
+    "srcurl": "https://github.com/osmcode/libosmium/archive/v2.17.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libosmpbf",
+    "version": "1.5.0",
+    "description": "osmpbf is a Java/C library to read and write OpenStreetMap PBF files",
+    "homepage": "https://github.com/openstreetmap/OSM-binary/",
+    "depends": ["libprotobuf"],
+    "srcurl": "https://github.com/openstreetmap/OSM-binary/archive/v1.5.0.zip",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libotr",
     "version": "4.1.1",
     "description": "Off-the-Record (OTR) Messaging allows you to have private conversations over instant messaging by providing: Encryption, Authentication, Deniability, Perfect forward secrecy",
@@ -5140,6 +5248,15 @@
     "maintainer": "Henrik Grimler @Grimler91"
   },
   {
+    "name": "libprotozero",
+    "version": "1.7.0",
+    "description": "Minimalistic protocol buffer decoder and encoder in C++",
+    "homepage": "https://github.com/mapbox/protozero",
+    "depends": [],
+    "srcurl": "https://github.com/mapbox/protozero/archive/v1.7.0.zip",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libpsl",
     "version": "0.21.1",
     "description": "Public Suffix List library",
@@ -5200,6 +5317,15 @@
     "homepage": "https://github.com/librsync/librsync",
     "depends": ["libbz2"],
     "srcurl": "https://github.com/librsync/librsync/archive/v2.3.2.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "librttopo",
+    "version": "1.1.0",
+    "description": "The RT Topology Library exposes an API to create and manage standard topologies",
+    "homepage": "https://git.osgeo.org/gitea/rttopo/librttopo",
+    "depends": ["libgeos", "proj"],
+    "srcurl": "https://git.osgeo.org/gitea/rttopo/librttopo/archive/librttopo-1.1.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5326,6 +5452,15 @@
     "homepage": "https://sourceforge.net/projects/soxr/",
     "depends": [],
     "srcurl": "https://sourceforge.net/projects/soxr/files/soxr-0.1.3-Source.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libspatialite",
+    "version": "5.0.1",
+    "description": "SQLite extension to support spatial data types and operations",
+    "homepage": "https://www.gaia-gis.it/fossil/libspatialite",
+    "depends": ["libgeos", "proj", "libfreexl", "libsqlite", "libxml2", "librttopo"],
+    "srcurl": "https://www.gaia-gis.it/gaia-sins/libspatialite-5.0.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -6103,6 +6238,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "mapserver",
+    "version": "7.6.4",
+    "description": "MapServer is CGI-based platform for publishing spatial data and interactive mapping applications to the web",
+    "homepage": "https://mapserver.org/",
+    "depends": ["libc++", "libiconv", "freetype", "libcurl", "libcairo", "libxml2", "openjpeg", "proj", "gdal", "libprotobuf-c"],
+    "srcurl": "https://download.osgeo.org/mapserver/mapserver-7.6.4.tar.gz",
+    "maintainer": "Bjoern Schilberg @BjoernSchilberg"
+  },
+  {
     "name": "mariadb",
     "version": "2:10.6.4",
     "description": "A drop-in replacement for mysql server",
@@ -6686,6 +6830,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "netcdf-c",
+    "version": "4.8.0",
+    "description": "NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data",
+    "homepage": "https://www.unidata.ucar.edu/software/netcdf/",
+    "depends": ["libcurl", "openssl", "libnghttp2"],
+    "srcurl": "https://github.com/Unidata/netcdf-c/archive/v4.8.0.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
+  },
+  {
     "name": "nethack",
     "version": "3.6.6",
     "description": "Dungeon crawl game",
@@ -7001,6 +7154,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "openbabel",
+    "version": "3.1.1",
+    "description": "Open Babel is a chemical toolbox designed to speak the many languages of chemical data",
+    "homepage": "http://openbabel.org/wiki/Main_Page",
+    "depends": ["libc++", "libcairo", "libxml2", "eigen", "boost"],
+    "srcurl": "https://github.com/openbabel/openbabel/archive/openbabel-3-1-1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "opencl-headers",
     "version": "2021.06.30",
     "description": "Khronos OpenCL-Headers",
@@ -7017,6 +7179,15 @@
     "depends": [],
     "srcurl": "https://github.com/openethereum/openethereum/archive/v3.3.0-rc.10.zip",
     "maintainer": "@termux"
+  },
+  {
+    "name": "openfoam",
+    "version": "2106",
+    "description": "OpenFOAM is a CFD software written in C++",
+    "homepage": "https://www.openfoam.com",
+    "depends": ["openmpi", "flex", "boost", "cgal", "fftw", "readline", "libc++"],
+    "srcurl": "https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2106/openfoam-OpenFOAM-v2106.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
   },
   {
     "name": "openjdk-17",
@@ -7044,6 +7215,24 @@
     "depends": ["libsasl", "libuuid", "openssl"],
     "srcurl": "ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-2.5.4.tgz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
+  },
+  {
+    "name": "openmpi",
+    "version": "4.1.1",
+    "description": "Open source Message Passing Interface implementation",
+    "homepage": "https://www.open-mpi.org",
+    "depends": ["libandroid-shmem"],
+    "srcurl": "https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
+  },
+  {
+    "name": "openscad",
+    "version": "2019.05",
+    "description": "The programmers solid 3D CAD modeller (headless build)",
+    "homepage": "http://openscad.org/",
+    "depends": ["boost", "cgal", "double-conversion", "fontconfig", "harfbuzz", "libzip"],
+    "srcurl": "https://files.openscad.org/openscad-2019.05.src.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "openssh",
@@ -7088,6 +7277,33 @@
     "homepage": "https://www.opus-codec.org/",
     "depends": ["libopus", "libogg"],
     "srcurl": "https://github.com/xiph/opusfile/archive/v0.12.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "osm2pgsql",
+    "version": "1.5.0",
+    "description": "osm2pgsql imports OpenStreetMap (OSM) data into a PostgreSQL/PostGIS database",
+    "homepage": "https://osm2pgsql.org/",
+    "depends": ["libexpat", "proj", "bzip2", "zlib", "boost", "postgresql", "lua54"],
+    "srcurl": "https://github.com/openstreetmap/osm2pgsql/archive/1.5.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "osmctools",
+    "version": "0.9",
+    "description": "Simple tools for OpenStreetMap processing",
+    "homepage": "https://gitlab.com/osm-c-tools/osmctools",
+    "depends": ["zlib"],
+    "srcurl": "https://gitlab.com/osm-c-tools/osmctools/-/archive/0.9/osmctools-0.9.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "osmium-tool",
+    "version": "1.13.1",
+    "description": "A multipurpose command line tool based on the Osmium Library",
+    "homepage": "https://osmcode.org/osmium-tool/",
+    "depends": ["libosmium", "libprotozero", "boost", "libbz2", "zlib", "liblz4", "libexpat"],
+    "srcurl": "https://github.com/osmcode/osmium-tool/archive/v1.13.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7547,6 +7763,15 @@
     "depends": ["libandroid-wordexp", "ncurses"],
     "srcurl": "https://github.com/Xfennec/progress/archive/v0.16.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "proj",
+    "version": "8.1.1",
+    "description": "Generic coordinate transformation software",
+    "homepage": "https://proj.org",
+    "depends": ["libc++", "libsqlite", "sqlite", "libtiff", "libcurl"],
+    "srcurl": "https://github.com/OSGeo/proj.4/archive/8.1.1.tar.gz",
+    "maintainer": "Henrik Grimler @Grimler91"
   },
   {
     "name": "proot",
@@ -8141,14 +8366,6 @@
     "maintainer": "@termux"
   },
   {
-    "name": "science-repo",
-    "version": "2.0",
-    "description": "Package repository containing science software",
-    "homepage": "https://github.com/termux/science-packages",
-    "depends": ["termux-keyring"],
-    "maintainer": "Henrik Grimler @Grimler91"
-  },
-  {
     "name": "screen",
     "version": "4.8.0",
     "description": "Terminal multiplexer with VT100/ANSI terminal emulation",
@@ -8434,6 +8651,15 @@
     "homepage": "http://sox.sourceforge.net/",
     "depends": ["file", "libao", "libpng", "libmp3lame", "libvorbis", "libandroid-glob", "libflac", "libid3tag", "libmad", "pulseaudio", "opusfile", "libsndfile", "zlib"],
     "srcurl": "http://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "spatialite-tools",
+    "version": "5.0.1",
+    "description": "Collection of tools supporting SpatiaLite",
+    "homepage": "https://www.gaia-gis.it/fossil/spatialite-tools",
+    "depends": ["libgeos", "libexpat", "sqlite", "proj", "libspatialite"],
+    "srcurl": "https://www.gaia-gis.it/gaia-sins/spatialite-tools-5.0.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8902,7 +9128,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "0.151",
+    "version": "0.152",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.com/",
     "depends": ["bzip2", "coreutils", "curl", "dash", "diffutils", "findutils", "gawk", "grep", "gzip", "less", "procps", "psmisc", "sed", "tar", "termux-am", "termux-exec", "util-linux", "xz-utils", "dialog"],
@@ -8934,6 +9160,15 @@
     "depends": ["libiconv", "ncurses", "perl", "gawk"],
     "srcurl": "https://mirrors.kernel.org/gnu/texinfo/texinfo-6.8.tar.xz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "texlive",
+    "version": "20200406",
+    "description": "TeX Live is a distribution of the TeX typesetting system.",
+    "homepage": "https://www.tug.org/texlive/",
+    "depends": ["perl", "texlive-bin", "(>=", "20200406-4)"],
+    "srcurl": "ftp://ftp.tug.org/texlive/historic/2020/texlive-20200406-texmf.tar.xz",
+    "maintainer": "Henrik Grimler @Grimler91"
   },
   {
     "name": "texlive-bin",
@@ -10789,11 +11024,11 @@
   },
   {
     "name": "exo",
-    "version": "4.16.2",
+    "version": "4.17.1",
     "description": "Application library for XFCE",
     "homepage": "https://www.xfce.org/",
     "depends": ["hicolor-icon-theme", "libxfce4ui"],
-    "srcurl": "http://archive.xfce.org/src/xfce/exo/4.16/exo-4.16.2.tar.bz2",
+    "srcurl": "http://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.1.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -10831,6 +11066,15 @@
     "depends": ["imlib2", "libandroid-shmem", "libcurl", "libexif", "libpng", "libx11", "libxinerama"],
     "srcurl": "https://feh.finalrewind.org/feh-3.7.1.tar.bz2",
     "maintainer": "@termux"
+  },
+  {
+    "name": "file-roller",
+    "version": "3.40.0",
+    "description": "File Roller is an archive manager for the GNOME desktop environment.",
+    "homepage": "https://wiki.gnome.org/Apps/FileRoller",
+    "depends": ["bzip2", "desktop-file-utils", "cpio", "glib", "gtk3", "gzip", "libcairo", "lzip", "lzop", "p7zip", "tar", "unrar", "unzip", "xz-utils", "zip", "bsdtar", "zlib", "json-glib", "libnotify", "libarchive"],
+    "srcurl": "https://github.com/GNOME/file-roller/archive/refs/tags/3.40.0.tar.gz",
+    "maintainer": "Yisus7u7 <jesuspixel5@gmail.com>"
   },
   {
     "name": "florence",
@@ -11508,20 +11752,20 @@
   },
   {
     "name": "libxfce4ui",
-    "version": "4.16.0",
+    "version": "4.17.1",
     "description": "Commonly used XFCE widgets among XFCE applications",
     "homepage": "https://www.xfce.org/",
-    "depends": ["gtk2", "gtk3", "hicolor-icon-theme", "libsm", "libxfce4util", "startup-notification", "xfconf"],
-    "srcurl": "http://archive.xfce.org/src/xfce/libxfce4ui/4.16/libxfce4ui-4.16.0.tar.bz2",
+    "depends": ["gtk2", "gtk3", "hicolor-icon-theme", "libsm", "libxfce4util", "startup-notification", "xfconf", "glib"],
+    "srcurl": "http://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.1.tar.bz2",
     "maintainer": "@termux"
   },
   {
     "name": "libxfce4util",
-    "version": "4.16.0",
+    "version": "4.17.1",
     "description": "Basic utility non-GUI functions for XFCE",
     "homepage": "https://www.xfce.org/",
     "depends": ["glib"],
-    "srcurl": "http://archive.xfce.org/src/xfce/libxfce4util/4.16/libxfce4util-4.16.0.tar.bz2",
+    "srcurl": "http://archive.xfce.org/src/xfce/libxfce4util/4.17/libxfce4util-4.17.1.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -12362,11 +12606,11 @@
   },
   {
     "name": "ristretto",
-    "version": "0.11.0",
+    "version": "0.12.1",
     "description": "The Ristretto Image Viewer is an application that can be used to view, and scroll through images.",
     "homepage": "https://docs.xfce.org/apps/ristretto/start",
-    "depends": ["gtk3", "libexif", "libxfce4util", "libxfce4ui"],
-    "srcurl": "https://archive.xfce.org/src/apps/ristretto/0.10/ristretto-0.10.0.tar.bz2",
+    "depends": ["gtk3", "libexif", "libxfce4util", "libxfce4ui", "file"],
+    "srcurl": "https://archive.xfce.org/src/apps/ristretto/0.12/ristretto-0.12.1.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -12550,11 +12794,11 @@
   },
   {
     "name": "thunar",
-    "version": "4.16.6",
+    "version": "4.17.7",
     "description": "Modern file manager for XFCE environment",
     "homepage": "https://docs.xfce.org/xfce/thunar/start",
     "depends": ["desktop-file-utils", "exo", "hicolor-icon-theme", "libexif", "libnotify", "libpng", "libxfce4ui", "libxfce4util"],
-    "srcurl": "https://gitlab.xfce.org/xfce/thunar/-/archive/thunar-4.16.6/thunar-thunar-4.16.6.tar.gz",
+    "srcurl": "https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.7.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -12766,19 +13010,19 @@
   },
   {
     "name": "xfce4",
-    "version": "2.0",
+    "version": "2.1",
     "description": "A metapackage that installs all parts of the XFCE desktop environment",
     "homepage": "https://github.com/termux/x11-packages",
-    "depends": ["thunar", "xfce4-panel", "xfce4-session", "xfce4-settings", "xfconf", "xfwm4"],
+    "depends": ["thunar", "xfce4-panel", "xfce4-session", "xfce4-settings", "xfconf", "xfwm4", "xfce4-notifyd"],
     "maintainer": "@termux"
   },
   {
     "name": "xfce4-appfinder",
-    "version": "4.16.1",
+    "version": "4.17.0",
     "description": "Application launcher and finder",
     "homepage": "https://docs.xfce.org/xfce/xfce4-appfinder/start",
     "depends": ["glib", "gtk3", "libxfce4ui", "garcon"],
-    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-appfinder/4.16/xfce4-appfinder-4.16.1.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-appfinder/4.17/xfce4-appfinder-4.17.0.tar.bz2",
     "maintainer": "Termux members @termux"
   },
   {
@@ -12827,6 +13071,14 @@
     "maintainer": "Yisus7u7 <jesuspixel5@gmail.com>"
   },
   {
+    "name": "xfce4-goodies",
+    "version": "4.14.0",
+    "description": "this meta-package will install various utilities and programs for the XFCE desktop environment (incomplete!)",
+    "homepage": "https://goodies.xfce.org/",
+    "depends": ["xfce4-terminal", "xfce4-appfinder", "xfce4-calculator-plugin", "xfce4-clipman-plugin", "xfce4-datetime-plugin", "xfce4-dict", "xfce4-eyes-plugin", "xfce4-mailwatch-plugin", "xfce4-netload-plugin", "xfce4-notes-plugin", "xfce4-notifyd", "xfce4-panel-profiles", "xfce4-taskmanager", "xfce4-timer-plugin", "xfce4-wavelan-plugin", "xfce4-screenshooter", "xfce4-whiskermenu-plugin", "thunar-archive-plugin", "parole", "leafpad", "file-roller", "ristretto", "gigolo"],
+    "maintainer": "Yisus7u7 <jesuspixel5@gmail.com>"
+  },
+  {
     "name": "xfce4-mailwatch-plugin",
     "version": "1.3.0",
     "description": "Xfce4 Mailwatch Plugin is a multi-protocol, multi-mailbox mail watcher for the Xfce4 panel.",
@@ -12864,11 +13116,11 @@
   },
   {
     "name": "xfce4-panel",
-    "version": "4.15.2",
+    "version": "4.16.3",
     "description": "Panel for the XFCE environment",
     "homepage": "https://www.xfce.org/",
     "depends": ["desktop-file-utils", "exo", "hicolor-icon-theme", "garcon", "libwnck", "libxfce4ui", "xfconf"],
-    "srcurl": "http://archive.xfce.org/src/xfce/xfce4-panel/4.15/xfce4-panel-4.15.2.tar.bz2",
+    "srcurl": "http://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.3.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -12890,6 +13142,15 @@
     "maintainer": "Yisus7u7 <jesuspixel5@gmail.com>"
   },
   {
+    "name": "xfce4-screenshooter",
+    "version": "1.9.9",
+    "description": "The Xfce4-screenshooter is an application that can be used to take snapshots of your desktop screen.",
+    "homepage": "https://docs.xfce.org/apps/screenshooter/start",
+    "depends": ["exo", "libcairo", "gdk-pixbuf", "glib", "gtk3", "harfbuzz", "pango", "libsoup", "libxext", "libxfixes", "libxml2", "libsm", "libxfce4ui", "libxfce4util", "xfconf", "xfce4-panel"],
+    "srcurl": "https://archive.xfce.org/src/apps/xfce4-screenshooter/1.9/xfce4-screenshooter-1.9.9.tar.bz2",
+    "maintainer": "Yisus7u7 <jesuspixel5@gmail.com>"
+  },
+  {
     "name": "xfce4-session",
     "version": "4.16.0",
     "description": "A session manager for XFCE environment",
@@ -12900,11 +13161,11 @@
   },
   {
     "name": "xfce4-settings",
-    "version": "4.16.1",
+    "version": "4.16.2",
     "description": "Settings manager for XFCE environment",
     "homepage": "https://www.xfce.org/",
-    "depends": ["exo", "garcon", "libnotify", "libxfce4ui", "libxklavier", "lxde-icon-theme"],
-    "srcurl": "http://archive.xfce.org/src/xfce/xfce4-settings/4.16/xfce4-settings-4.16.1.tar.bz2",
+    "depends": ["exo", "garcon", "libnotify", "libxfce4ui", "libxklavier", "lxde-icon-theme", "libcanberra", "gtk3"],
+    "srcurl": "http://archive.xfce.org/src/xfce/xfce4-settings/4.16/xfce4-settings-4.16.2.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -12918,11 +13179,11 @@
   },
   {
     "name": "xfce4-terminal",
-    "version": "0.8.10",
+    "version": "0.9.0",
     "description": "Terminal Emulator for the XFCE environment",
     "homepage": "https://docs.xfce.org/apps/terminal/start",
     "depends": ["desktop-file-utils", "exo", "hicolor-icon-theme", "garcon", "libxfce4ui", "xfconf", "libvte"],
-    "srcurl": "https://archive.xfce.org/src/apps/xfce4-terminal/0.8/xfce4-terminal-0.8.10.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/apps/xfce4-terminal/0.9/xfce4-terminal-0.9.0.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -12945,11 +13206,11 @@
   },
   {
     "name": "xfce4-whiskermenu-plugin",
-    "version": "2.5.3",
+    "version": "2.7.0",
     "description": "Alternate menu plugin for the Xfce desktop environment",
     "homepage": "https://docs.xfce.org/panel-plugins/xfce4-whiskermenu-plugin/start",
     "depends": ["exo", "garcon", "gtk3", "libxfce4ui", "libxfce4util", "xfce4-panel", "xorgproto", "gettext"],
-    "srcurl": "https://archive.xfce.org/src/panel-plugins/xfce4-whiskermenu-plugin/2.5/xfce4-whiskermenu-plugin-2.5.3.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/panel-plugins/xfce4-whiskermenu-plugin/2.7/xfce4-whiskermenu-plugin-2.7.0.tar.bz2",
     "maintainer": "@termux"
   },
   {
