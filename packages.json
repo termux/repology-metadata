@@ -1346,11 +1346,11 @@
   },
   {
     "name": "command-not-found",
-    "version": "1.69",
+    "version": "1.70",
     "description": "Suggest installation of packages in interactive shell sessions",
     "homepage": "https://github.com/termux/command-not-found",
     "depends": [],
-    "srcurl": "https://github.com/termux/command-not-found/archive/1.69.tar.gz",
+    "srcurl": "https://github.com/termux/command-not-found/archive/1.70.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2836,7 +2836,7 @@
   },
   {
     "name": "gn",
-    "version": "20211116",
+    "version": "20211203",
     "description": "Meta-build system that generates build files for Ninja",
     "homepage": "https://gn.googlesource.com/gn",
     "depends": [],
@@ -3612,6 +3612,15 @@
     "homepage": "http://ipmitool.sourceforge.net",
     "depends": ["ncurses", "openssl", "readline"],
     "srcurl": "http://downloads.sourceforge.net/project/ipmitool/ipmitool/1.8.18/ipmitool-1.8.18.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "iproute2",
+    "version": "5.15.0",
+    "description": "Utilities for controlling networking",
+    "homepage": "https://wiki.linuxfoundation.org/networking/iproute2",
+    "depends": ["libandroid-glob", "libandroid-support"],
+    "srcurl": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -5308,6 +5317,15 @@
     "homepage": "https://metacpan.org/pod/Regexp::Assemble",
     "depends": ["perl"],
     "srcurl": "https://salsa.debian.org/perl-team/modules/packages/libregexp-assemble-perl/-/archive/upstream/0.38/libregexp-assemble-perl-upstream-0.38.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libresolv-wrapper",
+    "version": "1.1.7",
+    "description": "A wrapper for DNS name resolving or DNS faking",
+    "homepage": "https://cwrap.org/resolv_wrapper.html",
+    "depends": [],
+    "srcurl": "https://ftp.samba.org/pub/cwrap/resolv_wrapper-1.1.7.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7544,7 +7562,7 @@
     "version": "8.1.0",
     "description": "Server-side, HTML-embedded scripting language",
     "homepage": "https://php.net",
-    "depends": ["freetype", "libandroid-glob", "libandroid-support", "libbz2", "libcrypt", "libcurl", "libgd", "libgmp", "libiconv", "liblzma", "libsqlite", "libxml2", "libxslt", "libzip", "oniguruma", "openssl", "pcre2", "readline", "zlib", "libicu", "libffi", "tidy", "zstd"],
+    "depends": ["freetype", "libandroid-glob", "libandroid-support", "libbz2", "libcrypt", "libcurl", "libgd", "libgmp", "libiconv", "liblzma", "libresolv-wrapper", "libsqlite", "libxml2", "libxslt", "libzip", "oniguruma", "openssl", "pcre2", "readline", "zlib", "libicu", "libffi", "tidy", "zstd"],
     "srcurl": "https://github.com/php/php-src/archive/php-8.1.0.tar.gz",
     "maintainer": "@termux"
   },
@@ -7708,6 +7726,15 @@
     "homepage": "https://poppler.freedesktop.org/",
     "depends": ["fontconfig", "freetype", "glib", "libc++", "libcairo", "libcurl", "libiconv", "libjpeg-turbo", "libpng", "libtiff", "littlecms", "openjpeg", "openjpeg-tools", "zlib"],
     "srcurl": "https://poppler.freedesktop.org/poppler-21.08.0.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "postgis",
+    "version": "3.1.4",
+    "description": "Spatial database extender for PostgreSQL object-relational database",
+    "homepage": "https://postgis.net",
+    "depends": ["gdal", "json-c", "postgresql", "proj", "libprotobuf-c", "libxml2", "libiconv"],
+    "srcurl": "https://download.osgeo.org/postgis/source/postgis-3.1.4.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -10268,7 +10295,7 @@
   },
   {
     "name": "frida-server",
-    "version": "14.2.14",
+    "version": "15.1.12",
     "description": "Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers",
     "homepage": "https://www.frida.re/",
     "depends": ["libiconv", "python"],
@@ -10304,11 +10331,11 @@
   },
   {
     "name": "hw-probe",
-    "version": "1.5",
+    "version": "1.6",
     "description": "Tool to probe for hardware and check its operability",
     "homepage": "https://github.com/linuxhw/hw-probe",
     "depends": ["curl", "hwinfo", "net-tools", "perl"],
-    "srcurl": "https://github.com/linuxhw/hw-probe/archive/1.5.tar.gz",
+    "srcurl": "https://github.com/linuxhw/hw-probe/archive/1.6.tar.gz",
     "maintainer": "@termux"
   },
   {
