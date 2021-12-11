@@ -480,7 +480,7 @@
     "description": "Apache Portable Runtime Utility Library",
     "homepage": "https://apr.apache.org/",
     "depends": ["apr", "libcrypt", "libexpat", "libiconv", "libuuid"],
-    "srcurl": "https://ftp.acc.umu.se/mirror/apache.org/apr/apr-util-1.6.1.tar.gz",
+    "srcurl": "https://downloads.apache.org/apr/apr-util-1.6.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4269,11 +4269,11 @@
   },
   {
     "name": "libcap-ng",
-    "version": "0.8.2",
+    "version": "0.8.3~pre1",
     "description": "Library making programming with POSIX capabilities easier than traditional libcap",
     "homepage": "https://people.redhat.com/sgrubb/libcap-ng/",
     "depends": [],
-    "srcurl": "https://github.com/stevegrubb/libcap-ng/archive/v0.8.2.tar.gz",
+    "srcurl": "https://github.com/stevegrubb/libcap-ng/archive/187ed5355ce23333331187312c54d38390f3d6b6.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8754,11 +8754,11 @@
   },
   {
     "name": "sqlcipher",
-    "version": "4.4.3",
+    "version": "4.5.0",
     "description": "SQLCipher is an SQLite extension that provides 256 bit AES encryption of database files",
     "homepage": "https://github.com/sqlcipher/sqlcipher",
-    "depends": ["libsqlite", "openssl"],
-    "srcurl": "https://github.com/sqlcipher/sqlcipher/archive/v4.4.3.tar.gz",
+    "depends": ["openssl"],
+    "srcurl": "https://github.com/sqlcipher/sqlcipher/archive/v4.5.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9661,7 +9661,7 @@
     "version": "2.37.2",
     "description": "Miscellaneous system utilities",
     "homepage": "https://en.wikipedia.org/wiki/Util-linux",
-    "depends": ["ncurses", "libcrypt", "zlib"],
+    "depends": ["ncurses", "libcap-ng", "libcrypt", "zlib"],
     "srcurl": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz",
     "maintainer": "@termux"
   },
