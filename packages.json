@@ -1685,6 +1685,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "diffstat",
+    "version": "1.64",
+    "description": "Displays a histogram of changes to a file",
+    "homepage": "https://invisible-island.net/diffstat/diffstat.html",
+    "depends": [],
+    "srcurl": "https://invisible-island.net/datafiles/release/diffstat.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "diffutils",
     "version": "3.8",
     "description": "Programs (cmp, diff, diff3 and sdiff) related to finding differences between files",
@@ -2596,7 +2605,7 @@
     "version": "2.42.6",
     "description": "Library for image loading and manipulation",
     "homepage": "https://developer.gnome.org/gdk-pixbuf/",
-    "depends": ["glib", "libpng", "libtiff", "libjpeg-turbo"],
+    "depends": ["glib", "libpng", "libtiff", "libjpeg-turbo", "zstd"],
     "srcurl": "https://gitlab.gnome.org/GNOME/gdk-pixbuf/-/archive/2.42.6/gdk-pixbuf-2.42.6.tar.gz",
     "maintainer": "@termux"
   },
@@ -3429,11 +3438,11 @@
   },
   {
     "name": "hugo",
-    "version": "0.90.1",
+    "version": "0.91.0",
     "description": "A fast and flexible static site generator",
     "homepage": "https://gohugo.io/",
     "depends": ["libc++"],
-    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.90.1.tar.gz",
+    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.91.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8044,6 +8053,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "quilt",
+    "version": "0.66",
+    "description": "Allows you to easily manage large numbers of patches",
+    "homepage": "https://savannah.nongnu.org/projects/quilt",
+    "depends": ["coreutils", "diffstat", "gawk", "graphviz", "perl"],
+    "srcurl": "https://savannah.nongnu.org/download/quilt/quilt-0.66.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "racket",
     "version": "7.4",
     "description": "Full-spectrum programming language going beyond Lisp and Scheme",
@@ -9433,11 +9451,11 @@
   },
   {
     "name": "tor",
-    "version": "0.4.6.8",
+    "version": "0.4.6.9",
     "description": "The Onion Router anonymizing overlay network",
     "homepage": "https://www.torproject.org",
     "depends": ["libevent", "openssl", "liblzma", "zlib", "libandroid-glob"],
-    "srcurl": "https://www.torproject.org/dist/tor-0.4.6.8.tar.gz",
+    "srcurl": "https://www.torproject.org/dist/tor-0.4.6.9.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -10052,11 +10070,11 @@
   },
   {
     "name": "xmake",
-    "version": "2.6.1",
+    "version": "2.6.2",
     "description": "A cross-platform build utility based on Lua",
     "homepage": "https://xmake.io/",
     "depends": [],
-    "srcurl": "https://github.com/xmake-io/xmake/releases/download/v2.6.1/xmake-v2.6.1.tar.gz",
+    "srcurl": "https://github.com/xmake-io/xmake/releases/download/v2.6.2/xmake-v2.6.2.tar.gz",
     "maintainer": "Ruki Wang @waruqi"
   },
   {
@@ -10355,6 +10373,15 @@
     "depends": ["containerd"],
     "srcurl": "https://github.com/moby/moby/archive/v20.10.2.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "docker-compose",
+    "version": "2.2.2",
+    "description": "Compose is a tool for defining and running multi-container Docker applications.",
+    "homepage": "https://github.com/docker/compose",
+    "depends": ["docker"],
+    "srcurl": "https://github.com/docker/compose/archive/v2.2.2.tar.gz",
+    "maintainer": "Termux members @termux"
   },
   {
     "name": "encfs",
