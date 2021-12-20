@@ -878,6 +878,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "bk",
+    "version": "0.5.3",
+    "description": "A terminal EPUB reader",
+    "homepage": "https://github.com/aeosynth/bk",
+    "depends": [],
+    "srcurl": "https://github.com/aeosynth/bk/archive/61beded518e759884d72732a068744935c11ea6f.zip",
+    "maintainer": "@termux"
+  },
+  {
     "name": "blackbox",
     "version": "2.0.0",
     "description": "Safely store secrets in Git/Mercurial/Subversion",
@@ -1605,11 +1614,11 @@
   },
   {
     "name": "dbus",
-    "version": "1.12.20",
+    "version": "1.13.18",
     "description": "Freedesktop.org message bus system",
     "homepage": "https://dbus.freedesktop.org",
     "depends": ["libexpat", "libx11"],
-    "srcurl": "https://dbus.freedesktop.org/releases/dbus/dbus-1.12.20.tar.gz",
+    "srcurl": "https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.xz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
@@ -4224,6 +4233,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libbcprov-java",
+    "version": "1.70",
+    "description": "A lightweight cryptography API for Java",
+    "homepage": "https://www.bouncycastle.org/java.html",
+    "depends": ["openjdk-17"],
+    "srcurl": "https://github.com/bcgit/bc-java/archive/refs/tags/r1rv70.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libbsd",
     "version": "0.10.0",
     "description": "utility functions from BSD systems",
@@ -4319,6 +4337,15 @@
     "homepage": "https://libcoap.net/",
     "depends": ["openssl"],
     "srcurl": "https://github.com/obgm/libcoap/archive/v4.3.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libcommons-lang3-java",
+    "version": "3.12.0",
+    "description": "A host of helper utilities for the java.lang API",
+    "homepage": "https://commons.apache.org/proper/commons-lang/",
+    "depends": ["openjdk-17"],
+    "srcurl": "https://dlcdn.apache.org/commons/lang/source/commons-lang3-3.12.0-src.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7648,6 +7675,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "pdftk",
+    "version": "3.3.1",
+    "description": "A simple tool for doing everyday things with PDF documents",
+    "homepage": "https://gitlab.com/pdftk-java/pdftk",
+    "depends": ["libbcprov-java", "libcommons-lang3-java", "openjdk-17"],
+    "srcurl": "https://gitlab.com/pdftk-java/pdftk/-/archive/v3.3.1/pdftk-v3.3.1.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
     "name": "perl",
     "version": "5.34.0",
     "description": "Capable, feature-rich programming language",
@@ -8870,6 +8906,15 @@
     "maintainer": "@WMCB-Tech"
   },
   {
+    "name": "squeezelite",
+    "version": "1.9.9",
+    "description": "A small headless Logitech Squeezebox emulator",
+    "homepage": "https://ralph-irving.github.io/squeezelite.html",
+    "depends": ["libmad", "mpg123", "pulseaudio"],
+    "srcurl": "https://github.com/ralph-irving/squeezelite.git",
+    "maintainer": "@termux"
+  },
+  {
     "name": "squid",
     "version": "4.16",
     "description": "Full-featured Web proxy cache server",
@@ -8907,11 +8952,11 @@
   },
   {
     "name": "sslscan",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "description": "Utility to discover supported cipher suites on SSL/TLS enabled servers",
     "homepage": "https://github.com/rbsec/sslscan",
     "depends": ["openssl"],
-    "srcurl": "https://github.com/rbsec/sslscan/archive/2.0.10.tar.gz",
+    "srcurl": "https://github.com/rbsec/sslscan/archive/2.0.11.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -10016,6 +10061,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "wdiff",
+    "version": "1.2.2",
+    "description": "Display word differences between text files",
+    "homepage": "https://www.gnu.org/software/wdiff/",
+    "depends": ["libiconv"],
+    "srcurl": "https://fossies.org/linux/misc/wdiff-1.2.2.tar.gz",
+    "maintainer": "@harieamjari"
+  },
+  {
     "name": "weechat",
     "version": "3.0.1",
     "description": "Fast, light and extensible IRC chat client",
@@ -11069,11 +11123,11 @@
   },
   {
     "name": "adwaita-icon-theme",
-    "version": "40.1.1",
+    "version": "41.0",
     "description": "GNOME standard icons",
     "homepage": "https://www.gnome.org",
     "depends": ["hicolor-icon-theme"],
-    "srcurl": "https://gitlab.gnome.org/GNOME/adwaita-icon-theme/-/archive/40.1.1/adwaita-icon-theme-40.1.1.tar.gz",
+    "srcurl": "https://gitlab.gnome.org/GNOME/adwaita-icon-theme/-/archive/41.0/adwaita-icon-theme-41.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -13279,6 +13333,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "xfce-theme-manager",
+    "version": "3.8",
+    "description": "Integrated theme manager for xfce4",
+    "homepage": "https://github.com/KeithDHedger/Xfce-Theme-Manager",
+    "depends": ["libcairo", "gdk-pixbuf", "glib", "gtk2", "gtk3", "libxfce4ui", "libxfce4util", "unzip"],
+    "srcurl": "https://github.com/KeithDHedger/Xfce-Theme-Manager/archive/refs/tags/v3.8.tar.gz",
+    "maintainer": "Yisus7u7 <jesuspixel5@gmail.com>"
+  },
+  {
     "name": "xfce4",
     "version": "2.1",
     "description": "A metapackage that installs all parts of the XFCE desktop environment",
@@ -13434,7 +13497,7 @@
     "version": "4.16.0",
     "description": "A session manager for XFCE environment",
     "homepage": "https://www.xfce.org/",
-    "depends": ["gnupg", "hicolor-icon-theme", "libsm", "libwnck", "libxfce4ui", "xfce4-settings", "xfdesktop", "xfwm4", "xorg-iceauth", "xorg-xrdb"],
+    "depends": ["gnupg", "hicolor-icon-theme", "libsm", "libwnck", "libxfce4ui", "xfce4-settings", "xfdesktop", "pango", "xfwm4", "xorg-iceauth", "xorg-xrdb"],
     "srcurl": "http://archive.xfce.org/src/xfce/xfce4-session/4.16/xfce4-session-4.16.0.tar.bz2",
     "maintainer": "@termux"
   },
