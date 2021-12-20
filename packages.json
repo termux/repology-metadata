@@ -718,11 +718,11 @@
   },
   {
     "name": "axel",
-    "version": "2.17.10",
+    "version": "2.17.11",
     "description": "light command line download accelerator",
     "homepage": "https://github.com/axel-download-accelerator/axel",
     "depends": ["openssl"],
-    "srcurl": "https://github.com/axel-download-accelerator/axel/releases/download/v2.17.10/axel-2.17.10.tar.gz",
+    "srcurl": "https://github.com/axel-download-accelerator/axel/releases/download/v2.17.11/axel-2.17.11.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3651,6 +3651,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "ircd-irc2",
+    "version": "2.11.2p3",
+    "description": "An Internet Relay Chat (IRC) daemon",
+    "homepage": "http://www.irc.org/",
+    "depends": ["libcrypt", "resolv-conf", "zlib"],
+    "srcurl": "http://www.irc.org/ftp/irc/server/irc2.11.2p3.tgz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "ired",
     "version": "0.6",
     "description": "Minimalist hexadecimal editor",
@@ -3952,7 +3961,7 @@
     "version": "1.19.2",
     "description": "The Kerberos network authentication system",
     "homepage": "https://web.mit.edu/kerberos",
-    "depends": ["libandroid-support", "libandroid-glob", "readline", "openssl", "libdb"],
+    "depends": ["libandroid-support", "libandroid-glob", "libresolv-wrapper", "readline", "openssl", "libdb"],
     "srcurl": "https://fossies.org/linux/misc/krb5-1.19.2.tar.gz",
     "maintainer": "@termux"
   },
@@ -6679,6 +6688,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "mruby",
+    "version": "3.0.0",
+    "description": "Lightweight implementation of the Ruby language",
+    "homepage": "https://mruby.org/",
+    "depends": ["ncurses", "readline"],
+    "srcurl": "https://github.com/mruby/mruby/archive/3.0.0.zip",
+    "maintainer": "@termux"
+  },
+  {
     "name": "msmtp",
     "version": "1.8.15",
     "description": "Lightweight SMTP client",
@@ -6767,6 +6785,15 @@
     "depends": ["ncurses"],
     "srcurl": "https://sourceforge.net/projects/myman/files/myman-cvs/myman-cvs-2009-10-30/myman-cvs-2009-10-30.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91"
+  },
+  {
+    "name": "mympd",
+    "version": "8.1.6",
+    "description": "A standalone and lightweight web-based MPD client",
+    "homepage": "https://jcorporation.github.io/myMPD/",
+    "depends": ["libflac", "libid3tag", "openssl", "pcre", "resolv-conf"],
+    "srcurl": "https://github.com/jcorporation/myMPD/archive/refs/tags/v8.1.6.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "myrepos",
@@ -7504,6 +7531,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "pari",
+    "version": "2.13.3",
+    "description": "A computer algebra system designed for fast computations in number theory",
+    "homepage": "https://pari.math.u-bordeaux.fr/",
+    "depends": ["gzip", "libgmp", "readline"],
+    "srcurl": "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.13.3.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "parted",
     "version": "3.4",
     "description": "Versatile partition editor",
@@ -7928,11 +7964,11 @@
   },
   {
     "name": "proxmark3-git",
-    "version": "2021.11.14-85fb5156",
+    "version": "2021.12.19-17b369cc",
     "description": "The Swiss Army Knife of RFID Research - RRG/Iceman repo",
     "homepage": "https://github.com/RfidResearchGroup/proxmark3",
     "depends": ["libbz2", "libc++", "readline"],
-    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/85fb51564fd2d6869c6d6569ccbb67cf090eb5bc.tar.gz",
+    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/17b369cc5225566eb95f2c483f18d81f068f8803.tar.gz",
     "maintainer": "Marlin Sööse <marlin.soose@laro.se>"
   },
   {
@@ -9540,6 +9576,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "tsmuxer",
+    "version": "2021.12.05",
+    "description": "A transport stream muxer for remuxing/muxing elementary streams",
+    "homepage": "https://github.com/justdan96/tsMuxer",
+    "depends": ["freetype", "libc++", "zlib"],
+    "srcurl": "https://github.com/justdan96/tsMuxer/archive/refs/tags/nightly-2021-12-05-02-09-30.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "tsocks",
     "version": "1.8beta5",
     "description": "transparent network access through a SOCKS 4 or 5 proxy",
@@ -10331,12 +10376,12 @@
   },
   {
     "name": "aircrack-ng",
-    "version": "1:1.6",
+    "version": "2:2021.12.19-3f9be67b",
     "description": "WiFi security auditing tools suite",
     "homepage": "https://www.aircrack-ng.org/",
-    "depends": ["libc++", "libnl", "openssl", "libpcap", "pciutils", "ethtool"],
-    "srcurl": "https://github.com/aircrack-ng/aircrack-ng/archive/1.6.tar.gz",
-    "maintainer": "@termux"
+    "depends": ["libc++", "libnl", "openssl", "libpcap"],
+    "srcurl": "https://github.com/aircrack-ng/aircrack-ng/archive/3f9be67b1eaf84057d7f9830883b055817683915.tar.gz",
+    "maintainer": "Marlin Sööse <marlin.soose@laro.se>"
   },
   {
     "name": "arp-scan",
@@ -10355,6 +10400,15 @@
     "depends": ["libpcap", "libusb", "libnetfilter-queue"],
     "srcurl": "https://github.com/bettercap/bettercap/archive/v2.32.0.tar.gz",
     "maintainer": "@termux"
+  },
+  {
+    "name": "bindfs",
+    "version": "1.15.1",
+    "description": "A FUSE filesystem for mirroring a directory to another directory.",
+    "homepage": "http://bindfs.org/",
+    "depends": ["libfuse2"],
+    "srcurl": "https://bindfs.org/downloads/bindfs-1.15.1.tar.gz",
+    "maintainer": "Termux members @termux"
   },
   {
     "name": "containerd",
