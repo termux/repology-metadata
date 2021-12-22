@@ -11995,11 +11995,11 @@
   },
   {
     "name": "libvte",
-    "version": "1:0.64.2",
+    "version": "2:0.62.2",
     "description": "Virtual Terminal library",
     "homepage": "https://gitlab.gnome.org/GNOME/vte/",
     "depends": ["fribidi", "gtk3", "libgnutls", "libicu", "pcre2"],
-    "srcurl": "https://download.gnome.org/sources/vte/0.64/vte-0.64.2.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/vte/0.62/vte-0.62.2.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -12058,11 +12058,11 @@
   },
   {
     "name": "libxfce4ui",
-    "version": "4.17.1",
+    "version": "4.17.2",
     "description": "Commonly used XFCE widgets among XFCE applications",
     "homepage": "https://www.xfce.org/",
     "depends": ["gtk2", "gtk3", "hicolor-icon-theme", "libsm", "libxfce4util", "startup-notification", "xfconf", "glib"],
-    "srcurl": "http://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.1.tar.bz2",
+    "srcurl": "http://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.2.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -12384,7 +12384,7 @@
     "version": "1.24.1",
     "description": "mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.",
     "homepage": "https://mate-desktop.mate-desktop.dev/",
-    "depends": ["libmatekbd", "dconf"],
+    "depends": ["libmatekbd", "dconf", "startup-notification"],
     "srcurl": "https://github.com/mate-desktop/mate-desktop/releases/download/v1.24.1/mate-desktop-1.24.1.tar.xz",
     "maintainer": "Termux members @termux"
   },
@@ -13198,6 +13198,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "virglrenderer",
+    "version": "0.9.1",
+    "description": "A virtual 3D GPU for use inside qemu virtual machines",
+    "homepage": "https://virgil3d.github.io/",
+    "depends": ["libdrm", "libepoxy"],
+    "srcurl": "https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/virglrenderer-0.9.1/virglrenderer-virglrenderer-0.9.1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "wireshark-gtk",
     "version": "2.6.14",
     "description": "Network protocol analyzer",
@@ -13223,6 +13232,15 @@
     "depends": ["libandroid-shmem", "libxmu", "libxft", "pango", "libtiff", "giflib", "libxpm", "libexif", "libwebp", "imagemagick"],
     "srcurl": "https://github.com/window-maker/wmaker/releases/download/wmaker-0.95.9/WindowMaker-0.95.9.tar.gz",
     "maintainer": "Termux members @termux"
+  },
+  {
+    "name": "wxwidgets",
+    "version": "3.1.5",
+    "description": "A free and open source cross-platform C++ framework for writing advanced GUI applications",
+    "homepage": "https://www.wxwidgets.org/",
+    "depends": ["glu", "gtk3", "libcurl", "libexpat", "libiconv", "libjpeg-turbo", "liblzma", "libnotify", "libpng", "libsecret", "libsm", "libtiff", "mesa", "sdl2"],
+    "srcurl": "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.5/wxWidgets-3.1.5.tar.bz2",
+    "maintainer": "@termux"
   },
   {
     "name": "x11vnc",
@@ -13405,7 +13423,7 @@
   },
   {
     "name": "xfce4-goodies",
-    "version": "4.14.0",
+    "version": "4.16.0",
     "description": "this meta-package will install various utilities and programs for the XFCE desktop environment (incomplete!)",
     "homepage": "https://goodies.xfce.org/",
     "depends": ["xfce4-terminal", "xfce4-appfinder", "xfce4-calculator-plugin", "xfce4-clipman-plugin", "xfce4-datetime-plugin", "xfce4-dict", "xfce4-eyes-plugin", "xfce4-mailwatch-plugin", "xfce4-netload-plugin", "xfce4-notes-plugin", "xfce4-notifyd", "xfce4-panel-profiles", "xfce4-screensaver", "xfce4-taskmanager", "xfce4-timer-plugin", "xfce4-wavelan-plugin", "xfce4-screenshooter", "xfce4-whiskermenu-plugin", "thunar-archive-plugin", "parole", "leafpad", "file-roller", "galculator", "ristretto", "gigolo"],
@@ -13521,11 +13539,11 @@
   },
   {
     "name": "xfce4-terminal",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "Terminal Emulator for the XFCE environment",
     "homepage": "https://docs.xfce.org/apps/terminal/start",
     "depends": ["desktop-file-utils", "exo", "hicolor-icon-theme", "garcon", "libxfce4ui", "xfconf", "libvte"],
-    "srcurl": "https://archive.xfce.org/src/apps/xfce4-terminal/0.9/xfce4-terminal-0.9.0.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/apps/xfce4-terminal/0.9/xfce4-terminal-0.9.1.tar.bz2",
     "maintainer": "@termux"
   },
   {
