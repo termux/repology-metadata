@@ -2556,6 +2556,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "gauche",
+    "version": "0.9.10",
+    "description": "An R7RS Scheme implementation developed to be a handy script interpreter",
+    "homepage": "https://practical-scheme.net/gauche/",
+    "depends": ["binutils", "ca-certificates", "gdbm", "libcrypt", "libiconv", "mbedtls", "zlib"],
+    "srcurl": "https://github.com/shirok/Gauche/releases/download/release0_9_10/Gauche-0.9.10.tgz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "gawk",
     "version": "5.1.1",
     "description": "Programming language designed for text processing",
@@ -4888,6 +4897,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "liblog4c",
+    "version": "1.2.4",
+    "description": "A C library for flexible logging to files, syslog and other destinations",
+    "homepage": "http://log4c.sourceforge.net/",
+    "depends": ["libexpat"],
+    "srcurl": "http://prdownloads.sourceforge.net/log4c/log4c-1.2.4.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "liblua52",
     "version": "5.2.4",
     "description": "Shared library for the Lua interpreter (v5.2.x)",
@@ -5659,7 +5677,7 @@
     "homepage": "https://core.telegram.org/tdlib/",
     "depends": ["readline", "openssl", "(>=", "1.1.1)", "zlib"],
     "srcurl": "https://github.com/tdlib/td/archive/v1.7.0.tar.gz",
-    "maintainer": "Termux members @termux"
+    "maintainer": "@termux"
   },
   {
     "name": "libtermkey",
@@ -6146,6 +6164,15 @@
     "depends": ["libc++", "libandroid-spawn", "libsqlite"],
     "srcurl": "https://github.com/apple/swift-llbuild/archive/swift-5.5.2-RELEASE.tar.gz",
     "maintainer": "@buttaface"
+  },
+  {
+    "name": "lnav",
+    "version": "0.10.1",
+    "description": "An advanced log file viewer for the small-scale",
+    "homepage": "https://lnav.org/",
+    "depends": ["libandroid-glob", "libarchive", "libbz2", "libcurl", "ncurses", "pcre", "readline", "sqlite", "zlib"],
+    "srcurl": "https://github.com/tstack/lnav/archive/refs/tags/v0.10.1.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "lnd",
@@ -8251,6 +8278,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "rdrview",
+    "version": "2021.09.12",
+    "description": "Command line tool to extract the main content from a webpage",
+    "homepage": "https://github.com/eafer/rdrview",
+    "depends": ["libcurl", "libiconv", "libseccomp", "libxml2"],
+    "srcurl": "https://github.com/eafer/rdrview.git",
+    "maintainer": "@termux"
+  },
+  {
     "name": "re2c",
     "version": "2.2",
     "description": "Lexer generator for C, C++ and Go.",
@@ -8816,6 +8852,15 @@
     "maintainer": "Tipz Team @TipzTeam"
   },
   {
+    "name": "snapcast-server",
+    "version": "0.25.0",
+    "description": "A multiroom client-server audio player",
+    "homepage": "https://github.com/badaix/snapcast",
+    "depends": ["libc++", "libexpat", "libflac", "libopus", "libsoxr", "libvorbis"],
+    "srcurl": "https://github.com/badaix/snapcast/archive/v0.25.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "socat",
     "version": "1.7.4.1",
     "description": "Relay for bidirectional data transfer between two independent data channels",
@@ -9273,12 +9318,21 @@
     "maintainer": "Michal Bednarski @michalbednarski"
   },
   {
+    "name": "termux-am-socket",
+    "version": "1.02",
+    "description": "A faster version of am with less features that only works while Termux is running",
+    "homepage": "https://github.com/termux/termux-am-socket",
+    "depends": [],
+    "srcurl": "https://github.com/termux/termux-am-socket/archive/refs/tags/1.02.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "termux-api",
-    "version": "0.56",
+    "version": "0.57",
     "description": "Termux API commands (install also the Termux:API app)",
     "homepage": "https://wiki.termux.com/wiki/Termux:API",
     "depends": ["bash", "util-linux"],
-    "srcurl": "https://github.com/termux/termux-api-package/archive/v0.56.tar.gz",
+    "srcurl": "https://github.com/termux/termux-api-package/archive/v0.57.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9492,6 +9546,15 @@
     "homepage": "http://tinyscheme.sourceforge.net/home.html",
     "depends": [],
     "srcurl": "http://downloads.sourceforge.net/project/tinyscheme/tinyscheme/tinyscheme-1.42/tinyscheme-1.42.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "tizonia",
+    "version": "0.22.0",
+    "description": "A command-line streaming music client/server for Linux",
+    "homepage": "https://github.com/tizonia/",
+    "depends": ["boost", "dbus", "libandroid-wordexp", "libcurl", "libflac", "liblog4c", "libmad", "libmediainfo", "libmp3lame", "liboggz", "libopus", "libsndfile", "libsqlite", "libuuid", "libvpx", "mpg123", "opusfile", "pulseaudio", "python", "taglib"],
+    "srcurl": "https://github.com/tizonia/tizonia-openmax-il/archive/refs/tags/v0.22.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -13047,7 +13110,7 @@
   },
   {
     "name": "spek",
-    "version": "0.8.3_p20181228",
+    "version": "0.8.3-p20181228",
     "description": "An acoustic spectrum analyser",
     "homepage": "http://spek.cc/",
     "depends": ["ffmpeg", "wxwidgets"],
