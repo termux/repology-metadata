@@ -2665,11 +2665,11 @@
   },
   {
     "name": "geth",
-    "version": "1.10.9",
+    "version": "1.10.14",
     "description": "Go implementation of the Ethereum protocol",
     "homepage": "https://geth.ethereum.org/",
     "depends": [],
-    "srcurl": "https://github.com/ethereum/go-ethereum/archive/v1.10.9.tar.gz",
+    "srcurl": "https://github.com/ethereum/go-ethereum/archive/v1.10.14.tar.gz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
@@ -7347,7 +7347,7 @@
     "version": "17.0",
     "description": "Java development kit and runtime",
     "homepage": "https://github.com/PojavLauncherTeam/mobile",
-    "depends": ["freetype", "libandroid-shmem", "libandroid-spawn", "libiconv", "zlib", "xorgproto", "libx11", "libxcursor", "libxext", "cups", "fontconfig", "libpng", "libxrender", "libxtst", "libxrandr", "libxt", "libxi"],
+    "depends": ["freetype", "giflib", "libandroid-shmem", "libandroid-spawn", "libiconv", "zlib", "xorgproto", "libx11", "libxcursor", "libxext", "cups", "fontconfig", "libjpeg-turbo", "libpng", "libxrender", "libxtst", "libxrandr", "libxt", "libxi"],
     "srcurl": "https://github.com/termux/openjdk-mobile-termux/archive/ec285598849a27f681ea6269342cf03cf382eb56.tar.gz",
     "maintainer": "@termux"
   },
@@ -12411,7 +12411,7 @@
     "version": "1.24.3",
     "description": "mate-session contains the MATE session manager, as well as a configuration program to choose applications starting on login.",
     "homepage": "https://mate-session-manager.mate-desktop.dev/",
-    "depends": ["libsm", "dbus-glib", "gtk3", "glib"],
+    "depends": ["libsm", "libxtst", "dbus-glib", "gtk3", "glib"],
     "srcurl": "https://github.com/mate-desktop/mate-session-manager/releases/download/v1.24.3/mate-session-manager-1.24.3.tar.xz",
     "maintainer": "Termux members @termux"
   },
@@ -13046,6 +13046,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "spek",
+    "version": "0.8.3_p20181228",
+    "description": "An acoustic spectrum analyser",
+    "homepage": "http://spek.cc/",
+    "depends": ["ffmpeg", "wxwidgets"],
+    "srcurl": "https://github.com/alexkay/spek.git",
+    "maintainer": "@termux"
+  },
+  {
     "name": "st",
     "version": "0.8.4",
     "description": "A simple virtual terminal emulator for X",
@@ -13136,12 +13145,12 @@
   },
   {
     "name": "tint2",
-    "version": "16.2",
+    "version": "17.0.2",
     "description": "Lightweight panel, Highly customizable",
     "homepage": "https://gitlab.com/o9000/tint2",
     "depends": ["xorg-xrandr", "libxinerama", "libx11", "xorgproto", "libandroid-glob", "libandroid-shmem", "pango", "libc++", "libcairo", "libcurl", "libxcb", "xcb-util-cursor", "xcb-util-image", "xcb-util-xrm", "xcb-util-wm", "pulseaudio", "libxcomposite", "libxdamage", "gtk2", "imlib2", "libandroid-wordexp", "librsvg", "startup-notification", "libcairo"],
-    "srcurl": "https://github.com/o9000/tint2/archive/refs/tags/16.2.tar.gz",
-    "maintainer": "Laya Achmad"
+    "srcurl": "https://gitlab.com/o9000/tint2/-/archive/17.0.2/tint2-17.0.2.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "transmission-gtk",
