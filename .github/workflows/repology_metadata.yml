@@ -18,8 +18,6 @@ jobs:
       run: |
         mkdir -p /tmp/repos
         git clone --depth=1 https://github.com/termux/termux-packages /tmp/repos/main
-        git clone --depth=1 https://github.com/termux/game-packages /tmp/repos/games
-        git clone --depth=1 https://github.com/termux/science-packages /tmp/repos/science
         git clone --depth=1 https://github.com/termux/termux-root-packages /tmp/repos/root
         git clone --depth=1 https://github.com/termux/x11-packages /tmp/repos/x11
     - name: Generate packages.json
