@@ -1111,6 +1111,15 @@
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
+    "name": "coinor-clp",
+    "version": "2022.01.01",
+    "description": "An open-source linear programming solver",
+    "homepage": "https://github.com/coin-or/Clp",
+    "depends": ["libc++", "libcoinor-osi", "libcoinor-utils"],
+    "srcurl": "https://github.com/coin-or/Clp.git",
+    "maintainer": "@termux"
+  },
+  {
     "name": "colordiff",
     "version": "1.0.19",
     "description": "Tool to colorize 'diff' output",
@@ -1488,11 +1497,11 @@
   },
   {
     "name": "direnv",
-    "version": "2.30.2",
+    "version": "2.30.3",
     "description": "Environment switcher for shell",
     "homepage": "https://github.com/direnv/direnv",
     "depends": [],
-    "srcurl": "https://github.com/direnv/direnv/archive/v2.30.2.tar.gz",
+    "srcurl": "https://github.com/direnv/direnv/archive/v2.30.3.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4169,6 +4178,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libcddb",
+    "version": "1.3.2",
+    "description": "A C library to access data on a CDDB server",
+    "homepage": "http://libcddb.sourceforge.net/",
+    "depends": ["libiconv"],
+    "srcurl": "http://prdownloads.sourceforge.net/libcddb/libcddb-1.3.2.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libcln",
     "version": "1.3.6",
     "description": "CLN is a library for efficient computations with all kinds of numbers in arbitrary precision",
@@ -4184,6 +4202,24 @@
     "homepage": "https://libcoap.net/",
     "depends": ["openssl"],
     "srcurl": "https://github.com/obgm/libcoap/archive/v4.3.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libcoinor-osi",
+    "version": "2022.01.01",
+    "description": "An abstract base class to a generic linear programming (LP) solver",
+    "homepage": "https://github.com/coin-or/Osi",
+    "depends": ["libc++", "libcoinor-utils"],
+    "srcurl": "https://github.com/coin-or/Osi.git",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libcoinor-utils",
+    "version": "2022.01.03",
+    "description": "An open-source collection of classes and helper functions for COIN-OR projects",
+    "homepage": "https://github.com/coin-or/CoinUtils",
+    "depends": ["libc++"],
+    "srcurl": "https://github.com/coin-or/CoinUtils.git",
     "maintainer": "@termux"
   },
   {
@@ -4717,6 +4753,15 @@
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
+    "name": "libjansi",
+    "version": "2.4.0",
+    "description": "A small java library that allows you to use ANSI escape codes to format your console output",
+    "homepage": "https://fusesource.github.io/jansi/",
+    "depends": [],
+    "srcurl": "https://github.com/fusesource/jansi.git",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libjansson",
     "version": "2.14",
     "description": "C library for encoding, decoding and manipulating JSON data",
@@ -5020,6 +5065,15 @@
     "homepage": "https://github.com/msgpack/msgpack-c/",
     "depends": [],
     "srcurl": "https://github.com/msgpack/msgpack-c/releases/download/c-4.0.0/msgpack-c-4.0.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libmusicbrainz",
+    "version": "5.1.0",
+    "description": "The MusicBrainz Client Library",
+    "homepage": "https://musicbrainz.org/doc/libmusicbrainz",
+    "depends": ["libc++", "libneon", "libxml2"],
+    "srcurl": "https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5860,6 +5914,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libwavpack",
+    "version": "5.4.0",
+    "description": "A completely open audio compression format providing lossless, high-quality lossy, and a unique hybrid compression mode",
+    "homepage": "https://www.wavpack.com/",
+    "depends": ["libandroid-glob", "libiconv"],
+    "srcurl": "https://github.com/dbry/WavPack/releases/download/5.4.0/wavpack-5.4.0.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libwebp",
     "version": "1.2.1",
     "description": "Library to encode and decode images in WebP format",
@@ -6431,7 +6494,7 @@
     "version": "3.8.4",
     "description": "A Java software project management and comprehension tool",
     "homepage": "https://maven.apache.org/",
-    "depends": ["openjdk-17"],
+    "depends": ["libjansi", "openjdk-17"],
     "srcurl": "https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz",
     "maintainer": "@masterjavaofficial"
   },
@@ -6523,6 +6586,15 @@
     "homepage": "https://memcached.org/",
     "depends": ["libevent", "libsasl"],
     "srcurl": "https://www.memcached.org/files/memcached-1.6.12.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "mercury",
+    "version": "20.06.1",
+    "description": "A logic/functional programming language",
+    "homepage": "https://www.mercurylang.org/",
+    "depends": [],
+    "srcurl": "https://dl.mercurylang.org/release-20.06/mercury-srcdist-20.06.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7972,6 +8044,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "polyml",
+    "version": "5.9",
+    "description": "A Standard ML implementation",
+    "homepage": "https://www.polyml.org/",
+    "depends": ["libc++", "libffi", "libgmp"],
+    "srcurl": "https://github.com/polyml/polyml/archive/refs/tags/v5.9.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "poppler",
     "version": "21.08.0",
     "description": "PDF rendering library",
@@ -8099,11 +8180,11 @@
   },
   {
     "name": "proxmark3-git",
-    "version": "2021.12.19-17b369cc",
+    "version": "2022.01.05-2d1a1dc0",
     "description": "The Swiss Army Knife of RFID Research - RRG/Iceman repo",
     "homepage": "https://github.com/RfidResearchGroup/proxmark3",
     "depends": ["libbz2", "libc++", "readline"],
-    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/17b369cc5225566eb95f2c483f18d81f068f8803.tar.gz",
+    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/2d1a1dc03489aef4f03d0be5b789680f40921bc3.tar.gz",
     "maintainer": "Marlin Sööse <marlin.soose@laro.se>"
   },
   {
@@ -8777,6 +8858,15 @@
     "homepage": "https://serf.apache.org/",
     "depends": ["apr", "apr-util", "openssl", "libuuid", "libexpat", "zlib"],
     "srcurl": "https://archive.apache.org/dist/serf/serf-1.3.9.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "shairport-sync",
+    "version": "3.1.2",
+    "description": "An AirPlay audio player",
+    "homepage": "https://github.com/mikebrady/shairport-sync",
+    "depends": ["libconfig", "libdaemon", "libpopt", "libsoxr", "openssl", "pulseaudio"],
+    "srcurl": "https://github.com/mikebrady/shairport-sync/archive/refs/tags/3.1.2.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9879,6 +9969,15 @@
     "homepage": "https://uftrace.github.io/slide",
     "depends": ["capstone", "libandroid-glob", "libandroid-spawn", "libelf", "libdw", "ncurses", "python"],
     "srcurl": "https://github.com/namhyung/uftrace/archive/v0.9.4.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "unar",
+    "version": "1.10.7",
+    "description": "Command line tools for archive and file unarchiving and extraction",
+    "homepage": "https://theunarchiver.com/command-line",
+    "depends": ["libbz2", "libc++", "libgnustep-base", "libicu", "libwavpack", "zlib"],
+    "srcurl": "https://github.com/MacPaw/XADMaster/archive/v1.10.7/XADMaster-1.10.7.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -11309,6 +11408,15 @@
     "depends": ["bzip2", "desktop-file-utils", "cpio", "glib", "gtk3", "gzip", "libcairo", "lzip", "lzop", "p7zip", "tar", "unrar", "unzip", "xz-utils", "zip", "bsdtar", "zlib", "json-glib", "libnotify", "libarchive"],
     "srcurl": "https://github.com/GNOME/file-roller/archive/refs/tags/3.40.0.tar.gz",
     "maintainer": "Yisus7u7 <jesuspixel5@gmail.com>"
+  },
+  {
+    "name": "flacon",
+    "version": "8.2.0",
+    "description": "Extracts individual tracks from one big audio file and saves them as separate audio files",
+    "homepage": "https://flacon.github.io/",
+    "depends": ["libuchardet", "taglib", "qt5-qtbase", "qt5-qttools"],
+    "srcurl": "https://github.com/flacon/flacon/archive/v8.2.0.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "florence",
