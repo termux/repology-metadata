@@ -1487,6 +1487,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "dgsh",
+    "version": "1.0.0",
+    "description": "The directed graph shell",
+    "homepage": "https://www.spinellis.gr/sw/dgsh/",
+    "depends": [],
+    "srcurl": "https://github.com/dspinellis/dgsh/archive/refs/tags/v1.0.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "dialog",
     "version": "1.3-20211214",
     "description": "Application used in shell scripts which displays text user interface widgets",
@@ -2443,7 +2452,7 @@
     "version": "10.1",
     "description": "The standard GNU Debugger that runs on many Unix-like systems and works for many programming languages",
     "homepage": "https://www.gnu.org/software/gdb/",
-    "depends": ["libc++", "liblzma", "libexpat", "readline", "ncurses", "libmpfr", "python", "zlib"],
+    "depends": ["libc++", "liblzma", "libexpat", "readline", "ncurses", "libmpfr", "python", "zlib", "libthread-db"],
     "srcurl": "https://mirrors.kernel.org/gnu/gdb/gdb-10.1.tar.xz",
     "maintainer": "@termux"
   },
@@ -2921,6 +2930,15 @@
     "homepage": "https://github.com/sorenisanerd/gotty",
     "depends": [],
     "srcurl": "https://github.com/sorenisanerd/gotty/archive/v1.3.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "gpac",
+    "version": "1.0.1",
+    "description": "An open-source multimedia framework focused on modularity and standards compliance",
+    "homepage": "https://gpac.wp.imt.fr/",
+    "depends": ["zlib"],
+    "srcurl": "https://github.com/gpac/gpac/archive/v1.0.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4268,6 +4286,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libcec",
+    "version": "6.0.2",
+    "description": "Provides support for Pulse-Eight's USB-CEC adapter and other CEC capable hardware",
+    "homepage": "http://libcec.pulse-eight.com/",
+    "depends": ["libc++", "libp8-platform"],
+    "srcurl": "https://github.com/Pulse-Eight/libcec/archive/libcec-6.0.2.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libcln",
     "version": "1.3.6",
     "description": "CLN is a library for efficient computations with all kinds of numbers in arbitrary precision",
@@ -4888,6 +4915,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "liblightning",
+    "version": "2.1.3",
+    "description": "A library to aid in making portable programs that compile assembly code at run time",
+    "homepage": "https://www.gnu.org/software/lightning/",
+    "depends": ["zlib"],
+    "srcurl": "https://ftp.gnu.org/gnu/lightning/lightning-2.1.3.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libliquid-dsp",
     "version": "1.3.2",
     "description": "Software-defined radio digital signal processing library",
@@ -5374,6 +5410,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libp8-platform",
+    "version": "2.1.0.1",
+    "description": "Platform support library used by libCEC and binary add-ons for Kodi",
+    "homepage": "https://github.com/Pulse-Eight/platform",
+    "depends": ["libc++"],
+    "srcurl": "https://github.com/Pulse-Eight/platform/archive/p8-platform-2.1.0.1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libpcap",
     "version": "1.10.1",
     "description": "Library for network traffic capture",
@@ -5824,6 +5869,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libthread-db",
+    "version": "22",
+    "description": "Thread debugging library",
+    "homepage": "https://android.googlesource.com/platform/ndk/",
+    "depends": [],
+    "srcurl": "https://android.googlesource.com/platform/ndk/+archive/refs/tags/ndk-r22/sources/android/libthread_db.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libtiff",
     "version": "4.3.0",
     "description": "Support for the Tag Image File Format (TIFF) for storing image data",
@@ -6020,6 +6074,15 @@
     "depends": ["fftw", "giflib", "imagemagick", "libexif", "libexpat", "libjpeg-turbo", "libtiff", "libwebp"],
     "srcurl": "https://github.com/libvips/libvips/releases/download/v8.12.1/vips-8.12.1.tar.gz",
     "maintainer": "Thibault Meyer <meyer.thibault@gmail.com>"
+  },
+  {
+    "name": "libvmaf",
+    "version": "2.3.0",
+    "description": "A perceptual video quality assessment algorithm developed by Netflix",
+    "homepage": "https://github.com/Netflix/vmaf",
+    "depends": [],
+    "srcurl": "https://github.com/Netflix/vmaf/archive/refs/tags/v2.3.0.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "libvorbis",
@@ -8215,6 +8278,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "posixvala",
+    "version": "0.2",
+    "description": "Aims to bring back the posix profile for Vala",
+    "homepage": "https://github.com/radare/posixvala",
+    "depends": [],
+    "srcurl": "https://github.com/radare/posixvala/archive/refs/tags/0.2.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "postgis",
     "version": "3.1.4",
     "description": "Spatial database extender for PostgreSQL object-relational database",
@@ -9500,6 +9572,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "suite3270",
+    "version": "4.1ga11",
+    "description": "A family of IBM 3270 terminal emulators and related tools",
+    "homepage": "http://x3270.bgp.nu/",
+    "depends": ["less", "libexpat", "libiconv", "ncurses"],
+    "srcurl": "https://prdownloads.sourceforge.net/x3270/suite3270-4.1ga11-src.tgz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "sun",
     "version": "1.0.0",
     "description": "A very simple note taking cli app",
@@ -10140,6 +10221,15 @@
     "homepage": "https://bitbucket.org/tmedwards/tweego",
     "depends": [],
     "srcurl": "https://github.com/tmedwards/tweego/archive/v2.1.1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "txikijs",
+    "version": "2021.11.16",
+    "description": "A small and powerful JavaScript runtime",
+    "homepage": "https://github.com/saghul/txiki.js",
+    "depends": ["libcurl"],
+    "srcurl": "https://github.com/saghul/txiki.js.git",
     "maintainer": "@termux"
   },
   {
