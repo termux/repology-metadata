@@ -366,6 +366,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "asymptote",
+    "version": "2.74",
+    "description": "A powerful descriptive vector graphics language for technical drawing",
+    "homepage": "https://asymptote.sourceforge.io/",
+    "depends": ["libc++", "libtirpc", "ncurses", "readline", "zlib"],
+    "srcurl": "https://downloads.sourceforge.net/asymptote/asymptote-2.74.src.tgz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "at",
     "version": "3.2.2",
     "description": "AT and batch delayed command scheduling utility and daemon",
@@ -859,6 +868,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "catdoc",
+    "version": "0.95",
+    "description": "Program which reads MS-Word file and prints readable ASCII text to stdout",
+    "homepage": "http://www.wagner.pp.ru/~vitus/software/catdoc/",
+    "depends": ["libandroid-glob"],
+    "srcurl": "http://ftp.wagner.pp.ru/pub/catdoc/catdoc-0.95.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "cava",
     "version": "0.7.4",
     "description": "Console-based Audio Visualizer. Works with MPD and Pulseaudio",
@@ -1237,6 +1255,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "crowbook",
+    "version": "0.15.2e",
+    "description": "Allows you to write a book in Markdown without worrying about formatting or typography",
+    "homepage": "https://github.com/lise-henry",
+    "depends": ["openssl"],
+    "srcurl": "https://github.com/lise-henry/crowbook/archive/refs/tags/v0.15.2e.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "crunch",
     "version": "3.6",
     "description": "Highly customizable wordlist generator",
@@ -1261,6 +1288,15 @@
     "homepage": "http://cscope.sourceforge.net/",
     "depends": ["ncurses"],
     "srcurl": "https://fossies.org/linux/misc/cscope-15.9.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "csol",
+    "version": "1.4.1",
+    "description": "A small collection of solitaire games implemented in C using ncurses",
+    "homepage": "https://github.com/nielssp/csol",
+    "depends": ["libandroid-support", "ncurses"],
+    "srcurl": "https://github.com/nielssp/csol/archive/refs/tags/v1.4.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -1981,11 +2017,11 @@
   },
   {
     "name": "exiftool",
-    "version": "12.34",
+    "version": "12.38",
     "description": "Utility for reading, writing and editing meta information in a wide variety of files.",
     "homepage": "https://exiftool.org/",
     "depends": ["perl"],
-    "srcurl": "http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-12.34.tar.gz",
+    "srcurl": "http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-12.38.tar.gz",
     "maintainer": "Leonid Pliushch <leonid.pliushch@gmail.com>"
   },
   {
@@ -2835,11 +2871,11 @@
   },
   {
     "name": "golang",
-    "version": "3:1.17.5",
+    "version": "3:1.17.6",
     "description": "Go programming language compiler",
     "homepage": "https://golang.org/",
     "depends": ["clang"],
-    "srcurl": "https://storage.googleapis.com/golang/go1.17.5.src.tar.gz",
+    "srcurl": "https://storage.googleapis.com/golang/go1.17.6.src.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3363,12 +3399,30 @@
     "maintainer": "@termux"
   },
   {
+    "name": "id3lib",
+    "version": "3.8.3",
+    "description": "A software library for manipulating ID3v1/v1.1 and ID3v2 tags",
+    "homepage": "http://id3lib.sourceforge.net/",
+    "depends": ["libc++", "libiconv", "zlib"],
+    "srcurl": "https://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "id3ted",
     "version": "1.0",
     "description": "A comand line id3 tag editor",
     "homepage": "https://muennich.github.com/id3ted/",
     "depends": ["file", "libc++", "taglib"],
     "srcurl": "https://github.com/muennich/id3ted/archive/v1.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "id3v2",
+    "version": "0.1.12",
+    "description": "A command line id3v2 tag editor",
+    "homepage": "http://id3v2.sourceforge.net/",
+    "depends": ["id3lib", "libc++", "zlib"],
+    "srcurl": "https://downloads.sourceforge.net/id3v2/id3v2-0.1.12.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3414,6 +3468,15 @@
     "homepage": "https://www.gnu.org/software/inetutils/",
     "depends": ["readline"],
     "srcurl": "https://mirrors.kernel.org/gnu/inetutils/inetutils-1.9.4.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "influxdb",
+    "version": "1.8.10",
+    "description": "An open source time series database with no external dependencies",
+    "homepage": "https://www.influxdata.com/",
+    "depends": [],
+    "srcurl": "https://github.com/influxdata/influxdb/archive/refs/tags/v1.8.10.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -3801,6 +3864,24 @@
     "homepage": "https://kotlinlang.org/",
     "depends": ["openjdk-17"],
     "srcurl": "https://github.com/JetBrains/kotlin/releases/download/v1.6.10/kotlin-compiler-1.6.10.zip",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "kphp",
+    "version": "2021.12.30",
+    "description": "A PHP compiler",
+    "homepage": "https://vkcom.github.io/kphp/",
+    "depends": ["fmt", "libc++", "libcurl", "libmsgpack-cxx", "libre2", "libuber-h3", "libucontext", "libyaml-cpp", "openssl", "pcre", "zstd"],
+    "srcurl": "https://github.com/VKCOM/kphp.git",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "kphp-timelib",
+    "version": "2021.03.01",
+    "description": "timelib 2020.02 library fork for KPHP",
+    "homepage": "https://github.com/derickr/timelib",
+    "depends": [],
+    "srcurl": "https://github.com/VKCOM/timelib.git",
     "maintainer": "@termux"
   },
   {
@@ -5068,6 +5149,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libmsgpack-cxx",
+    "version": "4.0.3",
+    "description": "msgpack for C++",
+    "homepage": "https://msgpack.org/",
+    "depends": ["boost"],
+    "srcurl": "https://github.com/msgpack/msgpack-c/releases/download/cpp-4.0.3/msgpack-cxx-4.0.3.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libmusicbrainz",
     "version": "5.1.0",
     "description": "The MusicBrainz Client Library",
@@ -5191,6 +5281,15 @@
     "homepage": "https://www.xiph.org/oggz/",
     "depends": ["libogg"],
     "srcurl": "http://downloads.xiph.org/releases/liboggz/liboggz-1.1.1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libopencc",
+    "version": "1.1.3",
+    "description": "An opensource project for conversions between Traditional Chinese, Simplified Chinese and Japanese Kanji (Shinjitai)",
+    "homepage": "https://github.com/BYVoid/OpenCC",
+    "depends": ["libc++", "marisa"],
+    "srcurl": "https://github.com/BYVoid/OpenCC/archive/ver.1.1.3.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5419,6 +5518,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libre2",
+    "version": "2021.11.01",
+    "description": "A regular expression library",
+    "homepage": "https://github.com/google/re2",
+    "depends": ["libc++"],
+    "srcurl": "https://github.com/google/re2/archive/2021-11-01.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libregexp-assemble-perl",
     "version": "0.38",
     "description": "Perl module to merge several regular expressions",
@@ -5434,6 +5542,15 @@
     "homepage": "https://cwrap.org/resolv_wrapper.html",
     "depends": [],
     "srcurl": "https://ftp.samba.org/pub/cwrap/resolv_wrapper-1.1.7.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "librime",
+    "version": "1.7.3",
+    "description": "A modular, extensible input method engine in cross-platform C++ code",
+    "homepage": "https://rime.im/",
+    "depends": ["boost", "capnproto", "google-glog", "leveldb", "libc++", "libopencc", "libyaml-cpp", "marisa"],
+    "srcurl": "https://github.com/rime/librime/archive/refs/tags/1.7.3.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -5779,12 +5896,30 @@
     "maintainer": "@termux"
   },
   {
+    "name": "libuber-h3",
+    "version": "3.7.2",
+    "description": "A hexagonal hierarchical geospatial indexing system",
+    "homepage": "https://h3geo.org/",
+    "depends": [],
+    "srcurl": "https://github.com/uber/h3/archive/refs/tags/v3.7.2.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "libuchardet",
     "version": "0.0.7",
     "description": "An encoding detector library",
     "homepage": "https://www.freedesktop.org/wiki/Software/uchardet/",
     "depends": ["libc++"],
     "srcurl": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.7.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libucontext",
+    "version": "1.1",
+    "description": "A library which provides the ucontext.h C API",
+    "homepage": "https://github.com/kaniini/libucontext",
+    "depends": [],
+    "srcurl": "https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -6526,6 +6661,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "mdbook",
+    "version": "0.4.15",
+    "description": "Creates book from markdown files",
+    "homepage": "https://rust-lang.github.io/mdBook/",
+    "depends": [],
+    "srcurl": "https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.15.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "mdbtools",
     "version": "1.0.0",
     "description": "A set of programs to help you extract data from Microsoft Access files in various settings",
@@ -6730,6 +6874,15 @@
     "homepage": "https://pagure.io/mlocate",
     "depends": ["libandroid-support"],
     "srcurl": "https://releases.pagure.org/mlocate/mlocate-0.26.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "monetdb",
+    "version": "11.41.13",
+    "description": "A high-performance database kernel for query-intensive applications",
+    "homepage": "https://www.monetdb.org/",
+    "depends": ["libbz2", "libcurl", "libiconv", "liblz4", "liblzma", "libpcreposix", "libuuid", "libxml2", "netcdf-c", "openssl", "readline", "zlib"],
+    "srcurl": "https://www.monetdb.org/downloads/sources/archive/MonetDB-11.41.13.tar.xz",
     "maintainer": "@termux"
   },
   {
@@ -8170,6 +8323,15 @@
     "maintainer": "Radomír Polách <rp@t4d.cz>"
   },
   {
+    "name": "prover9",
+    "version": "2009-11A",
+    "description": "An automated theorem prover for first-order and equational logic",
+    "homepage": "https://www.cs.unm.edu/~mccune/prover9/",
+    "depends": [],
+    "srcurl": "https://www.cs.unm.edu/~mccune/mace4/download/LADR-2009-11A.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "proxmark3",
     "version": "1:4.14831",
     "description": "The Swiss Army Knife of RFID Research - RRG/Iceman repo",
@@ -8768,6 +8930,15 @@
     "homepage": "https://www.scala-lang.org",
     "depends": ["openjdk-17"],
     "srcurl": "https://github.com/lampepfl/dotty/releases/download/3.1.0/scala3-3.1.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "scheme48",
+    "version": "1.9.2",
+    "description": "An implementation of the Scheme programming language",
+    "homepage": "https://www.s48.org/",
+    "depends": [],
+    "srcurl": "https://www.s48.org/1.9.2/scheme48-1.9.2.tgz",
     "maintainer": "@termux"
   },
   {
