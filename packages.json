@@ -460,7 +460,7 @@
     "version": "0.8",
     "description": "A system for service discovery on a local network via mDNS/DNS-SD",
     "homepage": "https://www.avahi.org/",
-    "depends": ["glib", "libandroid-glob", "libcap", "libdaemon", "libevent", "libexpat"],
+    "depends": ["dbus", "glib", "libandroid-glob", "libcap", "libdaemon", "libevent", "libexpat"],
     "srcurl": "https://github.com/lathiat/avahi/archive/v0.8.tar.gz",
     "maintainer": "@termux"
   },
@@ -2314,11 +2314,11 @@
   },
   {
     "name": "fluidsynth",
-    "version": "2.2.4",
+    "version": "2.2.5",
     "description": "Software synthesizer based on the SoundFont 2 specifications",
     "homepage": "https://github.com/FluidSynth/fluidsynth",
     "depends": ["glib", "pulseaudio"],
-    "srcurl": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.2.4.tar.gz",
+    "srcurl": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.2.5.tar.gz",
     "maintainer": "Yonle <yonle@protonmail.com>"
   },
   {
@@ -7237,6 +7237,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "mp3gain",
+    "version": "1.6.2",
+    "description": "Analyzes and adjusts mp3 files so that they have the same volume",
+    "homepage": "http://mp3gain.sourceforge.net/",
+    "depends": ["mpg123"],
+    "srcurl": "https://downloads.sourceforge.net/mp3gain/mp3gain-1_6_2-src.zip",
+    "maintainer": "@termux"
+  },
+  {
     "name": "mp3splt",
     "version": "2.6.2",
     "description": "Utility to split mp3, ogg vorbis and FLAC files without decoding",
@@ -7490,11 +7499,11 @@
   },
   {
     "name": "ncurses",
-    "version": "6.2.20200725",
+    "version": "6.3",
     "description": "Library for text-based user interfaces in a terminal-independent manner",
     "homepage": "https://invisible-island.net/ncurses/",
     "depends": [],
-    "srcurl": "https://github.com/termux/distfiles/releases/download/2021.01.04/ncurses-6.2-20200725.tgz",
+    "srcurl": "https://invisible-mirror.net/archives/ncurses/ncurses-6.3.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -7629,6 +7638,15 @@
     "depends": ["zlib", "openssl"],
     "srcurl": "https://github.com/ngircd/ngircd/releases/download/rel-26.1/ngircd-26.tar.xz",
     "maintainer": "@yonle <yonle@protonmail.com>"
+  },
+  {
+    "name": "ngspice",
+    "version": "35",
+    "description": "A mixed-level/mixed-signal circuit simulator",
+    "homepage": "http://ngspice.sourceforge.net/",
+    "depends": ["libc++"],
+    "srcurl": "https://downloads.sourceforge.net/ngspice/ngspice-35.tar.gz",
+    "maintainer": "@termux"
   },
   {
     "name": "nim",
@@ -8634,7 +8652,7 @@
     "description": "Emulate chroot, bind mount and binfmt_misc for non-root users",
     "homepage": "https://proot-me.github.io/",
     "depends": ["libtalloc"],
-    "srcurl": "https://github.com/termux/proot/archive/17e72681bccd7a2424b99196c0daa9f059ff352a.zip",
+    "srcurl": "https://github.com/termux/proot/archive/d4e4a07fbdc16e24868c295d3f7de97eca2a7f80.zip",
     "maintainer": "Michal Bednarski @michalbednarski"
   },
   {
@@ -9515,6 +9533,15 @@
     "homepage": "https://geoff.greer.fm/ag/",
     "depends": ["pcre", "liblzma", "zlib"],
     "srcurl": "https://geoff.greer.fm/ag/releases/the_silver_searcher-2.2.0.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "simh",
+    "version": "2022.01.16",
+    "description": "A collection of simulators for computer hardware and software from the past",
+    "homepage": "http://simh.trailing-edge.com/",
+    "depends": ["libandroid-glob"],
+    "srcurl": "https://github.com/simh/simh.git",
     "maintainer": "@termux"
   },
   {
