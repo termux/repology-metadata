@@ -18,6 +18,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "6tunnel",
+    "version": "0.13",
+    "description": "Allows you to use services provided by IPv6 hosts with IPv4-only applications and vice-versa",
+    "homepage": "https://github.com/wojtekka/6tunnel",
+    "depends": [],
+    "srcurl": "https://github.com/wojtekka/6tunnel/archive/refs/tags/0.13.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "8086tiny",
     "version": "1.25",
     "description": "A PC XT-compatible emulator/virtual machine",
@@ -37,7 +46,7 @@
   },
   {
     "name": "aapt",
-    "version": "11.0.0.48",
+    "version": "12.0.0.27",
     "description": "Android Asset Packaging Tool",
     "homepage": "https://elinux.org/Android_aapt",
     "depends": ["libc++", "libexpat", "libpng", "libzopfli", "zlib"],
@@ -368,11 +377,20 @@
   },
   {
     "name": "assimp",
-    "version": "5.1.6",
+    "version": "5.2.1",
     "description": "Library to import various well-known 3D model formats in an uniform manner",
     "homepage": "http://assimp.sourceforge.net/index.html",
     "depends": ["boost", "zlib"],
-    "srcurl": "https://github.com/assimp/assimp/archive/v5.1.6.tar.gz",
+    "srcurl": "https://github.com/assimp/assimp/archive/v5.2.1.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "astra-sm",
+    "version": "2019.06.19",
+    "description": "Software for digital TV broadcasting",
+    "homepage": "https://gitlab.com/berdyansk/astra-sm",
+    "depends": ["libdvbcsa", "liblua53"],
+    "srcurl": "https://github.com/OpenVisionE2/astra-sm.git",
     "maintainer": "@termux"
   },
   {
@@ -700,11 +718,11 @@
   },
   {
     "name": "boost",
-    "version": "1.77.0",
+    "version": "1.78.0",
     "description": "Free peer-reviewed portable C++ source libraries",
     "homepage": "https://boost.org",
     "depends": ["libc++", "libbz2", "libiconv", "liblzma", "zlib"],
-    "srcurl": "https://boostorg.jfrog.io/artifactory/main/release/1.77.0/source/boost_1_77_0.tar.bz2",
+    "srcurl": "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2",
     "maintainer": "@termux"
   },
   {
@@ -1122,7 +1140,7 @@
   },
   {
     "name": "clpeak",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "description": "A tool which profiles OpenCL devices to find their peak capacities",
     "homepage": "https://github.com/krrishnarraj/clpeak",
     "depends": ["libc++", "ocl-icd"],
@@ -1472,7 +1490,7 @@
   },
   {
     "name": "dart",
-    "version": "2.15.1",
+    "version": "2.16.0",
     "description": "Dart is a general-purpose programming language",
     "homepage": "https://www.dartlang.org/",
     "depends": ["gzip", "tar"],
@@ -1552,11 +1570,11 @@
   },
   {
     "name": "delve",
-    "version": "1.8.0",
+    "version": "1.8.1",
     "description": "A debugger for the Go programming language",
     "homepage": "https://github.com/go-delve/delve",
     "depends": ["golang", "git"],
-    "srcurl": "https://github.com/go-delve/delve/archive/v1.8.0.tar.gz",
+    "srcurl": "https://github.com/go-delve/delve/archive/v1.8.1.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm"
   },
   {
@@ -1874,11 +1892,11 @@
   },
   {
     "name": "duf",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "Disk usage/free utility",
     "homepage": "https://github.com/muesli/duf",
     "depends": [],
-    "srcurl": "https://github.com/muesli/duf/archive/v0.8.0.tar.gz",
+    "srcurl": "https://github.com/muesli/duf/archive/v0.8.1.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm"
   },
   {
@@ -2315,11 +2333,11 @@
   },
   {
     "name": "findomain",
-    "version": "5.1.1",
+    "version": "6.0.0",
     "description": "Findomain is the fastest subdomain enumerator and the only one written in Rust",
     "homepage": "https://findomain.app/",
     "depends": [],
-    "srcurl": "https://github.com/Findomain/Findomain/archive/5.1.1.tar.gz",
+    "srcurl": "https://github.com/Findomain/Findomain/archive/6.0.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -2369,11 +2387,11 @@
   },
   {
     "name": "flyctl",
-    "version": "0.0.295",
+    "version": "0.0.296",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.295.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.296.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>"
   },
   {
@@ -3037,7 +3055,7 @@
     "version": "0.5.0",
     "description": "Logging library for C++",
     "homepage": "https://github.com/google/glog",
-    "depends": ["libc++"],
+    "depends": ["gflags", "libc++"],
     "srcurl": "https://github.com/google/glog/archive/v0.5.0.tar.gz",
     "maintainer": "@termux"
   },
@@ -3796,15 +3814,6 @@
     "maintainer": "@termux"
   },
   {
-    "name": "iverilog",
-    "version": "10.3",
-    "description": "Icarus Verilog compiler and simulation tool",
-    "homepage": "http://iverilog.icarus.com/",
-    "depends": ["libbz2", "libc++", "readline", "zlib"],
-    "srcurl": "https://github.com/steveicarus/iverilog/archive/v10_3.tar.gz",
-    "maintainer": "@termux"
-  },
-  {
     "name": "iwyu",
     "version": "0.17",
     "description": "A tool to analyze #includes in C and C++ source files",
@@ -3833,11 +3842,11 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.11.1",
+    "version": "2.12.1",
     "description": "A CLI for JFrog products.",
     "homepage": "https://jfrog.com/getcli",
     "depends": ["libc++"],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.11.1.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.12.1.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4343,11 +4352,11 @@
   },
   {
     "name": "libarchive",
-    "version": "3.5.2",
+    "version": "3.5.3",
     "description": "Multi-format archive and compression library",
     "homepage": "https://www.libarchive.org/",
     "depends": ["libbz2", "libiconv", "liblzma", "libxml2", "openssl", "zlib"],
-    "srcurl": "https://github.com/libarchive/libarchive/releases/download/v3.5.2/libarchive-3.5.2.tar.gz",
+    "srcurl": "https://github.com/libarchive/libarchive/releases/download/v3.5.3/libarchive-3.5.3.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -4415,7 +4424,7 @@
   },
   {
     "name": "libc++",
-    "version": "21d",
+    "version": "23b",
     "description": "C++ Standard Library",
     "homepage": "https://libcxx.llvm.org/",
     "depends": [],
@@ -4871,15 +4880,6 @@
     "maintainer": "@termux"
   },
   {
-    "name": "libglog",
-    "version": "0.5.0",
-    "description": "A C++98 library that implements application-level logging",
-    "homepage": "https://github.com/google/glog",
-    "depends": ["libandroid-glob", "libc++"],
-    "srcurl": "https://github.com/google/glog/archive/refs/tags/v0.5.0.tar.gz",
-    "maintainer": "@termux"
-  },
-  {
     "name": "libgmime",
     "version": "3.2.7",
     "description": "MIME message parser and creator",
@@ -5196,11 +5196,11 @@
   },
   {
     "name": "libllvm",
-    "version": "13.0.0",
+    "version": "13.0.1",
     "description": "Modular compiler and toolchain technologies library",
     "homepage": "https://clang.llvm.org/",
     "depends": ["libc++", "ncurses", "libffi", "zlib", "libxml2"],
-    "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/llvm-project-13.0.0.src.tar.xz",
+    "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz",
     "maintainer": "@buttaface"
   },
   {
@@ -5345,6 +5345,15 @@
     "homepage": "http://mcrypt.sourceforge.net/",
     "depends": [],
     "srcurl": "https://downloads.sourceforge.net/mcrypt/libmcrypt-2.5.8.tar.bz2",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libmdbx",
+    "version": "0.11.4",
+    "description": "An extremely fast, compact, powerful, embedded, transactional key-value database",
+    "homepage": "https://erthink.github.io/libmdbx/",
+    "depends": ["libc++"],
+    "srcurl": "https://github.com/erthink/libmdbx.git",
     "maintainer": "@termux"
   },
   {
@@ -6029,6 +6038,15 @@
     "homepage": "https://libsodium.org/",
     "depends": [],
     "srcurl": "https://github.com/jedisct1/libsodium/archive/1.0.18-RELEASE.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "libsophia",
+    "version": "2.2",
+    "description": "Advanced transactional MVCC key-value/row storage library",
+    "homepage": "http://sophia.systems/",
+    "depends": [],
+    "srcurl": "https://github.com/pmwkaa/sophia.git",
     "maintainer": "@termux"
   },
   {
@@ -7815,7 +7833,7 @@
   },
   {
     "name": "ndk-multilib",
-    "version": "21d",
+    "version": "23b",
     "description": "Multilib binaries for cross-compilation",
     "homepage": "https://developer.android.com/tools/sdk/ndk/index.html",
     "depends": [],
@@ -7823,7 +7841,7 @@
   },
   {
     "name": "ndk-sysroot",
-    "version": "21d",
+    "version": "23b",
     "description": "System header and library files from the Android NDK needed for compiling C programs",
     "homepage": "https://developer.android.com/tools/sdk/ndk/index.html",
     "depends": [],
@@ -8101,11 +8119,11 @@
   },
   {
     "name": "nudoku",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "ncurses based sudoku game",
     "homepage": "http://jubalh.github.io/nudoku/",
     "depends": ["ncurses"],
-    "srcurl": "https://github.com/jubalh/nudoku/archive/2.0.0.tar.gz",
+    "srcurl": "https://github.com/jubalh/nudoku/archive/2.1.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8262,6 +8280,15 @@
     "maintainer": "@termux"
   },
   {
+    "name": "opencl-clhpp",
+    "version": "2.0.16",
+    "description": "Khronos OpenCL c++ headers",
+    "homepage": "https://github.com/KhronosGroup/OpenCL-Headers",
+    "depends": [],
+    "srcurl": "https://github.com/KhronosGroup/OpenCL-CLHPP/archive/v2.0.16.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
     "name": "opencl-headers",
     "version": "2021.06.30",
     "description": "Khronos OpenCL-Headers",
@@ -8380,11 +8407,11 @@
   },
   {
     "name": "osm2pgsql",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "description": "osm2pgsql imports OpenStreetMap (OSM) data into a PostgreSQL/PostGIS database",
     "homepage": "https://osm2pgsql.org/",
-    "depends": ["libexpat", "proj", "bzip2", "zlib", "boost", "postgresql", "lua54"],
-    "srcurl": "https://github.com/openstreetmap/osm2pgsql/archive/1.5.0.tar.gz",
+    "depends": ["libexpat", "proj", "bzip2", "zlib", "postgresql", "lua54"],
+    "srcurl": "https://github.com/openstreetmap/osm2pgsql/archive/1.6.0.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -8796,7 +8823,7 @@
     "version": "3.4.0",
     "description": "A persistent huge storage service, compatible with the vast majority of Redis interfaces",
     "homepage": "https://github.com/OpenAtomFoundation/pika",
-    "depends": ["libc++", "libglog", "libprotobuf", "librocksdb", "zlib"],
+    "depends": ["google-glog", "libc++", "libprotobuf", "librocksdb", "zlib"],
     "srcurl": "https://github.com/OpenAtomFoundation/pika.git",
     "maintainer": "@termux"
   },
@@ -9319,7 +9346,7 @@
     "description": "An alternative implementation of the plan 9 rc shell",
     "homepage": "http://tobold.org/article/rc",
     "depends": ["readline"],
-    "srcurl": "https://sources.voidlinux-ppc.org/rc-1.7.4/rc-1.7.4.tar.gz",
+    "srcurl": "https://sources.voidlinux-ppc.org/rc-1.7.4/v1.7.4.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -9508,6 +9535,15 @@
     "homepage": "https://github.com/hanslub42/rlwrap",
     "depends": ["ncurses", "readline"],
     "srcurl": "https://fossies.org/linux/privat/rlwrap-0.45.2.tar.xz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "robotfindskitten",
+    "version": "2021.08.18",
+    "description": "A very fun adventure game for robots and humans",
+    "homepage": "https://github.com/noncombatant/robotfindskitten",
+    "depends": ["ncurses"],
+    "srcurl": "https://github.com/noncombatant/robotfindskitten.git",
     "maintainer": "@termux"
   },
   {
@@ -10045,7 +10081,7 @@
     "version": "0.8.11",
     "description": "An Ethereum smart contract-oriented language.",
     "homepage": "https://solidity.readthedocs.io",
-    "depends": ["boost"],
+    "depends": ["boost", "jsoncpp"],
     "srcurl": "https://github.com/ethereum/solidity/releases/download/v0.8.11/solidity_0.8.11.tar.gz",
     "maintainer": "@termux"
   },
@@ -10235,7 +10271,7 @@
     "description": "Structured Terminal Forms Language/Library",
     "homepage": "http://www.clifford.at/stfl",
     "depends": ["libandroid-support", "libiconv", "ncurses"],
-    "srcurl": "http://www.clifford.at/stfl/stfl-0.24.tar.gz",
+    "srcurl": "https://grimler.se/termux/stfl-0.24.tar.gz",
     "maintainer": "@termux"
   },
   {
@@ -10303,11 +10339,11 @@
   },
   {
     "name": "stylua",
-    "version": "0.12.1",
+    "version": "0.12.2",
     "description": "An opinionated Lua code formatter",
     "homepage": "https://github.com/JohnnyMorganz/StyLua",
     "depends": [],
-    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.12.1.tar.gz",
+    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.12.2.tar.gz",
     "maintainer": "@shadmansaleh"
   },
   {
@@ -11333,7 +11369,7 @@
   },
   {
     "name": "vulkan-loader-android",
-    "version": "21d",
+    "version": "23b",
     "description": "Vulkan Loader for Android",
     "homepage": "https://source.android.com/devices/graphics/arch-vulkan",
     "depends": [],
@@ -11795,6 +11831,15 @@
     "homepage": "http://zziplib.sourceforge.net/",
     "depends": ["zlib"],
     "srcurl": "https://github.com/gdraheim/zziplib/archive/v0.13.72.tar.gz",
+    "maintainer": "@termux"
+  },
+  {
+    "name": "zzuf",
+    "version": "2019.02.08",
+    "description": "A transparent application input fuzzer",
+    "homepage": "http://caca.zoy.org/wiki/zzuf",
+    "depends": [],
+    "srcurl": "https://github.com/samhocevar/zzuf.git",
     "maintainer": "@termux"
   },
   {
@@ -12362,7 +12407,7 @@
     "homepage": "https://www.chocolate-doom.org",
     "depends": ["sdl2", "sdl2-mixer", "sdl2-net", "mpg123"],
     "srcurl": "https://github.com/chocolate-doom/chocolate-doom/archive/refs/tags/chocolate-doom-3.0.1.tar.gz",
-    "maintainer": "@WMCB-Tech"
+    "maintainer": "@wmcbtech30"
   },
   {
     "name": "cuse",
