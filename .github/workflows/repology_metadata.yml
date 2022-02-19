@@ -14,6 +14,10 @@ jobs:
       with:
         fetch-depth: 0
         token: ${{ secrets.GH_TOKEN }}
+    - name: Install json tools
+      run: |
+        apt update
+        apt install -yq jq
     - name: Clone Termux package repositories
       run: |
         mkdir -p /tmp/repos
@@ -23,6 +27,12 @@ jobs:
     - name: Generate packages.json
       run: |
         bash ./generate-repology-metadata.sh /tmp/repos/*/packages/* > ./packages.json
+
+        if ! jq . ./packages.json > /dev/null; then
+          echo "Error: invalid packages.json" > /dev/stderr
+          exit 1
+        fi
+
         if [ $(git diff ./packages.json | wc -l) -gt 0 ]; then
           git config --global user.name "Termux Github Actions"
           git config --global user.email "contact@termux.org"
