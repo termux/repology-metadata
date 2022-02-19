@@ -16,8 +16,8 @@ jobs:
         token: ${{ secrets.GH_TOKEN }}
     - name: Install json tools
       run: |
-        apt update
-        apt install -yq jq
+        sudo apt update
+        sudo apt install -yq jq
     - name: Clone Termux package repositories
       run: |
         mkdir -p /tmp/repos
