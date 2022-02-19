@@ -3,6 +3,7 @@
 #  Script for generating metadata for Repology in json format.
 #
 #  Copyright 2018 Fredrik Fornwall <fredrik@fornwall.net> @fornwall
+#  Copyright 2022 Henrik Grimler <grimler@termux.org>
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -24,41 +25,80 @@ export TERMUX_ARCH=aarch64
 export TERMUX_ARCH_BITS=64
 . $(dirname "$(realpath "$0")")/properties.sh
 
-check_package() { # path
+print_json_element() {
+	entry="$1" # For example "name"
+	value="$2" # For example "libandroid-support"
+	print_comma="$3"  # boolean, determines whether or not to print trailing ","
+
+	echo -n "    \"${entry}\": \"${value}\""
+	print_trailing_comma "$print_comma"
+}
+
+print_json_array() {
+	entry="$1"  # for example "depends"
+	values="$2" # for example "libandroid-support libc++"
+	print_comma="$3" # boolean, determines whether or not to print trailing ","
+
+	echo -n "    \"${entry}\": ["
+	if [ -z "$values" ]; then
+		echo -n "]"
+		print_trailing_comma "$print_comma"
+		return
+	else
+		echo ""
+	fi
+
+	local first=true
+	for element in $values; do
+		if $first; then
+			first=false
+		else
+			echo ","
+		fi
+
+		echo -n "      \"$element\""
+	done
+	echo ""
+	echo -n "    ]"
+	print_trailing_comma "$print_comma"
+}
+
+print_trailing_comma() {
+	print_comma="$1" # boolean, determines whether or not to print trailing ","
+	if $print_comma; then
+		echo ","
+	else
+		echo ""
+	fi
+}
+
+check_package() {
 	# Avoid ending on errors such as $(which prog)
 	# where prog is not installed.
 	set +e
 
 	local path=$1
 	local pkg=$(basename $path)
+
 	TERMUX_PKG_MAINTAINER="Termux members @termux"
 	TERMUX_PKG_API_LEVEL=24
 	. $path/build.sh
 
 	echo "  {"
-	echo "    \"name\": \"$pkg\","
-	echo "    \"version\": \"$TERMUX_PKG_VERSION\","
-	DESC=$(echo "$TERMUX_PKG_DESCRIPTION" | head -n 1)
-	echo "    \"description\": \"$DESC\","
-	echo "    \"homepage\": \"$TERMUX_PKG_HOMEPAGE\","
+	print_json_element "name" "$pkg"
+	print_json_element "version" "$TERMUX_PKG_VERSION"
+	print_json_element "description" "$TERMUX_PKG_DESCRIPTION"
+	print_json_element "homepage" "$TERMUX_PKG_HOMEPAGE"
 
-	echo -n "    \"depends\": ["
-	FIRST_DEP=yes
-	for p in ${TERMUX_PKG_DEPENDS//,/ }; do
-		if [ $FIRST_DEP = yes ]; then
-			FIRST_DEP=no
-		else
-			echo -n ", "
-		fi
-		echo -n "\"$p\""
-	done
-	echo "],"
+	print_json_array   "depends" "${TERMUX_PKG_DEPENDS//,/ }"
 
 	if [ "$TERMUX_PKG_SRCURL" != "" ]; then
-		echo "    \"srcurl\": \"$TERMUX_PKG_SRCURL\","
+		print_json_element "srcurl" "$TERMUX_PKG_SRCURL"
 	fi
+	print_json_element "maintainer" "$TERMUX_PKG_MAINTAINER" false
 
-	echo "    \"maintainer\": \"$TERMUX_PKG_MAINTAINER\""
+	# last printed entry needs to have "false" as third argument to avoid trailing ","
+
 	echo -n "  }"
 }
 
@@ -69,7 +109,7 @@ if [ $# -eq 0 ]; then
 fi
 
 export FIRST=yes
-echo '['
+echo "["
 for path in "$@"; do
 	if [ $FIRST = yes ]; then
 		FIRST=no
@@ -79,7 +119,7 @@ for path in "$@"; do
 	fi
 
 	# Run each package in separate process since we include their environment variables:
-	( check_package $path)
+	( check_package $path )
 done
 echo ""
-echo ']'
+echo "]"
