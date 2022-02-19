@@ -79,10 +79,24 @@ check_package() {
 
 	local path=$1
 	local pkg=$(basename $path)
+	pushd $path > /dev/null
+	repo_url="$(git config --get remote.origin.url)"
+	# Convert to normal https url if it starts with git@
+	if [ "${repo_url:0:4}" == "git@" ]; then
+		repo_url="$(echo $repo_url|sed  -e 's%:%/%g' -e 's%git@%https://%g' )"
+	fi
+
+	github_regex="https://(www\.)?github.com/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)"
+	if [[ ${repo_url} =~ ${github_regex} ]]; then
+		repo_raw_url="https://raw.githubusercontent.com/${BASH_REMATCH[2]}/${BASH_REMATCH[3]}"
+	else
+		echo "Error: repo regex didn't match ${repo_url}" > /dev/stderr
+		exit 1
+	fi
 
 	TERMUX_PKG_MAINTAINER="Termux members @termux"
 	TERMUX_PKG_API_LEVEL=24
-	. $path/build.sh
+	. build.sh
 
 	echo "  {"
 	print_json_element "name" "$pkg"
@@ -97,7 +111,16 @@ check_package() {
 	fi
 	print_json_element "maintainer" "$TERMUX_PKG_MAINTAINER" false
 
+	print_json_element "package_sources_url" "${repo_url}/tree/master/$(dirname $(git ls-files --full-name build.sh))"
+	print_json_element "package_recipe_url" "${repo_url}/blob/master/$(git ls-files --full-name build.sh)"
+	print_json_element "package_recipe_url_raw" "${repo_raw_url}/master/$(git ls-files --full-name build.sh)"
+	local patches=$(git ls-files --full-name "*.patch" "*.patch32" "*.patch64" "*.patch.beforehostbuild" "*.diff")
+	print_json_array "package_patch_urls" "$(for p in $patches; do echo $repo_url/blob/master/$p; done)"
+	print_json_array "package_patch_raw_urls" "$(for p in $patches; do echo $repo_raw_url/master/$p; done)" false
+
 	# last printed entry needs to have "false" as third argument to avoid trailing ","
+
+	popd > /dev/null
 
 	echo -n "  }"
 }
