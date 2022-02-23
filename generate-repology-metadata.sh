@@ -109,7 +109,7 @@ check_package() {
 	if [ "$TERMUX_PKG_SRCURL" != "" ]; then
 		print_json_element "srcurl" "$TERMUX_PKG_SRCURL"
 	fi
-	print_json_element "maintainer" "$TERMUX_PKG_MAINTAINER" false
+	print_json_element "maintainer" "$TERMUX_PKG_MAINTAINER"
 
 	print_json_element "package_sources_url" "${repo_url}/tree/master/$(dirname $(git ls-files --full-name build.sh))"
 	print_json_element "package_recipe_url" "${repo_url}/blob/master/$(git ls-files --full-name build.sh)"
