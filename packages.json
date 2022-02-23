@@ -5942,6 +5942,41 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "fte",
+    "version": "20110708",
+    "description": "A free text editor for developers",
+    "homepage": "http://fte.sourceforge.net/",
+    "depends": [
+      "libc++",
+      "ncurses"
+    ],
+    "srcurl": "https://downloads.sourceforge.net/fte/fte-20110708-src.zip",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/fte",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/fte/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/install.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/src-cfte.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/src-e_cvslog.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/src-e_svnlog.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/src-e_unix.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/src-fte-unix.mak.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/fte/src-fte.cpp.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/install.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/src-cfte.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/src-e_cvslog.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/src-e_svnlog.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/src-e_unix.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/src-fte-unix.mak.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/fte/src-fte.cpp.patch"
+    ]
+  },
+  {
     "name": "fwknop",
     "version": "2.6.10",
     "description": "fwknop: Single Packet Authorization > Port Knocking",
@@ -10355,7 +10390,7 @@
   },
   {
     "name": "libaom",
-    "version": "3.2.0",
+    "version": "3.3.0",
     "description": "AV1 Video Codec Library",
     "homepage": "https://aomedia.org/",
     "depends": [],
@@ -11517,17 +11552,16 @@
   },
   {
     "name": "libgit2",
-    "version": "1.3.0",
+    "version": "1.4.1",
     "description": "C library implementing Git core methods",
     "homepage": "https://libgit2.github.com/",
     "depends": [
-      "libcurl",
-      "openssl",
       "libssh2",
-      "zlib",
-      "libiconv"
+      "openssl",
+      "pcre",
+      "zlib"
     ],
-    "srcurl": "https://github.com/libgit2/libgit2/archive/v1.3.0.tar.gz",
+    "srcurl": "https://github.com/libgit2/libgit2/archive/v1.4.1.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/libgit2",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/libgit2/build.sh",
@@ -12866,7 +12900,7 @@
   },
   {
     "name": "libneon",
-    "version": "0.32.1",
+    "version": "0.32.2",
     "description": "An HTTP/1.1 and WebDAV client library, with a C interface",
     "homepage": "https://notroj.github.io/neon/",
     "depends": [
@@ -12874,7 +12908,7 @@
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://notroj.github.io/neon/neon-0.32.1.tar.gz",
+    "srcurl": "https://notroj.github.io/neon/neon-0.32.2.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/libneon",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/libneon/build.sh",
@@ -12984,11 +13018,11 @@
   },
   {
     "name": "libnghttp2",
-    "version": "1.46.0",
+    "version": "1.47.0",
     "description": "nghttp HTTP 2.0 library",
     "homepage": "https://nghttp2.org/",
     "depends": [],
-    "srcurl": "https://github.com/nghttp2/nghttp2/releases/download/v1.46.0/nghttp2-1.46.0.tar.xz",
+    "srcurl": "https://github.com/nghttp2/nghttp2/releases/download/v1.47.0/nghttp2-1.47.0.tar.xz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/libnghttp2",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/libnghttp2/build.sh",
@@ -24476,20 +24510,24 @@
   },
   {
     "name": "starship",
-    "version": "0.58.0",
+    "version": "1.3.0",
     "description": "A minimal, blazing fast, and extremely customizable prompt for any shell",
     "homepage": "https://starship.rs",
     "depends": [
       "zlib",
       "openssl"
     ],
-    "srcurl": "https://github.com/starship/starship/archive/v0.58.0.tar.gz",
+    "srcurl": "https://github.com/starship/starship/archive/v1.3.0.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/starship",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/starship/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/starship/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/starship/Cargo.toml.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/starship/Cargo.toml.patch"
+    ]
   },
   {
     "name": "stdman",
