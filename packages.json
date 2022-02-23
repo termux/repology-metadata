@@ -3120,11 +3120,11 @@
   },
   {
     "name": "croc",
-    "version": "9.5.1",
+    "version": "9.5.2",
     "description": "Easily and securely send things from one computer to another.",
     "homepage": "https://github.com/schollz/croc",
     "depends": [],
-    "srcurl": "https://github.com/schollz/croc/releases/download/v9.5.1/croc_9.5.1_src.tar.gz",
+    "srcurl": "https://github.com/schollz/croc/releases/download/v9.5.2/croc_9.5.2_src.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/croc",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/croc/build.sh",
@@ -11567,10 +11567,12 @@
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/libgit2/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/libgit2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/master/packages/libgit2/fix-etc-dir-path.patch"
+      "https://github.com/termux/termux-packages/blob/master/packages/libgit2/fix-etc-dir-path.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/libgit2/src-rand.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/libgit2/fix-etc-dir-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/libgit2/fix-etc-dir-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/libgit2/src-rand.c.patch"
     ]
   },
   {
@@ -27124,7 +27126,7 @@
   },
   {
     "name": "vim",
-    "version": "8.2.3800",
+    "version": "8.2.4450",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -27132,7 +27134,7 @@
       "ncurses",
       "vim-runtime"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3800.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.4450.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/vim",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/vim/build.sh",
@@ -27140,25 +27142,27 @@
     "package_patch_urls": [
       "https://github.com/termux/termux-packages/blob/master/packages/vim/option.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim/runtime-autoload-context.vim.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim/runtime-syntax-sh.vim.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/src-auto-configure.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/master/packages/vim/src-if_cscope.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/vimtutor.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/option.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/runtime-autoload-context.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/runtime-syntax-sh.vim.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/src-auto-configure.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/src-if_cscope.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/vimtutor.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/vterm_internal.h.patch"
     ]
   },
   {
     "name": "vim-python",
-    "version": "8.2.3800",
+    "version": "8.2.4450",
     "description": "Vi IMproved - enhanced vi editor - with python support",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -27167,7 +27171,7 @@
       "vim-runtime",
       "python"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3800.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.4450.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/vim-python",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/vim-python/build.sh",
@@ -27175,18 +27179,20 @@
     "package_patch_urls": [
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/option.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim-python/runtime-autoload-context.vim.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim-python/runtime-syntax-sh.vim.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/src-auto-configure.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/master/packages/vim-python/src-if_cscope.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/vimtutor.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/option.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/runtime-autoload-context.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/runtime-syntax-sh.vim.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/src-auto-configure.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/src-if_cscope.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/vimtutor.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/vterm_internal.h.patch"
     ]
