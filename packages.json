@@ -5555,11 +5555,11 @@
   },
   {
     "name": "findomain",
-    "version": "7.0.0",
+    "version": "7.0.1",
     "description": "Findomain is the fastest subdomain enumerator and the only one written in Rust",
     "homepage": "https://findomain.app/",
     "depends": [],
-    "srcurl": "https://github.com/Findomain/Findomain/archive/7.0.0.tar.gz",
+    "srcurl": "https://github.com/Findomain/Findomain/archive/7.0.1.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/findomain",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/findomain/build.sh",
@@ -7162,20 +7162,18 @@
   },
   {
     "name": "gnuplot",
-    "version": "5.4.2",
+    "version": "5.4.3",
     "description": "Command-line driven graphing utility",
     "homepage": "http://gnuplot.info/",
     "depends": [
       "libandroid-support",
-      "libc++",
       "libgd",
       "libiconv",
       "libx11",
       "pango",
-      "readline",
-      "zlib"
+      "readline"
     ],
-    "srcurl": "https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.2/gnuplot-5.4.2.tar.gz",
+    "srcurl": "https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.3/gnuplot-5.4.3.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/gnuplot",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/gnuplot/build.sh",
@@ -7740,6 +7738,7 @@
     "description": "A powerful multi-faceted programming language for the JVM platform",
     "homepage": "https://groovy-lang.org/",
     "depends": [
+      "libjansi",
       "openjdk-17"
     ],
     "srcurl": "https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-binary-4.0.0.zip",
@@ -7747,8 +7746,14 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/groovy",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/groovy/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/groovy/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/groovy/bin-startGroovy.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/groovy/jline2.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/groovy/bin-startGroovy.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/groovy/jline2.patch"
+    ]
   },
   {
     "name": "gsl",
@@ -13835,11 +13840,11 @@
   },
   {
     "name": "libsasl",
-    "version": "2.1.27",
+    "version": "2.1.28",
     "description": "Cyrus SASL - authentication abstraction library",
     "homepage": "https://www.cyrusimap.org/sasl/",
     "depends": [],
-    "srcurl": "https://fossies.org/linux/misc/cyrus-sasl-2.1.27.tar.xz",
+    "srcurl": "https://fossies.org/linux/misc/cyrus-sasl-2.1.28.tar.xz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/libsasl",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/libsasl/build.sh",
@@ -21406,7 +21411,7 @@
   },
   {
     "name": "privoxy",
-    "version": "3.0.32",
+    "version": "3.0.33",
     "description": "Non-caching web proxy with advanced filtering capabilities",
     "homepage": "https://www.privoxy.org",
     "depends": [
@@ -21414,7 +21419,7 @@
       "libpcreposix",
       "zlib"
     ],
-    "srcurl": "https://www.privoxy.org/sf-download-mirror/Sources/3.0.32%20%28stable%29/privoxy-3.0.32-stable-src.tar.gz",
+    "srcurl": "https://www.privoxy.org/sf-download-mirror/Sources/3.0.33%20%28stable%29/privoxy-3.0.33-stable-src.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/privoxy",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/privoxy/build.sh",
@@ -26843,16 +26848,15 @@
   },
   {
     "name": "util-linux",
-    "version": "2.37.2",
+    "version": "2.37.4",
     "description": "Miscellaneous system utilities",
     "homepage": "https://en.wikipedia.org/wiki/Util-linux",
     "depends": [
       "ncurses",
       "libcap-ng",
-      "libcrypt",
       "zlib"
     ],
-    "srcurl": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz",
+    "srcurl": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.4.tar.xz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/util-linux",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/util-linux/build.sh",
@@ -28281,7 +28285,7 @@
   },
   {
     "name": "zsh",
-    "version": "5.8",
+    "version": "5.8.1",
     "description": "Shell with lots of features",
     "homepage": "https://www.zsh.org",
     "depends": [
@@ -28292,7 +28296,7 @@
       "command-not-found",
       "pcre"
     ],
-    "srcurl": "https://fossies.org/linux/misc/zsh-5.8.tar.xz",
+    "srcurl": "https://fossies.org/linux/misc/zsh-5.8.1.tar.xz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/zsh",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/zsh/build.sh",
