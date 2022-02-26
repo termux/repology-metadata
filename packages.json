@@ -1727,6 +1727,7 @@
       "https://github.com/termux/termux-packages/blob/master/packages/boinc/client-hostinfo_unix.cpp.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/boinc/client-scripts-Makefile.am.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/boinc/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/boinc/lib-crypt.cpp.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/boinc/lib-gui_rpc_client.cpp.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/boinc/lib-synch.cpp.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/boinc/version.h.in.patch"
@@ -1739,6 +1740,7 @@
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/boinc/client-hostinfo_unix.cpp.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/boinc/client-scripts-Makefile.am.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/boinc/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/boinc/lib-crypt.cpp.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/boinc/lib-gui_rpc_client.cpp.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/boinc/lib-synch.cpp.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/boinc/version.h.in.patch"
@@ -2437,10 +2439,14 @@
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/cfengine/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/cfengine/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/master/packages/cfengine/cfe-3721.patch"
+      "https://github.com/termux/termux-packages/blob/master/packages/cfengine/cfe-3721.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/cfengine/core-configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/cfengine/libntech-configure.ac.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/cfengine/cfe-3721.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/cfengine/cfe-3721.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/cfengine/core-configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/cfengine/libntech-configure.ac.patch"
     ]
   },
   {
@@ -3166,7 +3172,7 @@
     "description": "Allows you to write a book in Markdown without worrying about formatting or typography",
     "homepage": "https://github.com/lise-henry",
     "depends": [
-      "openssl"
+      "openssl-1.1"
     ],
     "srcurl": "https://github.com/lise-henry/crowbook/archive/refs/tags/v0.15.2e.tar.gz",
     "maintainer": "@termux",
@@ -4123,7 +4129,7 @@
     "description": "A command-line DNS client.",
     "homepage": "https://dns.lookup.dog/",
     "depends": [
-      "openssl",
+      "openssl-1.1",
       "resolv-conf"
     ],
     "srcurl": "https://github.com/ogham/dog/archive/refs/tags/v0.1.0.tar.gz",
@@ -6656,7 +6662,7 @@
     "depends": [
       "git",
       "libc++",
-      "openssl"
+      "openssl-1.1"
     ],
     "srcurl": "https://github.com/AGWA/git-crypt/archive/0.6.0.tar.gz",
     "maintainer": "@jottr",
@@ -8995,10 +9001,12 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/ipmitool/build.sh",
     "package_patch_urls": [
       "https://github.com/termux/termux-packages/blob/master/packages/ipmitool/index-strchr.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/ipmitool/multiple-definitions.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/ipmitool/openssl-1.1.patch"
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/ipmitool/index-strchr.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/ipmitool/multiple-definitions.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/ipmitool/openssl-1.1.patch"
     ]
   },
@@ -9744,7 +9752,7 @@
       "libuber-h3",
       "libucontext",
       "libyaml-cpp",
-      "openssl",
+      "openssl-1.1",
       "pcre",
       "zstd"
     ],
@@ -9834,7 +9842,7 @@
       "libandroid-glob",
       "libresolv-wrapper",
       "readline",
-      "openssl",
+      "openssl-1.1",
       "libdb"
     ],
     "srcurl": "https://fossies.org/linux/misc/krb5-1.19.2.tar.gz",
@@ -9994,7 +10002,7 @@
     "description": "Library for simplifying DNS programming and supporting recent and experimental RFCs",
     "homepage": "https://www.nlnetlabs.nl/projects/ldns/",
     "depends": [
-      "openssl"
+      "openssl-1.1"
     ],
     "srcurl": "https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.1.tar.gz",
     "maintainer": "@termux",
@@ -10002,9 +10010,11 @@
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/ldns/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/ldns/build.sh",
     "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/ldns/acx_nlnetlabs.m4.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/ldns/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/ldns/acx_nlnetlabs.m4.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/ldns/fix-hardcoded-paths.patch"
     ]
   },
@@ -10199,7 +10209,7 @@
       "libidn2",
       "zlib"
     ],
-    "srcurl": "https://lftp.tech/ftp/lftp-4.9.2.tar.xz",
+    "srcurl": "http://lftp.yar.ru/ftp/lftp-4.9.2.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/lftp",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/lftp/build.sh",
@@ -16760,7 +16770,7 @@
     "description": "mdBook preprocessor to render PlantUML code blocks as images in your book",
     "homepage": "https://github.com/sytsereitsma/mdbook-plantuml",
     "depends": [
-      "openssl"
+      "openssl-1.1"
     ],
     "srcurl": "https://github.com/sytsereitsma/mdbook-plantuml.git",
     "maintainer": "@termux",
@@ -19199,7 +19209,7 @@
       "libc++",
       "libxml2",
       "ncurses",
-      "openssl",
+      "openssl-1.1",
       "p7zip",
       "zlib"
     ],
@@ -19830,6 +19840,29 @@
   },
   {
     "name": "openssl",
+    "version": "3.0.1",
+    "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
+    "homepage": "https://www.openssl.org/",
+    "depends": [
+      "ca-certificates",
+      "zlib"
+    ],
+    "srcurl": "https://www.openssl.org/source/openssl-3.0.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/openssl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/openssl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/openssl/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/openssl/include-crypto-rand.h.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl/include-crypto-rand.h.patch"
+    ]
+  },
+  {
+    "name": "openssl-1.1",
     "version": "1.1.1m",
     "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
     "homepage": "https://www.openssl.org/",
@@ -19839,18 +19872,18 @@
     ],
     "srcurl": "https://www.openssl.org/source/openssl-1.1.1m.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/openssl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/openssl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/openssl-1.1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/openssl-1.1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl-1.1/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/master/packages/openssl/Configurations-15-android.conf.patch",
-      "https://github.com/termux/termux-packages/blob/master/packages/openssl/apps-ocsp.c.patch",
-      "https://github.com/termux/termux-packages/blob/master/packages/openssl/e_os.h.patch"
+      "https://github.com/termux/termux-packages/blob/master/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/openssl-1.1/e_os.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl/Configurations-15-android.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl/apps-ocsp.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl/e_os.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/openssl-1.1/e_os.h.patch"
     ]
   },
   {
@@ -20792,7 +20825,7 @@
       "libxslt",
       "libzip",
       "oniguruma",
-      "openssl",
+      "openssl-1.1",
       "pcre2",
       "readline",
       "zlib",
@@ -20806,6 +20839,7 @@
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/php7/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/php7/build.sh",
     "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/php7/build-php.m4.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/php7/ext-opcache-config.m4.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/php7/ext-opcache-zend_accelerator_module.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/php7/ext-pdo_pgsql-config.m4.patch",
@@ -20823,6 +20857,7 @@
       "https://github.com/termux/termux-packages/blob/master/packages/php7/use-local-fastcgi-header.patch"
     ],
     "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/php7/build-php.m4.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/php7/ext-opcache-config.m4.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/php7/ext-opcache-zend_accelerator_module.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/php7/ext-pdo_pgsql-config.m4.patch",
@@ -25799,9 +25834,13 @@
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/tinyfugue/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/tinyfugue/build.sh",
     "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/tinyfugue/src-socket.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/tinyfugue/src-socket.h.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/tinyfugue/tinyfugue_unix_unix.mak.patch"
     ],
     "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/tinyfugue/src-socket.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/tinyfugue/src-socket.h.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/tinyfugue/tinyfugue_unix_unix.mak.patch"
     ]
   },
@@ -29240,7 +29279,7 @@
       "liblz4",
       "liblzo",
       "net-tools",
-      "openssl"
+      "openssl-1.1"
     ],
     "srcurl": "https://swupdate.openvpn.net/community/releases/openvpn-2.4.9.tar.xz",
     "maintainer": "@termux",
@@ -33165,7 +33204,7 @@
       "libcap",
       "libdns-sd",
       "libprotobuf",
-      "openssl",
+      "openssl-1.1",
       "qt5-qtbase"
     ],
     "srcurl": "https://github.com/mumble-voip/mumble.git",
@@ -34019,6 +34058,9 @@
       "https://github.com/termux/x11-packages/blob/master/packages/qt5-qtbase/qtbase_src_network_kernel_qdnslookup_unix_res_state_struct.patch",
       "https://github.com/termux/x11-packages/blob/master/packages/qt5-qtbase/qtbase_src_network_kernel_qhostinfo_unix_res_state_struct.patch",
       "https://github.com/termux/x11-packages/blob/master/packages/qt5-qtbase/qtemporaryfile_no_unnamedfile_android.patch",
+      "https://github.com/termux/x11-packages/blob/master/packages/qt5-qtbase/src-corelib-global-qendian.h.patch",
+      "https://github.com/termux/x11-packages/blob/master/packages/qt5-qtbase/src-corelib-tools-qbytearraymatcher.h.patch",
+      "https://github.com/termux/x11-packages/blob/master/packages/qt5-qtbase/src-tools-moc-generator.cpp.patch",
       "https://github.com/termux/x11-packages/blob/master/packages/qt5-qtbase/ssl_certificate_path.patch"
     ],
     "package_patch_raw_urls": [
@@ -34032,6 +34074,9 @@
       "https://raw.githubusercontent.com/termux/x11-packages/master/packages/qt5-qtbase/qtbase_src_network_kernel_qdnslookup_unix_res_state_struct.patch",
       "https://raw.githubusercontent.com/termux/x11-packages/master/packages/qt5-qtbase/qtbase_src_network_kernel_qhostinfo_unix_res_state_struct.patch",
       "https://raw.githubusercontent.com/termux/x11-packages/master/packages/qt5-qtbase/qtemporaryfile_no_unnamedfile_android.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/master/packages/qt5-qtbase/src-corelib-global-qendian.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/master/packages/qt5-qtbase/src-corelib-tools-qbytearraymatcher.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/master/packages/qt5-qtbase/src-tools-moc-generator.cpp.patch",
       "https://raw.githubusercontent.com/termux/x11-packages/master/packages/qt5-qtbase/ssl_certificate_path.patch"
     ]
   },
