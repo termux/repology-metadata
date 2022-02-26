@@ -202,13 +202,13 @@
   },
   {
     "name": "acr",
-    "version": "1.9.8",
+    "version": "2.0.0",
     "description": "A fully compatible autoconf replacement",
     "homepage": "https://github.com/radare/acr",
     "depends": [
       "dash"
     ],
-    "srcurl": "https://github.com/radare/acr/archive/1.9.8.tar.gz",
+    "srcurl": "https://github.com/radare/acr/archive/2.0.0.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/acr",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/acr/build.sh",
@@ -293,6 +293,7 @@
       "coreutils",
       "libcrypt",
       "ncurses",
+      "openssl",
       "openssl-tool"
     ],
     "srcurl": "http://alpine.x10host.com/alpine/release/src/alpine-2.25.tar.xz",
@@ -301,24 +302,34 @@
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/alpine/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/master/packages/alpine/configure.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/alpine/configure.ac.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/alpine/env_unix.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/alpine/fdstring.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/alpine/imap-src-oadep-unix-Makefile.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/alpine/imapmkf.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/alpine/mtest.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/alpine/os_lnx.c.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/alpine/os_lnx.h.patch",
-      "https://github.com/termux/termux-packages/blob/master/packages/alpine/pw_stuff.c.patch"
+      "https://github.com/termux/termux-packages/blob/master/packages/alpine/pw_stuff.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/alpine/regex-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/alpine/web-src-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/alpine/web-src-alpined.d-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/alpine/web-src-pubcookie-Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/configure.ac.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/env_unix.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/fdstring.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/imap-src-oadep-unix-Makefile.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/imapmkf.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/mtest.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/os_lnx.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/os_lnx.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/pw_stuff.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/pw_stuff.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/regex-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/web-src-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/web-src-alpined.d-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/alpine/web-src-pubcookie-Makefile.patch"
     ]
   },
   {
@@ -27159,21 +27170,23 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/build.sh",
     "package_patch_urls": [
       "https://github.com/termux/termux-packages/blob/master/packages/vim/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/master/packages/vim/os_unix.h.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/runtime-autoload-context.vim.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/runtime-syntax-sh.vim.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/src-auto-configure.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim/src-os_unix.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim/src-os_unix.h.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/vimtutor.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/os_unix.h.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/runtime-autoload-context.vim.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/runtime-syntax-sh.vim.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/src-auto-configure.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/src-os_unix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/src-os_unix.h.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/vimtutor.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim/vterm_internal.h.patch"
     ]
@@ -27196,21 +27209,23 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/build.sh",
     "package_patch_urls": [
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/master/packages/vim-python/os_unix.h.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/runtime-autoload-context.vim.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/runtime-syntax-sh.vim.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/src-auto-configure.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim-python/src-os_unix.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/vim-python/src-os_unix.h.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/vimtutor.patch",
       "https://github.com/termux/termux-packages/blob/master/packages/vim-python/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/os_unix.h.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/runtime-autoload-context.vim.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/runtime-syntax-sh.vim.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/src-auto-configure.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/src-os_unix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/src-os_unix.h.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/vimtutor.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/vim-python/vterm_internal.h.patch"
     ]
