@@ -4423,11 +4423,11 @@
   },
   {
     "name": "dust",
-    "version": "0.7.5",
+    "version": "0.8.0",
     "description": "A more intuitive version of du in rust",
     "homepage": "https://github.com/bootandy/dust",
     "depends": [],
-    "srcurl": "https://github.com/bootandy/dust/archive/v0.7.5.tar.gz",
+    "srcurl": "https://github.com/bootandy/dust/archive/v0.8.0.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/dust",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/dust/build.sh",
@@ -14214,13 +14214,13 @@
   },
   {
     "name": "libsqlite",
-    "version": "3.37.0",
+    "version": "3.38.0",
     "description": "Library implementing a self-contained and transactional SQL database engine",
     "homepage": "https://www.sqlite.org",
     "depends": [
       "zlib"
     ],
-    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3370000.tar.gz",
+    "srcurl": "https://www.sqlite.org/2022/sqlite-autoconf-3380000.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/libsqlite",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/libsqlite/build.sh",
@@ -14234,14 +14234,14 @@
   },
   {
     "name": "libsqlite-tcl",
-    "version": "3.37.0",
+    "version": "3.38.0",
     "description": "tcl bindings for SQLite",
     "homepage": "https://www.sqlite.org",
     "depends": [
       "libsqlite",
       "tcl"
     ],
-    "srcurl": "https://www.sqlite.org/2021/sqlite-autoconf-3370000.tar.gz",
+    "srcurl": "https://www.sqlite.org/2022/sqlite-autoconf-3380000.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/libsqlite-tcl",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/libsqlite-tcl/build.sh",
@@ -16236,7 +16236,7 @@
       "libidn",
       "zlib"
     ],
-    "srcurl": "http://invisible-mirror.net/archives/lynx/tarballs/lynx2.8.9rel.1.tar.bz2",
+    "srcurl": "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.8.9rel.1.tar.bz2",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/lynx",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/lynx/build.sh",
@@ -16417,6 +16417,28 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/make/src-job.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/master/packages/make/src-output.c.patch"
+    ]
+  },
+  {
+    "name": "make-guile",
+    "version": "4.3",
+    "description": "Tool to control the generation of non-source files from source files",
+    "homepage": "https://www.gnu.org/software/make/",
+    "depends": [
+      "guile"
+    ],
+    "srcurl": "https://mirrors.kernel.org/gnu/make/make-4.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/make-guile",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/make-guile/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/master/packages/make-guile/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/master/packages/make-guile/src-job.c.patch",
+      "https://github.com/termux/termux-packages/blob/master/packages/make-guile/src-output.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/make-guile/src-job.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/master/packages/make-guile/src-output.c.patch"
     ]
   },
   {
@@ -20117,7 +20139,8 @@
       "bash",
       "libarchive",
       "curl",
-      "gpgme"
+      "gpgme",
+      "openssl"
     ],
     "srcurl": "https://sources.archlinux.org/other/pacman/pacman-6.0.1.tar.xz",
     "maintainer": "@Maxython",
@@ -22095,7 +22118,7 @@
   },
   {
     "name": "qpdf",
-    "version": "10.3.2",
+    "version": "10.6.2",
     "description": "Content-Preserving PDF Transformation System",
     "homepage": "http://qpdf.sourceforge.net",
     "depends": [
@@ -22103,7 +22126,7 @@
       "libjpeg-turbo",
       "zlib"
     ],
-    "srcurl": "https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.3.2/qpdf-10.3.2.tar.gz",
+    "srcurl": "https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.2/qpdf-10.6.2.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/qpdf",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/qpdf/build.sh",
@@ -28176,7 +28199,7 @@
   },
   {
     "name": "zig",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.",
     "homepage": "https://ziglang.org",
     "depends": [
@@ -28186,7 +28209,7 @@
       "ncurses",
       "zlib"
     ],
-    "srcurl": "https://ziglang.org/download/0.9.0/zig-0.9.0.tar.xz",
+    "srcurl": "https://ziglang.org/download/0.9.1/zig-0.9.1.tar.xz",
     "maintainer": "@leapofazzam123",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/master/packages/zig",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/master/packages/zig/build.sh",
