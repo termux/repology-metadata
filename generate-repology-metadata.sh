@@ -117,12 +117,14 @@ check_package() {
 	fi
 	print_json_element "maintainer" "$TERMUX_PKG_MAINTAINER"
 
-	print_json_element "package_sources_url" "${repo_url}/tree/master/$(dirname $(git ls-files --full-name build.sh))"
-	print_json_element "package_recipe_url" "${repo_url}/blob/master/$(git ls-files --full-name build.sh)"
-	print_json_element "package_recipe_url_raw" "${repo_raw_url}/master/$(git ls-files --full-name build.sh)"
+	local _COMMIT=$(git log -n1 --format=%h .)
+
+	print_json_element "package_sources_url" "${repo_url}/tree/${_COMMIT}/$(dirname $(git ls-files --full-name build.sh))"
+	print_json_element "package_recipe_url" "${repo_url}/blob/${_COMMIT}/$(git ls-files --full-name build.sh)"
+	print_json_element "package_recipe_url_raw" "${repo_raw_url}/${_COMMIT}/$(git ls-files --full-name build.sh)"
 	local patches=$(git ls-files --full-name "*.patch" "*.patch32" "*.patch64" "*.patch.beforehostbuild" "*.diff")
-	print_json_array "package_patch_urls" "$(for p in $patches; do echo $repo_url/blob/master/$p; done)"
-	print_json_array "package_patch_raw_urls" "$(for p in $patches; do echo $repo_raw_url/master/$p; done)" false
+	print_json_array "package_patch_urls" "$(for p in $patches; do echo $repo_url/blob/${_COMMIT}/$p; done)"
+	print_json_array "package_patch_raw_urls" "$(for p in $patches; do echo $repo_raw_url/${_COMMIT}/$p; done)" false
 
 	# last printed entry needs to have "false" as third argument to avoid trailing ","
 
