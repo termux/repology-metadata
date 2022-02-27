@@ -81,9 +81,15 @@ check_package() {
 	local pkg=$(basename $path)
 	pushd $path > /dev/null
 	repo_url="$(git config --get remote.origin.url)"
+
 	# Convert to normal https url if it starts with git@
 	if [ "${repo_url:0:4}" == "git@" ]; then
 		repo_url="$(echo $repo_url|sed  -e 's%:%/%g' -e 's%git@%https://%g' )"
+	fi
+
+	# Remove ending '.git' from repo_url
+	if [ "${repo_url: -4}" = ".git" ]; then
+		repo_url="${repo_url::-4}"
 	fi
 
 	github_regex="https://(www\.)?github.com/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)"
