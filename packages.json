@@ -2150,6 +2150,39 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "cabal-install",
+    "version": "3.6.2.0",
+    "description": "The command-line interface for Cabal and Hackage.",
+    "homepage": "http://www.haskell.org/cabal/",
+    "depends": [
+      "ghc-libs",
+      "haskell-edit-distance",
+      "haskell-zlib",
+      "haskell-http",
+      "haskell-network-uri",
+      "haskell-regex-base",
+      "haskell-async",
+      "haskell-lukko",
+      "haskell-cabal",
+      "haskell-resolv",
+      "haskell-echo",
+      "haskell-random",
+      "haskell-hashable",
+      "haskell-cryptohash-sha256",
+      "haskell-tar",
+      "haskell-base16-bytestring",
+      "haskell-hackage-security",
+      "haskell-regex-posix"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/cabal-install-3.6.2.0/cabal-install-3.6.2.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/cabal-install",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/cabal-install/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/cabal-install/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "cabextract",
     "version": "1.9.1",
     "description": "A program to extract Microsoft cabinet (.CAB) files",
@@ -3759,27 +3792,27 @@
   },
   {
     "name": "delve",
-    "version": "1.8.1",
+    "version": "1.8.2",
     "description": "A debugger for the Go programming language",
     "homepage": "https://github.com/go-delve/delve",
     "depends": [
       "golang",
       "git"
     ],
-    "srcurl": "https://github.com/go-delve/delve/archive/v1.8.1.tar.gz",
+    "srcurl": "https://github.com/go-delve/delve/archive/v1.8.2.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8f6e9a518/packages/delve",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8f6e9a518/packages/delve/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8f6e9a518/packages/delve/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/534e5f05e/packages/delve",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/534e5f05e/packages/delve/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/534e5f05e/packages/delve/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8f6e9a518/packages/delve/bininfo.go.patch",
-      "https://github.com/termux/termux-packages/blob/8f6e9a518/packages/delve/debugger_unix.go.patch",
-      "https://github.com/termux/termux-packages/blob/8f6e9a518/packages/delve/gdbserver.go.patch"
+      "https://github.com/termux/termux-packages/blob/534e5f05e/packages/delve/bininfo.go.patch",
+      "https://github.com/termux/termux-packages/blob/534e5f05e/packages/delve/debugger_unix.go.patch",
+      "https://github.com/termux/termux-packages/blob/534e5f05e/packages/delve/gdbserver.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8f6e9a518/packages/delve/bininfo.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8f6e9a518/packages/delve/debugger_unix.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8f6e9a518/packages/delve/gdbserver.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/534e5f05e/packages/delve/bininfo.go.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/534e5f05e/packages/delve/debugger_unix.go.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/534e5f05e/packages/delve/gdbserver.go.patch"
     ]
   },
   {
@@ -6509,36 +6542,38 @@
     "package_patch_raw_urls": []
   },
   {
-    "name": "ghc",
-    "version": "8.10.1",
-    "description": "The Glasgow Haskell Compilation system",
+    "name": "ghc-libs",
+    "version": "8.10.7",
+    "description": "The Glasgow Haskell Compiler - Dynamic Libraries",
     "homepage": "https://www.haskell.org/ghc/",
     "depends": [
-      "binutils",
-      "clang",
       "iconv",
       "libffi",
-      "llvm",
-      "ncurses"
+      "ncurses",
+      "libgmp"
     ],
-    "srcurl": "http://downloads.haskell.org/~ghc/8.10.1/ghc-8.10.1-src.tar.xz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ce1eb066/packages/ghc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ce1eb066/packages/ghc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ce1eb066/packages/ghc/build.sh",
+    "srcurl": "https://downloads.haskell.org/~ghc/8.10.7/ghc-8.10.7-src.tar.xz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/80f7a2a0d/packages/ghc-libs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3ce1eb066/packages/ghc/always-use-pic-on-android-for-dynexec.patch",
-      "https://github.com/termux/termux-packages/blob/3ce1eb066/packages/ghc/always_link_m.patch",
-      "https://github.com/termux/termux-packages/blob/3ce1eb066/packages/ghc/mk-config.mk.in.patch",
-      "https://github.com/termux/termux-packages/blob/3ce1eb066/packages/ghc/undefined_symbols.patch",
-      "https://github.com/termux/termux-packages/blob/3ce1eb066/packages/ghc/use-stage1-binaries-for-install.patch"
+      "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
+      "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/always_link_m.patch",
+      "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/correct-host-triplet.patch",
+      "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/fix-target-elf-check.patch",
+      "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/set-default-prefix.patch",
+      "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/undefined_symbols.patch",
+      "https://github.com/termux/termux-packages/blob/80f7a2a0d/packages/ghc-libs/utils-extra-ghc-opts.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3ce1eb066/packages/ghc/always-use-pic-on-android-for-dynexec.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ce1eb066/packages/ghc/always_link_m.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ce1eb066/packages/ghc/mk-config.mk.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ce1eb066/packages/ghc/undefined_symbols.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ce1eb066/packages/ghc/use-stage1-binaries-for-install.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/always_link_m.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/correct-host-triplet.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/fix-target-elf-check.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/set-default-prefix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/undefined_symbols.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80f7a2a0d/packages/ghc-libs/utils-extra-ghc-opts.patch"
     ]
   },
   {
@@ -8107,6 +8142,404 @@
     ]
   },
   {
+    "name": "haskell-async",
+    "version": "2.2.4",
+    "description": "Run IO operations asynchronously and wait for their results",
+    "homepage": "https://github.com/simonmar/async",
+    "depends": [
+      "ghc-libs",
+      "haskell-hashable"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/async-2.2.4/async-2.2.4.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-async",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-async/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-async/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-base16-bytestring",
+    "version": "1.0.2.0",
+    "description": "RFC 4648-compliant Base16 encodings for ByteStrings",
+    "homepage": "http://github.com/haskell/base16-bytestring",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/base16-bytestring-1.0.2.0/base16-bytestring-1.0.2.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-base16-bytestring",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-base16-bytestring/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-base16-bytestring/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-base64-bytestring",
+    "version": "1.2.1.0",
+    "description": "Fast base64 encoding and decoding for ByteStrings",
+    "homepage": "https://github.com/haskell/base64-bytestring",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/base64-bytestring-1.2.1.0/base64-bytestring-1.2.1.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-base64-bytestring",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-base64-bytestring/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-base64-bytestring/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-cabal",
+    "version": "3.6.2.0",
+    "description": "A framework for packaging Haskell software",
+    "homepage": "http://www.haskell.org/cabal/",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/Cabal-3.6.2.0/Cabal-3.6.2.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-cabal",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-cabal/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-cabal/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-cabal/correct-host-triplet.patch",
+      "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-cabal/set-default-prefix.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-cabal/correct-host-triplet.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-cabal/set-default-prefix.patch"
+    ]
+  },
+  {
+    "name": "haskell-cabal-syntax",
+    "version": "3.6.0.0",
+    "description": "A library for working with .cabal files",
+    "homepage": "http://www.haskell.org/cabal/",
+    "depends": [
+      "ghc-libs",
+      "haskell-cabal"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/Cabal-syntax-3.6.0.0/Cabal-syntax-3.6.0.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-cabal-syntax",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-cabal-syntax/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-cabal-syntax/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-cryptohash-sha256",
+    "version": "0.11.102.1",
+    "description": "Fast, pure and practical SHA-256 implementation",
+    "homepage": "https://github.com/hvr/cryptohash-sha256",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/cryptohash-sha256-0.11.102.1/cryptohash-sha256-0.11.102.1.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-cryptohash-sha256",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-cryptohash-sha256/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-cryptohash-sha256/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-echo",
+    "version": "0.1.4",
+    "description": "A cross-platform, cross-console way to handle echoing terminal input",
+    "homepage": "https://github.com/RyanGlScott/echo",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/echo-0.1.4/echo-0.1.4.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-echo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-echo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-echo/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-ed25519",
+    "version": "0.0.5.0",
+    "description": "Ed25519 cryptographic signatures",
+    "homepage": "http://thoughtpolice.github.com/hs-ed25519",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/ed25519-0.0.5.0/ed25519-0.0.5.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-ed25519",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-ed25519/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-ed25519/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-edit-distance",
+    "version": "0.2.2.1",
+    "description": "Levenshtein and restricted Damerau-Levenshtein edit distances",
+    "homepage": "http://github.com/phadej/edit-distance",
+    "depends": [
+      "ghc-libs",
+      "haskell-random"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/edit-distance-0.2.2.1/edit-distance-0.2.2.1.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-edit-distance",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-edit-distance/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-edit-distance/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-hackage-security",
+    "version": "0.6.2.1",
+    "description": "Hackage security library",
+    "homepage": "https://github.com/haskell/hackage-security",
+    "depends": [
+      "ghc-libs",
+      "haskell-zlib",
+      "haskell-ed25519",
+      "haskell-network-uri",
+      "haskell-lukko",
+      "haskell-network",
+      "haskell-cabal",
+      "haskell-base64-bytestring",
+      "haskell-tar",
+      "haskell-cryptohash-sha256",
+      "haskell-base16-bytestring",
+      "haskell-cabal-syntax"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/hackage-security-0.6.2.1/hackage-security-0.6.2.1.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-hackage-security",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-hackage-security/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-hackage-security/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-hashable",
+    "version": "1.3.5.0",
+    "description": "A class for types that can be converted to a hash value",
+    "homepage": "http://github.com/haskell-unordered-containers/hashable",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/hashable-1.3.5.0/hashable-1.3.5.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-hashable",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-hashable/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-hashable/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-http",
+    "version": "4000.3.16",
+    "description": "A library for client-side HTTP",
+    "homepage": "https://github.com/haskell/HTTP",
+    "depends": [
+      "ghc-libs",
+      "haskell-network-uri",
+      "haskell-network"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/HTTP-4000.3.16/HTTP-4000.3.16.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-http",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-http/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-http/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-lukko",
+    "version": "0.1.1.3",
+    "description": "File locking",
+    "homepage": "https://hackage.haskell.org/package/lukko",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/lukko-0.1.1.3/lukko-0.1.1.3.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-lukko",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-lukko/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-lukko/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-network",
+    "version": "3.1.2.7",
+    "description": "Low-level networking interface",
+    "homepage": "https://github.com/haskell/network",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/network-3.1.2.7/network-3.1.2.7.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-network",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-network/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-network/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-network-uri",
+    "version": "2.6.4.1",
+    "description": "URI manipulation",
+    "homepage": "https://github.com/haskell/network-uri",
+    "depends": [
+      "ghc-libs",
+      "haskell-th-compat"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/network-uri-2.6.4.1/network-uri-2.6.4.1.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-network-uri",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-network-uri/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-network-uri/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-random",
+    "version": "1.2.1",
+    "description": "Pseudo-random number generation",
+    "homepage": "https://hackage.haskell.org/package/random",
+    "depends": [
+      "ghc-libs",
+      "haskell-splitmix"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/random-1.2.1/random-1.2.1.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-random",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-random/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-random/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-regex-base",
+    "version": "0.94.0.2",
+    "description": "Common 'Text.Regex.*' API for Regex matching",
+    "homepage": "https://wiki.haskell.org/Regular_expressions",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/regex-base-0.94.0.2/regex-base-0.94.0.2.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a460d10c/packages/haskell-regex-base",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a460d10c/packages/haskell-regex-base/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a460d10c/packages/haskell-regex-base/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-regex-posix",
+    "version": "0.96.0.1",
+    "description": "POSIX Backend for 'Text.Regex' (regex-base)",
+    "homepage": "https://hackage.haskell.org/package/regex-posix",
+    "depends": [
+      "ghc-libs",
+      "haskell-regex-base"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/regex-posix-0.96.0.1/regex-posix-0.96.0.1.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a460d10c/packages/haskell-regex-posix",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a460d10c/packages/haskell-regex-posix/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a460d10c/packages/haskell-regex-posix/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-resolv",
+    "version": "0.1.2.0",
+    "description": "Domain Name Service (DNS) lookup via the libresolv standard library routines",
+    "homepage": "https://hackage.haskell.org/package/resolv",
+    "depends": [
+      "ghc-libs",
+      "haskell-base16-bytestring"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/resolv-0.1.2.0/resolv-0.1.2.0.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-resolv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-resolv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-resolv/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-resolv/hs_resolv.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-resolv/hs_resolv.patch"
+    ]
+  },
+  {
+    "name": "haskell-splitmix",
+    "version": "0.1.0.4",
+    "description": "Fast Splittable PRNG",
+    "homepage": "https://hackage.haskell.org/package/splitmix",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/splitmix-0.1.0.4/splitmix-0.1.0.4.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-splitmix",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-splitmix/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-splitmix/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-tar",
+    "version": "0.5.1.1",
+    "description": "Reading, writing and manipulating '.tar' archive files.",
+    "homepage": "https://hackage.haskell.org/package/tar",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/tar-0.5.1.1/tar-0.5.1.1.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a460d10c/packages/haskell-tar",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a460d10c/packages/haskell-tar/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a460d10c/packages/haskell-tar/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-th-compat",
+    "version": "0.1.3",
+    "description": "Backward- (and forward-)compatible Quote and Code types",
+    "homepage": "https://github.com/haskell-compat/th-compat",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/th-compat-0.1.3/th-compat-0.1.3.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-th-compat",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-th-compat/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-th-compat/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "haskell-zlib",
+    "version": "0.6.2.3",
+    "description": "Compression and decompression in the gzip and zlib formats",
+    "homepage": "https://hackage.haskell.org/package/zlib",
+    "depends": [
+      "ghc-libs"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/zlib-0.6.2.3/zlib-0.6.2.3.tar.gz",
+    "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e97edb3c/packages/haskell-zlib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e97edb3c/packages/haskell-zlib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e97edb3c/packages/haskell-zlib/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "hcl",
     "version": "2.11.1",
     "description": "A toolkit for creating structured configuration languages",
@@ -8476,17 +8909,17 @@
   },
   {
     "name": "hugo",
-    "version": "0.93.2",
+    "version": "0.93.3",
     "description": "A fast and flexible static site generator",
     "homepage": "https://gohugo.io/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.93.2.tar.gz",
+    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.93.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5589774ac/packages/hugo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5589774ac/packages/hugo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5589774ac/packages/hugo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d0e7d0c62/packages/hugo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d0e7d0c62/packages/hugo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d0e7d0c62/packages/hugo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24630,17 +25063,17 @@
   },
   {
     "name": "sslscan",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "description": "Utility to discover supported cipher suites on SSL/TLS enabled servers",
     "homepage": "https://github.com/rbsec/sslscan",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/rbsec/sslscan/archive/2.0.11.tar.gz",
+    "srcurl": "https://github.com/rbsec/sslscan/archive/2.0.12.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4577a0cf6/packages/sslscan",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/sslscan/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/sslscan/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/03722aa7d/packages/sslscan",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03722aa7d/packages/sslscan/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03722aa7d/packages/sslscan/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24920,15 +25353,15 @@
   },
   {
     "name": "stylua",
-    "version": "0.12.4",
+    "version": "0.12.5",
     "description": "An opinionated Lua code formatter",
     "homepage": "https://github.com/JohnnyMorganz/StyLua",
     "depends": [],
-    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.12.4.tar.gz",
+    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.12.5.tar.gz",
     "maintainer": "@shadmansaleh",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6be71e094/packages/stylua",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6be71e094/packages/stylua/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6be71e094/packages/stylua/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/037adfd9e/packages/stylua",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/037adfd9e/packages/stylua/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/037adfd9e/packages/stylua/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -26299,32 +26732,34 @@
     ],
     "srcurl": "https://github.com/dgoulet/torsocks/archive/v2.3.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c53780c5b/packages/torsocks",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/463f9db60/packages/torsocks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/01_getdents.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/02_getpid.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/03_passthrough_syscalls.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/04_tagged_pointer_fixes.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/src-common-compat.h.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/src-common-config-file.h.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/src-lib-gethostbyname.c.patch",
-      "https://github.com/termux/termux-packages/blob/c53780c5b/packages/torsocks/src-lib-syscall.c.patch"
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/01_getdents.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/02_getpid.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/03_passthrough_syscalls.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/04_tagged_pointer_fixes.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/05_deadlock_in_initializer.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/src-common-compat.h.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/src-common-config-file.h.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/src-lib-gethostbyname.c.patch",
+      "https://github.com/termux/termux-packages/blob/463f9db60/packages/torsocks/src-lib-syscall.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/01_getdents.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/02_getpid.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/03_passthrough_syscalls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/04_tagged_pointer_fixes.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/src-common-compat.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/src-common-config-file.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/src-lib-gethostbyname.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c53780c5b/packages/torsocks/src-lib-syscall.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/01_getdents.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/02_getpid.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/03_passthrough_syscalls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/04_tagged_pointer_fixes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/05_deadlock_in_initializer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/src-common-compat.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/src-common-config-file.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/src-lib-gethostbyname.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/463f9db60/packages/torsocks/src-lib-syscall.c.patch"
     ]
   },
   {
