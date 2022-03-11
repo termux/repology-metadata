@@ -110,7 +110,7 @@ check_package() {
 	print_json_element "description" "$TERMUX_PKG_DESCRIPTION"
 	print_json_element "homepage" "$TERMUX_PKG_HOMEPAGE"
 
-	print_json_array   "depends" "$(echo ${TERMUX_PKG_DEPENDS} | sed 's@([^)]*)@@g' | tr -d ,)"
+	print_json_array   "depends" "$(echo ${TERMUX_PKG_DEPENDS} | sed -e 's@([^)]*)@@g' -e 's@,@ @g')"
 
 	if [ "$TERMUX_PKG_SRCURL" != "" ]; then
 		print_json_element "srcurl" "$TERMUX_PKG_SRCURL"
