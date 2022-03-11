@@ -1363,8 +1363,6 @@
       "libiconv",
       "ncurses",
       "readline",
-      "(>=",
-      "8.0)",
       "termux-tools"
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/bash/bash-5.1.tar.gz",
@@ -1467,8 +1465,7 @@
     "description": "Arbitrary precision numeric processing language",
     "homepage": "https://www.gnu.org/software/bc/",
     "depends": [
-      "readline",
-      "flex"
+      "readlineflex"
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/bc/bc-1.07.1.tar.gz",
     "maintainer": "@termux",
@@ -1540,12 +1537,8 @@
     "homepage": "http://biblatex-biber.sourceforge.net",
     "depends": [
       "perl",
-      "(>>",
-      "5.34.0-3)",
       "libxslt",
       "libxml2",
-      "(>>",
-      "2.9.10-3)",
       "openssl-tool",
       "make",
       "clang",
@@ -2405,9 +2398,7 @@
     "description": "PGN browser, editor and chess engine frontend",
     "homepage": "https://benkibbey.wordpress.com/cboard/",
     "depends": [
-      "libandroid-support",
-      "libandroid-glob",
-      "gnuchess",
+      "libandroid-supportlibandroid-globgnuchess",
       "ncurses",
       "ncurses-ui-libs"
     ],
@@ -5712,20 +5703,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.0.303",
+    "version": "0.0.304",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.303.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.304.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a883f8d0b/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a883f8d0b/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a883f8d0b/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a13940c4/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a13940c4/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a13940c4/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a883f8d0b/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/4a13940c4/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a883f8d0b/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4a13940c4/packages/flyctl/getcpuinfo.patch"
     ]
   },
   {
@@ -7560,8 +7551,6 @@
     "homepage": "https://www.gnupg.org/related_software/gpgme/",
     "depends": [
       "gnupg",
-      "(>=",
-      "2.2.9-1)",
       "libassuan",
       "libgpg-error"
     ],
@@ -8917,17 +8906,17 @@
   },
   {
     "name": "hugo",
-    "version": "0.94.0",
+    "version": "0.94.1",
     "description": "A fast and flexible static site generator",
     "homepage": "https://gohugo.io/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.94.0.tar.gz",
+    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.94.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d7d3df0d2/packages/hugo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d7d3df0d2/packages/hugo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d7d3df0d2/packages/hugo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d19b741b2/packages/hugo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d19b741b2/packages/hugo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d19b741b2/packages/hugo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -9382,13 +9371,16 @@
     "description": "The internationalization tool collection",
     "homepage": "https://launchpad.net/intltool",
     "depends": [
-      "perl"
+      "perl",
+      "clang",
+      "make",
+      "libexpat"
     ],
     "srcurl": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
     "maintainer": "@suhan-paradkar",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/625f2aab3/packages/intltool",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/625f2aab3/packages/intltool/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/625f2aab3/packages/intltool/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/02aa76fd6/packages/intltool",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02aa76fd6/packages/intltool/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02aa76fd6/packages/intltool/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11380,9 +11372,7 @@
     "description": "CSS parsing and manipulation library",
     "homepage": "https://gitlab.gnome.org/Archive/libcroco",
     "depends": [
-      "glib",
-      "liblzma",
-      "libxml2"
+      "glibliblzmalibxml2"
     ],
     "srcurl": "http://ftp.gnome.org/pub/gnome/sources/libcroco/0.6/libcroco-0.6.13.tar.xz",
     "maintainer": "@termux",
@@ -11448,8 +11438,6 @@
       "libnghttp2",
       "libssh2",
       "openssl",
-      "(>=",
-      "1.1.1)",
       "zlib"
     ],
     "srcurl": "https://github.com/curl/curl/releases/download/curl-7_82_0/curl-7.82.0.tar.xz",
@@ -13189,8 +13177,7 @@
     "description": "Minimal XMPP library written for use with Profanity XMPP client",
     "homepage": "https://github.com/boothj5/libmesode",
     "depends": [
-      "openssl",
-      "libexpat"
+      "openssllibexpat"
     ],
     "srcurl": "https://github.com/boothj5/libmesode/archive/0.10.1.tar.gz",
     "maintainer": "Oliver Schmidhauser @Neo-Oli",
@@ -14949,8 +14936,6 @@
     "depends": [
       "readline",
       "openssl",
-      "(>=",
-      "1.1.1)",
       "zlib"
     ],
     "srcurl": "https://github.com/tdlib/td/archive/v1.7.0.tar.gz",
@@ -16956,9 +16941,7 @@
     "description": "Man page viewer from the mandoc toolset",
     "homepage": "https://mdocml.bsd.lv/",
     "depends": [
-      "less",
-      "libandroid-glob",
-      "zlib"
+      "lesslibandroid-globzlib"
     ],
     "srcurl": "http://mdocml.bsd.lv/snapshots/mandoc-1.14.5.tar.gz",
     "maintainer": "@termux",
@@ -20940,8 +20923,6 @@
       "bash",
       "coreutils",
       "gnupg",
-      "(>=",
-      "2.2.9-1)",
       "tree"
     ],
     "srcurl": "https://git.zx2c4.com/password-store/snapshot/password-store-1.7.4.tar.xz",
@@ -21052,8 +21033,7 @@
     "description": "Facebook PathPicker - a terminal-based file picker",
     "homepage": "https://facebook.github.io/PathPicker/",
     "depends": [
-      "bash",
-      "python"
+      "bashpython"
     ],
     "srcurl": "https://github.com/facebook/PathPicker/archive/0.9.5.tar.gz",
     "maintainer": "@termux",
@@ -22214,8 +22194,6 @@
       "gzip",
       "ncurses-utils",
       "proot",
-      "(>=",
-      "5.1.107-32)",
       "sed",
       "tar",
       "xz-utils"
@@ -24333,8 +24311,6 @@
       "openssl",
       "openssl-tool",
       "termux-auth",
-      "(>=",
-      "1.2)",
       "zlib"
     ],
     "srcurl": "https://github.com/shellinabox/shellinabox/archive/v2.20.tar.gz",
@@ -26267,8 +26243,6 @@
     "depends": [
       "perl",
       "texlive-bin",
-      "(>=",
-      "20200406-4)",
       "gnupg",
       "curl",
       "lz4",
@@ -27680,8 +27654,7 @@
     "description": "Virtual Distributed Ethernet for emulators like qemu",
     "homepage": "https://github.com/virtualsquare/vde-2",
     "depends": [
-      "libpcap",
-      "libtool",
+      "libpcaplibtool",
       "openssl",
       "libc++"
     ],
@@ -28118,10 +28091,7 @@
     "description": "Capable calculator",
     "homepage": "http://w-calc.sourceforge.net",
     "depends": [
-      "flex",
-      "libmpfr",
-      "libgmp",
-      "readline"
+      "flexlibmpfrlibgmpreadline"
     ],
     "srcurl": "http://downloads.sourceforge.net/w-calc/wcalc-2.5.tar.bz2",
     "maintainer": "@termux",
