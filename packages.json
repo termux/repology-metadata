@@ -7880,9 +7880,9 @@
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.20.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/592e74988/packages/gst-plugins-base",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/592e74988/packages/gst-plugins-base/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/592e74988/packages/gst-plugins-base/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6d91baed8/packages/gst-plugins-base",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6d91baed8/packages/gst-plugins-base/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6d91baed8/packages/gst-plugins-base/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -15678,16 +15678,19 @@
     "description": "A completely open audio compression format providing lossless, high-quality lossy, and a unique hybrid compression mode",
     "homepage": "https://www.wavpack.com/",
     "depends": [
-      "libandroid-glob",
-      "libiconv"
+      "libandroid-glob"
     ],
     "srcurl": "https://github.com/dbry/WavPack/releases/download/5.4.0/wavpack-5.4.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a93ea177d/packages/libwavpack",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a93ea177d/packages/libwavpack/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a93ea177d/packages/libwavpack/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6161d0bf/packages/libwavpack",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6161d0bf/packages/libwavpack/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6161d0bf/packages/libwavpack/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/b6161d0bf/packages/libwavpack/wavpack-5.4.0-sanitize-DSD-file-types.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/b6161d0bf/packages/libwavpack/wavpack-5.4.0-sanitize-DSD-file-types.patch"
+    ]
   },
   {
     "name": "libwebp",
@@ -17119,6 +17122,41 @@
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/mathomatic/fix-paths.patch"
+    ]
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.5.1",
+    "description": "A comprehensive library for creating static, animated, and interactive visualizations in Python",
+    "homepage": "https://matplotlib.org/",
+    "depends": [
+      "freetype",
+      "libc++",
+      "libjpeg-turbo",
+      "libtiff",
+      "libwebp",
+      "libxcb",
+      "littlecms",
+      "openjpeg",
+      "python",
+      "zlib"
+    ],
+    "srcurl": "https://github.com/matplotlib/matplotlib/archive/refs/tags/v3.5.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5df56c2a9/packages/matplotlib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5df56c2a9/packages/matplotlib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5df56c2a9/packages/matplotlib/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5df56c2a9/packages/matplotlib/Pillow-setup.py.patch",
+      "https://github.com/termux/termux-packages/blob/5df56c2a9/packages/matplotlib/mplsetup.cfg.patch",
+      "https://github.com/termux/termux-packages/blob/5df56c2a9/packages/matplotlib/setup.py.patch",
+      "https://github.com/termux/termux-packages/blob/5df56c2a9/packages/matplotlib/setuptools-44.1.1-no-bdist_wininst.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5df56c2a9/packages/matplotlib/Pillow-setup.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5df56c2a9/packages/matplotlib/mplsetup.cfg.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5df56c2a9/packages/matplotlib/setup.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5df56c2a9/packages/matplotlib/setuptools-44.1.1-no-bdist_wininst.diff"
     ]
   },
   {
@@ -22528,6 +22566,50 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "pypy",
+    "version": "7.3.8",
+    "description": "A fast, compliant alternative implementation of Python",
+    "homepage": "https://pypy.org",
+    "depends": [
+      "gdbm",
+      "libandroid-posix-semaphore",
+      "libandroid-support",
+      "libbz2",
+      "libcrypt",
+      "libexpat",
+      "libffi",
+      "liblzma",
+      "libsqlite",
+      "libxml2",
+      "ncurses",
+      "ncurses-ui-libs",
+      "openssl",
+      "readline",
+      "zlib"
+    ],
+    "srcurl": "https://downloads.python.org/pypy/pypy2.7-v7.3.8-src.tar.bz2",
+    "maintainer": "@licy183",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2894168df/packages/pypy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2894168df/packages/pypy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2894168df/packages/pypy/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/2894168df/packages/pypy/added.patch",
+      "https://github.com/termux/termux-packages/blob/2894168df/packages/pypy/fix-hardcoded-pathes.patch",
+      "https://github.com/termux/termux-packages/blob/2894168df/packages/pypy/fix-loaded-libs.patch",
+      "https://github.com/termux/termux-packages/blob/2894168df/packages/pypy/fix-not-available-functions.patch",
+      "https://github.com/termux/termux-packages/blob/2894168df/packages/pypy/package-zip.patch",
+      "https://github.com/termux/termux-packages/blob/2894168df/packages/pypy/termux-build.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/2894168df/packages/pypy/added.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2894168df/packages/pypy/fix-hardcoded-pathes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2894168df/packages/pypy/fix-loaded-libs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2894168df/packages/pypy/fix-not-available-functions.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2894168df/packages/pypy/package-zip.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2894168df/packages/pypy/termux-build.patch"
+    ]
+  },
+  {
     "name": "python",
     "version": "3.10.2",
     "description": "Python 3 programming language intended to enable clear programs",
@@ -22576,6 +22658,52 @@
       "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python/multiprocessing.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python/no-setuid-servers.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python/setup.py.patch"
+    ]
+  },
+  {
+    "name": "python-apt",
+    "version": "2.3.0",
+    "description": "Python bindings for APT",
+    "homepage": "https://apt-team.pages.debian.net/python-apt/",
+    "depends": [
+      "apt",
+      "libc++",
+      "python"
+    ],
+    "srcurl": "https://ftp.debian.org/debian/pool/main/p/python-apt/python-apt_2.3.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec6de3b81/packages/python-apt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec6de3b81/packages/python-apt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec6de3b81/packages/python-apt/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/ec6de3b81/packages/python-apt/setuptools-44.1.1-no-bdist_wininst.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/ec6de3b81/packages/python-apt/setuptools-44.1.1-no-bdist_wininst.diff"
+    ]
+  },
+  {
+    "name": "python-tldp",
+    "version": "0.7.5",
+    "description": "Tools for publishing from TLDP sources",
+    "homepage": "https://github.com/tLDP/python-tldp",
+    "depends": [
+      "python"
+    ],
+    "srcurl": "https://github.com/tLDP/python-tldp/archive/refs/tags/tldp-0.7.5.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d01cf13c3/packages/python-tldp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d01cf13c3/packages/python-tldp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d01cf13c3/packages/python-tldp/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/d01cf13c3/packages/python-tldp/setup.py.patch",
+      "https://github.com/termux/termux-packages/blob/d01cf13c3/packages/python-tldp/tldp-config.py.patch",
+      "https://github.com/termux/termux-packages/blob/d01cf13c3/packages/python-tldp/tldp-ldpcollection.py.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/d01cf13c3/packages/python-tldp/setup.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d01cf13c3/packages/python-tldp/tldp-config.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d01cf13c3/packages/python-tldp/tldp-ldpcollection.py.patch"
     ]
   },
   {
@@ -23650,15 +23778,16 @@
     "description": "Ncurses BitTorrent client based on libTorrent",
     "homepage": "https://rakshasa.github.io/rtorrent/",
     "depends": [
+      "libc++",
       "libcurl",
       "libtorrent",
       "ncurses"
     ],
     "srcurl": "https://github.com/rakshasa/rtorrent/releases/download/v0.9.8/rtorrent-0.9.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/rtorrent",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/rtorrent/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/rtorrent/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d8094f13/packages/rtorrent",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d8094f13/packages/rtorrent/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d8094f13/packages/rtorrent/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -28859,6 +28988,20 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/f11cdd840/packages/youtubedr",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/f11cdd840/packages/youtubedr/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f11cdd840/packages/youtubedr/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "yq",
+    "version": "4.22.1",
+    "description": "A lightweight and portable command-line YAML, JSON and XML processor",
+    "homepage": "https://mikefarah.gitbook.io/yq/",
+    "depends": [],
+    "srcurl": "https://github.com/mikefarah/yq/archive/refs/tags/v4.22.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dcf3a1175/packages/yq",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dcf3a1175/packages/yq/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dcf3a1175/packages/yq/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
