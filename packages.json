@@ -889,12 +889,14 @@
     "version": "0.60.8",
     "description": "A free and open source spell checker designed to replace Ispell",
     "homepage": "http://aspell.net",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://ftp.gnu.org/gnu/aspell/aspell-0.60.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/69a7ab0e0/packages/aspell",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69a7ab0e0/packages/aspell/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69a7ab0e0/packages/aspell/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/071eb8183/packages/aspell",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/071eb8183/packages/aspell/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/071eb8183/packages/aspell/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -3442,31 +3444,32 @@
     "description": "Common UNIX Printing System",
     "homepage": "https://www.cups.org/",
     "depends": [
+      "libc++",
       "libiconv",
       "libcrypt"
     ],
     "srcurl": "https://github.com/apple/cups/releases/download/v2.3.3/cups-2.3.3-source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b44048eb3/packages/cups",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7cde1e1d8/packages/cups",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/cups-desktop-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/cups-scheduler-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/cups-thread-private.h.patch",
-      "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/cups-thread.c.patch",
-      "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/defconfig-fixes.patch",
-      "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/no-sbindir.patch",
-      "https://github.com/termux/termux-packages/blob/b44048eb3/packages/cups/no-tmpdir-permission-check.patch"
+      "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/cups-desktop-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/cups-scheduler-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/cups-thread-private.h.patch",
+      "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/cups-thread.c.patch",
+      "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/defconfig-fixes.patch",
+      "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/no-sbindir.patch",
+      "https://github.com/termux/termux-packages/blob/7cde1e1d8/packages/cups/no-tmpdir-permission-check.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/cups-desktop-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/cups-scheduler-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/cups-thread-private.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/cups-thread.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/defconfig-fixes.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/no-sbindir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b44048eb3/packages/cups/no-tmpdir-permission-check.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/cups-desktop-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/cups-scheduler-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/cups-thread-private.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/cups-thread.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/defconfig-fixes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/no-sbindir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7cde1e1d8/packages/cups/no-tmpdir-permission-check.patch"
     ]
   },
   {
@@ -4040,13 +4043,14 @@
     "description": "Suite to create, manipulate and view DjVu ('déjà vu') documents",
     "homepage": "http://djvu.sourceforge.net/",
     "depends": [
+      "libc++",
       "libtiff"
     ],
     "srcurl": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d220576df/packages/djvulibre",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d220576df/packages/djvulibre/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d220576df/packages/djvulibre/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/348a694e2/packages/djvulibre",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/348a694e2/packages/djvulibre/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/348a694e2/packages/djvulibre/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -4196,12 +4200,14 @@
     "version": "0.6.3",
     "description": "Command line arguments parser for C++11 and later",
     "homepage": "http://docopt.org",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://github.com/docopt/docopt.cpp/archive/v0.6.3.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/docopt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/docopt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/docopt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/46e64bceb/packages/docopt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/46e64bceb/packages/docopt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/46e64bceb/packages/docopt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -5654,12 +5660,14 @@
     "version": "2.0.0",
     "description": "Memory Efficient Serialization Library",
     "homepage": "https://github.com/google/flatbuffers",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://github.com/google/flatbuffers/archive/refs/tags/v2.0.0.tar.gz",
     "maintainer": "Simeon Huang <symeon@librehat.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/flatbuffers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/flatbuffers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/flatbuffers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ceaa88ac6/packages/flatbuffers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ceaa88ac6/packages/flatbuffers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ceaa88ac6/packages/flatbuffers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -6178,20 +6186,20 @@
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/gawk/gawk-5.1.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cca8ed466/packages/gawk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cca8ed466/packages/gawk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cca8ed466/packages/gawk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f8b402499/packages/gawk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f8b402499/packages/gawk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/gawk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cca8ed466/packages/gawk/io.c.patch",
-      "https://github.com/termux/termux-packages/blob/cca8ed466/packages/gawk/main.c.patch",
-      "https://github.com/termux/termux-packages/blob/cca8ed466/packages/gawk/no_pw_gecos.patch",
-      "https://github.com/termux/termux-packages/blob/cca8ed466/packages/gawk/stack_index.patch"
+      "https://github.com/termux/termux-packages/blob/f8b402499/packages/gawk/io.c.patch",
+      "https://github.com/termux/termux-packages/blob/f8b402499/packages/gawk/main.c.patch",
+      "https://github.com/termux/termux-packages/blob/f8b402499/packages/gawk/no_pw_gecos.patch",
+      "https://github.com/termux/termux-packages/blob/f8b402499/packages/gawk/stack_index.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cca8ed466/packages/gawk/io.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cca8ed466/packages/gawk/main.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cca8ed466/packages/gawk/no_pw_gecos.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cca8ed466/packages/gawk/stack_index.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/gawk/io.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/gawk/main.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/gawk/no_pw_gecos.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/gawk/stack_index.patch"
     ]
   },
   {
@@ -6382,12 +6390,14 @@
     "version": "2.23",
     "description": "gengetopt is a tool to write command line option parsing code for C programs.",
     "homepage": "https://www.gnu.org/software/gengetopt/",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.23.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e39e79dd9/packages/gengetopt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e39e79dd9/packages/gengetopt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e39e79dd9/packages/gengetopt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2775376aa/packages/gengetopt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2775376aa/packages/gengetopt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2775376aa/packages/gengetopt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -8795,18 +8805,19 @@
     "description": "Utility that converts HTML documents into plain text",
     "homepage": "http://www.mbayer.de/html2text/",
     "depends": [
+      "libc++",
       "libiconv"
     ],
     "srcurl": "https://github.com/grobian/html2text/archive/v2.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/html2text",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/html2text/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/html2text/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ba40ac8f3/packages/html2text",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ba40ac8f3/packages/html2text/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ba40ac8f3/packages/html2text/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/html2text/Makefile.in.patch"
+      "https://github.com/termux/termux-packages/blob/ba40ac8f3/packages/html2text/Makefile.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/html2text/Makefile.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ba40ac8f3/packages/html2text/Makefile.in.patch"
     ]
   },
   {
@@ -9437,20 +9448,20 @@
   },
   {
     "name": "ipfs",
-    "version": "0.12.0",
+    "version": "0.12.1",
     "description": "A peer-to-peer hypermedia distribution protocol",
     "homepage": "https://ipfs.io/",
     "depends": [],
-    "srcurl": "https://github.com/ipfs/go-ipfs/releases/download/v0.12.0/go-ipfs-source.tar.gz",
+    "srcurl": "https://github.com/ipfs/go-ipfs/releases/download/v0.12.1/go-ipfs-source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c95218499/packages/ipfs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c95218499/packages/ipfs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c95218499/packages/ipfs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6fd7a3281/packages/ipfs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6fd7a3281/packages/ipfs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6fd7a3281/packages/ipfs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c95218499/packages/ipfs/go-ipfs-0.4.15_bin_dist_get.patch"
+      "https://github.com/termux/termux-packages/blob/6fd7a3281/packages/ipfs/go-ipfs-0.4.15_bin_dist_get.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c95218499/packages/ipfs/go-ipfs-0.4.15_bin_dist_get.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6fd7a3281/packages/ipfs/go-ipfs-0.4.15_bin_dist_get.patch"
     ]
   },
   {
@@ -11554,19 +11565,21 @@
     "version": "18.1.40",
     "description": "The Berkeley DB embedded database system (library)",
     "homepage": "https://www.oracle.com/database/berkeley-db",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://fossies.org/linux/misc/db-18.1.40.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/libdb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/libdb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/libdb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3a8272f84/packages/libdb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3a8272f84/packages/libdb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3a8272f84/packages/libdb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/libdb/fix-tmpdir.patch",
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/libdb/no-install-docs.patch"
+      "https://github.com/termux/termux-packages/blob/3a8272f84/packages/libdb/fix-tmpdir.patch",
+      "https://github.com/termux/termux-packages/blob/3a8272f84/packages/libdb/no-install-docs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/libdb/fix-tmpdir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/libdb/no-install-docs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3a8272f84/packages/libdb/fix-tmpdir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3a8272f84/packages/libdb/no-install-docs.patch"
     ]
   },
   {
@@ -11574,19 +11587,21 @@
     "version": "1.0.8",
     "description": "H.265/HEVC video stream decoder library",
     "homepage": "https://github.com/strukturag/libde265",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://github.com/strukturag/libde265/releases/download/v1.0.8/libde265-1.0.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/libde265",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/libde265/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/libde265/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ada4e9d63/packages/libde265",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ada4e9d63/packages/libde265/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ada4e9d63/packages/libde265/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/27afd9e66/packages/libde265/disable_tools.patch",
-      "https://github.com/termux/termux-packages/blob/27afd9e66/packages/libde265/only_export_decoder_api.patch"
+      "https://github.com/termux/termux-packages/blob/ada4e9d63/packages/libde265/disable_tools.patch",
+      "https://github.com/termux/termux-packages/blob/ada4e9d63/packages/libde265/only_export_decoder_api.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/libde265/disable_tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/libde265/only_export_decoder_api.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ada4e9d63/packages/libde265/disable_tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ada4e9d63/packages/libde265/only_export_decoder_api.patch"
     ]
   },
   {
@@ -12128,12 +12143,14 @@
     "version": "6.2.1",
     "description": "Library for arbitrary precision arithmetic",
     "homepage": "https://gmplib.org/",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://mirrors.kernel.org/gnu/gmp/gmp-6.2.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/libgmp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/libgmp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/libgmp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d2e504a0f/packages/libgmp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d2e504a0f/packages/libgmp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d2e504a0f/packages/libgmp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -12334,6 +12351,7 @@
     "homepage": "https://github.com/strukturag/libheif",
     "depends": [
       "libaom",
+      "libc++",
       "libdav1d",
       "librav1e",
       "libde265",
@@ -12341,9 +12359,9 @@
     ],
     "srcurl": "https://github.com/strukturag/libheif/releases/download/v1.12.0/libheif-1.12.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/libheif",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/libheif/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/libheif/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9304920e4/packages/libheif",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9304920e4/packages/libheif/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9304920e4/packages/libheif/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -13209,20 +13227,21 @@
     "description": "Library for reading information from media files",
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": [
+      "libc++",
       "libcurl",
       "libzen",
       "zlib"
     ],
     "srcurl": "https://mediaarea.net/download/source/libmediainfo/21.09/libmediainfo_21.09.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d037f0ce6/packages/libmediainfo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d037f0ce6/packages/libmediainfo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d037f0ce6/packages/libmediainfo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/57517e9b4/packages/libmediainfo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/57517e9b4/packages/libmediainfo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/57517e9b4/packages/libmediainfo/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d037f0ce6/packages/libmediainfo/01_remove_libpthread.patch"
+      "https://github.com/termux/termux-packages/blob/57517e9b4/packages/libmediainfo/01_remove_libpthread.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d037f0ce6/packages/libmediainfo/01_remove_libpthread.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/57517e9b4/packages/libmediainfo/01_remove_libpthread.patch"
     ]
   },
   {
@@ -13358,9 +13377,9 @@
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/mpc/mpc-1.2.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/libmpc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/libmpc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/libmpc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f8b402499/packages/libmpc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f8b402499/packages/libmpc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/libmpc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -13388,9 +13407,9 @@
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/mpfr/mpfr-4.1.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/libmpfr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/libmpfr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/libmpfr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f8b402499/packages/libmpfr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f8b402499/packages/libmpfr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/libmpfr/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -13969,12 +13988,14 @@
     "version": "2.2.0",
     "description": "A small portable C library to handle Apple Property List files in binary or XML format.",
     "homepage": "https://libimobiledevice.org",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://github.com/libimobiledevice/libplist/archive/2.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/libplist",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/libplist/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/libplist/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e4eacdcae/packages/libplist",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e4eacdcae/packages/libplist/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e4eacdcae/packages/libplist/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -14985,7 +15006,7 @@
   },
   {
     "name": "libtd",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "description": "Library for building Telegram clients",
     "homepage": "https://core.telegram.org/tdlib/",
     "depends": [
@@ -14993,11 +15014,11 @@
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://github.com/tdlib/td/archive/v1.7.0.tar.gz",
+    "srcurl": "https://github.com/tdlib/td/archive/v1.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4577a0cf6/packages/libtd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/libtd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/libtd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/325415689/packages/libtd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/325415689/packages/libtd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/325415689/packages/libtd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -15745,12 +15766,14 @@
     "version": "0.3.1",
     "description": "A library containing the AudioProcessing module from the WebRTC project",
     "homepage": "https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/webrtc-audio-processing-0.3.1.tar.gz",
     "maintainer": "Patrick Gaskin @pgaskin",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e41152e3b/packages/libwebrtc-audio-processing",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e41152e3b/packages/libwebrtc-audio-processing/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e41152e3b/packages/libwebrtc-audio-processing/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f1565ff8a/packages/libwebrtc-audio-processing",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f1565ff8a/packages/libwebrtc-audio-processing/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f1565ff8a/packages/libwebrtc-audio-processing/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -16240,20 +16263,21 @@
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": [
       "libandroid-glob",
-      "libandroid-support"
+      "libandroid-support",
+      "libc++"
     ],
     "srcurl": "https://mediaarea.net/download/source/libzen/0.4.39/libzen_0.4.39.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d711098d7/packages/libzen",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d711098d7/packages/libzen/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d711098d7/packages/libzen/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ef4f280b/packages/libzen",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ef4f280b/packages/libzen/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ef4f280b/packages/libzen/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d711098d7/packages/libzen/01_remove_libpthread.patch",
-      "https://github.com/termux/termux-packages/blob/d711098d7/packages/libzen/02_add_libandroid_glob.patch"
+      "https://github.com/termux/termux-packages/blob/7ef4f280b/packages/libzen/01_remove_libpthread.patch",
+      "https://github.com/termux/termux-packages/blob/7ef4f280b/packages/libzen/02_add_libandroid_glob.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d711098d7/packages/libzen/01_remove_libpthread.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d711098d7/packages/libzen/02_add_libandroid_glob.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7ef4f280b/packages/libzen/01_remove_libpthread.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7ef4f280b/packages/libzen/02_add_libandroid_glob.patch"
     ]
   },
   {
@@ -20899,12 +20923,14 @@
     "version": "0.8.1",
     "description": "par2cmdline is a PAR 2.0 compatible file verification and repair tool.",
     "homepage": "https://github.com/Parchive/par2cmdline",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://github.com/Parchive/par2cmdline/archive/v0.8.1.tar.gz",
     "maintainer": "Oliver Schmidhauser @Neo-Oli",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/par2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/par2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/par2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/032bab775/packages/par2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/032bab775/packages/par2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/032bab775/packages/par2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -21840,20 +21866,21 @@
     "description": "A massively parallel lossless data compressor based on the lzlib compression library",
     "homepage": "http://www.nongnu.org/lzip/plzip.html",
     "depends": [
+      "libc++",
       "lzlib"
     ],
     "srcurl": "http://download.savannah.gnu.org/releases/lzip/plzip/plzip-1.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ee69d322/packages/plzip",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ee69d322/packages/plzip/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ee69d322/packages/plzip/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b49ebc8e/packages/plzip",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b49ebc8e/packages/plzip/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b49ebc8e/packages/plzip/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5ee69d322/packages/plzip/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/5ee69d322/packages/plzip/configure.patch"
+      "https://github.com/termux/termux-packages/blob/5b49ebc8e/packages/plzip/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/5b49ebc8e/packages/plzip/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5ee69d322/packages/plzip/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5ee69d322/packages/plzip/configure.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5b49ebc8e/packages/plzip/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5b49ebc8e/packages/plzip/configure.patch"
     ]
   },
   {
@@ -22852,14 +22879,14 @@
     ],
     "srcurl": "https://github.com/Qalculate/libqalculate/releases/download/v4.1.0/libqalculate-4.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4a115983/packages/qalc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4a115983/packages/qalc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4a115983/packages/qalc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f8b402499/packages/qalc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f8b402499/packages/qalc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/qalc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d4a115983/packages/qalc/util.cc.patch"
+      "https://github.com/termux/termux-packages/blob/f8b402499/packages/qalc/util.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d4a115983/packages/qalc/util.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/qalc/util.cc.patch"
     ]
   },
   {
@@ -23323,12 +23350,14 @@
     "version": "2.2",
     "description": "Lexer generator for C, C++ and Go.",
     "homepage": "https://re2c.org/",
-    "depends": [],
+    "depends": [
+      "libc++"
+    ],
     "srcurl": "https://github.com/skvadrik/re2c/archive/refs/tags/2.2.tar.gz",
     "maintainer": "ian4hu <hu2008yinxiang@163.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e57e445c4/packages/re2c",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e57e445c4/packages/re2c/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e57e445c4/packages/re2c/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/623089f66/packages/re2c",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/623089f66/packages/re2c/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/623089f66/packages/re2c/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -25318,18 +25347,19 @@
     "description": "measure character-echo latency and bandwidth for an interactive ssh session",
     "homepage": "https://github.com/spook/sshping",
     "depends": [
+      "libc++",
       "libssh"
     ],
     "srcurl": "https://github.com/spook/sshping/archive/v0.1.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/883994226/packages/sshping",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/883994226/packages/sshping/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/883994226/packages/sshping/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d8b180fb/packages/sshping",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d8b180fb/packages/sshping/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d8b180fb/packages/sshping/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/883994226/packages/sshping/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/3d8b180fb/packages/sshping/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/883994226/packages/sshping/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3d8b180fb/packages/sshping/Makefile.patch"
     ]
   },
   {
@@ -27352,16 +27382,17 @@
     "homepage": "https://tsl0922.github.io/ttyd/",
     "depends": [
       "json-c",
+      "libcap",
       "libuv",
       "libwebsockets",
-      "zlib",
-      "libcap"
+      "openssl",
+      "zlib"
     ],
     "srcurl": "https://github.com/tsl0922/ttyd/archive/1.6.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/eba234a7d/packages/ttyd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eba234a7d/packages/ttyd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eba234a7d/packages/ttyd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52a2dfcb3/packages/ttyd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52a2dfcb3/packages/ttyd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52a2dfcb3/packages/ttyd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -28442,9 +28473,9 @@
     ],
     "srcurl": "http://downloads.sourceforge.net/w-calc/wcalc-2.5.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/wcalc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/wcalc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/wcalc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f8b402499/packages/wcalc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f8b402499/packages/wcalc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f8b402499/packages/wcalc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -28598,13 +28629,14 @@
     "description": "font compression reference code",
     "homepage": "https://www.w3.org/TR/WOFF2/",
     "depends": [
-      "brotli"
+      "brotli",
+      "libc++"
     ],
     "srcurl": "https://github.com/google/woff2/archive/v1.0.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/woff2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/woff2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/woff2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b1d0c850/packages/woff2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b1d0c850/packages/woff2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b1d0c850/packages/woff2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
