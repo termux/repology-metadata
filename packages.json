@@ -28,6 +28,22 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "2ping",
+    "version": "4.5.1",
+    "description": "A bi-directional ping utility",
+    "homepage": "https://www.finnie.org/software/2ping/",
+    "depends": [
+      "python"
+    ],
+    "srcurl": "https://github.com/rfinnie/2ping/archive/refs/tags/v4.5.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2c3f601b9/packages/2ping",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2c3f601b9/packages/2ping/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2c3f601b9/packages/2ping/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "6tunnel",
     "version": "0.13",
     "description": "Allows you to use services provided by IPv6 hosts with IPv4-only applications and vice-versa",
@@ -336,6 +352,36 @@
     ]
   },
   {
+    "name": "anacron",
+    "version": "2.3",
+    "description": "A periodic command scheduler",
+    "homepage": "http://anacron.sourceforge.net/",
+    "depends": [],
+    "srcurl": "https://downloads.sourceforge.net/anacron/anacron-2.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f6c3cf5c7/packages/anacron",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/anacron.8.patch",
+      "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/anacrontab.5.patch",
+      "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/global.h.patch",
+      "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/gregor.c.patch",
+      "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/readtab.c.patch",
+      "https://github.com/termux/termux-packages/blob/f6c3cf5c7/packages/anacron/runjob.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/anacron.8.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/anacrontab.5.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/global.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/gregor.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/readtab.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f6c3cf5c7/packages/anacron/runjob.c.patch"
+    ]
+  },
+  {
     "name": "android-tools",
     "version": "31.0.3p1",
     "description": "Android platform tools",
@@ -433,6 +479,28 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/4d9bbd7c7/packages/angle-grinder",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/4d9bbd7c7/packages/angle-grinder/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4d9bbd7c7/packages/angle-grinder/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "ani-cli",
+    "version": "1.9",
+    "description": "A cli to browse and watch anime",
+    "homepage": "https://github.com/pystardust/ani-cli",
+    "depends": [
+      "aria2",
+      "curl",
+      "git",
+      "grep",
+      "mpv",
+      "openssl",
+      "sed"
+    ],
+    "srcurl": "https://github.com/pystardust/ani-cli/archive/refs/tags/v1.9.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3bdb38c36/packages/ani-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3bdb38c36/packages/ani-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3bdb38c36/packages/ani-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -1266,6 +1334,22 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/4a688ba14/packages/await",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a688ba14/packages/await/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a688ba14/packages/await/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "awesomeshot",
+    "version": "1.0.2",
+    "description": "A command-line screenshot tool written in bash",
+    "homepage": "https://github.com/mayTermux/awesomeshot",
+    "depends": [
+      "bash"
+    ],
+    "srcurl": "https://github.com/mayTermux/awesomeshot/archive/refs/tags/v.1.0.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ff4b7521d/packages/awesomeshot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ff4b7521d/packages/awesomeshot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ff4b7521d/packages/awesomeshot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -6379,6 +6463,37 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "gdrive-downloader",
+    "version": "2022.03.15",
+    "description": "Download a gdrive folder or file easily, shell ftw.",
+    "homepage": "https://github.com/Akianonymus/gdrive-downloader",
+    "depends": [
+      "bash",
+      "curl"
+    ],
+    "srcurl": "https://github.com/Akianonymus/gdrive-downloader.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6625404c/packages/gdrive-downloader",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6625404c/packages/gdrive-downloader/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6625404c/packages/gdrive-downloader/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "gdu",
+    "version": "5.13.2",
+    "description": "Modern and intuitive terminal-based text editor",
+    "homepage": "https://github.com/dundee/gdu",
+    "depends": [],
+    "srcurl": "https://github.com/dundee/gdu/archive/v5.13.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/664c8f2d0/packages/gdu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/664c8f2d0/packages/gdu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/664c8f2d0/packages/gdu/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "gegl",
     "version": "0.4.36",
     "description": "Data flow based image processing framework",
@@ -7421,6 +7536,23 @@
     ]
   },
   {
+    "name": "google-drive-upload",
+    "version": "4.2",
+    "description": "Bash scripts to upload files to google drive",
+    "homepage": "https://github.com/labbots/google-drive-upload",
+    "depends": [
+      "bash",
+      "curl"
+    ],
+    "srcurl": "https://github.com/labbots/google-drive-upload/archive/v4.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ba47e7dc/packages/google-drive-upload",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ba47e7dc/packages/google-drive-upload/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ba47e7dc/packages/google-drive-upload/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "google-glog",
     "version": "0.5.0",
     "description": "Logging library for C++",
@@ -8133,6 +8265,22 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/d738138eb/packages/harfbuzz",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/d738138eb/packages/harfbuzz/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d738138eb/packages/harfbuzz/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "has",
+    "version": "1.4.0",
+    "description": "has checks presence of various command line tools and their versions on the path",
+    "homepage": "https://github.com/kdabir/has",
+    "depends": [
+      "bash"
+    ],
+    "srcurl": "https://github.com/kdabir/has/archive/v1.4.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ac0f4df8/packages/has",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ac0f4df8/packages/has/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ac0f4df8/packages/has/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -9438,6 +9586,22 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "hr",
+    "version": "1.3",
+    "description": "A horizontal ruler for your terminal",
+    "homepage": "https://github.com/LuRsT/hr",
+    "depends": [
+      "bash"
+    ],
+    "srcurl": "https://github.com/LuRsT/hr/archive/1.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0d1d92b6e/packages/hr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0d1d92b6e/packages/hr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0d1d92b6e/packages/hr/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "html-xml-utils",
     "version": "8.3",
     "description": "A number of simple utilities for manipulating HTML and XML files",
@@ -9654,6 +9818,24 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ec2cfc1a/packages/hunspell-ru/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "hut",
+    "version": "0.1.0",
+    "description": "A CLI tool for sr.ht",
+    "homepage": "https://git.sr.ht/~emersion/hut",
+    "depends": [],
+    "srcurl": "https://git.sr.ht/~emersion/hut/refs/download/v0.1.0/hut-0.1.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/47649e558/packages/hut",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/47649e558/packages/hut/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/47649e558/packages/hut/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/47649e558/packages/hut/Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/47649e558/packages/hut/Makefile.patch"
+    ]
   },
   {
     "name": "hydroxide",
@@ -17362,6 +17544,22 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "lsix",
+    "version": "1.8",
+    "description": "Shows thumbnails in terminal using sixel graphics",
+    "homepage": "https://github.com/hackerb9/lsix",
+    "depends": [
+      "bash"
+    ],
+    "srcurl": "https://github.com/hackerb9/lsix/archive/refs/tags/1.8.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/557e14e9c/packages/lsix",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/557e14e9c/packages/lsix/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/557e14e9c/packages/lsix/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "lsof",
     "version": "4.94.0",
     "description": "Lists open files for running Unix processes",
@@ -17935,6 +18133,22 @@
       "https://raw.githubusercontent.com/termux/termux-packages/5df56c2a9/packages/matplotlib/setup.py.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/5df56c2a9/packages/matplotlib/setuptools-44.1.1-no-bdist_wininst.diff"
     ]
+  },
+  {
+    "name": "matterbridge",
+    "version": "1.24.0",
+    "description": "A simple chat bridge",
+    "homepage": "https://github.com/42wim/matterbridge",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/42wim/matterbridge/archive/refs/tags/v1.24.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/02dd1a439/packages/matterbridge",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02dd1a439/packages/matterbridge/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02dd1a439/packages/matterbridge/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "maven",
@@ -21111,28 +21325,28 @@
     ],
     "srcurl": "https://github.com/termux/openjdk-mobile-termux/archive/ec285598849a27f681ea6269342cf03cf382eb56.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b160cd797/packages/openjdk-17",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6586f5bcb/packages/openjdk-17",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/always-compile-with-pic.patch",
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/android11.patch",
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/iconv.patch",
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/libraries.m4.patch",
-      "https://github.com/termux/termux-packages/blob/b160cd797/packages/openjdk-17/no-func-redef.patch"
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/always-compile-with-pic.patch",
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/android11.patch",
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/iconv.patch",
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/libraries.m4.patch",
+      "https://github.com/termux/termux-packages/blob/6586f5bcb/packages/openjdk-17/no-func-redef.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/always-compile-with-pic.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/android11.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/iconv.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/libraries.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b160cd797/packages/openjdk-17/no-func-redef.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/always-compile-with-pic.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/android11.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/iconv.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/libraries.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6586f5bcb/packages/openjdk-17/no-func-redef.patch"
     ]
   },
   {
@@ -21945,6 +22159,20 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "pb",
+    "version": "2020.10.27",
+    "description": "A helper utility for using 0x0 pastebin services",
+    "homepage": "https://tildegit.org/tomasino/pb",
+    "depends": [],
+    "srcurl": "https://tildegit.org/tomasino/pb/archive/v2020.10.27.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cae3aec6b/packages/pb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cae3aec6b/packages/pb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cae3aec6b/packages/pb/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "pcaudiolib",
     "version": "1.2",
     "description": "Portable C Audio Library",
@@ -22131,6 +22359,20 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/dda663409/packages/pforth/CMakeLists.txt.patch"
     ]
+  },
+  {
+    "name": "photon-rss",
+    "version": "2022.03.16",
+    "description": "An RSS/Atom reader with the focus on speed, usability and a bit of unix philosophy",
+    "homepage": "https://git.sr.ht/~ghost08/photon",
+    "depends": [],
+    "srcurl": "https://git.sr.ht/~ghost08/photon",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2b4d6c313/packages/photon-rss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2b4d6c313/packages/photon-rss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2b4d6c313/packages/photon-rss/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "php",
@@ -22421,6 +22663,20 @@
     ]
   },
   {
+    "name": "picocom",
+    "version": "2018.04.12",
+    "description": "A minimal dumb-terminal emulation program",
+    "homepage": "https://github.com/npat-efault/picocom",
+    "depends": [],
+    "srcurl": "https://github.com/npat-efault/picocom.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0694a8f09/packages/picocom",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0694a8f09/packages/picocom/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0694a8f09/packages/picocom/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "picolisp",
     "version": "21.12",
     "description": "Lisp interpreter and application server framework",
@@ -22535,6 +22791,20 @@
       "https://raw.githubusercontent.com/termux/termux-packages/2e0eea35d/packages/pinentry/pinentry-emacs.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/2e0eea35d/packages/pinentry/pinentry-pinentry.c.patch"
     ]
+  },
+  {
+    "name": "pingme",
+    "version": "0.2.4",
+    "description": "A small utility which can be called from anywhere to send a message with particular information",
+    "homepage": "https://github.com/kha7iq/pingme",
+    "depends": [],
+    "srcurl": "https://github.com/kha7iq/pingme/archive/refs/tags/v0.2.4.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/78177f3a8/packages/pingme",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/78177f3a8/packages/pingme/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/78177f3a8/packages/pingme/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "pipes.sh",
@@ -23070,7 +23340,7 @@
   },
   {
     "name": "profanity",
-    "version": "0.11.1",
+    "version": "0.12.0",
     "description": "Profanity is a console based XMPP client written in C using ncurses and libstrophe, inspired by Irssi",
     "homepage": "https://profanity-im.github.io",
     "depends": [
@@ -23078,9 +23348,9 @@
       "libffi",
       "ncurses",
       "glib",
-      "libmesode",
       "libcurl",
       "readline",
+      "libsqlite",
       "libuuid",
       "libotr",
       "gpgme",
@@ -23088,18 +23358,21 @@
       "libassuan",
       "libgpg-error",
       "zlib",
-      "libsignal-protocol-c"
+      "libsignal-protocol-c",
+      "libstrophe"
     ],
-    "srcurl": "https://github.com/profanity-im/profanity/releases/download/0.11.1/profanity-0.11.1.tar.gz",
+    "srcurl": "https://github.com/profanity-im/profanity/releases/download/0.12.0/profanity-0.12.0.tar.gz",
     "maintainer": "Oliver Schmidhauser @Neo-Oli",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/49bc41bb0/packages/profanity",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/49bc41bb0/packages/profanity/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/49bc41bb0/packages/profanity/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e87944c49/packages/profanity",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e87944c49/packages/profanity/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e87944c49/packages/profanity/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/49bc41bb0/packages/profanity/cmd_funcs.c.patch"
+      "https://github.com/termux/termux-packages/blob/e87944c49/packages/profanity/cmd_funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/e87944c49/packages/profanity/configure.ac.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/49bc41bb0/packages/profanity/cmd_funcs.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e87944c49/packages/profanity/cmd_funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e87944c49/packages/profanity/configure.ac.patch"
     ]
   },
   {
@@ -24026,6 +24299,20 @@
       "https://raw.githubusercontent.com/termux/termux-packages/d2067b15b/packages/rappel/struct-redef.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/d2067b15b/packages/rappel/tmpdir.patch"
     ]
+  },
+  {
+    "name": "ratt",
+    "version": "2022.03.23",
+    "description": "A tool for converting websites to rss/atom feeds",
+    "homepage": "https://git.sr.ht/~ghost08/ratt",
+    "depends": [],
+    "srcurl": "https://git.sr.ht/~ghost08/ratt",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e598acdf/packages/ratt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e598acdf/packages/ratt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e598acdf/packages/ratt/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "ravencoin",
@@ -25283,6 +25570,20 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "senpai",
+    "version": "2021.12.14",
+    "description": "An IRC client that works best with bouncers",
+    "homepage": "https://git.sr.ht/~taiite/senpai",
+    "depends": [],
+    "srcurl": "https://git.sr.ht/~taiite/senpai",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a98426f8b/packages/senpai",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a98426f8b/packages/senpai/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a98426f8b/packages/senpai/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "sensible-utils",
     "version": "0.0.17",
     "description": "Small utilities used by programs to sensibly select and spawn an appropriate browser, editor, or pager",
@@ -25683,6 +25984,22 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "slugify",
+    "version": "2016.01.23",
+    "description": "Bash command that converts filenames and directories to a web friendly format.",
+    "homepage": "https://github.com/benlinton/slugify",
+    "depends": [
+      "bash"
+    ],
+    "srcurl": "https://github.com/benlinton/slugify.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/451b0400e/packages/slugify",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/451b0400e/packages/slugify/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/451b0400e/packages/slugify/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "smalltalk",
     "version": "3.2.91",
     "description": "A free implementation of the Smalltalk-80 language",
@@ -25861,6 +26178,26 @@
       "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/softether-vpn/src-Mayaqua-Mayaqua.c.orig.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/softether-vpn/src-Mayaqua-Network.c.orig.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/softether-vpn/src-Mayaqua-Unix.c.orig.patch"
+    ]
+  },
+  {
+    "name": "soju",
+    "version": "0.4.0",
+    "description": "A user-friendly IRC bouncer",
+    "homepage": "https://git.sr.ht/~emersion/soju",
+    "depends": [],
+    "srcurl": "https://git.sr.ht/~emersion/soju/refs/download/v0.4.0/soju-0.4.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3f31366d7/packages/soju",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3f31366d7/packages/soju/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3f31366d7/packages/soju/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3f31366d7/packages/soju/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/3f31366d7/packages/soju/config.in.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3f31366d7/packages/soju/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f31366d7/packages/soju/config.in.patch"
     ]
   },
   {
@@ -29033,7 +29370,7 @@
   },
   {
     "name": "vim",
-    "version": "8.2.4450",
+    "version": "8.2.4650",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -29041,37 +29378,35 @@
       "ncurses",
       "vim-runtime"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.4450.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.4650.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/17daad431/packages/vim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cfa9df4bd/packages/vim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/runtime-autoload-context.vim.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/src-auto-configure.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/vim-patch-8.2.4480-fix-ctrl-z.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/vimtutor.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim/vterm_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/runtime-autoload-context.vim.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/src-auto-configure.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/vimtutor.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/runtime-autoload-context.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/vim-patch-8.2.4480-fix-ctrl-z.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/runtime-autoload-context.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/src-auto-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/vimtutor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim/vterm_internal.h.patch"
     ]
   },
   {
     "name": "vim-python",
-    "version": "8.2.4450",
+    "version": "8.2.4650",
     "description": "Vi IMproved - enhanced vi editor - with python support",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -29080,32 +29415,30 @@
       "vim-runtime",
       "python"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.4450.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.4650.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/17daad431/packages/vim-python",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cfa9df4bd/packages/vim-python",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/runtime-autoload-context.vim.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/src-auto-configure.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/vim-patch-8.2.4480-fix-ctrl-z.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/vimtutor.patch",
-      "https://github.com/termux/termux-packages/blob/17daad431/packages/vim-python/vterm_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/runtime-autoload-context.vim.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/src-auto-configure.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/vimtutor.patch",
+      "https://github.com/termux/termux-packages/blob/cfa9df4bd/packages/vim-python/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/runtime-autoload-context.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/vim-patch-8.2.4480-fix-ctrl-z.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17daad431/packages/vim-python/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/runtime-autoload-context.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/src-auto-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/vimtutor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfa9df4bd/packages/vim-python/vterm_internal.h.patch"
     ]
   },
   {
@@ -30118,6 +30451,29 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dcf3a1175/packages/yq/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "ytfzf",
+    "version": "2.2",
+    "description": "A POSIX script that helps you find Youtube videos (without API)",
+    "homepage": "https://github.com/pystardust/ytfzf",
+    "depends": [
+      "curl",
+      "jq"
+    ],
+    "srcurl": "https://github.com/pystardust/ytfzf/archive/refs/tags/v2.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bdb96ed21/packages/ytfzf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bdb96ed21/packages/ytfzf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bdb96ed21/packages/ytfzf/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/bdb96ed21/packages/ytfzf/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/bdb96ed21/packages/ytfzf/ytfzf.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/bdb96ed21/packages/ytfzf/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bdb96ed21/packages/ytfzf/ytfzf.patch"
+    ]
   },
   {
     "name": "z3",
