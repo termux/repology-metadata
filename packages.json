@@ -1744,6 +1744,41 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "bitlbee",
+    "version": "3.6-1",
+    "description": "An IRC to other chat networks gateway",
+    "homepage": "https://www.bitlbee.org/",
+    "depends": [
+      "ca-certificates",
+      "glib",
+      "libgcrypt",
+      "libgnutls"
+    ],
+    "srcurl": "https://github.com/bitlbee/bitlbee/archive/refs/tags/3.6-1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c536e7eb9/packages/bitlbee",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/bitlbee.conf.patch",
+      "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/configure.patch",
+      "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/ipc.c.patch",
+      "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/otr.c.patch",
+      "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/protocols-purple-ft-direct.c.patch",
+      "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/protocols-purple-ft.c.patch",
+      "https://github.com/termux/termux-packages/blob/c536e7eb9/packages/bitlbee/utils-bitlbeed.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/bitlbee.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/ipc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/otr.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/protocols-purple-ft-direct.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/protocols-purple-ft.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c536e7eb9/packages/bitlbee/utils-bitlbeed.c.patch"
+    ]
+  },
+  {
     "name": "bk",
     "version": "0.5.3",
     "description": "A terminal EPUB reader",
@@ -5946,7 +5981,7 @@
   },
   {
     "name": "freetype",
-    "version": "2.11.1",
+    "version": "2.12.0",
     "description": "Software font engine capable of producing high-quality output",
     "homepage": "https://www.freetype.org",
     "depends": [
@@ -5954,11 +5989,11 @@
       "libpng",
       "zlib"
     ],
-    "srcurl": "https://download.savannah.gnu.org/releases/freetype/freetype-2.11.1.tar.xz",
+    "srcurl": "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/24e5975f0/packages/freetype",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/24e5975f0/packages/freetype/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/24e5975f0/packages/freetype/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fb2728bd6/packages/freetype",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fb2728bd6/packages/freetype/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fb2728bd6/packages/freetype/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -12945,24 +12980,24 @@
   },
   {
     "name": "libgcrypt",
-    "version": "1.9.4",
+    "version": "1.10.1",
     "description": "General purpose cryptographic library based on the code from GnuPG",
     "homepage": "https://www.gnu.org/software/libgcrypt/",
     "depends": [
       "libgpg-error"
     ],
-    "srcurl": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.4.tar.bz2",
+    "srcurl": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a80ece4ba/packages/libgcrypt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a80ece4ba/packages/libgcrypt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a80ece4ba/packages/libgcrypt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ae5b1b844/packages/libgcrypt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ae5b1b844/packages/libgcrypt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ae5b1b844/packages/libgcrypt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a80ece4ba/packages/libgcrypt/cipher-keccak.c.patch",
-      "https://github.com/termux/termux-packages/blob/a80ece4ba/packages/libgcrypt/fix-hardcoded-paths.patch"
+      "https://github.com/termux/termux-packages/blob/ae5b1b844/packages/libgcrypt/cipher-keccak.c.patch",
+      "https://github.com/termux/termux-packages/blob/ae5b1b844/packages/libgcrypt/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a80ece4ba/packages/libgcrypt/cipher-keccak.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a80ece4ba/packages/libgcrypt/fix-hardcoded-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ae5b1b844/packages/libgcrypt/cipher-keccak.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ae5b1b844/packages/libgcrypt/fix-hardcoded-paths.patch"
     ]
   },
   {
@@ -14607,7 +14642,7 @@
   },
   {
     "name": "libnss",
-    "version": "3.76.1",
+    "version": "3.77",
     "description": "Network Security Services (NSS)",
     "homepage": "https://firefox-source-docs.mozilla.org/security/nss/",
     "depends": [
@@ -14615,18 +14650,18 @@
       "libsqlite",
       "zlib"
     ],
-    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_76_1_RTM/src/nss-3.76.1.tar.gz",
+    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_77_RTM/src/nss-3.77.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e68d21e79/packages/libnss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e68d21e79/packages/libnss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e68d21e79/packages/libnss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f7f37e88/packages/libnss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f7f37e88/packages/libnss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f7f37e88/packages/libnss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e68d21e79/packages/libnss/coreconf-Linux.mk.patch",
-      "https://github.com/termux/termux-packages/blob/e68d21e79/packages/libnss/coreconf-rules.mk.patch"
+      "https://github.com/termux/termux-packages/blob/2f7f37e88/packages/libnss/coreconf-Linux.mk.patch",
+      "https://github.com/termux/termux-packages/blob/2f7f37e88/packages/libnss/coreconf-rules.mk.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e68d21e79/packages/libnss/coreconf-Linux.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e68d21e79/packages/libnss/coreconf-rules.mk.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2f7f37e88/packages/libnss/coreconf-Linux.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2f7f37e88/packages/libnss/coreconf-rules.mk.patch"
     ]
   },
   {
@@ -20156,7 +20191,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "0.7.0-dev+1376-g973e91007",
+    "version": "0.7.0-dev+1379-gfce0d54eb",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -20173,20 +20208,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3609b7d00/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3609b7d00/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3609b7d00/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f98382140/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f98382140/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f98382140/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3609b7d00/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/3609b7d00/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://github.com/termux/termux-packages/blob/3609b7d00/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/3609b7d00/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/f98382140/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/f98382140/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://github.com/termux/termux-packages/blob/f98382140/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/f98382140/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3609b7d00/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3609b7d00/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3609b7d00/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3609b7d00/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f98382140/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f98382140/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f98382140/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f98382140/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -23657,7 +23692,7 @@
   },
   {
     "name": "proxmark3-git",
-    "version": "2022.03.13-63612c93",
+    "version": "2022.04.01-abcc0612",
     "description": "The Swiss Army Knife of RFID Research - RRG/Iceman repo",
     "homepage": "https://github.com/RfidResearchGroup/proxmark3",
     "depends": [
@@ -23665,11 +23700,11 @@
       "libc++",
       "readline"
     ],
-    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/63612c93758c391dd0cf9b6b6b5486cf4f16aa32.tar.gz",
+    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/abcc0612515e75113c90fc7139d4743e65c57c16.tar.gz",
     "maintainer": "Marlin Sööse <marlin.soose@laro.se>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/202228c62/packages/proxmark3-git",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/202228c62/packages/proxmark3-git/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/202228c62/packages/proxmark3-git/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b34bf7d3b/packages/proxmark3-git",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b34bf7d3b/packages/proxmark3-git/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b34bf7d3b/packages/proxmark3-git/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24564,6 +24599,22 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/2e856096d/packages/rdiff-backup",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e856096d/packages/rdiff-backup/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e856096d/packages/rdiff-backup/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "rdircd",
+    "version": "2022.03.19",
+    "description": "A daemon that allows using a personal Discord account through an IRC client",
+    "homepage": "https://github.com/mk-fg/reliable-discord-client-irc-daemon",
+    "depends": [
+      "python"
+    ],
+    "srcurl": "https://github.com/mk-fg/reliable-discord-client-irc-daemon.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4c883301c/packages/rdircd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4c883301c/packages/rdircd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4c883301c/packages/rdircd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
