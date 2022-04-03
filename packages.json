@@ -1661,6 +1661,34 @@
     ]
   },
   {
+    "name": "biboumi",
+    "version": "9.0",
+    "description": "An XMPP gateway that connects to IRC servers and translates between the two protocols",
+    "homepage": "https://biboumi.louiz.org/",
+    "depends": [
+      "libc++",
+      "libexpat",
+      "libgcrypt",
+      "libiconv",
+      "libidn",
+      "libsqlite",
+      "libuuid"
+    ],
+    "srcurl": "https://git.louiz.org/biboumi/snapshot/biboumi-9.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f5a742681/packages/biboumi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f5a742681/packages/biboumi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f5a742681/packages/biboumi/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/f5a742681/packages/biboumi/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/f5a742681/packages/biboumi/cmake-Modules-FindGCRYPT.cmake.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/f5a742681/packages/biboumi/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f5a742681/packages/biboumi/cmake-Modules-FindGCRYPT.cmake.patch"
+    ]
+  },
+  {
     "name": "binaryen",
     "version": "105",
     "description": "Binaryen is a compiler and toolchain infrastructure library for WebAssembly",
@@ -2467,6 +2495,49 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/637ea742f/packages/catdoc/src-confutil.c.patch"
     ]
+  },
+  {
+    "name": "catgirl",
+    "version": "2.1",
+    "description": "A TLS-only terminal IRC client",
+    "homepage": "https://git.causal.agency/catgirl",
+    "depends": [
+      "libandroid-support",
+      "libretls",
+      "ncurses",
+      "openssl"
+    ],
+    "srcurl": "https://git.causal.agency/catgirl/snapshot/catgirl-2.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/175bdbb4a/packages/catgirl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/175bdbb4a/packages/catgirl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/175bdbb4a/packages/catgirl/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/175bdbb4a/packages/catgirl/catgirl.1.patch",
+      "https://github.com/termux/termux-packages/blob/175bdbb4a/packages/catgirl/chat.h.patch",
+      "https://github.com/termux/termux-packages/blob/175bdbb4a/packages/catgirl/command.c.patch",
+      "https://github.com/termux/termux-packages/blob/175bdbb4a/packages/catgirl/xdg.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/175bdbb4a/packages/catgirl/catgirl.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/175bdbb4a/packages/catgirl/chat.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/175bdbb4a/packages/catgirl/command.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/175bdbb4a/packages/catgirl/xdg.c.patch"
+    ]
+  },
+  {
+    "name": "catimg",
+    "version": "2.7.0",
+    "description": "Renders images in the terminal",
+    "homepage": "https://posva.net/shell/retro/bash/2013/05/27/catimg",
+    "depends": [],
+    "srcurl": "https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d9caf5279/packages/catimg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d9caf5279/packages/catimg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d9caf5279/packages/catimg/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "cava",
@@ -10640,9 +10711,9 @@
     ],
     "srcurl": "https://github.com/include-what-you-use/include-what-you-use/archive/0.17.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cce7c652c/packages/iwyu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cce7c652c/packages/iwyu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cce7c652c/packages/iwyu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/66e51f0bc/packages/iwyu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/66e51f0bc/packages/iwyu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/66e51f0bc/packages/iwyu/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11614,15 +11685,15 @@
   },
   {
     "name": "lf",
-    "version": "26",
+    "version": "27",
     "description": "Terminal file manager",
     "homepage": "https://github.com/gokcehan/lf",
     "depends": [],
-    "srcurl": "https://github.com/gokcehan/lf/archive/r26.tar.gz",
+    "srcurl": "https://github.com/gokcehan/lf/archive/r27.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/306c1deaf/packages/lf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/306c1deaf/packages/lf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/306c1deaf/packages/lf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657667e43/packages/lf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657667e43/packages/lf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657667e43/packages/lf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -14396,25 +14467,25 @@
     "depends": [],
     "srcurl": "https://github.com/msgpack/msgpack-c/releases/download/c-4.0.0/msgpack-c-4.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/306c1deaf/packages/libmsgpack",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/306c1deaf/packages/libmsgpack/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/306c1deaf/packages/libmsgpack/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5d6af609/packages/libmsgpack",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5d6af609/packages/libmsgpack/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5d6af609/packages/libmsgpack/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
   {
     "name": "libmsgpack-cxx",
-    "version": "4.0.3",
+    "version": "4.1.1",
     "description": "msgpack for C++",
     "homepage": "https://msgpack.org/",
     "depends": [
       "boost"
     ],
-    "srcurl": "https://github.com/msgpack/msgpack-c/releases/download/cpp-4.0.3/msgpack-cxx-4.0.3.tar.gz",
+    "srcurl": "https://github.com/msgpack/msgpack-c/releases/download/cpp-4.1.1/msgpack-cxx-4.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ea97ab2e7/packages/libmsgpack-cxx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ea97ab2e7/packages/libmsgpack-cxx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ea97ab2e7/packages/libmsgpack-cxx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e7116a279/packages/libmsgpack-cxx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e7116a279/packages/libmsgpack-cxx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e7116a279/packages/libmsgpack-cxx/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -18343,6 +18414,22 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "mautrix-whatsapp",
+    "version": "0.3.0",
+    "description": "A Matrix-WhatsApp puppeting bridge",
+    "homepage": "https://maunium.net/go/mautrix-whatsapp/",
+    "depends": [
+      "libolm"
+    ],
+    "srcurl": "https://github.com/mautrix/whatsapp/archive/refs/tags/v0.3.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7bdbf3f3d/packages/mautrix-whatsapp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7bdbf3f3d/packages/mautrix-whatsapp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7bdbf3f3d/packages/mautrix-whatsapp/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "maven",
     "version": "3.8.4",
     "description": "A Java software project management and comprehension tool",
@@ -18930,6 +19017,24 @@
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/9ce758efc/packages/minidlna/fix-hardcoded-paths.patch"
+    ]
+  },
+  {
+    "name": "miniflux",
+    "version": "2.0.36",
+    "description": "A minimalist and opinionated feed reader",
+    "homepage": "https://miniflux.app/",
+    "depends": [],
+    "srcurl": "https://github.com/miniflux/v2/archive/refs/tags/2.0.36.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e8244780/packages/miniflux",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e8244780/packages/miniflux/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e8244780/packages/miniflux/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/2e8244780/packages/miniflux/Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/2e8244780/packages/miniflux/Makefile.patch"
     ]
   },
   {
@@ -23380,6 +23485,31 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/potrace/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "pounce",
+    "version": "3.0",
+    "description": "A multi-client, TLS-only IRC bouncer",
+    "homepage": "https://git.causal.agency/pounce",
+    "depends": [
+      "libcrypt",
+      "libretls"
+    ],
+    "srcurl": "https://git.causal.agency/pounce/snapshot/pounce-3.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ac8bc648f/packages/pounce",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ac8bc648f/packages/pounce/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ac8bc648f/packages/pounce/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/ac8bc648f/packages/pounce/bounce.h.patch",
+      "https://github.com/termux/termux-packages/blob/ac8bc648f/packages/pounce/pounce.1.patch",
+      "https://github.com/termux/termux-packages/blob/ac8bc648f/packages/pounce/xdg.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8bc648f/packages/pounce/bounce.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8bc648f/packages/pounce/pounce.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8bc648f/packages/pounce/xdg.c.patch"
+    ]
   },
   {
     "name": "povray",
@@ -27857,7 +27987,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "0.169",
+    "version": "0.170",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.org/",
     "depends": [
@@ -27883,9 +28013,9 @@
       "dialog"
     ],
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8e6249f1b/packages/termux-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8e6249f1b/packages/termux-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8e6249f1b/packages/termux-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7b5b44a98/packages/termux-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7b5b44a98/packages/termux-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7b5b44a98/packages/termux-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
