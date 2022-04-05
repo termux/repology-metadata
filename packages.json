@@ -14,6 +14,26 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "1oom",
+    "version": "1.0",
+    "description": "A Master of Orion (1993) game engine recreation",
+    "homepage": "https://gitlab.com/Tapani_/1oom",
+    "depends": [
+      "readline"
+    ],
+    "srcurl": "https://gitlab.com/Tapani_/1oom/-/archive/v1.0/1oom-v1.0.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3a14b06f3/packages/1oom",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3a14b06f3/packages/1oom/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3a14b06f3/packages/1oom/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3a14b06f3/packages/1oom/src-os-unix-os.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3a14b06f3/packages/1oom/src-os-unix-os.c.patch"
+    ]
+  },
+  {
     "name": "2048-c",
     "version": "2021.04.22",
     "description": "Console version of the game '2048' for GNU/Linux",
@@ -2665,6 +2685,22 @@
     ]
   },
   {
+    "name": "cccc",
+    "version": "3.1.6",
+    "description": "Source code counter and metrics tool for C++, C, and Java",
+    "homepage": "https://sarnold.github.io/cccc/",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/sarnold/cccc/archive/refs/tags/3.1.6.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6a39e9564/packages/cccc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6a39e9564/packages/cccc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6a39e9564/packages/cccc/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "ccls",
     "version": "0.20210330",
     "description": "C/C++/ObjC language server",
@@ -5297,24 +5333,22 @@
   },
   {
     "name": "espeak",
-    "version": "1.50",
+    "version": "1.51",
     "description": "Compact software speech synthesizer",
     "homepage": "https://github.com/espeak-ng/espeak-ng",
     "depends": [
       "pcaudiolib"
     ],
-    "srcurl": "https://github.com/espeak-ng/espeak-ng/releases/download/1.50/espeak-ng-1.50.tgz",
+    "srcurl": "https://github.com/espeak-ng/espeak-ng/archive/1.51.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/espeak",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/espeak/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/espeak/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b2014918b/packages/espeak",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b2014918b/packages/espeak/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b2014918b/packages/espeak/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/27afd9e66/packages/espeak/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/27afd9e66/packages/espeak/compat-stdint.h.patch"
+      "https://github.com/termux/termux-packages/blob/b2014918b/packages/espeak/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/espeak/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/espeak/compat-stdint.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b2014918b/packages/espeak/Makefile.patch"
     ]
   },
   {
@@ -5473,6 +5507,40 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/fasd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "fastfetch",
+    "version": "1.2.3",
+    "description": "A neofetch-like tool for fetching system information and displaying them in a pretty way",
+    "homepage": "https://github.com/LinusDierheimer/fastfetch",
+    "depends": [],
+    "srcurl": "https://github.com/LinusDierheimer/fastfetch/archive/refs/tags/1.2.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/84b6c4bf4/packages/fastfetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-common-init.c.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-detection-displayserver-wmde.c.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-fastfetch.c.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-modules-cursor.c.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-modules-disk.c.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-modules-locale.c.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-modules-packages.c.patch",
+      "https://github.com/termux/termux-packages/blob/84b6c4bf4/packages/fastfetch/src-modules-terminalfont.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-common-init.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-detection-displayserver-wmde.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-fastfetch.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-modules-cursor.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-modules-disk.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-modules-locale.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-modules-packages.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84b6c4bf4/packages/fastfetch/src-modules-terminalfont.c.patch"
+    ]
   },
   {
     "name": "fastmod",
@@ -7712,23 +7780,23 @@
   },
   {
     "name": "google-glog",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "Logging library for C++",
     "homepage": "https://github.com/google/glog",
     "depends": [
       "gflags",
       "libc++"
     ],
-    "srcurl": "https://github.com/google/glog/archive/v0.5.0.tar.gz",
+    "srcurl": "https://github.com/google/glog/archive/v0.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d196da101/packages/google-glog",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d196da101/packages/google-glog/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d196da101/packages/google-glog/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2dc5ca9f6/packages/google-glog",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2dc5ca9f6/packages/google-glog/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2dc5ca9f6/packages/google-glog/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d196da101/packages/google-glog/CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/2dc5ca9f6/packages/google-glog/CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d196da101/packages/google-glog/CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2dc5ca9f6/packages/google-glog/CMakeLists.txt.patch"
     ]
   },
   {
@@ -18290,16 +18358,16 @@
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/make/make-4.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/01069ecb7/packages/make-guile",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01069ecb7/packages/make-guile/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01069ecb7/packages/make-guile/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5d906731a/packages/make-guile",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5d906731a/packages/make-guile/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5d906731a/packages/make-guile/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/01069ecb7/packages/make-guile/src-job.c.patch",
-      "https://github.com/termux/termux-packages/blob/01069ecb7/packages/make-guile/src-output.c.patch"
+      "https://github.com/termux/termux-packages/blob/5d906731a/packages/make-guile/src-job.c.patch",
+      "https://github.com/termux/termux-packages/blob/5d906731a/packages/make-guile/src-output.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/01069ecb7/packages/make-guile/src-job.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/01069ecb7/packages/make-guile/src-output.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5d906731a/packages/make-guile/src-job.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5d906731a/packages/make-guile/src-output.c.patch"
     ]
   },
   {
@@ -26422,6 +26490,26 @@
     ]
   },
   {
+    "name": "slashtime",
+    "version": "2020.10.01",
+    "description": "A small program which displays the time in various places",
+    "homepage": "https://github.com/istathar/slashtime",
+    "depends": [
+      "perl"
+    ],
+    "srcurl": "https://github.com/istathar/slashtime.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb2bff8cd/packages/slashtime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb2bff8cd/packages/slashtime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb2bff8cd/packages/slashtime/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/bb2bff8cd/packages/slashtime/slashtime.pl.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/bb2bff8cd/packages/slashtime/slashtime.pl.patch"
+    ]
+  },
+  {
     "name": "sleuthkit",
     "version": "4.11.1",
     "description": "The Sleuth Kit® (TSK) is a library for digital forensics tools. ",
@@ -31014,6 +31102,104 @@
     ]
   },
   {
+    "name": "yuma123",
+    "version": "2.12",
+    "description": "Provides an opensource YANG API in C",
+    "homepage": "https://yuma123.org/",
+    "depends": [
+      "libssh2",
+      "libxml2",
+      "ncurses",
+      "openssl",
+      "readline",
+      "zlib"
+    ],
+    "srcurl": "https://downloads.sourceforge.net/yuma123/yuma123_2.12.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a93394d31/packages/yuma123",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-man-netconf-subsystem.1.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-man-netconfd.1.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-man-yangcli.1.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-man-yangdiff.1.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-man-yangdump.1.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-agt-agt.h.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-agt-agt_ncxserver.h.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-mgr-mgr_ses.c.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-ncx-ncxconst.h.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-ncx-ncxmod.c.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-ncx-ncxmod.h.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-ncx-val.c.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-subsys-netconf-subsystem.c.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-yangcli-yangcli.h.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-yangdiff-yangdiff.h.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-yangrpc-example-yangrpc-example.c.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-yangrpc-example-yangrpc-parse-example.c.patch",
+      "https://github.com/termux/termux-packages/blob/a93394d31/packages/yuma123/netconf-src-ydump-yangdump.h.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-man-netconf-subsystem.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-man-netconfd.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-man-yangcli.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-man-yangdiff.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-man-yangdump.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-agt-agt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-agt-agt_ncxserver.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-mgr-mgr_ses.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-ncx-ncxconst.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-ncx-ncxmod.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-ncx-ncxmod.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-ncx-val.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-subsys-netconf-subsystem.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-yangcli-yangcli.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-yangdiff-yangdiff.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-yangrpc-example-yangrpc-example.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-yangrpc-example-yangrpc-parse-example.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a93394d31/packages/yuma123/netconf-src-ydump-yangdump.h.patch"
+    ]
+  },
+  {
+    "name": "z-push",
+    "version": "2.6.4",
+    "description": "An open-source application to synchronize ActiveSync compatible devices and Outlook",
+    "homepage": "https://z-push.org/",
+    "depends": [
+      "apache2",
+      "php"
+    ],
+    "srcurl": "https://github.com/Z-Hub/Z-Push/archive/refs/tags/2.6.4.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c98913ac5/packages/z-push",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/config-apache2-z-push-autodiscover.conf.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/config-apache2-z-push.conf.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-autodiscover-config.php.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-backend-imap-config.php.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-backend-imap-imap.php.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-backend-kopano-checkshares.php.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-backend-kopano-config.php.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-backend-kopano-listfolders.php.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-backend-vcarddir-config.php.patch",
+      "https://github.com/termux/termux-packages/blob/c98913ac5/packages/z-push/src-config.php.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/config-apache2-z-push-autodiscover.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/config-apache2-z-push.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-autodiscover-config.php.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-backend-imap-config.php.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-backend-imap-imap.php.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-backend-kopano-checkshares.php.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-backend-kopano-config.php.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-backend-kopano-listfolders.php.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-backend-vcarddir-config.php.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c98913ac5/packages/z-push/src-config.php.patch"
+    ]
+  },
+  {
     "name": "z3",
     "version": "4.8.15",
     "description": "Z3 is a theorem prover from Microsoft Research.",
@@ -31138,6 +31324,23 @@
       "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/zip/makefile.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/zip/unix-configure.patch"
     ]
+  },
+  {
+    "name": "zipios",
+    "version": "2.2.6",
+    "description": "A small C++ library for reading and writing zip files",
+    "homepage": "https://zipios.sourceforge.io/",
+    "depends": [
+      "libc++",
+      "zlib"
+    ],
+    "srcurl": "https://github.com/Zipios/Zipios/archive/refs/tags/2.2.6.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e3b7244a1/packages/zipios",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e3b7244a1/packages/zipios/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e3b7244a1/packages/zipios/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "zlib",
