@@ -7224,6 +7224,27 @@
     ]
   },
   {
+    "name": "glib-networking",
+    "version": "2.72.0",
+    "description": "Network-related giomodules for glib",
+    "homepage": "https://gitlab.gnome.org/GNOME/glib-networking",
+    "depends": [
+      "glib",
+      "libgnutls"
+    ],
+    "srcurl": "https://ftp.gnome.org/pub/gnome/sources/glib-networking/2.72/glib-networking-2.72.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e3362b7e9/packages/glib-networking",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e3362b7e9/packages/glib-networking/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e3362b7e9/packages/glib-networking/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/e3362b7e9/packages/glib-networking/tls-meson.build.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/e3362b7e9/packages/glib-networking/tls-meson.build.patch"
+    ]
+  },
+  {
     "name": "global",
     "version": "6.6.8",
     "description": "Source code search and browse tools",
@@ -20484,7 +20505,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "0.7.0-dev+1400-g233014f92",
+    "version": "0.7.0-dev+1410-g2c7dc648c",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -20501,20 +20522,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c342e85b/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c342e85b/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c342e85b/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f807dff56/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f807dff56/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f807dff56/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6c342e85b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/6c342e85b/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://github.com/termux/termux-packages/blob/6c342e85b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/6c342e85b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/f807dff56/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/f807dff56/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://github.com/termux/termux-packages/blob/f807dff56/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/f807dff56/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6c342e85b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6c342e85b/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6c342e85b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6c342e85b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f807dff56/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f807dff56/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f807dff56/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f807dff56/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -25678,7 +25699,7 @@
   },
   {
     "name": "rxfetch",
-    "version": "2022.04.03",
+    "version": "2022.04.04",
     "description": "A custom system info fetching tool",
     "homepage": "https://github.com/Mangeshrex/rxfetch",
     "depends": [
@@ -25686,9 +25707,9 @@
     ],
     "srcurl": "https://github.com/mangeshrex/rxfetch.git",
     "maintainer": "@PeroSar",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/41a4d4340/packages/rxfetch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/41a4d4340/packages/rxfetch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/41a4d4340/packages/rxfetch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/782aa9126/packages/rxfetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/782aa9126/packages/rxfetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/782aa9126/packages/rxfetch/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -30184,6 +30205,7 @@
       "libiconv",
       "libidn",
       "libjpeg-turbo",
+      "liblua52",
       "libmad",
       "libnfs",
       "libogg",
@@ -30211,34 +30233,34 @@
     ],
     "srcurl": "https://download.videolan.org/pub/videolan/vlc/3.0.17.3/vlc-3.0.17.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/92ae71e65/packages/vlc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/00275fe28/packages/vlc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/modules-demux-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/src-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/src-posix-filesystem.c.patch",
-      "https://github.com/termux/termux-packages/blob/92ae71e65/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-demux-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/src-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/src-posix-filesystem.c.patch",
+      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/modules-demux-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/src-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/src-posix-filesystem.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/92ae71e65/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-demux-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/src-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/src-posix-filesystem.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
     ]
   },
   {
@@ -38741,7 +38763,7 @@
   },
   {
     "name": "vim-gtk",
-    "version": "8.2.3700",
+    "version": "8.2.4650",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -38761,26 +38783,30 @@
       "pango",
       "python"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v8.2.3700.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v8.2.4650.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/x11-packages/tree/92bb59ca/packages/vim-gtk",
-    "package_recipe_url": "https://github.com/termux/x11-packages/blob/92bb59ca/packages/vim-gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/92bb59ca/packages/vim-gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/x11-packages/tree/645ce1e8/packages/vim-gtk",
+    "package_recipe_url": "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/x11-packages/blob/92bb59ca/packages/vim-gtk/option.c.patch",
-      "https://github.com/termux/x11-packages/blob/92bb59ca/packages/vim-gtk/os_unix.h.patch",
-      "https://github.com/termux/x11-packages/blob/92bb59ca/packages/vim-gtk/src-auto-configure.patch",
-      "https://github.com/termux/x11-packages/blob/92bb59ca/packages/vim-gtk/src-if_cscope.c.patch",
-      "https://github.com/termux/x11-packages/blob/92bb59ca/packages/vim-gtk/vimtutor.patch",
-      "https://github.com/termux/x11-packages/blob/92bb59ca/packages/vim-gtk/vterm_internal.h.patch"
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/option.c.patch",
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/runtime-autoload-context.vim.patch",
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/src-auto-configure.patch",
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/src-evalfunc.c.patch",
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/src-os_unix.h.patch",
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/vimtutor.patch",
+      "https://github.com/termux/x11-packages/blob/645ce1e8/packages/vim-gtk/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/x11-packages/92bb59ca/packages/vim-gtk/option.c.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/92bb59ca/packages/vim-gtk/os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/92bb59ca/packages/vim-gtk/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/92bb59ca/packages/vim-gtk/src-if_cscope.c.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/92bb59ca/packages/vim-gtk/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/92bb59ca/packages/vim-gtk/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/option.c.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/runtime-autoload-context.vim.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/src-auto-configure.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/vimtutor.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/645ce1e8/packages/vim-gtk/vterm_internal.h.patch"
     ]
   },
   {
