@@ -2715,6 +2715,38 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "ccextractor",
+    "version": "0.94",
+    "description": "A tool used to produce subtitles for TV recordings",
+    "homepage": "https://ccextractor.org/",
+    "depends": [
+      "freetype",
+      "gpac",
+      "libiconv",
+      "libmd",
+      "libpng",
+      "libprotobuf-c",
+      "utf8proc"
+    ],
+    "srcurl": "https://github.com/CCExtractor/ccextractor/archive/refs/tags/v0.94.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ba981049/packages/ccextractor",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ba981049/packages/ccextractor/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ba981049/packages/ccextractor/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7ba981049/packages/ccextractor/src-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/7ba981049/packages/ccextractor/src-lib_ccx-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/7ba981049/packages/ccextractor/src-lib_ccx-ccx_sub_entry_message.pb-c.h.patch",
+      "https://github.com/termux/termux-packages/blob/7ba981049/packages/ccextractor/src-lib_ccx-params.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7ba981049/packages/ccextractor/src-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7ba981049/packages/ccextractor/src-lib_ccx-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7ba981049/packages/ccextractor/src-lib_ccx-ccx_sub_entry_message.pb-c.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7ba981049/packages/ccextractor/src-lib_ccx-params.c.patch"
+    ]
+  },
+  {
     "name": "ccls",
     "version": "0.20210330",
     "description": "C/C++/ObjC language server",
@@ -6895,30 +6927,31 @@
       "iconv",
       "libffi",
       "ncurses",
-      "libgmp"
+      "libgmp",
+      "libandroid-posix-semaphore"
     ],
     "srcurl": "https://downloads.haskell.org/~ghc/8.10.7/ghc-8.10.7-src.tar.xz",
     "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a83ee2736/packages/ghc-libs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3f8aeb2fb/packages/ghc-libs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
-      "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/always_link_m.patch",
-      "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/correct-host-triplet.patch",
-      "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/fix-target-elf-check.patch",
-      "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/set-default-prefix.patch",
-      "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/undefined_symbols.patch",
-      "https://github.com/termux/termux-packages/blob/a83ee2736/packages/ghc-libs/utils-extra-ghc-opts.patch"
+      "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
+      "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/always_link_m.patch",
+      "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/correct-host-triplet.patch",
+      "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/fix-target-elf-check.patch",
+      "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/set-default-prefix.patch",
+      "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/undefined_symbols.patch",
+      "https://github.com/termux/termux-packages/blob/3f8aeb2fb/packages/ghc-libs/utils-extra-ghc-opts.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/always_link_m.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/correct-host-triplet.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/fix-target-elf-check.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/set-default-prefix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/undefined_symbols.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a83ee2736/packages/ghc-libs/utils-extra-ghc-opts.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/always_link_m.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/correct-host-triplet.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/fix-target-elf-check.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/set-default-prefix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/undefined_symbols.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8aeb2fb/packages/ghc-libs/utils-extra-ghc-opts.patch"
     ]
   },
   {
@@ -8558,6 +8591,33 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ac0f4df8/packages/has/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "hash-slinger",
+    "version": "3.1",
+    "description": "Various tools to generate special DNS records",
+    "homepage": "https://github.com/letoams/hash-slinger",
+    "depends": [
+      "ca-certificates",
+      "gnupg",
+      "openssh",
+      "python",
+      "swig",
+      "unbound"
+    ],
+    "srcurl": "https://github.com/letoams/hash-slinger/archive/refs/tags/3.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b2259e24/packages/hash-slinger",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b2259e24/packages/hash-slinger/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b2259e24/packages/hash-slinger/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/6b2259e24/packages/hash-slinger/openpgpkey.patch",
+      "https://github.com/termux/termux-packages/blob/6b2259e24/packages/hash-slinger/tlsa.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/6b2259e24/packages/hash-slinger/openpgpkey.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6b2259e24/packages/hash-slinger/tlsa.patch"
+    ]
   },
   {
     "name": "hashdeep",
@@ -12903,6 +12963,20 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "libdvbpsi",
+    "version": "1.3.3",
+    "description": "Simple MPEG TS PSI parser library supporting various standards",
+    "homepage": "https://code.videolan.org/videolan/libdvbpsi/",
+    "depends": [],
+    "srcurl": "https://download.videolan.org/pub/libdvbpsi/1.3.3/libdvbpsi-1.3.3.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/152400644/packages/libdvbpsi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/152400644/packages/libdvbpsi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/152400644/packages/libdvbpsi/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "libdvdread",
     "version": "6.1.2",
     "description": "A library that allows easy use of sophisticated DVD navigation features",
@@ -13433,22 +13507,22 @@
   },
   {
     "name": "libgpg-error",
-    "version": "1.43",
+    "version": "1.45",
     "description": "Small library that defines common error values for all GnuPG components",
     "homepage": "https://www.gnupg.org/related_software/libgpg-error/",
     "depends": [],
-    "srcurl": "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.43.tar.bz2",
+    "srcurl": "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.45.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b0b56a683/packages/libgpg-error",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b0b56a683/packages/libgpg-error/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b0b56a683/packages/libgpg-error/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5354c0d1f/packages/libgpg-error",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5354c0d1f/packages/libgpg-error/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5354c0d1f/packages/libgpg-error/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b0b56a683/packages/libgpg-error/atexit.patch",
-      "https://github.com/termux/termux-packages/blob/b0b56a683/packages/libgpg-error/src-Makefile.am.patch"
+      "https://github.com/termux/termux-packages/blob/5354c0d1f/packages/libgpg-error/atexit.patch",
+      "https://github.com/termux/termux-packages/blob/5354c0d1f/packages/libgpg-error/src-Makefile.am.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b0b56a683/packages/libgpg-error/atexit.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b0b56a683/packages/libgpg-error/src-Makefile.am.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5354c0d1f/packages/libgpg-error/atexit.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5354c0d1f/packages/libgpg-error/src-Makefile.am.patch"
     ]
   },
   {
@@ -21586,38 +21660,39 @@
     "description": "Open Object Rexx",
     "homepage": "https://www.oorexx.org/",
     "depends": [
+      "libandroid-posix-semaphore",
       "libandroid-wordexp",
       "libc++",
       "libcrypt"
     ],
     "srcurl": "https://downloads.sourceforge.net/project/oorexx/oorexx/4.2.0/ooRexx-4.2.0-source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bdde3df95/packages/oorexx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d04d9286f/packages/oorexx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/configure.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/extensions-rexxutil-platform-unix-rexxutil.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/interpreter-api-InterpreterAPI.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/interpreter-api-ThreadContextStubs.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/interpreter-platform-unix-ErrorMessages.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/interpreter-platform-unix-ExternalFunctions.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/bdde3df95/packages/oorexx/interpreter-platform-unix-SystemCommands.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/configure.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/extensions-rexxutil-platform-unix-rexxutil.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/interpreter-api-InterpreterAPI.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/interpreter-api-ThreadContextStubs.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/interpreter-platform-unix-ErrorMessages.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/interpreter-platform-unix-ExternalFunctions.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/d04d9286f/packages/oorexx/interpreter-platform-unix-SystemCommands.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/configure.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/extensions-rexxutil-platform-unix-rexxutil.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/interpreter-api-InterpreterAPI.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/interpreter-api-ThreadContextStubs.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/interpreter-platform-unix-ErrorMessages.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/interpreter-platform-unix-ExternalFunctions.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdde3df95/packages/oorexx/interpreter-platform-unix-SystemCommands.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/configure.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/extensions-rexxutil-platform-unix-rexxutil.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/interpreter-api-InterpreterAPI.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/interpreter-api-ThreadContextStubs.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/interpreter-platform-unix-ErrorMessages.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/interpreter-platform-unix-ExternalFunctions.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d04d9286f/packages/oorexx/interpreter-platform-unix-SystemCommands.cpp.patch"
     ]
   },
   {
@@ -21910,28 +21985,29 @@
     "description": "Open source Message Passing Interface implementation",
     "homepage": "https://www.open-mpi.org",
     "depends": [
+      "libandroid-posix-semaphore",
       "libandroid-shmem"
     ],
     "srcurl": "https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/525686a37/packages/openmpi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/525686a37/packages/openmpi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/525686a37/packages/openmpi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a388ba627/packages/openmpi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a388ba627/packages/openmpi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a388ba627/packages/openmpi/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/525686a37/packages/openmpi/opal-mca-memory-patcher-memory_patcher_component.c.patch",
-      "https://github.com/termux/termux-packages/blob/525686a37/packages/openmpi/opal-util-info.c.patch",
-      "https://github.com/termux/termux-packages/blob/525686a37/packages/openmpi/opal-util-info_subscriber.c.patch",
-      "https://github.com/termux/termux-packages/blob/525686a37/packages/openmpi/opal-util-show_help_lex.c.patch",
-      "https://github.com/termux/termux-packages/blob/525686a37/packages/openmpi/orte-mca-state-base-state_base_fns.c.patch",
-      "https://github.com/termux/termux-packages/blob/525686a37/packages/openmpi/oshmem-mca-memheat-ptmalloc-malloc.c.patch"
+      "https://github.com/termux/termux-packages/blob/a388ba627/packages/openmpi/opal-mca-memory-patcher-memory_patcher_component.c.patch",
+      "https://github.com/termux/termux-packages/blob/a388ba627/packages/openmpi/opal-util-info.c.patch",
+      "https://github.com/termux/termux-packages/blob/a388ba627/packages/openmpi/opal-util-info_subscriber.c.patch",
+      "https://github.com/termux/termux-packages/blob/a388ba627/packages/openmpi/opal-util-show_help_lex.c.patch",
+      "https://github.com/termux/termux-packages/blob/a388ba627/packages/openmpi/orte-mca-state-base-state_base_fns.c.patch",
+      "https://github.com/termux/termux-packages/blob/a388ba627/packages/openmpi/oshmem-mca-memheat-ptmalloc-malloc.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/525686a37/packages/openmpi/opal-mca-memory-patcher-memory_patcher_component.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/525686a37/packages/openmpi/opal-util-info.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/525686a37/packages/openmpi/opal-util-info_subscriber.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/525686a37/packages/openmpi/opal-util-show_help_lex.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/525686a37/packages/openmpi/orte-mca-state-base-state_base_fns.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/525686a37/packages/openmpi/oshmem-mca-memheat-ptmalloc-malloc.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a388ba627/packages/openmpi/opal-mca-memory-patcher-memory_patcher_component.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388ba627/packages/openmpi/opal-util-info.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388ba627/packages/openmpi/opal-util-info_subscriber.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388ba627/packages/openmpi/opal-util-show_help_lex.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388ba627/packages/openmpi/orte-mca-state-base-state_base_fns.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388ba627/packages/openmpi/oshmem-mca-memheat-ptmalloc-malloc.c.patch"
     ]
   },
   {
@@ -22466,7 +22542,7 @@
   },
   {
     "name": "pari",
-    "version": "2.13.3",
+    "version": "2.13.4",
     "description": "A computer algebra system designed for fast computations in number theory",
     "homepage": "https://pari.math.u-bordeaux.fr/",
     "depends": [
@@ -22474,30 +22550,30 @@
       "libgmp",
       "readline"
     ],
-    "srcurl": "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.13.3.tar.gz",
+    "srcurl": "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.13.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/50b9308a9/packages/pari",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8676aea26/packages/pari",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/config-Makefile.SH.patch",
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/config-get_cc.patch",
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/config-get_double_format.patch",
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/config-get_gmp.patch",
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/config-get_readline.patch",
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/config-paricfg.h.SH.patch",
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/src-language-es.c.patch",
-      "https://github.com/termux/termux-packages/blob/50b9308a9/packages/pari/src-language-gplib.c.patch"
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/config-Makefile.SH.patch",
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/config-get_cc.patch",
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/config-get_double_format.patch",
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/config-get_gmp.patch",
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/config-get_readline.patch",
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/config-paricfg.h.SH.patch",
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/src-language-es.c.patch",
+      "https://github.com/termux/termux-packages/blob/8676aea26/packages/pari/src-language-gplib.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/config-Makefile.SH.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/config-get_cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/config-get_double_format.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/config-get_gmp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/config-get_readline.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/config-paricfg.h.SH.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/src-language-es.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/50b9308a9/packages/pari/src-language-gplib.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/config-Makefile.SH.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/config-get_cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/config-get_double_format.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/config-get_gmp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/config-get_readline.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/config-paricfg.h.SH.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/src-language-es.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8676aea26/packages/pari/src-language-gplib.c.patch"
     ]
   },
   {
@@ -23533,28 +23609,29 @@
     "description": "A Standard ML implementation",
     "homepage": "https://www.polyml.org/",
     "depends": [
+      "libandroid-posix-semaphore",
       "libc++",
       "libffi",
       "libgmp"
     ],
     "srcurl": "https://github.com/polyml/polyml/archive/refs/tags/v5.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b1dd5c1e8/packages/polyml",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b1dd5c1e8/packages/polyml/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b1dd5c1e8/packages/polyml/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a74c0915c/packages/polyml",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a74c0915c/packages/polyml/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a74c0915c/packages/polyml/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b1dd5c1e8/packages/polyml/Makefile.in.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/b1dd5c1e8/packages/polyml/libpolyml-basicio.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b1dd5c1e8/packages/polyml/libpolyml-osmemunix.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b1dd5c1e8/packages/polyml/libpolyml-process_env.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b1dd5c1e8/packages/polyml/modules-IntInfAsInt-Makefile.in.patch.beforehostbuild"
+      "https://github.com/termux/termux-packages/blob/a74c0915c/packages/polyml/Makefile.in.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/a74c0915c/packages/polyml/libpolyml-basicio.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/a74c0915c/packages/polyml/libpolyml-osmemunix.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/a74c0915c/packages/polyml/libpolyml-process_env.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/a74c0915c/packages/polyml/modules-IntInfAsInt-Makefile.in.patch.beforehostbuild"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b1dd5c1e8/packages/polyml/Makefile.in.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/b1dd5c1e8/packages/polyml/libpolyml-basicio.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b1dd5c1e8/packages/polyml/libpolyml-osmemunix.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b1dd5c1e8/packages/polyml/libpolyml-process_env.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b1dd5c1e8/packages/polyml/modules-IntInfAsInt-Makefile.in.patch.beforehostbuild"
+      "https://raw.githubusercontent.com/termux/termux-packages/a74c0915c/packages/polyml/Makefile.in.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/a74c0915c/packages/polyml/libpolyml-basicio.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a74c0915c/packages/polyml/libpolyml-osmemunix.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a74c0915c/packages/polyml/libpolyml-process_env.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a74c0915c/packages/polyml/modules-IntInfAsInt-Makefile.in.patch.beforehostbuild"
     ]
   },
   {
@@ -24162,30 +24239,30 @@
     "description": "A featureful, general-purpose sound server",
     "homepage": "https://www.freedesktop.org/wiki/Software/PulseAudio",
     "depends": [
+      "libandroid-glob",
       "libc++",
       "libltdl",
       "libsndfile",
-      "libandroid-glob",
       "libsoxr",
-      "speexdsp",
-      "libwebrtc-audio-processing"
+      "libwebrtc-audio-processing",
+      "speexdsp"
     ],
     "srcurl": "https://github.com/pulseaudio/pulseaudio.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/35a91f292/packages/pulseaudio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/35a91f292/packages/pulseaudio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/35a91f292/packages/pulseaudio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4b5166e0b/packages/pulseaudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4b5166e0b/packages/pulseaudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4b5166e0b/packages/pulseaudio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/35a91f292/packages/pulseaudio/aaudio.patch",
-      "https://github.com/termux/termux-packages/blob/35a91f292/packages/pulseaudio/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/35a91f292/packages/pulseaudio/no_priv_drop.patch",
-      "https://github.com/termux/termux-packages/blob/35a91f292/packages/pulseaudio/sles.patch"
+      "https://github.com/termux/termux-packages/blob/4b5166e0b/packages/pulseaudio/aaudio.patch",
+      "https://github.com/termux/termux-packages/blob/4b5166e0b/packages/pulseaudio/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/4b5166e0b/packages/pulseaudio/no_priv_drop.patch",
+      "https://github.com/termux/termux-packages/blob/4b5166e0b/packages/pulseaudio/sles.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/35a91f292/packages/pulseaudio/aaudio.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/35a91f292/packages/pulseaudio/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/35a91f292/packages/pulseaudio/no_priv_drop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/35a91f292/packages/pulseaudio/sles.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4b5166e0b/packages/pulseaudio/aaudio.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4b5166e0b/packages/pulseaudio/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4b5166e0b/packages/pulseaudio/no_priv_drop.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4b5166e0b/packages/pulseaudio/sles.patch"
     ]
   },
   {
@@ -24450,50 +24527,51 @@
     "description": "Python 2 programming language intended to enable clear programs",
     "homepage": "http://python.org/",
     "depends": [
-      "libandroid-support",
-      "ncurses",
-      "readline",
-      "libffi",
-      "openssl",
-      "libbz2",
-      "libsqlite",
       "gdbm",
-      "ncurses-ui-libs",
+      "libandroid-posix-semaphore",
+      "libandroid-support",
+      "libbz2",
       "libcrypt",
+      "libffi",
+      "libsqlite",
+      "ncurses",
+      "ncurses-ui-libs",
+      "openssl",
+      "readline",
       "zlib"
     ],
     "srcurl": "https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4577a0cf6/packages/python2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e1dabb171/packages/python2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/Lib-subprocess.py.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/Lib-tempfile.py.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/Makefile.pre.in.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/Modules-pwdmodule.c.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/Python-bltinmodule.c.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/configure.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/cryptmodule.c.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/fix-dlfcn.patch32",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/fix-dlfcn.patch64",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/no-setuid-servers.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/python2/setup.py.patch"
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/Lib-subprocess.py.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/Lib-tempfile.py.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/Makefile.pre.in.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/Modules-pwdmodule.c.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/Python-bltinmodule.c.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/configure.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/cryptmodule.c.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/fix-dlfcn.patch32",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/fix-dlfcn.patch64",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/no-setuid-servers.patch",
+      "https://github.com/termux/termux-packages/blob/e1dabb171/packages/python2/setup.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/Lib-subprocess.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/Lib-tempfile.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/Makefile.pre.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/Modules-pwdmodule.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/Python-bltinmodule.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/cryptmodule.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/fix-dlfcn.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/fix-dlfcn.patch64",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/no-setuid-servers.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/python2/setup.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/Lib-subprocess.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/Lib-tempfile.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/Makefile.pre.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/Modules-pwdmodule.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/Python-bltinmodule.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/cryptmodule.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/fix-dlfcn.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/fix-dlfcn.patch64",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/no-setuid-servers.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1dabb171/packages/python2/setup.py.patch"
     ]
   },
   {
@@ -25584,7 +25662,7 @@
   },
   {
     "name": "ruby",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "description": "Dynamic programming language with a focus on simplicity and productivity",
     "homepage": "https://www.ruby-lang.org/",
     "depends": [
@@ -25596,28 +25674,28 @@
       "libyaml",
       "zlib"
     ],
-    "srcurl": "https://cache.ruby-lang.org/pub/ruby/3.1/ruby-3.1.0.tar.xz",
+    "srcurl": "https://cache.ruby-lang.org/pub/ruby/3.1/ruby-3.1.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4577a0cf6/packages/ruby",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e03dc977/packages/ruby",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/android-sdk-level.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/ext-syslog-extconf.rb.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/lib-rubygems-install_update_options.rb.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/mkmf.rb.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/ruby/tool-rbinstall.rb.patch"
+      "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/android-sdk-level.patch",
+      "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/ext-syslog-extconf.rb.patch",
+      "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/lib-rubygems-install_update_options.rb.patch",
+      "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/mkmf.rb.patch",
+      "https://github.com/termux/termux-packages/blob/6e03dc977/packages/ruby/tool-rbinstall.rb.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/android-sdk-level.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/ext-syslog-extconf.rb.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/lib-rubygems-install_update_options.rb.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/mkmf.rb.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/ruby/tool-rbinstall.rb.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/android-sdk-level.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/ext-syslog-extconf.rb.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/lib-rubygems-install_update_options.rb.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/mkmf.rb.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e03dc977/packages/ruby/tool-rbinstall.rb.patch"
     ]
   },
   {
@@ -28279,27 +28357,28 @@
     "description": "Tesseract is probably the most accurate open source OCR engine available",
     "homepage": "https://github.com/tesseract-ocr/tesseract",
     "depends": [
-      "libc++",
-      "libtool",
-      "libuuid",
       "leptonica",
       "libandroid-glob",
-      "zstd",
+      "libandroid-posix-semaphore",
+      "libc++",
       "libicu",
-      "pango"
+      "libtool",
+      "libuuid",
+      "pango",
+      "zstd"
     ],
     "srcurl": "https://github.com/tesseract-ocr/tesseract/archive/5.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/01dd093b4/packages/tesseract",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01dd093b4/packages/tesseract/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01dd093b4/packages/tesseract/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e35248a7a/packages/tesseract",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e35248a7a/packages/tesseract/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e35248a7a/packages/tesseract/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/01dd093b4/packages/tesseract/src-arch-simddetect.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/01dd093b4/packages/tesseract/src-training-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/e35248a7a/packages/tesseract/src-arch-simddetect.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e35248a7a/packages/tesseract/src-training-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/01dd093b4/packages/tesseract/src-arch-simddetect.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/01dd093b4/packages/tesseract/src-training-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e35248a7a/packages/tesseract/src-arch-simddetect.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e35248a7a/packages/tesseract/src-training-CMakeLists.txt.patch"
     ]
   },
   {
@@ -30209,6 +30288,7 @@
       "libcairo",
       "libcddb",
       "libdav1d",
+      "libdvbpsi",
       "libdvdread",
       "libflac",
       "libgcrypt",
@@ -30244,34 +30324,34 @@
     ],
     "srcurl": "https://download.videolan.org/pub/videolan/vlc/3.0.17.3/vlc-3.0.17.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/00275fe28/packages/vlc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/66196d2dd/packages/vlc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-demux-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/src-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/src-posix-filesystem.c.patch",
-      "https://github.com/termux/termux-packages/blob/00275fe28/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/modules-demux-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/src-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/src-posix-filesystem.c.patch",
+      "https://github.com/termux/termux-packages/blob/66196d2dd/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-demux-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/src-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/src-posix-filesystem.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00275fe28/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/modules-demux-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/src-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/src-posix-filesystem.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/66196d2dd/packages/vlc/vlc-3.0.17.3-dav1d-1.0.patch"
     ]
   },
   {
