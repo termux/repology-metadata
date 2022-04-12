@@ -2946,6 +2946,27 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "chibicc",
+    "version": "2020.12.07",
+    "description": "A Small C Compiler",
+    "homepage": "https://github.com/rui314/chibicc",
+    "depends": [
+      "binutils",
+      "libandroid-glob"
+    ],
+    "srcurl": "https://github.com/rui314/chibicc.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/75de07320/packages/chibicc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/75de07320/packages/chibicc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/75de07320/packages/chibicc/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/75de07320/packages/chibicc/main.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/75de07320/packages/chibicc/main.c.patch"
+    ]
+  },
+  {
     "name": "choose",
     "version": "1.3.3",
     "description": "A human-friendly and fast alternative to cut and (sometimes) awk",
@@ -20691,7 +20712,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "0.7.0-dev+1434-gf89ca7194",
+    "version": "0.7.0-dev+1443-gdbd5242d8",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -20708,20 +20729,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/afd580402/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/afd580402/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/afd580402/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/03c57b84b/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03c57b84b/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03c57b84b/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/afd580402/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/afd580402/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://github.com/termux/termux-packages/blob/afd580402/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/afd580402/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/03c57b84b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/03c57b84b/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://github.com/termux/termux-packages/blob/03c57b84b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/03c57b84b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/afd580402/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/afd580402/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/afd580402/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/afd580402/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/03c57b84b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/03c57b84b/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/03c57b84b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/03c57b84b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -22549,6 +22570,29 @@
       "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2d/packages/pacman4console/2-pacman.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2d/packages/pacman4console/3-pacman.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2d/packages/pacman4console/Makefile.patch"
+    ]
+  },
+  {
+    "name": "panda3d",
+    "version": "1.10.11",
+    "description": "A framework for 3D rendering and game development for Python and C++ programs",
+    "homepage": "https://www.panda3d.org/",
+    "depends": [
+      "libc++",
+      "python"
+    ],
+    "srcurl": "https://github.com/panda3d/panda3d/archive/refs/tags/v1.10.11.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/74fa55c27/packages/panda3d",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74fa55c27/packages/panda3d/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74fa55c27/packages/panda3d/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/74fa55c27/packages/panda3d/dtool-src-dtoolutil-filename.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/74fa55c27/packages/panda3d/makepanda-installpanda.py.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/74fa55c27/packages/panda3d/dtool-src-dtoolutil-filename.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/74fa55c27/packages/panda3d/makepanda-installpanda.py.patch"
     ]
   },
   {
