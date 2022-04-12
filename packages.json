@@ -5990,15 +5990,15 @@
   },
   {
     "name": "findomain",
-    "version": "8.0.0",
+    "version": "8.1.0",
     "description": "Findomain is the fastest subdomain enumerator and the only one written in Rust",
     "homepage": "https://findomain.app/",
     "depends": [],
-    "srcurl": "https://github.com/Findomain/Findomain/archive/8.0.0.tar.gz",
+    "srcurl": "https://github.com/Findomain/Findomain/archive/8.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bfb444a7/packages/findomain",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bfb444a7/packages/findomain/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bfb444a7/packages/findomain/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b505e60f4/packages/findomain",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b505e60f4/packages/findomain/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b505e60f4/packages/findomain/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11075,15 +11075,15 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.15.0",
+    "version": "2.15.1",
     "description": "A CLI for JFrog products.",
     "homepage": "https://jfrog.com/getcli",
     "depends": [],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.15.0.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.15.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d8e0b32c1/packages/jfrog-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d8e0b32c1/packages/jfrog-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d8e0b32c1/packages/jfrog-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f1698d505/packages/jfrog-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f1698d505/packages/jfrog-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f1698d505/packages/jfrog-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -17921,6 +17921,33 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "lilv",
+    "version": "0.24.12",
+    "description": "A C library to make the use of LV2 plugins as simple as possible for applications",
+    "homepage": "https://drobilla.net/software/lilv.html",
+    "depends": [
+      "libsndfile",
+      "lv2",
+      "python",
+      "serd",
+      "sord",
+      "sratom"
+    ],
+    "srcurl": "https://download.drobilla.net/lilv-0.24.12.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d75e62e4/packages/lilv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d75e62e4/packages/lilv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d75e62e4/packages/lilv/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/8d75e62e4/packages/lilv/src-filesystem.c.patch",
+      "https://github.com/termux/termux-packages/blob/8d75e62e4/packages/lilv/wscript.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/8d75e62e4/packages/lilv/src-filesystem.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d75e62e4/packages/lilv/wscript.patch"
+    ]
+  },
+  {
     "name": "links",
     "version": "2.25",
     "description": "Links is a text and graphics mode WWW browser",
@@ -18366,6 +18393,22 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/d4084d4e4/packages/luv",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4084d4e4/packages/luv/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4084d4e4/packages/luv/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "lv2",
+    "version": "1.18.2",
+    "description": "A plugin standard for audio systems",
+    "homepage": "https://lv2plug.in/",
+    "depends": [
+      "python"
+    ],
+    "srcurl": "https://lv2plug.in/spec/lv2-1.18.2.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d75e62e4/packages/lv2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d75e62e4/packages/lv2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d75e62e4/packages/lv2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -26395,6 +26438,20 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "serd",
+    "version": "0.30.10",
+    "description": "A lightweight C library for RDF syntax",
+    "homepage": "https://drobilla.net/software/serd.html",
+    "depends": [],
+    "srcurl": "https://download.drobilla.net/serd-0.30.10.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d75e62e4/packages/serd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d75e62e4/packages/serd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d75e62e4/packages/serd/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "serf",
     "version": "1.3.9",
     "description": "High performance C-based HTTP client library",
@@ -27057,6 +27114,23 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "sord",
+    "version": "0.16.8",
+    "description": "A lightweight C library for storing RDF data in memory",
+    "homepage": "https://drobilla.net/software/sord.html",
+    "depends": [
+      "pcre",
+      "serd"
+    ],
+    "srcurl": "https://download.drobilla.net/sord-0.16.8.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d75e62e4/packages/sord",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d75e62e4/packages/sord/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d75e62e4/packages/sord/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "sox",
     "version": "14.4.2",
     "description": "Command line utility for converting between and applying effects to various audio files formats",
@@ -27282,6 +27356,24 @@
       "https://raw.githubusercontent.com/termux/termux-packages/d3ba59824/packages/squid/posix-shm-support.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/d3ba59824/packages/squid/sys-stat.h.patch"
     ]
+  },
+  {
+    "name": "sratom",
+    "version": "0.6.8",
+    "description": "A small library for serialising LV2 atoms to and from RDF",
+    "homepage": "https://drobilla.net/software/sratom.html",
+    "depends": [
+      "lv2",
+      "serd",
+      "sord"
+    ],
+    "srcurl": "https://download.drobilla.net/sratom-0.6.8.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d75e62e4/packages/sratom",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d75e62e4/packages/sratom/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d75e62e4/packages/sratom/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "srelay",
@@ -40040,18 +40132,18 @@
     ],
     "srcurl": "http://archive.xfce.org/src/xfce/xfce4-session/4.16/xfce4-session-4.16.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/x11-packages/tree/1b06777c/packages/xfce4-session",
-    "package_recipe_url": "https://github.com/termux/x11-packages/blob/1b06777c/packages/xfce4-session/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/1b06777c/packages/xfce4-session/build.sh",
+    "package_sources_url": "https://github.com/termux/x11-packages/tree/75d30e18/packages/xfce4-session",
+    "package_recipe_url": "https://github.com/termux/x11-packages/blob/75d30e18/packages/xfce4-session/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/75d30e18/packages/xfce4-session/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/x11-packages/blob/1b06777c/packages/xfce4-session/disable-xinit-null-display.patch",
-      "https://github.com/termux/x11-packages/blob/1b06777c/packages/xfce4-session/dont-update-icon-cache.patch",
-      "https://github.com/termux/x11-packages/blob/1b06777c/packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
+      "https://github.com/termux/x11-packages/blob/75d30e18/packages/xfce4-session/disable-xinit-null-display.patch",
+      "https://github.com/termux/x11-packages/blob/75d30e18/packages/xfce4-session/dont-update-icon-cache.patch",
+      "https://github.com/termux/x11-packages/blob/75d30e18/packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/x11-packages/1b06777c/packages/xfce4-session/disable-xinit-null-display.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/1b06777c/packages/xfce4-session/dont-update-icon-cache.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/1b06777c/packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
+      "https://raw.githubusercontent.com/termux/x11-packages/75d30e18/packages/xfce4-session/disable-xinit-null-display.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/75d30e18/packages/xfce4-session/dont-update-icon-cache.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/75d30e18/packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
     ]
   },
   {
