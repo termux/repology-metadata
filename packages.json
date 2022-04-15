@@ -1629,6 +1629,22 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "bdsup2sub",
+    "version": "4.0.1",
+    "description": "A subtitle conversion tool for image based stream formats",
+    "homepage": "https://github.com/mjuhasz/BDSup2Sub",
+    "depends": [
+      "openjdk-17"
+    ],
+    "srcurl": "https://github.com/mjuhasz/BDSup2Sub/archive/refs/tags/4.0.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8da8a1009/packages/bdsup2sub",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8da8a1009/packages/bdsup2sub/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8da8a1009/packages/bdsup2sub/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "beanshell",
     "version": "2.1.0",
     "description": "Small, free, embeddable, source level Java interpreter with object based scripting language features written in Java",
@@ -1817,6 +1833,22 @@
       "https://raw.githubusercontent.com/termux/termux-packages/9ea3a287e/packages/binutils/options.cc.patch32",
       "https://raw.githubusercontent.com/termux/termux-packages/9ea3a287e/packages/binutils/options.cc.patch64"
     ]
+  },
+  {
+    "name": "binutils-is-llvm",
+    "version": "0.1",
+    "description": "Use llvm as binutils",
+    "homepage": "https://github.com/trentbuck/binutils-is-llvm",
+    "depends": [
+      "lld",
+      "llvm"
+    ],
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/15867e61e/packages/binutils-is-llvm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/15867e61e/packages/binutils-is-llvm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/15867e61e/packages/binutils-is-llvm/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "bison",
@@ -12972,24 +13004,20 @@
   },
   {
     "name": "libdispatch",
-    "version": "1:5.5",
+    "version": "1:5.6.1",
     "description": "The libdispatch project, for concurrency on multicore hardware",
     "homepage": "https://github.com/apple/swift-corelibs-libdispatch",
     "depends": [
       "libc++",
       "libblocksruntime"
     ],
-    "srcurl": "https://github.com/apple/swift-corelibs-libdispatch/archive/swift-5.5-RELEASE.tar.gz",
+    "srcurl": "https://github.com/apple/swift-corelibs-libdispatch/archive/swift-5.6.1-RELEASE.tar.gz",
     "maintainer": "@buttaface",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2c25447cf/packages/libdispatch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2c25447cf/packages/libdispatch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2c25447cf/packages/libdispatch/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2c25447cf/packages/libdispatch/src-shims-atomic.h.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2c25447cf/packages/libdispatch/src-shims-atomic.h.patch"
-    ]
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb345ed24/packages/libdispatch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb345ed24/packages/libdispatch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/libdispatch/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "libdmtx",
@@ -18043,7 +18071,7 @@
   },
   {
     "name": "llbuild",
-    "version": "5.5.2",
+    "version": "5.6.1",
     "description": "A low-level build system, used by the Swift Package Manager",
     "homepage": "https://github.com/apple/swift-llbuild",
     "depends": [
@@ -18051,18 +18079,18 @@
       "libandroid-spawn",
       "libsqlite"
     ],
-    "srcurl": "https://github.com/apple/swift-llbuild/archive/swift-5.5.2-RELEASE.tar.gz",
+    "srcurl": "https://github.com/apple/swift-llbuild/archive/swift-5.6.1-RELEASE.tar.gz",
     "maintainer": "@buttaface",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b0aa2706/packages/llbuild",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b0aa2706/packages/llbuild/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b0aa2706/packages/llbuild/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb345ed24/packages/llbuild",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb345ed24/packages/llbuild/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/llbuild/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8b0aa2706/packages/llbuild/lib-llvm-Support-CmakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/8b0aa2706/packages/llbuild/products-llbuild-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/llbuild/lib-llvm-Support-CmakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/llbuild/products-llbuild-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8b0aa2706/packages/llbuild/lib-llvm-Support-CmakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8b0aa2706/packages/llbuild/products-llbuild-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/llbuild/lib-llvm-Support-CmakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/llbuild/products-llbuild-CMakeLists.txt.patch"
     ]
   },
   {
@@ -20801,7 +20829,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "0.7.0-dev+1453-g8486c87e5",
+    "version": "",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -20818,20 +20846,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/893fc01fb/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/893fc01fb/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/893fc01fb/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f25920866/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f25920866/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f25920866/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/893fc01fb/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/893fc01fb/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://github.com/termux/termux-packages/blob/893fc01fb/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/893fc01fb/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/f25920866/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/f25920866/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://github.com/termux/termux-packages/blob/f25920866/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/f25920866/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/893fc01fb/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/893fc01fb/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/893fc01fb/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/893fc01fb/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f25920866/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f25920866/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f25920866/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f25920866/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -27442,6 +27470,33 @@
     ]
   },
   {
+    "name": "srt2vobsub",
+    "version": "1.0",
+    "description": "A command-line tool that generates a pair of .idx/.sub subtitle files from a textual subtitles file",
+    "homepage": "https://srt2vobsub.sourceforge.io/",
+    "depends": [
+      "bdsup2sub",
+      "ffmpeg",
+      "fontconfig-utils",
+      "imagemagick",
+      "mediainfo",
+      "python"
+    ],
+    "srcurl": "https://downloads.sourceforge.net/srt2vobsub/srt2vobsub-1.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/25167cf73/packages/srt2vobsub",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/25167cf73/packages/srt2vobsub/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/25167cf73/packages/srt2vobsub/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/25167cf73/packages/srt2vobsub/defaults.conf.patch",
+      "https://github.com/termux/termux-packages/blob/25167cf73/packages/srt2vobsub/srt2vobsub.py.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/25167cf73/packages/srt2vobsub/defaults.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25167cf73/packages/srt2vobsub/srt2vobsub.py.patch"
+    ]
+  },
+  {
     "name": "ssdb",
     "version": "1.9.9",
     "description": "A Redis compatible NoSQL database stored on disk",
@@ -28012,12 +28067,13 @@
   },
   {
     "name": "swift",
-    "version": "5.5.3",
+    "version": "5.6.1",
     "description": "Swift is a high-performance system programming language",
     "homepage": "https://swift.org/",
     "depends": [
       "clang",
       "libandroid-glob",
+      "libandroid-posix-semaphore",
       "libandroid-spawn",
       "libcurl",
       "libicu",
@@ -28028,72 +28084,48 @@
       "libdispatch",
       "llbuild"
     ],
-    "srcurl": "https://github.com/apple/swift/archive/swift-5.5.3-RELEASE.tar.gz",
+    "srcurl": "https://github.com/apple/swift/archive/swift-5.6.1-RELEASE.tar.gz",
     "maintainer": "@buttaface",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e1a6c93be/packages/swift",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb345ed24/packages/swift",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/clang-lib-Driver-ToolChains-Linux.cpp.diff",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/compiler-rt.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/foundation-rpath.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/llvm-project-clang-tools-IndexStore-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/sourcekit-lsp-Utilities-build-script-helper.py.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-cmake.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-compiler-move-tag.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-corelibs-foundation-Sources-Foundation-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-corelibs-libdispatch-src-BlocksRuntime-runtime.c.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-corelibs-xctest-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-driver.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-lib-Driver-UnixToolChains.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-llvm-ar.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-ndk-23.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-standalone-toolchain.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-stdlib-move-tag.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-stdlib-public-Platform-bionic.modulemap.gyb.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-tools-support-core-Sources-TSCBasic-WritableByteStream.swift.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-tools-support-core.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-utils-build-script-impl-flags.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-utils-swift_build_support-swift_build_support-products-indexstoredb.py.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-vend-swiftpm-flags.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-vend-swiftpm-flagsup.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-vend-swiftpm-flagswashchange.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swift-vend-swiftpm-flagswashmove.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swiftpm-Sources-Build-BuildPlan.swift.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swiftpm-use-custom-built-aarch64-toolchain.patch",
-      "https://github.com/termux/termux-packages/blob/e1a6c93be/packages/swift/swiftpm-versioned-triples.patch"
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/libllvm-clang-lib-Driver-ToolChains-Linux.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/llbuild-lib-BuildSystem-BuildSystem.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-android-spawn.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-arm.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-cmake-flags-format.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-cmake.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-cmark-flags.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-compiler-move-tag.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-disable-appending-hostname-to-install.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-driver-rpath.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-standalone-toolchain.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-stdlib-header.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-stdlib-move-tag.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-utils-build-script-impl-flags.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-utils-cross-compile.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-utils-swift_build_support-swift_build_support-targets.py.patch",
+      "https://github.com/termux/termux-packages/blob/bb345ed24/packages/swift/swift-vend-custom-built-aarch64-toolchain.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/clang-lib-Driver-ToolChains-Linux.cpp.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/compiler-rt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/foundation-rpath.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/llvm-project-clang-tools-IndexStore-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/sourcekit-lsp-Utilities-build-script-helper.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-compiler-move-tag.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-corelibs-foundation-Sources-Foundation-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-corelibs-libdispatch-src-BlocksRuntime-runtime.c.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-corelibs-xctest-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-driver.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-lib-Driver-UnixToolChains.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-llvm-ar.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-ndk-23.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-standalone-toolchain.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-stdlib-move-tag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-stdlib-public-Platform-bionic.modulemap.gyb.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-tools-support-core-Sources-TSCBasic-WritableByteStream.swift.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-tools-support-core.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-utils-build-script-impl-flags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-utils-swift_build_support-swift_build_support-products-indexstoredb.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-vend-swiftpm-flags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-vend-swiftpm-flagsup.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-vend-swiftpm-flagswashchange.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swift-vend-swiftpm-flagswashmove.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swiftpm-Sources-Build-BuildPlan.swift.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swiftpm-use-custom-built-aarch64-toolchain.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e1a6c93be/packages/swift/swiftpm-versioned-triples.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/libllvm-clang-lib-Driver-ToolChains-Linux.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/llbuild-lib-BuildSystem-BuildSystem.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-android-spawn.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-arm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-cmake-flags-format.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-cmark-flags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-compiler-move-tag.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-disable-appending-hostname-to-install.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-driver-rpath.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-standalone-toolchain.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-stdlib-header.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-stdlib-move-tag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-utils-build-script-impl-flags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-utils-cross-compile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-utils-swift_build_support-swift_build_support-targets.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb345ed24/packages/swift/swift-vend-custom-built-aarch64-toolchain.patch"
     ]
   },
   {
@@ -35819,16 +35851,16 @@
     ],
     "srcurl": "https://download.gnome.org/sources/vte/0.62/vte-0.62.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/x11-packages/tree/00dd6e19/packages/libvte",
-    "package_recipe_url": "https://github.com/termux/x11-packages/blob/00dd6e19/packages/libvte/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/libvte/build.sh",
+    "package_sources_url": "https://github.com/termux/x11-packages/tree/544dc80c/packages/libvte",
+    "package_recipe_url": "https://github.com/termux/x11-packages/blob/544dc80c/packages/libvte/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/libvte/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/libvte/libvte-src-vte-cc.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/libvte/vte-0.62.x-volatile.patch"
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/libvte/libvte-src-vte-cc.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/libvte/vte-0.62.x-volatile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/libvte/libvte-src-vte-cc.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/libvte/vte-0.62.x-volatile.patch"
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/libvte/libvte-src-vte-cc.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/libvte/vte-0.62.x-volatile.patch"
     ]
   },
   {
@@ -37205,22 +37237,22 @@
     ],
     "srcurl": "https://github.com/OpenTTD/OpenTTD/archive/1.10.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/x11-packages/tree/00dd6e19/packages/openttd",
-    "package_recipe_url": "https://github.com/termux/x11-packages/blob/00dd6e19/packages/openttd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/openttd/build.sh",
+    "package_sources_url": "https://github.com/termux/x11-packages/tree/544dc80c/packages/openttd",
+    "package_recipe_url": "https://github.com/termux/x11-packages/blob/544dc80c/packages/openttd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/openttd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/openttd/Makefile.lang.in.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/openttd/Makefile.setting.in.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/openttd/OpenTTD-1.9.1_src_ini.cpp.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/openttd/config.lib.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/openttd/src-3rdparty-squirrel-squirrel-sqvm.cpp.patch"
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/openttd/Makefile.lang.in.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/openttd/Makefile.setting.in.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/openttd/OpenTTD-1.9.1_src_ini.cpp.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/openttd/config.lib.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/openttd/src-3rdparty-squirrel-squirrel-sqvm.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/openttd/Makefile.lang.in.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/openttd/Makefile.setting.in.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/openttd/OpenTTD-1.9.1_src_ini.cpp.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/openttd/config.lib.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/openttd/src-3rdparty-squirrel-squirrel-sqvm.cpp.patch"
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/openttd/Makefile.lang.in.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/openttd/Makefile.setting.in.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/openttd/OpenTTD-1.9.1_src_ini.cpp.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/openttd/config.lib.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/openttd/src-3rdparty-squirrel-squirrel-sqvm.cpp.patch"
     ]
   },
   {
@@ -37293,6 +37325,7 @@
     "description": "Web browser with aspects of Opera (12.x)",
     "homepage": "https://otter-browser.org",
     "depends": [
+      "libicu",
       "libsqlite",
       "qt5-qtbase",
       "qt5-qtsvg",
@@ -37303,14 +37336,14 @@
     ],
     "srcurl": "https://github.com/OtterBrowser/otter-browser/archive/refs/tags/v1.0.02.tar.gz",
     "maintainer": "Simeon Huang <symeon@librehat.com>",
-    "package_sources_url": "https://github.com/termux/x11-packages/tree/1dc8a035/packages/otter-browser",
-    "package_recipe_url": "https://github.com/termux/x11-packages/blob/1dc8a035/packages/otter-browser/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/1dc8a035/packages/otter-browser/build.sh",
+    "package_sources_url": "https://github.com/termux/x11-packages/tree/544dc80c/packages/otter-browser",
+    "package_recipe_url": "https://github.com/termux/x11-packages/blob/544dc80c/packages/otter-browser/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/otter-browser/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/x11-packages/blob/1dc8a035/packages/otter-browser/3rdparty_fhs_termux_prefix.patch"
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/otter-browser/3rdparty_fhs_termux_prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/x11-packages/1dc8a035/packages/otter-browser/3rdparty_fhs_termux_prefix.patch"
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/otter-browser/3rdparty_fhs_termux_prefix.patch"
     ]
   },
   {
@@ -37870,40 +37903,40 @@
     ],
     "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.3/submodules/qtbase-everywhere-opensource-src-5.15.3.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>",
-    "package_sources_url": "https://github.com/termux/x11-packages/tree/00dd6e19/packages/qt5-qtbase",
-    "package_recipe_url": "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/build.sh",
+    "package_sources_url": "https://github.com/termux/x11-packages/tree/544dc80c/packages/qt5-qtbase",
+    "package_recipe_url": "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/glib_gtk_detection_without_pkgconfig.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase-src_corelib_io_qfilesystemengine_unix_android_defs.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase_mkspecs_termux-cross_qplatformdefs.h.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase_mkspecs_termux_qmake.conf.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase_mkspecs_termux_qplatformdefs.h.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase_src_corelib_global_qsystemdetection.h.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase_src_corelib_thread_qthread_unix_android_defs.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase_src_network_kernel_qdnslookup_unix_res_state_struct.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtbase_src_network_kernel_qhostinfo_unix_res_state_struct.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/qtemporaryfile_no_unnamedfile_android.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/src-corelib-text-qbytearraymatcher.h.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/src-corelib-tools-qoffesetstringarray_p.h.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/src-tools-moc-generator.cpp.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/qt5-qtbase/ssl_certificate_path.patch"
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/glib_gtk_detection_without_pkgconfig.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase-src_corelib_io_qfilesystemengine_unix_android_defs.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase_mkspecs_termux-cross_qplatformdefs.h.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase_mkspecs_termux_qmake.conf.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase_mkspecs_termux_qplatformdefs.h.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase_src_corelib_global_qsystemdetection.h.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase_src_corelib_thread_qthread_unix_android_defs.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase_src_network_kernel_qdnslookup_unix_res_state_struct.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtbase_src_network_kernel_qhostinfo_unix_res_state_struct.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/qtemporaryfile_no_unnamedfile_android.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/src-corelib-text-qbytearraymatcher.h.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/src-corelib-tools-qoffesetstringarray_p.h.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/src-tools-moc-generator.cpp.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/qt5-qtbase/ssl_certificate_path.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/glib_gtk_detection_without_pkgconfig.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase-src_corelib_io_qfilesystemengine_unix_android_defs.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase_mkspecs_termux-cross_qplatformdefs.h.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase_mkspecs_termux_qmake.conf.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase_mkspecs_termux_qplatformdefs.h.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase_src_corelib_global_qsystemdetection.h.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase_src_corelib_thread_qthread_unix_android_defs.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase_src_network_kernel_qdnslookup_unix_res_state_struct.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtbase_src_network_kernel_qhostinfo_unix_res_state_struct.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/qtemporaryfile_no_unnamedfile_android.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/src-corelib-text-qbytearraymatcher.h.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/src-corelib-tools-qoffesetstringarray_p.h.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/src-tools-moc-generator.cpp.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/qt5-qtbase/ssl_certificate_path.patch"
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/glib_gtk_detection_without_pkgconfig.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase-src_corelib_io_qfilesystemengine_unix_android_defs.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase_mkspecs_termux-cross_qplatformdefs.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase_mkspecs_termux_qmake.conf.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase_mkspecs_termux_qplatformdefs.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase_src_corelib_global_qsystemdetection.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase_src_corelib_thread_qthread_unix_android_defs.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase_src_network_kernel_qdnslookup_unix_res_state_struct.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtbase_src_network_kernel_qhostinfo_unix_res_state_struct.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/qtemporaryfile_no_unnamedfile_android.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/src-corelib-text-qbytearraymatcher.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/src-corelib-tools-qoffesetstringarray_p.h.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/src-tools-moc-generator.cpp.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/qt5-qtbase/ssl_certificate_path.patch"
     ]
   },
   {
@@ -39280,18 +39313,18 @@
     ],
     "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.32.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/x11-packages/tree/00dd6e19/packages/webkit2gtk",
-    "package_recipe_url": "https://github.com/termux/x11-packages/blob/00dd6e19/packages/webkit2gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/webkit2gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/x11-packages/tree/544dc80c/packages/webkit2gtk",
+    "package_recipe_url": "https://github.com/termux/x11-packages/blob/544dc80c/packages/webkit2gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/webkit2gtk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/webkit2gtk/PlatformGTK.cmake.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
-      "https://github.com/termux/x11-packages/blob/00dd6e19/packages/webkit2gtk/jsc.cpp.patch"
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/webkit2gtk/PlatformGTK.cmake.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
+      "https://github.com/termux/x11-packages/blob/544dc80c/packages/webkit2gtk/jsc.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/webkit2gtk/PlatformGTK.cmake.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
-      "https://raw.githubusercontent.com/termux/x11-packages/00dd6e19/packages/webkit2gtk/jsc.cpp.patch"
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/webkit2gtk/PlatformGTK.cmake.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
+      "https://raw.githubusercontent.com/termux/x11-packages/544dc80c/packages/webkit2gtk/jsc.cpp.patch"
     ]
   },
   {
