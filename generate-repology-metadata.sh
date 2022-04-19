@@ -110,7 +110,11 @@ check_package() {
 	print_json_element "description" "$TERMUX_PKG_DESCRIPTION"
 	print_json_element "homepage" "$TERMUX_PKG_HOMEPAGE"
 
-	print_json_array   "depends" "$(echo ${TERMUX_PKG_DEPENDS} | sed -e 's@([^)]*)@@g' -e 's@,@ @g')"
+	# sed groups does (respectively):
+        #   Remove (optional) versioning, as in TERMUX_PKG_DEPENDS="libfoo (>= 1.0)"
+        #   Only print first option in case of "or", as in TERMUX_PKG_DEPENDS="openssh | dropbear"
+        #   Replace comma with space
+	print_json_array   "depends" "$(sed -e 's@([^)]*)@@g' -e 's@|[^,$]*@,@g' -e 's@,@ @g' <<<$TERMUX_PKG_DEPENDS)"
 
 	if [ "$TERMUX_PKG_SRCURL" != "" ]; then
 		print_json_element "srcurl" "$TERMUX_PKG_SRCURL"
