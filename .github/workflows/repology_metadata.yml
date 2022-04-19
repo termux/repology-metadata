@@ -18,15 +18,13 @@ jobs:
       run: |
         sudo apt update
         sudo apt install -yq jq
-    - name: Clone Termux package repositories
+    - name: Clone termux-packages
       run: |
         mkdir -p /tmp/repos
-        git clone https://github.com/termux/termux-packages /tmp/repos/main
-        git clone https://github.com/termux/termux-root-packages /tmp/repos/root
-        git clone https://github.com/termux/x11-packages /tmp/repos/x11
+        git clone https://github.com/termux/termux-packages.git /tmp/repos/termux-packages
     - name: Generate packages.json
       run: |
-        bash ./generate-repology-metadata.sh /tmp/repos/*/packages/* > ./packages.json
+        bash ./generate-repology-metadata.sh /tmp/repos/termux-packages/{,root-,x11-}packages/* > ./packages.json
 
         if ! jq . ./packages.json > /dev/null; then
           echo "Error: invalid packages.json" > /dev/stderr
