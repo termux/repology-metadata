@@ -1373,18 +1373,19 @@
     "description": "High quality ascii-art image browser and animation player",
     "homepage": "http://aa-project.sourceforge.net/aview/",
     "depends": [
-      "aalib"
+      "aalib",
+      "ncurses"
     ],
     "srcurl": "https://downloads.sourceforge.net/aa-project/aview/aview-1.3.0rc1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a359b68f/packages/aview",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a359b68f/packages/aview/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a359b68f/packages/aview/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/09604c678/packages/aview",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/09604c678/packages/aview/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/09604c678/packages/aview/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7a359b68f/packages/aview/asciiview.patch"
+      "https://github.com/termux/termux-packages/blob/09604c678/packages/aview/asciiview.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7a359b68f/packages/aview/asciiview.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/09604c678/packages/aview/asciiview.patch"
     ]
   },
   {
@@ -11610,17 +11611,17 @@
   },
   {
     "name": "kotlin",
-    "version": "1.6.10",
+    "version": "1.6.21",
     "description": "The Kotlin Programming Language",
     "homepage": "https://kotlinlang.org/",
     "depends": [
       "openjdk-17"
     ],
-    "srcurl": "https://github.com/JetBrains/kotlin/releases/download/v1.6.10/kotlin-compiler-1.6.10.zip",
+    "srcurl": "https://github.com/JetBrains/kotlin/releases/download/v1.6.21/kotlin-compiler-1.6.21.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/db0c11cba/packages/kotlin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db0c11cba/packages/kotlin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db0c11cba/packages/kotlin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f997f3567/packages/kotlin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f997f3567/packages/kotlin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f997f3567/packages/kotlin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -34529,6 +34530,27 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "gcr",
+    "version": "3.41.0",
+    "description": "A library for displaying certificates and crypto UI, accessing key stores",
+    "homepage": "https://gitlab.gnome.org/GNOME/gcr",
+    "depends": [
+      "glib",
+      "gtk3",
+      "libcairo",
+      "libgcrypt",
+      "p11-kit",
+      "pango"
+    ],
+    "srcurl": "https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.0/gcr-3.41.0.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ede9ccdf/x11-packages/gcr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ede9ccdf/x11-packages/gcr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ede9ccdf/x11-packages/gcr/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "geany",
     "version": "1.37.1",
     "description": "Fast and lightweight IDE",
@@ -34693,6 +34715,26 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/dd0670a45/x11-packages/glew/Makefile.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/dd0670a45/x11-packages/glew/termux-glew-support.patch"
+    ]
+  },
+  {
+    "name": "glfw",
+    "version": "3.3.7",
+    "description": "An Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development",
+    "homepage": "https://www.glfw.org/",
+    "depends": [
+      "libx11"
+    ],
+    "srcurl": "https://github.com/glfw/glfw/archive/refs/tags/3.3.7.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/adfc204f0/x11-packages/glfw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/adfc204f0/x11-packages/glfw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/adfc204f0/x11-packages/glfw/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/adfc204f0/x11-packages/glfw/src-x11_init.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/adfc204f0/x11-packages/glfw/src-x11_init.c.patch"
     ]
   },
   {
@@ -34947,6 +34989,24 @@
     ]
   },
   {
+    "name": "gtk3-nocsd",
+    "version": "3",
+    "description": "A small module used to disable the client side decoration of Gtk+ 3",
+    "homepage": "https://github.com/PCMan/gtk3-nocsd",
+    "depends": [],
+    "srcurl": "https://github.com/PCMan/gtk3-nocsd/archive/refs/tags/v3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/27b068b39/x11-packages/gtk3-nocsd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27b068b39/x11-packages/gtk3-nocsd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27b068b39/x11-packages/gtk3-nocsd/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/27b068b39/x11-packages/gtk3-nocsd/gtk3-nocsd.in.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/27b068b39/x11-packages/gtk3-nocsd/gtk3-nocsd.in.patch"
+    ]
+  },
+  {
     "name": "gtk4",
     "version": "4.3.0",
     "description": "GObject-based multi-platform GUI toolkit",
@@ -34981,6 +35041,28 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/d356edaae/x11-packages/gtk4",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/d356edaae/x11-packages/gtk4/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d356edaae/x11-packages/gtk4/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "gtksourceview4",
+    "version": "4.8.3",
+    "description": "A GNOME library that extends GtkTextView",
+    "homepage": "https://wiki.gnome.org/Projects/GtkSourceView",
+    "depends": [
+      "atk",
+      "fribidi",
+      "glib",
+      "gtk3",
+      "libcairo",
+      "libxml2",
+      "pango"
+    ],
+    "srcurl": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.3.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/19acfac52/x11-packages/gtksourceview4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/19acfac52/x11-packages/gtksourceview4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/19acfac52/x11-packages/gtksourceview4/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -38835,6 +38917,36 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/94efd571b/x11-packages/sdl2-ttf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "sfml",
+    "version": "2.5.1",
+    "description": "A simple, fast, cross-platform and object-oriented multimedia API",
+    "homepage": "https://www.sfml-dev.org/",
+    "depends": [
+      "freetype",
+      "libc++",
+      "libflac",
+      "libogg",
+      "libvorbis",
+      "libx11",
+      "libxrandr",
+      "mesa",
+      "openal-soft"
+    ],
+    "srcurl": "https://github.com/SFML/SFML/archive/refs/tags/2.5.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1630a81b4/x11-packages/sfml",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1630a81b4/x11-packages/sfml/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1630a81b4/x11-packages/sfml/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/1630a81b4/x11-packages/sfml/cmake-Config.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/1630a81b4/x11-packages/sfml/src-SFML-Window-CMakeLists.txt.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/1630a81b4/x11-packages/sfml/cmake-Config.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1630a81b4/x11-packages/sfml/src-SFML-Window-CMakeLists.txt.patch"
+    ]
   },
   {
     "name": "shared-mime-info",
