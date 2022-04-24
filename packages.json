@@ -2418,15 +2418,15 @@
   },
   {
     "name": "ca-certificates",
-    "version": "1:2022.02.01",
+    "version": "1:2022.03.29",
     "description": "Common CA certificates",
     "homepage": "https://curl.se/docs/caextract.html",
     "depends": [],
-    "srcurl": "https://curl.se/ca/cacert-2022-02-01.pem",
+    "srcurl": "https://curl.se/ca/cacert-2022-03-29.pem",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2af4e9722/packages/ca-certificates",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2af4e9722/packages/ca-certificates/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2af4e9722/packages/ca-certificates/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a459f8c3/packages/ca-certificates",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a459f8c3/packages/ca-certificates/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a459f8c3/packages/ca-certificates/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -6150,20 +6150,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.0.322",
+    "version": "0.0.323",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.322.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.323.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ef806e8f/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ef806e8f/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ef806e8f/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/10b4e9727/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10b4e9727/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10b4e9727/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1ef806e8f/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/10b4e9727/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1ef806e8f/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/10b4e9727/packages/flyctl/getcpuinfo.patch"
     ]
   },
   {
@@ -31891,15 +31891,15 @@
   },
   {
     "name": "z3",
-    "version": "4.8.15",
+    "version": "4.8.16",
     "description": "Z3 is a theorem prover from Microsoft Research.",
     "homepage": "https://github.com/Z3Prover/z3",
     "depends": [],
-    "srcurl": "https://github.com/Z3Prover/z3/archive/z3-4.8.15.tar.gz",
+    "srcurl": "https://github.com/Z3Prover/z3/archive/z3-4.8.16.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/306c1deaf/packages/z3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/306c1deaf/packages/z3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/306c1deaf/packages/z3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/72ec46d78/packages/z3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72ec46d78/packages/z3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72ec46d78/packages/z3/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -39047,6 +39047,30 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "surf",
+    "version": "2.1",
+    "description": "A simple web browser based on WebKit2/GTK+",
+    "homepage": "https://surf.suckless.org/",
+    "depends": [
+      "gcr",
+      "glib",
+      "gtk3",
+      "libx11",
+      "webkit2gtk"
+    ],
+    "srcurl": "https://dl.suckless.org/surf/surf-2.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/abbfb668b/x11-packages/surf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abbfb668b/x11-packages/surf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abbfb668b/x11-packages/surf/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/abbfb668b/x11-packages/surf/config.def.h.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/abbfb668b/x11-packages/surf/config.def.h.patch"
+    ]
+  },
+  {
     "name": "sxhkd",
     "version": "0.6.2",
     "description": "Simple X hotkey daemon",
@@ -39278,11 +39302,15 @@
     ],
     "srcurl": "https://github.com/lanoxx/tilda/archive/a8f70a8b9300992dc13185112a251b90850fd96e.tar.gz",
     "maintainer": "@ELWAER-M",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b39c1fd8d/x11-packages/tilda",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b39c1fd8d/x11-packages/tilda/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b39c1fd8d/x11-packages/tilda/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a7b7a9af/x11-packages/tilda",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a7b7a9af/x11-packages/tilda/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a7b7a9af/x11-packages/tilda/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/4a7b7a9af/x11-packages/tilda/fix-OOB-write-in-start_default_shell.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/4a7b7a9af/x11-packages/tilda/fix-OOB-write-in-start_default_shell.patch"
+    ]
   },
   {
     "name": "tint2",
