@@ -12659,6 +12659,24 @@
     ]
   },
   {
+    "name": "libcairomm-1.0",
+    "version": "1.14.3",
+    "description": "Provides a C++ interface to cairo",
+    "homepage": "https://www.cairographics.org/cairomm/",
+    "depends": [
+      "libc++",
+      "libcairo",
+      "libsigc++-2.0"
+    ],
+    "srcurl": "https://www.cairographics.org/releases/cairomm-1.14.3.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52d033139/packages/libcairomm-1.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52d033139/packages/libcairomm-1.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52d033139/packages/libcairomm-1.0/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "libcap",
     "version": "2.64",
     "description": "POSIX 1003.1e capabilities",
@@ -13620,6 +13638,24 @@
       "https://raw.githubusercontent.com/termux/termux-packages/3a511578b/packages/libgit2/fix-etc-dir-path.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/3a511578b/packages/libgit2/src-rand.c.patch"
     ]
+  },
+  {
+    "name": "libglibmm-2.4",
+    "version": "2.66.2",
+    "description": "A C++ API for parts of glib that are useful for C++",
+    "homepage": "https://www.gtkmm.org/",
+    "depends": [
+      "glib",
+      "libc++",
+      "libsigc++-2.0"
+    ],
+    "srcurl": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.2.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52d033139/packages/libglibmm-2.4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52d033139/packages/libglibmm-2.4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52d033139/packages/libglibmm-2.4/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "libgmime",
@@ -15506,6 +15542,27 @@
     ]
   },
   {
+    "name": "libpangomm-1.4",
+    "version": "2.46.2",
+    "description": "A C++ API for Pango",
+    "homepage": "https://www.gtkmm.org/",
+    "depends": [
+      "glib",
+      "libc++",
+      "libcairomm-1.0",
+      "libglibmm-2.4",
+      "libsigc++-2.0",
+      "pango"
+    ],
+    "srcurl": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52d033139/packages/libpangomm-1.4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52d033139/packages/libpangomm-1.4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52d033139/packages/libpangomm-1.4/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "libpano13",
     "version": "2.9.21",
     "description": "Part of the Panorama Tools by Helmut Dersch",
@@ -16117,6 +16174,22 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/c08631bf7/packages/libsecret",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/c08631bf7/packages/libsecret/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c08631bf7/packages/libsecret/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "libsigc++-2.0",
+    "version": "2.10.8",
+    "description": "Implements a typesafe callback system for standard C++",
+    "homepage": "https://libsigcplusplus.github.io/libsigcplusplus/",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.8.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52d033139/packages/libsigc++-2.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52d033139/packages/libsigc++-2.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52d033139/packages/libsigc++-2.0/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24212,9 +24285,9 @@
     ],
     "srcurl": "https://distfiles.macports.org/potrace/potrace-1.16.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/potrace",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/potrace/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/potrace/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f3151ec4/packages/potrace",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f3151ec4/packages/potrace/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f3151ec4/packages/potrace/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -35214,6 +35287,30 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "gtkmm3",
+    "version": "3.24.5",
+    "description": "The C++ API for GTK",
+    "homepage": "https://www.gtkmm.org/",
+    "depends": [
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "libatkmm-1.6",
+      "libc++",
+      "libcairomm-1.0",
+      "libglibmm-2.4",
+      "libpangomm-1.4",
+      "libsigc++-2.0"
+    ],
+    "srcurl": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.5.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52d033139/x11-packages/gtkmm3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52d033139/x11-packages/gtkmm3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52d033139/x11-packages/gtkmm3/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "gtksourceview4",
     "version": "4.8.3",
     "description": "A GNOME library that extends GtkTextView",
@@ -35320,6 +35417,40 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/6d6f0c91f/x11-packages/hicolor-icon-theme",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/6d6f0c91f/x11-packages/hicolor-icon-theme/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6d6f0c91f/x11-packages/hicolor-icon-theme/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "hugin",
+    "version": "2021.0.0",
+    "description": "Toolchain to create panoramic images for every occasion",
+    "homepage": "http://hugin.sourceforge.net/",
+    "depends": [
+      "boost",
+      "enblend",
+      "exiftool",
+      "exiv2",
+      "fftw",
+      "glew",
+      "glu",
+      "libc++",
+      "libflann",
+      "libjpeg-turbo",
+      "libpano13",
+      "libpng",
+      "libsqlite",
+      "libtiff",
+      "libvigra",
+      "littlecms",
+      "mesa",
+      "wxwidgets",
+      "zlib"
+    ],
+    "srcurl": "https://downloads.sourceforge.net/hugin/hugin-2021.0.0.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e1b9efe5/x11-packages/hugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e1b9efe5/x11-packages/hugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e1b9efe5/x11-packages/hugin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -35755,6 +35886,26 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/7d58192c9/x11-packages/libart-lgpl",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d58192c9/x11-packages/libart-lgpl/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d58192c9/x11-packages/libart-lgpl/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "libatkmm-1.6",
+    "version": "2.28.2",
+    "description": "The C++ binding for the ATK library",
+    "homepage": "https://www.gtkmm.org/",
+    "depends": [
+      "atk",
+      "glib",
+      "libc++",
+      "libglibmm-2.4",
+      "libsigc++-2.0"
+    ],
+    "srcurl": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52d033139/x11-packages/libatkmm-1.6",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52d033139/x11-packages/libatkmm-1.6/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52d033139/x11-packages/libatkmm-1.6/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
