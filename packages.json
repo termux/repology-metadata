@@ -5558,7 +5558,7 @@
   },
   {
     "name": "exiv2",
-    "version": "1:2022.04.25",
+    "version": "2:0.27.5",
     "description": "Exif, Iptc and XMP metadata manipulation library and tools",
     "homepage": "https://exiv2.org/",
     "depends": [
@@ -5567,13 +5567,17 @@
       "libexpat",
       "zlib"
     ],
-    "srcurl": "https://github.com/Exiv2/exiv2.git",
+    "srcurl": "https://github.com/Exiv2/exiv2/archive/v0.27.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/81ceda494/packages/exiv2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/81ceda494/packages/exiv2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/81ceda494/packages/exiv2/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/63dad5fda/packages/exiv2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/63dad5fda/packages/exiv2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/63dad5fda/packages/exiv2/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/63dad5fda/packages/exiv2/exiv2json.cpp.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/63dad5fda/packages/exiv2/exiv2json.cpp.patch"
+    ]
   },
   {
     "name": "expect",
@@ -21138,7 +21142,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "0.8.0-dev+78-g7df25a137",
+    "version": "0.8.0-dev+95-g07660193a",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -21155,20 +21159,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dfb2ccc2f/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dfb2ccc2f/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dfb2ccc2f/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e19643956/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e19643956/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e19643956/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/dfb2ccc2f/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/dfb2ccc2f/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://github.com/termux/termux-packages/blob/dfb2ccc2f/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/dfb2ccc2f/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/e19643956/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e19643956/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://github.com/termux/termux-packages/blob/e19643956/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/e19643956/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/dfb2ccc2f/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dfb2ccc2f/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dfb2ccc2f/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dfb2ccc2f/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e19643956/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e19643956/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e19643956/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e19643956/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -23385,21 +23389,20 @@
     "homepage": "https://github.com/jwilk/pdf2djvu",
     "depends": [
       "djvulibre",
-      "exiv2",
       "libc++",
-      "libuuid",
+      "libiconv",
       "poppler"
     ],
     "srcurl": "https://github.com/jwilk/pdf2djvu/releases/download/0.9.18.2/pdf2djvu-0.9.18.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb5f1ba94/packages/pdf2djvu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb5f1ba94/packages/pdf2djvu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb5f1ba94/packages/pdf2djvu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/12010757e/packages/pdf2djvu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/12010757e/packages/pdf2djvu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/12010757e/packages/pdf2djvu/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bb5f1ba94/packages/pdf2djvu/pdf2djvu-0.9.18.2-poppler.patch"
+      "https://github.com/termux/termux-packages/blob/12010757e/packages/pdf2djvu/pdf2djvu-0.9.18.2-poppler.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bb5f1ba94/packages/pdf2djvu/pdf2djvu-0.9.18.2-poppler.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/12010757e/packages/pdf2djvu/pdf2djvu-0.9.18.2-poppler.patch"
     ]
   },
   {
@@ -39058,9 +39061,9 @@
     ],
     "srcurl": "https://github.com/raysan5/raylib/archive/refs/tags/4.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/513e239a0/x11-packages/raylib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/513e239a0/x11-packages/raylib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/513e239a0/x11-packages/raylib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/89ac75a5f/x11-packages/raylib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/89ac75a5f/x11-packages/raylib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/89ac75a5f/x11-packages/raylib/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
