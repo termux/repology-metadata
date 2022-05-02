@@ -540,7 +540,7 @@
   },
   {
     "name": "ani-cli",
-    "version": "1.9",
+    "version": "2.1",
     "description": "A cli to browse and watch anime",
     "homepage": "https://github.com/pystardust/ani-cli",
     "depends": [
@@ -550,13 +550,14 @@
       "grep",
       "mpv",
       "openssl",
-      "sed"
+      "sed",
+      "ffmpeg"
     ],
-    "srcurl": "https://github.com/pystardust/ani-cli/archive/refs/tags/v1.9.tar.gz",
+    "srcurl": "https://github.com/pystardust/ani-cli/archive/refs/tags/v2.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3bdb38c36/packages/ani-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3bdb38c36/packages/ani-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3bdb38c36/packages/ani-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c998cb475/packages/ani-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c998cb475/packages/ani-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c998cb475/packages/ani-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -6991,6 +6992,24 @@
       "https://raw.githubusercontent.com/termux/termux-packages/f58b54499/packages/gettext/gnulib-libmakefile.am.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/f58b54499/packages/gettext/msginit.c.patch"
     ]
+  },
+  {
+    "name": "gexiv2",
+    "version": "0.14.0",
+    "description": "A GObject-based Exiv2 wrapper",
+    "homepage": "https://wiki.gnome.org/Projects/gexiv2",
+    "depends": [
+      "exiv2",
+      "glib",
+      "libc++"
+    ],
+    "srcurl": "https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b643c5519/packages/gexiv2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b643c5519/packages/gexiv2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b643c5519/packages/gexiv2/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "gflags",
@@ -15054,6 +15073,23 @@
     ]
   },
   {
+    "name": "libmypaint",
+    "version": "1.6.1",
+    "description": "MyPaint brush engine library",
+    "homepage": "https://github.com/mypaint/libmypaint",
+    "depends": [
+      "glib",
+      "json-c"
+    ],
+    "srcurl": "https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/991f4e676/packages/libmypaint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/991f4e676/packages/libmypaint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/991f4e676/packages/libmypaint/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "libnats-c",
     "version": "3.3.0",
     "description": "A C client for the NATS messaging system",
@@ -20709,6 +20745,20 @@
     ]
   },
   {
+    "name": "mypaint-brushes",
+    "version": "2.0.2",
+    "description": "MyPaint brushes",
+    "homepage": "https://github.com/mypaint/mypaint-brushes",
+    "depends": [],
+    "srcurl": "https://github.com/mypaint/mypaint-brushes/archive/v2.0.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/980358c84/packages/mypaint-brushes",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/980358c84/packages/mypaint-brushes/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/980358c84/packages/mypaint-brushes/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "myrepos",
     "version": "1.20180726",
     "description": "Tool to manage all your version control repos",
@@ -24260,6 +24310,58 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/a5bfbd241/packages/poppler/force-termux-include-dirs.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/a5bfbd241/packages/poppler/gstrtod.cc.patch"
+    ]
+  },
+  {
+    "name": "poppler-data",
+    "version": "0.4.11",
+    "description": "Consists of encoding files for use with poppler",
+    "homepage": "https://poppler.freedesktop.org/",
+    "depends": [],
+    "srcurl": "https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/06bb41c62/packages/poppler-data",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/06bb41c62/packages/poppler-data/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/06bb41c62/packages/poppler-data/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "portaudio",
+    "version": "19.07.00",
+    "description": "A portable audio I/O library",
+    "homepage": "http://www.portaudio.com/",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "http://files.portaudio.com/archives/pa_stable_v190700_20210406.tgz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3308c31bb/packages/portaudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3308c31bb/packages/portaudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3308c31bb/packages/portaudio/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3308c31bb/packages/portaudio/configure.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3308c31bb/packages/portaudio/configure.patch"
+    ]
+  },
+  {
+    "name": "portmidi",
+    "version": "2.0.3",
+    "description": "A cross-platform MIDI input/output library",
+    "homepage": "https://github.com/PortMidi/portmidi",
+    "depends": [],
+    "srcurl": "https://github.com/PortMidi/portmidi/archive/refs/tags/v2.0.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dadb03b26/packages/portmidi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dadb03b26/packages/portmidi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dadb03b26/packages/portmidi/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/dadb03b26/packages/portmidi/porttime-ptlinux.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/dadb03b26/packages/portmidi/porttime-ptlinux.c.patch"
     ]
   },
   {
@@ -33752,6 +33854,48 @@
     ]
   },
   {
+    "name": "abiword",
+    "version": "3.0.5",
+    "description": "A free word processing program",
+    "homepage": "https://www.abisource.com/",
+    "depends": [
+      "enchant",
+      "fribidi",
+      "glib",
+      "goffice",
+      "gtk3",
+      "libc++",
+      "libcairo",
+      "libgcrypt",
+      "libgsf",
+      "libical",
+      "libjpeg-turbo",
+      "libpng",
+      "librsvg",
+      "libwv",
+      "libxml2",
+      "libxslt",
+      "readline"
+    ],
+    "srcurl": "https://www.abisource.com/downloads/abiword/3.0.5/source/abiword-3.0.5.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/147c06946/x11-packages/abiword",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/147c06946/x11-packages/abiword/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/147c06946/x11-packages/abiword/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/147c06946/x11-packages/abiword/abiword-3.0.4-enchant-2.patch",
+      "https://github.com/termux/termux-packages/blob/147c06946/x11-packages/abiword/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/147c06946/x11-packages/abiword/plugins-command-xp-AbiCommand.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/147c06946/x11-packages/abiword/src-wp-ap-gtk-ap_UnixApp.cpp.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/147c06946/x11-packages/abiword/abiword-3.0.4-enchant-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/147c06946/x11-packages/abiword/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/147c06946/x11-packages/abiword/plugins-command-xp-AbiCommand.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/147c06946/x11-packages/abiword/src-wp-ap-gtk-ap_UnixApp.cpp.patch"
+    ]
+  },
+  {
     "name": "adwaita-icon-theme",
     "version": "42.0",
     "description": "GNOME standard icons",
@@ -33995,6 +34139,31 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/7d58192c9/x11-packages/azpainter/no-librt.patch"
     ]
+  },
+  {
+    "name": "bluefish",
+    "version": "2.2.12",
+    "description": "A powerful editor targeted towards programmers and webdevelopers",
+    "homepage": "https://bluefish.openoffice.nl/",
+    "depends": [
+      "atk",
+      "enchant",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libcairo",
+      "libxml2",
+      "pango",
+      "zlib"
+    ],
+    "srcurl": "https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.12.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/40b64ad31/x11-packages/bluefish",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/40b64ad31/x11-packages/bluefish/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/40b64ad31/x11-packages/bluefish/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "bochs",
@@ -35138,6 +35307,33 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5c1de5fe0/x11-packages/gnome-themes-extra/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "gnumeric",
+    "version": "1.12.52",
+    "description": "The GNOME spreadsheet",
+    "homepage": "http://www.gnumeric.org/",
+    "depends": [
+      "glib",
+      "goffice",
+      "gtk3",
+      "libcairo",
+      "libgsf",
+      "libxml2",
+      "pango",
+      "zlib"
+    ],
+    "srcurl": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.52.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0d7c9e1bf/x11-packages/gnumeric",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0d7c9e1bf/x11-packages/gnumeric/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0d7c9e1bf/x11-packages/gnumeric/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/0d7c9e1bf/x11-packages/gnumeric/configure.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/0d7c9e1bf/x11-packages/gnumeric/configure.patch"
+    ]
   },
   {
     "name": "goffice",
@@ -38330,6 +38526,31 @@
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/5fe300628/x11-packages/polybar/termux-prefix.patch"
+    ]
+  },
+  {
+    "name": "pong2",
+    "version": "0.1.3",
+    "description": "A Three Dimensional Pong Game",
+    "homepage": "https://sourceforge.net/projects/pong2.berlios/",
+    "depends": [
+      "glu",
+      "libc++",
+      "mesa",
+      "openssl",
+      "sdl",
+      "sdl-image"
+    ],
+    "srcurl": "https://download.sourceforge.net/pong2.berlios/pong2-0.1.3.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e4418f79/x11-packages/pong2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e4418f79/x11-packages/pong2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e4418f79/x11-packages/pong2/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/0e4418f79/x11-packages/pong2/configure.ac.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/0e4418f79/x11-packages/pong2/configure.ac.patch"
     ]
   },
   {
