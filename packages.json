@@ -6275,7 +6275,7 @@
   },
   {
     "name": "freetype",
-    "version": "2.12.0",
+    "version": "2.12.1",
     "description": "Software font engine capable of producing high-quality output",
     "homepage": "https://www.freetype.org",
     "depends": [
@@ -6283,11 +6283,11 @@
       "libpng",
       "zlib"
     ],
-    "srcurl": "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz",
+    "srcurl": "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fb2728bd6/packages/freetype",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fb2728bd6/packages/freetype/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fb2728bd6/packages/freetype/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d30c594cc/packages/freetype",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d30c594cc/packages/freetype/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d30c594cc/packages/freetype/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -36164,6 +36164,39 @@
     ]
   },
   {
+    "name": "kid3",
+    "version": "3.9.1",
+    "description": "Efficient ID3 tag editor",
+    "homepage": "https://kid3.kde.org/",
+    "depends": [
+      "chromaprint",
+      "ffmpeg",
+      "id3lib",
+      "libc++",
+      "libflac",
+      "libogg",
+      "libvorbis",
+      "qt5-qtbase",
+      "qt5-qtdeclarative",
+      "qt5-qtmultimedia",
+      "readline",
+      "taglib"
+    ],
+    "srcurl": "https://downloads.sourceforge.net/kid3/kid3-3.9.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7366ab781/x11-packages/kid3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7366ab781/x11-packages/kid3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7366ab781/x11-packages/kid3/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7366ab781/x11-packages/kid3/src-core-model-kid3application.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/7366ab781/x11-packages/kid3/src-plugins-acoustidimport-ffmpegfingerprintdecoder.cpp.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7366ab781/x11-packages/kid3/src-core-model-kid3application.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7366ab781/x11-packages/kid3/src-plugins-acoustidimport-ffmpegfingerprintdecoder.cpp.patch"
+    ]
+  },
+  {
     "name": "kirigami2",
     "version": "5.71.0",
     "description": "KDE Kirigami2 QtQuick components based on Qt Quick Controls 2",
@@ -38162,6 +38195,29 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "ocs-url",
+    "version": "3.1.0",
+    "description": "An install helper program for items served via OpenCollaborationServices (ocs://)",
+    "homepage": "https://www.opendesktop.org/p/1136805/",
+    "depends": [
+      "libc++",
+      "qt5-qtbase",
+      "qt5-qtdeclarative",
+      "qt5-qtsvg"
+    ],
+    "srcurl": "https://www.opencode.net/dfn2/ocs-url.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d25ca4889/x11-packages/ocs-url",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d25ca4889/x11-packages/ocs-url/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d25ca4889/x11-packages/ocs-url/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/d25ca4889/x11-packages/ocs-url/scripts-prepare.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/d25ca4889/x11-packages/ocs-url/scripts-prepare.patch"
+    ]
+  },
+  {
     "name": "openbox",
     "version": "3.6.1",
     "description": "Highly configurable and lightweight X11 window manager",
@@ -40054,6 +40110,32 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "texstudio",
+    "version": "4.2.3",
+    "description": "A fully featured LaTeX editor",
+    "homepage": "https://www.texstudio.org/",
+    "depends": [
+      "hunspell",
+      "libc++",
+      "libx11",
+      "poppler-qt",
+      "qt5-qtbase",
+      "qt5-qtdeclarative",
+      "qt5-qtsvg",
+      "qt5-qttools",
+      "quazip",
+      "texstudio-data",
+      "zlib"
+    ],
+    "srcurl": "https://github.com/texstudio-org/texstudio/archive/refs/tags/4.2.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e8187f8a/x11-packages/texstudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e8187f8a/x11-packages/texstudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e8187f8a/x11-packages/texstudio/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "the-powder-toy",
     "version": "95.0",
     "description": "The Powder Toy is a free physics sandbox game",
@@ -40383,6 +40465,45 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8da2d2997/x11-packages/tumbler/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "tuxpaint",
+    "version": "0.9.27",
+    "description": "A free, award-winning drawing program for children ages 3 to 12",
+    "homepage": "https://tuxpaint.org/",
+    "depends": [
+      "fribidi",
+      "glib",
+      "libandroid-wordexp",
+      "libcairo",
+      "libimagequant",
+      "libpaper",
+      "libpng",
+      "librsvg",
+      "sdl",
+      "sdl-gfx",
+      "sdl-image",
+      "sdl-mixer",
+      "sdl-pango",
+      "sdl-ttf",
+      "tuxpaint-data",
+      "zlib"
+    ],
+    "srcurl": "https://downloads.sourceforge.net/tuxpaint/tuxpaint-0.9.27.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/608b002f6/x11-packages/tuxpaint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/608b002f6/x11-packages/tuxpaint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/608b002f6/x11-packages/tuxpaint/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/608b002f6/x11-packages/tuxpaint/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/608b002f6/x11-packages/tuxpaint/src-tuxpaint-import.sh.patch",
+      "https://github.com/termux/termux-packages/blob/608b002f6/x11-packages/tuxpaint/src-tuxpaint.conf.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/608b002f6/x11-packages/tuxpaint/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/608b002f6/x11-packages/tuxpaint/src-tuxpaint-import.sh.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/608b002f6/x11-packages/tuxpaint/src-tuxpaint.conf.patch"
+    ]
   },
   {
     "name": "uget",
