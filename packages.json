@@ -5485,7 +5485,7 @@
   },
   {
     "name": "et",
-    "version": "6.1.11",
+    "version": "6.2.0",
     "description": "A remote shell that automatically reconnects without interrupting the session",
     "homepage": "https://eternalterminal.dev",
     "depends": [
@@ -5494,16 +5494,16 @@
       "libsodium",
       "openssl"
     ],
-    "srcurl": "https://github.com/MisterTea/EternalTerminal/archive/et-v6.1.11.tar.gz",
+    "srcurl": "https://github.com/MisterTea/EternalTerminal/archive/et-v6.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/306c1deaf/packages/et",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/306c1deaf/packages/et/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/306c1deaf/packages/et/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/048032e35/packages/et",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/048032e35/packages/et/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/048032e35/packages/et/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/306c1deaf/packages/et/src-terminal-TerminalServerMain.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/048032e35/packages/et/src-terminal-TerminalServerMain.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/306c1deaf/packages/et/src-terminal-TerminalServerMain.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/048032e35/packages/et/src-terminal-TerminalServerMain.cpp.patch"
     ]
   },
   {
@@ -7558,19 +7558,22 @@
   },
   {
     "name": "gn",
-    "version": "20211203",
+    "version": "20220502",
     "description": "Meta-build system that generates build files for Ninja",
     "homepage": "https://gn.googlesource.com/gn",
     "depends": [],
+    "srcurl": "https://gn.googlesource.com/gn.git",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a6699b433/packages/gn",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a6699b433/packages/gn/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a6699b433/packages/gn/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ca4ed956a/packages/gn",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ca4ed956a/packages/gn/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ca4ed956a/packages/gn/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a6699b433/packages/gn/build-gen.py.patch"
+      "https://github.com/termux/termux-packages/blob/ca4ed956a/packages/gn/build-gen.py.patch",
+      "https://github.com/termux/termux-packages/blob/ca4ed956a/packages/gn/src-util-aligned_alloc.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a6699b433/packages/gn/build-gen.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ca4ed956a/packages/gn/build-gen.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ca4ed956a/packages/gn/src-util-aligned_alloc.h.patch"
     ]
   },
   {
@@ -7930,18 +7933,18 @@
   },
   {
     "name": "gogs",
-    "version": "0.12.6",
+    "version": "0.12.7",
     "description": "A painless self-hosted Git service.",
     "homepage": "https://gogs.io",
     "depends": [
       "dash",
       "git"
     ],
-    "srcurl": "https://github.com/gogs/gogs/archive/v0.12.6.tar.gz",
+    "srcurl": "https://github.com/gogs/gogs/archive/v0.12.7.tar.gz",
     "maintainer": "Injamul Mohammad Mollah <mrinjamul@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b9493379/packages/gogs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b9493379/packages/gogs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b9493379/packages/gogs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4f1a1bdc9/packages/gogs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4f1a1bdc9/packages/gogs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4f1a1bdc9/packages/gogs/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -21205,7 +21208,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "0.8.0-dev+124-g815b65d77",
+    "version": "0.8.0-dev+133-g82c7a82c3",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -21222,20 +21225,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <dev.aditya.alok@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3507f1c5b/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3507f1c5b/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3507f1c5b/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/def106781/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/def106781/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/def106781/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3507f1c5b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/3507f1c5b/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://github.com/termux/termux-packages/blob/3507f1c5b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/3507f1c5b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/def106781/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/def106781/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://github.com/termux/termux-packages/blob/def106781/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/def106781/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3507f1c5b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3507f1c5b/packages/neovim-nightly/runtime-autoload-man.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3507f1c5b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3507f1c5b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/def106781/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/def106781/packages/neovim-nightly/runtime-autoload-man.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/def106781/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/def106781/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -21441,56 +21444,54 @@
   },
   {
     "name": "newsboat",
-    "version": "2.24",
+    "version": "2.27",
     "description": "RSS/Atom feed reader for the text console",
     "homepage": "https://newsboat.org/",
     "depends": [
-      "libc++",
-      "libiconv",
-      "libandroid-support",
-      "libandroid-glob",
       "json-c",
-      "libsqlite",
+      "libandroid-glob",
+      "libandroid-support",
+      "libc++",
       "libcurl",
+      "libiconv",
+      "libsqlite",
       "libxml2",
-      "stfl",
       "ncurses",
-      "openssl"
+      "openssl",
+      "stfl"
     ],
-    "srcurl": "https://newsboat.org/releases/2.24/newsboat-2.24.tar.xz",
+    "srcurl": "https://newsboat.org/releases/2.27/newsboat-2.27.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4577a0cf6/packages/newsboat",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/80bb27716/packages/newsboat",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/bool-fix.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/mbc_write.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-libnewsboat-Cargo.toml.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-libnewsboat-src-cliargsparser.rs.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-libnewsboat-src-configpaths.rs.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-libnewsboat-src-filterparser.rs.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-libnewsboat-src-fslock.rs.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-libnewsboat-src-utils.rs.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-regex-rs-Cargo.toml.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/rust-regex-rs-src-lib.rs.patch",
-      "https://github.com/termux/termux-packages/blob/4577a0cf6/packages/newsboat/src-pbcontroller.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/bool-fix.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-libnewsboat-Cargo.toml.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-libnewsboat-src-cliargsparser.rs.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-libnewsboat-src-configpaths.rs.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-libnewsboat-src-filterparser.rs.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-libnewsboat-src-fslock.rs.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-libnewsboat-src-utils.rs.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-regex-rs-Cargo.toml.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/rust-regex-rs-src-lib.rs.patch",
+      "https://github.com/termux/termux-packages/blob/80bb27716/packages/newsboat/src-pbcontroller.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/bool-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/mbc_write.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-libnewsboat-Cargo.toml.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-libnewsboat-src-cliargsparser.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-libnewsboat-src-configpaths.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-libnewsboat-src-filterparser.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-libnewsboat-src-fslock.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-libnewsboat-src-utils.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-regex-rs-Cargo.toml.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/rust-regex-rs-src-lib.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4577a0cf6/packages/newsboat/src-pbcontroller.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/bool-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-libnewsboat-Cargo.toml.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-libnewsboat-src-cliargsparser.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-libnewsboat-src-configpaths.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-libnewsboat-src-filterparser.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-libnewsboat-src-fslock.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-libnewsboat-src-utils.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-regex-rs-Cargo.toml.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/rust-regex-rs-src-lib.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/80bb27716/packages/newsboat/src-pbcontroller.cpp.patch"
     ]
   },
   {
@@ -22006,20 +22007,24 @@
   },
   {
     "name": "nushell",
-    "version": "0.61.0",
+    "version": "0.62.0",
     "description": "A new type of shell operating on structured data",
     "homepage": "https://www.nushell.sh",
     "depends": [
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://github.com/nushell/nushell/archive/0.61.0.tar.gz",
+    "srcurl": "https://github.com/nushell/nushell/archive/0.62.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/930042d03/packages/nushell",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/930042d03/packages/nushell/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/930042d03/packages/nushell/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c37239df/packages/nushell",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c37239df/packages/nushell/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c37239df/packages/nushell/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7c37239df/packages/nushell/user_home_dir.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7c37239df/packages/nushell/user_home_dir.patch"
+    ]
   },
   {
     "name": "nyancat",
@@ -24624,15 +24629,15 @@
   },
   {
     "name": "procs",
-    "version": "0.12.1",
+    "version": "0.12.2",
     "description": "A modern replacement for ps",
     "homepage": "https://github.com/dalance/procs",
     "depends": [],
-    "srcurl": "https://github.com/dalance/procs/archive/refs/tags/v0.12.1.tar.gz",
+    "srcurl": "https://github.com/dalance/procs/archive/refs/tags/v0.12.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cd3cd5b5e/packages/procs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cd3cd5b5e/packages/procs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cd3cd5b5e/packages/procs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c3934d88/packages/procs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c3934d88/packages/procs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c3934d88/packages/procs/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -32063,17 +32068,17 @@
   },
   {
     "name": "yarn",
-    "version": "1.22.17",
+    "version": "1.22.18",
     "description": "Fast, reliable, and secure dependency management",
     "homepage": "https://yarnpkg.com/",
     "depends": [
       "nodejs"
     ],
-    "srcurl": "https://yarnpkg.com/downloads/1.22.17/yarn-v1.22.17.tar.gz",
+    "srcurl": "https://yarnpkg.com/downloads/1.22.18/yarn-v1.22.18.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/aecf275af/packages/yarn",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aecf275af/packages/yarn/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aecf275af/packages/yarn/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6d57c9d4/packages/yarn",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6d57c9d4/packages/yarn/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6d57c9d4/packages/yarn/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -32275,15 +32280,15 @@
   },
   {
     "name": "z3",
-    "version": "4.8.16",
+    "version": "4.8.17",
     "description": "Z3 is a theorem prover from Microsoft Research.",
     "homepage": "https://github.com/Z3Prover/z3",
     "depends": [],
-    "srcurl": "https://github.com/Z3Prover/z3/archive/z3-4.8.16.tar.gz",
+    "srcurl": "https://github.com/Z3Prover/z3/archive/z3-4.8.17.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/72ec46d78/packages/z3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72ec46d78/packages/z3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72ec46d78/packages/z3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/aedb3f76c/packages/z3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aedb3f76c/packages/z3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aedb3f76c/packages/z3/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -38828,6 +38833,34 @@
       "https://raw.githubusercontent.com/termux/termux-packages/7d2ce5f0d/x11-packages/pypanel/PyPanel-2.4_pypanelrc.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/7d2ce5f0d/x11-packages/pypanel/PyPanel-2.4_setup.py.patch"
     ]
+  },
+  {
+    "name": "pyqt5",
+    "version": "5.15.6",
+    "description": "Comprehensive Python Bindings for Qt v5",
+    "homepage": "https://www.riverbankcomputing.com/software/pyqt/",
+    "depends": [
+      "python",
+      "qt5-qtbase",
+      "qt5-qtdeclarative",
+      "qt5-qtlocation",
+      "qt5-qtmultimedia",
+      "qt5-qtsensors",
+      "qt5-qtsvg",
+      "qt5-qttools",
+      "qt5-qtwebchannel",
+      "qt5-qtwebkit",
+      "qt5-qtwebsockets",
+      "qt5-qtx11extras",
+      "qt5-qtxmlpatterns"
+    ],
+    "srcurl": "https://ftp-osl.osuosl.org/pub/gentoo/distfiles/PyQt5-5.15.6.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/db9adaaae/x11-packages/pyqt5",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db9adaaae/x11-packages/pyqt5/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db9adaaae/x11-packages/pyqt5/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "python2-six",
