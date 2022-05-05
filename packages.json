@@ -28609,15 +28609,15 @@
   },
   {
     "name": "syncthing",
-    "version": "1.20.0",
+    "version": "1.20.1",
     "description": "Decentralized file synchronization",
     "homepage": "https://syncthing.net/",
     "depends": [],
-    "srcurl": "https://github.com/syncthing/syncthing/releases/download/v1.20.0/syncthing-source-v1.20.0.tar.gz",
+    "srcurl": "https://github.com/syncthing/syncthing/releases/download/v1.20.1/syncthing-source-v1.20.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9002172be/packages/syncthing",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9002172be/packages/syncthing/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9002172be/packages/syncthing/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a76ca2ae4/packages/syncthing",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a76ca2ae4/packages/syncthing/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a76ca2ae4/packages/syncthing/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -38231,6 +38231,30 @@
     ]
   },
   {
+    "name": "olivia",
+    "version": "2022.03.27",
+    "description": "Elegant music player for LINUX",
+    "homepage": "https://github.com/keshavbhatt/olivia",
+    "depends": [
+      "coreutils",
+      "libc++",
+      "mpv",
+      "python",
+      "qt5-qtbase",
+      "qt5-qtwebkit",
+      "socat",
+      "taglib",
+      "wget"
+    ],
+    "srcurl": "https://github.com/keshavbhatt/olivia.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5fee1dad3/x11-packages/olivia",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5fee1dad3/x11-packages/olivia/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5fee1dad3/x11-packages/olivia/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "openbox",
     "version": "3.6.1",
     "description": "Highly configurable and lightweight X11 window manager",
@@ -41389,6 +41413,28 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "xfce4-dev-tools",
+    "version": "4.17.0",
+    "description": "A collection of tools and macros for Xfce developers",
+    "homepage": "https://gitlab.xfce.org/xfce/xfce4-dev-tools",
+    "depends": [
+      "glib"
+    ],
+    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-dev-tools/4.17/xfce4-dev-tools-4.17.0.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1754e30e0/x11-packages/xfce4-dev-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1754e30e0/x11-packages/xfce4-dev-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1754e30e0/x11-packages/xfce4-dev-tools/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/1754e30e0/x11-packages/xfce4-dev-tools/Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/1754e30e0/x11-packages/xfce4-dev-tools/scripts-xdt-autogen.in.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/1754e30e0/x11-packages/xfce4-dev-tools/Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1754e30e0/x11-packages/xfce4-dev-tools/scripts-xdt-autogen.in.patch"
+    ]
+  },
+  {
     "name": "xfce4-dict",
     "version": "0.8.4",
     "description": "Dictionary for XFCE desktop",
@@ -42652,26 +42698,28 @@
     ],
     "srcurl": "https://github.com/neutrinolabs/xrdp/releases/download/v0.9.16/xrdp-0.9.16.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b9790f357/x11-packages/xrdp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3fe664338/x11-packages/xrdp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/disable-lpthread-link.patch",
-      "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/dont-run-keygen.patch",
-      "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/fix-configs.patch",
-      "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/fix-tmpdir.patch",
-      "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/no-getlogin_r.patch",
-      "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/no-strict-locations.patch",
-      "https://github.com/termux/termux-packages/blob/b9790f357/x11-packages/xrdp/termux-dont-have-shadow.patch"
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/disable-lpthread-link.patch",
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/dont-run-keygen.patch",
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/fix-configs.patch",
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/fix-rfbauth-with-no-passwd-file.patch",
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/fix-tmpdir.patch",
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/no-getlogin_r.patch",
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/no-strict-locations.patch",
+      "https://github.com/termux/termux-packages/blob/3fe664338/x11-packages/xrdp/termux-dont-have-shadow.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/disable-lpthread-link.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/dont-run-keygen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/fix-configs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/fix-tmpdir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/no-getlogin_r.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/no-strict-locations.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b9790f357/x11-packages/xrdp/termux-dont-have-shadow.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/disable-lpthread-link.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/dont-run-keygen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/fix-configs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/fix-rfbauth-with-no-passwd-file.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/fix-tmpdir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/no-getlogin_r.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/no-strict-locations.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe664338/x11-packages/xrdp/termux-dont-have-shadow.patch"
     ]
   },
   {
