@@ -2994,15 +2994,15 @@
   },
   {
     "name": "chezmoi",
-    "version": "2.15.2",
+    "version": "2.15.3",
     "description": "Manage your dotfiles across multiple machines",
     "homepage": "https://chezmoi.io",
     "depends": [],
-    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.15.2.tar.gz",
+    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.15.3.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1299e5ab7/packages/chezmoi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1299e5ab7/packages/chezmoi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1299e5ab7/packages/chezmoi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cd39ac04d/packages/chezmoi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cd39ac04d/packages/chezmoi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cd39ac04d/packages/chezmoi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11185,15 +11185,15 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.16.2",
+    "version": "2.16.3",
     "description": "A CLI for JFrog products.",
     "homepage": "https://jfrog.com/getcli",
     "depends": [],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.16.2.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.16.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3603cff4e/packages/jfrog-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3603cff4e/packages/jfrog-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3603cff4e/packages/jfrog-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/020854fe6/packages/jfrog-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/020854fe6/packages/jfrog-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/020854fe6/packages/jfrog-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11822,6 +11822,27 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ea1a34554/packages/kubelogin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "ladspa-sdk",
+    "version": "1.17",
+    "description": "Linux Audio Developer's Simple Plugin API",
+    "homepage": "https://www.ladspa.org/",
+    "depends": [
+      "libc++",
+      "libsndfile"
+    ],
+    "srcurl": "https://www.ladspa.org/download/ladspa_sdk_1.17.tgz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dda920f78/packages/ladspa-sdk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dda920f78/packages/ladspa-sdk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dda920f78/packages/ladspa-sdk/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/dda920f78/packages/ladspa-sdk/src-Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/dda920f78/packages/ladspa-sdk/src-Makefile.patch"
+    ]
   },
   {
     "name": "lastpass-cli",
@@ -15533,6 +15554,20 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/bcc1b7c43/packages/libopencc/CMakeLists.txt.patch"
     ]
+  },
+  {
+    "name": "libopencore-amr",
+    "version": "0.1.5",
+    "description": "Open source implementation of the Adaptive Multi Rate (AMR) speech codec",
+    "homepage": "https://sourceforge.net/projects/opencore-amr",
+    "depends": [],
+    "srcurl": "https://sourceforge.net/projects/opencore-amr/files/opencore-amr/opencore-amr-0.1.5.tar.gz/download",
+    "maintainer": "William Goodspeed @goodspeed34",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ac653e64/packages/libopencore-amr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ac653e64/packages/libopencore-amr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ac653e64/packages/libopencore-amr/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "libopenfec",
@@ -31478,25 +31513,23 @@
   },
   {
     "name": "vtm",
-    "version": "0.7.4",
+    "version": "0.7.5",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://vtm.netxs.online/",
     "depends": [
       "libandroid-spawn",
       "libc++"
     ],
-    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.7.4.tar.gz",
+    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.7.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec643f06e/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec643f06e/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec643f06e/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f21c111e9/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f21c111e9/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f21c111e9/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ec643f06e/packages/vtm/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/ec643f06e/packages/vtm/netxs-os-system.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/f21c111e9/packages/vtm/netxs-os-system.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ec643f06e/packages/vtm/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ec643f06e/packages/vtm/netxs-os-system.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f21c111e9/packages/vtm/netxs-os-system.hpp.patch"
     ]
   },
   {
@@ -31837,20 +31870,20 @@
   },
   {
     "name": "wireguard-tools",
-    "version": "1.0.20210424",
+    "version": "1.0.20210914",
     "description": "Tools for the WireGuard secure network tunnel",
     "homepage": "https://www.wireguard.com",
     "depends": [],
-    "srcurl": "https://git.zx2c4.com/wireguard-tools/snapshot/wireguard-tools-1.0.20210424.tar.xz",
+    "srcurl": "https://git.zx2c4.com/wireguard-tools/snapshot/wireguard-tools-1.0.20210914.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ebe784b4/packages/wireguard-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ebe784b4/packages/wireguard-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ebe784b4/packages/wireguard-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/aed4a7751/packages/wireguard-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aed4a7751/packages/wireguard-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aed4a7751/packages/wireguard-tools/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5ebe784b4/packages/wireguard-tools/android.c.patch"
+      "https://github.com/termux/termux-packages/blob/aed4a7751/packages/wireguard-tools/android.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5ebe784b4/packages/wireguard-tools/android.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/aed4a7751/packages/wireguard-tools/android.c.patch"
     ]
   },
   {
