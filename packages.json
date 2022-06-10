@@ -3131,6 +3131,26 @@
     ]
   },
   {
+    "name": "ciso",
+    "version": "1.0.2",
+    "description": "PSP ISO compression tool",
+    "homepage": "https://github.com/jamie/ciso",
+    "depends": [
+      "zlib"
+    ],
+    "srcurl": "https://github.com/jamie/ciso/archive/refs/tags/v1.0.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f2fd2bba7/packages/ciso",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f2fd2bba7/packages/ciso/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f2fd2bba7/packages/ciso/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/f2fd2bba7/packages/ciso/Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/f2fd2bba7/packages/ciso/Makefile.patch"
+    ]
+  },
+  {
     "name": "ckermit",
     "version": "9.0.302",
     "description": "A combined network and serial communication software package",
@@ -29772,7 +29792,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "0.184",
+    "version": "0.185",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.org/",
     "depends": [
@@ -29798,9 +29818,9 @@
       "dialog"
     ],
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7779dbbca/packages/termux-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7779dbbca/packages/termux-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7779dbbca/packages/termux-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/af0166dad/packages/termux-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af0166dad/packages/termux-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af0166dad/packages/termux-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -33673,38 +33693,37 @@
     ]
   },
   {
-    "name": "frida-server",
-    "version": "15.1.12",
+    "name": "frida",
+    "version": "15.1.24",
     "description": "Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers",
     "homepage": "https://www.frida.re/",
     "depends": [
-      "libiconv",
-      "python"
+      "libiconv"
     ],
     "srcurl": "https://github.com/frida/frida.git",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/25288dc7e/root-packages/frida-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/56e38728f/root-packages/frida",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/Makefile.linux.mk.patch",
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/compiler.patch",
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/frida-python-src-_frida.c.patch",
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/frida-python-src-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/frida-python-version.diff",
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/frida-version.patch",
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/ndk_version.patch",
-      "https://github.com/termux/termux-packages/blob/25288dc7e/root-packages/frida-server/setup-env.sh.patch"
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/Makefile.linux.mk.patch",
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/compiler.patch",
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/frida-core-src-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/frida-python-src-_frida.c.patch",
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/frida-python-src-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/frida-python-version.diff",
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/ndk_version.patch",
+      "https://github.com/termux/termux-packages/blob/56e38728f/root-packages/frida/setup-env.sh.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/Makefile.linux.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/compiler.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/frida-python-src-_frida.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/frida-python-src-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/frida-python-version.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/frida-version.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/ndk_version.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/25288dc7e/root-packages/frida-server/setup-env.sh.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/Makefile.linux.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/compiler.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/frida-core-src-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/frida-python-src-_frida.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/frida-python-src-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/frida-python-version.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/ndk_version.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/56e38728f/root-packages/frida/setup-env.sh.patch"
     ]
   },
   {
