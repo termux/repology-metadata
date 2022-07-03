@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
-        token: ${{ secrets.GH_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Install json tools
       run: |
         sudo apt update
