@@ -4,6 +4,7 @@
 #
 #  Copyright 2018 Fredrik Fornwall <fredrik@fornwall.net> @fornwall
 #  Copyright 2022 Henrik Grimler <grimler@termux.org>
+#  Copyright 2022 Yaksh Bariya <yakshbari4@gmail.com>
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -20,10 +21,10 @@
 
 set -e
 
-BASEDIR=$(dirname "$(realpath "$0")")
+TERMUX_PACKAGES_DIR=$(realpath $1)
 export TERMUX_ARCH=aarch64
 export TERMUX_ARCH_BITS=64
-. $(dirname "$(realpath "$0")")/properties.sh
+. $TERMUX_PACKAGES_DIR/scripts/properties.sh
 
 print_json_element() {
 	entry="$1" # For example "name"
@@ -138,23 +139,23 @@ check_package() {
 }
 
 if [ $# -eq 0 ]; then
-	echo "Usage: generate-repology-metadata.sh [./path/to/pkg/dir] ..."
+	echo "Usage: generate-repology-metadata.sh [./path/to/termux-packages]"
 	echo "Generate package metadata for Repology."
 	exit 1
 fi
 
 export FIRST=yes
 echo "["
-for path in "$@"; do
-	if [ $FIRST = yes ]; then
-		FIRST=no
-	else
-		echo -n ","
-		echo ""
-	fi
-
-	# Run each package in separate process since we include their environment variables:
-	( check_package $path )
+for repo_path in $(jq --raw-output 'keys | .[]' $TERMUX_PACKAGES_DIR/repo.json); do
+	for package_path in $TERMUX_PACKAGES_DIR/$repo_path/*; do
+		if [ "$FIRST" = "yes" ]; then
+			FIRST=no
+		else
+			echo ","
+		fi
+		# Run each package in separate process since we include their environment variables
+		( check_package $package_path )
+	done
 done
 echo ""
 echo "]"

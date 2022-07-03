@@ -24,7 +24,7 @@ jobs:
         git clone https://github.com/termux/termux-packages.git /tmp/repos/termux-packages
     - name: Generate packages.json
       run: |
-        bash ./generate-repology-metadata.sh /tmp/repos/termux-packages/{,root-,x11-}packages/* > ./packages.json
+        bash ./generate-repology-metadata.sh /tmp/repos/termux-packages > ./packages.json
 
         if ! jq . ./packages.json > /dev/null; then
           echo "Error: invalid packages.json" > /dev/stderr
