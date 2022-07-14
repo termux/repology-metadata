@@ -21214,7 +21214,7 @@
   },
   {
     "name": "mu",
-    "version": "1.8.5",
+    "version": "1.8.6",
     "description": "Maildir indexer/searcher and Emacs client (mu4e)",
     "homepage": "https://www.djcbsoftware.nl/code/mu/",
     "depends": [
@@ -21224,16 +21224,16 @@
       "libxapian",
       "libgmime"
     ],
-    "srcurl": "https://github.com/djcb/mu/archive/refs/tags/v1.8.5.tar.gz",
+    "srcurl": "https://github.com/djcb/mu/archive/refs/tags/v1.8.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f5ea91e2b/packages/mu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f5ea91e2b/packages/mu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f5ea91e2b/packages/mu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b21786f16/packages/mu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b21786f16/packages/mu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b21786f16/packages/mu/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f5ea91e2b/packages/mu/mu4e-dont-bytecompile-meson.patch"
+      "https://github.com/termux/termux-packages/blob/b21786f16/packages/mu/mu4e-dont-bytecompile-meson.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f5ea91e2b/packages/mu/mu4e-dont-bytecompile-meson.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b21786f16/packages/mu/mu4e-dont-bytecompile-meson.patch"
     ]
   },
   {
@@ -41516,27 +41516,24 @@
   },
   {
     "name": "sdl2-mixer",
-    "version": "2.0.4",
+    "version": "2.6.1",
     "description": "A simple multi-channel audio mixer",
-    "homepage": "http://www.libsdl.org/projects/SDL_mixer",
+    "homepage": "https://github.com/libsdl-org/SDL_mixer",
     "depends": [
       "libflac",
+      "libmodplug",
       "libvorbis",
       "mpg123",
       "opusfile",
       "sdl2"
     ],
-    "srcurl": "https://www.libsdl.org/projects/SDL_mixer/release/SDL2_mixer-2.0.4.tar.gz",
+    "srcurl": "https://github.com/libsdl-org/SDL_mixer/releases/download/release-2.6.1/SDL2_mixer-2.6.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e1eeb62e2/x11-packages/sdl2-mixer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e1eeb62e2/x11-packages/sdl2-mixer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e1eeb62e2/x11-packages/sdl2-mixer/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e1eeb62e2/x11-packages/sdl2-mixer/timidity_options.h.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e1eeb62e2/x11-packages/sdl2-mixer/timidity_options.h.patch"
-    ]
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f981901b6/x11-packages/sdl2-mixer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f981901b6/x11-packages/sdl2-mixer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f981901b6/x11-packages/sdl2-mixer/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "sdl2-net",
