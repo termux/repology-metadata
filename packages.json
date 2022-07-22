@@ -337,15 +337,15 @@
   },
   {
     "name": "alist",
-    "version": "2.6.2",
+    "version": "2.6.3",
     "description": "A file list program that supports multiple storage",
     "homepage": "https://alist-doc.nn.ci",
     "depends": [],
-    "srcurl": "https://github.com/alist-org/alist/archive/v2.6.2.tar.gz",
+    "srcurl": "https://github.com/alist-org/alist/archive/v2.6.3.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2b7f84675/packages/alist",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2b7f84675/packages/alist/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2b7f84675/packages/alist/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d0cce1185/packages/alist",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d0cce1185/packages/alist/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d0cce1185/packages/alist/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -10677,15 +10677,15 @@
   },
   {
     "name": "hz",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A high-performance and strong-extensibility Go HTTP framework that helps developers build microservices",
     "homepage": "https://www.cloudwego.io",
     "depends": [],
-    "srcurl": "https://github.com/cloudwego/hertz/archive/refs/tags/v0.1.0.tar.gz",
+    "srcurl": "https://github.com/cloudwego/hertz/archive/refs/tags/v0.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f17b9b63e/packages/hz",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f17b9b63e/packages/hz/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f17b9b63e/packages/hz/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b7157f985/packages/hz",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b7157f985/packages/hz/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b7157f985/packages/hz/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -13295,6 +13295,20 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/libconfuse",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/libconfuse/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/libconfuse/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "libcpufeatures",
+    "version": "0.7.0",
+    "description": "A cross-platform C library to retrieve CPU features (such as available instructions) at runtime",
+    "homepage": "https://github.com/google/cpu_features",
+    "depends": [],
+    "srcurl": "https://github.com/google/cpu_features/archive/refs/tags/v0.7.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/91b2ab57d/packages/libcpufeatures",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91b2ab57d/packages/libcpufeatures/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91b2ab57d/packages/libcpufeatures/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -30155,13 +30169,14 @@
   },
   {
     "name": "tesseract",
-    "version": "5.1.0",
+    "version": "5.2.0",
     "description": "Tesseract is probably the most accurate open source OCR engine available",
     "homepage": "https://github.com/tesseract-ocr/tesseract",
     "depends": [
       "leptonica",
       "libandroid-glob",
       "libandroid-posix-semaphore",
+      "libcpufeatures",
       "libc++",
       "libicu",
       "libtool",
@@ -30169,18 +30184,16 @@
       "pango",
       "zstd"
     ],
-    "srcurl": "https://github.com/tesseract-ocr/tesseract/archive/5.1.0.tar.gz",
+    "srcurl": "https://github.com/tesseract-ocr/tesseract/archive/5.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e0864fbb/packages/tesseract",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e0864fbb/packages/tesseract/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e0864fbb/packages/tesseract/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9eb2f2beb/packages/tesseract",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9eb2f2beb/packages/tesseract/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9eb2f2beb/packages/tesseract/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3e0864fbb/packages/tesseract/src-arch-simddetect.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/3e0864fbb/packages/tesseract/src-training-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/9eb2f2beb/packages/tesseract/src-training-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3e0864fbb/packages/tesseract/src-arch-simddetect.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e0864fbb/packages/tesseract/src-training-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9eb2f2beb/packages/tesseract/src-training-CMakeLists.txt.patch"
     ]
   },
   {
@@ -33281,25 +33294,25 @@
   },
   {
     "name": "ytfzf",
-    "version": "2.2",
+    "version": "2.4.0",
     "description": "A POSIX script that helps you find Youtube videos (without API)",
     "homepage": "https://github.com/pystardust/ytfzf",
     "depends": [
       "curl",
       "jq"
     ],
-    "srcurl": "https://github.com/pystardust/ytfzf/archive/refs/tags/v2.2.tar.gz",
+    "srcurl": "https://github.com/pystardust/ytfzf/archive/refs/tags/v2.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bdb96ed21/packages/ytfzf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bdb96ed21/packages/ytfzf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bdb96ed21/packages/ytfzf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/338ab2c6f/packages/ytfzf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/338ab2c6f/packages/ytfzf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/338ab2c6f/packages/ytfzf/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bdb96ed21/packages/ytfzf/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/bdb96ed21/packages/ytfzf/ytfzf.patch"
+      "https://github.com/termux/termux-packages/blob/338ab2c6f/packages/ytfzf/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/338ab2c6f/packages/ytfzf/ytfzf.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb96ed21/packages/ytfzf/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb96ed21/packages/ytfzf/ytfzf.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/338ab2c6f/packages/ytfzf/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/338ab2c6f/packages/ytfzf/ytfzf.patch"
     ]
   },
   {
