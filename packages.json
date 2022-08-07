@@ -12836,6 +12836,23 @@
     ]
   },
   {
+    "name": "libasio",
+    "version": "1.22.2",
+    "description": "Cross-platform C++ library for network and low-level I/O programming",
+    "homepage": "https://think-async.com/Asio",
+    "depends": [
+      "openssl",
+      "boost"
+    ],
+    "srcurl": "http://downloads.sourceforge.net/project/asio/asio/1.22.2%20%28Stable%29/asio-1.22.2.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/abf62e4e8/packages/libasio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abf62e4e8/packages/libasio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abf62e4e8/packages/libasio/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "libass",
     "version": "0.16.0",
     "description": "A portable library for SSA/ASS subtitles rendering",
@@ -14956,44 +14973,44 @@
     ],
     "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.6/llvm-project-14.0.6.src.tar.xz",
     "maintainer": "@buttaface",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/404e7303e/packages/libllvm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60cb712d6/packages/libllvm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/cxx-libm.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/llvm-tools-llvm-shlib-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/openmp-config-ix-m32.patch",
-      "https://github.com/termux/termux-packages/blob/404e7303e/packages/libllvm/openmp-runtime-src-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/cxx-libm.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/llvm-tools-llvm-shlib-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/openmp-config-ix-m32.patch",
+      "https://github.com/termux/termux-packages/blob/60cb712d6/packages/libllvm/openmp-runtime-src-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/cxx-libm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/llvm-tools-llvm-shlib-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/openmp-config-ix-m32.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/404e7303e/packages/libllvm/openmp-runtime-src-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/cxx-libm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/llvm-tools-llvm-shlib-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/openmp-config-ix-m32.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60cb712d6/packages/libllvm/openmp-runtime-src-CMakeLists.txt.patch"
     ]
   },
   {
@@ -18360,7 +18377,7 @@
   },
   {
     "name": "libwebp",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Library to encode and decode images in WebP format",
     "homepage": "https://github.com/webmproject/libwebp",
     "depends": [
@@ -18369,11 +18386,11 @@
       "libpng",
       "libtiff"
     ],
-    "srcurl": "https://github.com/webmproject/libwebp/archive/v1.2.3.tar.gz",
+    "srcurl": "https://github.com/webmproject/libwebp/archive/v1.2.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/85e981522/packages/libwebp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/85e981522/packages/libwebp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/85e981522/packages/libwebp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/88bf57090/packages/libwebp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88bf57090/packages/libwebp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88bf57090/packages/libwebp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -21500,7 +21517,7 @@
   },
   {
     "name": "mu",
-    "version": "1.8.7",
+    "version": "1.8.8",
     "description": "Maildir indexer/searcher and Emacs client (mu4e)",
     "homepage": "https://www.djcbsoftware.nl/code/mu/",
     "depends": [
@@ -21510,16 +21527,16 @@
       "libxapian",
       "libgmime"
     ],
-    "srcurl": "https://github.com/djcb/mu/archive/refs/tags/v1.8.7.tar.gz",
+    "srcurl": "https://github.com/djcb/mu/archive/refs/tags/v1.8.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d06734239/packages/mu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d06734239/packages/mu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d06734239/packages/mu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/aa7f3c385/packages/mu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aa7f3c385/packages/mu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aa7f3c385/packages/mu/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d06734239/packages/mu/mu4e-dont-bytecompile-meson.patch"
+      "https://github.com/termux/termux-packages/blob/aa7f3c385/packages/mu/mu4e-dont-bytecompile-meson.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d06734239/packages/mu/mu4e-dont-bytecompile-meson.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/aa7f3c385/packages/mu/mu4e-dont-bytecompile-meson.patch"
     ]
   },
   {
@@ -32594,23 +32611,23 @@
   },
   {
     "name": "vtm",
-    "version": "0.7.6",
+    "version": "0.8.0",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://vtm.netxs.online/",
     "depends": [
       "libandroid-spawn",
       "libc++"
     ],
-    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.7.6.tar.gz",
+    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f9f9a1f7/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f9f9a1f7/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f9f9a1f7/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb86313a3/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb86313a3/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb86313a3/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5f9f9a1f7/packages/vtm/netxs-os-system.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/eb86313a3/packages/vtm/netxs-os-system.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5f9f9a1f7/packages/vtm/netxs-os-system.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/eb86313a3/packages/vtm/netxs-os-system.hpp.patch"
     ]
   },
   {
@@ -32885,9 +32902,9 @@
     ],
     "srcurl": "https://github.com/poljar/weechat-matrix-rs.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/34c02ae6b/packages/weechat-matrix-rs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/34c02ae6b/packages/weechat-matrix-rs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/34c02ae6b/packages/weechat-matrix-rs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ea13c4b45/packages/weechat-matrix-rs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ea13c4b45/packages/weechat-matrix-rs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ea13c4b45/packages/weechat-matrix-rs/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
