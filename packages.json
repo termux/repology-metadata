@@ -2480,6 +2480,20 @@
     ]
   },
   {
+    "name": "byacc",
+    "version": "20220128",
+    "description": "byacc is generally conceded to be the best yacc variant available",
+    "homepage": "https://invisible-island.net/byacc/",
+    "depends": [],
+    "srcurl": "https://invisible-island.net/archives/byacc/byacc-20220128.tgz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/13aaa0814/packages/byacc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/13aaa0814/packages/byacc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/13aaa0814/packages/byacc/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "byobu",
     "version": "5.133",
     "description": "Byobu is a GPLv3 open source text-based window manager and terminal multiplexer",
@@ -3439,7 +3453,7 @@
   },
   {
     "name": "cmake",
-    "version": "3.23.2",
+    "version": "3.24.1",
     "description": "Family of tools designed to build, test and package software",
     "homepage": "https://cmake.org/",
     "depends": [
@@ -3452,18 +3466,18 @@
       "rhash",
       "zlib"
     ],
-    "srcurl": "https://www.cmake.org/files/v3.23/cmake-3.23.2.tar.gz",
+    "srcurl": "https://www.cmake.org/files/v3.24/cmake-3.24.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/cmake",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/cmake/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/cmake/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/73948c0b6/packages/cmake",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/73948c0b6/packages/cmake/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/73948c0b6/packages/cmake/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
+      "https://github.com/termux/termux-packages/blob/73948c0b6/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/73948c0b6/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/73948c0b6/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/73948c0b6/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
     ]
   },
   {
@@ -9015,6 +9029,20 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/153d6e045/packages/guile18/configure.patch"
     ]
+  },
+  {
+    "name": "gum",
+    "version": "0.4.0",
+    "description": "A tool for creating minimal interactive TUIs for shell scripts",
+    "homepage": "https://github.com/charmbracelet/gum",
+    "depends": [],
+    "srcurl": "https://github.com/charmbracelet/gum/archive/refs/tags/v0.4.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f103ac030/packages/gum",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f103ac030/packages/gum/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f103ac030/packages/gum/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "gumbo-parser",
@@ -16013,13 +16041,14 @@
     "description": "A Library for doing Number Theory",
     "homepage": "https://libntl.org",
     "depends": [
+      "libgf2x",
       "libgmp"
     ],
     "srcurl": "https://libntl.org/ntl-11.5.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9336afdaa/packages/libntl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9336afdaa/packages/libntl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9336afdaa/packages/libntl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4cc0c40a1/packages/libntl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4cc0c40a1/packages/libntl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4cc0c40a1/packages/libntl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -29607,15 +29636,15 @@
   },
   {
     "name": "stylua",
-    "version": "0.14.2",
+    "version": "0.14.3",
     "description": "An opinionated Lua code formatter",
     "homepage": "https://github.com/JohnnyMorganz/StyLua",
     "depends": [],
-    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.14.2.tar.gz",
+    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.14.3.tar.gz",
     "maintainer": "@shadmansaleh",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fcac32f8f/packages/stylua",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fcac32f8f/packages/stylua/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fcac32f8f/packages/stylua/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c2cf99300/packages/stylua",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c2cf99300/packages/stylua/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c2cf99300/packages/stylua/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -31721,7 +31750,7 @@
   },
   {
     "name": "ugit",
-    "version": "5.2",
+    "version": "5.3",
     "description": "ugit helps you undo your last git command with grace. Your damage control git buddy",
     "homepage": "https://github.com/Bhupesh-V/ugit",
     "depends": [
@@ -31730,16 +31759,16 @@
       "ncurses-utils",
       "ugit"
     ],
-    "srcurl": "https://github.com/Bhupesh-V/ugit/archive/v5.2.tar.gz",
+    "srcurl": "https://github.com/Bhupesh-V/ugit/archive/v5.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a33171efe/packages/ugit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a33171efe/packages/ugit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a33171efe/packages/ugit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a76556af4/packages/ugit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a76556af4/packages/ugit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a76556af4/packages/ugit/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a33171efe/packages/ugit/ugit.patch"
+      "https://github.com/termux/termux-packages/blob/a76556af4/packages/ugit/ugit.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a33171efe/packages/ugit/ugit.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a76556af4/packages/ugit/ugit.patch"
     ]
   },
   {
@@ -41814,7 +41843,7 @@
   },
   {
     "name": "scite",
-    "version": "5.2.4",
+    "version": "5.3.0",
     "description": "A free source code editor",
     "homepage": "https://www.scintilla.org/SciTE.html",
     "depends": [
@@ -41826,20 +41855,20 @@
       "libcairo",
       "pango"
     ],
-    "srcurl": "https://www.scintilla.org/scite524.tgz",
+    "srcurl": "https://www.scintilla.org/scite530.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/329d3b226/x11-packages/scite",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/scite/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/scite/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4381b4d7c/x11-packages/scite",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4381b4d7c/x11-packages/scite/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4381b4d7c/x11-packages/scite/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/scite/lexilla-src-makefile.patch",
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/scite/scintilla-gtk-makefile.patch",
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/scite/scite-gtk-makefile.patch"
+      "https://github.com/termux/termux-packages/blob/4381b4d7c/x11-packages/scite/lexilla-src-makefile.patch",
+      "https://github.com/termux/termux-packages/blob/4381b4d7c/x11-packages/scite/scintilla-gtk-makefile.patch",
+      "https://github.com/termux/termux-packages/blob/4381b4d7c/x11-packages/scite/scite-gtk-makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/scite/lexilla-src-makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/scite/scintilla-gtk-makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/scite/scite-gtk-makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4381b4d7c/x11-packages/scite/lexilla-src-makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4381b4d7c/x11-packages/scite/scintilla-gtk-makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4381b4d7c/x11-packages/scite/scite-gtk-makefile.patch"
     ]
   },
   {
