@@ -8363,26 +8363,26 @@
   },
   {
     "name": "golang",
-    "version": "3:1.19",
+    "version": "3:1.19.1",
     "description": "Go programming language compiler",
     "homepage": "https://golang.org/",
     "depends": [
       "clang"
     ],
-    "srcurl": "https://storage.googleapis.com/golang/go1.19.src.tar.gz",
+    "srcurl": "https://storage.googleapis.com/golang/go1.19.1.src.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/188397112/packages/golang",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/188397112/packages/golang/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/188397112/packages/golang/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c5ed87a7/packages/golang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c5ed87a7/packages/golang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c5ed87a7/packages/golang/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/188397112/packages/golang/fix-hardcoded-etc-resolv-conf.diff",
-      "https://github.com/termux/termux-packages/blob/188397112/packages/golang/src-runtime-cgo-cgo.go.patch",
-      "https://github.com/termux/termux-packages/blob/188397112/packages/golang/src-runtime-cgo-gcc_android.c.patch"
+      "https://github.com/termux/termux-packages/blob/0c5ed87a7/packages/golang/fix-hardcoded-etc-resolv-conf.diff",
+      "https://github.com/termux/termux-packages/blob/0c5ed87a7/packages/golang/src-runtime-cgo-cgo.go.patch",
+      "https://github.com/termux/termux-packages/blob/0c5ed87a7/packages/golang/src-runtime-cgo-gcc_android.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/188397112/packages/golang/fix-hardcoded-etc-resolv-conf.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/188397112/packages/golang/src-runtime-cgo-cgo.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/188397112/packages/golang/src-runtime-cgo-gcc_android.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0c5ed87a7/packages/golang/fix-hardcoded-etc-resolv-conf.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/0c5ed87a7/packages/golang/src-runtime-cgo-cgo.go.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0c5ed87a7/packages/golang/src-runtime-cgo-gcc_android.c.patch"
     ]
   },
   {
@@ -18149,9 +18149,9 @@
     "depends": [],
     "srcurl": "https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1319744c2/packages/libtreesitter",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1319744c2/packages/libtreesitter/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1319744c2/packages/libtreesitter/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/85a4bd8d5/packages/libtreesitter",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/85a4bd8d5/packages/libtreesitter/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/85a4bd8d5/packages/libtreesitter/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -20236,7 +20236,7 @@
   },
   {
     "name": "mariadb",
-    "version": "2:10.8.4",
+    "version": "2:10.9.2",
     "description": "A drop-in replacement for mysql server",
     "homepage": "https://mariadb.org",
     "depends": [
@@ -20253,30 +20253,32 @@
       "zlib",
       "liblz4"
     ],
-    "srcurl": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.8.4/source/mariadb-10.8.4.tar.gz",
+    "srcurl": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.9.2/source/mariadb-10.9.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1fad620aa/packages/mariadb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3b3a637dd/packages/mariadb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/client-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/cmake-install_layout.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/etc-my.cnf.patch",
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/my_rdtsc.h.patch",
-      "https://github.com/termux/termux-packages/blob/1fad620aa/packages/mariadb/scripts-mysql_install_db.sh.patch"
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/client-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/cmake-install_layout.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/etc-my.cnf.patch",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/my_rdtsc.h.patch",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/scripts-mysql_install_db.sh.patch",
+      "https://github.com/termux/termux-packages/blob/3b3a637dd/packages/mariadb/support-files-mysql.server.sh.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/client-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/cmake-install_layout.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/etc-my.cnf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/my_rdtsc.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1fad620aa/packages/mariadb/scripts-mysql_install_db.sh.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/client-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/cmake-install_layout.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/etc-my.cnf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/my_rdtsc.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/scripts-mysql_install_db.sh.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3a637dd/packages/mariadb/support-files-mysql.server.sh.patch"
     ]
   },
   {
@@ -33213,17 +33215,17 @@
   },
   {
     "name": "vulkan-tools",
-    "version": "1.3.226",
+    "version": "1.3.227",
     "description": "Vulkan Tools and Utilities",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Tools",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/v1.3.226.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/v1.3.227.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/efb05b69e/packages/vulkan-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/efb05b69e/packages/vulkan-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/efb05b69e/packages/vulkan-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/03b31f72f/packages/vulkan-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03b31f72f/packages/vulkan-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03b31f72f/packages/vulkan-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -33485,6 +33487,26 @@
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/2d204989e/packages/wget2/fix-hardcoded-paths.patch"
+    ]
+  },
+  {
+    "name": "wgetpaste",
+    "version": "2.32",
+    "description": "wgetpaste is a shell script that allows its users to upload log.",
+    "homepage": "https://github.com/zlin/wgetpaste",
+    "depends": [
+      "wget"
+    ],
+    "srcurl": "https://github.com/zlin/wgetpaste/archive/refs/tags/2.32.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/075b5e705/packages/wgetpaste",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/075b5e705/packages/wgetpaste/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/075b5e705/packages/wgetpaste/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/075b5e705/packages/wgetpaste/fixpath.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/075b5e705/packages/wgetpaste/fixpath.patch"
     ]
   },
   {
