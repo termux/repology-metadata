@@ -13037,15 +13037,15 @@
   },
   {
     "name": "libatomic-ops",
-    "version": "7.6.12",
+    "version": "7.6.14",
     "description": "Provides semi-portable access to hardware-provided atomic memory update operations",
     "homepage": "https://github.com/ivmai/libatomic_ops",
     "depends": [],
-    "srcurl": "https://github.com/ivmai/libatomic_ops/releases/download/v7.6.12/libatomic_ops-7.6.12.tar.gz",
+    "srcurl": "https://github.com/ivmai/libatomic_ops/releases/download/v7.6.14/libatomic_ops-7.6.14.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8e8a13cee/packages/libatomic-ops",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8e8a13cee/packages/libatomic-ops/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8e8a13cee/packages/libatomic-ops/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a688d15f/packages/libatomic-ops",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a688d15f/packages/libatomic-ops/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a688d15f/packages/libatomic-ops/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -19712,15 +19712,15 @@
   },
   {
     "name": "lsd",
-    "version": "0.23.0",
+    "version": "0.23.1",
     "description": "Next gen ls command",
     "homepage": "https://github.com/Peltoche/lsd",
     "depends": [],
-    "srcurl": "https://github.com/Peltoche/lsd/archive/0.23.0.tar.gz",
+    "srcurl": "https://github.com/Peltoche/lsd/archive/0.23.1.tar.gz",
     "maintainer": "Krishna Kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3318cb6b/packages/lsd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3318cb6b/packages/lsd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3318cb6b/packages/lsd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/673343a7b/packages/lsd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/673343a7b/packages/lsd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/673343a7b/packages/lsd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -20946,6 +20946,23 @@
     ]
   },
   {
+    "name": "mingw-w64",
+    "version": "0.1",
+    "description": "MinGW-w64 toolchain (metapackage)",
+    "homepage": "https://github.com/termux/termux-packages",
+    "depends": [
+      "clang",
+      "mingw-w64-crt",
+      "mingw-w64-gcc-libs"
+    ],
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/066096b98/packages/mingw-w64",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/066096b98/packages/mingw-w64/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/066096b98/packages/mingw-w64/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "mingw-w64-crt",
     "version": "10.0.0",
     "description": "MinGW-w64 runtime",
@@ -20956,6 +20973,20 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/5f7eafa99/packages/mingw-w64-crt",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f7eafa99/packages/mingw-w64-crt/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f7eafa99/packages/mingw-w64-crt/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "mingw-w64-gcc-libs",
+    "version": "12.2.0",
+    "description": "Libraries coming with GCC (libgcc, libstdc++, etc.)",
+    "homepage": "https://gcc.gnu.org/",
+    "depends": [],
+    "srcurl": "https://ftp.gnu.org/gnu/gcc/gcc-12.2.0/gcc-12.2.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c841c1f67/packages/mingw-w64-gcc-libs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c841c1f67/packages/mingw-w64-gcc-libs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c841c1f67/packages/mingw-w64-gcc-libs/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -22506,7 +22537,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "1:0.8.0-dev-1071-gf98cff957",
+    "version": "1:0.8.0-dev-1081-g907fc8ac3",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -22523,20 +22554,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a38363c3/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a38363c3/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a38363c3/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e996003cf/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e996003cf/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e996003cf/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5a38363c3/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/5a38363c3/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://github.com/termux/termux-packages/blob/5a38363c3/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/5a38363c3/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/e996003cf/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e996003cf/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://github.com/termux/termux-packages/blob/e996003cf/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/e996003cf/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5a38363c3/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5a38363c3/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5a38363c3/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5a38363c3/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e996003cf/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e996003cf/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e996003cf/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e996003cf/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
