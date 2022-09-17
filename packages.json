@@ -1212,6 +1212,26 @@
     ]
   },
   {
+    "name": "at-spi2-core",
+    "version": "2.44.1",
+    "description": "Assistive Technology Service Provider Interface (AT-SPI)",
+    "homepage": "https://wiki.gnome.org/Accessibility",
+    "depends": [
+      "dbus",
+      "glib",
+      "libx11",
+      "libxi",
+      "libxtst"
+    ],
+    "srcurl": "https://download.gnome.org/sources/at-spi2-core/2.44/at-spi2-core-2.44.1.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a901ddcc1/packages/at-spi2-core",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a901ddcc1/packages/at-spi2-core/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a901ddcc1/packages/at-spi2-core/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "atomicparsley",
     "version": "1:20210715.151551.e7ad03a",
     "description": "Read, parse and set metadata of MPEG-4 and 3gp files",
@@ -8679,6 +8699,22 @@
     ]
   },
   {
+    "name": "graphene",
+    "version": "1.10.6",
+    "description": "A thin layer of graphic data types",
+    "homepage": "https://ebassi.github.io/graphene/",
+    "depends": [
+      "glib"
+    ],
+    "srcurl": "https://github.com/ebassi/graphene/releases/download/1.10.6/graphene-1.10.6.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dc83c22d1/packages/graphene",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dc83c22d1/packages/graphene/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dc83c22d1/packages/graphene/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "graphicsmagick",
     "version": "1.3.38",
     "description": "Collection of image processing tools",
@@ -8921,6 +8957,7 @@
     "description": "GStreamer base plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
+      "graphene",
       "gstreamer",
       "libandroid-shmem",
       "libjpeg-turbo",
@@ -8931,9 +8968,9 @@
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.20.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1570945a5/packages/gst-plugins-base",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1570945a5/packages/gst-plugins-base/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1570945a5/packages/gst-plugins-base/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f1c08d79b/packages/gst-plugins-base",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f1c08d79b/packages/gst-plugins-base/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f1c08d79b/packages/gst-plugins-base/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24381,38 +24418,38 @@
     ],
     "srcurl": "https://sources.archlinux.org/other/pacman/pacman-6.0.1.tar.xz",
     "maintainer": "@Maxython",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/129ea12d9/packages/pacman",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ca8af6cd/packages/pacman",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/add.c.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/doc_meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/executable_meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/makepkg.conf.in.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/makepkg.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/meson_options.txt.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/pacman-key.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/pacman.c.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/pacman.conf.in.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/repo-add.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/trans.c.patch",
-      "https://github.com/termux/termux-packages/blob/129ea12d9/packages/pacman/util.c.patch"
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/add.c.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/doc_meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/executable_meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/makepkg.conf.in.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/makepkg.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/meson_options.txt.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/pacman-key.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/pacman.c.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/pacman.conf.in.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/repo-add.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/trans.c.patch",
+      "https://github.com/termux/termux-packages/blob/1ca8af6cd/packages/pacman/util.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/add.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/doc_meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/executable_meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/makepkg.conf.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/makepkg.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/meson_options.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/pacman-key.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/pacman.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/pacman.conf.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/repo-add.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/trans.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129ea12d9/packages/pacman/util.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/add.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/doc_meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/executable_meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/makepkg.conf.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/makepkg.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/meson_options.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/pacman-key.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/pacman.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/pacman.conf.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/repo-add.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/trans.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1ca8af6cd/packages/pacman/util.c.patch"
     ]
   },
   {
@@ -36094,22 +36131,18 @@
     "description": "A GTK+ module that bridges ATK to D-Bus at-spi",
     "homepage": "https://wiki.linuxfoundation.org/accessibility/atk/at-spi/at-spi_on_d-bus",
     "depends": [
+      "at-spi2-core",
       "dbus",
       "glib",
-      "atk",
-      "libxtst"
+      "atk"
     ],
-    "srcurl": "https://gitlab.gnome.org/GNOME/at-spi2-atk.git",
+    "srcurl": "https://download.gnome.org/sources/at-spi2-atk/2.38/at-spi2-atk-2.38.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0754641ea/x11-packages/at-spi2-atk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0754641ea/x11-packages/at-spi2-atk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0754641ea/x11-packages/at-spi2-atk/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0754641ea/x11-packages/at-spi2-atk/at-spi2-core.wrap.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0754641ea/x11-packages/at-spi2-atk/at-spi2-core.wrap.patch"
-    ]
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d68ecc142/x11-packages/at-spi2-atk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d68ecc142/x11-packages/at-spi2-atk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d68ecc142/x11-packages/at-spi2-atk/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "aterm",
@@ -37760,22 +37793,6 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/4cba04154/x11-packages/gpg-crypter",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/4cba04154/x11-packages/gpg-crypter/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4cba04154/x11-packages/gpg-crypter/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
-  },
-  {
-    "name": "graphene",
-    "version": "1.10.6",
-    "description": "A thin layer of graphic data types",
-    "homepage": "https://ebassi.github.io/graphene/",
-    "depends": [
-      "glib"
-    ],
-    "srcurl": "https://github.com/ebassi/graphene/releases/download/1.10.6/graphene-1.10.6.tar.xz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c9d99542e/x11-packages/graphene",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c9d99542e/x11-packages/graphene/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c9d99542e/x11-packages/graphene/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
