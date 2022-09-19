@@ -3166,15 +3166,15 @@
   },
   {
     "name": "chezmoi",
-    "version": "2.22.1",
+    "version": "2.23.0",
     "description": "Manage your dotfiles across multiple machines",
     "homepage": "https://chezmoi.io",
     "depends": [],
-    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.22.1.tar.gz",
+    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.23.0.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/87e0504f4/packages/chezmoi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87e0504f4/packages/chezmoi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87e0504f4/packages/chezmoi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bcb778e68/packages/chezmoi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bcb778e68/packages/chezmoi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bcb778e68/packages/chezmoi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11986,7 +11986,9 @@
     "description": "A tool that optimizes PDF files for viewing on mobile readers",
     "homepage": "https://www.willus.com/k2pdfopt/",
     "depends": [
+      "djvulibre",
       "ghostscript",
+      "gsl",
       "leptonica",
       "libjasper",
       "libjpeg-turbo",
@@ -11995,44 +11997,44 @@
     ],
     "srcurl": "https://www.willus.com/k2pdfopt/src/k2pdfopt_v2.53_src.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/606c265a4/packages/k2pdfopt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d2be411fb/packages/k2pdfopt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0001-CMakeLists.txt-bugs.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0002-CMakeLists.txt-no-mupdf.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0003-CMakeLists.txt-no-detect-ghostscript-at-compile-time.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0004-willuslib-CMakeLists.txt-typo.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0005-willuslib-use-system-leptonica.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0006-k2pdfopt.h-dst_ocr_visibility_flags-workaround.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0007-dont-link-pthread.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0007-k2pdfoptlib-k2ocr.c-conditionally-enable-tesseract-r.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0008-willuslib-gslpolyfit.c-use-system-gsl.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0009-CMakeLists.txt-use-system-gocr.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0010-willuslib-use-system-djvu.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/0011-disable-tesseract.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/fix-termios-header-path.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/jasper-fix.patch",
-      "https://github.com/termux/termux-packages/blob/606c265a4/packages/k2pdfopt/no-android.patch"
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0001-CMakeLists.txt-bugs.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0002-CMakeLists.txt-no-mupdf.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0003-CMakeLists.txt-no-detect-ghostscript-at-compile-time.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0004-willuslib-CMakeLists.txt-typo.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0005-willuslib-use-system-leptonica.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0006-k2pdfopt.h-dst_ocr_visibility_flags-workaround.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0007-dont-link-pthread.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0007-k2pdfoptlib-k2ocr.c-conditionally-enable-tesseract-r.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0008-willuslib-gslpolyfit.c-use-system-gsl.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0009-CMakeLists.txt-use-system-gocr.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0010-willuslib-use-system-djvu.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/0011-disable-tesseract.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/fix-termios-header-path.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/jasper-fix.patch",
+      "https://github.com/termux/termux-packages/blob/d2be411fb/packages/k2pdfopt/no-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0001-CMakeLists.txt-bugs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0002-CMakeLists.txt-no-mupdf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0003-CMakeLists.txt-no-detect-ghostscript-at-compile-time.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0004-willuslib-CMakeLists.txt-typo.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0005-willuslib-use-system-leptonica.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0006-k2pdfopt.h-dst_ocr_visibility_flags-workaround.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0007-dont-link-pthread.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0007-k2pdfoptlib-k2ocr.c-conditionally-enable-tesseract-r.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0008-willuslib-gslpolyfit.c-use-system-gsl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0009-CMakeLists.txt-use-system-gocr.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0010-willuslib-use-system-djvu.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/0011-disable-tesseract.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/fix-termios-header-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/jasper-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/606c265a4/packages/k2pdfopt/no-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0001-CMakeLists.txt-bugs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0002-CMakeLists.txt-no-mupdf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0003-CMakeLists.txt-no-detect-ghostscript-at-compile-time.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0004-willuslib-CMakeLists.txt-typo.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0005-willuslib-use-system-leptonica.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0006-k2pdfopt.h-dst_ocr_visibility_flags-workaround.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0007-dont-link-pthread.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0007-k2pdfoptlib-k2ocr.c-conditionally-enable-tesseract-r.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0008-willuslib-gslpolyfit.c-use-system-gsl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0009-CMakeLists.txt-use-system-gocr.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0010-willuslib-use-system-djvu.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/0011-disable-tesseract.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/fix-termios-header-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/jasper-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2be411fb/packages/k2pdfopt/no-android.patch"
     ]
   },
   {
@@ -22606,7 +22608,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "1:0.8.0-dev-1112-g6d557e324",
+    "version": "1:0.8.0-dev-1117-g7bd4c8e8e",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -22623,20 +22625,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3eeb1f32b/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3eeb1f32b/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3eeb1f32b/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cad0c250e/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cad0c250e/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cad0c250e/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3eeb1f32b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/3eeb1f32b/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://github.com/termux/termux-packages/blob/3eeb1f32b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/3eeb1f32b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/cad0c250e/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/cad0c250e/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://github.com/termux/termux-packages/blob/cad0c250e/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/cad0c250e/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3eeb1f32b/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3eeb1f32b/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3eeb1f32b/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3eeb1f32b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cad0c250e/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cad0c250e/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cad0c250e/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cad0c250e/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -41994,6 +41996,26 @@
     ]
   },
   {
+    "name": "qt5-qtscript",
+    "version": "5.15.3",
+    "description": "Qt script module",
+    "homepage": "https://www.qt.io/",
+    "depends": [
+      "qt5-qtbase"
+    ],
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.3/submodules/qtscript-everywhere-opensource-src-5.15.3.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/869a909aa/x11-packages/qt5-qtscript",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/869a909aa/x11-packages/qt5-qtscript/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/869a909aa/x11-packages/qt5-qtscript/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/869a909aa/x11-packages/qt5-qtscript/3rdparty-javascriptcore-yarr-RegexJIT.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/869a909aa/x11-packages/qt5-qtscript/3rdparty-javascriptcore-yarr-RegexJIT.patch"
+    ]
+  },
+  {
     "name": "qt5-qtsensors",
     "version": "5.15.3",
     "description": "Qt 5 Sensors Library",
@@ -42956,6 +42978,37 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/texstudio/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "texworks",
+    "version": "0.6.7",
+    "description": "TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents",
+    "homepage": "https://www.tug.org/texworks/",
+    "depends": [
+      "qt5-qtscript",
+      "liblua53",
+      "poppler-qt",
+      "poppler",
+      "qt5-qtbase",
+      "qt5-qtdeclarative",
+      "zlib",
+      "qt5-qttools",
+      "hunspell",
+      "fontconfig"
+    ],
+    "srcurl": "https://github.com/TeXworks/texworks/archive/refs/tags/release-0.6.7.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8f09a5769/x11-packages/texworks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8f09a5769/x11-packages/texworks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8f09a5769/x11-packages/texworks/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/8f09a5769/x11-packages/texworks/fix-findpoppler.patch",
+      "https://github.com/termux/termux-packages/blob/8f09a5769/x11-packages/texworks/fix-paths.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/8f09a5769/x11-packages/texworks/fix-findpoppler.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8f09a5769/x11-packages/texworks/fix-paths.patch"
+    ]
   },
   {
     "name": "the-powder-toy",
