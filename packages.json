@@ -1939,37 +1939,40 @@
   },
   {
     "name": "binutils",
-    "version": "2.38",
+    "version": "2.39",
     "description": "Collection of binary tools, the main ones being ld, the GNU linker, and as, the GNU assembler",
     "homepage": "https://www.gnu.org/software/binutils/",
     "depends": [
+      "binutils-libs",
       "libc++",
       "zlib"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/binutils/binutils-2.38.tar.xz",
+    "srcurl": "https://mirrors.kernel.org/gnu/binutils/binutils-2.39.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/126e1d0c1/packages/binutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93acab0a5/packages/binutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/binutils.patch",
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/dirsearch.cc.patch",
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/gas-decrease-input-buffer-size.patch",
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/gold-ffsll.c.patch",
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/native_lib_dirs.patch32",
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/native_lib_dirs.patch64",
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/options.cc.patch32",
-      "https://github.com/termux/termux-packages/blob/126e1d0c1/packages/binutils/options.cc.patch64"
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/bfd-dynamic_interpreter.patch",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/binutils.patch",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/dirsearch.cc.patch",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/gas-decrease-input-buffer-size.patch",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/gold-ffsll.c.patch",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/native_lib_dirs.patch32",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/native_lib_dirs.patch64",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/options.cc.patch32",
+      "https://github.com/termux/termux-packages/blob/93acab0a5/packages/binutils/options.cc.patch64"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/binutils.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/dirsearch.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/gas-decrease-input-buffer-size.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/gold-ffsll.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/native_lib_dirs.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/native_lib_dirs.patch64",
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/options.cc.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/126e1d0c1/packages/binutils/options.cc.patch64"
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/bfd-dynamic_interpreter.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/binutils.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/dirsearch.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/gas-decrease-input-buffer-size.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/gold-ffsll.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/native_lib_dirs.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/native_lib_dirs.patch64",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/options.cc.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/93acab0a5/packages/binutils/options.cc.patch64"
     ]
   },
   {
@@ -8670,15 +8673,15 @@
   },
   {
     "name": "gping",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "description": "Ping, but with a graph",
     "homepage": "https://github.com/orf/gping",
     "depends": [],
-    "srcurl": "https://github.com/orf/gping/archive/refs/tags/gping-v1.3.2.zip",
+    "srcurl": "https://github.com/orf/gping/archive/refs/tags/gping-v1.4.0.zip",
     "maintainer": "Krishna kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e815b150/packages/gping",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e815b150/packages/gping/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e815b150/packages/gping/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1422e1ab9/packages/gping",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1422e1ab9/packages/gping/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1422e1ab9/packages/gping/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11708,15 +11711,15 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.26.0",
+    "version": "2.26.1",
     "description": "A CLI for JFrog products",
     "homepage": "https://jfrog.com/getcli",
     "depends": [],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.26.0.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.26.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/47acac603/packages/jfrog-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/47acac603/packages/jfrog-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/47acac603/packages/jfrog-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/044708121/packages/jfrog-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/044708121/packages/jfrog-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/044708121/packages/jfrog-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -19988,11 +19991,15 @@
     ],
     "srcurl": "https://github.com/lycheeverse/lychee/archive/refs/tags/v0.10.1.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/60016d5fd/packages/lychee",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60016d5fd/packages/lychee/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60016d5fd/packages/lychee/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/57e2d99ac/packages/lychee",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/57e2d99ac/packages/lychee/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/57e2d99ac/packages/lychee/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/57e2d99ac/packages/lychee/trust-dns-resolver.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/57e2d99ac/packages/lychee/trust-dns-resolver.diff"
+    ]
   },
   {
     "name": "lynx",
@@ -20524,14 +20531,14 @@
     "depends": [],
     "srcurl": "https://github.com/ARMmbed/mbedtls.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/14dd582f2/packages/mbedtls",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/14dd582f2/packages/mbedtls/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/14dd582f2/packages/mbedtls/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/13b2c7349/packages/mbedtls",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/13b2c7349/packages/mbedtls/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/13b2c7349/packages/mbedtls/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/14dd582f2/packages/mbedtls/temp-fix-arm.patch"
+      "https://github.com/termux/termux-packages/blob/13b2c7349/packages/mbedtls/temp-fix-arm.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/14dd582f2/packages/mbedtls/temp-fix-arm.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/13b2c7349/packages/mbedtls/temp-fix-arm.patch"
     ]
   },
   {
@@ -31532,18 +31539,20 @@
     ],
     "srcurl": "https://github.com/tmux/tmux/archive/3.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b5c8832ca/packages/tmux",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b5c8832ca/packages/tmux/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b5c8832ca/packages/tmux/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2105bd450/packages/tmux",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2105bd450/packages/tmux/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2105bd450/packages/tmux/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b5c8832ca/packages/tmux/compat-imsg.c.patch",
-      "https://github.com/termux/termux-packages/blob/b5c8832ca/packages/tmux/compat-setproctitle.c.patch",
-      "https://github.com/termux/termux-packages/blob/b5c8832ca/packages/tmux/configure.ac.patch"
+      "https://github.com/termux/termux-packages/blob/2105bd450/packages/tmux/compat-imsg.c.patch",
+      "https://github.com/termux/termux-packages/blob/2105bd450/packages/tmux/compat-setproctitle.c.patch",
+      "https://github.com/termux/termux-packages/blob/2105bd450/packages/tmux/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/2105bd450/packages/tmux/tmux.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b5c8832ca/packages/tmux/compat-imsg.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b5c8832ca/packages/tmux/compat-setproctitle.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b5c8832ca/packages/tmux/configure.ac.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2105bd450/packages/tmux/compat-imsg.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2105bd450/packages/tmux/compat-setproctitle.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2105bd450/packages/tmux/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2105bd450/packages/tmux/tmux.h.patch"
     ]
   },
   {
@@ -34232,15 +34241,15 @@
   },
   {
     "name": "youtubedr",
-    "version": "2.7.10",
+    "version": "2.7.16",
     "description": "Download youtube video in Golang",
     "homepage": "https://github.com/kkdai/youtube",
     "depends": [],
-    "srcurl": "https://github.com/kkdai/youtube/archive/v2.7.10.tar.gz",
+    "srcurl": "https://github.com/kkdai/youtube/archive/v2.7.16.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c0b346838/packages/youtubedr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c0b346838/packages/youtubedr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c0b346838/packages/youtubedr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3cac91fee/packages/youtubedr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3cac91fee/packages/youtubedr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3cac91fee/packages/youtubedr/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
