@@ -4900,7 +4900,7 @@
   },
   {
     "name": "dnsutils",
-    "version": "9.16.27",
+    "version": "9.16.33",
     "description": "Clients provided with BIND",
     "homepage": "https://www.isc.org/downloads/bind/",
     "depends": [
@@ -4910,18 +4910,18 @@
       "zlib",
       "libuv"
     ],
-    "srcurl": "ftp://ftp.isc.org/isc/bind9/9.16.27/bind-9.16.27.tar.xz",
+    "srcurl": "ftp://ftp.isc.org/isc/bind9/9.16.33/bind-9.16.33.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/238ba05b5/packages/dnsutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/238ba05b5/packages/dnsutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/238ba05b5/packages/dnsutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c8986e634/packages/dnsutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c8986e634/packages/dnsutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c8986e634/packages/dnsutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/238ba05b5/packages/dnsutils/bin-delv-delv.c.patch",
-      "https://github.com/termux/termux-packages/blob/238ba05b5/packages/dnsutils/lib-irs-context.c.patch"
+      "https://github.com/termux/termux-packages/blob/c8986e634/packages/dnsutils/bin-delv-delv.c.patch",
+      "https://github.com/termux/termux-packages/blob/c8986e634/packages/dnsutils/lib-irs-context.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/238ba05b5/packages/dnsutils/bin-delv-delv.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/238ba05b5/packages/dnsutils/lib-irs-context.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c8986e634/packages/dnsutils/bin-delv-delv.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c8986e634/packages/dnsutils/lib-irs-context.c.patch"
     ]
   },
   {
@@ -10447,15 +10447,15 @@
   },
   {
     "name": "helm",
-    "version": "3.9.4",
+    "version": "3.10.0",
     "description": "Helm helps you manage Kubernetes applications",
     "homepage": "https://helm.sh",
     "depends": [],
-    "srcurl": "https://github.com/helm/helm/archive/v3.9.4.tar.gz",
+    "srcurl": "https://github.com/helm/helm/archive/v3.10.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bdd9043b2/packages/helm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bdd9043b2/packages/helm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bdd9043b2/packages/helm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f26ebfe9a/packages/helm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f26ebfe9a/packages/helm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f26ebfe9a/packages/helm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -23674,6 +23674,29 @@
     ]
   },
   {
+    "name": "oidn",
+    "version": "1.4.3",
+    "description": "Intel® Open Image Denoise library",
+    "homepage": "https://www.openimagedenoise.org",
+    "depends": [
+      "libllvm",
+      "libtbb"
+    ],
+    "srcurl": "https://github.com/OpenImageDenoise/oidn/releases/download/v1.4.3/oidn-1.4.3.src.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0812fa9ec/packages/oidn",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0812fa9ec/packages/oidn/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0812fa9ec/packages/oidn/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/0812fa9ec/packages/oidn/0001-dummy-pthread-affinity.patch",
+      "https://github.com/termux/termux-packages/blob/0812fa9ec/packages/oidn/0002-fix-ambiguous-user.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/0812fa9ec/packages/oidn/0001-dummy-pthread-affinity.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0812fa9ec/packages/oidn/0002-fix-ambiguous-user.patch"
+    ]
+  },
+  {
     "name": "okc-agents",
     "version": "0.1.2",
     "description": "OpenKeychain agents for GnuPG and OpenSSH",
@@ -30159,15 +30182,15 @@
   },
   {
     "name": "stylua",
-    "version": "0.14.3",
+    "version": "0.15.0",
     "description": "An opinionated Lua code formatter",
     "homepage": "https://github.com/JohnnyMorganz/StyLua",
     "depends": [],
-    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.14.3.tar.gz",
+    "srcurl": "https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.15.0.tar.gz",
     "maintainer": "@shadmansaleh",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c2cf99300/packages/stylua",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c2cf99300/packages/stylua/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c2cf99300/packages/stylua/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/54cb6aeee/packages/stylua",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/54cb6aeee/packages/stylua/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/54cb6aeee/packages/stylua/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -32375,7 +32398,7 @@
   },
   {
     "name": "unbound",
-    "version": "1.16.2",
+    "version": "1.16.3",
     "description": "A validating, recursive, caching DNS resolver",
     "homepage": "https://unbound.net/",
     "depends": [
@@ -32384,18 +32407,18 @@
       "libnghttp2",
       "openssl"
     ],
-    "srcurl": "https://nlnetlabs.nl/downloads/unbound/unbound-1.16.2.tar.gz",
+    "srcurl": "https://nlnetlabs.nl/downloads/unbound/unbound-1.16.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/51c9dfa7b/packages/unbound",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51c9dfa7b/packages/unbound/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51c9dfa7b/packages/unbound/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6375961ec/packages/unbound",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6375961ec/packages/unbound/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6375961ec/packages/unbound/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/51c9dfa7b/packages/unbound/libunbound-libunbound.c.patch",
-      "https://github.com/termux/termux-packages/blob/51c9dfa7b/packages/unbound/smallapp-unbound-host.c.patch"
+      "https://github.com/termux/termux-packages/blob/6375961ec/packages/unbound/libunbound-libunbound.c.patch",
+      "https://github.com/termux/termux-packages/blob/6375961ec/packages/unbound/smallapp-unbound-host.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/51c9dfa7b/packages/unbound/libunbound-libunbound.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/51c9dfa7b/packages/unbound/smallapp-unbound-host.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6375961ec/packages/unbound/libunbound-libunbound.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6375961ec/packages/unbound/smallapp-unbound-host.c.patch"
     ]
   },
   {
