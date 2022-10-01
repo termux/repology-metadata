@@ -15863,15 +15863,15 @@
   },
   {
     "name": "libmaxminddb",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "MaxMind GeoIP2 database - library and utilities",
     "homepage": "https://dev.maxmind.com/geoip/geoip2/",
     "depends": [],
-    "srcurl": "https://github.com/maxmind/libmaxminddb/archive/1.7.0.tar.gz",
+    "srcurl": "https://github.com/maxmind/libmaxminddb/archive/1.7.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/10b336d84/packages/libmaxminddb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10b336d84/packages/libmaxminddb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10b336d84/packages/libmaxminddb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e770ef3e/packages/libmaxminddb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e770ef3e/packages/libmaxminddb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e770ef3e/packages/libmaxminddb/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -16509,6 +16509,26 @@
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/libobjc2/libobjc2-2.1-eh_trampoline.patch"
+    ]
+  },
+  {
+    "name": "libode",
+    "version": "0.16.2",
+    "description": "An open source, high performance library for simulating rigid body dynamics",
+    "homepage": "https://www.ode.org",
+    "depends": [
+      "libccd"
+    ],
+    "srcurl": "https://bitbucket.org/odedevs/ode/downloads/ode-0.16.2.tar.gz",
+    "maintainer": "Pooya Moradi <pvonmoradi@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/775437850/packages/libode",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/775437850/packages/libode/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/775437850/packages/libode/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/775437850/packages/libode/CMakeLists.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/775437850/packages/libode/CMakeLists.patch"
     ]
   },
   {
@@ -19223,6 +19243,22 @@
     ]
   },
   {
+    "name": "libxcfun",
+    "version": "2.1.1",
+    "description": "A library of exchange-correlation functionals with arbitrary-order derivatives",
+    "homepage": "https://github.com/dftlibs/xcfun",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/dftlibs/xcfun/archive/refs/tags/v2.1.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/05fe5619c/packages/libxcfun",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/05fe5619c/packages/libxcfun/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/05fe5619c/packages/libxcfun/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "libxcursor",
     "version": "1.2.1",
     "description": "X cursor management library",
@@ -19255,6 +19291,20 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/153d6e045/packages/libxdmcp",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/153d6e045/packages/libxdmcp/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/153d6e045/packages/libxdmcp/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "libxdrfile",
+    "version": "1.1.4",
+    "description": "Library for reading and writing xtc, edr and trr files",
+    "homepage": "https://userguide.mdanalysis.org/stable/formats/reference/xtc.html",
+    "depends": [],
+    "srcurl": "ftp://ftp.gromacs.org/pub/contrib/xdrfile-1.1.4.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5371a5887/packages/libxdrfile",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5371a5887/packages/libxdrfile/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5371a5887/packages/libxdrfile/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24156,6 +24206,29 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "opencolorio",
+    "version": "2.1.2",
+    "description": "A color management framework for visual effects and animation",
+    "homepage": "https://opencolorio.org",
+    "depends": [
+      "freeglut",
+      "glew",
+      "littlecms",
+      "libtinyxml2",
+      "libyaml-cpp",
+      "imath",
+      "libexpat",
+      "pystring"
+    ],
+    "srcurl": "https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v2.1.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a7f34cbd/packages/opencolorio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a7f34cbd/packages/opencolorio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a7f34cbd/packages/opencolorio/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "opencv",
     "version": "4.6.0",
     "description": "Open Source Computer Vision Library",
@@ -25586,7 +25659,7 @@
   },
   {
     "name": "php7",
-    "version": "7.4.31",
+    "version": "7.4.32",
     "description": "Server-side, HTML-embedded scripting language",
     "homepage": "https://php.net",
     "depends": [
@@ -25613,46 +25686,46 @@
       "libffi",
       "tidy"
     ],
-    "srcurl": "https://github.com/php/php-src/archive/php-7.4.31.tar.gz",
+    "srcurl": "https://github.com/php/php-src/archive/php-7.4.32.tar.gz",
     "maintainer": "@xtkoba",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8c249c0a9/packages/php7",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/08f296361/packages/php7",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/build-php.m4.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-opcache-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-opcache-zend_accelerator_module.c.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-pdo_pgsql-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-pgsql-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-phar-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-posix-posix.c.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-standard-basic_functions.c.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-standard-dns.c.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-standard-php_fopen_wrapper.c.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/ext-standard-proc_open.c.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/iconv-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/pear-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/php-fpm.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/sapi-apache2handler-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/8c249c0a9/packages/php7/use-local-fastcgi-header.patch"
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/build-php.m4.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-opcache-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-opcache-zend_accelerator_module.c.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-pdo_pgsql-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-pgsql-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-phar-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-posix-posix.c.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-standard-basic_functions.c.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-standard-dns.c.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-standard-php_fopen_wrapper.c.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/ext-standard-proc_open.c.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/iconv-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/pear-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/php-fpm.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/sapi-apache2handler-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/08f296361/packages/php7/use-local-fastcgi-header.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/build-php.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-opcache-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-opcache-zend_accelerator_module.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-pdo_pgsql-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-pgsql-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-phar-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-posix-posix.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-standard-basic_functions.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-standard-dns.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-standard-php_fopen_wrapper.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/ext-standard-proc_open.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/iconv-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/pear-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/php-fpm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/sapi-apache2handler-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c249c0a9/packages/php7/use-local-fastcgi-header.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/build-php.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-opcache-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-opcache-zend_accelerator_module.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-pdo_pgsql-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-pgsql-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-phar-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-posix-posix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-standard-basic_functions.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-standard-dns.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-standard-php_fopen_wrapper.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/ext-standard-proc_open.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/iconv-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/pear-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/php-fpm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/sapi-apache2handler-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/08f296361/packages/php7/use-local-fastcgi-header.patch"
     ]
   },
   {
@@ -31375,7 +31448,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "1.29.3",
+    "version": "1.30.0",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.dev/",
     "depends": [
@@ -31400,11 +31473,11 @@
       "xz-utils",
       "dialog"
     ],
-    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.29.3.tar.gz",
+    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.30.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7f3b1a98d/packages/termux-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7f3b1a98d/packages/termux-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7f3b1a98d/packages/termux-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b8ca6ea8/packages/termux-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b8ca6ea8/packages/termux-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b8ca6ea8/packages/termux-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
