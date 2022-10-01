@@ -7402,14 +7402,14 @@
   {
     "name": "gdu",
     "version": "5.19.0",
-    "description": "Modern and intuitive terminal-based text editor",
+    "description": "Fast disk usage analyzer with console interface written in Go",
     "homepage": "https://github.com/dundee/gdu",
     "depends": [],
     "srcurl": "https://github.com/dundee/gdu/archive/v5.19.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a8b0b34c2/packages/gdu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a8b0b34c2/packages/gdu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a8b0b34c2/packages/gdu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/edd9fd433/packages/gdu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edd9fd433/packages/gdu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edd9fd433/packages/gdu/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -8012,6 +8012,24 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/eebcd91a0/packages/glib-networking/meson.build.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/eebcd91a0/packages/glib-networking/tls-meson.build.patch"
+    ]
+  },
+  {
+    "name": "glm",
+    "version": "0.9.9.8",
+    "description": "C++ mathematics library for graphics software based on the GLSL specifications",
+    "homepage": "https://glm.g-truc.net/",
+    "depends": [],
+    "srcurl": "https://github.com/g-truc/glm/archive/0.9.9.8.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/257a1c2ab/packages/glm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/257a1c2ab/packages/glm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/257a1c2ab/packages/glm/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/257a1c2ab/packages/glm/6059c5767.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/257a1c2ab/packages/glm/6059c5767.patch"
     ]
   },
   {
@@ -12811,6 +12829,20 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "lexbor",
+    "version": "2.1.0",
+    "description": "Fast embeddable web browser engine written in C with no dependencies",
+    "homepage": "https://lexbor.com",
+    "depends": [],
+    "srcurl": "https://github.com/lexbor/lexbor/archive/refs/tags/v2.1.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d55691210/packages/lexbor",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d55691210/packages/lexbor/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d55691210/packages/lexbor/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "lexter",
     "version": "1.0.3",
     "description": "A real-time word puzzle for text terminals",
@@ -13286,6 +13318,29 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d7c060c6/packages/libbcprov-java/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "libblosc",
+    "version": "1.21.1",
+    "description": "A blocking, shuffling and loss-less compression library",
+    "homepage": "https://www.blosc.org",
+    "depends": [
+      "libsnappy",
+      "zstd"
+    ],
+    "srcurl": "https://github.com/Blosc/c-blosc/archive/refs/tags/v1.21.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fc37ed633/packages/libblosc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fc37ed633/packages/libblosc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fc37ed633/packages/libblosc/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/fc37ed633/packages/libblosc/0001-fix-posix-memalign.patch",
+      "https://github.com/termux/termux-packages/blob/fc37ed633/packages/libblosc/0002-do-not-link-against-librt.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/fc37ed633/packages/libblosc/0001-fix-posix-memalign.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fc37ed633/packages/libblosc/0002-do-not-link-against-librt.patch"
+    ]
   },
   {
     "name": "libbluray",
@@ -20072,6 +20127,20 @@
       "https://raw.githubusercontent.com/termux/termux-packages/c2f58b6c6/packages/loksh/fix-hardcoded-paths.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/c2f58b6c6/packages/loksh/no-cs_path.patch"
     ]
+  },
+  {
+    "name": "lowdown",
+    "version": "1.0.0",
+    "description": "Markdown utilities and library (fork of hoedown -> sundown -> libsoldout)",
+    "homepage": "https://kristaps.bsd.lv/lowdown",
+    "depends": [],
+    "srcurl": "https://kristaps.bsd.lv/lowdown/snapshots/lowdown-1.0.0.tar.gz",
+    "maintainer": "@flosnvjx",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ba758b82b/packages/lowdown",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ba758b82b/packages/lowdown/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ba758b82b/packages/lowdown/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "lr",
@@ -28709,6 +28778,26 @@
     ]
   },
   {
+    "name": "samurai",
+    "version": "1.2",
+    "description": "ninja-compatible build tool written in C",
+    "homepage": "https://github.com/michaelforney/samurai",
+    "depends": [
+      "libandroid-spawn"
+    ],
+    "srcurl": "https://github.com/michaelforney/samurai/archive/refs/tags/1.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/886942c55/packages/samurai",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/886942c55/packages/samurai/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/886942c55/packages/samurai/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/886942c55/packages/samurai/Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/886942c55/packages/samurai/Makefile.patch"
+    ]
+  },
+  {
     "name": "sc",
     "version": "7.16",
     "description": "A vi-like spreadsheet calculator",
@@ -31525,19 +31614,22 @@
       "libicu",
       "libtool",
       "libuuid",
+      "openmpi",
       "pango",
       "zstd"
     ],
     "srcurl": "https://github.com/tesseract-ocr/tesseract/archive/5.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/tesseract",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/tesseract/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/tesseract/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3c20ad248/packages/tesseract",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3c20ad248/packages/tesseract/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3c20ad248/packages/tesseract/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/tesseract/src-training-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/3c20ad248/packages/tesseract/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/3c20ad248/packages/tesseract/src-training-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/tesseract/src-training-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3c20ad248/packages/tesseract/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c20ad248/packages/tesseract/src-training-CMakeLists.txt.patch"
     ]
   },
   {
