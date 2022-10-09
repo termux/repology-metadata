@@ -4147,15 +4147,15 @@
   },
   {
     "name": "csview",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Pretty-printing CSV/TSV/xSV on terminal",
     "homepage": "https://github.com/wfxr/csview",
     "depends": [],
-    "srcurl": "https://github.com/wfxr/csview/archive/v1.2.1.tar.gz",
+    "srcurl": "https://github.com/wfxr/csview/archive/v1.2.2.tar.gz",
     "maintainer": "@flosnvjx",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/81f61eb01/packages/csview",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/81f61eb01/packages/csview/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/81f61eb01/packages/csview/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/824c84fdc/packages/csview",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/824c84fdc/packages/csview/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/824c84fdc/packages/csview/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -4511,6 +4511,39 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/0305691dd/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/0305691dd/packages/dbus/fix-hardcoded-paths.patch"
+    ]
+  },
+  {
+    "name": "dcmtk",
+    "version": "3.6.7",
+    "description": "A collection of libraries and applications implementing large parts the DICOM standard",
+    "homepage": "https://dicom.offis.de/dcmtk",
+    "depends": [
+      "libc++",
+      "zlib",
+      "libpng",
+      "libtiff",
+      "libxml2",
+      "openssl",
+      "libiconv",
+      "libjpeg-turbo",
+      "libsndfile",
+      "libicu"
+    ],
+    "srcurl": "https://github.com/DCMTK/dcmtk/archive/refs/tags/DCMTK-3.6.7.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1768d41f3/packages/dcmtk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1768d41f3/packages/dcmtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1768d41f3/packages/dcmtk/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/1768d41f3/packages/dcmtk/0001-remove-android-tests.patch",
+      "https://github.com/termux/termux-packages/blob/1768d41f3/packages/dcmtk/0002-fix-for-pwd.h.patch",
+      "https://github.com/termux/termux-packages/blob/1768d41f3/packages/dcmtk/0003-disable-setuid.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/1768d41f3/packages/dcmtk/0001-remove-android-tests.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1768d41f3/packages/dcmtk/0002-fix-for-pwd.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1768d41f3/packages/dcmtk/0003-disable-setuid.patch"
     ]
   },
   {
@@ -12354,18 +12387,18 @@
   },
   {
     "name": "kcptun",
-    "version": "20220628",
+    "version": "20221008",
     "description": "A Stable & Secure Tunnel based on KCP with N:M multiplexing and FEC",
     "homepage": "https://github.com/xtaci/kcptun",
     "depends": [
       "kcptun-client",
       "kcptun-server"
     ],
-    "srcurl": "https://github.com/xtaci/kcptun/archive/refs/tags/v20220628.tar.gz",
+    "srcurl": "https://github.com/xtaci/kcptun/archive/refs/tags/v20221008.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cb7d91c1/packages/kcptun",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cb7d91c1/packages/kcptun/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cb7d91c1/packages/kcptun/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ed1126be/packages/kcptun",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ed1126be/packages/kcptun/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ed1126be/packages/kcptun/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -14745,6 +14778,26 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/libgeos",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/libgeos/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/libgeos/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
+    "name": "libgeotiff",
+    "version": "1.7.1",
+    "description": "Library for handling TIFF for georeferenced raster imagery",
+    "homepage": "https://github.com/OSGeo/libgeotiff",
+    "depends": [
+      "libtiff",
+      "proj",
+      "libsqlite",
+      "libjpeg-turbo",
+      "zlib"
+    ],
+    "srcurl": "https://github.com/OSGeo/libgeotiff/archive/refs/tags/1.7.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e5ecbf24/packages/libgeotiff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e5ecbf24/packages/libgeotiff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e5ecbf24/packages/libgeotiff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -19188,6 +19241,32 @@
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/22e571fe9/packages/libvterm/Makefile.patch"
+    ]
+  },
+  {
+    "name": "libvxl",
+    "version": "3.3.2",
+    "description": "A multi-platform collection of C++ software libraries for Computer Vision and Image Understanding",
+    "homepage": "https://vxl.github.io",
+    "depends": [
+      "libc++",
+      "libgeotiff",
+      "zlib",
+      "libpng",
+      "libjpeg-turbo",
+      "libexpat",
+      "dcmtk"
+    ],
+    "srcurl": "https://github.com/vxl/vxl/archive/refs/tags/v3.3.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4d7d8c3c1/packages/libvxl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4d7d8c3c1/packages/libvxl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4d7d8c3c1/packages/libvxl/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/4d7d8c3c1/packages/libvxl/0001-update-to-newer-dcmtk-API.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/4d7d8c3c1/packages/libvxl/0001-update-to-newer-dcmtk-API.patch"
     ]
   },
   {
@@ -28551,6 +28630,20 @@
       "https://raw.githubusercontent.com/termux/termux-packages/d220576df/packages/rlwrap/fix-hardcoded-paths.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/d220576df/packages/rlwrap/ptytty.c.patch"
     ]
+  },
+  {
+    "name": "robin-map",
+    "version": "1.0.1",
+    "description": "C++ implementation of a fast hash map and hash set using robin hood hashing",
+    "homepage": "https://github.com/Tessil/robin-map/",
+    "depends": [],
+    "srcurl": "https://github.com/Tessil/robin-map/archive/refs/tags/v1.0.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1dc217b70/packages/robin-map",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1dc217b70/packages/robin-map/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1dc217b70/packages/robin-map/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "robotfindskitten",
