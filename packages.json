@@ -367,15 +367,15 @@
   },
   {
     "name": "alist",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "description": "A file list program that supports multiple storage",
     "homepage": "https://alist-doc.nn.ci",
     "depends": [],
-    "srcurl": "https://github.com/alist-org/alist/archive/v3.1.0.tar.gz",
+    "srcurl": "https://github.com/alist-org/alist/archive/v3.2.0.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/aed524eac/packages/alist",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aed524eac/packages/alist/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aed524eac/packages/alist/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c052477ec/packages/alist",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c052477ec/packages/alist/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c052477ec/packages/alist/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -2948,6 +2948,27 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2d/packages/cboard/configure.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2d/packages/cboard/libchess-pgn.c.patch"
+    ]
+  },
+  {
+    "name": "cbonsai",
+    "version": "1.3.1",
+    "description": "Grow bonsai trees in your terminal",
+    "homepage": "https://gitlab.com/jallbrit/cbonsai",
+    "depends": [
+      "ncurses",
+      "ncurses-ui-libs"
+    ],
+    "srcurl": "https://gitlab.com/jallbrit/cbonsai/-/archive/v1.3.1/cbonsai-v1.3.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cc0505393/packages/cbonsai",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cc0505393/packages/cbonsai/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cc0505393/packages/cbonsai/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/cc0505393/packages/cbonsai/makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/cc0505393/packages/cbonsai/makefile.patch"
     ]
   },
   {
@@ -23243,7 +23264,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "1:0.9.0-dev-71-gd9a80b8e2",
+    "version": "1:0.9.0-dev-77-gf175ca9f7",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -23260,20 +23281,20 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9de5cfd7f/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9de5cfd7f/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9de5cfd7f/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7137f6dea/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7137f6dea/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7137f6dea/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9de5cfd7f/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/9de5cfd7f/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://github.com/termux/termux-packages/blob/9de5cfd7f/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/9de5cfd7f/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/7137f6dea/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/7137f6dea/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://github.com/termux/termux-packages/blob/7137f6dea/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/7137f6dea/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9de5cfd7f/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9de5cfd7f/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9de5cfd7f/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9de5cfd7f/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7137f6dea/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7137f6dea/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7137f6dea/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7137f6dea/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ]
   },
   {
@@ -27420,7 +27441,7 @@
   },
   {
     "name": "python",
-    "version": "3.10.7",
+    "version": "3.10.8",
     "description": "Python 3 programming language intended to enable clear programs",
     "homepage": "https://python.org/",
     "depends": [
@@ -27439,34 +27460,34 @@
       "readline",
       "zlib"
     ],
-    "srcurl": "https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tar.xz",
+    "srcurl": "https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a511e717a/packages/python",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f1c878c57/packages/python",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/Lib-ctypes-util.py.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/Lib-subprocess.py.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/Lib-tmpfile.py.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/Modules-socketmodule.c.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/_cursesmodule.c.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/configure.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/multiprocessing.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/no-setuid-servers.patch",
-      "https://github.com/termux/termux-packages/blob/a511e717a/packages/python/setup.py.patch"
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/Lib-ctypes-util.py.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/Lib-subprocess.py.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/Lib-tmpfile.py.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/Modules-socketmodule.c.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/_cursesmodule.c.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/configure.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/multiprocessing.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/no-setuid-servers.patch",
+      "https://github.com/termux/termux-packages/blob/f1c878c57/packages/python/setup.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/Lib-ctypes-util.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/Lib-subprocess.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/Lib-tmpfile.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/Modules-socketmodule.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/_cursesmodule.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/multiprocessing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/no-setuid-servers.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a511e717a/packages/python/setup.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/Lib-ctypes-util.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/Lib-subprocess.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/Lib-tmpfile.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/Modules-socketmodule.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/_cursesmodule.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/multiprocessing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/no-setuid-servers.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f1c878c57/packages/python/setup.py.patch"
     ]
   },
   {
