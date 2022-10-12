@@ -2627,15 +2627,15 @@
   },
   {
     "name": "ca-certificates",
-    "version": "1:2022.07.19",
+    "version": "1:2022.10.11",
     "description": "Common CA certificates",
     "homepage": "https://curl.se/docs/caextract.html",
     "depends": [],
-    "srcurl": "https://curl.se/ca/cacert-2022-07-19.pem",
+    "srcurl": "https://curl.se/ca/cacert-2022-10-11.pem",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c213ad67/packages/ca-certificates",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c213ad67/packages/ca-certificates/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c213ad67/packages/ca-certificates/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd223a0eb/packages/ca-certificates",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd223a0eb/packages/ca-certificates/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd223a0eb/packages/ca-certificates/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -4507,25 +4507,25 @@
   },
   {
     "name": "dbus",
-    "version": "1.15.0",
+    "version": "1.15.2",
     "description": "Freedesktop.org message bus system",
     "homepage": "https://dbus.freedesktop.org",
     "depends": [
       "libexpat",
       "libx11"
     ],
-    "srcurl": "https://dbus.freedesktop.org/releases/dbus/dbus-1.15.0.tar.xz",
+    "srcurl": "https://dbus.freedesktop.org/releases/dbus/dbus-1.15.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0305691dd/packages/dbus",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0305691dd/packages/dbus/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0305691dd/packages/dbus/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ad32db54/packages/dbus",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ad32db54/packages/dbus/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ad32db54/packages/dbus/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0305691dd/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
-      "https://github.com/termux/termux-packages/blob/0305691dd/packages/dbus/fix-hardcoded-paths.patch"
+      "https://github.com/termux/termux-packages/blob/0ad32db54/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
+      "https://github.com/termux/termux-packages/blob/0ad32db54/packages/dbus/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0305691dd/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0305691dd/packages/dbus/fix-hardcoded-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0ad32db54/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ad32db54/packages/dbus/fix-hardcoded-paths.patch"
     ]
   },
   {
@@ -7402,7 +7402,7 @@
   },
   {
     "name": "gdb",
-    "version": "10.1",
+    "version": "12.1",
     "description": "The standard GNU Debugger that runs on many Unix-like systems and works for many programming languages",
     "homepage": "https://www.gnu.org/software/gdb/",
     "depends": [
@@ -7416,42 +7416,44 @@
       "zlib",
       "libthread-db"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/gdb/gdb-10.1.tar.xz",
+    "srcurl": "https://mirrors.kernel.org/gnu/gdb/gdb-12.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/gdb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d0a66c91/packages/gdb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/archive_c_st_mtime.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/fix-tmp_prefix.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdb-amd64-linux-nat.c.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdb-cli-cli-cmds.c.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdb-linux-thread-db.c.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdb-ser-pipe.c.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdb-solib.c.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdbserver-configure.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdbsupport-job-control.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdbsupport-pathstuff.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gdbsupport-signals-state-save-restore.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/gregset.h.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/linux_thread_db_no_th_unique.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/gdb/python.patch"
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/archive_c_st_mtime.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/fix-tmp_prefix.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdb-12.1-readline-8.2.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdb-amd64-linux-nat.c.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdb-cli-cli-cmds.c.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdb-linux-thread-db.c.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdb-solib.c.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdbserver-configure.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdbsupport-job-control.cc.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdbsupport-pathstuff.cc.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gdbsupport-signals-state-save-restore.cc.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gnulib-configure.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/gregset.h.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/linux_thread_db_no_th_unique.patch",
+      "https://github.com/termux/termux-packages/blob/8d0a66c91/packages/gdb/python.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/archive_c_st_mtime.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/fix-tmp_prefix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdb-amd64-linux-nat.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdb-cli-cli-cmds.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdb-linux-thread-db.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdb-ser-pipe.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdb-solib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdbserver-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdbsupport-job-control.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdbsupport-pathstuff.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gdbsupport-signals-state-save-restore.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/gregset.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/linux_thread_db_no_th_unique.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/gdb/python.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/archive_c_st_mtime.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/fix-tmp_prefix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdb-12.1-readline-8.2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdb-amd64-linux-nat.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdb-cli-cli-cmds.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdb-linux-thread-db.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdb-solib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdbserver-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdbsupport-job-control.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdbsupport-pathstuff.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gdbsupport-signals-state-save-restore.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gnulib-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/gregset.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/linux_thread_db_no_th_unique.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d0a66c91/packages/gdb/python.patch"
     ]
   },
   {
@@ -11355,7 +11357,7 @@
   },
   {
     "name": "imagemagick",
-    "version": "7.1.0.49",
+    "version": "7.1.0.50",
     "description": "Suite to create, edit, compose, or convert images in a variety of formats",
     "homepage": "https://www.imagemagick.org/",
     "depends": [
@@ -11393,11 +11395,11 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/ImageMagick/ImageMagick/archive/refs/tags/7.1.0-49.tar.gz",
+    "srcurl": "https://github.com/ImageMagick/ImageMagick/archive/refs/tags/7.1.0-50.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7429de6ad/packages/imagemagick",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7429de6ad/packages/imagemagick/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7429de6ad/packages/imagemagick/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4080ac876/packages/imagemagick",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4080ac876/packages/imagemagick/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4080ac876/packages/imagemagick/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -23086,18 +23088,20 @@
     "depends": [],
     "srcurl": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/379660581/packages/ncurses",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/379660581/packages/ncurses/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/379660581/packages/ncurses/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65a0a50db/packages/ncurses",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65a0a50db/packages/ncurses/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65a0a50db/packages/ncurses/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/379660581/packages/ncurses/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/379660581/packages/ncurses/ncurses-tinfo-lib_setup.c.patch",
-      "https://github.com/termux/termux-packages/blob/379660581/packages/ncurses/ncurses-tinfo-tinfo_driver.c.patch"
+      "https://github.com/termux/termux-packages/blob/65a0a50db/packages/ncurses/CVE-2022-29458.patch",
+      "https://github.com/termux/termux-packages/blob/65a0a50db/packages/ncurses/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/65a0a50db/packages/ncurses/ncurses-tinfo-lib_setup.c.patch",
+      "https://github.com/termux/termux-packages/blob/65a0a50db/packages/ncurses/ncurses-tinfo-tinfo_driver.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/379660581/packages/ncurses/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/379660581/packages/ncurses/ncurses-tinfo-lib_setup.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/379660581/packages/ncurses/ncurses-tinfo-tinfo_driver.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/65a0a50db/packages/ncurses/CVE-2022-29458.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/65a0a50db/packages/ncurses/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/65a0a50db/packages/ncurses/ncurses-tinfo-lib_setup.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/65a0a50db/packages/ncurses/ncurses-tinfo-tinfo_driver.c.patch"
     ]
   },
   {
@@ -24706,32 +24710,34 @@
     ],
     "srcurl": "https://github.com/termux/openjdk-mobile-termux/archive/ec285598849a27f681ea6269342cf03cf382eb56.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/971d64e01/packages/openjdk-17",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0531e0cf5/packages/openjdk-17",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/CVE-2022-21449.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/always-compile-with-pic.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/iconv.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/libraries.m4.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/no-func-redef.patch",
-      "https://github.com/termux/termux-packages/blob/971d64e01/packages/openjdk-17/workaround-for-tagged-pointers.patch"
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/CVE-2022-21449.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/CVE-2022-34169.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/always-compile-with-pic.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/iconv.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/libraries.m4.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/no-func-redef.patch",
+      "https://github.com/termux/termux-packages/blob/0531e0cf5/packages/openjdk-17/workaround-for-tagged-pointers.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/CVE-2022-21449.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/always-compile-with-pic.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/iconv.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/libraries.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/no-func-redef.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/971d64e01/packages/openjdk-17/workaround-for-tagged-pointers.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/BUILD_LIBSPLASHSCREEN.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/CVE-2022-21449.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/CVE-2022-34169.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/Fix-StackOverflowError-on-ARM.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/Libfontmanager-Fix-for-library-dependency.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/always-compile-with-pic.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/iconv.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/libraries.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/no-func-redef.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0531e0cf5/packages/openjdk-17/workaround-for-tagged-pointers.patch"
     ]
   },
   {
@@ -24836,7 +24842,7 @@
   },
   {
     "name": "openssh",
-    "version": "9.0p1",
+    "version": "9.1p1",
     "description": "Secure shell for logging into a remote machine",
     "homepage": "https://www.openssh.com/",
     "depends": [
@@ -24849,100 +24855,100 @@
       "termux-auth",
       "zlib"
     ],
-    "srcurl": "https://fastly.cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.0p1.tar.gz",
+    "srcurl": "https://fastly.cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.1p1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7f5a0210d/packages/openssh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/facd0157c/packages/openssh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/auth.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/auth2-passwd.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/hostfile.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/misc_c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/mux.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/no_loginrec.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/no_tty_chmod.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/openbsd-compat-explicit_bzero.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/openbsd-compat-xcrypt.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/servconf.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/serverloop.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/session.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/sftp-server.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/ssh-agent.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/ssh-keygen.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/sshd.c.patch",
-      "https://github.com/termux/termux-packages/blob/7f5a0210d/packages/openssh/sshd_config.5.patch"
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/auth.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/auth2-passwd.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/hostfile.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/misc_c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/mux.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/no_loginrec.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/no_tty_chmod.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/openbsd-compat-explicit_bzero.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/openbsd-compat-xcrypt.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/servconf.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/serverloop.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/session.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/sftp-server.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/ssh-agent.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/ssh-keygen.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/sshd.c.patch",
+      "https://github.com/termux/termux-packages/blob/facd0157c/packages/openssh/sshd_config.5.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/auth.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/auth2-passwd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/hostfile.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/misc_c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/mux.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/no_loginrec.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/no_tty_chmod.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/openbsd-compat-explicit_bzero.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/openbsd-compat-xcrypt.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/servconf.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/serverloop.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/session.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/sftp-server.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/ssh-agent.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/ssh-keygen.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/sshd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f5a0210d/packages/openssh/sshd_config.5.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/auth.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/auth2-passwd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/hostfile.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/misc_c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/mux.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/no_loginrec.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/no_tty_chmod.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/openbsd-compat-explicit_bzero.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/openbsd-compat-xcrypt.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/servconf.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/serverloop.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/session.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/sftp-server.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/ssh-agent.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/ssh-keygen.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/sshd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/facd0157c/packages/openssh/sshd_config.5.patch"
     ]
   },
   {
     "name": "openssl",
-    "version": "3.0.5",
+    "version": "3.0.6",
     "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
     "homepage": "https://www.openssl.org/",
     "depends": [
       "ca-certificates",
       "zlib"
     ],
-    "srcurl": "https://www.openssl.org/source/openssl-3.0.5.tar.gz",
+    "srcurl": "https://www.openssl.org/source/openssl-3.0.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f8761dd7c/packages/openssl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f8761dd7c/packages/openssl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f8761dd7c/packages/openssl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8de098b5a/packages/openssl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8de098b5a/packages/openssl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8de098b5a/packages/openssl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f8761dd7c/packages/openssl/Configurations-15-android.conf.patch",
-      "https://github.com/termux/termux-packages/blob/f8761dd7c/packages/openssl/include-crypto-rand.h.patch"
+      "https://github.com/termux/termux-packages/blob/8de098b5a/packages/openssl/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/8de098b5a/packages/openssl/include-crypto-rand.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f8761dd7c/packages/openssl/Configurations-15-android.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f8761dd7c/packages/openssl/include-crypto-rand.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8de098b5a/packages/openssl/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8de098b5a/packages/openssl/include-crypto-rand.h.patch"
     ]
   },
   {
     "name": "openssl-1.1",
-    "version": "1.1.1q",
+    "version": "1.1.1r",
     "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
     "homepage": "https://www.openssl.org/",
     "depends": [
       "ca-certificates",
       "zlib"
     ],
-    "srcurl": "https://www.openssl.org/source/openssl-1.1.1q.tar.gz",
+    "srcurl": "https://www.openssl.org/source/openssl-1.1.1r.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f8761dd7c/packages/openssl-1.1",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f8761dd7c/packages/openssl-1.1/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f8761dd7c/packages/openssl-1.1/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/781d18b47/packages/openssl-1.1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f8761dd7c/packages/openssl-1.1/Configurations-15-android.conf.patch",
-      "https://github.com/termux/termux-packages/blob/f8761dd7c/packages/openssl-1.1/apps-ocsp.c.patch",
-      "https://github.com/termux/termux-packages/blob/f8761dd7c/packages/openssl-1.1/e_os.h.patch"
+      "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/e_os.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f8761dd7c/packages/openssl-1.1/Configurations-15-android.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f8761dd7c/packages/openssl-1.1/apps-ocsp.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f8761dd7c/packages/openssl-1.1/e_os.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/e_os.h.patch"
     ]
   },
   {
