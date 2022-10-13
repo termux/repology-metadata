@@ -562,6 +562,20 @@
     ]
   },
   {
+    "name": "anewer",
+    "version": "0.1.6",
+    "description": "Append lines from stdin to a file if these lines do not present in that file (aHash-based uniq)",
+    "homepage": "https://github.com/ysf/anewer",
+    "depends": [],
+    "srcurl": "https://github.com/ysf/anewer/archive/refs/tags/0.1.6.tar.gz",
+    "maintainer": "@flosnvjx",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3df214f5/packages/anewer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3df214f5/packages/anewer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3df214f5/packages/anewer/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "angband",
     "version": "4.2.4",
     "description": "Dungeon exploration adventure game",
@@ -1628,9 +1642,9 @@
     "depends": [],
     "srcurl": "http://mirrors.kernel.org/gnu/barcode/barcode-0.99.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/barcode",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/barcode/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/barcode/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2302aacad/packages/barcode",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2302aacad/packages/barcode/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2302aacad/packages/barcode/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -17319,23 +17333,23 @@
   },
   {
     "name": "libprotobuf",
-    "version": "2:3.21.6",
+    "version": "2:3.21.7",
     "description": "Protocol buffers C++ library",
     "homepage": "https://github.com/protocolbuffers/protobuf",
     "depends": [
       "libc++",
       "zlib"
     ],
-    "srcurl": "https://github.com/protocolbuffers/protobuf/archive/v3.21.6.tar.gz",
+    "srcurl": "https://github.com/protocolbuffers/protobuf/archive/v3.21.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2727d70ba/packages/libprotobuf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2727d70ba/packages/libprotobuf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2727d70ba/packages/libprotobuf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/03f0cbe34/packages/libprotobuf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03f0cbe34/packages/libprotobuf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03f0cbe34/packages/libprotobuf/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2727d70ba/packages/libprotobuf/remove-android-logging.patch"
+      "https://github.com/termux/termux-packages/blob/03f0cbe34/packages/libprotobuf/remove-android-logging.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2727d70ba/packages/libprotobuf/remove-android-logging.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/03f0cbe34/packages/libprotobuf/remove-android-logging.patch"
     ]
   },
   {
@@ -21340,13 +21354,14 @@
     "depends": [
       "glib",
       "libiconv",
-      "readline"
+      "readline",
+      "libiodbc"
     ],
     "srcurl": "https://github.com/mdbtools/mdbtools/releases/download/v1.0.0/mdbtools-1.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c5facbf6b/packages/mdbtools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c5facbf6b/packages/mdbtools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c5facbf6b/packages/mdbtools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd8ea23d1/packages/mdbtools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd8ea23d1/packages/mdbtools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd8ea23d1/packages/mdbtools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24905,50 +24920,50 @@
   },
   {
     "name": "openssl",
-    "version": "3.0.6",
+    "version": "1:3.0.5",
     "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
     "homepage": "https://www.openssl.org/",
     "depends": [
       "ca-certificates",
       "zlib"
     ],
-    "srcurl": "https://www.openssl.org/source/openssl-3.0.6.tar.gz",
+    "srcurl": "https://www.openssl.org/source/openssl-3.0.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8de098b5a/packages/openssl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8de098b5a/packages/openssl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8de098b5a/packages/openssl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e664a7756/packages/openssl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8de098b5a/packages/openssl/Configurations-15-android.conf.patch",
-      "https://github.com/termux/termux-packages/blob/8de098b5a/packages/openssl/include-crypto-rand.h.patch"
+      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl/include-crypto-rand.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8de098b5a/packages/openssl/Configurations-15-android.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8de098b5a/packages/openssl/include-crypto-rand.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl/include-crypto-rand.h.patch"
     ]
   },
   {
     "name": "openssl-1.1",
-    "version": "1.1.1r",
+    "version": "1:1.1.1q",
     "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
     "homepage": "https://www.openssl.org/",
     "depends": [
       "ca-certificates",
       "zlib"
     ],
-    "srcurl": "https://www.openssl.org/source/openssl-1.1.1r.tar.gz",
+    "srcurl": "https://www.openssl.org/source/openssl-1.1.1q.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/781d18b47/packages/openssl-1.1",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e664a7756/packages/openssl-1.1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/Configurations-15-android.conf.patch",
-      "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/apps-ocsp.c.patch",
-      "https://github.com/termux/termux-packages/blob/781d18b47/packages/openssl-1.1/e_os.h.patch"
+      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/e_os.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/Configurations-15-android.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/apps-ocsp.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/781d18b47/packages/openssl-1.1/e_os.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/e_os.h.patch"
     ]
   },
   {
@@ -28651,6 +28666,20 @@
       "https://raw.githubusercontent.com/termux/termux-packages/d220576df/packages/rlwrap/fix-hardcoded-paths.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/d220576df/packages/rlwrap/ptytty.c.patch"
     ]
+  },
+  {
+    "name": "rnr",
+    "version": "0.4.1",
+    "description": "Batch rename files and directories using regular expression (rust)",
+    "homepage": "https://github.com/ismaelgv/rnr",
+    "depends": [],
+    "srcurl": "https://github.com/ismaelgv/rnr/archive/refs/tags/v0.4.1.tar.gz",
+    "maintainer": "@flosnvjx",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f49fa32d4/packages/rnr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f49fa32d4/packages/rnr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f49fa32d4/packages/rnr/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "robin-map",
@@ -34115,15 +34144,15 @@
   },
   {
     "name": "virustotal-cli",
-    "version": "0.10.3",
+    "version": "0.10.4",
     "description": "Command line interface for VirusTotal",
     "homepage": "https://github.com/VirusTotal/vt-cli",
     "depends": [],
-    "srcurl": "https://github.com/VirusTotal/vt-cli/archive/0.10.3.tar.gz",
+    "srcurl": "https://github.com/VirusTotal/vt-cli/archive/0.10.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/30d7e67d9/packages/virustotal-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30d7e67d9/packages/virustotal-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30d7e67d9/packages/virustotal-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ef3a223a/packages/virustotal-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ef3a223a/packages/virustotal-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ef3a223a/packages/virustotal-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -34391,15 +34420,15 @@
   },
   {
     "name": "vulkan-headers",
-    "version": "1.3.230",
+    "version": "1.3.231",
     "description": "Vulkan Header files and API registry",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.230.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.231.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/906de8b4b/packages/vulkan-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/906de8b4b/packages/vulkan-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/906de8b4b/packages/vulkan-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/51822a91f/packages/vulkan-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51822a91f/packages/vulkan-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51822a91f/packages/vulkan-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
