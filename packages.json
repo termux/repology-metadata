@@ -8997,20 +8997,22 @@
   },
   {
     "name": "grafana",
-    "version": "8.5.13",
+    "version": "8.5.14",
     "description": "The open-source platform for monitoring and observability",
     "homepage": "https://grafana.com/",
     "depends": [],
     "srcurl": "https://github.com/grafana/grafana.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/36483f022/packages/grafana",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/36483f022/packages/grafana/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/36483f022/packages/grafana/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cd40f68a7/packages/grafana",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cd40f68a7/packages/grafana/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cd40f68a7/packages/grafana/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/36483f022/packages/grafana/bingo-Variables.mk.patch"
+      "https://github.com/termux/termux-packages/blob/cd40f68a7/packages/grafana/bingo-Variables.mk.patch",
+      "https://github.com/termux/termux-packages/blob/cd40f68a7/packages/grafana/yarn.lock.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/36483f022/packages/grafana/bingo-Variables.mk.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cd40f68a7/packages/grafana/bingo-Variables.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cd40f68a7/packages/grafana/yarn.lock.patch"
     ]
   },
   {
@@ -21044,9 +21046,9 @@
     "depends": [],
     "srcurl": "https://github.com/s-yata/marisa-trie/archive/refs/tags/v0.2.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd23a889c/packages/marisa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd23a889c/packages/marisa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd23a889c/packages/marisa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/27b4becb4/packages/marisa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27b4becb4/packages/marisa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27b4becb4/packages/marisa/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -33911,32 +33913,34 @@
     "depends": [],
     "srcurl": "http://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f4e72abcf/packages/valgrind",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3b62417d0/packages/valgrind",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/Makefile.all.am.patch",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/Makefile.tool.am.patch",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/android-memcpy.patch",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/coregrind-vgdb.c.patch",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/coregrindmake.am.diff",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/dont-redefine-elf32_nhdr.patch",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/libcsetjmp.h.patch",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/memcheckmake.am.diff",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/no-statx.patch",
-      "https://github.com/termux/termux-packages/blob/f4e72abcf/packages/valgrind/vg_preloaded.c.patch"
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/Makefile.all.am.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/Makefile.tool.am.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/aarch64_have_lse_atomics.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/android-memcpy.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/coregrind-vgdb.c.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/coregrindmake.am.diff",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/dont-redefine-elf32_nhdr.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/libcsetjmp.h.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/memcheckmake.am.diff",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/no-statx.patch",
+      "https://github.com/termux/termux-packages/blob/3b62417d0/packages/valgrind/vg_preloaded.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/Makefile.all.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/Makefile.tool.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/android-memcpy.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/coregrind-vgdb.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/coregrindmake.am.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/dont-redefine-elf32_nhdr.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/libcsetjmp.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/memcheckmake.am.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/no-statx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f4e72abcf/packages/valgrind/vg_preloaded.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/Makefile.all.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/Makefile.tool.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/aarch64_have_lse_atomics.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/android-memcpy.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/coregrind-vgdb.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/coregrindmake.am.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/dont-redefine-elf32_nhdr.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/libcsetjmp.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/memcheckmake.am.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/no-statx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3b62417d0/packages/valgrind/vg_preloaded.c.patch"
     ]
   },
   {
@@ -44205,22 +44209,23 @@
   },
   {
     "name": "telepathy-glib",
-    "version": "0.99.11",
+    "version": "1:0.24.2",
     "description": "GLib bindings for the Telepathy D-Bus protocol",
     "homepage": "https://telepathy.freedesktop.org/",
     "depends": [
-      "dbus-glib"
+      "dbus-glib",
+      "glib"
     ],
-    "srcurl": "https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.99.11.tar.gz",
+    "srcurl": "https://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.24.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e918d0e2a/x11-packages/telepathy-glib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e918d0e2a/x11-packages/telepathy-glib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e918d0e2a/x11-packages/telepathy-glib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7fec4ef4c/x11-packages/telepathy-glib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7fec4ef4c/x11-packages/telepathy-glib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7fec4ef4c/x11-packages/telepathy-glib/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e918d0e2a/x11-packages/telepathy-glib/configure.patch"
+      "https://github.com/termux/termux-packages/blob/7fec4ef4c/x11-packages/telepathy-glib/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e918d0e2a/x11-packages/telepathy-glib/configure.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7fec4ef4c/x11-packages/telepathy-glib/configure.patch"
     ]
   },
   {
