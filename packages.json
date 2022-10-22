@@ -17754,14 +17754,14 @@
     ],
     "srcurl": "https://ftp.gnome.org/pub/GNOME/sources/librsvg/2.55/librsvg-2.55.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d35005c4/packages/librsvg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d35005c4/packages/librsvg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d35005c4/packages/librsvg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/45fc6ad83/packages/librsvg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/45fc6ad83/packages/librsvg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/45fc6ad83/packages/librsvg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7d35005c4/packages/librsvg/no-pixbuf-loaders-cache.patch"
+      "https://github.com/termux/termux-packages/blob/45fc6ad83/packages/librsvg/no-pixbuf-loaders-cache.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7d35005c4/packages/librsvg/no-pixbuf-loaders-cache.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/45fc6ad83/packages/librsvg/no-pixbuf-loaders-cache.patch"
     ]
   },
   {
@@ -18166,9 +18166,9 @@
     ],
     "srcurl": "https://download.gnome.org/sources/libsoup/3.2/libsoup-3.2.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27b39c47d/packages/libsoup3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27b39c47d/packages/libsoup3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27b39c47d/packages/libsoup3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/22dd44252/packages/libsoup3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/22dd44252/packages/libsoup3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/22dd44252/packages/libsoup3/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -20650,6 +20650,37 @@
       "https://raw.githubusercontent.com/termux/termux-packages/073aa58d3/packages/lua-language-server/loslib.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/073aa58d3/packages/lua-language-server/luaconf.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/073aa58d3/packages/lua-language-server/make.lua.diff"
+    ]
+  },
+  {
+    "name": "lua-lgi",
+    "version": "0.9.2",
+    "description": "Dynamic Lua binding to GObject libraries using GObject-Introspection",
+    "homepage": "https://github.com/lgi-devs/lgi",
+    "depends": [
+      "glib",
+      "gobject-introspection",
+      "libffi",
+      "liblua54"
+    ],
+    "srcurl": "https://github.com/lgi-devs/lgi/archive/0.9.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/43b5b9703/packages/lua-lgi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/43b5b9703/packages/lua-lgi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/43b5b9703/packages/lua-lgi/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/43b5b9703/packages/lua-lgi/lgi-0.9.2-lua-5.4.patch",
+      "https://github.com/termux/termux-packages/blob/43b5b9703/packages/lua-lgi/lgi-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/43b5b9703/packages/lua-lgi/lgi-core.c.patch",
+      "https://github.com/termux/termux-packages/blob/43b5b9703/packages/lua-lgi/lgi-core.lua.patch",
+      "https://github.com/termux/termux-packages/blob/43b5b9703/packages/lua-lgi/lgi-override-cairo.lua.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/43b5b9703/packages/lua-lgi/lgi-0.9.2-lua-5.4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/43b5b9703/packages/lua-lgi/lgi-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/43b5b9703/packages/lua-lgi/lgi-core.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/43b5b9703/packages/lua-lgi/lgi-core.lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/43b5b9703/packages/lua-lgi/lgi-override-cairo.lua.patch"
     ]
   },
   {
@@ -37744,6 +37775,42 @@
       "https://raw.githubusercontent.com/termux/termux-packages/661db85f4/x11-packages/audacity/src-CMakeLists.txt.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/661db85f4/x11-packages/audacity/src-FFmpeg.h.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/661db85f4/x11-packages/audacity/src-MixerBoard.cpp.patch"
+    ]
+  },
+  {
+    "name": "awesome",
+    "version": "2022.10.16",
+    "description": "A highly configurable, next generation framework window manager for X",
+    "homepage": "https://github.com/awesomeWM/awesome",
+    "depends": [
+      "dbus",
+      "gdk-pixbuf",
+      "glib",
+      "libcairo",
+      "liblua54",
+      "libx11",
+      "libxcb",
+      "libxdg-basedir",
+      "libxkbcommon",
+      "lua-lgi",
+      "pango",
+      "startup-notification",
+      "xcb-util",
+      "xcb-util-cursor",
+      "xcb-util-keysyms",
+      "xcb-util-wm",
+      "xcb-util-xrm"
+    ],
+    "srcurl": "https://github.com/awesomeWM/awesome.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ed838c23a/x11-packages/awesome",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ed838c23a/x11-packages/awesome/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ed838c23a/x11-packages/awesome/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/ed838c23a/x11-packages/awesome/awesomeConfig.cmake.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/ed838c23a/x11-packages/awesome/awesomeConfig.cmake.patch"
     ]
   },
   {
