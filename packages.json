@@ -9055,11 +9055,15 @@
     ],
     "srcurl": "https://download.gnome.org/sources/graphene/1.10/graphene-1.10.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9406773b9/packages/graphene",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9406773b9/packages/graphene/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9406773b9/packages/graphene/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/defc320c8/packages/graphene",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/defc320c8/packages/graphene/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/defc320c8/packages/graphene/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/defc320c8/packages/graphene/wrap-python.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/defc320c8/packages/graphene/wrap-python.diff"
+    ]
   },
   {
     "name": "graphicsmagick",
@@ -29182,22 +29186,23 @@
   },
   {
     "name": "rubberband",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "description": "An audio time-stretching and pitch-shifting library and utility program",
     "homepage": "https://breakfastquay.com/rubberband/",
     "depends": [
       "fftw",
       "ladspa-sdk",
+      "libc++",
       "libsamplerate",
       "libsndfile",
       "lv2",
       "vamp-plugin-sdk"
     ],
-    "srcurl": "https://breakfastquay.com/files/releases/rubberband-3.1.0.tar.bz2",
+    "srcurl": "https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/54fcf4785/packages/rubberband",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/54fcf4785/packages/rubberband/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/54fcf4785/packages/rubberband/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c741a2de4/packages/rubberband",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c741a2de4/packages/rubberband/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c741a2de4/packages/rubberband/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -38943,6 +38948,24 @@
     ]
   },
   {
+    "name": "gcr4",
+    "version": "4.0.0",
+    "description": "A library for displaying certificates and crypto UI, accessing key stores",
+    "homepage": "https://gitlab.gnome.org/GNOME/gcr",
+    "depends": [
+      "glib",
+      "libgcrypt",
+      "p11-kit"
+    ],
+    "srcurl": "https://download.gnome.org/sources/gcr/4.0/gcr-4.0.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b7727bce/x11-packages/gcr4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b7727bce/x11-packages/gcr4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b7727bce/x11-packages/gcr4/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "geany",
     "version": "1.37.1",
     "description": "Fast and lightweight IDE",
@@ -39279,9 +39302,9 @@
     ],
     "srcurl": "https://download.gnome.org/sources/gnome-desktop/43/gnome-desktop-43.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b309ad1d8/x11-packages/gnome-desktop3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b309ad1d8/x11-packages/gnome-desktop3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b309ad1d8/x11-packages/gnome-desktop3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e738e8b5/x11-packages/gnome-desktop3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e738e8b5/x11-packages/gnome-desktop3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e738e8b5/x11-packages/gnome-desktop3/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -39415,16 +39438,18 @@
     "version": "43.0",
     "description": "GNOME desktop schemas contains a collection of GSettings schemas for settings shared by various components of a desktop.",
     "homepage": "https://www.gnome.org/",
-    "depends": [
-      "dconf"
-    ],
+    "depends": [],
     "srcurl": "https://download.gnome.org/sources/gsettings-desktop-schemas/43/gsettings-desktop-schemas-43.0.tar.xz",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/630b85350/x11-packages/gsettings-desktop-schemas",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/630b85350/x11-packages/gsettings-desktop-schemas/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/630b85350/x11-packages/gsettings-desktop-schemas/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6499189aa/x11-packages/gsettings-desktop-schemas",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6499189aa/x11-packages/gsettings-desktop-schemas/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6499189aa/x11-packages/gsettings-desktop-schemas/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/6499189aa/x11-packages/gsettings-desktop-schemas/meson.build.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/6499189aa/x11-packages/gsettings-desktop-schemas/meson.build.patch"
+    ]
   },
   {
     "name": "gtk-doc",
@@ -45286,26 +45311,26 @@
     ],
     "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.38.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/42df9ad22/x11-packages/webkit2gtk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a3338987/x11-packages/webkit2gtk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/NetworkCacheBlobStorage.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/OptionsCommon.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/PlatformGTK.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/jsc.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/pas_min_heap.h.patch",
-      "https://github.com/termux/termux-packages/blob/42df9ad22/x11-packages/webkit2gtk/webkit2gtk-2.38.0-ArgumentCoders.h.patch"
+      "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/NetworkCacheBlobStorage.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/OptionsCommon.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/PlatformGTK.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/jsc.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/pas_min_heap.h.patch",
+      "https://github.com/termux/termux-packages/blob/4a3338987/x11-packages/webkit2gtk/webkit2gtk-2.38.0-ArgumentCoders.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/NetworkCacheBlobStorage.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/OptionsCommon.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/PlatformGTK.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/jsc.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/pas_min_heap.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42df9ad22/x11-packages/webkit2gtk/webkit2gtk-2.38.0-ArgumentCoders.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/NetworkCacheBlobStorage.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/OptionsCommon.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/PlatformGTK.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/SharedMemoryUnix.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/jsc.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/pas_min_heap.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4a3338987/x11-packages/webkit2gtk/webkit2gtk-2.38.0-ArgumentCoders.h.patch"
     ]
   },
   {
