@@ -3006,23 +3006,23 @@
   },
   {
     "name": "ccache",
-    "version": "4.7",
+    "version": "4.7.1",
     "description": "Compiler cache for fast recompilation of C/C++ code",
     "homepage": "https://ccache.samba.org",
     "depends": [
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/ccache/ccache/releases/download/v4.7/ccache-4.7.tar.xz",
+    "srcurl": "https://github.com/ccache/ccache/releases/download/v4.7.1/ccache-4.7.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f16e59f24/packages/ccache",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f16e59f24/packages/ccache/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f16e59f24/packages/ccache/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1447b550f/packages/ccache",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1447b550f/packages/ccache/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1447b550f/packages/ccache/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f16e59f24/packages/ccache/no-hardlink.patch"
+      "https://github.com/termux/termux-packages/blob/1447b550f/packages/ccache/no-hardlink.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f16e59f24/packages/ccache/no-hardlink.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1447b550f/packages/ccache/no-hardlink.patch"
     ]
   },
   {
@@ -3104,6 +3104,28 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/ccrypt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "ceu-lang",
+    "version": "2019.07.17",
+    "description": "The Structured Synchronous Reactive Programming Language Céu",
+    "homepage": "https://github.com/ceu-lang/ceu",
+    "depends": [
+      "lua53",
+      "lua-lpeg",
+      "liblua53"
+    ],
+    "srcurl": "https://github.com/ceu-lang/ceu.git",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d2b8d3ee/packages/ceu-lang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d2b8d3ee/packages/ceu-lang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d2b8d3ee/packages/ceu-lang/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7d2b8d3ee/packages/ceu-lang/Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7d2b8d3ee/packages/ceu-lang/Makefile.patch"
+    ]
   },
   {
     "name": "cfengine",
@@ -7530,15 +7552,15 @@
   },
   {
     "name": "gdu",
-    "version": "5.19.0",
+    "version": "5.20.0",
     "description": "Fast disk usage analyzer with console interface written in Go",
     "homepage": "https://github.com/dundee/gdu",
     "depends": [],
-    "srcurl": "https://github.com/dundee/gdu/archive/v5.19.0.tar.gz",
+    "srcurl": "https://github.com/dundee/gdu/archive/v5.20.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/edd9fd433/packages/gdu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edd9fd433/packages/gdu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edd9fd433/packages/gdu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/37b393234/packages/gdu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37b393234/packages/gdu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37b393234/packages/gdu/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -28637,6 +28659,25 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "recoll",
+    "version": "1.33.1",
+    "description": "Full-text search for your desktop",
+    "homepage": "https://www.lesbonscomptes.com/recoll/index.html",
+    "depends": [
+      "aspell",
+      "libxapian",
+      "libxslt",
+      "zlib"
+    ],
+    "srcurl": "http://www.lesbonscomptes.com/recoll/recoll-1.33.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4efb98500/packages/recoll",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4efb98500/packages/recoll/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4efb98500/packages/recoll/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
+  },
+  {
     "name": "recutils",
     "version": "1.8",
     "description": "Set of tools and libraries to access human-editable, plain text databases called recfiles",
@@ -32288,7 +32329,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "1.30.2",
+    "version": "1.31.0",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.dev/",
     "depends": [
@@ -32313,11 +32354,11 @@
       "xz-utils",
       "dialog"
     ],
-    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.30.2.tar.gz",
+    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.31.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/948cdfda5/packages/termux-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/948cdfda5/packages/termux-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/948cdfda5/packages/termux-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/14071b01b/packages/termux-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/14071b01b/packages/termux-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/14071b01b/packages/termux-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -32450,15 +32491,15 @@
   },
   {
     "name": "texlab",
-    "version": "4.3.0",
+    "version": "4.3.1",
     "description": "A cross-platform implementation of the Language Server Protocol providing rich cross-editing support for the LaTeX typesetting system",
     "homepage": "https://texlab.netlify.app/",
     "depends": [],
     "srcurl": "https://github.com/latex-lsp/texlab.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ab363dfd/packages/texlab",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ab363dfd/packages/texlab/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ab363dfd/packages/texlab/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0281a1c1e/packages/texlab",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0281a1c1e/packages/texlab/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0281a1c1e/packages/texlab/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -39467,7 +39508,7 @@
   },
   {
     "name": "gtk2",
-    "version": "2.24.32",
+    "version": "2.24.33",
     "description": "GObject-based multi-platform GUI toolkit (legacy)",
     "homepage": "https://www.gtk.org/",
     "depends": [
@@ -39477,6 +39518,7 @@
       "desktop-file-utils",
       "glib-bin",
       "gtk-update-icon-cache",
+      "libandroid-shmem",
       "libcairo",
       "librsvg",
       "libxcomposite",
@@ -39489,36 +39531,34 @@
       "shared-mime-info",
       "ttf-dejavu"
     ],
-    "srcurl": "https://github.com/GNOME/gtk/archive/2.24.32.tar.gz",
+    "srcurl": "https://github.com/GNOME/gtk/archive/2.24.33.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1701c5913/x11-packages/gtk2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e48dd5c2/x11-packages/gtk2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gdk_x11_gdkimage-x11.c.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/glib-tools-fix.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_autogen.sh.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_demos_testpixbuf-color.c.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_docs_tools_widgets.c.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_gdk_Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_gtk_gtkfilesel.c.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_gtk_tests_filechooser.c.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_modules_printbackends_cups_gtkprintbackendcups.c.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/gtk-2.24.32_tests_testfilechooser.c.patch",
-      "https://github.com/termux/termux-packages/blob/1701c5913/x11-packages/gtk2/xid-collision-debug.patch"
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gdk_x11_gdkimage-x11.c.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/glib-tools-fix.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_demos_testpixbuf-color.c.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_docs_tools_widgets.c.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_gdk_Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_gtk_gtkfilesel.c.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_gtk_tests_filechooser.c.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_modules_printbackends_cups_gtkprintbackendcups.c.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_tests_testfilechooser.c.patch",
+      "https://github.com/termux/termux-packages/blob/6e48dd5c2/x11-packages/gtk2/xid-collision-debug.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gdk_x11_gdkimage-x11.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/glib-tools-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_autogen.sh.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_demos_testpixbuf-color.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_docs_tools_widgets.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_gdk_Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_gtk_gtkfilesel.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_gtk_tests_filechooser.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_modules_printbackends_cups_gtkprintbackendcups.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/gtk-2.24.32_tests_testfilechooser.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1701c5913/x11-packages/gtk2/xid-collision-debug.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gdk_x11_gdkimage-x11.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/glib-tools-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_demos_testpixbuf-color.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_docs_tools_widgets.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_gdk_Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_gtk_gtkfilesel.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_gtk_tests_filechooser.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_modules_printbackends_cups_gtkprintbackendcups.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/gtk-2.24.32_tests_testfilechooser.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e48dd5c2/x11-packages/gtk2/xid-collision-debug.patch"
     ]
   },
   {
@@ -39651,16 +39691,18 @@
     ],
     "srcurl": "https://download.gnome.org/sources/gtk/4.8/gtk-4.8.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e60076819/x11-packages/gtk4",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e60076819/x11-packages/gtk4/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e60076819/x11-packages/gtk4/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/abf0736c7/x11-packages/gtk4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abf0736c7/x11-packages/gtk4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abf0736c7/x11-packages/gtk4/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e60076819/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
-      "https://github.com/termux/termux-packages/blob/e60076819/x11-packages/gtk4/no-egl.patch"
+      "https://github.com/termux/termux-packages/blob/abf0736c7/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
+      "https://github.com/termux/termux-packages/blob/abf0736c7/x11-packages/gtk4/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/abf0736c7/x11-packages/gtk4/no-egl.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e60076819/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e60076819/x11-packages/gtk4/no-egl.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/abf0736c7/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abf0736c7/x11-packages/gtk4/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abf0736c7/x11-packages/gtk4/no-egl.patch"
     ]
   },
   {
@@ -45850,6 +45892,29 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d58192c9/x11-packages/xcompmgr/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "xdotool",
+    "version": "3.20211022.1",
+    "description": "simulate (generate) X11 keyboard/mouse input events",
+    "homepage": "https://github.com/jordansissel/xdotool",
+    "depends": [
+      "libx11",
+      "libxtst",
+      "libxinerama",
+      "libxkbcommon"
+    ],
+    "srcurl": "https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a798abec/x11-packages/xdotool",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a798abec/x11-packages/xdotool/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a798abec/x11-packages/xdotool/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/4a798abec/x11-packages/xdotool/platform.sh.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/4a798abec/x11-packages/xdotool/platform.sh.patch"
+    ]
   },
   {
     "name": "xfce-theme-manager",
