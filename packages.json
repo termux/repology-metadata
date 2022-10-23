@@ -14262,6 +14262,35 @@
     "package_patch_raw_urls": []
   },
   {
+    "name": "libdart",
+    "version": "6.12.2",
+    "description": "Dynamic Animation and Robotics Toolkit",
+    "homepage": "https://github.com/dartsim/dart",
+    "depends": [
+      "eigen",
+      "assimp",
+      "libccd",
+      "libfcl",
+      "boost",
+      "libbullet",
+      "libode",
+      "libpagmo",
+      "octomap-static",
+      "libtinyxml2"
+    ],
+    "srcurl": "https://github.com/dartsim/dart/archive/refs/tags/v6.12.2.tar.gz",
+    "maintainer": "Pooya Moradi <pvonmoradi@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f14b9070/packages/libdart",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f14b9070/packages/libdart/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f14b9070/packages/libdart/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5f14b9070/packages/libdart/CMakeLists.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5f14b9070/packages/libdart/CMakeLists.patch"
+    ]
+  },
+  {
     "name": "libdav1d",
     "version": "1.0.0",
     "description": "AV1 cross-platform decoder focused on speed and correctness",
@@ -17927,14 +17956,14 @@
     "description": "A GObject-based library for accessing the Secret Service API",
     "homepage": "https://gitlab.gnome.org/GNOME/libsecret",
     "depends": [
-      "gobject-introspection",
+      "glib",
       "libgcrypt"
     ],
     "srcurl": "https://download.gnome.org/sources/libsecret/0.20/libsecret-0.20.5.tar.xz",
     "maintainer": "@suhan-paradkar",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c18fd482/packages/libsecret",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c18fd482/packages/libsecret/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c18fd482/packages/libsecret/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b65195b1/packages/libsecret",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b65195b1/packages/libsecret/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b65195b1/packages/libsecret/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -21088,15 +21117,15 @@
   },
   {
     "name": "mangal",
-    "version": "3.12.0",
+    "version": "3.13.0",
     "description": "Cli manga downloader",
     "homepage": "https://github.com/metafates/mangal",
     "depends": [],
     "srcurl": "https://github.com/metafates/mangal.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/677abe567/packages/mangal",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/677abe567/packages/mangal/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/677abe567/packages/mangal/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/98940f15d/packages/mangal",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98940f15d/packages/mangal/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98940f15d/packages/mangal/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -26868,18 +26897,18 @@
     ],
     "srcurl": "https://poppler.freedesktop.org/poppler-22.04.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ce50a701/packages/poppler",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ce50a701/packages/poppler/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/packages/poppler/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/731aa86f6/packages/poppler",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/731aa86f6/packages/poppler/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/packages/poppler/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0ce50a701/packages/poppler/CVE-2022-38784.patch",
-      "https://github.com/termux/termux-packages/blob/0ce50a701/packages/poppler/force-termux-include-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/0ce50a701/packages/poppler/gstrtod.cc.patch"
+      "https://github.com/termux/termux-packages/blob/731aa86f6/packages/poppler/CVE-2022-38784.patch",
+      "https://github.com/termux/termux-packages/blob/731aa86f6/packages/poppler/force-termux-include-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/731aa86f6/packages/poppler/gstrtod.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/packages/poppler/CVE-2022-38784.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/packages/poppler/force-termux-include-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/packages/poppler/gstrtod.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/packages/poppler/CVE-2022-38784.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/packages/poppler/force-termux-include-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/packages/poppler/gstrtod.cc.patch"
     ]
   },
   {
@@ -41157,18 +41186,25 @@
   },
   {
     "name": "libwnck",
-    "version": "3.36.0",
+    "version": "43.0",
     "description": "Window Navigator Construction Kit",
     "homepage": "https://gitlab.gnome.org/GNOME/libwnck",
     "depends": [
-      "gtk2",
+      "atk",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "libcairo",
+      "libx11",
+      "libxrender",
+      "pango",
       "startup-notification"
     ],
-    "srcurl": "http://ftp.gnome.org/pub/gnome/sources/libwnck/3.36/libwnck-3.36.0.tar.xz",
+    "srcurl": "https://ftp.gnome.org/pub/GNOME/sources/libwnck/43/libwnck-43.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2d523717/x11-packages/libwnck",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2d523717/x11-packages/libwnck/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2d523717/x11-packages/libwnck/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6346af066/x11-packages/libwnck",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6346af066/x11-packages/libwnck/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6346af066/x11-packages/libwnck/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -43152,18 +43188,18 @@
     ],
     "srcurl": "https://poppler.freedesktop.org/poppler-22.04.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ce50a701/x11-packages/poppler-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ce50a701/x11-packages/poppler-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/x11-packages/poppler-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/731aa86f6/x11-packages/poppler-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/731aa86f6/x11-packages/poppler-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/x11-packages/poppler-qt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0ce50a701/x11-packages/poppler-qt/CVE-2022-38784.patch",
-      "https://github.com/termux/termux-packages/blob/0ce50a701/x11-packages/poppler-qt/force-termux-include-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/0ce50a701/x11-packages/poppler-qt/gstrtod.cc.patch"
+      "https://github.com/termux/termux-packages/blob/731aa86f6/x11-packages/poppler-qt/CVE-2022-38784.patch",
+      "https://github.com/termux/termux-packages/blob/731aa86f6/x11-packages/poppler-qt/force-termux-include-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/731aa86f6/x11-packages/poppler-qt/gstrtod.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/x11-packages/poppler-qt/CVE-2022-38784.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/x11-packages/poppler-qt/force-termux-include-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0ce50a701/x11-packages/poppler-qt/gstrtod.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/x11-packages/poppler-qt/CVE-2022-38784.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/x11-packages/poppler-qt/force-termux-include-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/731aa86f6/x11-packages/poppler-qt/gstrtod.cc.patch"
     ]
   },
   {
