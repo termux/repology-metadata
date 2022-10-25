@@ -2790,15 +2790,15 @@
   },
   {
     "name": "capnproto",
-    "version": "0.9.1",
+    "version": "0.10.2",
     "description": "Data interchange format and capability-based RPC system",
     "homepage": "https://capnproto.org/",
     "depends": [],
-    "srcurl": "https://capnproto.org/capnproto-c++-0.9.1.tar.gz",
+    "srcurl": "https://capnproto.org/capnproto-c++-0.10.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd23a889c/packages/capnproto",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd23a889c/packages/capnproto/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd23a889c/packages/capnproto/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/95abbcc61/packages/capnproto",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95abbcc61/packages/capnproto/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95abbcc61/packages/capnproto/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -3744,6 +3744,28 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/coinor-clp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "colm",
+    "version": "0.14.7",
+    "description": "COmputer Language Machinery",
+    "homepage": "https://www.colm.net/open-source/colm/",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://www.colm.net/files/colm/colm-0.14.7.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8db406034/packages/colm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8db406034/packages/colm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8db406034/packages/colm/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/8db406034/packages/colm/Makefile.in.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/8db406034/packages/colm/src-Makefile.in.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/8db406034/packages/colm/Makefile.in.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/8db406034/packages/colm/src-Makefile.in.patch"
+    ]
   },
   {
     "name": "colordiff",
@@ -6827,20 +6849,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.0.418",
+    "version": "0.0.419",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.418.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.419.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/626f9df9c/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/626f9df9c/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/626f9df9c/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f11f0e251/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f11f0e251/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f11f0e251/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/626f9df9c/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/f11f0e251/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/626f9df9c/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f11f0e251/packages/flyctl/getcpuinfo.patch"
     ]
   },
   {
@@ -13805,6 +13827,7 @@
       "fontconfig",
       "freetype",
       "glib",
+      "libandroid-shmem",
       "liblzo",
       "libpixman",
       "libpng",
@@ -13816,18 +13839,20 @@
     ],
     "srcurl": "https://fossies.org/linux/misc/cairo-1.16.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c82ac738/packages/libcairo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c82ac738/packages/libcairo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c82ac738/packages/libcairo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ed8883112/packages/libcairo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ed8883112/packages/libcairo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ed8883112/packages/libcairo/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7c82ac738/packages/libcairo/android-shmem.patch",
-      "https://github.com/termux/termux-packages/blob/7c82ac738/packages/libcairo/cairo-script-operators.c.patch",
-      "https://github.com/termux/termux-packages/blob/7c82ac738/packages/libcairo/fdr.c.patch"
+      "https://github.com/termux/termux-packages/blob/ed8883112/packages/libcairo/CVE-2018-19876.patch",
+      "https://github.com/termux/termux-packages/blob/ed8883112/packages/libcairo/cairo-1.16.0-pdf-add-missing-flush.patch",
+      "https://github.com/termux/termux-packages/blob/ed8883112/packages/libcairo/cairo-script-operators.c.patch",
+      "https://github.com/termux/termux-packages/blob/ed8883112/packages/libcairo/fdr.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7c82ac738/packages/libcairo/android-shmem.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7c82ac738/packages/libcairo/cairo-script-operators.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7c82ac738/packages/libcairo/fdr.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ed8883112/packages/libcairo/CVE-2018-19876.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ed8883112/packages/libcairo/cairo-1.16.0-pdf-add-missing-flush.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ed8883112/packages/libcairo/cairo-script-operators.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ed8883112/packages/libcairo/fdr.c.patch"
     ]
   },
   {
@@ -17739,9 +17764,9 @@
     ],
     "srcurl": "https://github.com/rime/librime/archive/refs/tags/1.7.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/librime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/librime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/librime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/95abbcc61/packages/librime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95abbcc61/packages/librime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95abbcc61/packages/librime/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -28390,19 +28415,24 @@
   },
   {
     "name": "ragel",
-    "version": "6.10",
+    "version": "7.0.4",
     "description": "Compiles finite state machines from regular languages into executable C, C++, Objective-C, or D code",
     "homepage": "https://www.colm.net/open-source/ragel/",
     "depends": [
+      "colm",
       "libc++"
     ],
-    "srcurl": "https://www.colm.net/files/ragel/ragel-6.10.tar.gz",
+    "srcurl": "https://www.colm.net/files/ragel/ragel-7.0.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/ragel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/ragel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/ragel/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d55b9445a/packages/ragel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d55b9445a/packages/ragel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d55b9445a/packages/ragel/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/d55b9445a/packages/ragel/configure.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/d55b9445a/packages/ragel/configure.diff"
+    ]
   },
   {
     "name": "railway-cli",
