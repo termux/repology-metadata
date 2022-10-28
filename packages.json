@@ -224,6 +224,32 @@
     ]
   },
   {
+    "name": "abootimg",
+    "version": "0.6",
+    "description": "Pack or unpack android boot images",
+    "homepage": "https://gitlab.com/ajs124/abootimg",
+    "depends": [
+      "util-linux"
+    ],
+    "srcurl": "https://gitlab.com/ajs124/abootimg/-/archive/v0.6/abootimg-v0.6.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d2882131f/packages/abootimg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d2882131f/packages/abootimg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d2882131f/packages/abootimg/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/d2882131f/packages/abootimg/0001-fixed-silly-warnings-due-to-Wall.patch",
+      "https://github.com/termux/termux-packages/blob/d2882131f/packages/abootimg/0002-renamed-un-pack-initrd-to-abootimg-un-pack-initrd.patch",
+      "https://github.com/termux/termux-packages/blob/d2882131f/packages/abootimg/0003-Fix-man-page-typos.patch",
+      "https://github.com/termux/termux-packages/blob/d2882131f/packages/abootimg/Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/d2882131f/packages/abootimg/0001-fixed-silly-warnings-due-to-Wall.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2882131f/packages/abootimg/0002-renamed-un-pack-initrd-to-abootimg-un-pack-initrd.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2882131f/packages/abootimg/0003-Fix-man-page-typos.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d2882131f/packages/abootimg/Makefile.patch"
+    ]
+  },
+  {
     "name": "ack-grep",
     "version": "3.6.0",
     "description": "Tool like grep optimized for programmers",
@@ -6849,20 +6875,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.0.423",
+    "version": "0.0.424",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.423.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.424.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/875389881/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/875389881/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/875389881/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/615891161/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/615891161/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/615891161/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/875389881/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/615891161/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/875389881/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/615891161/packages/flyctl/getcpuinfo.patch"
     ]
   },
   {
@@ -6881,7 +6907,7 @@
   },
   {
     "name": "fontconfig",
-    "version": "2.14.0",
+    "version": "2.14.1",
     "description": "Library for configuring and customizing font access",
     "homepage": "https://www.freedesktop.org/wiki/Software/fontconfig/",
     "depends": [
@@ -6892,16 +6918,16 @@
       "ttf-dejavu",
       "zlib"
     ],
-    "srcurl": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.0.tar.xz",
+    "srcurl": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/85f598ead/packages/fontconfig",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/85f598ead/packages/fontconfig/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/85f598ead/packages/fontconfig/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb85cde75/packages/fontconfig",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb85cde75/packages/fontconfig/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb85cde75/packages/fontconfig/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/85f598ead/packages/fontconfig/fcatomic.c.patch"
+      "https://github.com/termux/termux-packages/blob/bb85cde75/packages/fontconfig/fcatomic.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/85f598ead/packages/fontconfig/fcatomic.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bb85cde75/packages/fontconfig/fcatomic.c.patch"
     ]
   },
   {
@@ -18082,9 +18108,9 @@
     ],
     "srcurl": "https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b72be3cba/packages/libsixel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b72be3cba/packages/libsixel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b72be3cba/packages/libsixel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3da46b249/packages/libsixel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3da46b249/packages/libsixel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3da46b249/packages/libsixel/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -26171,7 +26197,7 @@
   },
   {
     "name": "php",
-    "version": "8.1.11",
+    "version": "8.1.12",
     "description": "Server-side, HTML-embedded scripting language",
     "homepage": "https://php.net",
     "depends": [
@@ -26200,44 +26226,44 @@
       "tidy",
       "zstd"
     ],
-    "srcurl": "https://github.com/php/php-src/archive/php-8.1.11.tar.gz",
+    "srcurl": "https://github.com/php/php-src/archive/php-8.1.12.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a583ecb53/packages/php",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e2a56374/packages/php",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-opcache-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-opcache-jit-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-opcache-zend_accelerator_module.c.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-pdo_pgsql-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-pgsql-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-phar-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-posix-posix.c.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-standard-basic_functions.c.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-standard-dns.c.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-standard-php_fopen_wrapper.c.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/ext-standard-proc_open.c.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/pear-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/php-fpm.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/sapi-apache2handler-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/a583ecb53/packages/php/use-local-fastcgi-header.patch"
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-opcache-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-opcache-jit-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-opcache-zend_accelerator_module.c.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-pdo_pgsql-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-pgsql-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-phar-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-posix-posix.c.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-standard-basic_functions.c.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-standard-dns.c.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-standard-php_fopen_wrapper.c.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/ext-standard-proc_open.c.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/pear-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/php-fpm.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/sapi-apache2handler-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/0e2a56374/packages/php/use-local-fastcgi-header.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-opcache-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-opcache-jit-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-opcache-zend_accelerator_module.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-pdo_pgsql-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-pgsql-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-phar-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-posix-posix.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-standard-basic_functions.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-standard-dns.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-standard-php_fopen_wrapper.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/ext-standard-proc_open.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/pear-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/php-fpm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/sapi-apache2handler-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a583ecb53/packages/php/use-local-fastcgi-header.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-opcache-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-opcache-jit-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-opcache-zend_accelerator_module.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-pdo_pgsql-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-pgsql-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-phar-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-posix-posix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-standard-basic_functions.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-standard-dns.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-standard-php_fopen_wrapper.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/ext-standard-proc_open.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/pear-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/php-fpm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/sapi-apache2handler-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e2a56374/packages/php/use-local-fastcgi-header.patch"
     ]
   },
   {
@@ -28735,18 +28761,25 @@
     "homepage": "https://www.lesbonscomptes.com/recoll/index.html",
     "depends": [
       "aspell",
+      "libiconv",
       "libxapian",
+      "libxml2",
       "libxslt",
-      "zlib",
-      "python"
+      "zlib"
     ],
-    "srcurl": "http://www.lesbonscomptes.com/recoll/recoll-1.33.1.tar.gz",
+    "srcurl": "https://www.lesbonscomptes.com/recoll/recoll-1.33.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f21d5bf7/packages/recoll",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f21d5bf7/packages/recoll/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f21d5bf7/packages/recoll/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2c40a8f27/packages/recoll",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2c40a8f27/packages/recoll/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2c40a8f27/packages/recoll/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/2c40a8f27/packages/recoll/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/2c40a8f27/packages/recoll/python-recoll-setup.py.in.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/2c40a8f27/packages/recoll/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2c40a8f27/packages/recoll/python-recoll-setup.py.in.diff"
+    ]
   },
   {
     "name": "recutils",
@@ -29376,15 +29409,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.85",
+    "version": "0.0.86",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.85.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.86.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3d9c16fe/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3d9c16fe/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3d9c16fe/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0435c682e/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0435c682e/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0435c682e/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -35414,15 +35447,15 @@
   },
   {
     "name": "xcb-proto",
-    "version": "1.15",
+    "version": "1.15.2",
     "description": "XML-XCB protocol descriptions",
     "homepage": "https://xcb.freedesktop.org/",
     "depends": [],
-    "srcurl": "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.15.tar.xz",
+    "srcurl": "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.15.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1492d7860/packages/xcb-proto",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1492d7860/packages/xcb-proto/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1492d7860/packages/xcb-proto/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5086fdf67/packages/xcb-proto",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5086fdf67/packages/xcb-proto/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5086fdf67/packages/xcb-proto/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -45559,7 +45592,7 @@
   },
   {
     "name": "wireshark-qt",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "description": "Network protocol analyzer",
     "homepage": "https://www.wireshark.org/",
     "depends": [
@@ -45589,24 +45622,24 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://www.wireshark.org/download/src/all-versions/wireshark-4.0.0.tar.xz",
+    "srcurl": "https://www.wireshark.org/download/src/all-versions/wireshark-4.0.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a39bae3ab/x11-packages/wireshark-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a39bae3ab/x11-packages/wireshark-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a39bae3ab/x11-packages/wireshark-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/94a57db39/x11-packages/wireshark-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/94a57db39/x11-packages/wireshark-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/94a57db39/x11-packages/wireshark-qt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a39bae3ab/x11-packages/wireshark-qt/cmake-system-name.patch",
-      "https://github.com/termux/termux-packages/blob/a39bae3ab/x11-packages/wireshark-qt/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/a39bae3ab/x11-packages/wireshark-qt/no-getdtablesize.patch",
-      "https://github.com/termux/termux-packages/blob/a39bae3ab/x11-packages/wireshark-qt/no-legacy-index.patch",
-      "https://github.com/termux/termux-packages/blob/a39bae3ab/x11-packages/wireshark-qt/no-qt-accessibility.patch"
+      "https://github.com/termux/termux-packages/blob/94a57db39/x11-packages/wireshark-qt/cmake-system-name.patch",
+      "https://github.com/termux/termux-packages/blob/94a57db39/x11-packages/wireshark-qt/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/94a57db39/x11-packages/wireshark-qt/no-getdtablesize.patch",
+      "https://github.com/termux/termux-packages/blob/94a57db39/x11-packages/wireshark-qt/no-legacy-index.patch",
+      "https://github.com/termux/termux-packages/blob/94a57db39/x11-packages/wireshark-qt/no-qt-accessibility.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a39bae3ab/x11-packages/wireshark-qt/cmake-system-name.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a39bae3ab/x11-packages/wireshark-qt/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a39bae3ab/x11-packages/wireshark-qt/no-getdtablesize.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a39bae3ab/x11-packages/wireshark-qt/no-legacy-index.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a39bae3ab/x11-packages/wireshark-qt/no-qt-accessibility.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/94a57db39/x11-packages/wireshark-qt/cmake-system-name.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/94a57db39/x11-packages/wireshark-qt/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/94a57db39/x11-packages/wireshark-qt/no-getdtablesize.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/94a57db39/x11-packages/wireshark-qt/no-legacy-index.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/94a57db39/x11-packages/wireshark-qt/no-qt-accessibility.patch"
     ]
   },
   {
