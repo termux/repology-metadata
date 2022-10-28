@@ -22496,7 +22496,7 @@
   },
   {
     "name": "mosh",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "description": "Mobile shell that supports roaming and intelligent local echo",
     "homepage": "https://mosh.org",
     "depends": [
@@ -22507,20 +22507,18 @@
       "openssl",
       "openssh"
     ],
-    "srcurl": "https://github.com/mobile-shell/mosh/releases/download/mosh-1.3.2/mosh-1.3.2.tar.gz",
+    "srcurl": "https://github.com/mobile-shell/mosh/releases/download/mosh-1.4.0/mosh-1.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ff784d7a9/packages/mosh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ff784d7a9/packages/mosh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ff784d7a9/packages/mosh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2bd1508df/packages/mosh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2bd1508df/packages/mosh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2bd1508df/packages/mosh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ff784d7a9/packages/mosh/mosh-server.cc.patch",
-      "https://github.com/termux/termux-packages/blob/ff784d7a9/packages/mosh/mosh.pl.patch",
-      "https://github.com/termux/termux-packages/blob/ff784d7a9/packages/mosh/src-network-network.cc.patch"
+      "https://github.com/termux/termux-packages/blob/2bd1508df/packages/mosh/mosh-server.cc.patch",
+      "https://github.com/termux/termux-packages/blob/2bd1508df/packages/mosh/mosh.pl.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ff784d7a9/packages/mosh/mosh-server.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ff784d7a9/packages/mosh/mosh.pl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ff784d7a9/packages/mosh/src-network-network.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2bd1508df/packages/mosh/mosh-server.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2bd1508df/packages/mosh/mosh.pl.patch"
     ]
   },
   {
@@ -24728,19 +24726,25 @@
   },
   {
     "name": "onefetch",
-    "version": "2.12.0",
+    "version": "2.13.1",
     "description": "A command-line Git information tool written in Rust",
     "homepage": "https://github.com/o2sh/onefetch",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/o2sh/onefetch/archive/refs/tags/v2.12.0.tar.gz",
+    "srcurl": "https://github.com/o2sh/onefetch/archive/refs/tags/v2.13.1.tar.gz",
     "maintainer": "@ELWAER-M",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ae3275eec/packages/onefetch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ae3275eec/packages/onefetch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ae3275eec/packages/onefetch/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f5e8acf1d/packages/onefetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f5e8acf1d/packages/onefetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f5e8acf1d/packages/onefetch/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/f5e8acf1d/packages/onefetch/0001-upstream-fix-libc-removing-unsafe-on-makedev.diff",
+      "https://github.com/termux/termux-packages/blob/f5e8acf1d/packages/onefetch/0002-rust-git-config-path.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/f5e8acf1d/packages/onefetch/0001-upstream-fix-libc-removing-unsafe-on-makedev.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f5e8acf1d/packages/onefetch/0002-rust-git-config-path.diff"
+    ]
   },
   {
     "name": "oniguruma",
@@ -34928,17 +34932,17 @@
   },
   {
     "name": "vulkan-tools",
-    "version": "1.3.231",
+    "version": "1.3.232",
     "description": "Vulkan Tools and Utilities",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Tools",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/v1.3.231.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/v1.3.232.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e9d4ccb60/packages/vulkan-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e9d4ccb60/packages/vulkan-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e9d4ccb60/packages/vulkan-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0123153f4/packages/vulkan-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0123153f4/packages/vulkan-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0123153f4/packages/vulkan-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -41245,7 +41249,7 @@
   },
   {
     "name": "libvte",
-    "version": "2:0.62.3",
+    "version": "2:0.70.1",
     "description": "Virtual Terminal library",
     "homepage": "https://gitlab.gnome.org/GNOME/vte/",
     "depends": [
@@ -41261,18 +41265,16 @@
       "pcre2",
       "zlib"
     ],
-    "srcurl": "https://ftp.gnome.org/pub/GNOME/sources/vte/0.62/vte-0.62.3.tar.xz",
+    "srcurl": "https://ftp.gnome.org/pub/GNOME/sources/vte/0.70/vte-0.70.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ed92698b/x11-packages/libvte",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ed92698b/x11-packages/libvte/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ed92698b/x11-packages/libvte/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/908bb6bf9/x11-packages/libvte",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/908bb6bf9/x11-packages/libvte/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/908bb6bf9/x11-packages/libvte/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5ed92698b/x11-packages/libvte/libvte-src-vte-cc.patch",
-      "https://github.com/termux/termux-packages/blob/5ed92698b/x11-packages/libvte/vte-0.62.x-volatile.patch"
+      "https://github.com/termux/termux-packages/blob/908bb6bf9/x11-packages/libvte/src-missing.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5ed92698b/x11-packages/libvte/libvte-src-vte-cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5ed92698b/x11-packages/libvte/vte-0.62.x-volatile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/908bb6bf9/x11-packages/libvte/src-missing.cc.patch"
     ]
   },
   {
