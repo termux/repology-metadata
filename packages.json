@@ -7509,6 +7509,7 @@
       "libpng",
       "libspatialite",
       "libsqlite",
+      "libwebp",
       "netcdf-c",
       "openjpeg",
       "openssl",
@@ -7517,14 +7518,14 @@
     ],
     "srcurl": "https://download.osgeo.org/gdal/3.4.2/gdal-3.4.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f32d982cd/packages/gdal",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f32d982cd/packages/gdal/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f32d982cd/packages/gdal/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01df3b26c/packages/gdal",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01df3b26c/packages/gdal/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01df3b26c/packages/gdal/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f32d982cd/packages/gdal/cpl_port.h.patch"
+      "https://github.com/termux/termux-packages/blob/01df3b26c/packages/gdal/cpl_port.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f32d982cd/packages/gdal/cpl_port.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01df3b26c/packages/gdal/cpl_port.h.patch"
     ]
   },
   {
@@ -21894,15 +21895,15 @@
   },
   {
     "name": "micro",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "description": "Modern and intuitive terminal-based text editor",
     "homepage": "https://micro-editor.github.io/",
     "depends": [],
     "srcurl": "https://github.com/zyedidia/micro.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5c67cfa9c/packages/micro",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5c67cfa9c/packages/micro/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5c67cfa9c/packages/micro/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/39e92c0cf/packages/micro",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/39e92c0cf/packages/micro/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/39e92c0cf/packages/micro/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -23332,18 +23333,18 @@
   },
   {
     "name": "ncdu",
-    "version": "1.16",
+    "version": "1.17",
     "description": "Disk usage analyzer",
     "homepage": "https://dev.yorhel.nl/ncdu",
     "depends": [
       "ncurses",
       "libandroid-support"
     ],
-    "srcurl": "https://dev.yorhel.nl/download/ncdu-1.16.tar.gz",
+    "srcurl": "https://dev.yorhel.nl/download/ncdu-1.17.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d47ec41e0/packages/ncdu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d47ec41e0/packages/ncdu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d47ec41e0/packages/ncdu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f5edd5e4e/packages/ncdu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f5edd5e4e/packages/ncdu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f5edd5e4e/packages/ncdu/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -28069,65 +28070,6 @@
     ]
   },
   {
-    "name": "python-torch",
-    "version": "1.12.1",
-    "description": "Tensors and Dynamic neural networks in Python",
-    "homepage": "https://pytorch.org/",
-    "depends": [
-      "python",
-      "python-numpy",
-      "libopenblas",
-      "libprotobuf",
-      "libzmq",
-      "ffmpeg",
-      "opencv"
-    ],
-    "srcurl": "https://github.com/pytorch/pytorch.git",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cbba2d7ba/packages/python-torch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/python-torch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/python-torch/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/python-torch/Macros.h.patch",
-      "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/python-torch/convert-to-long.patch",
-      "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/python-torch/init_flatbuffer_module.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/python-torch/manager.cpp.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/python-torch/Macros.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/python-torch/convert-to-long.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/python-torch/init_flatbuffer_module.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/python-torch/manager.cpp.patch"
-    ]
-  },
-  {
-    "name": "python-torchvision",
-    "version": "0.13.1",
-    "description": "Datasets, Transforms and Models specific to Computer Vision",
-    "homepage": "https://github.com/pytorch/vision",
-    "depends": [
-      "python",
-      "python-numpy",
-      "python-pillow",
-      "python-torch",
-      "libjpeg-turbo",
-      "libpng",
-      "ffmpeg",
-      "zlib"
-    ],
-    "srcurl": "https://github.com/pytorch/vision.git",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cbba2d7ba/packages/python-torchvision",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/python-torchvision/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/python-torchvision/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/python-torchvision/setup.py.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/python-torchvision/setup.py.patch"
-    ]
-  },
-  {
     "name": "python2",
     "version": "2.7.18",
     "description": "Python 2 programming language intended to enable clear programs",
@@ -32681,26 +32623,28 @@
     ],
     "srcurl": "https://github.com/TeX-Live/texlive-source/archive/refs/heads/tags/texlive-2022.0.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/texlive-bin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c0391ef4d/packages/texlive-bin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/eptex-bool.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/pdftex-bool.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/texk-kpathsea-texmf.cnf.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/texk-web2c-Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch",
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/texlive-bin/zziplib_disable_have_dirent.patch"
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/eptex-bool.patch",
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/fix-path-to-md5.h.patch",
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/pdftex-bool.patch",
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/texk-kpathsea-texmf.cnf.patch",
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/texk-web2c-Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch",
+      "https://github.com/termux/termux-packages/blob/c0391ef4d/packages/texlive-bin/zziplib_disable_have_dirent.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/eptex-bool.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/pdftex-bool.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/texk-kpathsea-texmf.cnf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/texk-web2c-Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/texlive-bin/zziplib_disable_have_dirent.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/eptex-bool.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/fix-path-to-md5.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/pdftex-bool.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/texk-kpathsea-texmf.cnf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/texk-web2c-Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c0391ef4d/packages/texlive-bin/zziplib_disable_have_dirent.patch"
     ]
   },
   {
@@ -36423,13 +36367,15 @@
       "libsqlite",
       "openssl",
       "pcre",
-      "zlib"
+      "zlib",
+      "iw",
+      "ethtool"
     ],
     "srcurl": "https://github.com/aircrack-ng/aircrack-ng/archive/refs/tags/1.7.tar.gz",
     "maintainer": "Marlin Sööse <marlin.soose@laro.se>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/343936749/root-packages/aircrack-ng",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/343936749/root-packages/aircrack-ng/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/343936749/root-packages/aircrack-ng/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/00011023d/root-packages/aircrack-ng",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00011023d/root-packages/aircrack-ng/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00011023d/root-packages/aircrack-ng/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
