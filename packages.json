@@ -7178,12 +7178,15 @@
     "version": "0.45.0",
     "description": "A fast reverse proxy to expose a local server behind a NAT or firewall to the internet",
     "homepage": "https://gofrp.org/doc",
-    "depends": [],
+    "depends": [
+      "frpc",
+      "frps"
+    ],
     "srcurl": "https://github.com/fatedier/frp/archive/v0.45.0.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2d6ea557f/packages/frp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2d6ea557f/packages/frp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2d6ea557f/packages/frp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b83f915e/packages/frp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b83f915e/packages/frp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b83f915e/packages/frp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -25282,50 +25285,50 @@
   },
   {
     "name": "openssl",
-    "version": "1:3.0.5",
+    "version": "1:3.0.7",
     "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
     "homepage": "https://www.openssl.org/",
     "depends": [
       "ca-certificates",
       "zlib"
     ],
-    "srcurl": "https://www.openssl.org/source/openssl-3.0.5.tar.gz",
+    "srcurl": "https://www.openssl.org/source/openssl-3.0.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e664a7756/packages/openssl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b70e7265b/packages/openssl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b70e7265b/packages/openssl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b70e7265b/packages/openssl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl/Configurations-15-android.conf.patch",
-      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl/include-crypto-rand.h.patch"
+      "https://github.com/termux/termux-packages/blob/b70e7265b/packages/openssl/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/b70e7265b/packages/openssl/include-crypto-rand.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl/Configurations-15-android.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl/include-crypto-rand.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b70e7265b/packages/openssl/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b70e7265b/packages/openssl/include-crypto-rand.h.patch"
     ]
   },
   {
     "name": "openssl-1.1",
-    "version": "1:1.1.1q",
+    "version": "1:1.1.1s",
     "description": "Library implementing the SSL and TLS protocols as well as general purpose cryptography functions",
     "homepage": "https://www.openssl.org/",
     "depends": [
       "ca-certificates",
       "zlib"
     ],
-    "srcurl": "https://www.openssl.org/source/openssl-1.1.1q.tar.gz",
+    "srcurl": "https://www.openssl.org/source/openssl-1.1.1s.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e664a7756/packages/openssl-1.1",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4de742855/packages/openssl-1.1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4de742855/packages/openssl-1.1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4de742855/packages/openssl-1.1/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/Configurations-15-android.conf.patch",
-      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/apps-ocsp.c.patch",
-      "https://github.com/termux/termux-packages/blob/e664a7756/packages/openssl-1.1/e_os.h.patch"
+      "https://github.com/termux/termux-packages/blob/4de742855/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://github.com/termux/termux-packages/blob/4de742855/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://github.com/termux/termux-packages/blob/4de742855/packages/openssl-1.1/e_os.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/Configurations-15-android.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/apps-ocsp.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e664a7756/packages/openssl-1.1/e_os.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4de742855/packages/openssl-1.1/Configurations-15-android.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4de742855/packages/openssl-1.1/apps-ocsp.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4de742855/packages/openssl-1.1/e_os.h.patch"
     ]
   },
   {
@@ -34660,7 +34663,7 @@
   },
   {
     "name": "vis",
-    "version": "0.7",
+    "version": "0.8",
     "description": "Modern, legacy free, simple yet efficient vim-like editor",
     "homepage": "https://www.brain-dump.org/projects/vis/",
     "depends": [
@@ -34669,11 +34672,11 @@
       "lua-lpeg",
       "ncurses"
     ],
-    "srcurl": "https://github.com/martanne/vis/archive/v0.7.tar.gz",
+    "srcurl": "https://github.com/martanne/vis/archive/v0.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/153d6e045/packages/vis",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/153d6e045/packages/vis/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/153d6e045/packages/vis/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4bc89b76c/packages/vis",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4bc89b76c/packages/vis/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4bc89b76c/packages/vis/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -38192,35 +38195,44 @@
   },
   {
     "name": "caja",
-    "version": "1.24.1",
+    "version": "1.26.1",
     "description": "The file manager for the MATE desktop",
     "homepage": "https://mate-desktop.org/",
     "depends": [
       "atk",
+      "fontconfig",
+      "freetype",
       "gdk-pixbuf",
       "glib",
       "gtk3",
       "harfbuzz",
+      "libandroid-shmem",
       "libcairo",
       "libexif",
       "libice",
       "libnotify",
+      "libpixman",
+      "libpng",
       "libsm",
       "libx11",
+      "libxcb",
+      "libxext",
       "libxml2",
+      "libxrender",
       "mate-desktop",
-      "pango"
+      "pango",
+      "zlib"
     ],
-    "srcurl": "https://github.com/mate-desktop/caja/archive/refs/tags/v1.24.1.tar.gz",
+    "srcurl": "https://pub.mate-desktop.org/releases/1.26/caja-1.26.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8bcffc0b6/x11-packages/caja",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8bcffc0b6/x11-packages/caja/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8bcffc0b6/x11-packages/caja/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c94359ae5/x11-packages/caja",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c94359ae5/x11-packages/caja/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c94359ae5/x11-packages/caja/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8bcffc0b6/x11-packages/caja/libcaja-private-caja-file.c.patch"
+      "https://github.com/termux/termux-packages/blob/c94359ae5/x11-packages/caja/libcaja-private-caja-file.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8bcffc0b6/x11-packages/caja/libcaja-private-caja-file.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c94359ae5/x11-packages/caja/libcaja-private-caja-file.c.patch"
     ]
   },
   {
@@ -38654,18 +38666,37 @@
   },
   {
     "name": "exo",
-    "version": "4.17.1",
+    "version": "4.17.2",
     "description": "Application library for XFCE",
     "homepage": "https://www.xfce.org/",
     "depends": [
-      "hicolor-icon-theme",
-      "libxfce4ui"
+      "atk",
+      "fontconfig",
+      "freetype",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
+      "libice",
+      "libpixman",
+      "libpng",
+      "libsm",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxfce4ui",
+      "libxfce4util",
+      "libxrender",
+      "pango",
+      "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.1.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.2.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/75f1ce254/x11-packages/exo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/75f1ce254/x11-packages/exo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/75f1ce254/x11-packages/exo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/28adabd3f/x11-packages/exo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/28adabd3f/x11-packages/exo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/28adabd3f/x11-packages/exo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -39150,17 +39181,38 @@
   },
   {
     "name": "garcon",
-    "version": "4.16.1",
+    "version": "4.17.1",
     "description": "Implementation of the freedesktop.org menu specification",
     "homepage": "https://www.xfce.org/",
     "depends": [
-      "libxfce4ui"
+      "atk",
+      "fontconfig",
+      "freetype",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
+      "libice",
+      "libpixman",
+      "libpng",
+      "libsm",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxfce4ui",
+      "libxfce4util",
+      "libxrender",
+      "pango",
+      "startup-notification",
+      "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/garcon/4.16/garcon-4.16.1.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/garcon/4.17/garcon-4.17.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c933977af/x11-packages/garcon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c933977af/x11-packages/garcon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c933977af/x11-packages/garcon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9393c4b66/x11-packages/garcon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9393c4b66/x11-packages/garcon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9393c4b66/x11-packages/garcon/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -41511,49 +41563,64 @@
   },
   {
     "name": "libxfce4ui",
-    "version": "4.17.2",
+    "version": "4.17.7",
     "description": "Commonly used XFCE widgets among XFCE applications",
     "homepage": "https://www.xfce.org/",
     "depends": [
-      "gtk2",
+      "atk",
+      "fontconfig",
+      "freetype",
+      "gdk-pixbuf",
+      "glib",
       "gtk3",
-      "hicolor-icon-theme",
+      "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
+      "libice",
+      "libpixman",
+      "libpng",
       "libsm",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxfce4ui",
       "libxfce4util",
+      "libxrender",
+      "pango",
       "startup-notification",
       "xfconf",
-      "glib"
+      "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.2.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.7.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a8f40a2f0/x11-packages/libxfce4ui",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a8f40a2f0/x11-packages/libxfce4ui/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a8f40a2f0/x11-packages/libxfce4ui/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e4186131/x11-packages/libxfce4ui",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e4186131/x11-packages/libxfce4ui/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e4186131/x11-packages/libxfce4ui/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a8f40a2f0/x11-packages/libxfce4ui/dont-update-icon-cache.patch"
+      "https://github.com/termux/termux-packages/blob/0e4186131/x11-packages/libxfce4ui/dont-update-icon-cache.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a8f40a2f0/x11-packages/libxfce4ui/dont-update-icon-cache.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0e4186131/x11-packages/libxfce4ui/dont-update-icon-cache.patch"
     ]
   },
   {
     "name": "libxfce4util",
-    "version": "4.17.1",
+    "version": "4.17.2",
     "description": "Basic utility non-GUI functions for XFCE",
     "homepage": "https://www.xfce.org/",
     "depends": [
       "glib"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/libxfce4util/4.17/libxfce4util-4.17.1.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/libxfce4util/4.17/libxfce4util-4.17.2.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/edc24482c/x11-packages/libxfce4util",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edc24482c/x11-packages/libxfce4util/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edc24482c/x11-packages/libxfce4util/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a680d14e0/x11-packages/libxfce4util",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a680d14e0/x11-packages/libxfce4util/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a680d14e0/x11-packages/libxfce4util/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/edc24482c/x11-packages/libxfce4util/xfce-resource.c.patch"
+      "https://github.com/termux/termux-packages/blob/a680d14e0/x11-packages/libxfce4util/xfce-resource.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/edc24482c/x11-packages/libxfce4util/xfce-resource.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a680d14e0/x11-packages/libxfce4util/xfce-resource.c.patch"
     ]
   },
   {
@@ -42312,76 +42379,106 @@
   },
   {
     "name": "mate-common",
-    "version": "1.24.1",
+    "version": "1.26.0",
     "description": "Common scripts and macros to develop with MATE",
     "homepage": "https://mate-desktop.org/",
     "depends": [],
-    "srcurl": "https://github.com/mate-desktop/mate-common/archive/refs/tags/v1.24.1.tar.gz",
+    "srcurl": "https://github.com/mate-desktop/mate-common/archive/refs/tags/v1.26.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/13a33265e/x11-packages/mate-common",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/13a33265e/x11-packages/mate-common/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/13a33265e/x11-packages/mate-common/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a96b94dc8/x11-packages/mate-common",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a96b94dc8/x11-packages/mate-common/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a96b94dc8/x11-packages/mate-common/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
   {
     "name": "mate-desktop",
-    "version": "1.24.1",
+    "version": "1.26.0",
     "description": "mate-desktop contains the libmate-desktop library, the mate-about program as well as some desktop-wide documents.",
     "homepage": "https://mate-desktop.mate-desktop.dev/",
     "depends": [
-      "libmatekbd",
+      "atk",
       "dconf",
-      "startup-notification"
+      "fontconfig",
+      "freetype",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
+      "libpixman",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxrandr",
+      "libxrender",
+      "mate-desktop",
+      "pango",
+      "startup-notification",
+      "zlib"
     ],
-    "srcurl": "https://github.com/mate-desktop/mate-desktop/releases/download/v1.24.1/mate-desktop-1.24.1.tar.xz",
+    "srcurl": "https://github.com/mate-desktop/mate-desktop/releases/download/v1.26.0/mate-desktop-1.26.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c57dafd7b/x11-packages/mate-desktop",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c57dafd7b/x11-packages/mate-desktop/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c57dafd7b/x11-packages/mate-desktop/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c57dafd7b/x11-packages/mate-desktop/dttoif.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c57dafd7b/x11-packages/mate-desktop/dttoif.patch"
-    ]
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3ea51f00/x11-packages/mate-desktop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3ea51f00/x11-packages/mate-desktop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3ea51f00/x11-packages/mate-desktop/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "mate-menus",
-    "version": "1.25.0",
+    "version": "1.26.0",
     "description": "mate-menus contains the libmate-menu library, the layout configuration",
     "homepage": "https://mate-menus.mate-desktop.dev/",
     "depends": [
       "glib"
     ],
-    "srcurl": "https://github.com/mate-desktop/mate-menus/releases/download/v1.25.0/mate-menus-1.25.0.tar.xz",
+    "srcurl": "https://github.com/mate-desktop/mate-menus/releases/download/v1.26.0/mate-menus-1.26.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e981a5b98/x11-packages/mate-menus",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e981a5b98/x11-packages/mate-menus/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e981a5b98/x11-packages/mate-menus/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/120cc04b7/x11-packages/mate-menus",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/120cc04b7/x11-packages/mate-menus/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/120cc04b7/x11-packages/mate-menus/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
   {
     "name": "mate-panel",
-    "version": "1.24.2",
+    "version": "1.26.2",
     "description": "mate-panel contains the MATE panel, the libmate-panel-applet library and several applets",
     "homepage": "https://mate-panel.mate-desktop.dev/",
     "depends": [
-      "libsm",
+      "atk",
+      "fontconfig",
+      "freetype",
+      "gdk-pixbuf",
+      "glib",
       "gtk3",
+      "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
       "libice",
+      "libmateweather",
+      "libpixman",
+      "libpng",
+      "libsm",
+      "libwnck",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxrandr",
+      "libxrender",
       "mate-desktop",
       "mate-menus",
-      "libwnck",
-      "libmateweather",
-      "librsvg"
+      "pango",
+      "zlib"
     ],
-    "srcurl": "https://github.com/mate-desktop/mate-panel/releases/download/v1.24.2/mate-panel-1.24.2.tar.xz",
+    "srcurl": "https://github.com/mate-desktop/mate-panel/releases/download/v1.26.2/mate-panel-1.26.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/39d22b662/x11-packages/mate-panel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/39d22b662/x11-packages/mate-panel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/39d22b662/x11-packages/mate-panel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd5b0a6b4/x11-packages/mate-panel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd5b0a6b4/x11-packages/mate-panel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd5b0a6b4/x11-packages/mate-panel/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -42418,21 +42515,51 @@
   },
   {
     "name": "mate-settings-daemon",
-    "version": "1.24.2",
+    "version": "1.26.0",
     "description": "mate-settings-daemon is a fork of gnome-settings-daemon",
     "homepage": "https://mate-settings-daemon.mate-desktop.dev/",
     "depends": [
-      "gtk3",
+      "atk",
+      "dbus",
       "dbus-glib",
-      "mate-desktop"
+      "dconf",
+      "fontconfig",
+      "freetype",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
+      "libice",
+      "libmatekbd",
+      "libnotify",
+      "libpixman",
+      "libpng",
+      "libsm",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxi",
+      "libxklavier",
+      "libxrandr",
+      "libxrender",
+      "mate-desktop",
+      "pango",
+      "startup-notification",
+      "zlib"
     ],
-    "srcurl": "https://github.com/mate-desktop/mate-settings-daemon/releases/download/v1.24.2/mate-settings-daemon-1.24.2.tar.xz",
+    "srcurl": "https://github.com/mate-desktop/mate-settings-daemon/releases/download/v1.26.0/mate-settings-daemon-1.26.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2e07ef1c/x11-packages/mate-settings-daemon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2e07ef1c/x11-packages/mate-settings-daemon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2e07ef1c/x11-packages/mate-settings-daemon/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b28d9e7b8/x11-packages/mate-settings-daemon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b28d9e7b8/x11-packages/mate-settings-daemon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b28d9e7b8/x11-packages/mate-settings-daemon/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/b28d9e7b8/x11-packages/mate-settings-daemon/plugins-a11y-keyboard-Makefile.in.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/b28d9e7b8/x11-packages/mate-settings-daemon/plugins-a11y-keyboard-Makefile.in.patch"
+    ]
   },
   {
     "name": "mate-terminal",
@@ -42550,17 +42677,19 @@
   },
   {
     "name": "mousepad",
-    "version": "0.5.9",
+    "version": "0.5.10",
     "description": "A simple text editor for the Xfce desktop environment",
     "homepage": "https://gitlab.xfce.org/apps/mousepad",
     "depends": [
       "atk",
       "fontconfig",
       "freetype",
+      "gdk-pixbuf",
       "glib",
       "gtk3",
       "gtksourceview4",
       "harfbuzz",
+      "libandroid-shmem",
       "libcairo",
       "libpixman",
       "libpng",
@@ -42571,11 +42700,11 @@
       "pango",
       "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.9.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.10.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/379ca1b6f/x11-packages/mousepad",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/379ca1b6f/x11-packages/mousepad/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/379ca1b6f/x11-packages/mousepad/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b56eb3d58/x11-packages/mousepad",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b56eb3d58/x11-packages/mousepad/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b56eb3d58/x11-packages/mousepad/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -43116,17 +43245,17 @@
   },
   {
     "name": "papirus-icon-theme",
-    "version": "20220910",
+    "version": "20221101",
     "description": "Papirus is a free and open source icon theme, based on Paper Icon Set",
     "homepage": "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme",
     "depends": [
       "hicolor-icon-theme"
     ],
-    "srcurl": "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/refs/tags/20220910.tar.gz",
+    "srcurl": "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/refs/tags/20221101.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1d688ed88/x11-packages/papirus-icon-theme",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1d688ed88/x11-packages/papirus-icon-theme/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1d688ed88/x11-packages/papirus-icon-theme/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2827f7ef7/x11-packages/papirus-icon-theme",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2827f7ef7/x11-packages/papirus-icon-theme/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2827f7ef7/x11-packages/papirus-icon-theme/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -45012,24 +45141,35 @@
   },
   {
     "name": "thunar",
-    "version": "4.17.7",
+    "version": "4.17.10",
     "description": "Modern file manager for XFCE environment",
     "homepage": "https://docs.xfce.org/xfce/thunar/start",
     "depends": [
+      "atk",
       "desktop-file-utils",
       "exo",
-      "hicolor-icon-theme",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libcairo",
       "libexif",
+      "libice",
       "libnotify",
-      "libpng",
+      "libsm",
+      "libx11",
       "libxfce4ui",
-      "libxfce4util"
+      "libxfce4util",
+      "pango",
+      "shared-mime-info",
+      "xfce4-panel",
+      "xfconf"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.7.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.10.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/df99c2d12/x11-packages/thunar",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/df99c2d12/x11-packages/thunar/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/df99c2d12/x11-packages/thunar/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa7b047ba/x11-packages/thunar",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa7b047ba/x11-packages/thunar/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa7b047ba/x11-packages/thunar/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -46440,55 +46580,84 @@
   },
   {
     "name": "xfce4-notifyd",
-    "version": "0.6.2",
+    "version": "0.6.4",
     "description": "simple, visually-appealing notification daemon for Xfce",
     "homepage": "https://docs.xfce.org/apps/notifyd/start",
     "depends": [
       "atk",
-      "libcairo",
+      "fontconfig",
+      "freetype",
       "gdk-pixbuf",
       "glib",
       "gtk3",
       "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
       "libnotify",
-      "pango",
+      "libpixman",
+      "libpng",
+      "libx11",
+      "libxcb",
+      "libxext",
       "libxfce4ui",
       "libxfce4util",
+      "libxrender",
+      "pango",
+      "xfce4-panel",
       "xfconf",
-      "xfce4-panel"
+      "zlib"
     ],
-    "srcurl": "http://deb.debian.org/debian/pool/main/x/xfce4-notifyd/xfce4-notifyd_0.6.2.orig.tar.bz2",
+    "srcurl": "http://deb.debian.org/debian/pool/main/x/xfce4-notifyd/xfce4-notifyd_0.6.4.orig.tar.bz2",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/200632f28/x11-packages/xfce4-notifyd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/200632f28/x11-packages/xfce4-notifyd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/200632f28/x11-packages/xfce4-notifyd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c580e2739/x11-packages/xfce4-notifyd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c580e2739/x11-packages/xfce4-notifyd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c580e2739/x11-packages/xfce4-notifyd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
   {
     "name": "xfce4-panel",
-    "version": "4.16.3",
+    "version": "4.17.3",
     "description": "Panel for the XFCE environment",
     "homepage": "https://www.xfce.org/",
     "depends": [
-      "desktop-file-utils",
+      "atk",
       "exo",
-      "hicolor-icon-theme",
+      "fontconfig",
+      "freetype",
       "garcon",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libandroid-shmem",
+      "libcairo",
+      "libice",
+      "libpixman",
+      "libpng",
+      "libsm",
       "libwnck",
+      "libx11",
+      "libxcb",
+      "libxext",
       "libxfce4ui",
-      "xfconf"
+      "libxfce4util",
+      "libxrender",
+      "pango",
+      "startup-notification",
+      "xfconf",
+      "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.3.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.3.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/046f04cc2/x11-packages/xfce4-panel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/046f04cc2/x11-packages/xfce4-panel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/046f04cc2/x11-packages/xfce4-panel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/24aae8445/x11-packages/xfce4-panel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/24aae8445/x11-packages/xfce4-panel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/24aae8445/x11-packages/xfce4-panel/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/046f04cc2/x11-packages/xfce4-panel/dont-update-icon-cache.patch"
+      "https://github.com/termux/termux-packages/blob/24aae8445/x11-packages/xfce4-panel/dont-update-icon-cache.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/046f04cc2/x11-packages/xfce4-panel/dont-update-icon-cache.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/24aae8445/x11-packages/xfce4-panel/dont-update-icon-cache.patch"
     ]
   },
   {
@@ -46611,64 +46780,77 @@
   },
   {
     "name": "xfce4-session",
-    "version": "4.16.0",
+    "version": "4.17.0",
     "description": "A session manager for XFCE environment",
     "homepage": "https://www.xfce.org/",
     "depends": [
-      "gnupg",
-      "hicolor-icon-theme",
+      "atk",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "libcairo",
+      "libice",
       "libsm",
       "libwnck",
+      "libx11",
       "libxfce4ui",
-      "xfce4-settings",
-      "xfdesktop",
+      "libxfce4util",
       "pango",
-      "xfwm4",
+      "xfconf",
       "xorg-iceauth",
       "xorg-xrdb"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-session/4.16/xfce4-session-4.16.0.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-session/4.17/xfce4-session-4.17.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/75f1ce254/x11-packages/xfce4-session",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/75f1ce254/x11-packages/xfce4-session/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/75f1ce254/x11-packages/xfce4-session/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/69a9d98d9/x11-packages/xfce4-session",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69a9d98d9/x11-packages/xfce4-session/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69a9d98d9/x11-packages/xfce4-session/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/75f1ce254/x11-packages/xfce4-session/disable-xinit-null-display.patch",
-      "https://github.com/termux/termux-packages/blob/75f1ce254/x11-packages/xfce4-session/dont-update-icon-cache.patch",
-      "https://github.com/termux/termux-packages/blob/75f1ce254/x11-packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
+      "https://github.com/termux/termux-packages/blob/69a9d98d9/x11-packages/xfce4-session/disable-xinit-null-display.patch",
+      "https://github.com/termux/termux-packages/blob/69a9d98d9/x11-packages/xfce4-session/dont-update-icon-cache.patch",
+      "https://github.com/termux/termux-packages/blob/69a9d98d9/x11-packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/75f1ce254/x11-packages/xfce4-session/disable-xinit-null-display.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/75f1ce254/x11-packages/xfce4-session/dont-update-icon-cache.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/75f1ce254/x11-packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/69a9d98d9/x11-packages/xfce4-session/disable-xinit-null-display.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69a9d98d9/x11-packages/xfce4-session/dont-update-icon-cache.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69a9d98d9/x11-packages/xfce4-session/xfsm-shutdown-fallback.c.patch"
     ]
   },
   {
     "name": "xfce4-settings",
-    "version": "4.16.3",
+    "version": "4.17.0",
     "description": "Settings manager for XFCE environment",
     "homepage": "https://www.xfce.org/",
     "depends": [
+      "atk",
       "exo",
+      "fontconfig",
       "garcon",
-      "libnotify",
-      "libxfce4ui",
-      "libxklavier",
-      "lxde-icon-theme",
-      "libcanberra",
+      "gdk-pixbuf",
+      "glib",
       "gtk3",
-      "gsettings-desktop-schemas"
+      "libcairo",
+      "libnotify",
+      "libx11",
+      "libxcursor",
+      "libxfce4ui",
+      "libxfce4util",
+      "libxi",
+      "libxklavier",
+      "libxrandr",
+      "pango",
+      "xfconf"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-settings/4.16/xfce4-settings-4.16.3.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/xfce4-settings/4.17/xfce4-settings-4.17.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/df995b7a7/x11-packages/xfce4-settings",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/df995b7a7/x11-packages/xfce4-settings/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/df995b7a7/x11-packages/xfce4-settings/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/85d90cb42/x11-packages/xfce4-settings",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/85d90cb42/x11-packages/xfce4-settings/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/85d90cb42/x11-packages/xfce4-settings/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/df995b7a7/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch"
+      "https://github.com/termux/termux-packages/blob/85d90cb42/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/df995b7a7/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/85d90cb42/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch"
     ]
   },
   {
@@ -46789,18 +46971,18 @@
   },
   {
     "name": "xfconf",
-    "version": "4.16.0",
+    "version": "4.17.0",
     "description": "Flexible, easy-to-use configuration management system",
     "homepage": "https://www.xfce.org/",
     "depends": [
       "dbus",
       "libxfce4util"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/xfconf/4.16/xfconf-4.16.0.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/xfconf/4.17/xfconf-4.17.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/046f04cc2/x11-packages/xfconf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/046f04cc2/x11-packages/xfconf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/046f04cc2/x11-packages/xfconf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/666bfb07e/x11-packages/xfconf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/666bfb07e/x11-packages/xfconf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/666bfb07e/x11-packages/xfconf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -46832,14 +47014,13 @@
   },
   {
     "name": "xfwm4",
-    "version": "4.16.1",
+    "version": "4.17.1",
     "description": "Window manager for XFCE environment",
     "homepage": "https://www.xfce.org/",
     "depends": [
       "gdk-pixbuf",
       "glib",
       "gtk3",
-      "hicolor-icon-theme",
       "libcairo",
       "libepoxy",
       "libwnck",
@@ -46857,11 +47038,11 @@
       "startup-notification",
       "xfconf"
     ],
-    "srcurl": "https://archive.xfce.org/src/xfce/xfwm4/4.16/xfwm4-4.16.1.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/xfce/xfwm4/4.17/xfwm4-4.17.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/60a3470b9/x11-packages/xfwm4",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60a3470b9/x11-packages/xfwm4/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60a3470b9/x11-packages/xfwm4/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/404240b83/x11-packages/xfwm4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/404240b83/x11-packages/xfwm4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/404240b83/x11-packages/xfwm4/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
