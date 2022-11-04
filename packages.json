@@ -6568,24 +6568,24 @@
   },
   {
     "name": "fetchmail",
-    "version": "6.4.33",
+    "version": "6.4.34",
     "description": "A remote-mail retrieval utility",
     "homepage": "https://www.fetchmail.info/",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://sourceforge.net/projects/fetchmail/files/branch_6.4/fetchmail-6.4.33.tar.xz",
+    "srcurl": "https://sourceforge.net/projects/fetchmail/files/branch_6.4/fetchmail-6.4.34.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cbba2d7ba/packages/fetchmail",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/fetchmail/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/fetchmail/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a26b52d53/packages/fetchmail",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a26b52d53/packages/fetchmail/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a26b52d53/packages/fetchmail/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/fetchmail/fetchmailconf-exec-python.patch",
-      "https://github.com/termux/termux-packages/blob/cbba2d7ba/packages/fetchmail/fix-passwordlen-redefinition.patch"
+      "https://github.com/termux/termux-packages/blob/a26b52d53/packages/fetchmail/fetchmailconf-exec-python.patch",
+      "https://github.com/termux/termux-packages/blob/a26b52d53/packages/fetchmail/fix-passwordlen-redefinition.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/fetchmail/fetchmailconf-exec-python.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cbba2d7ba/packages/fetchmail/fix-passwordlen-redefinition.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a26b52d53/packages/fetchmail/fetchmailconf-exec-python.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a26b52d53/packages/fetchmail/fix-passwordlen-redefinition.patch"
     ]
   },
   {
@@ -6932,20 +6932,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.0.427",
+    "version": "0.0.428",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.427.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.428.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/34f5b567c/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/34f5b567c/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/34f5b567c/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b1d9b83a/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b1d9b83a/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b1d9b83a/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/34f5b567c/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/1b1d9b83a/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/34f5b567c/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1b1d9b83a/packages/flyctl/getcpuinfo.patch"
     ]
   },
   {
@@ -9429,25 +9429,31 @@
     "description": "GStreamer Bad Plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
+      "game-music-emu",
+      "glib",
       "gst-plugins-base",
+      "gstreamer",
+      "libaom",
+      "libass",
       "libbz2",
+      "libcairo",
       "libcurl",
-      "libiconv",
-      "libpng",
+      "libopus",
       "librsvg",
-      "libssh2",
       "libsndfile",
-      "libx264",
-      "libx265",
+      "libx11",
+      "libxml2",
       "littlecms",
       "openal-soft",
-      "openjpeg"
+      "openjpeg",
+      "openssl",
+      "pango"
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.20.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1570945a5/packages/gst-plugins-bad",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1570945a5/packages/gst-plugins-bad/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1570945a5/packages/gst-plugins-bad/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e1b761f12/packages/gst-plugins-bad",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e1b761f12/packages/gst-plugins-bad/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e1b761f12/packages/gst-plugins-bad/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -9457,20 +9463,27 @@
     "description": "GStreamer base plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
+      "glib",
       "graphene",
       "gstreamer",
       "libandroid-shmem",
       "libjpeg-turbo",
+      "libogg",
       "libopus",
       "libpng",
+      "libtheora",
       "libvorbis",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxv",
       "zlib"
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.20.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ed427999/packages/gst-plugins-base",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ed427999/packages/gst-plugins-base/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ed427999/packages/gst-plugins-base/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/79779f59e/packages/gst-plugins-base",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/79779f59e/packages/gst-plugins-base/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/79779f59e/packages/gst-plugins-base/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -21920,6 +21933,38 @@
     ]
   },
   {
+    "name": "mesa",
+    "version": "22.2.2",
+    "description": "An open-source implementation of the OpenGL specification",
+    "homepage": "https://www.mesa3d.org",
+    "depends": [
+      "libandroid-shmem",
+      "libc++",
+      "libdrm",
+      "libexpat",
+      "libx11",
+      "libxext",
+      "ncurses",
+      "zlib",
+      "zstd"
+    ],
+    "srcurl": "https://archive.mesa3d.org/mesa-22.2.2.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e0c61a0a/packages/mesa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+    ]
+  },
+  {
     "name": "mfcuk",
     "version": "2018.07.14",
     "description": "MiFare Classic Universal toolKit (MFCUK)",
@@ -21964,9 +22009,9 @@
     "depends": [],
     "srcurl": "https://github.com/zyedidia/micro.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/39e92c0cf/packages/micro",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/39e92c0cf/packages/micro/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/39e92c0cf/packages/micro/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a81602ab7/packages/micro",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a81602ab7/packages/micro/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a81602ab7/packages/micro/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -33731,32 +33776,27 @@
     "description": "TV streaming server for Linux and Android supporting DVB-S, DVB-S2 and other formats.",
     "homepage": "https://tvheadend.org/",
     "depends": [
+      "dbus",
+      "libdvbcsa",
       "libiconv",
-      "ffmpeg",
-      "libopus",
-      "libx264",
-      "libx265",
-      "libvpx",
-      "libfdk-aac",
-      "libogg",
-      "libtheora",
-      "libvorbis",
-      "pngquant"
+      "openssl",
+      "tvheadend-data",
+      "zlib"
     ],
     "srcurl": "https://github.com/tvheadend/tvheadend/archive/v4.2.8.tar.gz",
     "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/508520959/packages/tvheadend",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/508520959/packages/tvheadend/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/508520959/packages/tvheadend/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4fe2bd9a1/packages/tvheadend",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4fe2bd9a1/packages/tvheadend/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4fe2bd9a1/packages/tvheadend/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/508520959/packages/tvheadend/define_memalign.patch",
-      "https://github.com/termux/termux-packages/blob/508520959/packages/tvheadend/src-input-mpegts-iptv-iptv_file.c.patch",
-      "https://github.com/termux/termux-packages/blob/508520959/packages/tvheadend/time_64.patch"
+      "https://github.com/termux/termux-packages/blob/4fe2bd9a1/packages/tvheadend/define_memalign.patch",
+      "https://github.com/termux/termux-packages/blob/4fe2bd9a1/packages/tvheadend/src-input-mpegts-iptv-iptv_file.c.patch",
+      "https://github.com/termux/termux-packages/blob/4fe2bd9a1/packages/tvheadend/time_64.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/508520959/packages/tvheadend/define_memalign.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/508520959/packages/tvheadend/src-input-mpegts-iptv-iptv_file.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/508520959/packages/tvheadend/time_64.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe2bd9a1/packages/tvheadend/define_memalign.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe2bd9a1/packages/tvheadend/src-input-mpegts-iptv-iptv_file.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe2bd9a1/packages/tvheadend/time_64.patch"
     ]
   },
   {
@@ -38996,27 +39036,27 @@
   },
   {
     "name": "flacon",
-    "version": "8.2.0",
+    "version": "9.4.0",
     "description": "Extracts individual tracks from one big audio file and saves them as separate audio files",
     "homepage": "https://flacon.github.io/",
     "depends": [
+      "libc++",
       "libuchardet",
-      "taglib",
       "qt5-qtbase",
-      "qt5-qttools"
+      "taglib"
     ],
-    "srcurl": "https://github.com/flacon/flacon/archive/v8.2.0.tar.gz",
+    "srcurl": "https://github.com/flacon/flacon/archive/v9.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5c237493a/x11-packages/flacon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5c237493a/x11-packages/flacon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5c237493a/x11-packages/flacon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/42394744a/x11-packages/flacon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/42394744a/x11-packages/flacon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/42394744a/x11-packages/flacon/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5c237493a/x11-packages/flacon/gui-controls.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/5c237493a/x11-packages/flacon/gui-mainwindow.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/42394744a/x11-packages/flacon/gui-controls.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/42394744a/x11-packages/flacon/gui-mainwindow.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5c237493a/x11-packages/flacon/gui-controls.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5c237493a/x11-packages/flacon/gui-mainwindow.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/42394744a/x11-packages/flacon/gui-controls.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/42394744a/x11-packages/flacon/gui-mainwindow.cpp.patch"
     ]
   },
   {
@@ -39595,28 +39635,28 @@
   },
   {
     "name": "glfw",
-    "version": "3.3.7",
+    "version": "3.3.8",
     "description": "An Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development",
     "homepage": "https://www.glfw.org/",
     "depends": [
       "libx11"
     ],
-    "srcurl": "https://github.com/glfw/glfw/archive/refs/tags/3.3.7.tar.gz",
+    "srcurl": "https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ad17b2017/x11-packages/glfw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ad17b2017/x11-packages/glfw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ad17b2017/x11-packages/glfw/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4387f9339/x11-packages/glfw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ad17b2017/x11-packages/glfw/src-wl_init.c.patch",
-      "https://github.com/termux/termux-packages/blob/ad17b2017/x11-packages/glfw/src-wl_platform.h.patch",
-      "https://github.com/termux/termux-packages/blob/ad17b2017/x11-packages/glfw/src-x11_init.c.patch",
-      "https://github.com/termux/termux-packages/blob/ad17b2017/x11-packages/glfw/src-x11_window.c.patch"
+      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-wl_init.c.patch",
+      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-wl_platform.h.patch",
+      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-x11_init.c.patch",
+      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-x11_window.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ad17b2017/x11-packages/glfw/src-wl_init.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ad17b2017/x11-packages/glfw/src-wl_platform.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ad17b2017/x11-packages/glfw/src-x11_init.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ad17b2017/x11-packages/glfw/src-x11_window.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-wl_init.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-wl_platform.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-x11_init.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-x11_window.c.patch"
     ]
   },
   {
@@ -42625,38 +42665,6 @@
     "package_patch_raw_urls": []
   },
   {
-    "name": "mesa",
-    "version": "22.2.2",
-    "description": "An open-source implementation of the OpenGL specification",
-    "homepage": "https://www.mesa3d.org",
-    "depends": [
-      "libandroid-shmem",
-      "libc++",
-      "libdrm",
-      "libexpat",
-      "libx11",
-      "libxext",
-      "ncurses",
-      "zlib",
-      "zstd"
-    ],
-    "srcurl": "https://archive.mesa3d.org/mesa-22.2.2.tar.xz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/64d219f24/x11-packages/mesa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/64d219f24/x11-packages/mesa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/64d219f24/x11-packages/mesa/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/64d219f24/x11-packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://github.com/termux/termux-packages/blob/64d219f24/x11-packages/mesa/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/64d219f24/x11-packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/64d219f24/x11-packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64d219f24/x11-packages/mesa/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64d219f24/x11-packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
-    ]
-  },
-  {
     "name": "mesa-demos",
     "version": "8.5.0",
     "description": "OpenGL demonstration and test programs",
@@ -43659,11 +43667,10 @@
   },
   {
     "name": "putty",
-    "version": "0.76",
+    "version": "0.78",
     "description": "A terminal integrated SSH/Telnet client",
     "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
     "depends": [
-      "atk",
       "gdk-pixbuf",
       "glib",
       "gtk3",
@@ -43673,26 +43680,18 @@
       "libx11",
       "pango"
     ],
-    "srcurl": "https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz",
+    "srcurl": "https://the.earth.li/~sgtatham/putty/0.78/putty-0.78.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/138a7c1a4/x11-packages/putty",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/138a7c1a4/x11-packages/putty/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/138a7c1a4/x11-packages/putty/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8ecd91638/x11-packages/putty",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8ecd91638/x11-packages/putty/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8ecd91638/x11-packages/putty/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/138a7c1a4/x11-packages/putty/no-priv-drop.patch",
-      "https://github.com/termux/termux-packages/blob/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxnet.c.patch",
-      "https://github.com/termux/termux-packages/blob/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxnoise.c.patch",
-      "https://github.com/termux/termux-packages/blob/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxpgnt.c.patch",
-      "https://github.com/termux/termux-packages/blob/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxproxy.c.patch",
-      "https://github.com/termux/termux-packages/blob/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxshare.c.patch"
+      "https://github.com/termux/termux-packages/blob/8ecd91638/x11-packages/putty/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/8ecd91638/x11-packages/putty/no-priv-drop.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/138a7c1a4/x11-packages/putty/no-priv-drop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxnet.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxnoise.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxpgnt.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxproxy.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/138a7c1a4/x11-packages/putty/putty-0.70_unix_uxshare.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8ecd91638/x11-packages/putty/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8ecd91638/x11-packages/putty/no-priv-drop.patch"
     ]
   },
   {
@@ -46260,25 +46259,23 @@
     "description": "Integrated theme manager for xfce4",
     "homepage": "https://github.com/KeithDHedger/Xfce-Theme-Manager",
     "depends": [
-      "libcairo",
       "gdk-pixbuf",
       "glib",
       "gtk2",
-      "gtk3",
-      "libxfce4ui",
-      "libxfce4util",
-      "unzip"
+      "libcairo",
+      "libxcursor",
+      "xfconf"
     ],
     "srcurl": "https://github.com/KeithDHedger/Xfce-Theme-Manager/archive/refs/tags/v3.8.tar.gz",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/200632f28/x11-packages/xfce-theme-manager",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/200632f28/x11-packages/xfce-theme-manager/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/200632f28/x11-packages/xfce-theme-manager/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d87c09808/x11-packages/xfce-theme-manager",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d87c09808/x11-packages/xfce-theme-manager/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d87c09808/x11-packages/xfce-theme-manager/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/200632f28/x11-packages/xfce-theme-manager/use_termux_prefix.patch"
+      "https://github.com/termux/termux-packages/blob/d87c09808/x11-packages/xfce-theme-manager/use_termux_prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/200632f28/x11-packages/xfce-theme-manager/use_termux_prefix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d87c09808/x11-packages/xfce-theme-manager/use_termux_prefix.patch"
     ]
   },
   {
@@ -46539,16 +46536,23 @@
     "description": "Xfce4 Mailwatch Plugin is a multi-protocol, multi-mailbox mail watcher for the Xfce4 panel.",
     "homepage": "https://docs.xfce.org/panel-plugins/xfce4-mailwatch-plugin/start",
     "depends": [
-      "glib",
+      "atk",
+      "exo",
+      "gdk-pixbuf",
+      "gtk3",
+      "harfbuzz",
+      "libcairo",
+      "libgnutls",
       "libxfce4ui",
       "libxfce4util",
+      "pango",
       "xfce4-panel"
     ],
     "srcurl": "https://archive.xfce.org/src/panel-plugins/xfce4-mailwatch-plugin/1.3/xfce4-mailwatch-plugin-1.3.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2e07ef1c/x11-packages/xfce4-mailwatch-plugin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2e07ef1c/x11-packages/xfce4-mailwatch-plugin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2e07ef1c/x11-packages/xfce4-mailwatch-plugin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c377296d9/x11-packages/xfce4-mailwatch-plugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c377296d9/x11-packages/xfce4-mailwatch-plugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c377296d9/x11-packages/xfce4-mailwatch-plugin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -46558,21 +46562,22 @@
     "description": "network load monitor plugin for the Xfce4 panel",
     "homepage": "https://docs.xfce.org/panel-plugins/xfce4-netload-plugin/start",
     "depends": [
-      "gtk3",
       "atk",
-      "libcairo",
-      "pango",
       "gdk-pixbuf",
       "glib",
-      "libxfce4util",
+      "gtk3",
+      "harfbuzz",
+      "libcairo",
       "libxfce4ui",
+      "libxfce4util",
+      "pango",
       "xfce4-panel"
     ],
     "srcurl": "https://archive.xfce.org/src/panel-plugins/xfce4-netload-plugin/1.4/xfce4-netload-plugin-1.4.0.tar.bz2",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/200632f28/x11-packages/xfce4-netload-plugin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/200632f28/x11-packages/xfce4-netload-plugin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/200632f28/x11-packages/xfce4-netload-plugin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2671bc956/x11-packages/xfce4-netload-plugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2671bc956/x11-packages/xfce4-netload-plugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2671bc956/x11-packages/xfce4-netload-plugin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -46725,25 +46730,29 @@
     "description": "Xfce Screensaver is a screen saver and locker that aims to have simple, sane, secure defaults and be well integrated with the desktop.",
     "homepage": "https://docs.xfce.org/apps/screensaver/start",
     "depends": [
-      "atk",
-      "gtk3",
+      "dbus",
+      "dbus-glib",
       "garcon",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "libcairo",
       "libwnck",
+      "libx11",
       "libxext",
+      "libxfce4ui",
       "libxklavier",
       "libxss",
-      "termux-auth",
-      "libcairo",
-      "dbus-glib",
+      "mesa",
       "pango",
-      "libxfce4ui",
+      "termux-auth",
       "xfconf"
     ],
     "srcurl": "https://archive.xfce.org/src/apps/xfce4-screensaver/4.16/xfce4-screensaver-4.16.0.tar.bz2",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/200632f28/x11-packages/xfce4-screensaver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/200632f28/x11-packages/xfce4-screensaver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/200632f28/x11-packages/xfce4-screensaver/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9be95d166/x11-packages/xfce4-screensaver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9be95d166/x11-packages/xfce4-screensaver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9be95d166/x11-packages/xfce4-screensaver/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -47875,25 +47884,24 @@
   },
   {
     "name": "zenity",
-    "version": "3.32.0",
+    "version": "3.43.0",
     "description": "a rewrite of gdialog, the GNOME port of dialog",
     "homepage": "https://gitlab.gnome.org/GNOME/zenity",
     "depends": [
+      "gdk-pixbuf",
       "glib",
-      "gtk3"
+      "gtk3",
+      "libnotify",
+      "libx11",
+      "pango",
+      "webkit2gtk-4.1"
     ],
-    "srcurl": "https://download.gnome.org/sources/zenity/3.32/zenity-3.32.0.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/zenity/3.43/zenity-3.43.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2e07ef1c/x11-packages/zenity",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2e07ef1c/x11-packages/zenity/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2e07ef1c/x11-packages/zenity/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a2e07ef1c/x11-packages/zenity/Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/a2e07ef1c/x11-packages/zenity/main.c.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a2e07ef1c/x11-packages/zenity/Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a2e07ef1c/x11-packages/zenity/main.c.patch"
-    ]
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec3fb6880/x11-packages/zenity",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec3fb6880/x11-packages/zenity/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec3fb6880/x11-packages/zenity/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   }
 ]
