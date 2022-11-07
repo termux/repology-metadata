@@ -15552,15 +15552,15 @@
   },
   {
     "name": "libhiredis",
-    "version": "1.0.2",
+    "version": "1.1.0-rc1",
     "description": "Hiredis is a minimalistic C client library for the Redis database",
     "homepage": "https://redis.com/lp/hiredis",
     "depends": [],
-    "srcurl": "https://github.com/redis/hiredis/archive/refs/tags/v1.0.2.tar.gz",
+    "srcurl": "https://github.com/redis/hiredis/archive/refs/tags/v1.1.0-rc1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c0cc0066/packages/libhiredis",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c0cc0066/packages/libhiredis/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c0cc0066/packages/libhiredis/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/26c38872a/packages/libhiredis",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/26c38872a/packages/libhiredis/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/26c38872a/packages/libhiredis/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -22492,29 +22492,34 @@
   },
   {
     "name": "monero",
-    "version": "0.17.3.0",
+    "version": "0.18.1.2",
     "description": "A private, secure, untraceable, decentralised digital currency",
     "homepage": "https://getmonero.org/",
     "depends": [
       "boost",
+      "libc++",
       "libprotobuf",
+      "libsodium",
       "libzmq",
+      "miniupnpc",
       "openssl",
       "readline",
       "unbound"
     ],
     "srcurl": "https://github.com/monero-project/monero.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e33d375a/packages/monero",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e33d375a/packages/monero/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e33d375a/packages/monero/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb094e297/packages/monero",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb094e297/packages/monero/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb094e297/packages/monero/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2e33d375a/packages/monero/ignore-execinfo.patch",
-      "https://github.com/termux/termux-packages/blob/2e33d375a/packages/monero/translations-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/eb094e297/packages/monero/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/eb094e297/packages/monero/external-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/eb094e297/packages/monero/translations-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2e33d375a/packages/monero/ignore-execinfo.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e33d375a/packages/monero/translations-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/eb094e297/packages/monero/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/eb094e297/packages/monero/external-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/eb094e297/packages/monero/translations-CMakeLists.txt.patch"
     ]
   },
   {
@@ -29559,15 +29564,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.103",
+    "version": "0.0.105",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.103.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.105.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/091c97cfb/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/091c97cfb/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/091c97cfb/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f00cf9b6c/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f00cf9b6c/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f00cf9b6c/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -38267,19 +38272,13 @@
   },
   {
     "name": "bochs",
-    "version": "2.6.9",
+    "version": "2.7",
     "description": "Bochs is a highly portable open source IA-32 (x86) PC emulator and debugger written in C++.",
     "homepage": "http://bochs.sourceforge.net/",
     "depends": [
-      "atk",
-      "fontconfig",
-      "freetype",
-      "gdk-pixbuf",
       "glib",
       "gtk2",
       "libc++",
-      "libcairo",
-      "libgraphite",
       "libx11",
       "libxpm",
       "libxrandr",
@@ -38287,24 +38286,22 @@
       "pango",
       "readline"
     ],
-    "srcurl": "https://downloads.sourceforge.net/bochs/bochs-2.6.9.tar.gz",
+    "srcurl": "https://downloads.sourceforge.net/bochs/bochs-2.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/329d3b226/x11-packages/bochs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/bochs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/bochs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ac39dd51a/x11-packages/bochs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ac39dd51a/x11-packages/bochs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ac39dd51a/x11-packages/bochs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/bochs/bochs.h.patch",
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/bochs/bx_debug-Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/bochs/configure.patch",
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/bochs/gui-term.cc.patch",
-      "https://github.com/termux/termux-packages/blob/329d3b226/x11-packages/bochs/iodev-network-slirp-misc.cc.patch"
+      "https://github.com/termux/termux-packages/blob/ac39dd51a/x11-packages/bochs/bx_debug-Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/ac39dd51a/x11-packages/bochs/configure.patch",
+      "https://github.com/termux/termux-packages/blob/ac39dd51a/x11-packages/bochs/gui-term.cc.patch",
+      "https://github.com/termux/termux-packages/blob/ac39dd51a/x11-packages/bochs/iodev-network-slirp-misc.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/bochs/bochs.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/bochs/bx_debug-Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/bochs/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/bochs/gui-term.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/329d3b226/x11-packages/bochs/iodev-network-slirp-misc.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ac39dd51a/x11-packages/bochs/bx_debug-Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac39dd51a/x11-packages/bochs/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac39dd51a/x11-packages/bochs/gui-term.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac39dd51a/x11-packages/bochs/iodev-network-slirp-misc.cc.patch"
     ]
   },
   {
@@ -42327,7 +42324,7 @@
   },
   {
     "name": "lxqt-runner",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "LXQt application launcher",
     "homepage": "https://lxqt.github.io",
     "depends": [
@@ -42337,18 +42334,18 @@
       "liblxqt",
       "lxqt-globalkeys"
     ],
-    "srcurl": "https://github.com/lxqt/lxqt-runner/releases/download/1.1.0/lxqt-runner-1.1.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/lxqt-runner/releases/download/1.2.0/lxqt-runner-1.2.0.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/eac0b6cac/x11-packages/lxqt-runner",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eac0b6cac/x11-packages/lxqt-runner/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eac0b6cac/x11-packages/lxqt-runner/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/58aabc67a/x11-packages/lxqt-runner",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/58aabc67a/x11-packages/lxqt-runner/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/58aabc67a/x11-packages/lxqt-runner/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/eac0b6cac/x11-packages/lxqt-runner/add_missing_wordexp.patch",
-      "https://github.com/termux/termux-packages/blob/eac0b6cac/x11-packages/lxqt-runner/no_mathitem.patch"
+      "https://github.com/termux/termux-packages/blob/58aabc67a/x11-packages/lxqt-runner/add_missing_wordexp.patch",
+      "https://github.com/termux/termux-packages/blob/58aabc67a/x11-packages/lxqt-runner/no_mathitem.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/eac0b6cac/x11-packages/lxqt-runner/add_missing_wordexp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/eac0b6cac/x11-packages/lxqt-runner/no_mathitem.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/58aabc67a/x11-packages/lxqt-runner/add_missing_wordexp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/58aabc67a/x11-packages/lxqt-runner/no_mathitem.patch"
     ]
   },
   {
@@ -47793,28 +47790,30 @@
     "description": "A hand note taking software",
     "homepage": "https://github.com/xournalpp/xournalpp",
     "depends": [
+      "gdk-pixbuf",
       "glib",
       "gtk3",
+      "libandroid-execinfo",
       "libc++",
+      "libcairo",
       "librsvg",
       "libsndfile",
+      "libx11",
+      "libxi",
       "libxml2",
       "libzip",
+      "pango",
       "poppler",
       "portaudio",
       "zlib"
     ],
     "srcurl": "https://github.com/xournalpp/xournalpp/archive/refs/tags/v1.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4f41f7827/x11-packages/xournalpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4f41f7827/x11-packages/xournalpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4f41f7827/x11-packages/xournalpp/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4f41f7827/x11-packages/xournalpp/no-execinfo.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4f41f7827/x11-packages/xournalpp/no-execinfo.patch"
-    ]
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a14c26b48/x11-packages/xournalpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a14c26b48/x11-packages/xournalpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a14c26b48/x11-packages/xournalpp/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "xpdf",
