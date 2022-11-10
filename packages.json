@@ -6731,14 +6731,14 @@
     ],
     "srcurl": "https://www.ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e419fed5/packages/ffmpeg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e419fed5/packages/ffmpeg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e419fed5/packages/ffmpeg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65a0d4018/packages/ffmpeg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65a0d4018/packages/ffmpeg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65a0d4018/packages/ffmpeg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6e419fed5/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://github.com/termux/termux-packages/blob/65a0d4018/packages/ffmpeg/libavutil-file_open.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6e419fed5/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/65a0d4018/packages/ffmpeg/libavutil-file_open.c.patch"
     ]
   },
   {
@@ -10961,15 +10961,15 @@
   },
   {
     "name": "hcl",
-    "version": "2.14.1",
+    "version": "2.15.0",
     "description": "A toolkit for creating structured configuration languages",
     "homepage": "https://github.com/hashicorp/hcl",
     "depends": [],
-    "srcurl": "https://github.com/hashicorp/hcl/archive/refs/tags/v2.14.1.tar.gz",
+    "srcurl": "https://github.com/hashicorp/hcl/archive/refs/tags/v2.15.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/18d955981/packages/hcl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/18d955981/packages/hcl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/18d955981/packages/hcl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/32df36872/packages/hcl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32df36872/packages/hcl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32df36872/packages/hcl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -23113,29 +23113,34 @@
     "homepage": "https://mpv.io/",
     "depends": [
       "ffmpeg",
+      "fftw",
       "libandroid-glob",
       "libandroid-support",
       "libarchive",
+      "libass",
       "libcaca",
       "libiconv",
       "liblua52",
+      "libsamplerate",
       "libsixel",
-      "pulseaudio",
+      "libuchardet",
       "openal-soft",
+      "pulseaudio",
+      "rubberband",
       "zlib"
     ],
     "srcurl": "https://github.com/mpv-player/mpv/archive/v0.34.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3602e6092/packages/mpv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3602e6092/packages/mpv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3602e6092/packages/mpv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8aed0dd84/packages/mpv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8aed0dd84/packages/mpv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8aed0dd84/packages/mpv/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3602e6092/packages/mpv/sles_rate.patch",
-      "https://github.com/termux/termux-packages/blob/3602e6092/packages/mpv/wscript.patch"
+      "https://github.com/termux/termux-packages/blob/8aed0dd84/packages/mpv/sles_rate.patch",
+      "https://github.com/termux/termux-packages/blob/8aed0dd84/packages/mpv/wscript.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3602e6092/packages/mpv/sles_rate.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3602e6092/packages/mpv/wscript.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8aed0dd84/packages/mpv/sles_rate.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8aed0dd84/packages/mpv/wscript.patch"
     ]
   },
   {
@@ -34927,7 +34932,7 @@
   },
   {
     "name": "vim",
-    "version": "9.0.0800",
+    "version": "9.0.0850",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -34935,33 +34940,33 @@
       "ncurses",
       "vim-runtime"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v9.0.0800.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v9.0.0850.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/71fc5fdac/packages/vim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/38af32a96/packages/vim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/src-auto-configure.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/vimtutor.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim/vterm_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/src-auto-configure.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/vimtutor.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/src-auto-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/vimtutor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim/vterm_internal.h.patch"
     ]
   },
   {
     "name": "vim-python",
-    "version": "9.0.0800",
+    "version": "9.0.0850",
     "description": "Vi IMproved - enhanced vi editor - with python support",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -34970,28 +34975,28 @@
       "vim-runtime",
       "python"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v9.0.0800.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v9.0.0850.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/71fc5fdac/packages/vim-python",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/38af32a96/packages/vim-python",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/src-auto-configure.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/vimtutor.patch",
-      "https://github.com/termux/termux-packages/blob/71fc5fdac/packages/vim-python/vterm_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/src-auto-configure.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/vimtutor.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/packages/vim-python/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fc5fdac/packages/vim-python/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/src-auto-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/vimtutor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/packages/vim-python/vterm_internal.h.patch"
     ]
   },
   {
@@ -39194,41 +39199,29 @@
   },
   {
     "name": "file-roller",
-    "version": "3.40.0",
+    "version": "43.0",
     "description": "File Roller is an archive manager for the GNOME desktop environment.",
     "homepage": "https://wiki.gnome.org/Apps/FileRoller",
     "depends": [
-      "bzip2",
-      "desktop-file-utils",
-      "cpio",
+      "gdk-pixbuf",
       "glib",
       "gtk3",
-      "gzip",
-      "libcairo",
-      "lzip",
-      "lzop",
-      "p7zip",
-      "tar",
-      "unrar",
-      "unzip",
-      "xz-utils",
-      "zip",
-      "bsdtar",
-      "zlib",
       "json-glib",
-      "libnotify",
-      "libarchive"
+      "libarchive",
+      "libcairo",
+      "libhandy",
+      "pango"
     ],
-    "srcurl": "https://github.com/GNOME/file-roller/archive/refs/tags/3.40.0.tar.gz",
+    "srcurl": "https://download.gnome.org/sources/file-roller/43/file-roller-43.0.tar.xz",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/200632f28/x11-packages/file-roller",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/200632f28/x11-packages/file-roller/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/200632f28/x11-packages/file-roller/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/59b9c853c/x11-packages/file-roller",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/59b9c853c/x11-packages/file-roller/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/59b9c853c/x11-packages/file-roller/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/200632f28/x11-packages/file-roller/no_update_schemas_and_gen_doc.patch"
+      "https://github.com/termux/termux-packages/blob/59b9c853c/x11-packages/file-roller/meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/200632f28/x11-packages/file-roller/no_update_schemas_and_gen_doc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/59b9c853c/x11-packages/file-roller/meson.build.patch"
     ]
   },
   {
@@ -39250,6 +39243,7 @@
       "libcairo",
       "libffi",
       "libice",
+      "libpixman",
       "libsm",
       "libx11",
       "libxcb",
@@ -39266,26 +39260,26 @@
     ],
     "srcurl": "https://ftp.mozilla.org/pub/firefox/releases/106.0.5/source/firefox-106.0.5.source.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ec928145/x11-packages/firefox",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/05a0f9613/x11-packages/firefox",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/disable-pocket.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/firefox.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/fix-arm-build.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/remove-branding-urlbar.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/rust.configure.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/shared_memory_posix.cc.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/firefox/stop-undesired-requests.patch"
+      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/disable-pocket.patch",
+      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/firefox.patch",
+      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/fix-arm-build.patch",
+      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/remove-branding-urlbar.patch",
+      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/rust.configure.patch",
+      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/shared_memory_posix.cc.patch",
+      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/stop-undesired-requests.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/disable-pocket.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/firefox.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/fix-arm-build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/remove-branding-urlbar.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/rust.configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/shared_memory_posix.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/firefox/stop-undesired-requests.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/disable-pocket.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/firefox.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/fix-arm-build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/remove-branding-urlbar.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/rust.configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/shared_memory_posix.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/stop-undesired-requests.patch"
     ]
   },
   {
@@ -40446,6 +40440,48 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/gtkwave/libandroid-shmem.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/gtkwave/regex.c.patch"
+    ]
+  },
+  {
+    "name": "handbrake",
+    "version": "1.5.1",
+    "description": "A GPL-licensed, multiplatform, multithreaded video transcoder",
+    "homepage": "https://handbrake.fr/",
+    "depends": [
+      "ffmpeg",
+      "gdk-pixbuf",
+      "gst-plugins-base",
+      "gstreamer",
+      "gtk3",
+      "libass",
+      "libbluray",
+      "libcairo",
+      "libdvdnav",
+      "libdvdread",
+      "libiconv",
+      "libjansson",
+      "libjpeg-turbo",
+      "libtheora",
+      "libvorbis",
+      "libx264",
+      "libx265",
+      "libxml2",
+      "pango"
+    ],
+    "srcurl": "https://github.com/HandBrake/HandBrake/releases/download/1.5.1/HandBrake-1.5.1-source.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8a81c1643/x11-packages/handbrake",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8a81c1643/x11-packages/handbrake/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8a81c1643/x11-packages/handbrake/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/8a81c1643/x11-packages/handbrake/gtk-module.defs.patch",
+      "https://github.com/termux/termux-packages/blob/8a81c1643/x11-packages/handbrake/libhb-handbrake-common.h.patch",
+      "https://github.com/termux/termux-packages/blob/8a81c1643/x11-packages/handbrake/make-configure.py.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/8a81c1643/x11-packages/handbrake/gtk-module.defs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8a81c1643/x11-packages/handbrake/libhb-handbrake-common.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8a81c1643/x11-packages/handbrake/make-configure.py.patch"
     ]
   },
   {
@@ -43013,39 +43049,51 @@
   },
   {
     "name": "mpv-x",
-    "version": "0.33.0",
+    "version": "0.34.1",
     "description": "Command-line media player",
     "homepage": "https://mpv.io/",
     "depends": [
       "ffmpeg",
+      "fftw",
       "libandroid-glob",
       "libandroid-shmem",
       "libarchive",
       "libass",
-      "libdrm",
-      "littlecms",
-      "libjpeg-turbo",
+      "libbluray",
       "libcaca",
+      "libdrm",
+      "libdvdnav",
+      "libdvdread",
+      "libiconv",
+      "libjpeg-turbo",
       "liblua52",
+      "libsamplerate",
+      "libsixel",
+      "libuchardet",
       "libx11",
       "libxext",
       "libxinerama",
-      "libxss",
       "libxrandr",
+      "libxss",
+      "libzimg",
+      "littlecms",
       "openal-soft",
       "pulseaudio",
+      "rubberband",
       "zlib"
     ],
-    "srcurl": "https://github.com/mpv-player/mpv/archive/v0.33.0.tar.gz",
+    "srcurl": "https://github.com/mpv-player/mpv/archive/v0.34.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9136d701c/x11-packages/mpv-x",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9136d701c/x11-packages/mpv-x/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9136d701c/x11-packages/mpv-x/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8f4689315/x11-packages/mpv-x",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8f4689315/x11-packages/mpv-x/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8f4689315/x11-packages/mpv-x/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9136d701c/x11-packages/mpv-x/wscript.patch"
+      "https://github.com/termux/termux-packages/blob/8f4689315/x11-packages/mpv-x/sles_rate.patch",
+      "https://github.com/termux/termux-packages/blob/8f4689315/x11-packages/mpv-x/wscript.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9136d701c/x11-packages/mpv-x/wscript.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8f4689315/x11-packages/mpv-x/sles_rate.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8f4689315/x11-packages/mpv-x/wscript.patch"
     ]
   },
   {
@@ -45854,7 +45902,7 @@
   },
   {
     "name": "vim-gtk",
-    "version": "9.0.0800",
+    "version": "9.0.0850",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -45873,30 +45921,28 @@
       "pango",
       "python"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/v9.0.0800.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/v9.0.0850.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7fb026c2e/x11-packages/vim-gtk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/38af32a96/x11-packages/vim-gtk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/CVE-2022-3705.patch",
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/src-auto-configure.patch",
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/vimtutor.patch",
-      "https://github.com/termux/termux-packages/blob/7fb026c2e/x11-packages/vim-gtk/vterm_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/src-auto-configure.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/vimtutor.patch",
+      "https://github.com/termux/termux-packages/blob/38af32a96/x11-packages/vim-gtk/vterm_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/CVE-2022-3705.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7fb026c2e/x11-packages/vim-gtk/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/src-auto-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/vimtutor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/38af32a96/x11-packages/vim-gtk/vterm_internal.h.patch"
     ]
   },
   {
