@@ -3685,7 +3685,7 @@
   },
   {
     "name": "clvk",
-    "version": "0.0.20221109.204255g4ec9efe2",
+    "version": "0.0.20221110.182136g63f69e7e",
     "description": "Experimental implementation of OpenCL on Vulkan",
     "homepage": "https://github.com/kpet/clvk",
     "depends": [
@@ -3693,14 +3693,14 @@
     ],
     "srcurl": "https://github.com/kpet/clvk.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0807adc02/packages/clvk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0807adc02/packages/clvk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0807adc02/packages/clvk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e1f54f580/packages/clvk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e1f54f580/packages/clvk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e1f54f580/packages/clvk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0807adc02/packages/clvk/src_utils.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/e1f54f580/packages/clvk/src_utils.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0807adc02/packages/clvk/src_utils.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e1f54f580/packages/clvk/src_utils.hpp.patch"
     ]
   },
   {
@@ -35300,17 +35300,17 @@
   },
   {
     "name": "vulkan-tools",
-    "version": "1.3.233",
+    "version": "1.3.234",
     "description": "Vulkan Tools and Utilities",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Tools",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/v1.3.233.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/v1.3.234.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1c06bfbd6/packages/vulkan-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1c06bfbd6/packages/vulkan-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1c06bfbd6/packages/vulkan-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/887f57f1e/packages/vulkan-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/887f57f1e/packages/vulkan-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/887f57f1e/packages/vulkan-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -44624,38 +44624,44 @@
     "homepage": "https://github.com/qtwebkit/qtwebkit",
     "depends": [
       "libc++",
+      "libhyphen",
+      "libicu",
+      "libjpeg-turbo",
+      "libpng",
+      "libsqlite",
+      "libwebp",
+      "libx11",
+      "libxml2",
+      "libxslt",
       "qt5-qtbase",
       "qt5-qtdeclarative",
       "qt5-qtlocation",
       "qt5-qtmultimedia",
       "qt5-qtsensors",
-      "zlib",
-      "libxslt",
-      "libxcomposite",
-      "libhyphen",
-      "libwebp",
-      "libicu"
+      "zlib"
     ],
     "srcurl": "https://github.com/qtwebkit/qtwebkit/releases/download/qtwebkit-5.212.0-alpha4/qtwebkit-5.212.0-alpha4.tar.xz",
     "maintainer": "Simeon Huang <symeon@librehat.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ec928145/x11-packages/qt5-qtwebkit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/qt5-qtwebkit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/qt5-qtwebkit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d1810dc34/x11-packages/qt5-qtwebkit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/qt5-qtwebkit/0001-Remove-invalid-g_object-declarations-to-fix-build-wi.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/qt5-qtwebkit/icu-68.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/qt5-qtwebkit/no_execinfo_header.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/qt5-qtwebkit/qtwebkit-5.212.0-alpha4-bison-3.7.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/qt5-qtwebkit/tools_qttestbrowser_launcherwindow_no_opengl.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/x11-packages/qt5-qtwebkit/webkit-bwo141288.patch"
+      "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/0001-Remove-invalid-g_object-declarations-to-fix-build-wi.patch",
+      "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/__x86.get_pc_thunk.bx.patch",
+      "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/icu-68.patch",
+      "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/no_execinfo_header.patch",
+      "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/qtwebkit-5.212.0-alpha4-bison-3.7.patch",
+      "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/tools_qttestbrowser_launcherwindow_no_opengl.patch",
+      "https://github.com/termux/termux-packages/blob/d1810dc34/x11-packages/qt5-qtwebkit/webkit-bwo141288.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/qt5-qtwebkit/0001-Remove-invalid-g_object-declarations-to-fix-build-wi.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/qt5-qtwebkit/icu-68.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/qt5-qtwebkit/no_execinfo_header.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/qt5-qtwebkit/qtwebkit-5.212.0-alpha4-bison-3.7.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/qt5-qtwebkit/tools_qttestbrowser_launcherwindow_no_opengl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/x11-packages/qt5-qtwebkit/webkit-bwo141288.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/0001-Remove-invalid-g_object-declarations-to-fix-build-wi.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/__x86.get_pc_thunk.bx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/icu-68.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/no_execinfo_header.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/qtwebkit-5.212.0-alpha4-bison-3.7.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/tools_qttestbrowser_launcherwindow_no_opengl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1810dc34/x11-packages/qt5-qtwebkit/webkit-bwo141288.patch"
     ]
   },
   {
