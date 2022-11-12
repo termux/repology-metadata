@@ -2008,46 +2008,6 @@
     "package_patch_raw_urls": []
   },
   {
-    "name": "binutils",
-    "version": "2.39",
-    "description": "Collection of binary tools, the main ones being ld, the GNU linker, and as, the GNU assembler",
-    "homepage": "https://www.gnu.org/software/binutils/",
-    "depends": [
-      "binutils-libs",
-      "libc++",
-      "zlib"
-    ],
-    "srcurl": "https://mirrors.kernel.org/gnu/binutils/binutils-2.39.tar.xz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9b187b0e9/packages/binutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/bfd-dynamic_interpreter.patch",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/binutils.patch",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/dirsearch.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/gas-decrease-input-buffer-size.patch",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/gold-ffsll.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/native_lib_dirs.patch32",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/native_lib_dirs.patch64",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/no-hardlink.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/options.cc.patch32",
-      "https://github.com/termux/termux-packages/blob/9b187b0e9/packages/binutils/options.cc.patch64"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/bfd-dynamic_interpreter.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/binutils.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/dirsearch.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/gas-decrease-input-buffer-size.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/gold-ffsll.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/native_lib_dirs.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/native_lib_dirs.patch64",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/no-hardlink.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/options.cc.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b187b0e9/packages/binutils/options.cc.patch64"
-    ]
-  },
-  {
     "name": "binutils-is-llvm",
     "version": "0.3",
     "description": "Use llvm as binutils",
@@ -2062,6 +2022,44 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d96bc109d/packages/binutils-is-llvm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "binutils-libs",
+    "version": "2.39",
+    "description": "GNU Binutils libraries",
+    "homepage": "https://www.gnu.org/software/binutils/",
+    "depends": [
+      "zlib"
+    ],
+    "srcurl": "https://mirrors.kernel.org/gnu/binutils/binutils-2.39.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0d74d3496/packages/binutils-libs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/bfd-dynamic_interpreter.patch",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/binutils.patch",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/dirsearch.cc.patch",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/gas-decrease-input-buffer-size.patch",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/gold-ffsll.c.patch",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/native_lib_dirs.patch32",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/native_lib_dirs.patch64",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/no-hardlink.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/options.cc.patch32",
+      "https://github.com/termux/termux-packages/blob/0d74d3496/packages/binutils-libs/options.cc.patch64"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/bfd-dynamic_interpreter.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/binutils.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/dirsearch.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/gas-decrease-input-buffer-size.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/gold-ffsll.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/native_lib_dirs.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/native_lib_dirs.patch64",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/no-hardlink.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/options.cc.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/0d74d3496/packages/binutils-libs/options.cc.patch64"
+    ]
   },
   {
     "name": "bison",
@@ -3911,7 +3909,7 @@
   },
   {
     "name": "composer",
-    "version": "2.1.6",
+    "version": "2.2.18",
     "description": "Dependency Manager for PHP",
     "homepage": "https://getcomposer.org/",
     "depends": [
@@ -3919,14 +3917,14 @@
     ],
     "srcurl": "https://github.com/composer/composer.git",
     "maintainer": "@PuneetGopinath",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/54c3d56ad/packages/composer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/54c3d56ad/packages/composer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/54c3d56ad/packages/composer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dbffa8488/packages/composer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dbffa8488/packages/composer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dbffa8488/packages/composer/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/54c3d56ad/packages/composer/fix-shebang.patch"
+      "https://github.com/termux/termux-packages/blob/dbffa8488/packages/composer/fix-shebang.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/54c3d56ad/packages/composer/fix-shebang.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/dbffa8488/packages/composer/fix-shebang.patch"
     ]
   },
   {
@@ -4688,16 +4686,20 @@
     ],
     "srcurl": "https://dbus.freedesktop.org/releases/dbus/dbus-1.15.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ad32db54/packages/dbus",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ad32db54/packages/dbus/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ad32db54/packages/dbus/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/34bf2f3a1/packages/dbus",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/34bf2f3a1/packages/dbus/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/34bf2f3a1/packages/dbus/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0ad32db54/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
-      "https://github.com/termux/termux-packages/blob/0ad32db54/packages/dbus/fix-hardcoded-paths.patch"
+      "https://github.com/termux/termux-packages/blob/34bf2f3a1/packages/dbus/bus-activation-helper.c.patch",
+      "https://github.com/termux/termux-packages/blob/34bf2f3a1/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
+      "https://github.com/termux/termux-packages/blob/34bf2f3a1/packages/dbus/dbus-dbus-sysdeps-util-unix.c.patch",
+      "https://github.com/termux/termux-packages/blob/34bf2f3a1/packages/dbus/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0ad32db54/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0ad32db54/packages/dbus/fix-hardcoded-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/34bf2f3a1/packages/dbus/bus-activation-helper.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/34bf2f3a1/packages/dbus/dbus-dbus-sysdeps-unix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/34bf2f3a1/packages/dbus/dbus-dbus-sysdeps-util-unix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/34bf2f3a1/packages/dbus/fix-hardcoded-paths.patch"
     ]
   },
   {
@@ -6427,26 +6429,28 @@
   },
   {
     "name": "fakeroot",
-    "version": "1.25.3",
+    "version": "1.30.1",
     "description": "Tool for simulating superuser privileges (with tcp ipc)",
-    "homepage": "http://packages.debian.org/fakeroot",
+    "homepage": "https://packages.qa.debian.org/f/fakeroot.html",
     "depends": [],
-    "srcurl": "https://deb.debian.org/debian/pool/main/f/fakeroot/fakeroot_1.25.3.orig.tar.gz",
+    "srcurl": "https://deb.debian.org/debian/pool/main/f/fakeroot/fakeroot_1.30.1.orig.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4b9d1c5cd/packages/fakeroot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4b9d1c5cd/packages/fakeroot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4b9d1c5cd/packages/fakeroot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/184f895a8/packages/fakeroot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/184f895a8/packages/fakeroot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/184f895a8/packages/fakeroot/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4b9d1c5cd/packages/fakeroot/doc-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/4b9d1c5cd/packages/fakeroot/fakeroot-1.23_faked.c.patch",
-      "https://github.com/termux/termux-packages/blob/4b9d1c5cd/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
-      "https://github.com/termux/termux-packages/blob/4b9d1c5cd/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
+      "https://github.com/termux/termux-packages/blob/184f895a8/packages/fakeroot/doc-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/184f895a8/packages/fakeroot/dont-wrap-while-environ-is-null.patch",
+      "https://github.com/termux/termux-packages/blob/184f895a8/packages/fakeroot/fakeroot-1.23_faked.c.patch",
+      "https://github.com/termux/termux-packages/blob/184f895a8/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
+      "https://github.com/termux/termux-packages/blob/184f895a8/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4b9d1c5cd/packages/fakeroot/doc-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b9d1c5cd/packages/fakeroot/fakeroot-1.23_faked.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b9d1c5cd/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b9d1c5cd/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/184f895a8/packages/fakeroot/doc-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/184f895a8/packages/fakeroot/dont-wrap-while-environ-is-null.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/184f895a8/packages/fakeroot/fakeroot-1.23_faked.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/184f895a8/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/184f895a8/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
     ]
   },
   {
@@ -13166,7 +13170,8 @@
     "description": "D programming language compiler, built with LLVM",
     "homepage": "https://github.com/ldc-developers/ldc",
     "depends": [
-      "binutils",
+      "binutils-bin",
+      "binutils-is-llvm",
       "clang",
       "libc++",
       "libcurl",
@@ -13174,14 +13179,14 @@
     ],
     "srcurl": "https://github.com/ldc-developers/ldc/releases/download/v1.27.1/ldc-1.27.1-src.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0157c5547/packages/ldc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0157c5547/packages/ldc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0157c5547/packages/ldc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/86ab3590d/packages/ldc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/86ab3590d/packages/ldc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/86ab3590d/packages/ldc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0157c5547/packages/ldc/ldc-readme.patch"
+      "https://github.com/termux/termux-packages/blob/86ab3590d/packages/ldc/ldc-readme.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0157c5547/packages/ldc/ldc-readme.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/86ab3590d/packages/ldc/ldc-readme.patch"
     ]
   },
   {
@@ -17162,16 +17167,16 @@
     ],
     "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_85_RTM/src/nss-3.85.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b196c9d5c/packages/libnss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b196c9d5c/packages/libnss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b196c9d5c/packages/libnss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3eca1bb12/packages/libnss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3eca1bb12/packages/libnss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3eca1bb12/packages/libnss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b196c9d5c/packages/libnss/coreconf-Linux.mk.patch",
-      "https://github.com/termux/termux-packages/blob/b196c9d5c/packages/libnss/coreconf-rules.mk.patch"
+      "https://github.com/termux/termux-packages/blob/3eca1bb12/packages/libnss/coreconf-Linux.mk.patch",
+      "https://github.com/termux/termux-packages/blob/3eca1bb12/packages/libnss/coreconf-rules.mk.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b196c9d5c/packages/libnss/coreconf-Linux.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b196c9d5c/packages/libnss/coreconf-rules.mk.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3eca1bb12/packages/libnss/coreconf-Linux.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3eca1bb12/packages/libnss/coreconf-rules.mk.patch"
     ]
   },
   {
@@ -23279,32 +23284,38 @@
   },
   {
     "name": "multitail",
-    "version": "6.5.0",
+    "version": "7.0.0",
     "description": "Tool to monitor logfiles and command output in multiple windows in a terminal, colorize, filter and merge",
     "homepage": "http://www.vanheusden.com/multitail/",
     "depends": [
+      "libandroid-glob",
       "ncurses",
-      "ncurses-ui-libs",
-      "libandroid-glob"
+      "ncurses-ui-libs"
     ],
-    "srcurl": "https://fossies.org/linux/privat/multitail-6.5.0.tgz",
+    "srcurl": "https://github.com/folkertvanheusden/multitail/archive/refs/tags/7.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37375312b/packages/multitail",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37375312b/packages/multitail/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/multitail/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a9d4ff6a5/packages/multitail",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/multitail/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/multitail/mt.c.patch",
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/multitail/my_pty.c.patch",
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/multitail/term.c.patch",
-      "https://github.com/termux/termux-packages/blob/37375312b/packages/multitail/utils.c.patch"
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/clipboard.c.patch",
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/mt.c.patch",
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/my_pty.c.patch",
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/term.c.patch",
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/utils.c.patch",
+      "https://github.com/termux/termux-packages/blob/a9d4ff6a5/packages/multitail/version.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/multitail/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/multitail/mt.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/multitail/my_pty.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/multitail/term.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/37375312b/packages/multitail/utils.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/clipboard.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/mt.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/my_pty.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/term.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/utils.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a9d4ff6a5/packages/multitail/version.diff"
     ]
   },
   {
@@ -27027,29 +27038,29 @@
     "depends": [
       "avahi",
       "ffmpeg",
+      "glib",
       "libc++",
-      "libfdk-aac",
       "liblua54",
-      "lilv",
       "libsndfile",
-      "libusb",
       "libwebrtc-audio-processing",
+      "lilv",
+      "openssl",
       "pulseaudio"
     ],
     "srcurl": "https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.55/pipewire-0.3.55.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ec928145/packages/pipewire",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ec928145/packages/pipewire/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/pipewire/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3aca8b711/packages/pipewire",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3aca8b711/packages/pipewire/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3aca8b711/packages/pipewire/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/pipewire/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/pipewire/reallocarray.diff",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/pipewire/runtime_dir.patch"
+      "https://github.com/termux/termux-packages/blob/3aca8b711/packages/pipewire/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/3aca8b711/packages/pipewire/reallocarray.diff",
+      "https://github.com/termux/termux-packages/blob/3aca8b711/packages/pipewire/runtime_dir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/pipewire/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/pipewire/reallocarray.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/pipewire/runtime_dir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3aca8b711/packages/pipewire/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3aca8b711/packages/pipewire/reallocarray.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3aca8b711/packages/pipewire/runtime_dir.patch"
     ]
   },
   {
@@ -39248,15 +39259,21 @@
       "gdk-pixbuf",
       "glib",
       "gtk3",
-      "harfbuzz",
       "libandroid-shmem",
       "libandroid-sysv-semaphore",
       "libc++",
       "libcairo",
+      "libevent",
       "libffi",
       "libice",
+      "libicu",
+      "libjpeg-turbo",
+      "libnspr",
+      "libnss",
       "libpixman",
       "libsm",
+      "libvpx",
+      "libwebp",
       "libx11",
       "libxcb",
       "libxcomposite",
@@ -39272,26 +39289,28 @@
     ],
     "srcurl": "https://ftp.mozilla.org/pub/firefox/releases/106.0.5/source/firefox-106.0.5.source.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/05a0f9613/x11-packages/firefox",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bda14e2b4/x11-packages/firefox",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/disable-pocket.patch",
-      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/firefox.patch",
-      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/fix-arm-build.patch",
-      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/remove-branding-urlbar.patch",
-      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/rust.configure.patch",
-      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/shared_memory_posix.cc.patch",
-      "https://github.com/termux/termux-packages/blob/05a0f9613/x11-packages/firefox/stop-undesired-requests.patch"
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/disable-pocket.patch",
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/firefox.patch",
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/fix-arm-build.patch",
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/remove-branding-urlbar.patch",
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/rust.configure.patch",
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/shared_memory_posix.cc.patch",
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/stop-undesired-requests.patch",
+      "https://github.com/termux/termux-packages/blob/bda14e2b4/x11-packages/firefox/system-libevent.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/disable-pocket.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/firefox.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/fix-arm-build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/remove-branding-urlbar.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/rust.configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/shared_memory_posix.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/05a0f9613/x11-packages/firefox/stop-undesired-requests.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/disable-pocket.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/firefox.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/fix-arm-build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/remove-branding-urlbar.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/rust.configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/shared_memory_posix.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/stop-undesired-requests.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bda14e2b4/x11-packages/firefox/system-libevent.patch"
     ]
   },
   {
