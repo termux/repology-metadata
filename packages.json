@@ -5226,7 +5226,7 @@
   },
   {
     "name": "dnstop",
-    "version": "2021.03.29",
+    "version": "2022.10.19",
     "description": "A libpcap application that displays various tables of DNS traffic on your network",
     "homepage": "https://github.com/measurement-factory/dnstop",
     "depends": [
@@ -5235,9 +5235,9 @@
     ],
     "srcurl": "https://github.com/measurement-factory/dnstop.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/799b74cfb/packages/dnstop",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/799b74cfb/packages/dnstop/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/799b74cfb/packages/dnstop/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d71ccdf81/packages/dnstop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d71ccdf81/packages/dnstop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d71ccdf81/packages/dnstop/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -14803,25 +14803,25 @@
   },
   {
     "name": "libedit",
-    "version": "20210910-3.1",
+    "version": "20221030-3.1",
     "description": "Library providing line editing, history, and tokenization functions",
     "homepage": "https://thrysoee.dk/editline/",
     "depends": [
       "libandroid-support",
       "ncurses"
     ],
-    "srcurl": "https://thrysoee.dk/editline/libedit-20210910-3.1.tar.gz",
+    "srcurl": "https://thrysoee.dk/editline/libedit-20221030-3.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e512804c/packages/libedit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e512804c/packages/libedit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e512804c/packages/libedit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1a1024b8b/packages/libedit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1a1024b8b/packages/libedit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1a1024b8b/packages/libedit/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0e512804c/packages/libedit/src-readline.c.patch",
-      "https://github.com/termux/termux-packages/blob/0e512804c/packages/libedit/src-vi.c.patch"
+      "https://github.com/termux/termux-packages/blob/1a1024b8b/packages/libedit/src-readline.c.patch",
+      "https://github.com/termux/termux-packages/blob/1a1024b8b/packages/libedit/src-vi.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0e512804c/packages/libedit/src-readline.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e512804c/packages/libedit/src-vi.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1a1024b8b/packages/libedit/src-readline.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1a1024b8b/packages/libedit/src-vi.c.patch"
     ]
   },
   {
@@ -15351,23 +15351,26 @@
   },
   {
     "name": "libgmime",
-    "version": "3.2.7",
+    "version": "3.2.13",
     "description": "MIME message parser and creator",
-    "homepage": "http://spruce.sourceforge.net/gmime/",
+    "homepage": "https://github.com/jstedfast/gmime",
     "depends": [
       "glib",
-      "libffi",
       "libiconv",
       "libidn2",
       "zlib"
     ],
-    "srcurl": "https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz",
+    "srcurl": "https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/72dfe5266/packages/libgmime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72dfe5266/packages/libgmime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72dfe5266/packages/libgmime/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/13152805b/packages/libgmime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/13152805b/packages/libgmime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/13152805b/packages/libgmime/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/13152805b/packages/libgmime/m4-vapigen.m4.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/13152805b/packages/libgmime/m4-vapigen.m4.patch"
+    ]
   },
   {
     "name": "libgmp",
@@ -15786,17 +15789,17 @@
   },
   {
     "name": "libidn",
-    "version": "1.38",
+    "version": "1.41",
     "description": "GNU Libidn library, implementation of IETF IDN specifications",
     "homepage": "https://www.gnu.org/software/libidn/",
     "depends": [
       "libiconv"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/libidn/libidn-1.38.tar.gz",
+    "srcurl": "https://mirrors.kernel.org/gnu/libidn/libidn-1.41.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3650f466a/packages/libidn",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3650f466a/packages/libidn/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3650f466a/packages/libidn/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e650e693/packages/libidn",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e650e693/packages/libidn/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e650e693/packages/libidn/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -16127,22 +16130,22 @@
   },
   {
     "name": "libliquid-dsp",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "description": "Software-defined radio digital signal processing library",
     "homepage": "https://liquidsdr.org/",
     "depends": [
       "fftw"
     ],
-    "srcurl": "https://github.com/jgaeddert/liquid-dsp/archive/v1.3.2.tar.gz",
+    "srcurl": "https://github.com/jgaeddert/liquid-dsp/archive/v1.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/59d87b266/packages/libliquid-dsp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/59d87b266/packages/libliquid-dsp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/59d87b266/packages/libliquid-dsp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8bd6194bb/packages/libliquid-dsp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8bd6194bb/packages/libliquid-dsp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8bd6194bb/packages/libliquid-dsp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/59d87b266/packages/libliquid-dsp/makefile.in.patch"
+      "https://github.com/termux/termux-packages/blob/8bd6194bb/packages/libliquid-dsp/configure.ac.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/59d87b266/packages/libliquid-dsp/makefile.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8bd6194bb/packages/libliquid-dsp/configure.ac.patch"
     ]
   },
   {
@@ -17845,22 +17848,20 @@
   },
   {
     "name": "libprotozero",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "Minimalistic protocol buffer decoder and encoder in C++",
     "homepage": "https://github.com/mapbox/protozero",
     "depends": [],
-    "srcurl": "https://github.com/mapbox/protozero/archive/v1.7.0.zip",
+    "srcurl": "https://github.com/mapbox/protozero/archive/v1.7.1.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/59364b5d8/packages/libprotozero",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/59364b5d8/packages/libprotozero/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/59364b5d8/packages/libprotozero/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/500dbc839/packages/libprotozero",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/500dbc839/packages/libprotozero/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/500dbc839/packages/libprotozero/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/59364b5d8/packages/libprotozero/disable_tests.patch",
-      "https://github.com/termux/termux-packages/blob/59364b5d8/packages/libprotozero/tests_log.patch"
+      "https://github.com/termux/termux-packages/blob/500dbc839/packages/libprotozero/tests_log.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/59364b5d8/packages/libprotozero/disable_tests.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/59364b5d8/packages/libprotozero/tests_log.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/500dbc839/packages/libprotozero/tests_log.patch"
     ]
   },
   {
@@ -21384,36 +21385,39 @@
   },
   {
     "name": "mailutils",
-    "version": "3.13",
+    "version": "3.15",
     "description": "Mailutils is a swiss army knife of electronic mail handling. ",
     "homepage": "https://mailutils.org/",
-    "depends": [],
-    "srcurl": "https://ftp.gnu.org/gnu/mailutils/mailutils-3.13.tar.xz",
+    "depends": [
+      "libandroid-glob",
+      "libcrypt"
+    ],
+    "srcurl": "https://ftp.gnu.org/gnu/mailutils/mailutils-3.15.tar.xz",
     "maintainer": "@suhan-paradkar",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/41e07e5b2/packages/mailutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6196528d3/packages/mailutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/lib-mailcap.c.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/lib-manlock.c.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/libmailutils-diag-bt.c.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/lu.c.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/mail-send.c.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/mh-send.c.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/mh-show.c.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/paths.patch",
-      "https://github.com/termux/termux-packages/blob/41e07e5b2/packages/mailutils/pwen.patch"
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/lib-mailcap.c.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/lib-manlock.c.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/libmailutils-diag-bt.c.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/lu.c.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/mail-send.c.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/mh-send.c.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/mh-show.c.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/paths.patch",
+      "https://github.com/termux/termux-packages/blob/6196528d3/packages/mailutils/pwen.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/lib-mailcap.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/lib-manlock.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/libmailutils-diag-bt.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/lu.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/mail-send.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/mh-send.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/mh-show.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/41e07e5b2/packages/mailutils/pwen.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/lib-mailcap.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/lib-manlock.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/libmailutils-diag-bt.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/lu.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/mail-send.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/mh-send.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/mh-show.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6196528d3/packages/mailutils/pwen.patch"
     ]
   },
   {
@@ -21691,17 +21695,17 @@
   },
   {
     "name": "mautrix-whatsapp",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "description": "A Matrix-WhatsApp puppeting bridge",
     "homepage": "https://maunium.net/go/mautrix-whatsapp/",
     "depends": [
       "libolm"
     ],
-    "srcurl": "https://github.com/mautrix/whatsapp/archive/refs/tags/v0.7.1.tar.gz",
+    "srcurl": "https://github.com/mautrix/whatsapp/archive/refs/tags/v0.7.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f48dc1b4f/packages/mautrix-whatsapp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f48dc1b4f/packages/mautrix-whatsapp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f48dc1b4f/packages/mautrix-whatsapp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cb13b7bd3/packages/mautrix-whatsapp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cb13b7bd3/packages/mautrix-whatsapp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cb13b7bd3/packages/mautrix-whatsapp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -22367,33 +22371,31 @@
   },
   {
     "name": "minicom",
-    "version": "2.7.1",
+    "version": "2.8",
     "description": "Friendly menu driven serial communication program",
     "homepage": "https://salsa.debian.org/minicom-team/minicom",
     "depends": [
       "libiconv",
       "ncurses"
     ],
-    "srcurl": "https://alioth-archive.debian.org/releases/minicom/Source/2.7.1/minicom-2.7.1.tar.gz",
+    "srcurl": "https://salsa.debian.org/minicom-team/minicom/-/archive/2.8/minicom-2.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/36273539d/packages/minicom",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/36273539d/packages/minicom/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/36273539d/packages/minicom/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/273343a4d/packages/minicom",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/273343a4d/packages/minicom/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/273343a4d/packages/minicom/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/36273539d/packages/minicom/dial.c.patch",
-      "https://github.com/termux/termux-packages/blob/36273539d/packages/minicom/file.c.patch",
-      "https://github.com/termux/termux-packages/blob/36273539d/packages/minicom/getdir.c.patch",
-      "https://github.com/termux/termux-packages/blob/36273539d/packages/minicom/getdir.h.patch",
-      "https://github.com/termux/termux-packages/blob/36273539d/packages/minicom/script.h.patch",
-      "https://github.com/termux/termux-packages/blob/36273539d/packages/minicom/wkeys.c.patch"
+      "https://github.com/termux/termux-packages/blob/273343a4d/packages/minicom/file.c.patch",
+      "https://github.com/termux/termux-packages/blob/273343a4d/packages/minicom/minicom.c.patch",
+      "https://github.com/termux/termux-packages/blob/273343a4d/packages/minicom/port.h.patch",
+      "https://github.com/termux/termux-packages/blob/273343a4d/packages/minicom/script.c.patch",
+      "https://github.com/termux/termux-packages/blob/273343a4d/packages/minicom/wkeys.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/36273539d/packages/minicom/dial.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/36273539d/packages/minicom/file.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/36273539d/packages/minicom/getdir.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/36273539d/packages/minicom/getdir.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/36273539d/packages/minicom/script.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/36273539d/packages/minicom/wkeys.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/273343a4d/packages/minicom/file.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/273343a4d/packages/minicom/minicom.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/273343a4d/packages/minicom/port.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/273343a4d/packages/minicom/script.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/273343a4d/packages/minicom/wkeys.c.patch"
     ]
   },
   {
@@ -22575,20 +22577,20 @@
   },
   {
     "name": "mktorrent",
-    "version": "1.1",
+    "version": "1.1-p20210130",
     "description": "command line utility to create BitTorrent metainfo files",
     "homepage": "https://github.com/Rudde/mktorrent",
     "depends": [],
-    "srcurl": "https://github.com/Rudde/mktorrent/archive/v1.1.tar.gz",
+    "srcurl": "https://github.com/Rudde/mktorrent.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/mktorrent",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/mktorrent/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/mktorrent/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/89036531d/packages/mktorrent",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/89036531d/packages/mktorrent/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/89036531d/packages/mktorrent/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/27afd9e66/packages/mktorrent/seekdir_telldir.patch"
+      "https://github.com/termux/termux-packages/blob/89036531d/packages/mktorrent/seekdir_telldir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/mktorrent/seekdir_telldir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/89036531d/packages/mktorrent/seekdir_telldir.patch"
     ]
   },
   {
@@ -23642,24 +23644,22 @@
   },
   {
     "name": "ncdc",
-    "version": "1.22.1",
+    "version": "1.23",
     "description": "Modern and lightweight direct connect client with a friendly ncurses interface",
     "homepage": "https://dev.yorhel.nl/ncdc",
     "depends": [
-      "libandroid-support",
-      "libiconv",
+      "glib",
+      "libbz2",
       "libgnutls",
       "libsqlite",
-      "bzip2",
-      "glib",
       "ncurses",
       "zlib"
     ],
-    "srcurl": "https://dev.yorhel.nl/download/ncdc-1.22.1.tar.gz",
+    "srcurl": "https://dev.yorhel.nl/download/ncdc-1.23.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/72dfe5266/packages/ncdc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72dfe5266/packages/ncdc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72dfe5266/packages/ncdc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/08c00c412/packages/ncdc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/08c00c412/packages/ncdc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/08c00c412/packages/ncdc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -28711,7 +28711,7 @@
   },
   {
     "name": "quilt",
-    "version": "0.66",
+    "version": "0.67",
     "description": "Allows you to easily manage large numbers of patches",
     "homepage": "https://savannah.nongnu.org/projects/quilt",
     "depends": [
@@ -28721,18 +28721,18 @@
       "graphviz",
       "perl"
     ],
-    "srcurl": "https://savannah.nongnu.org/download/quilt/quilt-0.66.tar.gz",
+    "srcurl": "https://savannah.nongnu.org/download/quilt/quilt-0.67.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/119191e5c/packages/quilt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/119191e5c/packages/quilt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/119191e5c/packages/quilt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f20e3a9fb/packages/quilt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f20e3a9fb/packages/quilt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f20e3a9fb/packages/quilt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/119191e5c/packages/quilt/quilt-scripts-utilfns.patch",
-      "https://github.com/termux/termux-packages/blob/119191e5c/packages/quilt/quilt-setup.in.patch"
+      "https://github.com/termux/termux-packages/blob/f20e3a9fb/packages/quilt/quilt-scripts-utilfns.patch",
+      "https://github.com/termux/termux-packages/blob/f20e3a9fb/packages/quilt/quilt-setup.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/119191e5c/packages/quilt/quilt-scripts-utilfns.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/119191e5c/packages/quilt/quilt-setup.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f20e3a9fb/packages/quilt/quilt-scripts-utilfns.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f20e3a9fb/packages/quilt/quilt-setup.in.patch"
     ]
   },
   {
@@ -29274,17 +29274,21 @@
   },
   {
     "name": "reptyr",
-    "version": "0.8.0",
+    "version": "0.9.0",
     "description": "Tool for reparenting a running program to a new terminal",
     "homepage": "https://github.com/nelhage/reptyr",
     "depends": [],
-    "srcurl": "https://github.com/nelhage/reptyr/archive/refs/tags/reptyr-0.8.0.tar.gz",
+    "srcurl": "https://github.com/nelhage/reptyr/archive/refs/tags/reptyr-0.9.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd29c23c7/packages/reptyr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd29c23c7/packages/reptyr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd29c23c7/packages/reptyr/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a48726a2/packages/reptyr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a48726a2/packages/reptyr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a48726a2/packages/reptyr/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/4a48726a2/packages/reptyr/Makefile.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/4a48726a2/packages/reptyr/Makefile.patch"
+    ]
   },
   {
     "name": "resolv-conf",
@@ -32135,27 +32139,25 @@
   },
   {
     "name": "swi-prolog",
-    "version": "8.5.2",
+    "version": "8.5.20",
     "description": "Most popular and complete prolog implementation",
     "homepage": "https://swi-prolog.org/",
     "depends": [
       "libarchive",
       "libcrypt",
       "libgmp",
-      "libjpeg-turbo",
       "libyaml",
       "ncurses",
-      "ncurses-ui-libs",
-      "pcre",
-      "readline",
+      "openssl",
       "ossp-uuid",
+      "readline",
       "zlib"
     ],
-    "srcurl": "https://www.swi-prolog.org/download/devel/src/swipl-8.5.2.tar.gz",
+    "srcurl": "https://www.swi-prolog.org/download/devel/src/swipl-8.5.20.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/60eab8f27/packages/swi-prolog",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60eab8f27/packages/swi-prolog/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60eab8f27/packages/swi-prolog/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a35ac4330/packages/swi-prolog",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a35ac4330/packages/swi-prolog/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a35ac4330/packages/swi-prolog/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -32394,26 +32396,22 @@
   },
   {
     "name": "tcsh",
-    "version": "6.23.01",
+    "version": "6.24.01",
     "description": "TENEX C Shell, an enhanced version of Berkeley csh",
     "homepage": "https://www.tcsh.org",
-    "depends": [
-      "ncurses",
-      "libcrypt",
-      "libiconv"
-    ],
-    "srcurl": "https://github.com/tcsh-org/tcsh/archive/TCSH6_23_01.tar.gz",
+    "depends": [],
+    "srcurl": "https://github.com/tcsh-org/tcsh/archive/TCSH6_24_01.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/31ec15d9f/packages/tcsh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/31ec15d9f/packages/tcsh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/31ec15d9f/packages/tcsh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4781cb4a3/packages/tcsh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4781cb4a3/packages/tcsh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4781cb4a3/packages/tcsh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/31ec15d9f/packages/tcsh/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/31ec15d9f/packages/tcsh/sh.h.patch"
+      "https://github.com/termux/termux-packages/blob/4781cb4a3/packages/tcsh/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/4781cb4a3/packages/tcsh/sh.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/31ec15d9f/packages/tcsh/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/31ec15d9f/packages/tcsh/sh.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4781cb4a3/packages/tcsh/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4781cb4a3/packages/tcsh/sh.h.patch"
     ]
   },
   {
