@@ -12998,7 +12998,7 @@
   },
   {
     "name": "krb5",
-    "version": "1.20",
+    "version": "1.20.1",
     "description": "The Kerberos network authentication system",
     "homepage": "https://web.mit.edu/kerberos",
     "depends": [
@@ -13009,24 +13009,22 @@
       "openssl",
       "libdb"
     ],
-    "srcurl": "https://fossies.org/linux/misc/krb5-1.20.tar.gz",
+    "srcurl": "https://fossies.org/linux/misc/krb5-1.20.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/64193a36d/packages/krb5",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/64193a36d/packages/krb5/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/64193a36d/packages/krb5/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/459ccd874/packages/krb5",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/459ccd874/packages/krb5/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/459ccd874/packages/krb5/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/64193a36d/packages/krb5/CVE-2022-42898.patch",
-      "https://github.com/termux/termux-packages/blob/64193a36d/packages/krb5/config-files-kdc.conf.patch",
-      "https://github.com/termux/termux-packages/blob/64193a36d/packages/krb5/krb5-config_LDFLAGS.patch",
-      "https://github.com/termux/termux-packages/blob/64193a36d/packages/krb5/lib-krb5-os-dnsglue.c.patch",
-      "https://github.com/termux/termux-packages/blob/64193a36d/packages/krb5/plugins-kdb-db2.patch"
+      "https://github.com/termux/termux-packages/blob/459ccd874/packages/krb5/config-files-kdc.conf.patch",
+      "https://github.com/termux/termux-packages/blob/459ccd874/packages/krb5/krb5-config_LDFLAGS.patch",
+      "https://github.com/termux/termux-packages/blob/459ccd874/packages/krb5/lib-krb5-os-dnsglue.c.patch",
+      "https://github.com/termux/termux-packages/blob/459ccd874/packages/krb5/plugins-kdb-db2.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/64193a36d/packages/krb5/CVE-2022-42898.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64193a36d/packages/krb5/config-files-kdc.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64193a36d/packages/krb5/krb5-config_LDFLAGS.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64193a36d/packages/krb5/lib-krb5-os-dnsglue.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64193a36d/packages/krb5/plugins-kdb-db2.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/459ccd874/packages/krb5/config-files-kdc.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/459ccd874/packages/krb5/krb5-config_LDFLAGS.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/459ccd874/packages/krb5/lib-krb5-os-dnsglue.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/459ccd874/packages/krb5/plugins-kdb-db2.patch"
     ]
   },
   {
@@ -15657,15 +15655,15 @@
   },
   {
     "name": "libhiredis",
-    "version": "1.1.0-rc1",
+    "version": "1.1.0",
     "description": "Hiredis is a minimalistic C client library for the Redis database",
     "homepage": "https://redis.com/lp/hiredis",
     "depends": [],
-    "srcurl": "https://github.com/redis/hiredis/archive/refs/tags/v1.1.0-rc1.tar.gz",
+    "srcurl": "https://github.com/redis/hiredis/archive/refs/tags/v1.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/26c38872a/packages/libhiredis",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/26c38872a/packages/libhiredis/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/26c38872a/packages/libhiredis/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c0b8633be/packages/libhiredis",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c0b8633be/packages/libhiredis/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c0b8633be/packages/libhiredis/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24715,6 +24713,39 @@
     ]
   },
   {
+    "name": "notcurses",
+    "version": "3.0.8",
+    "description": "blingful TUIs and character graphics",
+    "homepage": "https://notcurses.com/",
+    "depends": [
+      "ffmpeg",
+      "libandroid-spawn",
+      "libc++",
+      "libunistring",
+      "ncurses",
+      "zlib"
+    ],
+    "srcurl": "https://github.com/dankamongmen/notcurses/archive/refs/tags/v3.0.8.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/db8d8a3af/packages/notcurses",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/include-notcurses-ncport.h.patch",
+      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/pkgconfig.patch",
+      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/src-lib-termdesc.h.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/include-notcurses-ncport.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/pkgconfig.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/src-lib-termdesc.h.patch"
+    ]
+  },
+  {
     "name": "notmuch",
     "version": "0.32.2",
     "description": "Thread-based email index, search and tagging system",
@@ -29755,15 +29786,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.121",
+    "version": "0.0.122",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.121.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.122.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fb6736ce4/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fb6736ce4/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fb6736ce4/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b663c474b/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b663c474b/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b663c474b/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -46932,6 +46963,39 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a3ed2e04/x11-packages/xfce4-dict/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
+  },
+  {
+    "name": "xfce4-docklike-plugin",
+    "version": "0.4.0",
+    "description": "A modern, docklike, minimalist taskbar for XFCE",
+    "homepage": "https://docs.xfce.org/panel-plugins/xfce4-docklike-plugin/start",
+    "depends": [
+      "atk",
+      "exo",
+      "gdk-pixbuf",
+      "glib",
+      "gtk3",
+      "harfbuzz",
+      "libc++",
+      "libcairo",
+      "libwnck",
+      "libx11",
+      "libxfce4ui",
+      "libxfce4util",
+      "pango",
+      "xfce4-panel"
+    ],
+    "srcurl": "https://archive.xfce.org/src/panel-plugins/xfce4-docklike-plugin/0.4/xfce4-docklike-plugin-0.4.0.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e7dfc9751/x11-packages/xfce4-docklike-plugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e7dfc9751/x11-packages/xfce4-docklike-plugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e7dfc9751/x11-packages/xfce4-docklike-plugin/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/e7dfc9751/x11-packages/xfce4-docklike-plugin/src-Hotkeys.cpp.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/e7dfc9751/x11-packages/xfce4-docklike-plugin/src-Hotkeys.cpp.patch"
+    ]
   },
   {
     "name": "xfce4-eyes-plugin",
