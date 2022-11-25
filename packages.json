@@ -6683,15 +6683,19 @@
     "description": "A fast, simple, recursive content discovery tool written in Rust",
     "homepage": "https://github.com/epi052/feroxbuster",
     "depends": [
-      "openssl-1.1"
+      "openssl"
     ],
     "srcurl": "https://github.com/epi052/feroxbuster/archive/refs/tags/v2.7.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2cfa1fb26/packages/feroxbuster",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2cfa1fb26/packages/feroxbuster/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2cfa1fb26/packages/feroxbuster/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6ed6bb65d/packages/feroxbuster",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6ed6bb65d/packages/feroxbuster/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6ed6bb65d/packages/feroxbuster/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/6ed6bb65d/packages/feroxbuster/Cargo.toml.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/6ed6bb65d/packages/feroxbuster/Cargo.toml.patch"
+    ]
   },
   {
     "name": "fetchmail",
@@ -12401,15 +12405,15 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.29.2",
+    "version": "2.30.0",
     "description": "A CLI for JFrog products",
     "homepage": "https://jfrog.com/getcli",
     "depends": [],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.29.2.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.30.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ac0c56703/packages/jfrog-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ac0c56703/packages/jfrog-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ac0c56703/packages/jfrog-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01ea5d53f/packages/jfrog-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01ea5d53f/packages/jfrog-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01ea5d53f/packages/jfrog-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -22197,13 +22201,12 @@
   },
   {
     "name": "mesa",
-    "version": "22.2.2",
+    "version": "22.2.4",
     "description": "An open-source implementation of the OpenGL specification",
     "homepage": "https://www.mesa3d.org",
     "depends": [
       "libandroid-shmem",
       "libc++",
-      "libdrm",
       "libexpat",
       "libx11",
       "libxext",
@@ -22211,20 +22214,20 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://archive.mesa3d.org/mesa-22.2.2.tar.xz",
+    "srcurl": "https://archive.mesa3d.org/mesa-22.2.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e0c61a0a/packages/mesa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/588c80ab2/packages/mesa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/588c80ab2/packages/mesa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/588c80ab2/packages/mesa/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/4e0c61a0a/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+      "https://github.com/termux/termux-packages/blob/588c80ab2/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://github.com/termux/termux-packages/blob/588c80ab2/packages/mesa/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/588c80ab2/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4e0c61a0a/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/588c80ab2/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/588c80ab2/packages/mesa/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/588c80ab2/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
     ]
   },
   {
@@ -25211,17 +25214,17 @@
   },
   {
     "name": "open-adventure",
-    "version": "1.9",
+    "version": "1.11",
     "description": "Forward-port of the original Colossal Cave Adventure from 1976-77",
     "homepage": "http://www.catb.org/~esr/open-adventure/",
     "depends": [
       "libedit"
     ],
-    "srcurl": "https://gitlab.com/esr/open-adventure/-/archive/1.9/open-adventure-1.9.tar.gz",
+    "srcurl": "https://gitlab.com/esr/open-adventure/-/archive/1.11/open-adventure-1.11.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5e5e7c2d/packages/open-adventure",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5e5e7c2d/packages/open-adventure/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2d/packages/open-adventure/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e6850d00/packages/open-adventure",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e6850d00/packages/open-adventure/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e6850d00/packages/open-adventure/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -26647,21 +26650,20 @@
   },
   {
     "name": "php",
-    "version": "8.1.12",
+    "version": "8.1.13",
     "description": "Server-side, HTML-embedded scripting language",
     "homepage": "https://php.net",
     "depends": [
-      "libc++",
-      "freetype",
       "libandroid-glob",
       "libandroid-support",
       "libbz2",
-      "libcrypt",
+      "libc++",
       "libcurl",
+      "libffi",
       "libgd",
       "libgmp",
       "libiconv",
-      "liblzma",
+      "libicu",
       "libresolv-wrapper",
       "libsqlite",
       "libxml2",
@@ -26671,50 +26673,47 @@
       "openssl",
       "pcre2",
       "readline",
-      "zlib",
-      "libicu",
-      "libffi",
       "tidy",
-      "zstd"
+      "zlib"
     ],
-    "srcurl": "https://github.com/php/php-src/archive/php-8.1.12.tar.gz",
+    "srcurl": "https://github.com/php/php-src/archive/php-8.1.13.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ec928145/packages/php",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3677f29b5/packages/php",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-opcache-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-opcache-jit-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-opcache-zend_accelerator_module.c.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-pdo_pgsql-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-pgsql-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-phar-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-posix-posix.c.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-standard-basic_functions.c.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-standard-dns.c.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-standard-php_fopen_wrapper.c.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/ext-standard-proc_open.c.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/pear-Makefile.frag.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/php-fpm.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/sapi-apache2handler-config.m4.patch",
-      "https://github.com/termux/termux-packages/blob/4ec928145/packages/php/use-local-fastcgi-header.patch"
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-opcache-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-opcache-jit-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-opcache-zend_accelerator_module.c.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-pdo_pgsql-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-pgsql-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-phar-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-posix-posix.c.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-standard-basic_functions.c.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-standard-dns.c.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-standard-php_fopen_wrapper.c.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/ext-standard-proc_open.c.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/pear-Makefile.frag.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/php-fpm.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/sapi-apache2handler-config.m4.patch",
+      "https://github.com/termux/termux-packages/blob/3677f29b5/packages/php/use-local-fastcgi-header.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-opcache-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-opcache-jit-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-opcache-zend_accelerator_module.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-pdo_pgsql-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-pgsql-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-phar-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-posix-posix.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-standard-basic_functions.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-standard-dns.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-standard-php_fopen_wrapper.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/ext-standard-proc_open.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/pear-Makefile.frag.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/php-fpm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/sapi-apache2handler-config.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/php/use-local-fastcgi-header.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-opcache-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-opcache-jit-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-opcache-zend_accelerator_module.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-pdo_pgsql-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-pgsql-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-phar-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-posix-posix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-standard-basic_functions.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-standard-dns.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-standard-php_fopen_wrapper.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/ext-standard-proc_open.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/pear-Makefile.frag.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/php-fpm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/sapi-apache2handler-config.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3677f29b5/packages/php/use-local-fastcgi-header.patch"
     ]
   },
   {
@@ -31366,15 +31365,15 @@
   },
   {
     "name": "spglib",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "C library for finding and handling crystal symmetries",
     "homepage": "https://spglib.github.io/spglib/index.html",
     "depends": [],
-    "srcurl": "https://github.com/spglib/spglib/archive/refs/tags/v2.0.1.tar.gz",
+    "srcurl": "https://github.com/spglib/spglib/archive/refs/tags/v2.0.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f96a52bd3/packages/spglib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f96a52bd3/packages/spglib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f96a52bd3/packages/spglib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c73c81b5/packages/spglib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c73c81b5/packages/spglib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c73c81b5/packages/spglib/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -45697,7 +45696,7 @@
   },
   {
     "name": "texstudio",
-    "version": "4.3.1",
+    "version": "4.4.0",
     "description": "A fully featured LaTeX editor",
     "homepage": "https://www.texstudio.org/",
     "depends": [
@@ -45713,13 +45712,17 @@
       "texstudio-data",
       "zlib"
     ],
-    "srcurl": "https://github.com/texstudio-org/texstudio/archive/refs/tags/4.3.1.tar.gz",
+    "srcurl": "https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d5474ad6/x11-packages/texstudio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d5474ad6/x11-packages/texstudio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d5474ad6/x11-packages/texstudio/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a355a68d6/x11-packages/texstudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a355a68d6/x11-packages/texstudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a355a68d6/x11-packages/texstudio/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/a355a68d6/x11-packages/texstudio/fix-build-with-quazip1.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/a355a68d6/x11-packages/texstudio/fix-build-with-quazip1.patch"
+    ]
   },
   {
     "name": "texworks",
@@ -46238,25 +46241,25 @@
   },
   {
     "name": "virglrenderer",
-    "version": "0.10.1",
+    "version": "0.10.3",
     "description": "A virtual 3D GPU for use inside qemu virtual machines",
     "homepage": "https://virgil3d.github.io/",
     "depends": [
-      "libdrm",
-      "libepoxy"
+      "libepoxy",
+      "libx11"
     ],
-    "srcurl": "https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/virglrenderer-0.10.1/virglrenderer-virglrenderer-0.10.1.tar.gz",
+    "srcurl": "https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/virglrenderer-0.10.3/virglrenderer-virglrenderer-0.10.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdbe704d8/x11-packages/virglrenderer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdbe704d8/x11-packages/virglrenderer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdbe704d8/x11-packages/virglrenderer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cfc9923ad/x11-packages/virglrenderer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cfc9923ad/x11-packages/virglrenderer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cfc9923ad/x11-packages/virglrenderer/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cdbe704d8/x11-packages/virglrenderer/src-vrend_winsys_gbm.h.patch",
-      "https://github.com/termux/termux-packages/blob/cdbe704d8/x11-packages/virglrenderer/vtest-vtest_protocol.h.patch"
+      "https://github.com/termux/termux-packages/blob/cfc9923ad/x11-packages/virglrenderer/src-vrend_winsys_gbm.h.patch",
+      "https://github.com/termux/termux-packages/blob/cfc9923ad/x11-packages/virglrenderer/vtest-vtest_protocol.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cdbe704d8/x11-packages/virglrenderer/src-vrend_winsys_gbm.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cdbe704d8/x11-packages/virglrenderer/vtest-vtest_protocol.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cfc9923ad/x11-packages/virglrenderer/src-vrend_winsys_gbm.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cfc9923ad/x11-packages/virglrenderer/vtest-vtest_protocol.h.patch"
     ]
   },
   {
