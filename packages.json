@@ -7656,7 +7656,7 @@
   },
   {
     "name": "gdal",
-    "version": "3.5.3",
+    "version": "3.6.0",
     "description": "A translator library for raster and vector geospatial data formats",
     "homepage": "https://gdal.org",
     "depends": [
@@ -7664,9 +7664,11 @@
       "libc++",
       "libcurl",
       "libexpat",
+      "libfreexl",
       "libgeos",
       "libiconv",
       "libjxl",
+      "liblzma",
       "libpng",
       "libspatialite",
       "libsqlite",
@@ -7677,11 +7679,11 @@
       "proj",
       "postgresql"
     ],
-    "srcurl": "https://download.osgeo.org/gdal/3.5.3/gdal-3.5.3.tar.xz",
+    "srcurl": "https://download.osgeo.org/gdal/3.6.0/gdal-3.6.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1feb91b11/packages/gdal",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1feb91b11/packages/gdal/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1feb91b11/packages/gdal/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5cafdb1e/packages/gdal",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5cafdb1e/packages/gdal/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5cafdb1e/packages/gdal/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -21570,31 +21572,33 @@
   },
   {
     "name": "mapserver",
-    "version": "7.6.4",
+    "version": "8.0.0",
     "description": "MapServer is CGI-based platform for publishing spatial data and interactive mapping applications to the web",
     "homepage": "https://mapserver.org/",
     "depends": [
-      "libc++",
-      "libiconv",
       "freetype",
-      "libcurl",
-      "libcairo",
-      "libxml2",
-      "openjpeg",
-      "proj",
       "gdal",
-      "libprotobuf-c"
+      "libc++",
+      "libcairo",
+      "libcurl",
+      "libgeos",
+      "libiconv",
+      "libjpeg-turbo",
+      "libpng",
+      "libprotobuf-c",
+      "libxml2",
+      "proj"
     ],
-    "srcurl": "https://download.osgeo.org/mapserver/mapserver-7.6.4.tar.gz",
+    "srcurl": "https://download.osgeo.org/mapserver/mapserver-8.0.0.tar.gz",
     "maintainer": "Bjoern Schilberg @BjoernSchilberg",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/mapserver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/mapserver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/mapserver/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4addd0c0c/packages/mapserver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4addd0c0c/packages/mapserver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4addd0c0c/packages/mapserver/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b281bc214/packages/mapserver/LICENSE.patch"
+      "https://github.com/termux/termux-packages/blob/4addd0c0c/packages/mapserver/LICENSE.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/mapserver/LICENSE.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4addd0c0c/packages/mapserver/LICENSE.patch"
     ]
   },
   {
@@ -27489,30 +27493,31 @@
   },
   {
     "name": "postgis",
-    "version": "3.1.8",
+    "version": "3.3.2",
     "description": "Spatial database extender for PostgreSQL object-relational database",
     "homepage": "https://postgis.net",
     "depends": [
       "gdal",
       "json-c",
       "libc++",
+      "libgeos",
       "libiconv",
       "libprotobuf-c",
       "libxml2",
-      "pcre",
+      "pcre2",
       "postgresql",
       "proj"
     ],
-    "srcurl": "https://download.osgeo.org/postgis/source/postgis-3.1.8.tar.gz",
+    "srcurl": "https://download.osgeo.org/postgis/source/postgis-3.3.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/67e259217/packages/postgis",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/67e259217/packages/postgis/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/67e259217/packages/postgis/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/62e0d769c/packages/postgis",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/62e0d769c/packages/postgis/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/62e0d769c/packages/postgis/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/67e259217/packages/postgis/configure.diff"
+      "https://github.com/termux/termux-packages/blob/62e0d769c/packages/postgis/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/67e259217/packages/postgis/configure.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/62e0d769c/packages/postgis/configure.patch"
     ]
   },
   {
