@@ -8394,18 +8394,18 @@
   },
   {
     "name": "git-delta",
-    "version": "0.15.0",
+    "version": "0.15.1",
     "description": "A syntax-highlighter for git and diff output",
     "homepage": "https://github.com/dandavison/delta",
     "depends": [
       "git",
       "zlib"
     ],
-    "srcurl": "https://github.com/dandavison/delta/archive/0.15.0.tar.gz",
+    "srcurl": "https://github.com/dandavison/delta/archive/0.15.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/32ebd9968/packages/git-delta",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32ebd9968/packages/git-delta/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32ebd9968/packages/git-delta/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/acd215a71/packages/git-delta",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/acd215a71/packages/git-delta/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/acd215a71/packages/git-delta/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -9283,18 +9283,18 @@
   },
   {
     "name": "gopass",
-    "version": "1.14.11",
+    "version": "1.15.0",
     "description": "The slightly more awesome standard unix password manager for teams",
     "homepage": "https://github.com/gopasspw/gopass",
     "depends": [
       "git",
       "gnupg"
     ],
-    "srcurl": "https://github.com/gopasspw/gopass/archive/v1.14.11.tar.gz",
+    "srcurl": "https://github.com/gopasspw/gopass/archive/v1.15.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa6bd0da6/packages/gopass",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa6bd0da6/packages/gopass/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa6bd0da6/packages/gopass/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0b5e6ec10/packages/gopass",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0b5e6ec10/packages/gopass/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0b5e6ec10/packages/gopass/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -11478,11 +11478,15 @@
     ],
     "srcurl": "https://github.com/dvorka/hstr/archive/refs/tags/2.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/94acf2199/packages/hstr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/94acf2199/packages/hstr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/94acf2199/packages/hstr/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/26c123986/packages/hstr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/26c123986/packages/hstr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/26c123986/packages/hstr/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/26c123986/packages/hstr/src-hstr_utils.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/26c123986/packages/hstr/src-hstr_utils.c.patch"
+    ]
   },
   {
     "name": "html-xml-utils",
@@ -13068,11 +13072,15 @@
     ],
     "srcurl": "https://github.com/keystone-engine/keystone/archive/0.9.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/keystone",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/keystone/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/keystone/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": []
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e852575b/packages/keystone",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e852575b/packages/keystone/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e852575b/packages/keystone/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7e852575b/packages/keystone/CMakeLists.txt.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7e852575b/packages/keystone/CMakeLists.txt.patch"
+    ]
   },
   {
     "name": "kibi",
@@ -30505,15 +30513,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.152",
+    "version": "0.0.153",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.152.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.153.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec308bf1a/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec308bf1a/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec308bf1a/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c41be5b01/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c41be5b01/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c41be5b01/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
