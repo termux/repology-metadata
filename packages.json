@@ -23213,21 +23213,23 @@
     "description": "mold: A Modern Linker",
     "homepage": "https://github.com/rui314/mold",
     "depends": [
+      "libandroid-spawn",
       "libc++",
       "openssl",
-      "zlib",
-      "libandroid-spawn"
+      "zlib"
     ],
     "srcurl": "https://github.com/rui314/mold/archive/v1.7.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/32dc01d73/packages/mold",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32dc01d73/packages/mold/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32dc01d73/packages/mold/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b0b6939ef/packages/mold",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b0b6939ef/packages/mold/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b0b6939ef/packages/mold/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/32dc01d73/packages/mold/0001-fix-erase-if-on-android.patch"
+      "https://github.com/termux/termux-packages/blob/b0b6939ef/packages/mold/0001-fix-erase-if-on-android.patch",
+      "https://github.com/termux/termux-packages/blob/b0b6939ef/packages/mold/CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/32dc01d73/packages/mold/0001-fix-erase-if-on-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b0b6939ef/packages/mold/0001-fix-erase-if-on-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b0b6939ef/packages/mold/CMakeLists.txt.patch"
     ]
   },
   {
@@ -25350,7 +25352,7 @@
   },
   {
     "name": "notcurses",
-    "version": "3.0.8",
+    "version": "3.0.9",
     "description": "blingful TUIs and character graphics",
     "homepage": "https://notcurses.com/",
     "depends": [
@@ -25361,24 +25363,24 @@
       "ncurses",
       "zlib"
     ],
-    "srcurl": "https://github.com/dankamongmen/notcurses/archive/refs/tags/v3.0.8.tar.gz",
+    "srcurl": "https://github.com/dankamongmen/notcurses/archive/refs/tags/v3.0.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/db8d8a3af/packages/notcurses",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9afc6bda0/packages/notcurses",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9afc6bda0/packages/notcurses/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9afc6bda0/packages/notcurses/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/include-notcurses-ncport.h.patch",
-      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/pkgconfig.patch",
-      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/db8d8a3af/packages/notcurses/src-lib-termdesc.h.patch"
+      "https://github.com/termux/termux-packages/blob/9afc6bda0/packages/notcurses/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/9afc6bda0/packages/notcurses/include-notcurses-ncport.h.patch",
+      "https://github.com/termux/termux-packages/blob/9afc6bda0/packages/notcurses/pkgconfig.patch",
+      "https://github.com/termux/termux-packages/blob/9afc6bda0/packages/notcurses/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/9afc6bda0/packages/notcurses/src-lib-termdesc.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/include-notcurses-ncport.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/pkgconfig.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/db8d8a3af/packages/notcurses/src-lib-termdesc.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9afc6bda0/packages/notcurses/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9afc6bda0/packages/notcurses/include-notcurses-ncport.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9afc6bda0/packages/notcurses/pkgconfig.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9afc6bda0/packages/notcurses/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9afc6bda0/packages/notcurses/src-lib-termdesc.h.patch"
     ]
   },
   {
@@ -30506,15 +30508,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.172",
+    "version": "0.0.173",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.172.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.173.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/de1f55b0d/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/de1f55b0d/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/de1f55b0d/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bf8961466/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bf8961466/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bf8961466/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -33640,7 +33642,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "1.33.1",
+    "version": "1.34.0",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.dev/",
     "depends": [
@@ -33665,11 +33667,11 @@
       "xz-utils",
       "dialog"
     ],
-    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.33.1.tar.gz",
+    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.34.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/51afda9a8/packages/termux-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51afda9a8/packages/termux-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51afda9a8/packages/termux-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/39ebb1959/packages/termux-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/39ebb1959/packages/termux-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/39ebb1959/packages/termux-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
