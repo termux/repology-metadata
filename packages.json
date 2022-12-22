@@ -6887,14 +6887,16 @@
     ],
     "srcurl": "https://www.ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6019e8c55/packages/ffmpeg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6019e8c55/packages/ffmpeg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6019e8c55/packages/ffmpeg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/58fa8c60b/packages/ffmpeg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/58fa8c60b/packages/ffmpeg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/58fa8c60b/packages/ffmpeg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6019e8c55/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://github.com/termux/termux-packages/blob/58fa8c60b/packages/ffmpeg/add-av_stream_get_first_dts-for-chromium.patch",
+      "https://github.com/termux/termux-packages/blob/58fa8c60b/packages/ffmpeg/libavutil-file_open.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6019e8c55/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/58fa8c60b/packages/ffmpeg/add-av_stream_get_first_dts-for-chromium.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/58fa8c60b/packages/ffmpeg/libavutil-file_open.c.patch"
     ]
   },
   {
@@ -8430,18 +8432,18 @@
   },
   {
     "name": "gitea",
-    "version": "1.17.3",
+    "version": "1.17.4",
     "description": "Git with a cup of tea, painless self-hosted git service",
     "homepage": "https://gitea.io",
     "depends": [
       "dash",
       "git"
     ],
-    "srcurl": "https://github.com/go-gitea/gitea/archive/v1.17.3.tar.gz",
+    "srcurl": "https://github.com/go-gitea/gitea/archive/v1.17.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/05c7a417f/packages/gitea",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/05c7a417f/packages/gitea/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/05c7a417f/packages/gitea/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a0b400cfb/packages/gitea",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a0b400cfb/packages/gitea/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a0b400cfb/packages/gitea/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -18891,9 +18893,9 @@
     "depends": [],
     "srcurl": "https://sourceforge.net/projects/soxr/files/soxr-0.1.3-Source.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d3b2ac380/packages/libsoxr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d3b2ac380/packages/libsoxr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d3b2ac380/packages/libsoxr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01bae5d21/packages/libsoxr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01bae5d21/packages/libsoxr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01bae5d21/packages/libsoxr/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -23668,30 +23670,30 @@
     ],
     "srcurl": "https://github.com/MusicPlayerDaemon/MPD/archive/v0.23.11.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/336781e83/packages/mpd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/packages/mpd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/doc-mpdconf.example.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/registry.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/src-input-Error.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/336781e83/packages/mpd/thread-Util.cxx.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/doc-mpdconf.example.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/registry.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/src-input-Error.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/mpd/thread-Util.cxx.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/doc-mpdconf.example.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/registry.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/src-input-Error.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/336781e83/packages/mpd/thread-Util.cxx.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/doc-mpdconf.example.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/registry.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/src-input-Error.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/mpd/thread-Util.cxx.patch"
     ]
   },
   {
@@ -28782,6 +28784,7 @@
     "description": "A featureful, general-purpose sound server",
     "homepage": "https://www.freedesktop.org/wiki/Software/PulseAudio",
     "depends": [
+      "dbus",
       "libandroid-execinfo",
       "libandroid-glob",
       "libc++",
@@ -28793,18 +28796,18 @@
     ],
     "srcurl": "https://github.com/pulseaudio/pulseaudio.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd7529922/packages/pulseaudio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd7529922/packages/pulseaudio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd7529922/packages/pulseaudio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/packages/pulseaudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/pulseaudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/pulseaudio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/dd7529922/packages/pulseaudio/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/dd7529922/packages/pulseaudio/meson.patch",
-      "https://github.com/termux/termux-packages/blob/dd7529922/packages/pulseaudio/no_priv_drop.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/pulseaudio/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/pulseaudio/meson.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/pulseaudio/no_priv_drop.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/dd7529922/packages/pulseaudio/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dd7529922/packages/pulseaudio/meson.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dd7529922/packages/pulseaudio/no_priv_drop.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/pulseaudio/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/pulseaudio/meson.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/pulseaudio/no_priv_drop.patch"
     ]
   },
   {
@@ -30566,15 +30569,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.188",
+    "version": "0.0.190",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.188.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.190.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/023b9739e/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/023b9739e/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/023b9739e/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4063e05c3/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4063e05c3/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4063e05c3/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -31301,16 +31304,16 @@
     ],
     "srcurl": "https://github.com/mikebrady/shairport-sync/archive/refs/tags/3.1.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/187e7fa1c/packages/shairport-sync",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/187e7fa1c/packages/shairport-sync/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/187e7fa1c/packages/shairport-sync/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/packages/shairport-sync",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/shairport-sync/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/shairport-sync/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/187e7fa1c/packages/shairport-sync/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/187e7fa1c/packages/shairport-sync/shairport.c.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/shairport-sync/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/shairport-sync/shairport.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/187e7fa1c/packages/shairport-sync/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/187e7fa1c/packages/shairport-sync/shairport.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/shairport-sync/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/shairport-sync/shairport.c.patch"
     ]
   },
   {
@@ -31802,38 +31805,38 @@
     ],
     "srcurl": "https://github.com/badaix/snapcast/archive/v0.26.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b92f89e94/packages/snapcast-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/packages/snapcast-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/client-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/client-snapclient.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/common-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-config.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-control_session_http.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-etc-snapserver.conf.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-server_settings.hpp.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-snapserver.1.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-snapserver.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/b92f89e94/packages/snapcast-server/test-test_main.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/client-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/client-snapclient.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/common-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-config.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-control_session_http.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-etc-snapserver.conf.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-server_settings.hpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-snapserver.1.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-snapserver.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/snapcast-server/test-test_main.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/client-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/client-snapclient.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/common-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-config.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-control_session_http.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-etc-snapserver.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-server_settings.hpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-snapserver.1.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-snapserver.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b92f89e94/packages/snapcast-server/test-test_main.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/client-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/client-snapclient.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/common-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-config.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-control_session_http.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-etc-snapserver.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-server_settings.hpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-snapserver.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-snapserver.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/snapcast-server/test-test_main.cpp.patch"
     ]
   },
   {
@@ -36209,36 +36212,36 @@
     ],
     "srcurl": "https://download.videolan.org/pub/videolan/vlc/3.0.18/vlc-3.0.18.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9dec5b00a/packages/vlc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/packages/vlc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/modules-demux-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/modules-video_output-xcb-x11.c.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/src-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/packages/vlc/src-posix-filesystem.c.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/modules-demux-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/modules-video_output-xcb-x11.c.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/src-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/packages/vlc/src-posix-filesystem.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/modules-demux-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/modules-video_output-xcb-x11.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/src-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/packages/vlc/src-posix-filesystem.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/modules-demux-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/modules-video_output-xcb-x11.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/src-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/packages/vlc/src-posix-filesystem.c.patch"
     ]
   },
   {
@@ -39461,14 +39464,14 @@
     ],
     "srcurl": "https://distfiles.audacious-media-player.org/audacious-plugins-4.2.tar.bz2",
     "maintainer": "Simeon Huang <symeon@librehat.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9750986af/x11-packages/audacious-plugins",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9750986af/x11-packages/audacious-plugins/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9750986af/x11-packages/audacious-plugins/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/x11-packages/audacious-plugins",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacious-plugins/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacious-plugins/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9750986af/x11-packages/audacious-plugins/configure-pkg-config.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacious-plugins/configure-pkg-config.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9750986af/x11-packages/audacious-plugins/configure-pkg-config.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacious-plugins/configure-pkg-config.patch"
     ]
   },
   {
@@ -39492,34 +39495,34 @@
     ],
     "srcurl": "https://github.com/audacity/audacity/archive/Audacity-2.4.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/15fd497a9/x11-packages/audacity",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/x11-packages/audacity",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/cmake-proxies-portaudio-v19-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/cmake-proxies-portmidi-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/cmake-proxies-wxWidgets-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/ffmpeg-configure.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/lib-src-libnyquist-nyquist-cmt-midifns.c.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/src-AudacityApp.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/src-AudioIOBase.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/src-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/src-FFmpeg.h.patch",
-      "https://github.com/termux/termux-packages/blob/15fd497a9/x11-packages/audacity/src-MixerBoard.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/cmake-proxies-portaudio-v19-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/cmake-proxies-portmidi-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/cmake-proxies-wxWidgets-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/ffmpeg-configure.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/lib-src-libnyquist-nyquist-cmt-midifns.c.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/src-AudacityApp.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/src-AudioIOBase.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/src-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/src-FFmpeg.h.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/audacity/src-MixerBoard.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/cmake-proxies-portaudio-v19-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/cmake-proxies-portmidi-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/cmake-proxies-wxWidgets-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/ffmpeg-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/lib-src-libnyquist-nyquist-cmt-midifns.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/src-AudacityApp.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/src-AudioIOBase.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/src-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/src-FFmpeg.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/15fd497a9/x11-packages/audacity/src-MixerBoard.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/cmake-proxies-portaudio-v19-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/cmake-proxies-portmidi-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/cmake-proxies-wxWidgets-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/ffmpeg-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/lib-src-libnyquist-nyquist-cmt-midifns.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/src-AudacityApp.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/src-AudioIOBase.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/src-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/src-FFmpeg.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/audacity/src-MixerBoard.cpp.patch"
     ]
   },
   {
@@ -48093,36 +48096,36 @@
     ],
     "srcurl": "https://download.videolan.org/pub/videolan/vlc/3.0.18/vlc-3.0.18.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9dec5b00a/x11-packages/vlc-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e958b6c8c/x11-packages/vlc-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/modules-demux-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/src-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
-      "https://github.com/termux/termux-packages/blob/9dec5b00a/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/modules-demux-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/src-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
+      "https://github.com/termux/termux-packages/blob/e958b6c8c/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/modules-demux-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/src-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9dec5b00a/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/modules-demux-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/src-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e958b6c8c/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
     ]
   },
   {
