@@ -6880,6 +6880,7 @@
       "libx264",
       "libx265",
       "libxml2",
+      "libzimg",
       "littlecms",
       "ocl-icd",
       "xvidcore",
@@ -6887,16 +6888,16 @@
     ],
     "srcurl": "https://www.ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/58fa8c60b/packages/ffmpeg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/58fa8c60b/packages/ffmpeg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/58fa8c60b/packages/ffmpeg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e557d27fb/packages/ffmpeg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e557d27fb/packages/ffmpeg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e557d27fb/packages/ffmpeg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/58fa8c60b/packages/ffmpeg/add-av_stream_get_first_dts-for-chromium.patch",
-      "https://github.com/termux/termux-packages/blob/58fa8c60b/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://github.com/termux/termux-packages/blob/e557d27fb/packages/ffmpeg/add-av_stream_get_first_dts-for-chromium.patch",
+      "https://github.com/termux/termux-packages/blob/e557d27fb/packages/ffmpeg/libavutil-file_open.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/58fa8c60b/packages/ffmpeg/add-av_stream_get_first_dts-for-chromium.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/58fa8c60b/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e557d27fb/packages/ffmpeg/add-av_stream_get_first_dts-for-chromium.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e557d27fb/packages/ffmpeg/libavutil-file_open.c.patch"
     ]
   },
   {
@@ -11638,17 +11639,17 @@
   },
   {
     "name": "hugo",
-    "version": "0.108.0",
+    "version": "0.109.0",
     "description": "A fast and flexible static site generator",
     "homepage": "https://gohugo.io/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.108.0.tar.gz",
+    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.109.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c12077afa/packages/hugo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c12077afa/packages/hugo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c12077afa/packages/hugo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bff9c8588/packages/hugo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bff9c8588/packages/hugo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bff9c8588/packages/hugo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -16930,7 +16931,7 @@
   },
   {
     "name": "libmediainfo",
-    "version": "22.09",
+    "version": "22.12",
     "description": "Library for reading information from media files",
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": [
@@ -16939,16 +16940,16 @@
       "libzen",
       "zlib"
     ],
-    "srcurl": "https://mediaarea.net/download/source/libmediainfo/22.09/libmediainfo_22.09.tar.gz",
+    "srcurl": "https://mediaarea.net/download/source/libmediainfo/22.12/libmediainfo_22.12.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/51c33619f/packages/libmediainfo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51c33619f/packages/libmediainfo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51c33619f/packages/libmediainfo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c61f1321/packages/libmediainfo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c61f1321/packages/libmediainfo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c61f1321/packages/libmediainfo/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/51c33619f/packages/libmediainfo/01_remove_libpthread.patch"
+      "https://github.com/termux/termux-packages/blob/6c61f1321/packages/libmediainfo/01_remove_libpthread.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/51c33619f/packages/libmediainfo/01_remove_libpthread.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6c61f1321/packages/libmediainfo/01_remove_libpthread.patch"
     ]
   },
   {
@@ -20845,14 +20846,16 @@
     ],
     "srcurl": "https://mediaarea.net/download/source/libzen/0.4.39/libzen_0.4.39.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5bbc52c7f/packages/libzen",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5bbc52c7f/packages/libzen/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5bbc52c7f/packages/libzen/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01194a1fe/packages/libzen",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01194a1fe/packages/libzen/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01194a1fe/packages/libzen/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5bbc52c7f/packages/libzen/01_remove_libpthread.patch"
+      "https://github.com/termux/termux-packages/blob/01194a1fe/packages/libzen/01_remove_libpthread.patch",
+      "https://github.com/termux/termux-packages/blob/01194a1fe/packages/libzen/libzen-0.4.39-BitStream_Fast-Resize.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5bbc52c7f/packages/libzen/01_remove_libpthread.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01194a1fe/packages/libzen/01_remove_libpthread.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01194a1fe/packages/libzen/libzen-0.4.39-BitStream_Fast-Resize.patch"
     ]
   },
   {
@@ -22131,9 +22134,9 @@
     ],
     "srcurl": "https://github.com/42wim/matterbridge/archive/refs/tags/v1.25.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/df8490688/packages/matterbridge",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/df8490688/packages/matterbridge/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/df8490688/packages/matterbridge/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/83cc96d9a/packages/matterbridge",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/83cc96d9a/packages/matterbridge/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/83cc96d9a/packages/matterbridge/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -22607,7 +22610,7 @@
   },
   {
     "name": "mediainfo",
-    "version": "22.09",
+    "version": "22.12",
     "description": "Command-line utility for reading information from media files",
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": [
@@ -22616,11 +22619,11 @@
       "libmediainfo",
       "libzen"
     ],
-    "srcurl": "https://mediaarea.net/download/source/mediainfo/22.09/mediainfo_22.09.tar.xz",
+    "srcurl": "https://mediaarea.net/download/source/mediainfo/22.12/mediainfo_22.12.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/40e4df57a/packages/mediainfo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/40e4df57a/packages/mediainfo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/40e4df57a/packages/mediainfo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c61f1321/packages/mediainfo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c61f1321/packages/mediainfo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c61f1321/packages/mediainfo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -22760,20 +22763,20 @@
     ],
     "srcurl": "https://archive.mesa3d.org/mesa-22.3.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/750932ed3/packages/mesa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/750932ed3/packages/mesa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/750932ed3/packages/mesa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0600adf78/packages/mesa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0600adf78/packages/mesa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0600adf78/packages/mesa/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/750932ed3/packages/mesa/egl-not-android.diff",
-      "https://github.com/termux/termux-packages/blob/750932ed3/packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://github.com/termux/termux-packages/blob/750932ed3/packages/mesa/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/750932ed3/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+      "https://github.com/termux/termux-packages/blob/0600adf78/packages/mesa/egl-not-android.diff",
+      "https://github.com/termux/termux-packages/blob/0600adf78/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://github.com/termux/termux-packages/blob/0600adf78/packages/mesa/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/0600adf78/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/750932ed3/packages/mesa/egl-not-android.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/750932ed3/packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/750932ed3/packages/mesa/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/750932ed3/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0600adf78/packages/mesa/egl-not-android.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/0600adf78/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0600adf78/packages/mesa/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0600adf78/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
     ]
   },
   {
@@ -49882,6 +49885,24 @@
       "https://raw.githubusercontent.com/termux/termux-packages/f13d7766c/x11-packages/xorg-server-xvfb/xorg-server-1.20.1_os_utils.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/f13d7766c/x11-packages/xorg-server-xvfb/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
     ]
+  },
+  {
+    "name": "xorg-setxkbmap",
+    "version": "1.3.3",
+    "description": "Set the keyboard using the X Keyboard Extension",
+    "homepage": "https://xorg.freedesktop.org/",
+    "depends": [
+      "libx11",
+      "libxkbfile",
+      "libxrandr"
+    ],
+    "srcurl": "https://xorg.freedesktop.org/releases/individual/app/setxkbmap-1.3.3.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/88df3a3aa/x11-packages/xorg-setxkbmap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88df3a3aa/x11-packages/xorg-setxkbmap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88df3a3aa/x11-packages/xorg-setxkbmap/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": []
   },
   {
     "name": "xorg-twm",
