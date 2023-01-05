@@ -430,15 +430,15 @@
   },
   {
     "name": "alist",
-    "version": "3.7.2",
+    "version": "3.8.0",
     "description": "A file list program that supports multiple storage",
     "homepage": "https://alist.nn.ci",
     "depends": [],
-    "srcurl": "https://github.com/alist-org/alist/archive/v3.7.2.tar.gz",
+    "srcurl": "https://github.com/alist-org/alist/archive/v3.8.0.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c8c8edd2/packages/alist",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c8c8edd2/packages/alist/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c8c8edd2/packages/alist/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c7efba0f/packages/alist",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c7efba0f/packages/alist/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c7efba0f/packages/alist/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -4940,30 +4940,31 @@
     "description": "Bootstrap a basic Debian system",
     "homepage": "https://wiki.debian.org/Debootstrap",
     "depends": [
+      "binutils",
       "perl",
       "proot",
       "wget"
     ],
     "srcurl": "https://deb.debian.org/debian/pool/main/d/debootstrap/debootstrap_1.0.128+nmu2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1815fd5da/packages/debootstrap",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1815fd5da/packages/debootstrap/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1815fd5da/packages/debootstrap/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c096e249/packages/debootstrap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c096e249/packages/debootstrap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c096e249/packages/debootstrap/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1815fd5da/packages/debootstrap/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/1815fd5da/packages/debootstrap/debootstrap.patch",
-      "https://github.com/termux/termux-packages/blob/1815fd5da/packages/debootstrap/fix-keyring-paths.patch",
-      "https://github.com/termux/termux-packages/blob/1815fd5da/packages/debootstrap/functions.patch",
-      "https://github.com/termux/termux-packages/blob/1815fd5da/packages/debootstrap/no-fstab-chown.patch",
-      "https://github.com/termux/termux-packages/blob/1815fd5da/packages/debootstrap/scripts-debian-common.patch"
+      "https://github.com/termux/termux-packages/blob/9c096e249/packages/debootstrap/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/9c096e249/packages/debootstrap/debootstrap.patch",
+      "https://github.com/termux/termux-packages/blob/9c096e249/packages/debootstrap/fix-keyring-paths.patch",
+      "https://github.com/termux/termux-packages/blob/9c096e249/packages/debootstrap/functions.patch",
+      "https://github.com/termux/termux-packages/blob/9c096e249/packages/debootstrap/no-fstab-chown.patch",
+      "https://github.com/termux/termux-packages/blob/9c096e249/packages/debootstrap/scripts-debian-common.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1815fd5da/packages/debootstrap/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1815fd5da/packages/debootstrap/debootstrap.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1815fd5da/packages/debootstrap/fix-keyring-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1815fd5da/packages/debootstrap/functions.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1815fd5da/packages/debootstrap/no-fstab-chown.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1815fd5da/packages/debootstrap/scripts-debian-common.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9c096e249/packages/debootstrap/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9c096e249/packages/debootstrap/debootstrap.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9c096e249/packages/debootstrap/fix-keyring-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9c096e249/packages/debootstrap/functions.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9c096e249/packages/debootstrap/no-fstab-chown.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9c096e249/packages/debootstrap/scripts-debian-common.patch"
     ]
   },
   {
@@ -12644,7 +12645,7 @@
   },
   {
     "name": "jftui",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "description": "jftui is a minimalistic, lightweight C99 command line client for the open source Jellyfin media server.",
     "homepage": "https://github.com/Aanok/jftui",
     "depends": [
@@ -12652,11 +12653,11 @@
       "yajl",
       "mpv"
     ],
-    "srcurl": "https://github.com/Aanok/jftui/archive/v0.6.1.tar.gz",
+    "srcurl": "https://github.com/Aanok/jftui/archive/v0.6.2.tar.gz",
     "maintainer": "Maxr1998 <max.rumpf1998@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/261e57a1f/packages/jftui",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/261e57a1f/packages/jftui/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/261e57a1f/packages/jftui/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4764244d/packages/jftui",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4764244d/packages/jftui/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4764244d/packages/jftui/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -24656,7 +24657,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "1:0.9.0-dev-613+gef18c9f9b",
+    "version": "1:0.9.0-dev-617+gae64772a8",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -24673,22 +24674,22 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/55bbbda36/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55bbbda36/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55bbbda36/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/130d14a88/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/130d14a88/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/130d14a88/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/55bbbda36/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/55bbbda36/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://github.com/termux/termux-packages/blob/55bbbda36/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/55bbbda36/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
-      "https://github.com/termux/termux-packages/blob/55bbbda36/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/130d14a88/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/130d14a88/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://github.com/termux/termux-packages/blob/130d14a88/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/130d14a88/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
+      "https://github.com/termux/termux-packages/blob/130d14a88/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/55bbbda36/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/55bbbda36/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/55bbbda36/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/55bbbda36/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/55bbbda36/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/130d14a88/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/130d14a88/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/130d14a88/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/130d14a88/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/130d14a88/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
     ]
   },
   {
@@ -30591,15 +30592,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.210",
+    "version": "0.0.211",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.210.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.211.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3dfa5d9fd/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3dfa5d9fd/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3dfa5d9fd/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f475d56f0/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f475d56f0/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f475d56f0/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
@@ -33733,14 +33734,14 @@
   },
   {
     "name": "termux-keyring",
-    "version": "3.10",
+    "version": "3.11",
     "description": "GPG public keys for the official Termux repositories",
     "homepage": "https://github.com/termux",
     "depends": [],
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/af5ce5545/packages/termux-keyring",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af5ce5545/packages/termux-keyring/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af5ce5545/packages/termux-keyring/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3539351e6/packages/termux-keyring",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3539351e6/packages/termux-keyring/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3539351e6/packages/termux-keyring/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": []
   },
