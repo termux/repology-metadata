@@ -163,7 +163,7 @@ export FIRST=yes
 echo "["
 for repo_path in $(jq --raw-output 'keys | .[]' $TERMUX_PACKAGES_DIR/repo.json); do
 	for package_path in $TERMUX_PACKAGES_DIR/$repo_path/*; do
-		if [ "$FIRST" = "yes"]; then
+		if [ "$FIRST" = "yes" ]; then
 			FIRST=no
 		else
 			echo ","
