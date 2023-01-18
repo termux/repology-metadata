@@ -26,12 +26,44 @@ export TERMUX_ARCH=aarch64
 export TERMUX_ARCH_BITS=64
 . $TERMUX_PACKAGES_DIR/scripts/properties.sh
 
+pushd $TERMUX_PACKAGES_DIR > /dev/null
+repo_url="$(git config --get remote.origin.url)"
+popd > /dev/null
+
+# Convert to normal https url if it starts with git@
+if [ "${repo_url:0:4}" == "git@" ]; then
+	repo_url="$(echo $repo_url|sed  -e 's%:%/%g' -e 's%git@%https://%g' )"
+fi
+
+# Remove ending '.git' from repo_url
+if [ "${repo_url: -4}" = ".git" ]; then
+	repo_url="${repo_url::-4}"
+fi
+
+github_regex="https://(www\.)?github.com/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)"
+
+if [[ ${repo_url} =~ ${github_regex} ]]; then
+	repo_raw_url="https://raw.githubusercontent.com/${BASH_REMATCH[2]}/${BASH_REMATCH[3]}"
+else
+	echo "Error: repo regex didn't match ${repo_url}" > /dev/stderr
+	exit 1
+fi
+
 print_json_element() {
 	entry="$1" # For example "name"
 	value="$2" # For example "libandroid-support"
 	print_comma="$3"  # boolean, determines whether or not to print trailing ","
 
 	echo -n "    \"${entry}\": \"${value}\""
+	print_trailing_comma "$print_comma"
+}
+
+print_json_element_special() {
+	entry="$1" # for example "auto_updated"
+	value="$2" # for example: true, false or null
+	print_comma="$3"
+
+	echo -n "    \"${entry}\": ${value}"
 	print_trailing_comma "$print_comma"
 }
 
@@ -79,30 +111,12 @@ check_package() {
 	set +e
 
 	local path=$1
-	local pkg=$(basename $path)
 	pushd $path > /dev/null
-	repo_url="$(git config --get remote.origin.url)"
-
-	# Convert to normal https url if it starts with git@
-	if [ "${repo_url:0:4}" == "git@" ]; then
-		repo_url="$(echo $repo_url|sed  -e 's%:%/%g' -e 's%git@%https://%g' )"
-	fi
-
-	# Remove ending '.git' from repo_url
-	if [ "${repo_url: -4}" = ".git" ]; then
-		repo_url="${repo_url::-4}"
-	fi
-
-	github_regex="https://(www\.)?github.com/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)"
-	if [[ ${repo_url} =~ ${github_regex} ]]; then
-		repo_raw_url="https://raw.githubusercontent.com/${BASH_REMATCH[2]}/${BASH_REMATCH[3]}"
-	else
-		echo "Error: repo regex didn't match ${repo_url}" > /dev/stderr
-		exit 1
-	fi
+	local pkg=$(basename $path)
 
 	TERMUX_PKG_MAINTAINER="Termux members @termux"
 	TERMUX_PKG_API_LEVEL=24
+	TERMUX_PKG_AUTO_UPDATE=false
 	. build.sh
 
 	echo "  {"
@@ -123,19 +137,20 @@ check_package() {
 	print_json_element "maintainer" "$TERMUX_PKG_MAINTAINER"
 
 	local _COMMIT=$(git log -n1 --format=%h .)
+	local build_sh_full_name=$(git ls-files --full-name build.sh)
 
-	print_json_element "package_sources_url" "${repo_url}/tree/${_COMMIT}/$(dirname $(git ls-files --full-name build.sh))"
-	print_json_element "package_recipe_url" "${repo_url}/blob/${_COMMIT}/$(git ls-files --full-name build.sh)"
-	print_json_element "package_recipe_url_raw" "${repo_raw_url}/${_COMMIT}/$(git ls-files --full-name build.sh)"
+	print_json_element "package_sources_url" "${repo_url}/tree/${_COMMIT}/$(dirname ${build_sh_full_name})"
+	print_json_element "package_recipe_url" "${repo_url}/blob/${_COMMIT}/${build_sh_full_name}"
+	print_json_element "package_recipe_url_raw" "${repo_raw_url}/${_COMMIT}/${build_sh_full_name}"
 	local patches=$(git ls-files --full-name "*.patch" "*.patch32" "*.patch64" "*.patch.beforehostbuild" "*.diff")
 	print_json_array "package_patch_urls" "$(for p in $patches; do echo $repo_url/blob/${_COMMIT}/$p; done)"
-	print_json_array "package_patch_raw_urls" "$(for p in $patches; do echo $repo_raw_url/${_COMMIT}/$p; done)" false
-
+	print_json_array "package_patch_raw_urls" "$(for p in $patches; do echo $repo_raw_url/${_COMMIT}/$p; done)"
 	# last printed entry needs to have "false" as third argument to avoid trailing ","
-
-	popd > /dev/null
+	print_json_element_special "auto_updated" "$TERMUX_PKG_AUTO_UPDATE" false
 
 	echo -n "  }"
+
+	popd > /dev/null
 }
 
 if [ $# -eq 0 ]; then
@@ -148,7 +163,7 @@ export FIRST=yes
 echo "["
 for repo_path in $(jq --raw-output 'keys | .[]' $TERMUX_PACKAGES_DIR/repo.json); do
 	for package_path in $TERMUX_PACKAGES_DIR/$repo_path/*; do
-		if [ "$FIRST" = "yes" ]; then
+		if [ "$FIRST" = "yes"]; then
 			FIRST=no
 		else
 			echo ","
