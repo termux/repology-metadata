@@ -2588,7 +2588,7 @@
   },
   {
     "name": "box86",
-    "version": "0.2.8.20230103.124934g2b247838",
+    "version": "0.2.8.20230119.133721g8aedf895",
     "description": "Linux Userspace x86 Emulator",
     "homepage": "https://ptitseb.github.io/box86/",
     "depends": [
@@ -2599,18 +2599,18 @@
     ],
     "srcurl": "git+https://github.com/ptitSeb/box86",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a69057599/packages/box86",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a69057599/packages/box86/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a69057599/packages/box86/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a1a0fdfe1/packages/box86",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a1a0fdfe1/packages/box86/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a1a0fdfe1/packages/box86/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a69057599/packages/box86/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/a69057599/packages/box86/src_dynarec_dynablock.c.patch",
-      "https://github.com/termux/termux-packages/blob/a69057599/packages/box86/src_mallochook.c.patch"
+      "https://github.com/termux/termux-packages/blob/a1a0fdfe1/packages/box86/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/a1a0fdfe1/packages/box86/src_dynarec_dynablock.c.patch",
+      "https://github.com/termux/termux-packages/blob/a1a0fdfe1/packages/box86/src_mallochook.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a69057599/packages/box86/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a69057599/packages/box86/src_dynarec_dynablock.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a69057599/packages/box86/src_mallochook.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a1a0fdfe1/packages/box86/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a1a0fdfe1/packages/box86/src_dynarec_dynablock.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a1a0fdfe1/packages/box86/src_mallochook.c.patch"
     ],
     "auto_updated": true
   },
@@ -6772,25 +6772,28 @@
   },
   {
     "name": "et",
-    "version": "6.2.1",
+    "version": "6.2.2",
     "description": "A remote shell that automatically reconnects without interrupting the session",
     "homepage": "https://eternalterminal.dev",
     "depends": [
       "libc++",
-      "protobuf",
       "libsodium",
-      "openssl"
+      "openssl",
+      "protobuf",
+      "zlib"
     ],
-    "srcurl": "https://github.com/MisterTea/EternalTerminal/archive/et-v6.2.1.tar.gz",
+    "srcurl": "git+https://github.com/MisterTea/EternalTerminal",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ff784d7a9/packages/et",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ff784d7a9/packages/et/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ff784d7a9/packages/et/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a7c36bb0b/packages/et",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a7c36bb0b/packages/et/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a7c36bb0b/packages/et/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ff784d7a9/packages/et/src-terminal-TerminalServerMain.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/a7c36bb0b/packages/et/fix-includes.patch",
+      "https://github.com/termux/termux-packages/blob/a7c36bb0b/packages/et/src-terminal-TerminalServerMain.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ff784d7a9/packages/et/src-terminal-TerminalServerMain.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a7c36bb0b/packages/et/fix-includes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a7c36bb0b/packages/et/src-terminal-TerminalServerMain.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -6885,7 +6888,7 @@
   },
   {
     "name": "exiv2",
-    "version": "2:0.27.5",
+    "version": "2:0.27.6",
     "description": "Exif, Iptc and XMP metadata manipulation library and tools",
     "homepage": "https://exiv2.org/",
     "depends": [
@@ -6894,16 +6897,16 @@
       "libexpat",
       "zlib"
     ],
-    "srcurl": "https://github.com/Exiv2/exiv2/archive/v0.27.5.tar.gz",
+    "srcurl": "https://github.com/Exiv2/exiv2/archive/v0.27.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b117282df/packages/exiv2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b117282df/packages/exiv2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b117282df/packages/exiv2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8f5280f91/packages/exiv2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8f5280f91/packages/exiv2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8f5280f91/packages/exiv2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b117282df/packages/exiv2/exiv2json.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/8f5280f91/packages/exiv2/exiv2json.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b117282df/packages/exiv2/exiv2json.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8f5280f91/packages/exiv2/exiv2json.cpp.patch"
     ],
     "auto_updated": false
   },
@@ -13836,20 +13839,22 @@
   },
   {
     "name": "keybase",
-    "version": "6.0.2",
+    "version": "6.0.4",
     "description": "Key directory that maps social media identities to encryption keys",
     "homepage": "https://keybase.io",
     "depends": [],
-    "srcurl": "https://github.com/keybase/client/archive/v6.0.2.tar.gz",
+    "srcurl": "https://github.com/keybase/client/archive/v6.0.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a36836021/packages/keybase",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a36836021/packages/keybase/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a36836021/packages/keybase/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d53e1b97/packages/keybase",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d53e1b97/packages/keybase/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d53e1b97/packages/keybase/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a36836021/packages/keybase/go-libkb-env.go.patch"
+      "https://github.com/termux/termux-packages/blob/3d53e1b97/packages/keybase/go-libkb-env.go.patch",
+      "https://github.com/termux/termux-packages/blob/3d53e1b97/packages/keybase/go-libkb-secret_store_secretservice.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a36836021/packages/keybase/go-libkb-env.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3d53e1b97/packages/keybase/go-libkb-env.go.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3d53e1b97/packages/keybase/go-libkb-secret_store_secretservice.go.patch"
     ],
     "auto_updated": true
   },
@@ -44537,11 +44542,11 @@
       "wxwidgets",
       "zlib"
     ],
-    "srcurl": "https://downloads.sourceforge.net/hugin/hugin-2022.0.0.tar.bz2",
+    "srcurl": "https://ftp-osl.osuosl.org/pub/gentoo/distfiles/hugin-2022.0.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb68fc74b/x11-packages/hugin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb68fc74b/x11-packages/hugin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb68fc74b/x11-packages/hugin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b4b4f5c12/x11-packages/hugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b4b4f5c12/x11-packages/hugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b4b4f5c12/x11-packages/hugin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
