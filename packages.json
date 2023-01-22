@@ -2615,6 +2615,30 @@
     "auto_updated": true
   },
   {
+    "name": "boxes",
+    "version": "2.2.0",
+    "description": "A command line filter program which draws ASCII art boxes around your input text",
+    "homepage": "https://boxes.thomasjensen.com/",
+    "depends": [
+      "libunistring",
+      "pcre2"
+    ],
+    "srcurl": "https://github.com/ascii-boxes/boxes/archive/v2.2.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3be5ad61f/packages/boxes",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3be5ad61f/packages/boxes/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3be5ad61f/packages/boxes/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3be5ad61f/packages/boxes/src-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/3be5ad61f/packages/boxes/src-discovery.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3be5ad61f/packages/boxes/src-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3be5ad61f/packages/boxes/src-discovery.c.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "brainfuck",
     "version": "1:2.7.3",
     "description": "Brainfuck Interpreter written in C",
@@ -6735,15 +6759,15 @@
   },
   {
     "name": "esbuild",
-    "version": "0.17.3",
+    "version": "0.17.4",
     "description": "An extremely fast JavaScript bundler",
     "homepage": "https://esbuild.github.io/",
     "depends": [],
-    "srcurl": "https://github.com/evanw/esbuild/archive/refs/tags/v0.17.3.tar.gz",
+    "srcurl": "https://github.com/evanw/esbuild/archive/refs/tags/v0.17.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/957117204/packages/esbuild",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/957117204/packages/esbuild/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/957117204/packages/esbuild/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/41a59cf10/packages/esbuild",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/41a59cf10/packages/esbuild/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/41a59cf10/packages/esbuild/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -18365,7 +18389,7 @@
   },
   {
     "name": "libneon",
-    "version": "0.32.4",
+    "version": "0.32.5",
     "description": "An HTTP/1.1 and WebDAV client library, with a C interface",
     "homepage": "https://notroj.github.io/neon/",
     "depends": [
@@ -18373,11 +18397,11 @@
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://notroj.github.io/neon/neon-0.32.4.tar.gz",
+    "srcurl": "https://notroj.github.io/neon/neon-0.32.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4d99e6d91/packages/libneon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4d99e6d91/packages/libneon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4d99e6d91/packages/libneon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dee7c1fd5/packages/libneon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dee7c1fd5/packages/libneon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dee7c1fd5/packages/libneon/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -28228,38 +28252,40 @@
     ],
     "srcurl": "https://sources.archlinux.org/other/pacman/pacman-6.0.2.tar.xz",
     "maintainer": "@Maxython <mixython@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1d851210f/packages/pacman",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bfc0e8e76/packages/pacman",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/add.c.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/doc_meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/executable_meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/makepkg.conf.in.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/makepkg.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/meson_options.txt.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/pacman-key.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/pacman.c.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/pacman.conf.in.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/repo-add.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/trans.c.patch",
-      "https://github.com/termux/termux-packages/blob/1d851210f/packages/pacman/util.c.patch"
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/add.c.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/diskspace.c.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/doc_meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/executable_meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/makepkg.conf.in.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/makepkg.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/meson_options.txt.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/pacman-key.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/pacman.c.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/pacman.conf.in.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/repo-add.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/trans.c.patch",
+      "https://github.com/termux/termux-packages/blob/bfc0e8e76/packages/pacman/util.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/add.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/doc_meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/executable_meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/makepkg.conf.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/makepkg.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/meson_options.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/pacman-key.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/pacman.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/pacman.conf.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/repo-add.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/trans.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d851210f/packages/pacman/util.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/add.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/diskspace.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/doc_meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/executable_meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/makepkg.conf.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/makepkg.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/meson_options.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/pacman-key.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/pacman.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/pacman.conf.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/repo-add.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/trans.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bfc0e8e76/packages/pacman/util.c.patch"
     ],
     "auto_updated": false
   },
@@ -38389,25 +38415,25 @@
   },
   {
     "name": "vtm",
-    "version": "0.9.8n",
+    "version": "0.9.8o",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://vtm.netxs.online/",
     "depends": [
       "libandroid-spawn",
       "libc++"
     ],
-    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.8n.tar.gz",
+    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.8o.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f97fe15a/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f97fe15a/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f97fe15a/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c55303d60/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c55303d60/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c55303d60/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2f97fe15a/packages/vtm/netxs-console-ansi.hpp.patch",
-      "https://github.com/termux/termux-packages/blob/2f97fe15a/packages/vtm/netxs-os-system.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/c55303d60/packages/vtm/netxs-desktopio-directvt.hpp.patch",
+      "https://github.com/termux/termux-packages/blob/c55303d60/packages/vtm/netxs-os-system.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2f97fe15a/packages/vtm/netxs-console-ansi.hpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2f97fe15a/packages/vtm/netxs-os-system.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c55303d60/packages/vtm/netxs-desktopio-directvt.hpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c55303d60/packages/vtm/netxs-os-system.hpp.patch"
     ],
     "auto_updated": true
   },
@@ -52032,7 +52058,7 @@
   },
   {
     "name": "xfce4-notifyd",
-    "version": "0.6.5",
+    "version": "0.7.1",
     "description": "simple, visually-appealing notification daemon for Xfce",
     "homepage": "https://docs.xfce.org/apps/notifyd/start",
     "depends": [
@@ -52048,13 +52074,14 @@
       "libxfce4util",
       "pango",
       "xfce4-panel",
-      "xfconf"
+      "xfconf",
+      "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/apps/xfce4-notifyd/0.6/xfce4-notifyd-0.6.5.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/apps/xfce4-notifyd/0.7/xfce4-notifyd-0.7.1.tar.bz2",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b47980cc7/x11-packages/xfce4-notifyd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b47980cc7/x11-packages/xfce4-notifyd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b47980cc7/x11-packages/xfce4-notifyd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9a9ffa4a3/x11-packages/xfce4-notifyd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9a9ffa4a3/x11-packages/xfce4-notifyd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9a9ffa4a3/x11-packages/xfce4-notifyd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
