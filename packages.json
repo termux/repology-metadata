@@ -10326,25 +10326,25 @@
   },
   {
     "name": "groovy",
-    "version": "4.0.7",
+    "version": "4.0.8",
     "description": "A powerful multi-faceted programming language for the JVM platform",
     "homepage": "https://groovy-lang.org/",
     "depends": [
       "libjansi",
       "openjdk-17"
     ],
-    "srcurl": "https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-binary-4.0.7.zip",
+    "srcurl": "https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-binary-4.0.8.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e3f0f5c17/packages/groovy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e3f0f5c17/packages/groovy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e3f0f5c17/packages/groovy/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/67f307fde/packages/groovy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/67f307fde/packages/groovy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/67f307fde/packages/groovy/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e3f0f5c17/packages/groovy/bin-startGroovy.patch",
-      "https://github.com/termux/termux-packages/blob/e3f0f5c17/packages/groovy/jline2.patch"
+      "https://github.com/termux/termux-packages/blob/67f307fde/packages/groovy/bin-startGroovy.patch",
+      "https://github.com/termux/termux-packages/blob/67f307fde/packages/groovy/jline2.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e3f0f5c17/packages/groovy/bin-startGroovy.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e3f0f5c17/packages/groovy/jline2.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/67f307fde/packages/groovy/bin-startGroovy.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/67f307fde/packages/groovy/jline2.patch"
     ],
     "auto_updated": false
   },
@@ -13388,15 +13388,15 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.32.0",
+    "version": "2.33.0",
     "description": "A CLI for JFrog products",
     "homepage": "https://jfrog.com/getcli",
     "depends": [],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.32.0.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.33.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dc18c9c4d/packages/jfrog-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dc18c9c4d/packages/jfrog-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dc18c9c4d/packages/jfrog-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ba3c5144/packages/jfrog-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ba3c5144/packages/jfrog-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ba3c5144/packages/jfrog-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -16596,6 +16596,29 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/57444726c/packages/libglibmm-2.68/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
+    "name": "libglvnd",
+    "version": "1.6.0",
+    "description": "The GL Vendor-Neutral Dispatch library",
+    "homepage": "https://gitlab.freedesktop.org/glvnd/libglvnd",
+    "depends": [
+      "libc++",
+      "libx11",
+      "libxext"
+    ],
+    "srcurl": "https://gitlab.freedesktop.org/glvnd/libglvnd/-/archive/v1.6.0/libglvnd-v1.6.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8318d8e5c/packages/libglvnd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8318d8e5c/packages/libglvnd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8318d8e5c/packages/libglvnd/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/8318d8e5c/packages/libglvnd/egl-not-android.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/8318d8e5c/packages/libglvnd/egl-not-android.diff"
+    ],
     "auto_updated": false
   },
   {
@@ -21621,20 +21644,20 @@
     ],
     "srcurl": "https://ftp-osl.osuosl.org/pub/gentoo/distfiles/libX11-1.8.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e529d1bec/packages/libx11",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e529d1bec/packages/libx11/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e529d1bec/packages/libx11/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/674182a70/packages/libx11",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/674182a70/packages/libx11/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/674182a70/packages/libx11/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e529d1bec/packages/libx11/configure.patch",
-      "https://github.com/termux/termux-packages/blob/e529d1bec/packages/libx11/libX11-1.8.3-revert-XPutBackEvent.patch",
-      "https://github.com/termux/termux-packages/blob/e529d1bec/packages/libx11/src-CrGlCur.c.patch",
-      "https://github.com/termux/termux-packages/blob/e529d1bec/packages/libx11/src-XlibInt.c.patch"
+      "https://github.com/termux/termux-packages/blob/674182a70/packages/libx11/configure.patch",
+      "https://github.com/termux/termux-packages/blob/674182a70/packages/libx11/libX11-1.8.3-revert-XPutBackEvent.patch",
+      "https://github.com/termux/termux-packages/blob/674182a70/packages/libx11/src-CrGlCur.c.patch",
+      "https://github.com/termux/termux-packages/blob/674182a70/packages/libx11/src-XlibInt.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e529d1bec/packages/libx11/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e529d1bec/packages/libx11/libX11-1.8.3-revert-XPutBackEvent.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e529d1bec/packages/libx11/src-CrGlCur.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e529d1bec/packages/libx11/src-XlibInt.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/674182a70/packages/libx11/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/674182a70/packages/libx11/libX11-1.8.3-revert-XPutBackEvent.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/674182a70/packages/libx11/src-CrGlCur.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/674182a70/packages/libx11/src-XlibInt.c.patch"
     ],
     "auto_updated": false
   },
@@ -22774,25 +22797,25 @@
   },
   {
     "name": "lsof",
-    "version": "4.97.0",
+    "version": "4.98.0",
     "description": "Lists open files for running Unix processes",
     "homepage": "https://github.com/lsof-org/lsof",
     "depends": [
       "libandroid-support",
       "libtirpc"
     ],
-    "srcurl": "https://github.com/lsof-org/lsof/archive/4.97.0/lsof-4.97.0.tar.gz",
+    "srcurl": "https://github.com/lsof-org/lsof/archive/4.98.0/lsof-4.98.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e057e238/packages/lsof",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e057e238/packages/lsof/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e057e238/packages/lsof/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2337ae244/packages/lsof",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2337ae244/packages/lsof/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2337ae244/packages/lsof/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0e057e238/packages/lsof/Configure.patch",
-      "https://github.com/termux/termux-packages/blob/0e057e238/packages/lsof/main.c.patch"
+      "https://github.com/termux/termux-packages/blob/2337ae244/packages/lsof/Configure.patch",
+      "https://github.com/termux/termux-packages/blob/2337ae244/packages/lsof/main.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0e057e238/packages/lsof/Configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e057e238/packages/lsof/main.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2337ae244/packages/lsof/Configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2337ae244/packages/lsof/main.c.patch"
     ],
     "auto_updated": true
   },
@@ -24152,6 +24175,7 @@
       "libc++",
       "libdrm",
       "libexpat",
+      "libglvnd",
       "libx11",
       "libxext",
       "libxfixes",
@@ -24163,20 +24187,18 @@
     ],
     "srcurl": "https://archive.mesa3d.org/mesa-22.3.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c9487abf1/packages/mesa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c9487abf1/packages/mesa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c9487abf1/packages/mesa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0196e9780/packages/mesa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0196e9780/packages/mesa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0196e9780/packages/mesa/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c9487abf1/packages/mesa/egl-not-android.diff",
-      "https://github.com/termux/termux-packages/blob/c9487abf1/packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://github.com/termux/termux-packages/blob/c9487abf1/packages/mesa/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/c9487abf1/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+      "https://github.com/termux/termux-packages/blob/0196e9780/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://github.com/termux/termux-packages/blob/0196e9780/packages/mesa/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/0196e9780/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c9487abf1/packages/mesa/egl-not-android.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/c9487abf1/packages/mesa/mesa-22.2.0-llvm-15.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c9487abf1/packages/mesa/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c9487abf1/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0196e9780/packages/mesa/mesa-22.2.0-llvm-15.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0196e9780/packages/mesa/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0196e9780/packages/mesa/src-gallium-drivers-llvmpipe-lp_screen.c.patch"
     ],
     "auto_updated": false
   },
@@ -45466,14 +45488,14 @@
     ],
     "srcurl": "https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/88d72220e/x11-packages/libepoxy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88d72220e/x11-packages/libepoxy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88d72220e/x11-packages/libepoxy/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/96010a4d7/x11-packages/libepoxy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/96010a4d7/x11-packages/libepoxy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/96010a4d7/x11-packages/libepoxy/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/88d72220e/x11-packages/libepoxy/libepoxy-1.5.3_src_dispatch_common.c.patch"
+      "https://github.com/termux/termux-packages/blob/96010a4d7/x11-packages/libepoxy/libepoxy-1.5.3_src_dispatch_common.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/88d72220e/x11-packages/libepoxy/libepoxy-1.5.3_src_dispatch_common.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/96010a4d7/x11-packages/libepoxy/libepoxy-1.5.3_src_dispatch_common.c.patch"
     ],
     "auto_updated": false
   },
@@ -48152,26 +48174,26 @@
     ],
     "srcurl": "git+https://github.com/notaz/pcsx_rearmed",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fcb2a0978/x11-packages/pcsx-rearmed",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ce638ff0/x11-packages/pcsx-rearmed",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/configure.patch",
-      "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/libpicofe_menu.c.patch",
-      "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/libpicofe_plat.c.patch",
-      "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/libpicofe_plat.h.patch",
-      "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/main.c.patch",
-      "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/main.h.patch",
-      "https://github.com/termux/termux-packages/blob/fcb2a0978/x11-packages/pcsx-rearmed/menu.c.patch"
+      "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/configure.patch",
+      "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/libpicofe_menu.c.patch",
+      "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/libpicofe_plat.c.patch",
+      "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/libpicofe_plat.h.patch",
+      "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/main.c.patch",
+      "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/main.h.patch",
+      "https://github.com/termux/termux-packages/blob/0ce638ff0/x11-packages/pcsx-rearmed/menu.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/libpicofe_menu.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/libpicofe_plat.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/libpicofe_plat.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/main.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/main.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fcb2a0978/x11-packages/pcsx-rearmed/menu.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/libpicofe_menu.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/libpicofe_plat.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/libpicofe_plat.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/main.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/main.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ce638ff0/x11-packages/pcsx-rearmed/menu.c.patch"
     ],
     "auto_updated": false
   },
@@ -52058,7 +52080,7 @@
   },
   {
     "name": "xfce4-notifyd",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "description": "simple, visually-appealing notification daemon for Xfce",
     "homepage": "https://docs.xfce.org/apps/notifyd/start",
     "depends": [
@@ -52077,11 +52099,11 @@
       "xfconf",
       "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/apps/xfce4-notifyd/0.7/xfce4-notifyd-0.7.1.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/apps/xfce4-notifyd/0.7/xfce4-notifyd-0.7.2.tar.bz2",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9a9ffa4a3/x11-packages/xfce4-notifyd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9a9ffa4a3/x11-packages/xfce4-notifyd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9a9ffa4a3/x11-packages/xfce4-notifyd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/840d14cff/x11-packages/xfce4-notifyd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/840d14cff/x11-packages/xfce4-notifyd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/840d14cff/x11-packages/xfce4-notifyd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
