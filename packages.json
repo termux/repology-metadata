@@ -2705,17 +2705,17 @@
   },
   {
     "name": "broot",
-    "version": "1.20.1",
+    "version": "1.20.2",
     "description": "A better way to navigate directories",
     "homepage": "https://github.com/Canop/broot",
     "depends": [
       "zlib"
     ],
-    "srcurl": "https://github.com/Canop/broot/archive/v1.20.1.tar.gz",
+    "srcurl": "https://github.com/Canop/broot/archive/v1.20.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/345153b6e/packages/broot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/345153b6e/packages/broot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/345153b6e/packages/broot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4537aad86/packages/broot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4537aad86/packages/broot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4537aad86/packages/broot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -17133,15 +17133,15 @@
   },
   {
     "name": "libimagequant",
-    "version": "2.18.0",
+    "version": "4.1.0",
     "description": "Small, portable C library for high-quality conversion of RGBA images to 8-bit indexed-color (palette) images",
     "homepage": "https://pngquant.org/lib/",
     "depends": [],
-    "srcurl": "https://github.com/ImageOptim/libimagequant/archive/refs/tags/2.18.0.tar.gz",
+    "srcurl": "https://github.com/ImageOptim/libimagequant/archive/refs/tags/4.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/97cb43ec0/packages/libimagequant",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/97cb43ec0/packages/libimagequant/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/97cb43ec0/packages/libimagequant/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c9081807/packages/libimagequant",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c9081807/packages/libimagequant/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c9081807/packages/libimagequant/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -32520,20 +32520,20 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.247",
+    "version": "0.0.248",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.247.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.248.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/95b0d1e2b/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95b0d1e2b/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95b0d1e2b/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/96c83a871/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/96c83a871/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/96c83a871/packages/ruff/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/95b0d1e2b/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://github.com/termux/termux-packages/blob/96c83a871/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/95b0d1e2b/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/96c83a871/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "auto_updated": true
   },
@@ -51016,44 +51016,42 @@
   },
   {
     "name": "transmission-gtk",
-    "version": "3.00",
+    "version": "4.0.0",
     "description": "Easy, lean and powerful BitTorrent client (gtk3)",
     "homepage": "https://transmissionbt.com/",
     "depends": [
-      "atk",
-      "gdk-pixbuf",
       "glib",
       "gtk3",
-      "libcairo",
+      "gtkmm3",
+      "libatkmm-1.6",
+      "libc++",
+      "libcairomm-1.0",
       "libcurl",
       "libevent",
+      "libglibmm-2.4",
+      "libpangomm-1.4",
+      "libpsl",
+      "libsigc++-2.0",
       "miniupnpc",
-      "openssl",
-      "pango",
-      "zlib"
+      "natpmpc",
+      "openssl"
     ],
     "srcurl": "git+https://github.com/transmission/transmission",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ec82277d/x11-packages/transmission-gtk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/30ec1b781/x11-packages/transmission-gtk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30ec1b781/x11-packages/transmission-gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30ec1b781/x11-packages/transmission-gtk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/0003-configure.ac-fix-autoreconf-with-autoconf-2.70.patch",
-      "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/arpa_inet_h.patch",
-      "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/fix_paths.patch",
-      "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/libtransmission-fdlimit.c.patch",
-      "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/no_locale.patch",
-      "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/no_quota.patch",
-      "https://github.com/termux/termux-packages/blob/3ec82277d/x11-packages/transmission-gtk/openssl3-compat.patch"
+      "https://github.com/termux/termux-packages/blob/30ec1b781/x11-packages/transmission-gtk/fix_paths.patch",
+      "https://github.com/termux/termux-packages/blob/30ec1b781/x11-packages/transmission-gtk/gtk-Session.cc.patch",
+      "https://github.com/termux/termux-packages/blob/30ec1b781/x11-packages/transmission-gtk/no_locale.patch",
+      "https://github.com/termux/termux-packages/blob/30ec1b781/x11-packages/transmission-gtk/no_quota.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/0003-configure.ac-fix-autoreconf-with-autoconf-2.70.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/arpa_inet_h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/fix_paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/libtransmission-fdlimit.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/no_locale.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/no_quota.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ec82277d/x11-packages/transmission-gtk/openssl3-compat.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/30ec1b781/x11-packages/transmission-gtk/fix_paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/30ec1b781/x11-packages/transmission-gtk/gtk-Session.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/30ec1b781/x11-packages/transmission-gtk/no_locale.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/30ec1b781/x11-packages/transmission-gtk/no_quota.patch"
     ],
     "auto_updated": false
   },
