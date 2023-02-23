@@ -37475,6 +37475,22 @@
     "auto_updated": true
   },
   {
+    "name": "vulkan-loader",
+    "version": "0.0.1",
+    "description": "A metapackage that provides vulkan loader library",
+    "homepage": "https://github.com/termux/termux-packages",
+    "depends": [
+      "vulkan-loader-android"
+    ],
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e47f46d87/packages/vulkan-loader",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e47f46d87/packages/vulkan-loader/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e47f46d87/packages/vulkan-loader/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
     "name": "vulkan-loader-android",
     "version": "25c",
     "description": "Vulkan Loader for Android",
@@ -37488,6 +37504,27 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
+  },
+  {
+    "name": "vulkan-loader-generic",
+    "version": "1.3.241",
+    "description": "Vulkan Loader",
+    "homepage": "https://github.com/KhronosGroup/Vulkan-Loader",
+    "depends": [],
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.3.241.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f490fb293/packages/vulkan-loader-generic",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f490fb293/packages/vulkan-loader-generic/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f490fb293/packages/vulkan-loader-generic/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/f490fb293/packages/vulkan-loader-generic/0001-fix-hardcoded-pathes.patch",
+      "https://github.com/termux/termux-packages/blob/f490fb293/packages/vulkan-loader-generic/0002-properly-enable-extensions.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/f490fb293/packages/vulkan-loader-generic/0001-fix-hardcoded-pathes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f490fb293/packages/vulkan-loader-generic/0002-properly-enable-extensions.patch"
+    ],
+    "auto_updated": true
   },
   {
     "name": "vulkan-tools",
