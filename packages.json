@@ -1475,17 +1475,17 @@
   },
   {
     "name": "atuin",
-    "version": "12.0.0",
+    "version": "13.0.0",
     "description": "Magical shell history",
     "homepage": "https://github.com/ellie/atuin",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/ellie/atuin/archive/v12.0.0.tar.gz",
+    "srcurl": "https://github.com/ellie/atuin/archive/v13.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/03f1d8b9e/packages/atuin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03f1d8b9e/packages/atuin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03f1d8b9e/packages/atuin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7b36b5254/packages/atuin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7b36b5254/packages/atuin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7b36b5254/packages/atuin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -8991,13 +8991,14 @@
     "homepage": "https://github.com/dandavison/delta",
     "depends": [
       "git",
-      "zlib"
+      "libgit2",
+      "oniguruma"
     ],
     "srcurl": "https://github.com/dandavison/delta/archive/0.15.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/acd215a71/packages/git-delta",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/acd215a71/packages/git-delta/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/acd215a71/packages/git-delta/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3880d4c0e/packages/git-delta",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3880d4c0e/packages/git-delta/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3880d4c0e/packages/git-delta/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -15469,27 +15470,27 @@
   },
   {
     "name": "libgit2",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "C library implementing Git core methods",
     "homepage": "https://libgit2.github.com/",
     "depends": [
       "libssh2",
       "openssl",
-      "pcre",
+      "pcre2",
       "zlib"
     ],
-    "srcurl": "https://github.com/libgit2/libgit2/archive/v1.5.1.tar.gz",
+    "srcurl": "https://github.com/libgit2/libgit2/archive/v1.5.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/375ad7c9a/packages/libgit2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/375ad7c9a/packages/libgit2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/375ad7c9a/packages/libgit2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7b49890db/packages/libgit2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7b49890db/packages/libgit2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7b49890db/packages/libgit2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/375ad7c9a/packages/libgit2/fix-etc-dir-path.patch",
-      "https://github.com/termux/termux-packages/blob/375ad7c9a/packages/libgit2/src-util-rand.c.patch"
+      "https://github.com/termux/termux-packages/blob/7b49890db/packages/libgit2/fix-etc-dir-path.patch",
+      "https://github.com/termux/termux-packages/blob/7b49890db/packages/libgit2/src-util-rand.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/375ad7c9a/packages/libgit2/fix-etc-dir-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/375ad7c9a/packages/libgit2/src-util-rand.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7b49890db/packages/libgit2/fix-etc-dir-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7b49890db/packages/libgit2/src-util-rand.c.patch"
     ],
     "auto_updated": true
   },
@@ -22287,45 +22288,41 @@
   },
   {
     "name": "make",
-    "version": "4.4",
+    "version": "4.4.1",
     "description": "Tool to control the generation of non-source files from source files",
     "homepage": "https://www.gnu.org/software/make/",
     "depends": [],
-    "srcurl": "https://mirrors.kernel.org/gnu/make/make-4.4.tar.gz",
+    "srcurl": "https://mirrors.kernel.org/gnu/make/make-4.4.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cea73f9a5/packages/make",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cea73f9a5/packages/make/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cea73f9a5/packages/make/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3081d418/packages/make",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3081d418/packages/make/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3081d418/packages/make/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cea73f9a5/packages/make/src-job.c.patch",
-      "https://github.com/termux/termux-packages/blob/cea73f9a5/packages/make/src-posixos.c.patch"
+      "https://github.com/termux/termux-packages/blob/c3081d418/packages/make/src-job.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cea73f9a5/packages/make/src-job.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cea73f9a5/packages/make/src-posixos.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c3081d418/packages/make/src-job.c.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "make-guile",
-    "version": "4.4",
+    "version": "4.4.1",
     "description": "Tool to control the generation of non-source files from source files",
     "homepage": "https://www.gnu.org/software/make/",
     "depends": [
       "guile"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/make/make-4.4.tar.gz",
+    "srcurl": "https://mirrors.kernel.org/gnu/make/make-4.4.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cea73f9a5/packages/make-guile",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cea73f9a5/packages/make-guile/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cea73f9a5/packages/make-guile/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3081d418/packages/make-guile",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3081d418/packages/make-guile/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3081d418/packages/make-guile/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cea73f9a5/packages/make-guile/src-job.c.patch",
-      "https://github.com/termux/termux-packages/blob/cea73f9a5/packages/make-guile/src-posixos.c.patch"
+      "https://github.com/termux/termux-packages/blob/c3081d418/packages/make-guile/src-job.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cea73f9a5/packages/make-guile/src-job.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cea73f9a5/packages/make-guile/src-posixos.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c3081d418/packages/make-guile/src-job.c.patch"
     ],
     "auto_updated": false
   },
@@ -33688,28 +33685,28 @@
     ],
     "srcurl": "https://github.com/strace/strace/releases/download/v6.1/strace-6.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/87fb3319a/packages/strace",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/25e6e8974/packages/strace",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/bundled-linux-include-uapi-linux-fs.h.patch",
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/bundled-linux-include-uapi-linux-in.h.patch",
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/configure-find-armv7-cc.patch",
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/mpers-use-host-readelf-for-debug-dump.patch",
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/sigreturn.c.patch",
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/src-defs.h.patch",
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/strace.c.patch",
-      "https://github.com/termux/termux-packages/blob/87fb3319a/packages/strace/xlat-faccessat_flags.h.patch"
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/bundled-linux-include-uapi-linux-fs.h.patch",
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/bundled-linux-include-uapi-linux-in.h.patch",
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/configure-find-armv7-cc.patch",
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/mpers-use-host-readelf-for-debug-dump.patch",
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/sigreturn.c.patch",
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/src-defs.h.patch",
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/strace.c.patch",
+      "https://github.com/termux/termux-packages/blob/25e6e8974/packages/strace/xlat-faccessat_flags.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/bundled-linux-include-uapi-linux-fs.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/bundled-linux-include-uapi-linux-in.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/configure-find-armv7-cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/mpers-use-host-readelf-for-debug-dump.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/sigreturn.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/src-defs.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/strace.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87fb3319a/packages/strace/xlat-faccessat_flags.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/bundled-linux-include-uapi-linux-fs.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/bundled-linux-include-uapi-linux-in.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/configure-find-armv7-cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/mpers-use-host-readelf-for-debug-dump.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/sigreturn.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/src-defs.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/strace.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25e6e8974/packages/strace/xlat-faccessat_flags.h.patch"
     ],
     "auto_updated": true
   },
