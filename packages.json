@@ -317,22 +317,22 @@
   },
   {
     "name": "acr",
-    "version": "2.0.0",
+    "version": "2.1.1",
     "description": "A fully compatible autoconf replacement",
     "homepage": "https://github.com/radare/acr",
     "depends": [
       "dash"
     ],
-    "srcurl": "https://github.com/radare/acr/archive/2.0.0.tar.gz",
+    "srcurl": "https://github.com/radare/acr/archive/2.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7493855a4/packages/acr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7493855a4/packages/acr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7493855a4/packages/acr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c5072e1c/packages/acr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c5072e1c/packages/acr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c5072e1c/packages/acr/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7493855a4/packages/acr/no_dev-stderr.patch"
+      "https://github.com/termux/termux-packages/blob/6c5072e1c/packages/acr/no_dev-stderr.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7493855a4/packages/acr/no_dev-stderr.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6c5072e1c/packages/acr/no_dev-stderr.patch"
     ],
     "auto_updated": true
   },
@@ -3666,15 +3666,15 @@
   },
   {
     "name": "chezmoi",
-    "version": "2.31.0",
+    "version": "2.31.1",
     "description": "Manage your dotfiles across multiple machines",
     "homepage": "https://chezmoi.io",
     "depends": [],
-    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.31.0.tar.gz",
+    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.31.1.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b7cef7298/packages/chezmoi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b7cef7298/packages/chezmoi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b7cef7298/packages/chezmoi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bde2a72b6/packages/chezmoi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bde2a72b6/packages/chezmoi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bde2a72b6/packages/chezmoi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -24168,6 +24168,7 @@
     "description": "Music player daemon",
     "homepage": "https://www.musicpd.org",
     "depends": [
+      "chromaprint",
       "dbus",
       "ffmpeg",
       "game-music-emu",
@@ -24185,40 +24186,42 @@
       "libnfs",
       "libogg",
       "libopus",
+      "libsamplerate",
       "libsndfile",
       "libsoxr",
       "libsqlite",
       "libvorbis",
       "openal-soft",
+      "pcre2",
       "pulseaudio",
       "zlib"
     ],
     "srcurl": "https://github.com/MusicPlayerDaemon/MPD/archive/v0.23.12.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/42118dd0c/packages/mpd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3c6caf462/packages/mpd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/doc-mpdconf.example.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/registry.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/src-input-Error.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/mpd/thread-Util.cxx.patch"
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/doc-mpdconf.example.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/registry.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/src-input-Error.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/3c6caf462/packages/mpd/thread-Util.cxx.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/doc-mpdconf.example.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/registry.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/src-input-Error.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/mpd/thread-Util.cxx.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/doc-mpdconf.example.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/registry.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/src-input-Error.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3c6caf462/packages/mpd/thread-Util.cxx.patch"
     ],
     "auto_updated": true
   },
@@ -46665,16 +46668,16 @@
     ],
     "srcurl": "https://mesa.freedesktop.org/archive/demos/8.5.0/mesa-demos-8.5.0.tar.bz2",
     "maintainer": "Rafael Kitover <rkitover@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d12ba537b/x11-packages/mesa-demos",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d12ba537b/x11-packages/mesa-demos/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d12ba537b/x11-packages/mesa-demos/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdd9e894d/x11-packages/mesa-demos",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdd9e894d/x11-packages/mesa-demos/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdd9e894d/x11-packages/mesa-demos/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d12ba537b/x11-packages/mesa-demos/0001-fix-KHR-define.patch",
-      "https://github.com/termux/termux-packages/blob/d12ba537b/x11-packages/mesa-demos/src-tests-texdown.c.patch"
+      "https://github.com/termux/termux-packages/blob/cdd9e894d/x11-packages/mesa-demos/0001-fix-KHR-define.patch",
+      "https://github.com/termux/termux-packages/blob/cdd9e894d/x11-packages/mesa-demos/src-tests-texdown.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d12ba537b/x11-packages/mesa-demos/0001-fix-KHR-define.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d12ba537b/x11-packages/mesa-demos/src-tests-texdown.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cdd9e894d/x11-packages/mesa-demos/0001-fix-KHR-define.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cdd9e894d/x11-packages/mesa-demos/src-tests-texdown.c.patch"
     ],
     "auto_updated": false
   },
@@ -46950,7 +46953,7 @@
   },
   {
     "name": "mumble-server",
-    "version": "1.4.287",
+    "version": "1.5.517",
     "description": "Server module for Mumble, an open source voice-chat software",
     "homepage": "https://www.mumble.info/",
     "depends": [
@@ -46958,21 +46961,21 @@
       "libcap",
       "libdns-sd",
       "libprotobuf",
-      "openssl-1.1",
+      "openssl",
       "qt5-qtbase"
     ],
     "srcurl": "git+https://github.com/mumble-voip/mumble",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4382a6b8/x11-packages/mumble-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4382a6b8/x11-packages/mumble-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4382a6b8/x11-packages/mumble-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fd7334212/x11-packages/mumble-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fd7334212/x11-packages/mumble-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fd7334212/x11-packages/mumble-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d4382a6b8/x11-packages/mumble-server/scripts-mumble-server-user-wrapper.patch",
-      "https://github.com/termux/termux-packages/blob/d4382a6b8/x11-packages/mumble-server/src-murmur-UnixMurmur.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/fd7334212/x11-packages/mumble-server/scripts-mumble-server-user-wrapper.patch",
+      "https://github.com/termux/termux-packages/blob/fd7334212/x11-packages/mumble-server/src-murmur-UnixMurmur.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d4382a6b8/x11-packages/mumble-server/scripts-mumble-server-user-wrapper.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4382a6b8/x11-packages/mumble-server/src-murmur-UnixMurmur.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fd7334212/x11-packages/mumble-server/scripts-mumble-server-user-wrapper.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fd7334212/x11-packages/mumble-server/src-murmur-UnixMurmur.cpp.patch"
     ],
     "auto_updated": false
   },
