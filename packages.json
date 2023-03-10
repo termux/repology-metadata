@@ -9339,6 +9339,23 @@
     "auto_updated": false
   },
   {
+    "name": "glslang",
+    "version": "11.13.0",
+    "description": "OpenGL and OpenGL ES shader front end and validator",
+    "homepage": "https://github.com/KhronosGroup/glslang",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/KhronosGroup/glslang/archive/11.13.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b67dc0650/packages/glslang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b67dc0650/packages/glslang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b67dc0650/packages/glslang/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
     "name": "gluelang",
     "version": "0.2.0",
     "description": "A programming language that has a strong nature to be a glue of commands",
@@ -11731,7 +11748,7 @@
   },
   {
     "name": "imagemagick",
-    "version": "7.1.1.1",
+    "version": "7.1.1.2",
     "description": "Suite to create, edit, compose, or convert images in a variety of formats",
     "homepage": "https://www.imagemagick.org/",
     "depends": [
@@ -11763,11 +11780,11 @@
       "pango",
       "zlib"
     ],
-    "srcurl": "https://imagemagick.org/archive/releases/ImageMagick-7.1.1-1.tar.xz",
+    "srcurl": "https://imagemagick.org/archive/releases/ImageMagick-7.1.1-2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e89b47d4e/packages/imagemagick",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e89b47d4e/packages/imagemagick/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e89b47d4e/packages/imagemagick/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3683d3e2e/packages/imagemagick",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3683d3e2e/packages/imagemagick/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3683d3e2e/packages/imagemagick/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -17476,17 +17493,17 @@
   },
   {
     "name": "libnftnl",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Netfilter library providing interface to the nf_tables subsystem",
     "homepage": "https://www.netfilter.org/projects/libnftnl/",
     "depends": [
       "libmnl"
     ],
-    "srcurl": "https://netfilter.org/projects/libnftnl/files/libnftnl-1.2.4.tar.bz2",
+    "srcurl": "https://netfilter.org/projects/libnftnl/files/libnftnl-1.2.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/645a532bb/packages/libnftnl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/645a532bb/packages/libnftnl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/645a532bb/packages/libnftnl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8af23c142/packages/libnftnl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8af23c142/packages/libnftnl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8af23c142/packages/libnftnl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -17588,25 +17605,25 @@
   },
   {
     "name": "libnss",
-    "version": "3.88.1",
+    "version": "3.89",
     "description": "Network Security Services (NSS)",
     "homepage": "https://firefox-source-docs.mozilla.org/security/nss/",
     "depends": [
       "libnspr",
       "libsqlite"
     ],
-    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_88_1_RTM/src/nss-3.88.1.tar.gz",
+    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_89_RTM/src/nss-3.89.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/777cf1d94/packages/libnss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/777cf1d94/packages/libnss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/777cf1d94/packages/libnss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d05d7251f/packages/libnss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d05d7251f/packages/libnss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d05d7251f/packages/libnss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/777cf1d94/packages/libnss/coreconf-rules.mk.patch",
-      "https://github.com/termux/termux-packages/blob/777cf1d94/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://github.com/termux/termux-packages/blob/d05d7251f/packages/libnss/coreconf-rules.mk.patch",
+      "https://github.com/termux/termux-packages/blob/d05d7251f/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/777cf1d94/packages/libnss/coreconf-rules.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/777cf1d94/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d05d7251f/packages/libnss/coreconf-rules.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d05d7251f/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "auto_updated": false
   },
@@ -20276,20 +20293,20 @@
   },
   {
     "name": "libvidstab",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "video stabilization library",
     "homepage": "https://github.com/georgmartius/vid.stab",
     "depends": [],
-    "srcurl": "https://github.com/georgmartius/vid.stab/archive/v1.1.0.tar.gz",
+    "srcurl": "https://github.com/georgmartius/vid.stab/archive/v1.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f00ed55bf/packages/libvidstab",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f00ed55bf/packages/libvidstab/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f00ed55bf/packages/libvidstab/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/14c47f6f8/packages/libvidstab",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/14c47f6f8/packages/libvidstab/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/14c47f6f8/packages/libvidstab/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f00ed55bf/packages/libvidstab/cmakelist.patch"
+      "https://github.com/termux/termux-packages/blob/14c47f6f8/packages/libvidstab/transcode-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f00ed55bf/packages/libvidstab/cmakelist.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/14c47f6f8/packages/libvidstab/transcode-CMakeLists.txt.patch"
     ],
     "auto_updated": false
   },
@@ -25647,7 +25664,7 @@
   },
   {
     "name": "nim",
-    "version": "1.6.10",
+    "version": "1.6.12",
     "description": "Nim programming language compiler",
     "homepage": "https://nim-lang.org/",
     "depends": [
@@ -25656,20 +25673,20 @@
       "libandroid-glob",
       "openssl"
     ],
-    "srcurl": "https://nim-lang.org/download/nim-1.6.10.tar.xz",
+    "srcurl": "https://nim-lang.org/download/nim-1.6.12.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cec1d690c/packages/nim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cec1d690c/packages/nim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cec1d690c/packages/nim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6a1d6a287/packages/nim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6a1d6a287/packages/nim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6a1d6a287/packages/nim/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cec1d690c/packages/nim/config-nim.cfg.patch",
-      "https://github.com/termux/termux-packages/blob/cec1d690c/packages/nim/os.nim.patch",
-      "https://github.com/termux/termux-packages/blob/cec1d690c/packages/nim/osproc.nim.patch"
+      "https://github.com/termux/termux-packages/blob/6a1d6a287/packages/nim/config-nim.cfg.patch",
+      "https://github.com/termux/termux-packages/blob/6a1d6a287/packages/nim/os.nim.patch",
+      "https://github.com/termux/termux-packages/blob/6a1d6a287/packages/nim/osproc.nim.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cec1d690c/packages/nim/config-nim.cfg.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cec1d690c/packages/nim/os.nim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cec1d690c/packages/nim/osproc.nim.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6a1d6a287/packages/nim/config-nim.cfg.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6a1d6a287/packages/nim/os.nim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6a1d6a287/packages/nim/osproc.nim.patch"
     ],
     "auto_updated": false
   },
@@ -26753,7 +26770,7 @@
   },
   {
     "name": "openexr",
-    "version": "3.1.5",
+    "version": "3.1.6",
     "description": "Provides the specification and reference implementation of the EXR file format",
     "homepage": "https://www.openexr.com/",
     "depends": [
@@ -26761,16 +26778,16 @@
       "libc++",
       "zlib"
     ],
-    "srcurl": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.5.tar.gz",
+    "srcurl": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c144b1e8d/packages/openexr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c144b1e8d/packages/openexr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c144b1e8d/packages/openexr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b970e4e10/packages/openexr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b970e4e10/packages/openexr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b970e4e10/packages/openexr/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c144b1e8d/packages/openexr/src-lib-Iex-IexMathFpu.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/b970e4e10/packages/openexr/neon.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c144b1e8d/packages/openexr/src-lib-Iex-IexMathFpu.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b970e4e10/packages/openexr/neon.patch"
     ],
     "auto_updated": false
   },
@@ -28628,24 +28645,24 @@
   },
   {
     "name": "plantuml",
-    "version": "1.2023.2",
+    "version": "1.2023.4",
     "description": "Draws UML diagrams, using a simple and human readable text description",
     "homepage": "https://plantuml.com/",
     "depends": [
       "openjdk-17"
     ],
-    "srcurl": "https://downloads.sourceforge.net/project/plantuml/1.2023.2/plantuml-1.2023.2.tar.gz",
+    "srcurl": "https://downloads.sourceforge.net/project/plantuml/1.2023.4/plantuml-1.2023.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f0afa3ce4/packages/plantuml",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f0afa3ce4/packages/plantuml/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f0afa3ce4/packages/plantuml/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/59f0e9de4/packages/plantuml",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/59f0e9de4/packages/plantuml/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/59f0e9de4/packages/plantuml/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f0afa3ce4/packages/plantuml/build.xml.patch",
-      "https://github.com/termux/termux-packages/blob/f0afa3ce4/packages/plantuml/plantuml.patch"
+      "https://github.com/termux/termux-packages/blob/59f0e9de4/packages/plantuml/build.xml.patch",
+      "https://github.com/termux/termux-packages/blob/59f0e9de4/packages/plantuml/plantuml.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f0afa3ce4/packages/plantuml/build.xml.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f0afa3ce4/packages/plantuml/plantuml.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/59f0e9de4/packages/plantuml/build.xml.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/59f0e9de4/packages/plantuml/plantuml.patch"
     ],
     "auto_updated": false
   },
@@ -31607,7 +31624,7 @@
   },
   {
     "name": "rust",
-    "version": "1.67.1",
+    "version": "1.68.0",
     "description": "Systems programming language focused on safety, speed and concurrency",
     "homepage": "https://www.rust-lang.org/",
     "depends": [
@@ -31618,22 +31635,24 @@
       "zlib",
       "libllvm"
     ],
-    "srcurl": "https://static.rust-lang.org/dist/rustc-1.67.1-src.tar.xz",
+    "srcurl": "https://static.rust-lang.org/dist/rustc-1.68.0-src.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/df8e7de91/packages/rust",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/df8e7de91/packages/rust/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/df8e7de91/packages/rust/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ddf3395c3/packages/rust",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ddf3395c3/packages/rust/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ddf3395c3/packages/rust/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/df8e7de91/packages/rust/compiler-rustc_driver-src-lib.rs.patch",
-      "https://github.com/termux/termux-packages/blob/df8e7de91/packages/rust/dlopen.patch",
-      "https://github.com/termux/termux-packages/blob/df8e7de91/packages/rust/os-tmpdir.patch",
-      "https://github.com/termux/termux-packages/blob/df8e7de91/packages/rust/src-librustc_llvm-build.rs.patch"
+      "https://github.com/termux/termux-packages/blob/ddf3395c3/packages/rust/compiler-rustc_driver-src-lib.rs.patch",
+      "https://github.com/termux/termux-packages/blob/ddf3395c3/packages/rust/dlopen.patch",
+      "https://github.com/termux/termux-packages/blob/ddf3395c3/packages/rust/os-tmpdir.patch",
+      "https://github.com/termux/termux-packages/blob/ddf3395c3/packages/rust/src-bootstrap-cc_detect.rs.diff",
+      "https://github.com/termux/termux-packages/blob/ddf3395c3/packages/rust/src-librustc_llvm-build.rs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/df8e7de91/packages/rust/compiler-rustc_driver-src-lib.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/df8e7de91/packages/rust/dlopen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/df8e7de91/packages/rust/os-tmpdir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/df8e7de91/packages/rust/src-librustc_llvm-build.rs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ddf3395c3/packages/rust/compiler-rustc_driver-src-lib.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ddf3395c3/packages/rust/dlopen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ddf3395c3/packages/rust/os-tmpdir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ddf3395c3/packages/rust/src-bootstrap-cc_detect.rs.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/ddf3395c3/packages/rust/src-librustc_llvm-build.rs.patch"
     ],
     "auto_updated": false
   },
@@ -38912,22 +38931,25 @@
   },
   {
     "name": "zbar",
-    "version": "0.23.90",
+    "version": "0.23.92",
     "description": "Software suite for reading bar codes from various sources",
     "homepage": "https://github.com/mchehab/zbar",
     "depends": [
-      "libiconv",
       "imagemagick",
-      "libjpeg-turbo",
-      "zlib"
+      "libiconv",
+      "libjpeg-turbo"
     ],
-    "srcurl": "https://github.com/mchehab/zbar/archive/0.23.90.tar.gz",
+    "srcurl": "https://github.com/mchehab/zbar/archive/0.23.92.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27afd9e66/packages/zbar",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27afd9e66/packages/zbar/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27afd9e66/packages/zbar/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9720b39fc/packages/zbar",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9720b39fc/packages/zbar/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9720b39fc/packages/zbar/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/9720b39fc/packages/zbar/java-Makefile.am.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/9720b39fc/packages/zbar/java-Makefile.am.patch"
+    ],
     "auto_updated": true
   },
   {
