@@ -2754,17 +2754,17 @@
   },
   {
     "name": "broot",
-    "version": "1.21.0",
+    "version": "1.21.1",
     "description": "A better way to navigate directories",
     "homepage": "https://github.com/Canop/broot",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/Canop/broot/archive/v1.21.0.tar.gz",
+    "srcurl": "https://github.com/Canop/broot/archive/v1.21.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f68d9b2fd/packages/broot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f68d9b2fd/packages/broot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f68d9b2fd/packages/broot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fb37738eb/packages/broot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fb37738eb/packages/broot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fb37738eb/packages/broot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -7822,20 +7822,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.0.497",
+    "version": "0.0.498",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.497.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.0.498.tar.gz",
     "maintainer": "Yaksh Bariya <yakshbari4@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8204050de/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8204050de/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8204050de/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ca969685b/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ca969685b/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ca969685b/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8204050de/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/ca969685b/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8204050de/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ca969685b/packages/flyctl/getcpuinfo.patch"
     ],
     "auto_updated": true
   },
@@ -43548,28 +43548,24 @@
   },
   {
     "name": "glfw",
-    "version": "3.3.8",
+    "version": "3.3.8-p20230303",
     "description": "An Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development",
     "homepage": "https://www.glfw.org/",
     "depends": [
-      "libx11"
+      "opengl"
     ],
-    "srcurl": "https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz",
+    "srcurl": "git+https://github.com/glfw/glfw",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4387f9339/x11-packages/glfw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdb3803dd/x11-packages/glfw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdb3803dd/x11-packages/glfw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdb3803dd/x11-packages/glfw/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-wl_init.c.patch",
-      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-wl_platform.h.patch",
-      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-x11_init.c.patch",
-      "https://github.com/termux/termux-packages/blob/4387f9339/x11-packages/glfw/src-x11_window.c.patch"
+      "https://github.com/termux/termux-packages/blob/cdb3803dd/x11-packages/glfw/src-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/cdb3803dd/x11-packages/glfw/src-x11_init.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-wl_init.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-wl_platform.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-x11_init.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4387f9339/x11-packages/glfw/src-x11_window.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cdb3803dd/x11-packages/glfw/src-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cdb3803dd/x11-packages/glfw/src-x11_init.c.patch"
     ],
     "auto_updated": false
   },
@@ -49432,17 +49428,17 @@
   },
   {
     "name": "raylib",
-    "version": "4.0.0",
+    "version": "4.5.0",
     "description": "A simple and easy-to-use library to enjoy videogames programming",
     "homepage": "https://www.raylib.com/",
     "depends": [
       "glfw"
     ],
-    "srcurl": "https://github.com/raysan5/raylib/archive/refs/tags/4.0.0.tar.gz",
+    "srcurl": "https://github.com/raysan5/raylib/archive/refs/tags/4.5.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b2598250e/x11-packages/raylib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b2598250e/x11-packages/raylib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b2598250e/x11-packages/raylib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bec33d50/x11-packages/raylib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bec33d50/x11-packages/raylib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bec33d50/x11-packages/raylib/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
