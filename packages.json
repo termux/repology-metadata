@@ -2739,15 +2739,15 @@
   },
   {
     "name": "brook",
-    "version": "20230401",
+    "version": "20230404",
     "description": "A cross-platform strong encryption and not detectable proxy. Zero-Configuration.",
     "homepage": "https://github.com/txthinking/brook",
     "depends": [],
-    "srcurl": "https://github.com/txthinking/brook/archive/v20230401.tar.gz",
+    "srcurl": "https://github.com/txthinking/brook/archive/v20230404.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/48aa40c32/packages/brook",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/48aa40c32/packages/brook/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/48aa40c32/packages/brook/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cda9f1442/packages/brook",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cda9f1442/packages/brook/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cda9f1442/packages/brook/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -11429,13 +11429,15 @@
     "depends": [
       "libbz2",
       "liblzma",
-      "zlib"
+      "zlib",
+      "libdeflate",
+      "libcurl"
     ],
     "srcurl": "https://github.com/samtools/htslib/releases/download/1.17/htslib-1.17.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8934a00d0/packages/htslib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8934a00d0/packages/htslib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8934a00d0/packages/htslib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b700036bf/packages/htslib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b700036bf/packages/htslib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b700036bf/packages/htslib/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -30114,7 +30116,7 @@
   },
   {
     "name": "python-cryptography",
-    "version": "39.0.2",
+    "version": "40.0.0",
     "description": "Provides cryptographic recipes and primitives to Python developers",
     "homepage": "https://github.com/pyca/cryptography",
     "depends": [
@@ -30122,16 +30124,16 @@
       "python",
       "python-pip"
     ],
-    "srcurl": "https://github.com/pyca/cryptography/archive/refs/tags/39.0.2.tar.gz",
+    "srcurl": "https://github.com/pyca/cryptography/archive/refs/tags/40.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/020721b63/packages/python-cryptography",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/020721b63/packages/python-cryptography/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/020721b63/packages/python-cryptography/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9169cab3e/packages/python-cryptography",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9169cab3e/packages/python-cryptography/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9169cab3e/packages/python-cryptography/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/020721b63/packages/python-cryptography/openssl-libs.diff"
+      "https://github.com/termux/termux-packages/blob/9169cab3e/packages/python-cryptography/openssl-libs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/020721b63/packages/python-cryptography/openssl-libs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/9169cab3e/packages/python-cryptography/openssl-libs.diff"
     ],
     "auto_updated": true
   },
@@ -31727,20 +31729,20 @@
   },
   {
     "name": "ruff",
-    "version": "0.0.258",
+    "version": "0.0.259",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.258.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.0.259.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3c33734c/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3c33734c/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3c33734c/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b717b4ec/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b717b4ec/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b717b4ec/packages/ruff/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c3c33734c/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://github.com/termux/termux-packages/blob/6b717b4ec/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c3c33734c/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/6b717b4ec/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "auto_updated": true
   },
@@ -37866,15 +37868,15 @@
   },
   {
     "name": "vulkan-headers",
-    "version": "1.3.244",
+    "version": "1.3.245",
     "description": "Vulkan Header files and API registry",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.244.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.245.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/da6cfe6a5/packages/vulkan-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/da6cfe6a5/packages/vulkan-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/da6cfe6a5/packages/vulkan-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/576a31d12/packages/vulkan-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/576a31d12/packages/vulkan-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/576a31d12/packages/vulkan-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
