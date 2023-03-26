@@ -9477,30 +9477,33 @@
   },
   {
     "name": "gmic",
-    "version": "2.9.9",
+    "version": "3.2.2",
     "description": "Full-featured framework for image processing",
     "homepage": "https://gmic.eu",
     "depends": [
+      "fftw",
+      "imath",
       "libc++",
       "libcurl",
-      "fftw",
-      "libpng",
       "libjpeg-turbo",
+      "libpng",
       "libtiff",
+      "libx11",
+      "openexr",
       "zlib"
     ],
-    "srcurl": "https://gmic.eu/files/source/gmic_2.9.9.tar.gz",
+    "srcurl": "https://gmic.eu/files/source/gmic_3.2.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/986babfda/packages/gmic",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/986babfda/packages/gmic/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/986babfda/packages/gmic/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/567f10f20/packages/gmic",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/567f10f20/packages/gmic/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/567f10f20/packages/gmic/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/986babfda/packages/gmic/CImg.h.patch",
-      "https://github.com/termux/termux-packages/blob/986babfda/packages/gmic/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/567f10f20/packages/gmic/CImg.h.patch",
+      "https://github.com/termux/termux-packages/blob/567f10f20/packages/gmic/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/986babfda/packages/gmic/CImg.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/986babfda/packages/gmic/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/567f10f20/packages/gmic/CImg.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/567f10f20/packages/gmic/Makefile.patch"
     ],
     "auto_updated": false
   },
@@ -25242,9 +25245,9 @@
     "depends": [],
     "srcurl": "https://dl.google.com/android/repository/android-ndk-r25c-linux.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e00fbe551/packages/ndk-multilib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e00fbe551/packages/ndk-multilib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e00fbe551/packages/ndk-multilib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/be6357dc2/packages/ndk-multilib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/be6357dc2/packages/ndk-multilib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/be6357dc2/packages/ndk-multilib/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -27554,40 +27557,40 @@
     ],
     "srcurl": "https://sources.archlinux.org/other/pacman/pacman-6.0.2.tar.xz",
     "maintainer": "@Maxython <mixython@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/29828bce3/packages/pacman",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b4a43f8a0/packages/pacman",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/add.c.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/diskspace.c.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/doc_meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/executable_meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/makepkg.conf.in.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/makepkg.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/meson_options.txt.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/pacman-key.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/pacman.c.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/pacman.conf.in.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/repo-add.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/trans.c.patch",
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/pacman/util.c.patch"
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/add.c.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/diskspace.c.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/doc_meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/executable_meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/makepkg.conf.in.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/makepkg.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/meson_options.txt.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/pacman-key.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/pacman.c.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/pacman.conf.in.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/repo-add.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/trans.c.patch",
+      "https://github.com/termux/termux-packages/blob/b4a43f8a0/packages/pacman/util.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/add.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/diskspace.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/doc_meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/executable_meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/makepkg.conf.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/makepkg.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/meson_options.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/pacman-key.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/pacman.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/pacman.conf.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/repo-add.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/trans.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/pacman/util.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/add.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/diskspace.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/doc_meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/executable_meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/makepkg.conf.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/makepkg.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/meson_options.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/pacman-key.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/pacman.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/pacman.conf.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/repo-add.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/trans.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b4a43f8a0/packages/pacman/util.c.patch"
     ],
     "auto_updated": false
   },
@@ -31988,7 +31991,7 @@
   },
   {
     "name": "samba",
-    "version": "4.15.13",
+    "version": "4.16.9",
     "description": "SMB/CIFS fileserver",
     "homepage": "https://www.samba.org/",
     "depends": [
@@ -32011,34 +32014,34 @@
       "tdb-tools",
       "zlib"
     ],
-    "srcurl": "https://download.samba.org/pub/samba/samba-4.15.13.tar.gz",
+    "srcurl": "https://download.samba.org/pub/samba/samba-4.16.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/180105bc4/packages/samba",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/aa85161ab/packages/samba",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/0001-The-great-tmp-path-replacement.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/0002-Remove-setuid-etc.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/0003-smbpasswd-remove-root-related-restrictions.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/0005-samba-documents-provider-sambapatch.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/0006-add-berserker.-c-h.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/0007-nss-buflen-passwd.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/findsmb.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/krb-link-already-defined.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/more-pw_gecos-removal.patch",
-      "https://github.com/termux/termux-packages/blob/180105bc4/packages/samba/openwrt-fix-host-tools-checks.patch"
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/0001-The-great-tmp-path-replacement.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/0002-Remove-setuid-etc.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/0003-smbpasswd-remove-root-related-restrictions.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/0005-samba-documents-provider-sambapatch.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/0006-add-berserker.-c-h.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/0007-nss-buflen-passwd.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/findsmb.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/krb-link-already-defined.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/more-pw_gecos-removal.patch",
+      "https://github.com/termux/termux-packages/blob/aa85161ab/packages/samba/openwrt-fix-host-tools-checks.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/0001-The-great-tmp-path-replacement.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/0002-Remove-setuid-etc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/0003-smbpasswd-remove-root-related-restrictions.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/0005-samba-documents-provider-sambapatch.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/0006-add-berserker.-c-h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/0007-nss-buflen-passwd.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/findsmb.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/krb-link-already-defined.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/more-pw_gecos-removal.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/180105bc4/packages/samba/openwrt-fix-host-tools-checks.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/0001-The-great-tmp-path-replacement.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/0002-Remove-setuid-etc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/0003-smbpasswd-remove-root-related-restrictions.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/0005-samba-documents-provider-sambapatch.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/0006-add-berserker.-c-h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/0007-nss-buflen-passwd.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/findsmb.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/krb-link-already-defined.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/more-pw_gecos-removal.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/aa85161ab/packages/samba/openwrt-fix-host-tools-checks.patch"
     ],
     "auto_updated": false
   },
@@ -39668,6 +39671,29 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/a87b1ec58/root-packages/arp-scan/Makefile.am.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/a87b1ec58/root-packages/arp-scan/arp-scan.h.patch"
+    ],
+    "auto_updated": false
+  },
+  {
+    "name": "authbind",
+    "version": "2.1.2",
+    "description": "Bind sockets to privileged ports without root",
+    "homepage": "https://www.chiark.greenend.org.uk/ucgi/~ian/git/authbind.git",
+    "depends": [],
+    "srcurl": "https://deb.debian.org/debian/pool/main/a/authbind/authbind_2.1.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/578b249a9/root-packages/authbind",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/578b249a9/root-packages/authbind/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/578b249a9/root-packages/authbind/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/578b249a9/root-packages/authbind/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/578b249a9/root-packages/authbind/helper.c.patch",
+      "https://github.com/termux/termux-packages/blob/578b249a9/root-packages/authbind/libauthbind.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/578b249a9/root-packages/authbind/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/578b249a9/root-packages/authbind/helper.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/578b249a9/root-packages/authbind/libauthbind.c.patch"
     ],
     "auto_updated": false
   },
@@ -51788,6 +51814,34 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/58dcf5656/x11-packages/xcompmgr/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
+    "name": "xdg-utils",
+    "version": "1.1.3",
+    "description": "A set of simple scripts that provide basic desktop integration functions for any Free Desktop",
+    "homepage": "https://www.freedesktop.org/wiki/Software/xdg-utils/",
+    "depends": [
+      "desktop-file-utils",
+      "file",
+      "make",
+      "perl",
+      "shared-mime-info",
+      "xorg-xprop"
+    ],
+    "srcurl": "https://gitlab.freedesktop.org/xdg/xdg-utils/-/archive/v1.1.3/xdg-utils-v1.1.3.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4c8fe0c57/x11-packages/xdg-utils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4c8fe0c57/x11-packages/xdg-utils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4c8fe0c57/x11-packages/xdg-utils/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/4c8fe0c57/x11-packages/xdg-utils/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/4c8fe0c57/x11-packages/xdg-utils/scripts-xdg-email.in.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/4c8fe0c57/x11-packages/xdg-utils/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4c8fe0c57/x11-packages/xdg-utils/scripts-xdg-email.in.patch"
+    ],
     "auto_updated": false
   },
   {
