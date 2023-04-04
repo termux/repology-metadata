@@ -6779,30 +6779,30 @@
   },
   {
     "name": "emscripten",
-    "version": "3.1.34",
+    "version": "3.1.35",
     "description": "Emscripten: An LLVM-to-WebAssembly Compiler",
     "homepage": "https://emscripten.org",
     "depends": [],
     "srcurl": "git+https://github.com/emscripten-core/emscripten",
     "maintainer": "@truboxl",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/10ada7e4d/packages/emscripten",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/emscripten/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/emscripten/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/92c108ce0/packages/emscripten",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92c108ce0/packages/emscripten/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92c108ce0/packages/emscripten/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.patch.diff",
-      "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.patch.diff",
-      "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.patch.diff",
-      "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.patch.diff",
-      "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.patch.diff",
-      "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch.diff"
+      "https://github.com/termux/termux-packages/blob/92c108ce0/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.patch.diff",
+      "https://github.com/termux/termux-packages/blob/92c108ce0/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.patch.diff",
+      "https://github.com/termux/termux-packages/blob/92c108ce0/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.patch.diff",
+      "https://github.com/termux/termux-packages/blob/92c108ce0/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.patch.diff",
+      "https://github.com/termux/termux-packages/blob/92c108ce0/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.patch.diff",
+      "https://github.com/termux/termux-packages/blob/92c108ce0/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.patch.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.patch.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.patch.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.patch.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.patch.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/92c108ce0/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.patch.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/92c108ce0/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.patch.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/92c108ce0/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.patch.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/92c108ce0/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.patch.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/92c108ce0/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.patch.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/92c108ce0/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch.diff"
     ],
     "auto_updated": true
   },
@@ -16105,15 +16105,21 @@
     "homepage": "http://htmlcxx.sourceforge.net/",
     "depends": [
       "libc++",
-      "iconv"
+      "libiconv"
     ],
     "srcurl": "http://downloads.sourceforge.net/sourceforge/htmlcxx/htmlcxx-0.87.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b281bc214/packages/libhtmlcxx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b281bc214/packages/libhtmlcxx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b281bc214/packages/libhtmlcxx/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e7d74b5d9/packages/libhtmlcxx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e7d74b5d9/packages/libhtmlcxx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e7d74b5d9/packages/libhtmlcxx/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/e7d74b5d9/packages/libhtmlcxx/css-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/e7d74b5d9/packages/libhtmlcxx/html-Makefile.am.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/e7d74b5d9/packages/libhtmlcxx/css-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e7d74b5d9/packages/libhtmlcxx/html-Makefile.am.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -20095,15 +20101,15 @@
   },
   {
     "name": "libtreesitter",
-    "version": "0.20.7",
+    "version": "0.20.8",
     "description": "An incremental parsing system for programming tools",
     "homepage": "https://github.com/tree-sitter/tree-sitter",
     "depends": [],
-    "srcurl": "https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.7.tar.gz",
+    "srcurl": "https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/11138a723/packages/libtreesitter",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11138a723/packages/libtreesitter/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/libtreesitter/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/56438da4f/packages/libtreesitter",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/56438da4f/packages/libtreesitter/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/56438da4f/packages/libtreesitter/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -25464,7 +25470,7 @@
   },
   {
     "name": "neovim-nightly",
-    "version": "1:0.9.0-dev-1319+g10baf8971",
+    "version": "1:0.9.0-dev-1326+g7c8c15507",
     "description": "Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)",
     "homepage": "https://neovim.io",
     "depends": [
@@ -25481,22 +25487,22 @@
     ],
     "srcurl": "https://github.com/neovim/neovim/archive/nightly.tar.gz",
     "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91d2e4001/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91d2e4001/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91d2e4001/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b041b7b1/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b041b7b1/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b041b7b1/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/91d2e4001/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/91d2e4001/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://github.com/termux/termux-packages/blob/91d2e4001/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/91d2e4001/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
-      "https://github.com/termux/termux-packages/blob/91d2e4001/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/6b041b7b1/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/6b041b7b1/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://github.com/termux/termux-packages/blob/6b041b7b1/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/6b041b7b1/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
+      "https://github.com/termux/termux-packages/blob/6b041b7b1/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/91d2e4001/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91d2e4001/packages/neovim-nightly/runtime-lua-man.lua.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91d2e4001/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91d2e4001/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91d2e4001/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6b041b7b1/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6b041b7b1/packages/neovim-nightly/runtime-lua-man.lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6b041b7b1/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6b041b7b1/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6b041b7b1/packages/neovim-nightly/src-nvim-po-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -34610,15 +34616,15 @@
   },
   {
     "name": "syncthing",
-    "version": "1.23.2",
+    "version": "1.23.3",
     "description": "Decentralized file synchronization",
     "homepage": "https://syncthing.net/",
     "depends": [],
-    "srcurl": "https://github.com/syncthing/syncthing/archive/refs/tags/v1.23.2.tar.gz",
+    "srcurl": "https://github.com/syncthing/syncthing/archive/refs/tags/v1.23.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/10ada7e4d/packages/syncthing",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10ada7e4d/packages/syncthing/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10ada7e4d/packages/syncthing/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3a96ea13/packages/syncthing",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3a96ea13/packages/syncthing/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3a96ea13/packages/syncthing/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -46491,14 +46497,16 @@
     ],
     "srcurl": "https://gitlab.freedesktop.org/archived-projects/libxklavier/-/archive/libxklavier-5.4/libxklavier-libxklavier-5.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/435f1410e/x11-packages/libxklavier",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/435f1410e/x11-packages/libxklavier/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/435f1410e/x11-packages/libxklavier/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/07ab7d888/x11-packages/libxklavier",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/07ab7d888/x11-packages/libxklavier/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/07ab7d888/x11-packages/libxklavier/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/435f1410e/x11-packages/libxklavier/libxklavier-Makefile.am.patch"
+      "https://github.com/termux/termux-packages/blob/07ab7d888/x11-packages/libxklavier/libxklavier-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/07ab7d888/x11-packages/libxklavier/tmpnam.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/435f1410e/x11-packages/libxklavier/libxklavier-Makefile.am.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/07ab7d888/x11-packages/libxklavier/libxklavier-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07ab7d888/x11-packages/libxklavier/tmpnam.patch"
     ],
     "auto_updated": false
   },
@@ -52450,11 +52458,15 @@
     ],
     "srcurl": "https://archive.xfce.org/src/apps/xfce4-notifyd/0.8/xfce4-notifyd-0.8.2.tar.bz2",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b516314d1/x11-packages/xfce4-notifyd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b516314d1/x11-packages/xfce4-notifyd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b516314d1/x11-packages/xfce4-notifyd/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3333040a6/x11-packages/xfce4-notifyd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3333040a6/x11-packages/xfce4-notifyd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3333040a6/x11-packages/xfce4-notifyd/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3333040a6/x11-packages/xfce4-notifyd/fix-hardcoded-paths.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3333040a6/x11-packages/xfce4-notifyd/fix-hardcoded-paths.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -52573,11 +52585,15 @@
     ],
     "srcurl": "https://archive.xfce.org/src/apps/xfce4-screensaver/4.18/xfce4-screensaver-4.18.0.tar.bz2",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/82f3ca814/x11-packages/xfce4-screensaver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/82f3ca814/x11-packages/xfce4-screensaver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/82f3ca814/x11-packages/xfce4-screensaver/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/09454f2d0/x11-packages/xfce4-screensaver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/09454f2d0/x11-packages/xfce4-screensaver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/09454f2d0/x11-packages/xfce4-screensaver/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/09454f2d0/x11-packages/xfce4-screensaver/fix-hardcoded-paths.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/09454f2d0/x11-packages/xfce4-screensaver/fix-hardcoded-paths.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -52682,14 +52698,16 @@
     ],
     "srcurl": "https://archive.xfce.org/src/xfce/xfce4-settings/4.18/xfce4-settings-4.18.2.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/141c1aac7/x11-packages/xfce4-settings",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/141c1aac7/x11-packages/xfce4-settings/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/141c1aac7/x11-packages/xfce4-settings/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6d399905e/x11-packages/xfce4-settings",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6d399905e/x11-packages/xfce4-settings/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6d399905e/x11-packages/xfce4-settings/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/141c1aac7/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch"
+      "https://github.com/termux/termux-packages/blob/6d399905e/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch",
+      "https://github.com/termux/termux-packages/blob/6d399905e/x11-packages/xfce4-settings/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/141c1aac7/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6d399905e/x11-packages/xfce4-settings/dialogs-mouseSettings-main.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6d399905e/x11-packages/xfce4-settings/fix-hardcoded-paths.patch"
     ],
     "auto_updated": false
   },
