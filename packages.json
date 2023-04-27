@@ -6917,7 +6917,7 @@
   },
   {
     "name": "erlang",
-    "version": "25.3",
+    "version": "25.3.1",
     "description": "General-purpose concurrent functional programming language",
     "homepage": "https://www.erlang.org/",
     "depends": [
@@ -6926,22 +6926,22 @@
       "ncurses",
       "zlib"
     ],
-    "srcurl": "https://github.com/erlang/otp/archive/OTP-25.3.tar.gz",
+    "srcurl": "https://github.com/erlang/otp/archive/OTP-25.3.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/11138a723/packages/erlang",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11138a723/packages/erlang/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/erlang/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/74c21ce37/packages/erlang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74c21ce37/packages/erlang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74c21ce37/packages/erlang/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/11138a723/packages/erlang/emulator-asmjit-virtmem-shm.patch",
-      "https://github.com/termux/termux-packages/blob/11138a723/packages/erlang/erts-emulator-Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/11138a723/packages/erlang/erts-emulator-nifs-common-socket_util.c.patch",
-      "https://github.com/termux/termux-packages/blob/11138a723/packages/erlang/prefix.patch"
+      "https://github.com/termux/termux-packages/blob/74c21ce37/packages/erlang/emulator-asmjit-virtmem-shm.patch",
+      "https://github.com/termux/termux-packages/blob/74c21ce37/packages/erlang/erts-emulator-Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/74c21ce37/packages/erlang/erts-emulator-nifs-common-socket_util.c.patch",
+      "https://github.com/termux/termux-packages/blob/74c21ce37/packages/erlang/prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/erlang/emulator-asmjit-virtmem-shm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/erlang/erts-emulator-Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/erlang/erts-emulator-nifs-common-socket_util.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/erlang/prefix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/74c21ce37/packages/erlang/emulator-asmjit-virtmem-shm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/74c21ce37/packages/erlang/erts-emulator-Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/74c21ce37/packages/erlang/erts-emulator-nifs-common-socket_util.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/74c21ce37/packages/erlang/prefix.patch"
     ],
     "auto_updated": true
   },
@@ -7079,17 +7079,17 @@
   },
   {
     "name": "exiftool",
-    "version": "12.60",
+    "version": "12.61",
     "description": "Utility for reading, writing and editing meta information in a wide variety of files.",
     "homepage": "https://exiftool.org/",
     "depends": [
       "perl"
     ],
-    "srcurl": "https://exiftool.org/Image-ExifTool-12.60.tar.gz",
+    "srcurl": "https://exiftool.org/Image-ExifTool-12.61.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/94e47a552/packages/exiftool",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/94e47a552/packages/exiftool/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/94e47a552/packages/exiftool/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eba364f88/packages/exiftool",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eba364f88/packages/exiftool/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eba364f88/packages/exiftool/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -8511,10 +8511,11 @@
   },
   {
     "name": "gdal",
-    "version": "3.6.3",
+    "version": "3.6.4",
     "description": "A translator library for raster and vector geospatial data formats",
     "homepage": "https://gdal.org",
     "depends": [
+      "giflib",
       "json-c",
       "libc++",
       "libcurl",
@@ -8522,23 +8523,27 @@
       "libfreexl",
       "libgeos",
       "libiconv",
+      "libjpeg-turbo",
       "libjxl",
       "liblzma",
       "libpng",
       "libspatialite",
       "libsqlite",
       "libwebp",
+      "libxml2",
       "netcdf-c",
       "openjpeg",
       "openssl",
       "proj",
-      "postgresql"
+      "postgresql",
+      "zlib",
+      "zstd"
     ],
-    "srcurl": "https://download.osgeo.org/gdal/3.6.3/gdal-3.6.3.tar.xz",
+    "srcurl": "https://download.osgeo.org/gdal/3.6.4/gdal-3.6.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/af859661e/packages/gdal",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af859661e/packages/gdal/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af859661e/packages/gdal/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5679dc939/packages/gdal",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5679dc939/packages/gdal/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5679dc939/packages/gdal/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -10241,7 +10246,7 @@
   },
   {
     "name": "gpac",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "An open-source multimedia framework focused on modularity and standards compliance",
     "homepage": "https://gpac.wp.imt.fr/",
     "depends": [
@@ -10262,28 +10267,26 @@
       "xvidcore",
       "zlib"
     ],
-    "srcurl": "https://github.com/gpac/gpac/archive/refs/tags/v2.2.0.tar.gz",
+    "srcurl": "https://github.com/gpac/gpac/archive/refs/tags/v2.2.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/42118dd0c/packages/gpac",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/279dbe95c/packages/gpac",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/279dbe95c/packages/gpac/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/279dbe95c/packages/gpac/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/CVE-2023-0358.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/configure.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/gpac-2.2.0-ffmpeg-6.0.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/src-filters-in_dvb4linux.c.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/src-jsmods-core.c.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/src-utils-os_config_init.c.patch",
-      "https://github.com/termux/termux-packages/blob/42118dd0c/packages/gpac/src-utils-os_divers.c.patch"
+      "https://github.com/termux/termux-packages/blob/279dbe95c/packages/gpac/configure.patch",
+      "https://github.com/termux/termux-packages/blob/279dbe95c/packages/gpac/gpac-2.2.1-ffmpeg-6.0.patch",
+      "https://github.com/termux/termux-packages/blob/279dbe95c/packages/gpac/src-filters-in_dvb4linux.c.patch",
+      "https://github.com/termux/termux-packages/blob/279dbe95c/packages/gpac/src-jsmods-core.c.patch",
+      "https://github.com/termux/termux-packages/blob/279dbe95c/packages/gpac/src-utils-os_config_init.c.patch",
+      "https://github.com/termux/termux-packages/blob/279dbe95c/packages/gpac/src-utils-os_divers.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/CVE-2023-0358.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/gpac-2.2.0-ffmpeg-6.0.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/src-filters-in_dvb4linux.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/src-jsmods-core.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/src-utils-os_config_init.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/42118dd0c/packages/gpac/src-utils-os_divers.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/279dbe95c/packages/gpac/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/279dbe95c/packages/gpac/gpac-2.2.1-ffmpeg-6.0.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/279dbe95c/packages/gpac/src-filters-in_dvb4linux.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/279dbe95c/packages/gpac/src-jsmods-core.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/279dbe95c/packages/gpac/src-utils-os_config_init.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/279dbe95c/packages/gpac/src-utils-os_divers.c.patch"
     ],
     "auto_updated": false
   },
@@ -12450,9 +12453,9 @@
     ],
     "srcurl": "https://github.com/irssi/irssi/releases/download/1.4.4/irssi-1.4.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6e744993/packages/irssi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6e744993/packages/irssi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6e744993/packages/irssi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657df17c3/packages/irssi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657df17c3/packages/irssi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/irssi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13962,9 +13965,9 @@
     ],
     "srcurl": "http://deb.debian.org/debian/pool/main/liba/libapt-pkg-perl/libapt-pkg-perl_0.1.40.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ec928145/packages/libapt-pkg-perl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ec928145/packages/libapt-pkg-perl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ec928145/packages/libapt-pkg-perl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657df17c3/packages/libapt-pkg-perl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657df17c3/packages/libapt-pkg-perl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/libapt-pkg-perl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -17240,7 +17243,7 @@
   },
   {
     "name": "libmediainfo",
-    "version": "23.03",
+    "version": "23.04",
     "description": "Library for reading information from media files",
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": [
@@ -17249,11 +17252,11 @@
       "libzen",
       "zlib"
     ],
-    "srcurl": "https://mediaarea.net/download/source/libmediainfo/23.03/libmediainfo_23.03.tar.gz",
+    "srcurl": "https://mediaarea.net/download/source/libmediainfo/23.04/libmediainfo_23.04.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f15def61e/packages/libmediainfo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f15def61e/packages/libmediainfo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f15def61e/packages/libmediainfo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ce0318357/packages/libmediainfo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ce0318357/packages/libmediainfo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ce0318357/packages/libmediainfo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -18754,9 +18757,9 @@
     ],
     "srcurl": "https://salsa.debian.org/perl-team/modules/packages/libregexp-assemble-perl/-/archive/upstream/0.38/libregexp-assemble-perl-upstream-0.38.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b96c8e531/packages/libregexp-assemble-perl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b96c8e531/packages/libregexp-assemble-perl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b96c8e531/packages/libregexp-assemble-perl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657df17c3/packages/libregexp-assemble-perl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657df17c3/packages/libregexp-assemble-perl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/libregexp-assemble-perl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -23512,7 +23515,7 @@
   },
   {
     "name": "mediainfo",
-    "version": "23.03",
+    "version": "23.04",
     "description": "Command-line utility for reading information from media files",
     "homepage": "https://mediaarea.net/en/MediaInfo",
     "depends": [
@@ -23521,11 +23524,11 @@
       "libmediainfo",
       "libzen"
     ],
-    "srcurl": "https://mediaarea.net/download/source/mediainfo/23.03/mediainfo_23.03.tar.xz",
+    "srcurl": "https://mediaarea.net/download/source/mediainfo/23.04/mediainfo_23.04.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f27844fc4/packages/mediainfo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f27844fc4/packages/mediainfo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f27844fc4/packages/mediainfo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ce0318357/packages/mediainfo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ce0318357/packages/mediainfo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ce0318357/packages/mediainfo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -28438,28 +28441,28 @@
   },
   {
     "name": "perl",
-    "version": "5.36.0",
+    "version": "5.36.1",
     "description": "Capable, feature-rich programming language",
     "homepage": "https://www.perl.org/",
     "depends": [],
-    "srcurl": "http://www.cpan.org/src/5.0/perl-5.36.0.tar.gz",
+    "srcurl": "http://www.cpan.org/src/5.0/perl-5.36.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3495ef72/packages/perl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3495ef72/packages/perl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3495ef72/packages/perl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657df17c3/packages/perl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657df17c3/packages/perl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/perl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c3495ef72/packages/perl/cnf-clang16.patch",
-      "https://github.com/termux/termux-packages/blob/c3495ef72/packages/perl/cnf-configure_func.sh.patch",
-      "https://github.com/termux/termux-packages/blob/c3495ef72/packages/perl/cnf-configure_path.sh.patch",
-      "https://github.com/termux/termux-packages/blob/c3495ef72/packages/perl/file-spec-unix.pm.patch",
-      "https://github.com/termux/termux-packages/blob/c3495ef72/packages/perl/perlio.c.patch"
+      "https://github.com/termux/termux-packages/blob/657df17c3/packages/perl/cnf-clang16.patch",
+      "https://github.com/termux/termux-packages/blob/657df17c3/packages/perl/cnf-configure_func.sh.patch",
+      "https://github.com/termux/termux-packages/blob/657df17c3/packages/perl/cnf-configure_path.sh.patch",
+      "https://github.com/termux/termux-packages/blob/657df17c3/packages/perl/file-spec-unix.pm.patch",
+      "https://github.com/termux/termux-packages/blob/657df17c3/packages/perl/perlio.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c3495ef72/packages/perl/cnf-clang16.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c3495ef72/packages/perl/cnf-configure_func.sh.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c3495ef72/packages/perl/cnf-configure_path.sh.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c3495ef72/packages/perl/file-spec-unix.pm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c3495ef72/packages/perl/perlio.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/perl/cnf-clang16.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/perl/cnf-configure_func.sh.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/perl/cnf-configure_path.sh.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/perl/file-spec-unix.pm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/perl/perlio.c.patch"
     ],
     "auto_updated": false
   },
@@ -29962,9 +29965,9 @@
     ],
     "srcurl": "https://github.com/rrthomas/psutils/releases/download/v2.10/psutils-2.10.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6e744993/packages/psutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6e744993/packages/psutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6e744993/packages/psutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657df17c3/packages/psutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657df17c3/packages/psutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/psutils/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30474,7 +30477,7 @@
   },
   {
     "name": "python-pip",
-    "version": "23.1.1",
+    "version": "23.1.2",
     "description": "The PyPA recommended tool for installing Python packages",
     "homepage": "https://pip.pypa.io/",
     "depends": [
@@ -30483,20 +30486,20 @@
       "pkg-config",
       "python"
     ],
-    "srcurl": "https://github.com/pypa/pip/archive/23.1.1.tar.gz",
+    "srcurl": "https://github.com/pypa/pip/archive/23.1.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/033d00e3e/packages/python-pip",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/033d00e3e/packages/python-pip/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/033d00e3e/packages/python-pip/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1bfb09e7b/packages/python-pip",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1bfb09e7b/packages/python-pip/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1bfb09e7b/packages/python-pip/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/033d00e3e/packages/python-pip/conf.py.patch",
-      "https://github.com/termux/termux-packages/blob/033d00e3e/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/033d00e3e/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://github.com/termux/termux-packages/blob/1bfb09e7b/packages/python-pip/conf.py.patch",
+      "https://github.com/termux/termux-packages/blob/1bfb09e7b/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/1bfb09e7b/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/033d00e3e/packages/python-pip/conf.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/033d00e3e/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/033d00e3e/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1bfb09e7b/packages/python-pip/conf.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1bfb09e7b/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1bfb09e7b/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "auto_updated": false
   },
@@ -31941,20 +31944,20 @@
   },
   {
     "name": "rp-pppoe",
-    "version": "3.15",
+    "version": "4.0",
     "description": "A PPP-over-Ethernet redirector for pppd",
     "homepage": "https://dianne.skoll.ca/projects/rp-pppoe/",
     "depends": [],
-    "srcurl": "https://fossies.org/linux/misc/rp-pppoe-3.15.tar.gz",
+    "srcurl": "https://fossies.org/linux/misc/rp-pppoe-4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/65c8ddf46/packages/rp-pppoe",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65c8ddf46/packages/rp-pppoe/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65c8ddf46/packages/rp-pppoe/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/51b8832ad/packages/rp-pppoe",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51b8832ad/packages/rp-pppoe/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51b8832ad/packages/rp-pppoe/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/65c8ddf46/packages/rp-pppoe/src-Makefile.in.patch"
+      "https://github.com/termux/termux-packages/blob/51b8832ad/packages/rp-pppoe/src-Makefile.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/65c8ddf46/packages/rp-pppoe/src-Makefile.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/51b8832ad/packages/rp-pppoe/src-Makefile.in.patch"
     ],
     "auto_updated": false
   },
@@ -32241,15 +32244,15 @@
   },
   {
     "name": "rust-analyzer",
-    "version": "20230320",
+    "version": "20230424",
     "description": "A Rust compiler front-end for IDEs",
     "homepage": "https://github.com/rust-analyzer/rust-analyzer",
     "depends": [],
-    "srcurl": "https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2023-03-20.tar.gz",
+    "srcurl": "https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2023-04-24.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b29cc8e7a/packages/rust-analyzer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b29cc8e7a/packages/rust-analyzer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b29cc8e7a/packages/rust-analyzer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0dfbea2fd/packages/rust-analyzer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0dfbea2fd/packages/rust-analyzer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0dfbea2fd/packages/rust-analyzer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -32900,22 +32903,22 @@
   },
   {
     "name": "sfeed",
-    "version": "1.7",
+    "version": "1.8",
     "description": "Shell-script/crontab oriented feed aggregator and parser utility (curses-based reader included)",
     "homepage": "https://codemadness.org/sfeed-simple-feed-parser.html",
     "depends": [
       "ncurses"
     ],
-    "srcurl": "https://codemadness.org/releases/sfeed/sfeed-1.7.tar.gz",
+    "srcurl": "https://codemadness.org/releases/sfeed/sfeed-1.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e614a844/packages/sfeed",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e614a844/packages/sfeed/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e614a844/packages/sfeed/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e11a51f6/packages/sfeed",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e11a51f6/packages/sfeed/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e11a51f6/packages/sfeed/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7e614a844/packages/sfeed/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/6e11a51f6/packages/sfeed/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7e614a844/packages/sfeed/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6e11a51f6/packages/sfeed/Makefile.patch"
     ],
     "auto_updated": false
   },
@@ -34591,14 +34594,14 @@
     ],
     "srcurl": "https://www.apache.org/dist/subversion/subversion-1.14.2.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e9f571963/packages/subversion",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e9f571963/packages/subversion/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e9f571963/packages/subversion/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657df17c3/packages/subversion",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657df17c3/packages/subversion/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/subversion/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e9f571963/packages/subversion/no_setlocale.patch"
+      "https://github.com/termux/termux-packages/blob/657df17c3/packages/subversion/no_setlocale.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e9f571963/packages/subversion/no_setlocale.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/657df17c3/packages/subversion/no_setlocale.patch"
     ],
     "auto_updated": false
   },
@@ -38306,25 +38309,24 @@
   },
   {
     "name": "vtm",
-    "version": "0.9.9c",
+    "version": "0.9.9f",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://vtm.netxs.online/",
     "depends": [
-      "libandroid-spawn",
       "libc++"
     ],
-    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.9c.tar.gz",
+    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.9f.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/787520b83/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/787520b83/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/787520b83/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/401258d6e/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/401258d6e/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/401258d6e/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/787520b83/packages/vtm/netxs-desktopio-directvt.hpp.patch",
-      "https://github.com/termux/termux-packages/blob/787520b83/packages/vtm/netxs-os-system.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/401258d6e/packages/vtm/netxs-desktopio-directvt.hpp.patch",
+      "https://github.com/termux/termux-packages/blob/401258d6e/packages/vtm/netxs-os-system.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/787520b83/packages/vtm/netxs-desktopio-directvt.hpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/787520b83/packages/vtm/netxs-os-system.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/401258d6e/packages/vtm/netxs-desktopio-directvt.hpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/401258d6e/packages/vtm/netxs-os-system.hpp.patch"
     ],
     "auto_updated": true
   },
@@ -38362,37 +38364,39 @@
   },
   {
     "name": "vulkan-extension-layer",
-    "version": "1.3.246",
+    "version": "1.3.248",
     "description": "Vulkan Tools and Utilities",
     "homepage": "https://github.com/KhronosGroup/Vulkan-ExtensionLayer",
     "depends": [
       "libc++",
       "vulkan-loader"
     ],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-ExtensionLayer/archive/v1.3.246.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-ExtensionLayer/archive/v1.3.248.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/62f2b9511/packages/vulkan-extension-layer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/62f2b9511/packages/vulkan-extension-layer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/62f2b9511/packages/vulkan-extension-layer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/af26771cf/packages/vulkan-extension-layer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af26771cf/packages/vulkan-extension-layer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af26771cf/packages/vulkan-extension-layer/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/62f2b9511/packages/vulkan-extension-layer/layers-timeline_semaphore.c.patch"
+      "https://github.com/termux/termux-packages/blob/af26771cf/packages/vulkan-extension-layer/0001-layers-timeline_semaphore.c.patch",
+      "https://github.com/termux/termux-packages/blob/af26771cf/packages/vulkan-extension-layer/0002-include-cassert.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/62f2b9511/packages/vulkan-extension-layer/layers-timeline_semaphore.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/af26771cf/packages/vulkan-extension-layer/0001-layers-timeline_semaphore.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/af26771cf/packages/vulkan-extension-layer/0002-include-cassert.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "vulkan-headers",
-    "version": "1.3.248",
+    "version": "1.3.249",
     "description": "Vulkan Header files and API registry",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.248.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.249.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ea05f2396/packages/vulkan-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ea05f2396/packages/vulkan-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ea05f2396/packages/vulkan-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/04c420401/packages/vulkan-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/04c420401/packages/vulkan-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/04c420401/packages/vulkan-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40854,7 +40858,7 @@
   },
   {
     "name": "lvm2",
-    "version": "2.03.20",
+    "version": "2.03.21",
     "description": "A device-mapper library from LVM2 package",
     "homepage": "https://sourceware.org/lvm2/",
     "depends": [
@@ -40863,16 +40867,16 @@
       "libblkid",
       "readline"
     ],
-    "srcurl": "https://mirrors.kernel.org/sourceware/lvm2/releases/LVM2.2.03.20.tgz",
+    "srcurl": "https://mirrors.kernel.org/sourceware/lvm2/releases/LVM2.2.03.21.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e99ed7d7c/root-packages/lvm2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e99ed7d7c/root-packages/lvm2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e99ed7d7c/root-packages/lvm2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a5247cb37/root-packages/lvm2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a5247cb37/root-packages/lvm2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a5247cb37/root-packages/lvm2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e99ed7d7c/root-packages/lvm2/tools-command.c.patch"
+      "https://github.com/termux/termux-packages/blob/a5247cb37/root-packages/lvm2/tools-command.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e99ed7d7c/root-packages/lvm2/tools-command.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a5247cb37/root-packages/lvm2/tools-command.c.patch"
     ],
     "auto_updated": false
   },
@@ -41011,7 +41015,7 @@
   },
   {
     "name": "nfs-utils",
-    "version": "2.6.2",
+    "version": "2.6.3",
     "description": "Linux NFS userland utilities",
     "homepage": "https://linux-nfs.org/",
     "depends": [
@@ -41026,32 +41030,34 @@
       "libuuid",
       "openldap"
     ],
-    "srcurl": "https://downloads.sourceforge.net/nfs/nfs-utils-2.6.2.tar.bz2",
+    "srcurl": "https://downloads.sourceforge.net/nfs/nfs-utils-2.6.3.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2522fd420/root-packages/nfs-utils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/126c14c60/root-packages/nfs-utils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/support-export-export.c.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/support-nfs-conffile.c.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/2522fd420/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/support-export-export.c.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/support-nfs-conffile.c.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/support-reexport-backend_sqlite.c.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/126c14c60/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/support-export-export.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/support-nfs-conffile.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2522fd420/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/support-export-export.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/support-nfs-conffile.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/support-reexport-backend_sqlite.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/126c14c60/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
     ],
     "auto_updated": false
   },
@@ -41732,7 +41738,7 @@
   },
   {
     "name": "ardour",
-    "version": "7.3",
+    "version": "7.4",
     "description": "A professional digital workstation for working with audio and MIDI",
     "homepage": "https://ardour.org/",
     "depends": [
@@ -41769,32 +41775,32 @@
     ],
     "srcurl": "git+https://github.com/Ardour/ardour",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27fa773a2/x11-packages/ardour",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/12b9877b8/x11-packages/ardour",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/atomic.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/dynamic_pointer_cast.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/fix-platform.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/no-alsa.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/pthread_attr_setinheritsched.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/27fa773a2/x11-packages/ardour/wscript.patch"
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/atomic.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/dynamic_pointer_cast.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/fix-platform.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/no-alsa.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/pthread_attr_setinheritsched.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/12b9877b8/x11-packages/ardour/wscript.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/atomic.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/dynamic_pointer_cast.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/fix-platform.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/no-alsa.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/pthread_attr_setinheritsched.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/27fa773a2/x11-packages/ardour/wscript.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/atomic.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/dynamic_pointer_cast.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/fix-platform.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/no-alsa.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/pthread_attr_setinheritsched.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/12b9877b8/x11-packages/ardour/wscript.patch"
     ],
     "auto_updated": false
   },
@@ -43945,7 +43951,7 @@
   },
   {
     "name": "ghex",
-    "version": "44.0",
+    "version": "44.1",
     "description": "A simple binary editor for the Gnome desktop.",
     "homepage": "https://wiki.gnome.org/Apps/Ghex",
     "depends": [
@@ -43955,18 +43961,18 @@
       "libcairo",
       "pango"
     ],
-    "srcurl": "https://ftp.gnome.org/pub/GNOME/sources/ghex/44/ghex-44.0.tar.xz",
+    "srcurl": "https://ftp.gnome.org/pub/GNOME/sources/ghex/44/ghex-44.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cf13dc44b/x11-packages/ghex",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cf13dc44b/x11-packages/ghex/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cf13dc44b/x11-packages/ghex/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dc61376d5/x11-packages/ghex",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dc61376d5/x11-packages/ghex/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dc61376d5/x11-packages/ghex/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cf13dc44b/x11-packages/ghex/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/cf13dc44b/x11-packages/ghex/src-main.c.patch"
+      "https://github.com/termux/termux-packages/blob/dc61376d5/x11-packages/ghex/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/dc61376d5/x11-packages/ghex/src-main.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cf13dc44b/x11-packages/ghex/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cf13dc44b/x11-packages/ghex/src-main.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/dc61376d5/x11-packages/ghex/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dc61376d5/x11-packages/ghex/src-main.c.patch"
     ],
     "auto_updated": false
   },
