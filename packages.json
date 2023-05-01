@@ -6666,7 +6666,7 @@
   },
   {
     "name": "elinks",
-    "version": "0.16.1",
+    "version": "0.16.1.1",
     "description": "Full-Featured Text WWW Browser",
     "homepage": "https://github.com/rkd77/elinks",
     "depends": [
@@ -6677,18 +6677,18 @@
       "libbz2",
       "zlib"
     ],
-    "srcurl": "https://github.com/rkd77/elinks/releases/download/v0.16.1/elinks-0.16.1.tar.xz",
+    "srcurl": "https://github.com/rkd77/elinks/releases/download/v0.16.1.1/elinks-0.16.1.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d45b2edfb/packages/elinks",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d45b2edfb/packages/elinks/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d45b2edfb/packages/elinks/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/92c2d38be/packages/elinks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92c2d38be/packages/elinks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92c2d38be/packages/elinks/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d45b2edfb/packages/elinks/elinks-fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/d45b2edfb/packages/elinks/elinks-skip-xterm-check.patch"
+      "https://github.com/termux/termux-packages/blob/92c2d38be/packages/elinks/elinks-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/92c2d38be/packages/elinks/elinks-skip-xterm-check.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d45b2edfb/packages/elinks/elinks-fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d45b2edfb/packages/elinks/elinks-skip-xterm-check.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/92c2d38be/packages/elinks/elinks-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/92c2d38be/packages/elinks/elinks-skip-xterm-check.patch"
     ],
     "auto_updated": true
   },
@@ -16319,37 +16319,60 @@
   },
   {
     "name": "libimagequant",
-    "version": "4.1.1",
+    "version": "4.2.0",
     "description": "Small, portable C library for high-quality conversion of RGBA images to 8-bit indexed-color (palette) images",
     "homepage": "https://pngquant.org/lib/",
     "depends": [],
-    "srcurl": "https://github.com/ImageOptim/libimagequant/archive/refs/tags/4.1.1.tar.gz",
+    "srcurl": "https://github.com/ImageOptim/libimagequant/archive/refs/tags/4.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4d92b43d4/packages/libimagequant",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4d92b43d4/packages/libimagequant/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4d92b43d4/packages/libimagequant/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f35ecc2b9/packages/libimagequant",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f35ecc2b9/packages/libimagequant/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f35ecc2b9/packages/libimagequant/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "libimobiledevice",
-    "version": "1.3.0",
+    "version": "1.3.0-p20230430",
     "description": "A library to communicate with services on iOS devices using native protocols",
     "homepage": "https://libimobiledevice.org/",
     "depends": [
-      "usbmuxd",
+      "libimobiledevice-glue",
+      "libplist",
       "libusbmuxd",
-      "openssl"
+      "openssl",
+      "usbmuxd"
     ],
-    "srcurl": "https://github.com/libimobiledevice/libimobiledevice/archive/1.3.0.tar.gz",
+    "srcurl": "git+https://github.com/libimobiledevice/libimobiledevice",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6e744993/packages/libimobiledevice",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6e744993/packages/libimobiledevice/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6e744993/packages/libimobiledevice/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93ff88ebd/packages/libimobiledevice",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93ff88ebd/packages/libimobiledevice/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93ff88ebd/packages/libimobiledevice/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/93ff88ebd/packages/libimobiledevice/tools-idevicedevmodectl.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/93ff88ebd/packages/libimobiledevice/tools-idevicedevmodectl.c.patch"
+    ],
+    "auto_updated": false
+  },
+  {
+    "name": "libimobiledevice-glue",
+    "version": "1.0.0",
+    "description": "Library with common code used by the libraries and tools around the libimobiledevice project",
+    "homepage": "https://libimobiledevice.org/",
+    "depends": [
+      "libplist"
+    ],
+    "srcurl": "https://github.com/libimobiledevice/libimobiledevice-glue/releases/download/1.0.0/libimobiledevice-glue-1.0.0.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d1f94ad0b/packages/libimobiledevice-glue",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d1f94ad0b/packages/libimobiledevice-glue/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d1f94ad0b/packages/libimobiledevice-glue/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": true
+    "auto_updated": false
   },
   {
     "name": "libimtui",
@@ -18420,22 +18443,22 @@
   },
   {
     "name": "libplist",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "description": "A small portable C library to handle Apple Property List files in binary or XML format",
     "homepage": "https://libimobiledevice.org",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/libimobiledevice/libplist/archive/2.2.0.tar.gz",
+    "srcurl": "https://github.com/libimobiledevice/libplist/releases/download/2.3.0/libplist-2.3.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ff412b34/packages/libplist",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ff412b34/packages/libplist/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ff412b34/packages/libplist/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/04838753e/packages/libplist",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/04838753e/packages/libplist/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/04838753e/packages/libplist/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4ff412b34/packages/libplist/configure.ac.patch"
+      "https://github.com/termux/termux-packages/blob/04838753e/packages/libplist/configure.ac.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4ff412b34/packages/libplist/configure.ac.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/04838753e/packages/libplist/configure.ac.patch"
     ],
     "auto_updated": true
   },
@@ -20492,22 +20515,23 @@
   },
   {
     "name": "libusbmuxd",
-    "version": "2.0.2",
+    "version": "2.0.2-p20230430",
     "description": "A client library for applications to handle usbmux protocol connections with iOS devices",
     "homepage": "https://libimobiledevice.org",
     "depends": [
-      "libusb",
+      "libimobiledevice-glue",
       "libplist",
+      "libusb",
       "usbmuxd"
     ],
-    "srcurl": "https://github.com/libimobiledevice/libusbmuxd/archive/2.0.2.tar.gz",
+    "srcurl": "git+https://github.com/libimobiledevice/libusbmuxd",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/11138a723/packages/libusbmuxd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11138a723/packages/libusbmuxd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/libusbmuxd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fdfec333a/packages/libusbmuxd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fdfec333a/packages/libusbmuxd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fdfec333a/packages/libusbmuxd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": true
+    "auto_updated": false
   },
   {
     "name": "libusbredir",
@@ -33947,7 +33971,7 @@
   },
   {
     "name": "squid",
-    "version": "5.8",
+    "version": "5.9",
     "description": "Full-featured Web proxy cache server",
     "homepage": "http://www.squid-cache.org",
     "depends": [
@@ -33961,22 +33985,22 @@
       "openldap",
       "resolv-conf"
     ],
-    "srcurl": "https://squid.mirror.globo.tech/archive/5/squid-5.8.tar.xz",
+    "srcurl": "https://squid.mirror.globo.tech/archive/5/squid-5.9.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f1537253/packages/squid",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f1537253/packages/squid/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f1537253/packages/squid/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/087cb3bff/packages/squid",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/087cb3bff/packages/squid/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/087cb3bff/packages/squid/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2f1537253/packages/squid/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/2f1537253/packages/squid/no-priv-drop.patch",
-      "https://github.com/termux/termux-packages/blob/2f1537253/packages/squid/posix-shm-support.patch",
-      "https://github.com/termux/termux-packages/blob/2f1537253/packages/squid/sys-stat.h.patch"
+      "https://github.com/termux/termux-packages/blob/087cb3bff/packages/squid/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/087cb3bff/packages/squid/no-priv-drop.patch",
+      "https://github.com/termux/termux-packages/blob/087cb3bff/packages/squid/posix-shm-support.patch",
+      "https://github.com/termux/termux-packages/blob/087cb3bff/packages/squid/sys-stat.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2f1537253/packages/squid/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2f1537253/packages/squid/no-priv-drop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2f1537253/packages/squid/posix-shm-support.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2f1537253/packages/squid/sys-stat.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/087cb3bff/packages/squid/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/087cb3bff/packages/squid/no-priv-drop.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/087cb3bff/packages/squid/posix-shm-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/087cb3bff/packages/squid/sys-stat.h.patch"
     ],
     "auto_updated": false
   },
@@ -37474,25 +37498,22 @@
   },
   {
     "name": "usbmuxd",
-    "version": "1.1.1",
+    "version": "1.1.1-p20230421",
     "description": "A socket daemon to multiplex connections from and to iOS devices",
     "homepage": "https://libimobiledevice.org",
     "depends": [
-      "libusb",
-      "libplist"
+      "libimobiledevice-glue",
+      "libplist",
+      "libusb"
     ],
-    "srcurl": "https://github.com/libimobiledevice/usbmuxd/archive/1.1.1.tar.gz",
+    "srcurl": "git+https://github.com/libimobiledevice/usbmuxd",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/11138a723/packages/usbmuxd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11138a723/packages/usbmuxd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/usbmuxd/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/11138a723/packages/usbmuxd/configure.ac.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/usbmuxd/configure.ac.patch"
-    ],
-    "auto_updated": true
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f69fc8c9a/packages/usbmuxd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f69fc8c9a/packages/usbmuxd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f69fc8c9a/packages/usbmuxd/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
   },
   {
     "name": "utf8cpp",
@@ -49337,23 +49358,23 @@
   },
   {
     "name": "qscintilla",
-    "version": "2.13.4",
+    "version": "2.14.0",
     "description": "QScintilla is a port to Qt of the Scintilla editing component",
     "homepage": "https://riverbankcomputing.com/software/qscintilla",
     "depends": [
       "libc++",
       "qt5-qtbase"
     ],
-    "srcurl": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.13.4/QScintilla_src-2.13.4.tar.gz",
+    "srcurl": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.0/QScintilla_src-2.14.0.tar.gz",
     "maintainer": "Simeon Huang <symeon@librehat.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bc8b99723/x11-packages/qscintilla",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bc8b99723/x11-packages/qscintilla/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bc8b99723/x11-packages/qscintilla/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8fbb5a323/x11-packages/qscintilla",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8fbb5a323/x11-packages/qscintilla/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8fbb5a323/x11-packages/qscintilla/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bc8b99723/x11-packages/qscintilla/no_accessibility.patch"
+      "https://github.com/termux/termux-packages/blob/8fbb5a323/x11-packages/qscintilla/no_accessibility.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bc8b99723/x11-packages/qscintilla/no_accessibility.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8fbb5a323/x11-packages/qscintilla/no_accessibility.patch"
     ],
     "auto_updated": false
   },
