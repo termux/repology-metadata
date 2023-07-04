@@ -24,6 +24,7 @@ jobs:
         git clone https://github.com/termux/termux-packages.git /tmp/repos/termux-packages
     - name: Generate packages.json
       run: |
+        export TERMUX_SCRIPTDIR=/tmp/repos/termux-packages
         bash ./generate-repology-metadata.sh /tmp/repos/termux-packages > ./packages.json
 
         if ! jq . ./packages.json > /dev/null; then
