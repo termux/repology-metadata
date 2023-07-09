@@ -7184,15 +7184,13 @@
     "description": "A neofetch-like tool for fetching system information and displaying them in a pretty way",
     "homepage": "https://github.com/LinusDierheimer/fastfetch",
     "depends": [
-      "vulkan-headers",
-      "vulkan-loader-android",
-      "freetype"
+      "vulkan-loader"
     ],
     "srcurl": "https://github.com/LinusDierheimer/fastfetch/archive/1.12.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/97693f90a/packages/fastfetch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/97693f90a/packages/fastfetch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/97693f90a/packages/fastfetch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/79f41ae10/packages/fastfetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/79f41ae10/packages/fastfetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/79f41ae10/packages/fastfetch/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -17605,22 +17603,34 @@
   },
   {
     "name": "libncnn",
-    "version": "20230223",
+    "version": "20230627",
     "description": "A high-performance neural network inference framework optimized for the mobile platform",
     "homepage": "https://github.com/Tencent/ncnn",
     "depends": [
+      "abseil-cpp",
+      "glslang",
       "libc++",
-      "libprotobuf",
-      "vulkan-headers",
-      "vulkan-tools"
+      "vulkan-loader"
     ],
     "srcurl": "git+https://github.com/Tencent/ncnn",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d7c27539/packages/libncnn",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d7c27539/packages/libncnn/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d7c27539/packages/libncnn/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e2a1c50a9/packages/libncnn",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e2a1c50a9/packages/libncnn/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e2a1c50a9/packages/libncnn/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/e2a1c50a9/packages/libncnn/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e2a1c50a9/packages/libncnn/examples_CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e2a1c50a9/packages/libncnn/python_CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e2a1c50a9/packages/libncnn/src_platform.h.in.patch",
+      "https://github.com/termux/termux-packages/blob/e2a1c50a9/packages/libncnn/tools_CMakeLists.txt.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/e2a1c50a9/packages/libncnn/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e2a1c50a9/packages/libncnn/examples_CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e2a1c50a9/packages/libncnn/python_CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e2a1c50a9/packages/libncnn/src_platform.h.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e2a1c50a9/packages/libncnn/tools_CMakeLists.txt.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -38513,16 +38523,16 @@
   },
   {
     "name": "vulkan-loader",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A metapackage that provides vulkan loader library",
     "homepage": "https://github.com/termux/termux-packages",
     "depends": [
       "vulkan-loader-android"
     ],
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e47f46d87/packages/vulkan-loader",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e47f46d87/packages/vulkan-loader/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e47f46d87/packages/vulkan-loader/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8eb85d6ce/packages/vulkan-loader",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8eb85d6ce/packages/vulkan-loader/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8eb85d6ce/packages/vulkan-loader/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -38535,9 +38545,9 @@
     "depends": [],
     "srcurl": "https://dl.google.com/android/repository/android-ndk-r25c-linux.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c2e9d9ca/packages/vulkan-loader-android",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c2e9d9ca/packages/vulkan-loader-android/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c2e9d9ca/packages/vulkan-loader-android/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fed30915c/packages/vulkan-loader-android",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fed30915c/packages/vulkan-loader-android/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fed30915c/packages/vulkan-loader-android/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
