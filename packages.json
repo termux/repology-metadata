@@ -7727,22 +7727,22 @@
   },
   {
     "name": "findomain",
-    "version": "9.0.2",
+    "version": "9.0.3",
     "description": "Findomain is the fastest subdomain enumerator and the only one written in Rust",
     "homepage": "https://findomain.app/",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/Findomain/Findomain/archive/9.0.2.tar.gz",
+    "srcurl": "https://github.com/Findomain/Findomain/archive/9.0.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c85d95fb4/packages/findomain",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c85d95fb4/packages/findomain/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c85d95fb4/packages/findomain/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/04a01dc9f/packages/findomain",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/04a01dc9f/packages/findomain/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/04a01dc9f/packages/findomain/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c85d95fb4/packages/findomain/trust-dns-resolver.diff"
+      "https://github.com/termux/termux-packages/blob/04a01dc9f/packages/findomain/trust-dns-resolver.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c85d95fb4/packages/findomain/trust-dns-resolver.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/04a01dc9f/packages/findomain/trust-dns-resolver.diff"
     ],
     "auto_updated": true
   },
@@ -16842,7 +16842,7 @@
   },
   {
     "name": "libllvm",
-    "version": "17.0.3",
+    "version": "17.0.4",
     "description": "Modular compiler and toolchain technologies library",
     "homepage": "https://clang.llvm.org/",
     "depends": [
@@ -16853,54 +16853,54 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.3/llvm-project-17.0.3.src.tar.xz",
+    "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.4/llvm-project-17.0.4.src.tar.xz",
     "maintainer": "@finagolfin",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a9352ea12/packages/libllvm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/78a9cfcc4/packages/libllvm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/Add-stubs-and-headers-for-nl_types-APIs.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/clang-include-clang-Driver-Options.td.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/cxx-libm.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/lld-ELF-Relocations.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/llvm-include-llvm-ADT-SmallVector.h.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/llvm-lib-Support-Unix-Path.inc.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/mlir-lib-ExecutionEngine-CRunnerUtils.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a9352ea12/packages/libllvm/openmp-config-ix-m32.patch"
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/Add-stubs-and-headers-for-nl_types-APIs.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/clang-include-clang-Driver-Options.td.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/cxx-libm.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/lld-ELF-Relocations.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/llvm-include-llvm-ADT-SmallVector.h.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/llvm-lib-Support-Unix-Path.inc.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/mlir-lib-ExecutionEngine-CRunnerUtils.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/78a9cfcc4/packages/libllvm/openmp-config-ix-m32.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/Add-stubs-and-headers-for-nl_types-APIs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/clang-include-clang-Driver-Options.td.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/cxx-libm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/lld-ELF-Relocations.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/llvm-include-llvm-ADT-SmallVector.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/llvm-lib-Support-Unix-Path.inc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/mlir-lib-ExecutionEngine-CRunnerUtils.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a9352ea12/packages/libllvm/openmp-config-ix-m32.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/Add-stubs-and-headers-for-nl_types-APIs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/clang-include-clang-Driver-Options.td.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/clang-lib-Driver-ToolChain.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/clang-lib-Driver-ToolChains-Gnu.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/clang-lib-Driver-ToolChains-Linux.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/compiler-rt-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/compiler-rt-lib-builtins-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/cxx-libm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/lld-ELF-Relocations.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/lldb-include-lldb-Host-Editline.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/lldb-source-Host-android-HostInfoAndroid.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/lldb-source-Host-posix-ProcessLauncherPosixFork.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/lldb-source-Plugins-Platform-Android-AdbClient.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/lldb-source-Plugins-Process-Linux-NativeProcessLinux.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/lldb-source-Utility-ArchSpec.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/llvm-include-llvm-ADT-SmallVector.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/llvm-lib-Support-Unix-Path.inc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/mlir-lib-ExecutionEngine-CRunnerUtils.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/78a9cfcc4/packages/libllvm/openmp-config-ix-m32.patch"
     ],
     "auto_updated": false
   },
@@ -21935,7 +21935,7 @@
   },
   {
     "name": "lighttpd",
-    "version": "1.4.72",
+    "version": "1.4.73",
     "description": "Fast webserver with minimal memory footprint",
     "homepage": "https://www.lighttpd.net",
     "depends": [
@@ -21946,16 +21946,16 @@
       "pcre2",
       "zlib"
     ],
-    "srcurl": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.72.tar.xz",
+    "srcurl": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.73.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6925bb6ba/packages/lighttpd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6925bb6ba/packages/lighttpd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6925bb6ba/packages/lighttpd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/06395e889/packages/lighttpd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/06395e889/packages/lighttpd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/06395e889/packages/lighttpd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6925bb6ba/packages/lighttpd/termux-config.patch"
+      "https://github.com/termux/termux-packages/blob/06395e889/packages/lighttpd/termux-config.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6925bb6ba/packages/lighttpd/termux-config.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/06395e889/packages/lighttpd/termux-config.patch"
     ],
     "auto_updated": true
   },
@@ -33536,15 +33536,15 @@
   },
   {
     "name": "sing-box",
-    "version": "1.5.5",
+    "version": "1.6.0",
     "description": "The universal proxy platform",
     "homepage": "https://sing-box.sagernet.org",
     "depends": [],
-    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.5.5.tar.gz",
+    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.6.0.tar.gz",
     "maintainer": "kay9925@outlook.com",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/58ff0c659/packages/sing-box",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/58ff0c659/packages/sing-box/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/58ff0c659/packages/sing-box/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f16224dd/packages/sing-box",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f16224dd/packages/sing-box/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f16224dd/packages/sing-box/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
