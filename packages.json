@@ -2466,16 +2466,20 @@
     "description": "Tiny x86-64 Linux emulator",
     "homepage": "https://justine.lol/blinkenlights/",
     "depends": [],
-    "srcurl": "https://github.com/jart/blink/archive/1.0.0.tar.gz",
+    "srcurl": "https://github.com/jart/blink/archive/refs/tags/1.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fd2065a38/packages/blink",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fd2065a38/packages/blink/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fd2065a38/packages/blink/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/749b97f2d/packages/blink",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/749b97f2d/packages/blink/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/749b97f2d/packages/blink/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fd2065a38/packages/blink/fix-tmpdir.patch"
+      "https://github.com/termux/termux-packages/blob/749b97f2d/packages/blink/blink-blink.c.patch",
+      "https://github.com/termux/termux-packages/blob/749b97f2d/packages/blink/blink-machine.h.patch",
+      "https://github.com/termux/termux-packages/blob/749b97f2d/packages/blink/fix-tmpdir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fd2065a38/packages/blink/fix-tmpdir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/749b97f2d/packages/blink/blink-blink.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/749b97f2d/packages/blink/blink-machine.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/749b97f2d/packages/blink/fix-tmpdir.patch"
     ],
     "auto_updated": false
   },
@@ -6403,15 +6407,15 @@
   },
   {
     "name": "dufs",
-    "version": "0.37.1",
+    "version": "0.38.0",
     "description": "A file server that supports static serving, uploading, searching, accessing control, webdav...",
     "homepage": "https://github.com/sigoden/dufs",
     "depends": [],
-    "srcurl": "https://github.com/sigoden/dufs/archive/v0.37.1.tar.gz",
+    "srcurl": "https://github.com/sigoden/dufs/archive/v0.38.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a0c96fef1/packages/dufs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a0c96fef1/packages/dufs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a0c96fef1/packages/dufs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/19feb5aea/packages/dufs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/19feb5aea/packages/dufs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/19feb5aea/packages/dufs/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -10393,7 +10397,7 @@
   },
   {
     "name": "gpgme",
-    "version": "1.23.1",
+    "version": "1.23.2",
     "description": "Library designed to make access to GnuPG easier",
     "homepage": "https://www.gnupg.org/related_software/gpgme/",
     "depends": [
@@ -10401,11 +10405,11 @@
       "libassuan",
       "libgpg-error"
     ],
-    "srcurl": "ftp://ftp.gnupg.org/gcrypt/gpgme/gpgme-1.23.1.tar.bz2",
+    "srcurl": "ftp://ftp.gnupg.org/gcrypt/gpgme/gpgme-1.23.2.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/319dd312f/packages/gpgme",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/319dd312f/packages/gpgme/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/319dd312f/packages/gpgme/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a6b9eb92/packages/gpgme",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a6b9eb92/packages/gpgme/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a6b9eb92/packages/gpgme/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -26353,15 +26357,15 @@
   },
   {
     "name": "nlohmann-json",
-    "version": "3.11.2",
+    "version": "3.11.3",
     "description": "JSON for Modern C++",
     "homepage": "https://github.com/nlohmann/json",
     "depends": [],
-    "srcurl": "https://github.com/nlohmann/json/archive/v3.11.2.tar.gz",
+    "srcurl": "https://github.com/nlohmann/json/archive/v3.11.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6e744993/packages/nlohmann-json",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6e744993/packages/nlohmann-json/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6e744993/packages/nlohmann-json/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bdc9a8bb/packages/nlohmann-json",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bdc9a8bb/packages/nlohmann-json/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bdc9a8bb/packages/nlohmann-json/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -29699,7 +29703,7 @@
   },
   {
     "name": "postgresql",
-    "version": "15.3",
+    "version": "16.1",
     "description": "Object-relational SQL database",
     "homepage": "https://www.postgresql.org",
     "depends": [
@@ -29712,26 +29716,28 @@
       "readline",
       "zlib"
     ],
-    "srcurl": "https://ftp.postgresql.org/pub/source/v15.3/postgresql-15.3.tar.bz2",
+    "srcurl": "https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9bf6bd734/packages/postgresql",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9bf6bd734/packages/postgresql/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9bf6bd734/packages/postgresql/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ae268ce39/packages/postgresql",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9bf6bd734/packages/postgresql/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/9bf6bd734/packages/postgresql/no-hard-link.patch",
-      "https://github.com/termux/termux-packages/blob/9bf6bd734/packages/postgresql/src-backend-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/9bf6bd734/packages/postgresql/src-backend-commands-collationcmds.c.patch",
-      "https://github.com/termux/termux-packages/blob/9bf6bd734/packages/postgresql/src-bin-initdb-initdb.c.patch",
-      "https://github.com/termux/termux-packages/blob/9bf6bd734/packages/postgresql/src-timezone-zic.c.patch.beforehostbuild"
+      "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/0000-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/src-backend-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/src-backend-commands-collationcmds.c.patch",
+      "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/src-backend-storage-ipc-dsm_impl.c.patch",
+      "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/src-backend-utils-adt-xml.c.patch",
+      "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/src-bin-initdb-initdb.c.patch",
+      "https://github.com/termux/termux-packages/blob/ae268ce39/packages/postgresql/src-timezone-zic.c.patch.beforehostbuild"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9bf6bd734/packages/postgresql/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9bf6bd734/packages/postgresql/no-hard-link.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9bf6bd734/packages/postgresql/src-backend-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9bf6bd734/packages/postgresql/src-backend-commands-collationcmds.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9bf6bd734/packages/postgresql/src-bin-initdb-initdb.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9bf6bd734/packages/postgresql/src-timezone-zic.c.patch.beforehostbuild"
+      "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/0000-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/src-backend-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/src-backend-commands-collationcmds.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/src-backend-storage-ipc-dsm_impl.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/src-backend-utils-adt-xml.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/src-bin-initdb-initdb.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ae268ce39/packages/postgresql/src-timezone-zic.c.patch.beforehostbuild"
     ],
     "auto_updated": false
   },
@@ -30171,25 +30177,6 @@
       "https://raw.githubusercontent.com/termux/termux-packages/f41c49aad/packages/psmisc/src-pstree.c.patch"
     ],
     "auto_updated": false
-  },
-  {
-    "name": "psutils",
-    "version": "2.10",
-    "description": "A set of postscript utilities",
-    "homepage": "https://github.com/rrthomas/psutils",
-    "depends": [
-      "ghostscript",
-      "perl",
-      "libpaper"
-    ],
-    "srcurl": "https://github.com/rrthomas/psutils/releases/download/v2.10/psutils-2.10.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9634d3c22/packages/psutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9634d3c22/packages/psutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9634d3c22/packages/psutils/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
   },
   {
     "name": "ptex",
@@ -30641,6 +30628,42 @@
     ],
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/c08671f06/packages/python-greenlet/setup.py.patch"
+    ],
+    "auto_updated": true
+  },
+  {
+    "name": "python-grpcio",
+    "version": "1.59.2",
+    "description": "High performance, open source, general RPC framework that puts mobile and HTTP/2 first",
+    "homepage": "https://grpc.io/",
+    "depends": [
+      "abseil-cpp",
+      "c-ares",
+      "ca-certificates",
+      "libc++",
+      "libre2",
+      "openssl",
+      "python",
+      "zlib"
+    ],
+    "srcurl": "git+https://github.com/grpc/grpc",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/69897816b/packages/python-grpcio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69897816b/packages/python-grpcio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69897816b/packages/python-grpcio/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/69897816b/packages/python-grpcio/log_android.cc.patch",
+      "https://github.com/termux/termux-packages/blob/69897816b/packages/python-grpcio/setup.py.patch",
+      "https://github.com/termux/termux-packages/blob/69897816b/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch",
+      "https://github.com/termux/termux-packages/blob/69897816b/packages/python-grpcio/src-core-lib-security-security_connector-load_system_roots_supported.cc.patch",
+      "https://github.com/termux/termux-packages/blob/69897816b/packages/python-grpcio/src-core-lib-security-security_connector-ssl_utils.cc.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/69897816b/packages/python-grpcio/log_android.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69897816b/packages/python-grpcio/setup.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69897816b/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69897816b/packages/python-grpcio/src-core-lib-security-security_connector-load_system_roots_supported.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69897816b/packages/python-grpcio/src-core-lib-security-security_connector-ssl_utils.cc.patch"
     ],
     "auto_updated": true
   },
