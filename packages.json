@@ -5819,15 +5819,20 @@
     "homepage": "https://djvu.sourceforge.net/",
     "depends": [
       "libc++",
+      "libjpeg-turbo",
       "libtiff"
     ],
     "srcurl": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/858771625/packages/djvulibre",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/858771625/packages/djvulibre/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/858771625/packages/djvulibre/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f7750dfca/packages/djvulibre",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f7750dfca/packages/djvulibre/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f7750dfca/packages/djvulibre/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/f7750dfca/packages/djvulibre/0001-remove-register-keyword-for-cxx17.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/f7750dfca/packages/djvulibre/0001-remove-register-keyword-for-cxx17.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -7212,17 +7217,17 @@
   },
   {
     "name": "eza",
-    "version": "0.16.2",
+    "version": "0.16.3",
     "description": "A modern replacement for ls",
     "homepage": "https://github.com/eza-community/eza",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/eza-community/eza/archive/v0.16.2.tar.gz",
+    "srcurl": "https://github.com/eza-community/eza/archive/v0.16.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b2a53b8c/packages/eza",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b2a53b8c/packages/eza/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b2a53b8c/packages/eza/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a1eff3f2/packages/eza",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a1eff3f2/packages/eza/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a1eff3f2/packages/eza/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -7300,17 +7305,17 @@
   },
   {
     "name": "fastfetch",
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "A neofetch-like tool for fetching system information and displaying them in a pretty way",
     "homepage": "https://github.com/fastfetch-cli/fastfetch",
     "depends": [
       "vulkan-loader"
     ],
-    "srcurl": "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz",
+    "srcurl": "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/478837bf2/packages/fastfetch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/478837bf2/packages/fastfetch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/478837bf2/packages/fastfetch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9ded88323/packages/fastfetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9ded88323/packages/fastfetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9ded88323/packages/fastfetch/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -9315,22 +9320,24 @@
   },
   {
     "name": "gitoxide",
-    "version": "0.1.0",
+    "version": "0.31.1",
     "description": "Rust implementation of Git",
     "homepage": "https://github.com/Byron/gitoxide",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/Byron/gitoxide/archive/refs/tags/git-hashtable-v0.1.0.tar.gz",
+    "srcurl": "https://github.com/Byron/gitoxide/archive/refs/tags/v0.31.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ad32b4bd/packages/gitoxide",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ad32b4bd/packages/gitoxide/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ad32b4bd/packages/gitoxide/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6aedcf169/packages/gitoxide",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6aedcf169/packages/gitoxide/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6aedcf169/packages/gitoxide/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7ad32b4bd/packages/gitoxide/trust-dns-resolver.diff"
+      "https://github.com/termux/termux-packages/blob/6aedcf169/packages/gitoxide/build.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6aedcf169/packages/gitoxide/trust-dns-resolver.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7ad32b4bd/packages/gitoxide/trust-dns-resolver.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/6aedcf169/packages/gitoxide/build.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6aedcf169/packages/gitoxide/trust-dns-resolver.diff"
     ],
     "auto_updated": true
   },
@@ -9396,7 +9403,7 @@
   },
   {
     "name": "glib",
-    "version": "2.78.2",
+    "version": "2.78.3",
     "description": "Library providing core building blocks for libraries and applications written in C",
     "homepage": "https://developer.gnome.org/glib/",
     "depends": [
@@ -9407,42 +9414,42 @@
       "resolv-conf",
       "zlib"
     ],
-    "srcurl": "https://ftp.gnome.org/pub/gnome/sources/glib/2.78/glib-2.78.2.tar.xz",
+    "srcurl": "https://ftp.gnome.org/pub/gnome/sources/glib/2.78/glib-2.78.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9b8f08ada/packages/glib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6693c75e/packages/glib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/gio-gdbusprivate.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/gio-gkeyfilesettingsbackend.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/gio-gnetworking.h.in.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/gio-gunixmounts.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/gio-xdgmime-xdgmime.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-gcharset.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-gspawn.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-gthread-posix.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-gthreadprivate.h.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-gtimezone.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-gtypes.h.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-gutils.c.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/glib-tests-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/9b8f08ada/packages/glib/meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/gio-gdbusprivate.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/gio-gkeyfilesettingsbackend.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/gio-gnetworking.h.in.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/gio-gunixmounts.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/gio-xdgmime-xdgmime.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-gcharset.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-gspawn.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-gthread-posix.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-gthreadprivate.h.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-gtimezone.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-gtypes.h.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-gutils.c.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/glib-tests-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/c6693c75e/packages/glib/meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/gio-gdbusprivate.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/gio-gkeyfilesettingsbackend.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/gio-gnetworking.h.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/gio-gunixmounts.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/gio-xdgmime-xdgmime.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-gcharset.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-gspawn.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-gthread-posix.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-gthreadprivate.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-gtimezone.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-gtypes.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-gutils.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/glib-tests-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9b8f08ada/packages/glib/meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/gio-gdbusprivate.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/gio-gkeyfilesettingsbackend.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/gio-gnetworking.h.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/gio-gunixmounts.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/gio-xdgmime-xdgmime.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-gcharset.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-gspawn.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-gthread-posix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-gthreadprivate.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-gtimezone.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-gtypes.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-gutils.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/glib-tests-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6693c75e/packages/glib/meson.build.patch"
     ],
     "auto_updated": true
   },
@@ -11876,15 +11883,15 @@
   },
   {
     "name": "hz",
-    "version": "0.7.2",
+    "version": "0.7.3",
     "description": "A high-performance and strong-extensibility Go HTTP framework that helps developers build microservices",
     "homepage": "https://www.cloudwego.io",
     "depends": [],
-    "srcurl": "https://github.com/cloudwego/hertz/archive/refs/tags/v0.7.2.tar.gz",
+    "srcurl": "https://github.com/cloudwego/hertz/archive/refs/tags/v0.7.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bdd7d942b/packages/hz",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bdd7d942b/packages/hz/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bdd7d942b/packages/hz/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/44cf1c8de/packages/hz",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/44cf1c8de/packages/hz/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/44cf1c8de/packages/hz/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23235,6 +23242,8 @@
     "depends": [
       "freetype",
       "libc++",
+      "patchelf",
+      "ninja",
       "python",
       "python-numpy",
       "python-pillow",
@@ -23242,14 +23251,14 @@
     ],
     "srcurl": "https://github.com/matplotlib/matplotlib/archive/refs/tags/v3.8.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd1f18f84/packages/matplotlib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd1f18f84/packages/matplotlib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd1f18f84/packages/matplotlib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/44813155a/packages/matplotlib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/44813155a/packages/matplotlib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/44813155a/packages/matplotlib/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/dd1f18f84/packages/matplotlib/mplsetup.cfg.patch"
+      "https://github.com/termux/termux-packages/blob/44813155a/packages/matplotlib/mplsetup.cfg.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/dd1f18f84/packages/matplotlib/mplsetup.cfg.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/44813155a/packages/matplotlib/mplsetup.cfg.patch"
     ],
     "auto_updated": true
   },
@@ -34391,7 +34400,7 @@
   },
   {
     "name": "squid",
-    "version": "6.5",
+    "version": "6.6",
     "description": "Full-featured Web proxy cache server",
     "homepage": "http://www.squid-cache.org",
     "depends": [
@@ -34405,22 +34414,22 @@
       "openldap",
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_5.tar.gz",
+    "srcurl": "https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7353c1c0f/packages/squid",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7353c1c0f/packages/squid/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7353c1c0f/packages/squid/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/00a422e1d/packages/squid",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00a422e1d/packages/squid/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00a422e1d/packages/squid/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7353c1c0f/packages/squid/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/7353c1c0f/packages/squid/no-priv-drop.patch",
-      "https://github.com/termux/termux-packages/blob/7353c1c0f/packages/squid/posix-shm-support.patch",
-      "https://github.com/termux/termux-packages/blob/7353c1c0f/packages/squid/sys-stat.h.patch"
+      "https://github.com/termux/termux-packages/blob/00a422e1d/packages/squid/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/00a422e1d/packages/squid/no-priv-drop.patch",
+      "https://github.com/termux/termux-packages/blob/00a422e1d/packages/squid/posix-shm-support.patch",
+      "https://github.com/termux/termux-packages/blob/00a422e1d/packages/squid/sys-stat.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7353c1c0f/packages/squid/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7353c1c0f/packages/squid/no-priv-drop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7353c1c0f/packages/squid/posix-shm-support.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7353c1c0f/packages/squid/sys-stat.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/00a422e1d/packages/squid/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00a422e1d/packages/squid/no-priv-drop.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00a422e1d/packages/squid/posix-shm-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/00a422e1d/packages/squid/sys-stat.h.patch"
     ],
     "auto_updated": true
   },
@@ -52881,7 +52890,7 @@
   },
   {
     "name": "webkit2gtk-4.1",
-    "version": "2.42.2",
+    "version": "2.42.3",
     "description": "A full-featured port of the WebKit rendering engine",
     "homepage": "https://webkitgtk.org",
     "depends": [
@@ -52919,32 +52928,32 @@
       "woff2",
       "zlib"
     ],
-    "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.42.2.tar.xz",
+    "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.42.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/886afacf6/x11-packages/webkit2gtk-4.1",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c4549cc33/x11-packages/webkit2gtk-4.1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/Source_WebCore_platform_graphics_gstreamer_PlatformDisplayGStreamer.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/Source_WebCore_xml.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/pas_min_heap.h.patch",
-      "https://github.com/termux/termux-packages/blob/886afacf6/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch"
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/Source_WebCore_platform_graphics_gstreamer_PlatformDisplayGStreamer.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/Source_WebCore_xml.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/pas_min_heap.h.patch",
+      "https://github.com/termux/termux-packages/blob/c4549cc33/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/Source_WebCore_platform_graphics_gstreamer_PlatformDisplayGStreamer.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/Source_WebCore_xml.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/pas_min_heap.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/886afacf6/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/Source_WebCore_platform_graphics_gstreamer_PlatformDisplayGStreamer.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/Source_WebCore_xml.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/pas_min_heap.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c4549cc33/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch"
     ],
     "auto_updated": false
   },
