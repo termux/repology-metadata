@@ -2788,19 +2788,23 @@
   },
   {
     "name": "broot",
-    "version": "1.29.0",
+    "version": "1.30.1",
     "description": "A better way to navigate directories",
     "homepage": "https://github.com/Canop/broot",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/Canop/broot/archive/v1.29.0.tar.gz",
+    "srcurl": "https://github.com/Canop/broot/archive/v1.30.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c15a55b70/packages/broot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c15a55b70/packages/broot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c15a55b70/packages/broot/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/890be4ec9/packages/broot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/890be4ec9/packages/broot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/890be4ec9/packages/broot/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/890be4ec9/packages/broot/disable-trash.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/890be4ec9/packages/broot/disable-trash.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -9320,24 +9324,24 @@
   },
   {
     "name": "gitoxide",
-    "version": "0.31.1",
+    "version": "0.32.0",
     "description": "Rust implementation of Git",
     "homepage": "https://github.com/Byron/gitoxide",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/Byron/gitoxide/archive/refs/tags/v0.31.1.tar.gz",
+    "srcurl": "https://github.com/Byron/gitoxide/archive/refs/tags/v0.32.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6aedcf169/packages/gitoxide",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6aedcf169/packages/gitoxide/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6aedcf169/packages/gitoxide/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/27da9bcaf/packages/gitoxide",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27da9bcaf/packages/gitoxide/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27da9bcaf/packages/gitoxide/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6aedcf169/packages/gitoxide/build.rs.patch",
-      "https://github.com/termux/termux-packages/blob/6aedcf169/packages/gitoxide/trust-dns-resolver.diff"
+      "https://github.com/termux/termux-packages/blob/27da9bcaf/packages/gitoxide/fix-build-on-32-bit-android.patch",
+      "https://github.com/termux/termux-packages/blob/27da9bcaf/packages/gitoxide/trust-dns-resolver.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6aedcf169/packages/gitoxide/build.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6aedcf169/packages/gitoxide/trust-dns-resolver.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/27da9bcaf/packages/gitoxide/fix-build-on-32-bit-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/27da9bcaf/packages/gitoxide/trust-dns-resolver.diff"
     ],
     "auto_updated": true
   },
@@ -10750,9 +10754,9 @@
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.22.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d3d1dae7/packages/gst-libav",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d3d1dae7/packages/gst-libav/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d3d1dae7/packages/gst-libav/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b920ab5a/packages/gst-libav",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b920ab5a/packages/gst-libav/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b920ab5a/packages/gst-libav/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -10786,16 +10790,16 @@
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.22.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/947608d11/packages/gst-plugins-bad",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/947608d11/packages/gst-plugins-bad/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/947608d11/packages/gst-plugins-bad/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b920ab5a/packages/gst-plugins-bad",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b920ab5a/packages/gst-plugins-bad/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b920ab5a/packages/gst-plugins-bad/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "gst-plugins-base",
-    "version": "1.22.7",
+    "version": "1.22.8",
     "description": "GStreamer base plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
@@ -10815,18 +10819,18 @@
       "libxv",
       "zlib"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.22.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.22.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a76134031/packages/gst-plugins-base",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a76134031/packages/gst-plugins-base/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a76134031/packages/gst-plugins-base/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b920ab5a/packages/gst-plugins-base",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b920ab5a/packages/gst-plugins-base/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b920ab5a/packages/gst-plugins-base/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "gst-plugins-good",
-    "version": "1.22.7",
+    "version": "1.22.8",
     "description": "GStreamer Good Plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
@@ -10849,33 +10853,33 @@
       "pulseaudio",
       "zlib"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.22.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.22.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a76134031/packages/gst-plugins-good",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a76134031/packages/gst-plugins-good/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a76134031/packages/gst-plugins-good/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b920ab5a/packages/gst-plugins-good",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b920ab5a/packages/gst-plugins-good/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b920ab5a/packages/gst-plugins-good/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a76134031/packages/gst-plugins-good/autoplug_libcaca.patch"
+      "https://github.com/termux/termux-packages/blob/1b920ab5a/packages/gst-plugins-good/autoplug_libcaca.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a76134031/packages/gst-plugins-good/autoplug_libcaca.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1b920ab5a/packages/gst-plugins-good/autoplug_libcaca.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "gst-plugins-ugly",
-    "version": "1.22.7",
+    "version": "1.22.8",
     "description": "GStreamer Ugly Plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
       "glib",
       "gst-plugins-base"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.22.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.22.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fac79e170/packages/gst-plugins-ugly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fac79e170/packages/gst-plugins-ugly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fac79e170/packages/gst-plugins-ugly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b920ab5a/packages/gst-plugins-ugly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b920ab5a/packages/gst-plugins-ugly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b920ab5a/packages/gst-plugins-ugly/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -10893,9 +10897,9 @@
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.22.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/be1d0901d/packages/gst-python",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/be1d0901d/packages/gst-python/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/be1d0901d/packages/gst-python/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b920ab5a/packages/gst-python",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b920ab5a/packages/gst-python/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b920ab5a/packages/gst-python/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12710,15 +12714,15 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.52.4",
+    "version": "2.52.5",
     "description": "A CLI for JFrog products",
     "homepage": "https://jfrog.com/getcli",
     "depends": [],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.52.4.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.52.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d3926aa84/packages/jfrog-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d3926aa84/packages/jfrog-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d3926aa84/packages/jfrog-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0d5803e0a/packages/jfrog-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0d5803e0a/packages/jfrog-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0d5803e0a/packages/jfrog-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -19846,25 +19850,25 @@
   },
   {
     "name": "libssh",
-    "version": "0.10.5",
+    "version": "0.10.6",
     "description": "Tiny C SSH library",
     "homepage": "https://www.libssh.org/",
     "depends": [
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://www.libssh.org/files/0.10/libssh-0.10.5.tar.xz",
+    "srcurl": "https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f1e8a2216/packages/libssh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f1e8a2216/packages/libssh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f1e8a2216/packages/libssh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e75b5e766/packages/libssh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e75b5e766/packages/libssh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e75b5e766/packages/libssh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f1e8a2216/packages/libssh/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/f1e8a2216/packages/libssh/strerror_r.patch"
+      "https://github.com/termux/termux-packages/blob/e75b5e766/packages/libssh/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/e75b5e766/packages/libssh/strerror_r.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f1e8a2216/packages/libssh/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f1e8a2216/packages/libssh/strerror_r.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e75b5e766/packages/libssh/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e75b5e766/packages/libssh/strerror_r.patch"
     ],
     "auto_updated": false
   },
@@ -37678,7 +37682,7 @@
   },
   {
     "name": "ugrep",
-    "version": "4.4.0",
+    "version": "4.4.1",
     "description": "A faster, user-friendly and compatible grep replacement",
     "homepage": "https://github.com/Genivia/ugrep",
     "depends": [
@@ -37690,16 +37694,16 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.0.tar.gz",
+    "srcurl": "https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5c09a6ed6/packages/ugrep",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5c09a6ed6/packages/ugrep/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5c09a6ed6/packages/ugrep/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/32b14be67/packages/ugrep",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32b14be67/packages/ugrep/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32b14be67/packages/ugrep/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5c09a6ed6/packages/ugrep/dependencies-fix.patch"
+      "https://github.com/termux/termux-packages/blob/32b14be67/packages/ugrep/dependencies-fix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5c09a6ed6/packages/ugrep/dependencies-fix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/32b14be67/packages/ugrep/dependencies-fix.patch"
     ],
     "auto_updated": true
   },
@@ -38936,15 +38940,15 @@
   },
   {
     "name": "vulkan-headers",
-    "version": "1.3.273",
+    "version": "1.3.274",
     "description": "Vulkan Header files and API registry",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.273.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.274.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/39dbe7e2c/packages/vulkan-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/39dbe7e2c/packages/vulkan-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/39dbe7e2c/packages/vulkan-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a523a1b5/packages/vulkan-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a523a1b5/packages/vulkan-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a523a1b5/packages/vulkan-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -44425,7 +44429,7 @@
   },
   {
     "name": "fltk",
-    "version": "1.3.8",
+    "version": "1.3.9",
     "description": "Graphical user interface toolkit for X",
     "homepage": "https://www.fltk.org/",
     "depends": [
@@ -44444,20 +44448,20 @@
       "opengl",
       "zlib"
     ],
-    "srcurl": "https://www.fltk.org/pub/fltk/1.3.8/fltk-1.3.8-source.tar.gz",
+    "srcurl": "https://www.fltk.org/pub/fltk/1.3.9/fltk-1.3.9-source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0403d1fca/x11-packages/fltk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0403d1fca/x11-packages/fltk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0403d1fca/x11-packages/fltk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b85ef56f1/x11-packages/fltk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b85ef56f1/x11-packages/fltk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b85ef56f1/x11-packages/fltk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0403d1fca/x11-packages/fltk/01-no-tests.patch",
-      "https://github.com/termux/termux-packages/blob/0403d1fca/x11-packages/fltk/03-fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/0403d1fca/x11-packages/fltk/04-fix-libxrandr-dlopen.patch"
+      "https://github.com/termux/termux-packages/blob/b85ef56f1/x11-packages/fltk/01-no-tests.patch",
+      "https://github.com/termux/termux-packages/blob/b85ef56f1/x11-packages/fltk/03-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/b85ef56f1/x11-packages/fltk/04-fix-libxrandr-dlopen.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0403d1fca/x11-packages/fltk/01-no-tests.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0403d1fca/x11-packages/fltk/03-fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0403d1fca/x11-packages/fltk/04-fix-libxrandr-dlopen.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b85ef56f1/x11-packages/fltk/01-no-tests.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b85ef56f1/x11-packages/fltk/03-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b85ef56f1/x11-packages/fltk/04-fix-libxrandr-dlopen.patch"
     ],
     "auto_updated": false
   },
@@ -47606,7 +47610,7 @@
   },
   {
     "name": "libvte",
-    "version": "2:0.74.1",
+    "version": "2:0.74.2",
     "description": "Virtual Terminal library",
     "homepage": "https://gitlab.gnome.org/GNOME/vte/",
     "depends": [
@@ -47623,16 +47627,16 @@
       "pcre2",
       "zlib"
     ],
-    "srcurl": "https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.bz2",
+    "srcurl": "https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.2/vte-0.74.2.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f6c720a36/x11-packages/libvte",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f6c720a36/x11-packages/libvte/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f6c720a36/x11-packages/libvte/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3bf63efb4/x11-packages/libvte",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3bf63efb4/x11-packages/libvte/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3bf63efb4/x11-packages/libvte/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f6c720a36/x11-packages/libvte/src-missing.cc.patch"
+      "https://github.com/termux/termux-packages/blob/3bf63efb4/x11-packages/libvte/src-missing.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f6c720a36/x11-packages/libvte/src-missing.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3bf63efb4/x11-packages/libvte/src-missing.cc.patch"
     ],
     "auto_updated": false
   },
@@ -54835,7 +54839,7 @@
   },
   {
     "name": "xorg-server",
-    "version": "21.1.9",
+    "version": "21.1.10",
     "description": "Xorg server",
     "homepage": "https://xorg.freedesktop.org/wiki/",
     "depends": [
@@ -54856,54 +54860,54 @@
       "xorg-protocol-txt",
       "xorg-xkbcomp"
     ],
-    "srcurl": "https://xorg.freedesktop.org/releases/individual/xserver/xorg-server-21.1.9.tar.xz",
+    "srcurl": "https://xorg.freedesktop.org/releases/individual/xserver/xorg-server-21.1.10.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e96e80f3/x11-packages/xorg-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0b3f6a45a/x11-packages/xorg-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/disable-modesetting.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/kd.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/linux_noop.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/platform_noop.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/stubmain.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/use_ashmem.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xf86AutoConfig.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_compiler.h.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_xf86Config.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_acpi.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_kmod.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_scan.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_write.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_xorg-wrapper.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_access.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_backtrace.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_osinit.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_utils.c.patch",
-      "https://github.com/termux/termux-packages/blob/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/disable-modesetting.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/kd.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/linux_noop.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/platform_noop.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/stubmain.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/use_ashmem.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xf86AutoConfig.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_compiler.h.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_xf86Config.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_acpi.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_kmod.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_scan.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_write.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_xorg-wrapper.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_access.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_backtrace.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_osinit.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_utils.c.patch",
+      "https://github.com/termux/termux-packages/blob/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/disable-modesetting.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/kd.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/linux_noop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/platform_noop.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/stubmain.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/use_ashmem.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xf86AutoConfig.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_compiler.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_xf86Config.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_acpi.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_kmod.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_scan.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_write.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_xorg-wrapper.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_access.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_backtrace.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_osinit.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_os_utils.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3e96e80f3/x11-packages/xorg-server/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/disable-modesetting.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/kd.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/linux_noop.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/platform_noop.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/stubmain.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/use_ashmem.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xf86AutoConfig.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_compiler.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_common_xf86Config.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_acpi.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_os-support_linux_lnx_kmod.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_scan.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_parser_write.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_hw_xfree86_xorg-wrapper.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_access.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_backtrace.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_osinit.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_os_utils.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0b3f6a45a/x11-packages/xorg-server/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
     ],
     "auto_updated": false
   },
