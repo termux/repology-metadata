@@ -26026,24 +26026,24 @@
   },
   {
     "name": "netcat-openbsd",
-    "version": "1.219-1",
+    "version": "1.226-1",
     "description": "TCP/IP swiss army knife. OpenBSD variant.",
     "homepage": "https://packages.debian.org/sid/netcat-openbsd",
     "depends": [
       "libbsd"
     ],
-    "srcurl": "https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/1.219-1/netcat-openbsd-debian-1.219-1.tar.gz",
+    "srcurl": "https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/1.226-1/netcat-openbsd-debian-1.226-1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a063c1156/packages/netcat-openbsd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a063c1156/packages/netcat-openbsd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a063c1156/packages/netcat-openbsd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec7920a89/packages/netcat-openbsd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec7920a89/packages/netcat-openbsd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec7920a89/packages/netcat-openbsd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a063c1156/packages/netcat-openbsd/debian-patches-port-to-linux-with-libbsd.patch"
+      "https://github.com/termux/termux-packages/blob/ec7920a89/packages/netcat-openbsd/debian-patches-port-to-linux-with-libbsd.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a063c1156/packages/netcat-openbsd/debian-patches-port-to-linux-with-libbsd.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ec7920a89/packages/netcat-openbsd/debian-patches-port-to-linux-with-libbsd.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "netcdf-c",
@@ -26880,30 +26880,31 @@
   },
   {
     "name": "nwipe",
-    "version": "0.34",
+    "version": "0.35",
     "description": "A program that will securely erase the entire contents of disks",
     "homepage": "https://github.com/martijnvanbrummelen/nwipe",
     "depends": [
       "ncurses",
       "ncurses-ui-libs",
-      "parted"
+      "parted",
+      "libconfig"
     ],
-    "srcurl": "https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz",
+    "srcurl": "https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/129e18a38/packages/nwipe",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/129e18a38/packages/nwipe/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/129e18a38/packages/nwipe/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2d4e1c2b/packages/nwipe",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2d4e1c2b/packages/nwipe/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2d4e1c2b/packages/nwipe/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/129e18a38/packages/nwipe/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/129e18a38/packages/nwipe/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/129e18a38/packages/nwipe/src-nwipe.c.patch"
+      "https://github.com/termux/termux-packages/blob/a2d4e1c2b/packages/nwipe/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/a2d4e1c2b/packages/nwipe/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/a2d4e1c2b/packages/nwipe/src-nwipe.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/129e18a38/packages/nwipe/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129e18a38/packages/nwipe/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/129e18a38/packages/nwipe/src-nwipe.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a2d4e1c2b/packages/nwipe/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a2d4e1c2b/packages/nwipe/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a2d4e1c2b/packages/nwipe/src-nwipe.c.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "nyancat",
@@ -41045,12 +41046,12 @@
     ],
     "srcurl": "https://github.com/erofs/erofs-utils/archive/refs/tags/v1.7.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a8c083999/root-packages/erofs-utils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a8c083999/root-packages/erofs-utils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a8c083999/root-packages/erofs-utils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cd1b939f5/root-packages/erofs-utils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cd1b939f5/root-packages/erofs-utils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cd1b939f5/root-packages/erofs-utils/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "ethtool",
@@ -42584,7 +42585,7 @@
   },
   {
     "name": "arqiver",
-    "version": "0.11.0",
+    "version": "0.12.0",
     "description": "A simple Qt archiver manager based on libarchive",
     "homepage": "https://github.com/tsujan/Arqiver",
     "depends": [
@@ -42592,14 +42593,14 @@
       "qt5-qtbase",
       "qt5-qtsvg"
     ],
-    "srcurl": "https://github.com/tsujan/Arqiver/releases/download/V0.11.0/Arqiver-0.11.0.tar.xz",
+    "srcurl": "https://github.com/tsujan/Arqiver/releases/download/V0.12.0/Arqiver-0.12.0.tar.xz",
     "maintainer": "Yisus7u7 <dev.yisus@hotmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/92833478b/x11-packages/arqiver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92833478b/x11-packages/arqiver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92833478b/x11-packages/arqiver/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/98de11b1f/x11-packages/arqiver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98de11b1f/x11-packages/arqiver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98de11b1f/x11-packages/arqiver/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "at-spi2-atk",
@@ -43445,7 +43446,7 @@
   },
   {
     "name": "deadbeef",
-    "version": "1.9.5",
+    "version": "1.9.6",
     "description": "A modular cross-platform audio player",
     "homepage": "https://deadbeef.sourceforge.io/",
     "depends": [
@@ -43478,24 +43479,24 @@
       "pulseaudio",
       "zlib"
     ],
-    "srcurl": "https://downloads.sourceforge.net/deadbeef/deadbeef-1.9.5.tar.bz2",
+    "srcurl": "https://downloads.sourceforge.net/deadbeef/deadbeef-1.9.6.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a2d4452c/x11-packages/deadbeef",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a2d4452c/x11-packages/deadbeef/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a2d4452c/x11-packages/deadbeef/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8a97a5859/x11-packages/deadbeef",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8a97a5859/x11-packages/deadbeef/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8a97a5859/x11-packages/deadbeef/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5a2d4452c/x11-packages/deadbeef/deadbeef-1.9.2-drop-Werror.patch",
-      "https://github.com/termux/termux-packages/blob/5a2d4452c/x11-packages/deadbeef/fix-underlinking.patch",
-      "https://github.com/termux/termux-packages/blob/5a2d4452c/x11-packages/deadbeef/junklib.c.patch",
-      "https://github.com/termux/termux-packages/blob/5a2d4452c/x11-packages/deadbeef/threading_pthread.c.patch"
+      "https://github.com/termux/termux-packages/blob/8a97a5859/x11-packages/deadbeef/deadbeef-1.9.2-drop-Werror.patch",
+      "https://github.com/termux/termux-packages/blob/8a97a5859/x11-packages/deadbeef/fix-underlinking.patch",
+      "https://github.com/termux/termux-packages/blob/8a97a5859/x11-packages/deadbeef/junklib.c.patch",
+      "https://github.com/termux/termux-packages/blob/8a97a5859/x11-packages/deadbeef/threading_pthread.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5a2d4452c/x11-packages/deadbeef/deadbeef-1.9.2-drop-Werror.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5a2d4452c/x11-packages/deadbeef/fix-underlinking.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5a2d4452c/x11-packages/deadbeef/junklib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5a2d4452c/x11-packages/deadbeef/threading_pthread.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8a97a5859/x11-packages/deadbeef/deadbeef-1.9.2-drop-Werror.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8a97a5859/x11-packages/deadbeef/fix-underlinking.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8a97a5859/x11-packages/deadbeef/junklib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8a97a5859/x11-packages/deadbeef/threading_pthread.c.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "debpac",
@@ -51780,7 +51781,7 @@
   },
   {
     "name": "shared-mime-info",
-    "version": "2.2",
+    "version": "2.4",
     "description": "Freedesktop.org Shared MIME Info",
     "homepage": "https://freedesktop.org/Software/shared-mime-info",
     "depends": [
@@ -51788,18 +51789,18 @@
       "glib",
       "libxml2"
     ],
-    "srcurl": "https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.2/shared-mime-info-2.2.tar.gz",
+    "srcurl": "https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/43de184b3/x11-packages/shared-mime-info",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/43de184b3/x11-packages/shared-mime-info/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/43de184b3/x11-packages/shared-mime-info/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/781e67536/x11-packages/shared-mime-info",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/781e67536/x11-packages/shared-mime-info/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/781e67536/x11-packages/shared-mime-info/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/43de184b3/x11-packages/shared-mime-info/update-mime-database.c.patch"
+      "https://github.com/termux/termux-packages/blob/781e67536/x11-packages/shared-mime-info/update-mime-database.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/43de184b3/x11-packages/shared-mime-info/update-mime-database.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/781e67536/x11-packages/shared-mime-info/update-mime-database.c.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "simulide",
