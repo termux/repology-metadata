@@ -17677,6 +17677,25 @@
     "auto_updated": true
   },
   {
+    "name": "libmpeg2",
+    "version": "0.5.1",
+    "description": "MPEG-2 decoder libraries",
+    "homepage": "https://libmpeg2.sourceforge.io/",
+    "depends": [],
+    "srcurl": "https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/74bf04d12/packages/libmpeg2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74bf04d12/packages/libmpeg2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74bf04d12/packages/libmpeg2/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/74bf04d12/packages/libmpeg2/configure.ac.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/74bf04d12/packages/libmpeg2/configure.ac.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "libmpfr",
     "version": "4.2.1",
     "description": "C library for multiple-precision floating-point computations with correct rounding",
@@ -36049,15 +36068,15 @@
   },
   {
     "name": "termux-am",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "description": "Android Oreo-compatible am command reimplementation",
     "homepage": "https://github.com/termux/TermuxAm",
     "depends": [],
-    "srcurl": "https://github.com/termux/TermuxAm/archive/v0.7.0.tar.gz",
+    "srcurl": "https://github.com/termux/TermuxAm/archive/v0.7.1.tar.gz",
     "maintainer": "Michal Bednarski @michalbednarski",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7f7a6008d/packages/termux-am",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7f7a6008d/packages/termux-am/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7f7a6008d/packages/termux-am/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ecd21c325/packages/termux-am",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ecd21c325/packages/termux-am/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ecd21c325/packages/termux-am/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -36304,7 +36323,7 @@
   },
   {
     "name": "termux-tools",
-    "version": "1.40.0",
+    "version": "1.40.1",
     "description": "Basic system tools for Termux",
     "homepage": "https://termux.dev/",
     "depends": [
@@ -36329,11 +36348,11 @@
       "xz-utils",
       "dialog"
     ],
-    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.40.0.tar.gz",
+    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.40.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e3e2c83e/packages/termux-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e3e2c83e/packages/termux-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e3e2c83e/packages/termux-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c688f3452/packages/termux-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c688f3452/packages/termux-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c688f3452/packages/termux-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -38877,6 +38896,7 @@
       "liblua52",
       "libmad",
       "libmatroska",
+      "libmpeg2",
       "libnfs",
       "libogg",
       "libopus",
@@ -38904,34 +38924,34 @@
     ],
     "srcurl": "https://download.videolan.org/pub/videolan/vlc/3.0.20/vlc-3.0.20.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7828004cd/packages/vlc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/11e7dfbd7/packages/vlc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/modules-video_output-xcb-x11.c.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/src-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/packages/vlc/src-posix-filesystem.c.patch"
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/modules-video_output-xcb-x11.c.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/src-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/packages/vlc/src-posix-filesystem.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/modules-audio_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/modules-codec-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/modules-keystore-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/modules-keystore-file_crypt.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/modules-video_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/modules-video_output-xcb-x11.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/src-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/src-network-getaddrinfo.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/packages/vlc/src-posix-filesystem.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/modules-audio_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/modules-codec-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/modules-keystore-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/modules-keystore-file_crypt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/modules-video_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/modules-video_output-xcb-x11.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/src-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/src-network-getaddrinfo.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/packages/vlc/src-posix-filesystem.c.patch"
     ],
     "auto_updated": true
   },
@@ -38983,22 +39003,22 @@
   },
   {
     "name": "vtm",
-    "version": "0.9.38",
+    "version": "0.9.39",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://vtm.netxs.online/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.38.tar.gz",
+    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.39.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1117c7e7e/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1117c7e7e/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1117c7e7e/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e239ae2ac/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e239ae2ac/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e239ae2ac/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1117c7e7e/packages/vtm/netxs-desktopio-logger.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/e239ae2ac/packages/vtm/netxs-desktopio-logger.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1117c7e7e/packages/vtm/netxs-desktopio-logger.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e239ae2ac/packages/vtm/netxs-desktopio-logger.hpp.patch"
     ],
     "auto_updated": true
   },
@@ -52982,7 +53002,7 @@
   },
   {
     "name": "vlc-qt",
-    "version": "3.0.18",
+    "version": "3.0.20",
     "description": "A popular libre and open source media player and multimedia engine",
     "homepage": "https://www.videolan.org/",
     "depends": [
@@ -53023,6 +53043,7 @@
       "liblua52",
       "libmad",
       "libmatroska",
+      "libmpeg2",
       "libnfs",
       "libogg",
       "libopus",
@@ -53052,38 +53073,38 @@
       "xcb-util-keysyms",
       "zlib"
     ],
-    "srcurl": "https://download.videolan.org/pub/videolan/vlc/3.0.18/vlc-3.0.18.tar.xz",
+    "srcurl": "https://download.videolan.org/pub/videolan/vlc/3.0.20/vlc-3.0.20.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7828004cd/x11-packages/vlc-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/11e7dfbd7/x11-packages/vlc-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/src-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
-      "https://github.com/termux/termux-packages/blob/7828004cd/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/src-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
+      "https://github.com/termux/termux-packages/blob/11e7dfbd7/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/src-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7828004cd/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/modules-audio_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/modules-codec-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/modules-keystore-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/modules-keystore-file_crypt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/modules-video_output-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/modules-video_output-xcb-x11.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/src-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/src-network-getaddrinfo.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/11e7dfbd7/x11-packages/vlc-qt/src-posix-filesystem.c.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "wayvnc",
