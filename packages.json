@@ -7836,7 +7836,7 @@
   },
   {
     "name": "fish",
-    "version": "3.6.4",
+    "version": "3.7.0",
     "description": "The user-friendly command line shell",
     "homepage": "https://fishshell.com/",
     "depends": [
@@ -7849,24 +7849,24 @@
       "pcre2",
       "libandroid-spawn"
     ],
-    "srcurl": "https://github.com/fish-shell/fish-shell/releases/download/3.6.4/fish-3.6.4.tar.xz",
+    "srcurl": "https://github.com/fish-shell/fish-shell/releases/download/3.7.0/fish-3.7.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/467c90b7c/packages/fish",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/467c90b7c/packages/fish/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/467c90b7c/packages/fish/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/95e039ca2/packages/fish",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95e039ca2/packages/fish/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95e039ca2/packages/fish/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/467c90b7c/packages/fish/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/467c90b7c/packages/fish/WIFSTOPPED.patch",
-      "https://github.com/termux/termux-packages/blob/467c90b7c/packages/fish/create_manpage_completions.py.patch",
-      "https://github.com/termux/termux-packages/blob/467c90b7c/packages/fish/src-fish.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/467c90b7c/packages/fish/src-path.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/95e039ca2/packages/fish/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/95e039ca2/packages/fish/WIFSTOPPED.patch",
+      "https://github.com/termux/termux-packages/blob/95e039ca2/packages/fish/create_manpage_completions.py.patch",
+      "https://github.com/termux/termux-packages/blob/95e039ca2/packages/fish/src-fish.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/95e039ca2/packages/fish/src-path.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/467c90b7c/packages/fish/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/467c90b7c/packages/fish/WIFSTOPPED.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/467c90b7c/packages/fish/create_manpage_completions.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/467c90b7c/packages/fish/src-fish.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/467c90b7c/packages/fish/src-path.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/95e039ca2/packages/fish/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/95e039ca2/packages/fish/WIFSTOPPED.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/95e039ca2/packages/fish/create_manpage_completions.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/95e039ca2/packages/fish/src-fish.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/95e039ca2/packages/fish/src-path.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -32787,17 +32787,17 @@
   },
   {
     "name": "rust-analyzer",
-    "version": "20231225",
+    "version": "20240101",
     "description": "A Rust compiler front-end for IDEs",
     "homepage": "https://github.com/rust-lang/rust-analyzer",
     "depends": [
       "rust-src"
     ],
-    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2023-12-25.tar.gz",
+    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2024-01-01.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/298a93477/packages/rust-analyzer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/298a93477/packages/rust-analyzer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/298a93477/packages/rust-analyzer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ab3b0513/packages/rust-analyzer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ab3b0513/packages/rust-analyzer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ab3b0513/packages/rust-analyzer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -45767,12 +45767,14 @@
       "harfbuzz",
       "libcairo",
       "libepoxy",
+      "libwayland",
       "libxcomposite",
       "libxcursor",
       "libxdamage",
       "libxfixes",
       "libxi",
       "libxinerama",
+      "libxkbcommon",
       "libxrandr",
       "pango",
       "shared-mime-info",
@@ -45780,28 +45782,30 @@
     ],
     "srcurl": "https://gitlab.gnome.org/GNOME/gtk/-/archive/3.24.38/gtk-3.24.38.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e667a6cb6/x11-packages/gtk3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9466f86bd/x11-packages/gtk3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/0001-no-atk-bridge.patch",
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/0003-fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/0004-fix-name-conflicts.patch",
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/0005-fix-immodules-linking.patch",
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/0006-fix-libintl.patch",
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/broadway-server.patch",
-      "https://github.com/termux/termux-packages/blob/e667a6cb6/x11-packages/gtk3/gdkbroadway-server.patch"
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/0001-no-atk-bridge.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/0003-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/0004-fix-name-conflicts.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/0005-fix-immodules-linking.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/0006-fix-libintl.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/broadway-server.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/gdkbroadway-server.patch",
+      "https://github.com/termux/termux-packages/blob/9466f86bd/x11-packages/gtk3/gdkdisplay-wayland.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/0001-no-atk-bridge.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/0003-fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/0004-fix-name-conflicts.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/0005-fix-immodules-linking.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/0006-fix-libintl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/broadway-server.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e667a6cb6/x11-packages/gtk3/gdkbroadway-server.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/0001-no-atk-bridge.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/0003-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/0004-fix-name-conflicts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/0005-fix-immodules-linking.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/0006-fix-libintl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/broadway-server.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/gdkbroadway-server.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9466f86bd/x11-packages/gtk3/gdkdisplay-wayland.c.patch"
     ],
     "auto_updated": false
   },
@@ -48012,18 +48016,19 @@
     "depends": [
       "libxcb",
       "libxml2",
+      "libwayland",
       "xkeyboard-config"
     ],
     "srcurl": "https://github.com/xkbcommon/libxkbcommon/archive/xkbcommon-1.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a5a4cc29/x11-packages/libxkbcommon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a5a4cc29/x11-packages/libxkbcommon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a5a4cc29/x11-packages/libxkbcommon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/37fbc34e6/x11-packages/libxkbcommon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37fbc34e6/x11-packages/libxkbcommon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37fbc34e6/x11-packages/libxkbcommon/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5a5a4cc29/x11-packages/libxkbcommon/disable_tests.patch"
+      "https://github.com/termux/termux-packages/blob/37fbc34e6/x11-packages/libxkbcommon/disable_tests.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5a5a4cc29/x11-packages/libxkbcommon/disable_tests.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/37fbc34e6/x11-packages/libxkbcommon/disable_tests.patch"
     ],
     "auto_updated": true
   },
