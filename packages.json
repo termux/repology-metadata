@@ -1052,6 +1052,57 @@
     "auto_updated": false
   },
   {
+    "name": "aptitude",
+    "version": "0.8.13",
+    "description": "terminal-based package manager",
+    "homepage": "https://wiki.debian.org/Aptitude",
+    "depends": [
+      "apt",
+      "boost",
+      "libcwidget",
+      "libsigc++-2.0",
+      "libsqlite",
+      "libxapian",
+      "ncurses"
+    ],
+    "srcurl": "http://deb.debian.org/debian/pool/main/a/aptitude/aptitude_0.8.13.orig.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a734bf247/packages/aptitude",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0001-fix-ftbfs-with-gcc-10.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0002-apt_2.1.19_compatibility.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0003-fix-FTBFS-1011681.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0004-fix-bashism-related-issue-with-fixman-scripts.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0005-fix-ftbfs-with-gcc-12.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0100-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0101-do-not-link-against-stdc++fs.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0102-non-static-member-access-in-nested-type.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0103-fill-some-functions-from-libintl.h.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0104-fill-rpmatch.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0105-add-namespace-to-ptr_fun.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0106-cxx11-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/a734bf247/packages/aptitude/0107-char-array-initialization.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0001-fix-ftbfs-with-gcc-10.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0002-apt_2.1.19_compatibility.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0003-fix-FTBFS-1011681.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0004-fix-bashism-related-issue-with-fixman-scripts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0005-fix-ftbfs-with-gcc-12.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0100-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0101-do-not-link-against-stdc++fs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0102-non-static-member-access-in-nested-type.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0103-fill-some-functions-from-libintl.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0104-fill-rpmatch.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0105-add-namespace-to-ptr_fun.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0106-cxx11-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a734bf247/packages/aptitude/0107-char-array-initialization.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "aptly",
     "version": "1.5.0",
     "description": "A Swiss Army knife for Debian repository management",
@@ -7955,20 +8006,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.1.134",
+    "version": "0.1.135",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.1.134.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.1.135.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/362d4e85d/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/362d4e85d/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/362d4e85d/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/24617d647/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/24617d647/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/24617d647/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/362d4e85d/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/24617d647/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/362d4e85d/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/24617d647/packages/flyctl/getcpuinfo.patch"
     ],
     "auto_updated": true
   },
@@ -14978,6 +15029,31 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
+  },
+  {
+    "name": "libcwidget",
+    "version": "0.5.18",
+    "description": "high-level terminal interface library for C++",
+    "homepage": "https://salsa.debian.org/cwidget-team/",
+    "depends": [
+      "ncurses",
+      "libiconv",
+      "libsigc++-2.0"
+    ],
+    "srcurl": "http://deb.debian.org/debian/pool/main/c/cwidget/cwidget_0.5.18.orig.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cffe5f8bf/packages/libcwidget",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cffe5f8bf/packages/libcwidget/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cffe5f8bf/packages/libcwidget/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/cffe5f8bf/packages/libcwidget/0001-pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/cffe5f8bf/packages/libcwidget/0002-replace-Wterminate-with-Wexceptions.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/cffe5f8bf/packages/libcwidget/0001-pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cffe5f8bf/packages/libcwidget/0002-replace-Wterminate-with-Wexceptions.patch"
+    ],
+    "auto_updated": false
   },
   {
     "name": "libczmq",
@@ -39003,22 +39079,22 @@
   },
   {
     "name": "vtm",
-    "version": "0.9.44",
+    "version": "0.9.50",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://vtm.netxs.online/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.44.tar.gz",
+    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.50.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/80b2951af/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/80b2951af/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/80b2951af/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c82699c90/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c82699c90/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c82699c90/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/80b2951af/packages/vtm/netxs-desktopio-logger.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/c82699c90/packages/vtm/0001-android-no-cuserid.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/80b2951af/packages/vtm/netxs-desktopio-logger.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c82699c90/packages/vtm/0001-android-no-cuserid.patch"
     ],
     "auto_updated": true
   },
