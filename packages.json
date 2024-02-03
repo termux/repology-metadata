@@ -3131,7 +3131,7 @@
   },
   {
     "name": "c-toxcore",
-    "version": "0.2.18-p20230303",
+    "version": "0.2.18-p20240129",
     "description": "Backend library for the Tox protocol",
     "homepage": "https://tox.chat",
     "depends": [
@@ -3139,11 +3139,11 @@
       "libopus",
       "libvpx"
     ],
-    "srcurl": "git+https://github.com/TokTok/toxcore",
+    "srcurl": "git+https://github.com/TokTok/c-toxcore",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd12d6600/packages/c-toxcore",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd12d6600/packages/c-toxcore/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd12d6600/packages/c-toxcore/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/39ba20c8c/packages/c-toxcore",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/39ba20c8c/packages/c-toxcore/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/39ba20c8c/packages/c-toxcore/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -5931,15 +5931,15 @@
   },
   {
     "name": "dnote",
-    "version": "1:0.15.0",
+    "version": "1:0.15.1",
     "description": "A simple command line notebook for programmers",
     "homepage": "https://www.getdnote.com/",
     "depends": [],
-    "srcurl": "https://github.com/dnote/dnote/archive/refs/tags/cli-v0.15.0.tar.gz",
+    "srcurl": "https://github.com/dnote/dnote/archive/refs/tags/cli-v0.15.1.tar.gz",
     "maintainer": "Ravener <ravener.anime@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e1adb3a79/packages/dnote",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e1adb3a79/packages/dnote/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e1adb3a79/packages/dnote/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93ebee2e0/packages/dnote",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93ebee2e0/packages/dnote/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93ebee2e0/packages/dnote/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -25012,36 +25012,37 @@
       "pcre2",
       "pulseaudio",
       "yajl",
-      "zlib"
+      "zlib",
+      "fmt"
     ],
     "srcurl": "https://github.com/MusicPlayerDaemon/MPD/archive/v0.23.15.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/95438f466/packages/mpd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/010becac8/packages/mpd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/doc-mpdconf.example.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/registry.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/src-decoder-plugins-FfmpegIo.hxx.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/src-input-Error.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/95438f466/packages/mpd/thread-Util.cxx.patch"
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/doc-mpdconf.example.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/registry.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/src-decoder-plugins-FfmpegIo.hxx.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/src-input-Error.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/010becac8/packages/mpd/thread-Util.cxx.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/doc-mpdconf.example.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/registry.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/src-decoder-plugins-FfmpegIo.hxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/src-input-Error.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/95438f466/packages/mpd/thread-Util.cxx.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/HybridDsdDecoderPlugin.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/doc-mpdconf.example.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/registry.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/src-decoder-plugins-FfmpegIo.hxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/src-input-Error.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/010becac8/packages/mpd/thread-Util.cxx.patch"
     ],
     "auto_updated": true
   },
@@ -26014,7 +26015,7 @@
   },
   {
     "name": "neomutt",
-    "version": "20231221",
+    "version": "20240201",
     "description": "A version of mutt with added features",
     "homepage": "https://neomutt.org/",
     "depends": [
@@ -26029,24 +26030,24 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/neomutt/neomutt/archive/20231221.tar.gz",
+    "srcurl": "https://github.com/neomutt/neomutt/archive/20240201.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f95840534/packages/neomutt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f95840534/packages/neomutt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f95840534/packages/neomutt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60eaaf934/packages/neomutt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60eaaf934/packages/neomutt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60eaaf934/packages/neomutt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f95840534/packages/neomutt/autosetup-config.guess.patch",
-      "https://github.com/termux/termux-packages/blob/f95840534/packages/neomutt/file.c.patch",
-      "https://github.com/termux/termux-packages/blob/f95840534/packages/neomutt/jimsh0.c.patch",
-      "https://github.com/termux/termux-packages/blob/f95840534/packages/neomutt/muttlib.c.patch",
-      "https://github.com/termux/termux-packages/blob/f95840534/packages/neomutt/smime_keys.patch"
+      "https://github.com/termux/termux-packages/blob/60eaaf934/packages/neomutt/autosetup-config.guess.patch",
+      "https://github.com/termux/termux-packages/blob/60eaaf934/packages/neomutt/file.c.patch",
+      "https://github.com/termux/termux-packages/blob/60eaaf934/packages/neomutt/jimsh0.c.patch",
+      "https://github.com/termux/termux-packages/blob/60eaaf934/packages/neomutt/muttlib.c.patch",
+      "https://github.com/termux/termux-packages/blob/60eaaf934/packages/neomutt/smime_keys.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f95840534/packages/neomutt/autosetup-config.guess.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f95840534/packages/neomutt/file.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f95840534/packages/neomutt/jimsh0.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f95840534/packages/neomutt/muttlib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f95840534/packages/neomutt/smime_keys.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/60eaaf934/packages/neomutt/autosetup-config.guess.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60eaaf934/packages/neomutt/file.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60eaaf934/packages/neomutt/jimsh0.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60eaaf934/packages/neomutt/muttlib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60eaaf934/packages/neomutt/smime_keys.patch"
     ],
     "auto_updated": true
   },
@@ -31159,34 +31160,35 @@
       "opencv",
       "python",
       "python-numpy",
-      "python-pip"
+      "python-pip",
+      "fmt"
     ],
     "srcurl": "git+https://github.com/pytorch/pytorch",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a3268fd71/packages/python-torch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c74a903c3/packages/python-torch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0001-do-not-error-on-cast-function-type-strict.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0002-fix-macros.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0003-impl-posix-shm.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0004-memalign.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0006-fix-cross-compiling-for-FindAVX.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0007-enable-cxx17-by-default.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://github.com/termux/termux-packages/blob/a3268fd71/packages/python-torch/0009-fix-over-optimizing.patch"
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0001-do-not-error-on-cast-function-type-strict.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0002-fix-macros.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0003-impl-posix-shm.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0004-memalign.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0006-fix-cross-compiling-for-FindAVX.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0007-enable-cxx17-by-default.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/c74a903c3/packages/python-torch/0009-fix-over-optimizing.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0001-do-not-error-on-cast-function-type-strict.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0002-fix-macros.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0003-impl-posix-shm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0004-memalign.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0006-fix-cross-compiling-for-FindAVX.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0007-enable-cxx17-by-default.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3268fd71/packages/python-torch/0009-fix-over-optimizing.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0001-do-not-error-on-cast-function-type-strict.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0002-fix-macros.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0003-impl-posix-shm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0004-memalign.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0006-fix-cross-compiling-for-FindAVX.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0007-enable-cxx17-by-default.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c74a903c3/packages/python-torch/0009-fix-over-optimizing.patch"
     ],
     "auto_updated": false
   },
@@ -32045,7 +32047,7 @@
   },
   {
     "name": "recoll",
-    "version": "1.37.0",
+    "version": "1.37.2",
     "description": "Full-text search for your desktop",
     "homepage": "https://www.lesbonscomptes.com/recoll/index.html",
     "depends": [
@@ -32058,26 +32060,24 @@
       "libxslt",
       "zlib"
     ],
-    "srcurl": "https://www.lesbonscomptes.com/recoll/recoll-1.37.0.tar.gz",
+    "srcurl": "https://www.lesbonscomptes.com/recoll/recoll-1.37.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ef9c879ad/packages/recoll",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ef9c879ad/packages/recoll/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ef9c879ad/packages/recoll/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f61985443/packages/recoll",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f61985443/packages/recoll/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f61985443/packages/recoll/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ef9c879ad/packages/recoll/Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/ef9c879ad/packages/recoll/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/ef9c879ad/packages/recoll/libxml-2.12.patch",
-      "https://github.com/termux/termux-packages/blob/ef9c879ad/packages/recoll/m4-libtool.m4.patch",
-      "https://github.com/termux/termux-packages/blob/ef9c879ad/packages/recoll/python-recoll-setup.py.in.diff",
-      "https://github.com/termux/termux-packages/blob/ef9c879ad/packages/recoll/utils-pathut.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/f61985443/packages/recoll/Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/f61985443/packages/recoll/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/f61985443/packages/recoll/m4-libtool.m4.patch",
+      "https://github.com/termux/termux-packages/blob/f61985443/packages/recoll/python-recoll-setup.py.in.diff",
+      "https://github.com/termux/termux-packages/blob/f61985443/packages/recoll/utils-pathut.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ef9c879ad/packages/recoll/Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ef9c879ad/packages/recoll/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ef9c879ad/packages/recoll/libxml-2.12.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ef9c879ad/packages/recoll/m4-libtool.m4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ef9c879ad/packages/recoll/python-recoll-setup.py.in.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/ef9c879ad/packages/recoll/utils-pathut.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f61985443/packages/recoll/Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f61985443/packages/recoll/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f61985443/packages/recoll/m4-libtool.m4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f61985443/packages/recoll/python-recoll-setup.py.in.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f61985443/packages/recoll/utils-pathut.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -33961,15 +33961,15 @@
   },
   {
     "name": "sing-box",
-    "version": "1.8.4",
+    "version": "1.8.5",
     "description": "The universal proxy platform",
     "homepage": "https://sing-box.sagernet.org",
     "depends": [],
-    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.8.4.tar.gz",
+    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.8.5.tar.gz",
     "maintainer": "kay9925@outlook.com",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a087eb319/packages/sing-box",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a087eb319/packages/sing-box/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a087eb319/packages/sing-box/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/642701470/packages/sing-box",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/642701470/packages/sing-box/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/642701470/packages/sing-box/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -37318,7 +37318,7 @@
   },
   {
     "name": "toxic",
-    "version": "0.13.1",
+    "version": "0.14.1",
     "description": "A command line client for Tox",
     "homepage": "https://github.com/JFreegman/toxic",
     "depends": [
@@ -37329,16 +37329,16 @@
       "ncurses",
       "zlib"
     ],
-    "srcurl": "https://github.com/JFreegman/toxic/archive/v0.13.1/toxic-0.13.1.tar.gz",
+    "srcurl": "https://github.com/JFreegman/toxic/archive/v0.14.1/toxic-0.14.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b26e693d4/packages/toxic",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b26e693d4/packages/toxic/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b26e693d4/packages/toxic/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3887047de/packages/toxic",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3887047de/packages/toxic/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3887047de/packages/toxic/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b26e693d4/packages/toxic/cfg-checks-audio.mk.patch"
+      "https://github.com/termux/termux-packages/blob/3887047de/packages/toxic/cfg-checks-audio.mk.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b26e693d4/packages/toxic/cfg-checks-audio.mk.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3887047de/packages/toxic/cfg-checks-audio.mk.patch"
     ],
     "auto_updated": true
   },
@@ -41617,17 +41617,17 @@
   },
   {
     "name": "ipset",
-    "version": "7.19",
+    "version": "7.20",
     "description": "Administration tool for kernel IP sets",
     "homepage": "https://ipset.netfilter.org",
     "depends": [
       "libmnl"
     ],
-    "srcurl": "https://ipset.netfilter.org/ipset-7.19.tar.bz2",
+    "srcurl": "https://ipset.netfilter.org/ipset-7.20.tar.bz2",
     "maintainer": "Vishal Biswas @vishalbiswas",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e8736a38c/root-packages/ipset",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e8736a38c/root-packages/ipset/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e8736a38c/root-packages/ipset/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7385f70bc/root-packages/ipset",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7385f70bc/root-packages/ipset/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7385f70bc/root-packages/ipset/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -51998,7 +51998,7 @@
   },
   {
     "name": "sdl2",
-    "version": "2.28.5",
+    "version": "2.30.0",
     "description": "A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (version 2)",
     "homepage": "https://www.libsdl.org",
     "depends": [
@@ -52014,18 +52014,16 @@
       "libxss",
       "pulseaudio"
     ],
-    "srcurl": "https://www.libsdl.org/release/SDL2-2.28.5.tar.gz",
+    "srcurl": "https://www.libsdl.org/release/SDL2-2.30.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2cb107a9f/x11-packages/sdl2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2cb107a9f/x11-packages/sdl2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2cb107a9f/x11-packages/sdl2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3f86229d6/x11-packages/sdl2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3f86229d6/x11-packages/sdl2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3f86229d6/x11-packages/sdl2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2cb107a9f/x11-packages/sdl2/configure.patch",
-      "https://github.com/termux/termux-packages/blob/2cb107a9f/x11-packages/sdl2/src-video-wayland-SDL_waylandsym.h.patch"
+      "https://github.com/termux/termux-packages/blob/3f86229d6/x11-packages/sdl2/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2cb107a9f/x11-packages/sdl2/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2cb107a9f/x11-packages/sdl2/src-video-wayland-SDL_waylandsym.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3f86229d6/x11-packages/sdl2/configure.patch"
     ],
     "auto_updated": true
   },
