@@ -3810,15 +3810,15 @@
   },
   {
     "name": "chezmoi",
-    "version": "2.47.0",
+    "version": "2.47.1",
     "description": "Manage your dotfiles across multiple machines",
     "homepage": "https://chezmoi.io",
     "depends": [],
-    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.47.0.tar.gz",
+    "srcurl": "https://github.com/twpayne/chezmoi/archive/v2.47.1.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/434c1ed95/packages/chezmoi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/434c1ed95/packages/chezmoi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/434c1ed95/packages/chezmoi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/98645c554/packages/chezmoi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98645c554/packages/chezmoi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98645c554/packages/chezmoi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -10282,24 +10282,20 @@
   },
   {
     "name": "google-glog",
-    "version": "0.6.0",
+    "version": "0.7.0",
     "description": "Logging library for C++",
     "homepage": "https://github.com/google/glog",
     "depends": [
       "gflags",
       "libc++"
     ],
-    "srcurl": "https://github.com/google/glog/archive/v0.6.0.tar.gz",
+    "srcurl": "https://github.com/google/glog/archive/v0.7.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/11138a723/packages/google-glog",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11138a723/packages/google-glog/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/google-glog/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/11138a723/packages/google-glog/CMakeLists.txt.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/google-glog/CMakeLists.txt.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ed822efd4/packages/google-glog",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ed822efd4/packages/google-glog/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ed822efd4/packages/google-glog/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -14789,9 +14785,9 @@
     ],
     "srcurl": "http://ceres-solver.org/ceres-solver-2.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/41ff73de0/packages/libceres-solver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/41ff73de0/packages/libceres-solver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/41ff73de0/packages/libceres-solver/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/672e3a0de/packages/libceres-solver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/672e3a0de/packages/libceres-solver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/672e3a0de/packages/libceres-solver/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -19201,11 +19197,15 @@
     ],
     "srcurl": "https://github.com/rime/librime/archive/refs/tags/1.10.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/326697cf2/packages/librime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/326697cf2/packages/librime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/326697cf2/packages/librime/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7223bf73b/packages/librime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7223bf73b/packages/librime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7223bf73b/packages/librime/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7223bf73b/packages/librime/827.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7223bf73b/packages/librime/827.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -21566,23 +21566,23 @@
   },
   {
     "name": "libxcb",
-    "version": "1.16",
+    "version": "1.16.1",
     "description": "X11 client-side library",
     "homepage": "https://xcb.freedesktop.org/",
     "depends": [
       "libxau",
       "libxdmcp"
     ],
-    "srcurl": "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.16.tar.xz",
+    "srcurl": "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.16.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/50059581a/packages/libxcb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/50059581a/packages/libxcb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/50059581a/packages/libxcb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c7f58b8b/packages/libxcb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c7f58b8b/packages/libxcb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c7f58b8b/packages/libxcb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/50059581a/packages/libxcb/libxcb-1.12_src_xcb_util.c.patch"
+      "https://github.com/termux/termux-packages/blob/7c7f58b8b/packages/libxcb/libxcb-1.12_src_xcb_util.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/50059581a/packages/libxcb/libxcb-1.12_src_xcb_util.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7c7f58b8b/packages/libxcb/libxcb-1.12_src_xcb_util.c.patch"
     ],
     "auto_updated": true
   },
@@ -29418,38 +29418,38 @@
     ],
     "srcurl": "git+https://github.com/OpenAtomFoundation/pika",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a6c530b86/packages/pika",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/026fd84ed/packages/pika",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/include-pika_statistic.h.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/src-pika_admin.cc.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/src-pika_repl_client_conn.cc.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-blackwidow-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-blackwidow-src-coding.h.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-blackwidow-src-db_checkpoint.cc.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-blackwidow-src-options_helper.h.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-pink-pink-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-pink-pink-src-http_conn.cc.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-slash-slash-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-slash-slash-src-env.cc.patch",
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/pika/third-slash-slash-src-posix.cc.patch"
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/include-pika_statistic.h.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/src-pika_admin.cc.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/src-pika_repl_client_conn.cc.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-blackwidow-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-blackwidow-src-coding.h.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-blackwidow-src-db_checkpoint.cc.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-blackwidow-src-options_helper.h.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-pink-pink-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-pink-pink-src-http_conn.cc.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-slash-slash-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-slash-slash-src-env.cc.patch",
+      "https://github.com/termux/termux-packages/blob/026fd84ed/packages/pika/third-slash-slash-src-posix.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/include-pika_statistic.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/src-pika_admin.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/src-pika_repl_client_conn.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-blackwidow-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-blackwidow-src-coding.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-blackwidow-src-db_checkpoint.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-blackwidow-src-options_helper.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-pink-pink-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-pink-pink-src-http_conn.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-slash-slash-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-slash-slash-src-env.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/pika/third-slash-slash-src-posix.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/include-pika_statistic.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/src-pika_admin.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/src-pika_repl_client_conn.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-blackwidow-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-blackwidow-src-coding.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-blackwidow-src-db_checkpoint.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-blackwidow-src-options_helper.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-pink-pink-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-pink-pink-src-http_conn.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-slash-slash-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-slash-slash-src-env.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/026fd84ed/packages/pika/third-slash-slash-src-posix.cc.patch"
     ],
     "auto_updated": false
   },
