@@ -9637,22 +9637,22 @@
   },
   {
     "name": "glslang",
-    "version": "14.0.0",
+    "version": "14.1.0",
     "description": "OpenGL and OpenGL ES shader front end and validator",
     "homepage": "https://github.com/KhronosGroup/glslang",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/KhronosGroup/glslang/archive/refs/tags/14.0.0.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/glslang/archive/refs/tags/14.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a6c530b86/packages/glslang",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a6c530b86/packages/glslang/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/glslang/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2846e87c3/packages/glslang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2846e87c3/packages/glslang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2846e87c3/packages/glslang/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a6c530b86/packages/glslang/revert-only-install-public-headers.patch"
+      "https://github.com/termux/termux-packages/blob/2846e87c3/packages/glslang/revert-only-install-public-headers.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a6c530b86/packages/glslang/revert-only-install-public-headers.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2846e87c3/packages/glslang/revert-only-install-public-headers.patch"
     ],
     "auto_updated": true
   },
@@ -11195,13 +11195,14 @@
     "description": "has checks presence of various command line tools and their versions on the path",
     "homepage": "https://github.com/kdabir/has",
     "depends": [
-      "bash"
+      "bash",
+      "ncurses-utils"
     ],
     "srcurl": "https://github.com/kdabir/has/archive/v1.5.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0476fe844/packages/has",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0476fe844/packages/has/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0476fe844/packages/has/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0924b72e7/packages/has",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0924b72e7/packages/has/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0924b72e7/packages/has/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -14218,7 +14219,7 @@
   },
   {
     "name": "libarrow-cpp",
-    "version": "15.0.0",
+    "version": "15.0.1",
     "description": "C++ libraries for Apache Arrow",
     "homepage": "https://github.com/apache/arrow",
     "depends": [
@@ -14232,18 +14233,18 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/apache/arrow/archive/refs/tags/apache-arrow-15.0.0.tar.gz",
+    "srcurl": "https://github.com/apache/arrow/archive/refs/tags/apache-arrow-15.0.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/97014dc48/packages/libarrow-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/97014dc48/packages/libarrow-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/97014dc48/packages/libarrow-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ac1dbb3f/packages/libarrow-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/libarrow-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/libarrow-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/97014dc48/packages/libarrow-cpp/cpp-cmake_modules-Findlz4Alt.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/97014dc48/packages/libarrow-cpp/cpp-src-arrow-util-io_util.cc.patch"
+      "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/libarrow-cpp/cpp-cmake_modules-Findlz4Alt.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/libarrow-cpp/cpp-src-arrow-util-io_util.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/97014dc48/packages/libarrow-cpp/cpp-cmake_modules-Findlz4Alt.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/97014dc48/packages/libarrow-cpp/cpp-src-arrow-util-io_util.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/libarrow-cpp/cpp-cmake_modules-Findlz4Alt.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/libarrow-cpp/cpp-src-arrow-util-io_util.cc.patch"
     ],
     "auto_updated": true
   },
@@ -14859,17 +14860,17 @@
   },
   {
     "name": "libcoap",
-    "version": "4.3.4",
+    "version": "4.3.4a",
     "description": "Implementation of CoAP, a lightweight protocol for resource constrained devices",
     "homepage": "https://libcoap.net/",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/obgm/libcoap/archive/v4.3.4.tar.gz",
+    "srcurl": "https://github.com/obgm/libcoap/archive/v4.3.4a.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f5f220458/packages/libcoap",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f5f220458/packages/libcoap/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f5f220458/packages/libcoap/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e8daaecdd/packages/libcoap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e8daaecdd/packages/libcoap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e8daaecdd/packages/libcoap/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -17976,7 +17977,7 @@
   },
   {
     "name": "libneon",
-    "version": "0.32.5",
+    "version": "0.33.0",
     "description": "An HTTP/1.1 and WebDAV client library, with a C interface",
     "homepage": "https://notroj.github.io/neon/",
     "depends": [
@@ -17984,11 +17985,11 @@
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://notroj.github.io/neon/neon-0.32.5.tar.gz",
+    "srcurl": "https://notroj.github.io/neon/neon-0.33.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/30d973ced/packages/libneon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30d973ced/packages/libneon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30d973ced/packages/libneon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7db598859/packages/libneon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7db598859/packages/libneon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7db598859/packages/libneon/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -18115,15 +18116,15 @@
   },
   {
     "name": "libnghttp3",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "HTTP/3 library written in C",
     "homepage": "https://nghttp2.org/nghttp3/",
     "depends": [],
-    "srcurl": "https://github.com/ngtcp2/nghttp3/releases/download/v1.1.0/nghttp3-1.1.0.tar.xz",
+    "srcurl": "https://github.com/ngtcp2/nghttp3/releases/download/v1.2.0/nghttp3-1.2.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6ef6bf6ff/packages/libnghttp3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6ef6bf6ff/packages/libnghttp3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6ef6bf6ff/packages/libnghttp3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ba27655d3/packages/libnghttp3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ba27655d3/packages/libnghttp3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ba27655d3/packages/libnghttp3/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -19110,18 +19111,18 @@
   },
   {
     "name": "libre2",
-    "version": "2023.07.01",
+    "version": "2024.03.01",
     "description": "A regular expression library",
     "homepage": "https://github.com/google/re2",
     "depends": [
       "abseil-cpp",
       "libc++"
     ],
-    "srcurl": "https://github.com/google/re2/archive/2023-07-01.tar.gz",
+    "srcurl": "https://github.com/google/re2/releases/download/2024-03-01/re2-2024-03-01.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2bb7250c5/packages/libre2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2bb7250c5/packages/libre2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2bb7250c5/packages/libre2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6925ea36/packages/libre2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6925ea36/packages/libre2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6925ea36/packages/libre2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -21530,7 +21531,7 @@
   },
   {
     "name": "libxapian",
-    "version": "1.4.24",
+    "version": "1.4.25",
     "description": "Xapian search engine library",
     "homepage": "https://xapian.org",
     "depends": [
@@ -21538,11 +21539,11 @@
       "libuuid",
       "zlib"
     ],
-    "srcurl": "https://oligarchy.co.uk/xapian/1.4.24/xapian-core-1.4.24.tar.xz",
+    "srcurl": "https://oligarchy.co.uk/xapian/1.4.25/xapian-core-1.4.25.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ce6e28915/packages/libxapian",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ce6e28915/packages/libxapian/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ce6e28915/packages/libxapian/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/32d971489/packages/libxapian",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32d971489/packages/libxapian/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32d971489/packages/libxapian/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31068,6 +31069,24 @@
     "auto_updated": true
   },
   {
+    "name": "python-msgpack",
+    "version": "1.0.7",
+    "description": "MessagePack serializer implementation for Python",
+    "homepage": "https://github.com/msgpack/msgpack-python",
+    "depends": [
+      "libc++",
+      "python"
+    ],
+    "srcurl": "https://github.com/msgpack/msgpack-python/archive/refs/tags/v1.0.7.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec5ca9b62/packages/python-msgpack",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec5ca9b62/packages/python-msgpack/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec5ca9b62/packages/python-msgpack/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "python-numpy",
     "version": "1.26.4",
     "description": "The fundamental package for scientific computing with Python",
@@ -31153,7 +31172,7 @@
   },
   {
     "name": "python-pyarrow",
-    "version": "15.0.0",
+    "version": "15.0.1",
     "description": "Python bindings for Apache Arrow",
     "homepage": "https://github.com/apache/arrow",
     "depends": [
@@ -31162,20 +31181,22 @@
       "python",
       "python-numpy"
     ],
-    "srcurl": "https://github.com/apache/arrow/archive/refs/tags/apache-arrow-15.0.0.tar.gz",
+    "srcurl": "https://github.com/apache/arrow/archive/refs/tags/apache-arrow-15.0.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/97014dc48/packages/python-pyarrow",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/97014dc48/packages/python-pyarrow/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/97014dc48/packages/python-pyarrow/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ac1dbb3f/packages/python-pyarrow",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/python-pyarrow/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/python-pyarrow/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/97014dc48/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/97014dc48/packages/python-pyarrow/python-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/97014dc48/packages/python-pyarrow/setup.py.diff"
+      "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/python-pyarrow/python-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/python-pyarrow/setup.py.diff",
+      "https://github.com/termux/termux-packages/blob/4ac1dbb3f/packages/python-pyarrow/upstream-15.0.1-Fix-except-clauses.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/97014dc48/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/97014dc48/packages/python-pyarrow/python-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/97014dc48/packages/python-pyarrow/setup.py.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/python-pyarrow/python-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/python-pyarrow/setup.py.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/4ac1dbb3f/packages/python-pyarrow/upstream-15.0.1-Fix-except-clauses.patch"
     ],
     "auto_updated": true
   },
@@ -32064,7 +32085,7 @@
   },
   {
     "name": "rdrview",
-    "version": "1:0.1",
+    "version": "1:0.1.1",
     "description": "Command line tool to extract the main content from a webpage",
     "homepage": "https://github.com/eafer/rdrview",
     "depends": [
@@ -32073,20 +32094,18 @@
       "libseccomp",
       "libxml2"
     ],
-    "srcurl": "https://github.com/eafer/rdrview/archive/refs/tags/v0.1.tar.gz",
+    "srcurl": "https://github.com/eafer/rdrview/archive/refs/tags/v0.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd7004057/packages/rdrview",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd7004057/packages/rdrview/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd7004057/packages/rdrview/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a5177dc63/packages/rdrview",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a5177dc63/packages/rdrview/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a5177dc63/packages/rdrview/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/dd7004057/packages/rdrview/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/dd7004057/packages/rdrview/add-seccomp-rules.patch",
-      "https://github.com/termux/termux-packages/blob/dd7004057/packages/rdrview/src-rdrview.c.patch"
+      "https://github.com/termux/termux-packages/blob/a5177dc63/packages/rdrview/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/a5177dc63/packages/rdrview/src-rdrview.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/dd7004057/packages/rdrview/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dd7004057/packages/rdrview/add-seccomp-rules.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dd7004057/packages/rdrview/src-rdrview.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a5177dc63/packages/rdrview/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a5177dc63/packages/rdrview/src-rdrview.c.patch"
     ],
     "auto_updated": true
   },
@@ -33714,17 +33733,17 @@
   },
   {
     "name": "shaderc",
-    "version": "2023.8",
+    "version": "2024.0",
     "description": "Collection of tools, libraries, and tests for Vulkan shader compilation",
     "homepage": "https://github.com/google/shaderc",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz",
+    "srcurl": "https://github.com/google/shaderc/archive/refs/tags/v2024.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bddb88b79/packages/shaderc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bddb88b79/packages/shaderc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bddb88b79/packages/shaderc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0f336717c/packages/shaderc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0f336717c/packages/shaderc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0f336717c/packages/shaderc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -36204,20 +36223,20 @@
   },
   {
     "name": "teleport-tsh",
-    "version": "15.1.1",
+    "version": "15.1.3",
     "description": "Secure Access for Developers that doesn't get in the way",
     "homepage": "https://github.com/gravitational/teleport",
     "depends": [],
-    "srcurl": "https://github.com/gravitational/teleport/archive/refs/tags/v15.1.1.tar.gz",
+    "srcurl": "https://github.com/gravitational/teleport/archive/refs/tags/v15.1.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d4835b3c/packages/teleport-tsh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d4835b3c/packages/teleport-tsh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d4835b3c/packages/teleport-tsh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0392c3b63/packages/teleport-tsh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0392c3b63/packages/teleport-tsh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0392c3b63/packages/teleport-tsh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7d4835b3c/packages/teleport-tsh/metadata_linux.go.patch"
+      "https://github.com/termux/termux-packages/blob/0392c3b63/packages/teleport-tsh/metadata_linux.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7d4835b3c/packages/teleport-tsh/metadata_linux.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0392c3b63/packages/teleport-tsh/metadata_linux.go.patch"
     ],
     "auto_updated": true
   },
@@ -39320,18 +39339,18 @@
   },
   {
     "name": "vulkan-extension-layer",
-    "version": "1.3.279",
+    "version": "1.3.280",
     "description": "Vulkan Extension Layer",
     "homepage": "https://github.com/KhronosGroup/Vulkan-ExtensionLayer",
     "depends": [
       "libc++",
       "vulkan-loader"
     ],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-ExtensionLayer/archive/refs/tags/v1.3.279.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-ExtensionLayer/archive/refs/tags/v1.3.280.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3c395a301/packages/vulkan-extension-layer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3c395a301/packages/vulkan-extension-layer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3c395a301/packages/vulkan-extension-layer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dba62a43f/packages/vulkan-extension-layer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dba62a43f/packages/vulkan-extension-layer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dba62a43f/packages/vulkan-extension-layer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54113,7 +54132,7 @@
   },
   {
     "name": "xarchiver",
-    "version": "0.5.4.22",
+    "version": "0.5.4.23",
     "description": "GTK+ frontend to various command line archivers",
     "homepage": "https://github.com/ib/xarchiver",
     "depends": [
@@ -54121,24 +54140,26 @@
       "glib",
       "gtk3"
     ],
-    "srcurl": "https://github.com/ib/xarchiver/archive/0.5.4.22.tar.gz",
+    "srcurl": "https://github.com/ib/xarchiver/archive/0.5.4.23.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c79e4f0b5/x11-packages/xarchiver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c79e4f0b5/x11-packages/xarchiver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c79e4f0b5/x11-packages/xarchiver/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d79307b14/x11-packages/xarchiver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d79307b14/x11-packages/xarchiver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d79307b14/x11-packages/xarchiver/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_open-with-dlg.c.patch",
-      "https://github.com/termux/termux-packages/blob/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_pref_dialog.c.patch",
-      "https://github.com/termux/termux-packages/blob/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_socket.c.patch",
-      "https://github.com/termux/termux-packages/blob/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_window.c.patch",
-      "https://github.com/termux/termux-packages/blob/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_xdgmime_xdgmime.c.patch"
+      "https://github.com/termux/termux-packages/blob/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_open-with-dlg.c.patch",
+      "https://github.com/termux/termux-packages/blob/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_pref_dialog.c.patch",
+      "https://github.com/termux/termux-packages/blob/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_socket.c.patch",
+      "https://github.com/termux/termux-packages/blob/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_window.c.patch",
+      "https://github.com/termux/termux-packages/blob/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_xdgmime_xdgmime.c.patch",
+      "https://github.com/termux/termux-packages/blob/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.23_src_extract_dialog.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_open-with-dlg.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_pref_dialog.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_socket.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_window.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c79e4f0b5/x11-packages/xarchiver/xarchiver-0.5.4.13_src_xdgmime_xdgmime.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_open-with-dlg.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_pref_dialog.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_socket.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_window.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.13_src_xdgmime_xdgmime.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d79307b14/x11-packages/xarchiver/xarchiver-0.5.4.23_src_extract_dialog.c.patch"
     ],
     "auto_updated": true
   },
