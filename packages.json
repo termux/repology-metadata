@@ -4095,7 +4095,7 @@
   },
   {
     "name": "clifm",
-    "version": "1.17",
+    "version": "1.18",
     "description": "The shell-like, command line terminal file manager: simple, fast, extensible, and lightweight as hell",
     "homepage": "https://github.com/leo-arch/clifm",
     "depends": [
@@ -4106,11 +4106,11 @@
       "libandroid-glob",
       "libandroid-support"
     ],
-    "srcurl": "https://github.com/leo-arch/clifm/releases/download/v1.17/clifm-1.17.tar.gz",
+    "srcurl": "https://github.com/leo-arch/clifm/releases/download/v1.18/clifm-1.18.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9085ee7c9/packages/clifm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9085ee7c9/packages/clifm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9085ee7c9/packages/clifm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/36dfd94fd/packages/clifm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/36dfd94fd/packages/clifm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/36dfd94fd/packages/clifm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -9299,7 +9299,7 @@
     "name": "git-delta",
     "version": "0.17.0",
     "description": "A syntax-highlighter for git and diff output",
-    "homepage": "https://github.com/dandavison/delta",
+    "homepage": "https://dandavison.github.io/delta/",
     "depends": [
       "git",
       "libgit2",
@@ -9307,9 +9307,9 @@
     ],
     "srcurl": "https://github.com/dandavison/delta/archive/0.17.0.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f7575422e/packages/git-delta",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f7575422e/packages/git-delta/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f7575422e/packages/git-delta/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6941d15b9/packages/git-delta",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6941d15b9/packages/git-delta/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6941d15b9/packages/git-delta/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -36754,7 +36754,7 @@
   },
   {
     "name": "texlive-bin",
-    "version": "20230313",
+    "version": "20240310",
     "description": "TeX Live is a distribution of the TeX typesetting system. This package contains architecture dependent binaries.",
     "homepage": "https://www.tug.org/texlive/",
     "depends": [
@@ -36777,36 +36777,30 @@
       "zlib",
       "zziplib"
     ],
-    "srcurl": "https://github.com/TeX-Live/texlive-source/archive/refs/heads/tags/texlive-2023.0.tar.gz",
+    "srcurl": "https://github.com/TeX-Live/texlive-source/archive/refs/heads/tags/texlive-2024.0.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b318c387d/packages/texlive-bin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fd7e1321b/packages/texlive-bin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fd7e1321b/packages/texlive-bin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fd7e1321b/packages/texlive-bin/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/eptex-bool.patch",
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/fix-path-to-md5.h.patch",
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/pdftex-bool.patch",
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/texk-kpathsea-texmf.cnf.patch",
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/texk-web2c-Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch",
-      "https://github.com/termux/termux-packages/blob/b318c387d/packages/texlive-bin/zziplib_disable_have_dirent.patch"
+      "https://github.com/termux/termux-packages/blob/fd7e1321b/packages/texlive-bin/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/fd7e1321b/packages/texlive-bin/rename-bool.patch",
+      "https://github.com/termux/termux-packages/blob/fd7e1321b/packages/texlive-bin/texk-kpathsea-texmf.cnf.diff",
+      "https://github.com/termux/termux-packages/blob/fd7e1321b/packages/texlive-bin/texk-web2c-Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/fd7e1321b/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/eptex-bool.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/fix-path-to-md5.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/pdftex-bool.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/texk-kpathsea-texmf.cnf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/texk-web2c-Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b318c387d/packages/texlive-bin/zziplib_disable_have_dirent.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fd7e1321b/packages/texlive-bin/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fd7e1321b/packages/texlive-bin/rename-bool.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fd7e1321b/packages/texlive-bin/texk-kpathsea-texmf.cnf.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/fd7e1321b/packages/texlive-bin/texk-web2c-Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fd7e1321b/packages/texlive-bin/texk-web2c-luatexdir-luaffi-ffi.h.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "texlive-installer",
-    "version": "20230313",
+    "version": "20240310",
     "description": "Wrapper around texlive's install-tl script",
     "homepage": "https://www.tug.org/texlive/",
     "depends": [
@@ -36817,30 +36811,28 @@
       "lz4",
       "xz-utils"
     ],
-    "srcurl": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/install-tl-unx.tar.gz",
+    "srcurl": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2024/install-tl-unx.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0005180f2/packages/texlive-installer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e65c289e/packages/texlive-installer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/TLUtils.pm.diff",
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/crossrefware.diff",
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/install-tl.patch",
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/pdfjam.diff",
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/texconfig.sh.diff",
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/texdef.pl.diff",
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/tlmgr.pl.diff",
-      "https://github.com/termux/termux-packages/blob/0005180f2/packages/texlive-installer/tlpkg-TeXLive-TLUtils.pm.patch"
+      "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/TLUtils.pm.diff",
+      "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/crossrefware.diff",
+      "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/install-tl.patch",
+      "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/pdfjam.diff",
+      "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/texconfig.sh.diff",
+      "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/texdef.pl.diff",
+      "https://github.com/termux/termux-packages/blob/6e65c289e/packages/texlive-installer/tlmgr.pl.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/TLUtils.pm.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/crossrefware.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/install-tl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/pdfjam.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/texconfig.sh.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/texdef.pl.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/tlmgr.pl.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0005180f2/packages/texlive-installer/tlpkg-TeXLive-TLUtils.pm.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/TLUtils.pm.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/crossrefware.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/install-tl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/pdfjam.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/texconfig.sh.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/texdef.pl.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e65c289e/packages/texlive-installer/tlmgr.pl.diff"
     ],
     "auto_updated": false
   },
