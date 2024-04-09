@@ -34839,32 +34839,32 @@
   },
   {
     "name": "spirv-headers",
-    "version": "1.3.261.1",
+    "version": "1.3.280.0",
     "description": "SPIR-V Headers",
     "homepage": "https://github.com/KhronosGroup/SPIRV-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.261.1.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.280.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6d0e1ec2c/packages/spirv-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6d0e1ec2c/packages/spirv-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6d0e1ec2c/packages/spirv-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4777c9f81/packages/spirv-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4777c9f81/packages/spirv-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4777c9f81/packages/spirv-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "spirv-tools",
-    "version": "1.3.261.1",
+    "version": "1.3.280.0",
     "description": "SPIR-V Tools",
     "homepage": "https://github.com/KhronosGroup/SPIRV-Tools",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/sdk-1.3.261.1.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.280.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6d0e1ec2c/packages/spirv-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6d0e1ec2c/packages/spirv-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6d0e1ec2c/packages/spirv-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f980e5131/packages/spirv-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f980e5131/packages/spirv-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f980e5131/packages/spirv-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -39450,11 +39450,15 @@
     ],
     "srcurl": "https://github.com/KhronosGroup/Vulkan-ExtensionLayer/archive/refs/tags/v1.3.281.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/47d722324/packages/vulkan-extension-layer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/47d722324/packages/vulkan-extension-layer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/47d722324/packages/vulkan-extension-layer/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ac6f8c265/packages/vulkan-extension-layer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ac6f8c265/packages/vulkan-extension-layer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ac6f8c265/packages/vulkan-extension-layer/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/ac6f8c265/packages/vulkan-extension-layer/0001-no-android.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/ac6f8c265/packages/vulkan-extension-layer/0001-no-android.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -39557,14 +39561,40 @@
     "depends": [],
     "srcurl": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/v1.3.281.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8f309a497/packages/vulkan-utility-libraries",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8f309a497/packages/vulkan-utility-libraries/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8f309a497/packages/vulkan-utility-libraries/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4c319ef5f/packages/vulkan-utility-libraries",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4c319ef5f/packages/vulkan-utility-libraries/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4c319ef5f/packages/vulkan-utility-libraries/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8f309a497/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
+      "https://github.com/termux/termux-packages/blob/4c319ef5f/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8f309a497/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4c319ef5f/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
+    ],
+    "auto_updated": true
+  },
+  {
+    "name": "vulkan-validation-layers",
+    "version": "1.3.281",
+    "description": "Vulkan Validation Layers",
+    "homepage": "https://github.com/KhronosGroup/Vulkan-ValidationLayers",
+    "depends": [
+      "libc++",
+      "vulkan-loader"
+    ],
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/v1.3.281.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9810cad99/packages/vulkan-validation-layers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9810cad99/packages/vulkan-validation-layers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9810cad99/packages/vulkan-validation-layers/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/9810cad99/packages/vulkan-validation-layers/0001-no-android.patch",
+      "https://github.com/termux/termux-packages/blob/9810cad99/packages/vulkan-validation-layers/0002-getenv.patch",
+      "https://github.com/termux/termux-packages/blob/9810cad99/packages/vulkan-validation-layers/0003-layers-utils-android_ndk_types.h.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/9810cad99/packages/vulkan-validation-layers/0001-no-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9810cad99/packages/vulkan-validation-layers/0002-getenv.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9810cad99/packages/vulkan-validation-layers/0003-layers-utils-android_ndk_types.h.patch"
     ],
     "auto_updated": true
   },
@@ -55992,7 +56022,7 @@
   },
   {
     "name": "xorg-xauth",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "X.Org authorization settings program",
     "homepage": "https://xorg.freedesktop.org/",
     "depends": [
@@ -56001,14 +56031,14 @@
       "libxext",
       "libxmu"
     ],
-    "srcurl": "https://xorg.freedesktop.org/releases/individual/app/xauth-1.1.2.tar.xz",
+    "srcurl": "https://xorg.freedesktop.org/releases/individual/app/xauth-1.1.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4810051dc/x11-packages/xorg-xauth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4810051dc/x11-packages/xorg-xauth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4810051dc/x11-packages/xorg-xauth/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/aa25faded/x11-packages/xorg-xauth",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aa25faded/x11-packages/xorg-xauth/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aa25faded/x11-packages/xorg-xauth/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "xorg-xcalc",
@@ -56176,20 +56206,20 @@
   },
   {
     "name": "xorg-xprop",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "description": "Utility to print properties of X11 windows",
     "homepage": "https://xorg.freedesktop.org/",
     "depends": [
       "libx11"
     ],
-    "srcurl": "https://xorg.freedesktop.org/releases/individual/app/xprop-1.2.6.tar.xz",
+    "srcurl": "https://xorg.freedesktop.org/releases/individual/app/xprop-1.2.7.tar.xz",
     "maintainer": "Rafael Kitover <rkitover@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec03d2520/x11-packages/xorg-xprop",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec03d2520/x11-packages/xorg-xprop/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec03d2520/x11-packages/xorg-xprop/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ccf59a0dc/x11-packages/xorg-xprop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ccf59a0dc/x11-packages/xorg-xprop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ccf59a0dc/x11-packages/xorg-xprop/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "xorg-xrandr",
