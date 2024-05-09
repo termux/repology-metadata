@@ -1454,25 +1454,27 @@
   },
   {
     "name": "asymptote",
-    "version": "2.86",
+    "version": "2.89",
     "description": "A powerful descriptive vector graphics language for technical drawing",
     "homepage": "https://asymptote.sourceforge.io/",
     "depends": [
       "fftw",
       "libc++",
       "libtirpc",
-      "zlib"
+      "zlib",
+      "ncurses",
+      "readline"
     ],
-    "srcurl": "https://downloads.sourceforge.net/asymptote/asymptote-2.86.src.tgz",
+    "srcurl": "https://downloads.sourceforge.net/asymptote/asymptote-2.89.src.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6d2ab037d/packages/asymptote",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6d2ab037d/packages/asymptote/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6d2ab037d/packages/asymptote/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb5a383d5/packages/asymptote",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb5a383d5/packages/asymptote/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb5a383d5/packages/asymptote/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6d2ab037d/packages/asymptote/configure.patch"
+      "https://github.com/termux/termux-packages/blob/eb5a383d5/packages/asymptote/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6d2ab037d/packages/asymptote/configure.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/eb5a383d5/packages/asymptote/configure.patch"
     ],
     "auto_updated": false
   },
@@ -2761,7 +2763,7 @@
   },
   {
     "name": "botan3",
-    "version": "3.3.0",
+    "version": "3.4.0",
     "description": "Crypto and TLS for Modern C++",
     "homepage": "https://botan.randombit.net/",
     "depends": [
@@ -2771,11 +2773,11 @@
       "libsqlite",
       "zlib"
     ],
-    "srcurl": "https://botan.randombit.net/releases/Botan-3.3.0.tar.xz",
+    "srcurl": "https://botan.randombit.net/releases/Botan-3.4.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b69214b14/packages/botan3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b69214b14/packages/botan3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b69214b14/packages/botan3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a33202c7/packages/botan3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a33202c7/packages/botan3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a33202c7/packages/botan3/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -8042,20 +8044,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.2.49",
+    "version": "0.2.50",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.2.49.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.2.50.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/891a8d42d/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/891a8d42d/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/891a8d42d/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/816a82fc2/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/816a82fc2/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/816a82fc2/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/891a8d42d/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/816a82fc2/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/891a8d42d/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/816a82fc2/packages/flyctl/getcpuinfo.patch"
     ],
     "auto_updated": true
   },
@@ -9047,15 +9049,15 @@
   },
   {
     "name": "geth",
-    "version": "1.14.0",
+    "version": "1.14.2",
     "description": "Go implementation of the Ethereum protocol",
     "homepage": "https://geth.ethereum.org/",
     "depends": [],
-    "srcurl": "https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.14.0.tar.gz",
+    "srcurl": "https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.14.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f740903a1/packages/geth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f740903a1/packages/geth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f740903a1/packages/geth/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/17ef009cb/packages/geth",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17ef009cb/packages/geth/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17ef009cb/packages/geth/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -9152,15 +9154,15 @@
   },
   {
     "name": "gh",
-    "version": "2.49.0",
+    "version": "2.49.1",
     "description": "GitHub’s official command line tool",
     "homepage": "https://cli.github.com/",
     "depends": [],
-    "srcurl": "https://github.com/cli/cli/archive/v2.49.0.tar.gz",
+    "srcurl": "https://github.com/cli/cli/archive/v2.49.1.tar.gz",
     "maintainer": "Krishna kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a8bdfebcc/packages/gh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a8bdfebcc/packages/gh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a8bdfebcc/packages/gh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f183d79d3/packages/gh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f183d79d3/packages/gh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f183d79d3/packages/gh/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -11827,17 +11829,17 @@
   },
   {
     "name": "hugo",
-    "version": "0.125.6",
+    "version": "0.125.7",
     "description": "A fast and flexible static site generator",
     "homepage": "https://gohugo.io/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.125.6.tar.gz",
+    "srcurl": "https://github.com/gohugoio/hugo/archive/v0.125.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3203ff359/packages/hugo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3203ff359/packages/hugo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3203ff359/packages/hugo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d34f9fac4/packages/hugo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d34f9fac4/packages/hugo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d34f9fac4/packages/hugo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -14603,7 +14605,7 @@
   },
   {
     "name": "libc++utilities",
-    "version": "5.24.7",
+    "version": "5.24.8",
     "description": "Useful C++ classes and routines such as argument parser, IO and conversion utilities",
     "homepage": "https://github.com/Martchus/cpp-utilities",
     "depends": [
@@ -14611,16 +14613,16 @@
       "libc++",
       "libiconv"
     ],
-    "srcurl": "https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.24.7.tar.gz",
+    "srcurl": "https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.24.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/19e8cbce0/packages/libc++utilities",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/19e8cbce0/packages/libc++utilities/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/19e8cbce0/packages/libc++utilities/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f9df9ab5e/packages/libc++utilities",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f9df9ab5e/packages/libc++utilities/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f9df9ab5e/packages/libc++utilities/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/19e8cbce0/packages/libc++utilities/no-android.patch"
+      "https://github.com/termux/termux-packages/blob/f9df9ab5e/packages/libc++utilities/no-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/19e8cbce0/packages/libc++utilities/no-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f9df9ab5e/packages/libc++utilities/no-android.patch"
     ],
     "auto_updated": true
   },
@@ -16940,15 +16942,15 @@
   },
   {
     "name": "libjpeg-turbo",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "description": "Library for reading and writing JPEG image files",
     "homepage": "https://libjpeg-turbo.virtualgl.org",
     "depends": [],
-    "srcurl": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.0.2/libjpeg-turbo-3.0.2.tar.gz",
+    "srcurl": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.0.3/libjpeg-turbo-3.0.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d8879b0a6/packages/libjpeg-turbo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d8879b0a6/packages/libjpeg-turbo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d8879b0a6/packages/libjpeg-turbo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2712c437/packages/libjpeg-turbo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2712c437/packages/libjpeg-turbo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2712c437/packages/libjpeg-turbo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -20907,7 +20909,7 @@
   },
   {
     "name": "libunbound",
-    "version": "1.19.3",
+    "version": "1.20.0",
     "description": "A validating, recursive, caching DNS resolver",
     "homepage": "https://unbound.net/",
     "depends": [
@@ -20916,18 +20918,18 @@
       "openssl",
       "resolv-conf"
     ],
-    "srcurl": "https://nlnetlabs.nl/downloads/unbound/unbound-1.19.3.tar.gz",
+    "srcurl": "https://nlnetlabs.nl/downloads/unbound/unbound-1.20.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f9408bba6/packages/libunbound",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f9408bba6/packages/libunbound/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f9408bba6/packages/libunbound/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6e3df698/packages/libunbound",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6e3df698/packages/libunbound/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6e3df698/packages/libunbound/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f9408bba6/packages/libunbound/libunbound-libunbound.c.patch",
-      "https://github.com/termux/termux-packages/blob/f9408bba6/packages/libunbound/smallapp-unbound-host.c.patch"
+      "https://github.com/termux/termux-packages/blob/b6e3df698/packages/libunbound/libunbound-libunbound.c.patch",
+      "https://github.com/termux/termux-packages/blob/b6e3df698/packages/libunbound/smallapp-unbound-host.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f9408bba6/packages/libunbound/libunbound-libunbound.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f9408bba6/packages/libunbound/smallapp-unbound-host.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b6e3df698/packages/libunbound/libunbound-libunbound.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b6e3df698/packages/libunbound/smallapp-unbound-host.c.patch"
     ],
     "auto_updated": true
   },
@@ -29176,17 +29178,17 @@
   },
   {
     "name": "pet",
-    "version": "0.8.1",
+    "version": "0.8.4",
     "description": "Simple command-line snippet manager",
     "homepage": "https://github.com/knqyf263/pet",
     "depends": [
       "fzf"
     ],
-    "srcurl": "https://github.com/knqyf263/pet/archive/refs/tags/v0.8.1.tar.gz",
+    "srcurl": "https://github.com/knqyf263/pet/archive/refs/tags/v0.8.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8e6446ceb/packages/pet",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8e6446ceb/packages/pet/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8e6446ceb/packages/pet/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f215bb93c/packages/pet",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f215bb93c/packages/pet/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f215bb93c/packages/pet/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31288,18 +31290,18 @@
     ],
     "srcurl": "https://github.com/pypa/pip/archive/24.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a2fd4ede/packages/python-pip",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a2fd4ede/packages/python-pip/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a2fd4ede/packages/python-pip/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/45dbf49f7/packages/python-pip",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4a2fd4ede/packages/python-pip/conf.py.patch",
-      "https://github.com/termux/termux-packages/blob/4a2fd4ede/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/4a2fd4ede/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/conf.py.patch",
+      "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4a2fd4ede/packages/python-pip/conf.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4a2fd4ede/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4a2fd4ede/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/conf.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "auto_updated": true
   },
@@ -31982,20 +31984,20 @@
   },
   {
     "name": "rbw",
-    "version": "1.9.0",
+    "version": "1.10.0",
     "description": "An unofficial command line client for Bitwarden",
     "homepage": "https://github.com/doy/rbw",
     "depends": [
       "pinentry"
     ],
-    "srcurl": "https://github.com/doy/rbw/archive/refs/tags/1.9.0.tar.gz",
+    "srcurl": "https://github.com/doy/rbw/archive/refs/tags/1.10.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3ca46b33/packages/rbw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3ca46b33/packages/rbw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3ca46b33/packages/rbw/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/30922471c/packages/rbw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30922471c/packages/rbw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30922471c/packages/rbw/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "rclone",
@@ -33007,20 +33009,20 @@
   },
   {
     "name": "ruff",
-    "version": "0.3.0",
+    "version": "0.4.3",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.3.0.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.4.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/593a6a73b/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/593a6a73b/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/593a6a73b/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fbe338403/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fbe338403/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fbe338403/packages/ruff/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/593a6a73b/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://github.com/termux/termux-packages/blob/fbe338403/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/593a6a73b/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe338403/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "auto_updated": true
   },
@@ -39487,28 +39489,28 @@
   },
   {
     "name": "vulkan-loader-generic",
-    "version": "1.3.283",
+    "version": "1.3.284",
     "description": "Vulkan Loader",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Loader",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.283.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.284.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/da9c4d3e1/packages/vulkan-loader-generic",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/da9c4d3e1/packages/vulkan-loader-generic/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/da9c4d3e1/packages/vulkan-loader-generic/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d62510da5/packages/vulkan-loader-generic",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d62510da5/packages/vulkan-loader-generic/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d62510da5/packages/vulkan-loader-generic/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/da9c4d3e1/packages/vulkan-loader-generic/0001-fix-hardcoded-pathes.patch",
-      "https://github.com/termux/termux-packages/blob/da9c4d3e1/packages/vulkan-loader-generic/0002-properly-enable-extensions.patch"
+      "https://github.com/termux/termux-packages/blob/d62510da5/packages/vulkan-loader-generic/0001-fix-hardcoded-pathes.patch",
+      "https://github.com/termux/termux-packages/blob/d62510da5/packages/vulkan-loader-generic/0002-properly-enable-extensions.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/da9c4d3e1/packages/vulkan-loader-generic/0001-fix-hardcoded-pathes.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/da9c4d3e1/packages/vulkan-loader-generic/0002-properly-enable-extensions.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d62510da5/packages/vulkan-loader-generic/0001-fix-hardcoded-pathes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d62510da5/packages/vulkan-loader-generic/0002-properly-enable-extensions.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "vulkan-tools",
-    "version": "1.3.283",
+    "version": "1.3.284",
     "description": "Vulkan Tools and Utilities",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Tools",
     "depends": [
@@ -39518,35 +39520,35 @@
       "libwayland",
       "vulkan-loader"
     ],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/v1.3.283.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/v1.3.284.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/06f6de8de/packages/vulkan-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/06f6de8de/packages/vulkan-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/06f6de8de/packages/vulkan-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/589d25b32/packages/vulkan-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/589d25b32/packages/vulkan-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/589d25b32/packages/vulkan-tools/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/06f6de8de/packages/vulkan-tools/no-android.patch"
+      "https://github.com/termux/termux-packages/blob/589d25b32/packages/vulkan-tools/no-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/06f6de8de/packages/vulkan-tools/no-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/589d25b32/packages/vulkan-tools/no-android.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "vulkan-utility-libraries",
-    "version": "1.3.283",
+    "version": "1.3.284",
     "description": "Utility Libraries for Vulkan",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/v1.3.283.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/v1.3.284.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ead5db0f/packages/vulkan-utility-libraries",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ead5db0f/packages/vulkan-utility-libraries/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ead5db0f/packages/vulkan-utility-libraries/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/84ef80aaf/packages/vulkan-utility-libraries",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84ef80aaf/packages/vulkan-utility-libraries/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84ef80aaf/packages/vulkan-utility-libraries/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0ead5db0f/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
+      "https://github.com/termux/termux-packages/blob/84ef80aaf/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0ead5db0f/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/84ef80aaf/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
     ],
     "auto_updated": true
   },
@@ -43557,7 +43559,7 @@
   },
   {
     "name": "bluefish",
-    "version": "2.2.14",
+    "version": "2.2.15",
     "description": "A powerful editor targeted towards programmers and webdevelopers",
     "homepage": "https://bluefish.openoffice.nl/",
     "depends": [
@@ -43572,20 +43574,14 @@
       "pango",
       "zlib"
     ],
-    "srcurl": "https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.14.tar.bz2",
+    "srcurl": "https://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.15.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b72fc6730/x11-packages/bluefish",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b72fc6730/x11-packages/bluefish/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b72fc6730/x11-packages/bluefish/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b72fc6730/x11-packages/bluefish/g_callback.patch",
-      "https://github.com/termux/termux-packages/blob/b72fc6730/x11-packages/bluefish/src-bookmark.c.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b72fc6730/x11-packages/bluefish/g_callback.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b72fc6730/x11-packages/bluefish/src-bookmark.c.patch"
-    ],
-    "auto_updated": false
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5d04a868e/x11-packages/bluefish",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5d04a868e/x11-packages/bluefish/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5d04a868e/x11-packages/bluefish/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "bochs",
