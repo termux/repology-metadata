@@ -8451,24 +8451,20 @@
   },
   {
     "name": "fwknop",
-    "version": "2.6.10",
+    "version": "2.6.11",
     "description": "fwknop: Single Packet Authorization > Port Knocking",
     "homepage": "https://www.cipherdyne.org/fwknop/",
     "depends": [
       "gpgme"
     ],
-    "srcurl": "https://www.cipherdyne.org/fwknop/download/fwknop-2.6.10.tar.bz2",
+    "srcurl": "https://www.cipherdyne.org/fwknop/download/fwknop-2.6.11.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/29828bce3/packages/fwknop",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29828bce3/packages/fwknop/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/fwknop/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/29828bce3/packages/fwknop/client-log_msg.h.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/29828bce3/packages/fwknop/client-log_msg.h.patch"
-    ],
-    "auto_updated": false
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/47ad5d8dc/packages/fwknop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/47ad5d8dc/packages/fwknop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/47ad5d8dc/packages/fwknop/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "fx",
@@ -11761,7 +11757,7 @@
   },
   {
     "name": "httping",
-    "version": "2.9",
+    "version": "3.6",
     "description": "ping-like program for http-requests",
     "homepage": "https://github.com/folkertvanheusden/HTTPing",
     "depends": [
@@ -11770,18 +11766,20 @@
       "ncurses",
       "openssl"
     ],
-    "srcurl": "https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v2.9.tar.gz",
+    "srcurl": "https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v3.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6deaddd76/packages/httping",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6deaddd76/packages/httping/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6deaddd76/packages/httping/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a47ccb8ef/packages/httping",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a47ccb8ef/packages/httping/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a47ccb8ef/packages/httping/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6deaddd76/packages/httping/fix-spam_file-path.patch"
+      "https://github.com/termux/termux-packages/blob/a47ccb8ef/packages/httping/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/a47ccb8ef/packages/httping/fix-spam_file-path.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6deaddd76/packages/httping/fix-spam_file-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a47ccb8ef/packages/httping/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a47ccb8ef/packages/httping/fix-spam_file-path.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "httrack",
@@ -16350,22 +16348,22 @@
     ],
     "srcurl": "git+https://github.com/grpc/grpc",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9771590a3/packages/libgrpc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9771590a3/packages/libgrpc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9771590a3/packages/libgrpc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b99ff2b4d/packages/libgrpc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b99ff2b4d/packages/libgrpc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b99ff2b4d/packages/libgrpc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9771590a3/packages/libgrpc/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/9771590a3/packages/libgrpc/log_android.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9771590a3/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9771590a3/packages/libgrpc/src-core-lib-security-security_connector-load_system_roots_supported.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9771590a3/packages/libgrpc/src-core-lib-security-security_connector-ssl_utils.cc.patch"
+      "https://github.com/termux/termux-packages/blob/b99ff2b4d/packages/libgrpc/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/b99ff2b4d/packages/libgrpc/log_android.cc.patch",
+      "https://github.com/termux/termux-packages/blob/b99ff2b4d/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch",
+      "https://github.com/termux/termux-packages/blob/b99ff2b4d/packages/libgrpc/src-core-lib-security-security_connector-load_system_roots_supported.cc.patch",
+      "https://github.com/termux/termux-packages/blob/b99ff2b4d/packages/libgrpc/src-core-lib-security-security_connector-ssl_utils.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9771590a3/packages/libgrpc/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9771590a3/packages/libgrpc/log_android.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9771590a3/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9771590a3/packages/libgrpc/src-core-lib-security-security_connector-load_system_roots_supported.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9771590a3/packages/libgrpc/src-core-lib-security-security_connector-ssl_utils.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b99ff2b4d/packages/libgrpc/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b99ff2b4d/packages/libgrpc/log_android.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b99ff2b4d/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b99ff2b4d/packages/libgrpc/src-core-lib-security-security_connector-load_system_roots_supported.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b99ff2b4d/packages/libgrpc/src-core-lib-security-security_connector-ssl_utils.cc.patch"
     ],
     "auto_updated": true
   },
@@ -17207,21 +17205,17 @@
   },
   {
     "name": "liblo",
-    "version": "0.31",
+    "version": "0.32",
     "description": "A lightweight library that provides an easy to use implementation of the OSC protocol",
     "homepage": "https://liblo.sourceforge.net/",
     "depends": [],
-    "srcurl": "https://downloads.sourceforge.net/liblo/liblo-0.31.tar.gz",
+    "srcurl": "https://downloads.sourceforge.net/liblo/liblo-0.32.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/858771625/packages/liblo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/858771625/packages/liblo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/858771625/packages/liblo/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/858771625/packages/liblo/src-server.c.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/858771625/packages/liblo/src-server.c.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bbff4fa2d/packages/liblo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bbff4fa2d/packages/liblo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/packages/liblo/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
@@ -21387,15 +21381,15 @@
   },
   {
     "name": "libwayland-protocols",
-    "version": "1.31",
+    "version": "1.36",
     "description": "Wayland protocols library",
     "homepage": "https://wayland.freedesktop.org/",
     "depends": [],
-    "srcurl": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.31/downloads/wayland-protocols-1.31.tar.xz",
+    "srcurl": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.36/downloads/wayland-protocols-1.36.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/80353ff33/packages/libwayland-protocols",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/80353ff33/packages/libwayland-protocols/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/80353ff33/packages/libwayland-protocols/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2dd03db35/packages/libwayland-protocols",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2dd03db35/packages/libwayland-protocols/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2dd03db35/packages/libwayland-protocols/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -40073,7 +40067,7 @@
   },
   {
     "name": "whois",
-    "version": "5.5.22",
+    "version": "5.5.23",
     "description": "An intelligent Whois client",
     "homepage": "https://github.com/rfc1036/whois",
     "depends": [
@@ -40081,16 +40075,16 @@
       "libiconv",
       "libidn2"
     ],
-    "srcurl": "https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz",
+    "srcurl": "https://github.com/rfc1036/whois/archive/refs/tags/v5.5.23.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/329c31b20/packages/whois",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/329c31b20/packages/whois/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/329c31b20/packages/whois/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1d9b0605c/packages/whois",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1d9b0605c/packages/whois/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1d9b0605c/packages/whois/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/329c31b20/packages/whois/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/1d9b0605c/packages/whois/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/329c31b20/packages/whois/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1d9b0605c/packages/whois/Makefile.patch"
     ],
     "auto_updated": true
   },
@@ -43209,32 +43203,32 @@
     ],
     "srcurl": "git+https://github.com/Ardour/ardour",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/87bee6b1e/x11-packages/ardour",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bbff4fa2d/x11-packages/ardour",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/atomic.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/dynamic_pointer_cast.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/fix-platform.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/no-alsa.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/pthread_attr_setinheritsched.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/87bee6b1e/x11-packages/ardour/wscript.patch"
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/atomic.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/dynamic_pointer_cast.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/fix-platform.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/no-alsa.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/pthread_attr_setinheritsched.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/bbff4fa2d/x11-packages/ardour/wscript.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/atomic.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/dynamic_pointer_cast.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/fix-platform.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/no-alsa.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/pthread_attr_setinheritsched.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/87bee6b1e/x11-packages/ardour/wscript.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/atomic.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/dynamic_pointer_cast.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/fix-platform.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/gtk2_ardour-ardour.sh.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/libs-ardour-port_manager.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/no-alsa.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/pthread_attr_setinheritsched.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bbff4fa2d/x11-packages/ardour/wscript.patch"
     ],
     "auto_updated": true
   },
@@ -53076,7 +53070,7 @@
   },
   {
     "name": "sway",
-    "version": "1.8.1",
+    "version": "1.9",
     "description": "i3-compatible Wayland compositor",
     "homepage": "https://github.com/swaywm/sway",
     "depends": [
@@ -53090,26 +53084,24 @@
       "pcre2",
       "wlroots"
     ],
-    "srcurl": "https://github.com/swaywm/sway/releases/download/1.8.1/sway-1.8.1.tar.gz",
+    "srcurl": "https://github.com/swaywm/sway/releases/download/1.9/sway-1.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fc78304e8/x11-packages/sway",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fc78304e8/x11-packages/sway/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fc78304e8/x11-packages/sway/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8ca9ceae2/x11-packages/sway",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8ca9ceae2/x11-packages/sway/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8ca9ceae2/x11-packages/sway/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fc78304e8/x11-packages/sway/0001-fix-compilation-with-optional-wlroots-features-disabled.patch",
-      "https://github.com/termux/termux-packages/blob/fc78304e8/x11-packages/sway/0002-fix-include.patch",
-      "https://github.com/termux/termux-packages/blob/fc78304e8/x11-packages/sway/0003-impl-shm_open.patch",
-      "https://github.com/termux/termux-packages/blob/fc78304e8/x11-packages/sway/0004-use-cross-wayland-scanner.patch",
-      "https://github.com/termux/termux-packages/blob/fc78304e8/x11-packages/sway/0005-fix-for-libinput-related-config.patch",
-      "https://github.com/termux/termux-packages/blob/fc78304e8/x11-packages/sway/0006-fix-hardcoded-patches.patch"
+      "https://github.com/termux/termux-packages/blob/8ca9ceae2/x11-packages/sway/0001-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/8ca9ceae2/x11-packages/sway/0002-fix-include.patch",
+      "https://github.com/termux/termux-packages/blob/8ca9ceae2/x11-packages/sway/0003-impl-shm_open.patch",
+      "https://github.com/termux/termux-packages/blob/8ca9ceae2/x11-packages/sway/0004-use-cross-wayland-scanner.patch",
+      "https://github.com/termux/termux-packages/blob/8ca9ceae2/x11-packages/sway/0005-fix-for-libinput-related-config.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fc78304e8/x11-packages/sway/0001-fix-compilation-with-optional-wlroots-features-disabled.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc78304e8/x11-packages/sway/0002-fix-include.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc78304e8/x11-packages/sway/0003-impl-shm_open.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc78304e8/x11-packages/sway/0004-use-cross-wayland-scanner.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc78304e8/x11-packages/sway/0005-fix-for-libinput-related-config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc78304e8/x11-packages/sway/0006-fix-hardcoded-patches.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8ca9ceae2/x11-packages/sway/0001-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8ca9ceae2/x11-packages/sway/0002-fix-include.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8ca9ceae2/x11-packages/sway/0003-impl-shm_open.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8ca9ceae2/x11-packages/sway/0004-use-cross-wayland-scanner.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8ca9ceae2/x11-packages/sway/0005-fix-for-libinput-related-config.patch"
     ],
     "auto_updated": false
   },
@@ -54457,7 +54449,7 @@
   },
   {
     "name": "wlroots",
-    "version": "0.16.2",
+    "version": "0.17.3",
     "description": "Modular wayland compositor library",
     "homepage": "https://gitlab.freedesktop.org/wlroots/wlroots",
     "depends": [
@@ -54470,22 +54462,20 @@
       "xcb-util-renderutil",
       "xcb-util-wm"
     ],
-    "srcurl": "https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.tar.bz2",
+    "srcurl": "https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.3/wlroots-0.17.3.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ce8e1577f/x11-packages/wlroots",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ce8e1577f/x11-packages/wlroots/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ce8e1577f/x11-packages/wlroots/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/39bd47f74/x11-packages/wlroots",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/39bd47f74/x11-packages/wlroots/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/39bd47f74/x11-packages/wlroots/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ce8e1577f/x11-packages/wlroots/0001-make-session-optional.patch",
-      "https://github.com/termux/termux-packages/blob/ce8e1577f/x11-packages/wlroots/0002-use-cross-wayland-scanner.patch",
-      "https://github.com/termux/termux-packages/blob/ce8e1577f/x11-packages/wlroots/0003-impl-shm-open.patch",
-      "https://github.com/termux/termux-packages/blob/ce8e1577f/x11-packages/wlroots/0004-fix-hardcoded-patches.patch"
+      "https://github.com/termux/termux-packages/blob/39bd47f74/x11-packages/wlroots/0001-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/39bd47f74/x11-packages/wlroots/0002-use-cross-wayland-scanner.patch",
+      "https://github.com/termux/termux-packages/blob/39bd47f74/x11-packages/wlroots/0003-impl-shm-open.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ce8e1577f/x11-packages/wlroots/0001-make-session-optional.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce8e1577f/x11-packages/wlroots/0002-use-cross-wayland-scanner.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce8e1577f/x11-packages/wlroots/0003-impl-shm-open.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce8e1577f/x11-packages/wlroots/0004-fix-hardcoded-patches.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/39bd47f74/x11-packages/wlroots/0001-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/39bd47f74/x11-packages/wlroots/0002-use-cross-wayland-scanner.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/39bd47f74/x11-packages/wlroots/0003-impl-shm-open.patch"
     ],
     "auto_updated": false
   },
@@ -56051,24 +56041,24 @@
   },
   {
     "name": "xorg-iceauth",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "ICE authority file utility",
     "homepage": "https://xorg.freedesktop.org/",
     "depends": [
       "libice"
     ],
-    "srcurl": "https://www.x.org/archive/individual/app/iceauth-1.0.9.tar.xz",
+    "srcurl": "https://www.x.org/archive/individual/app/iceauth-1.0.10.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d724b921f/x11-packages/xorg-iceauth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d724b921f/x11-packages/xorg-iceauth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d724b921f/x11-packages/xorg-iceauth/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1c5d5f599/x11-packages/xorg-iceauth",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1c5d5f599/x11-packages/xorg-iceauth/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1c5d5f599/x11-packages/xorg-iceauth/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d724b921f/x11-packages/xorg-iceauth/process.c.patch"
+      "https://github.com/termux/termux-packages/blob/1c5d5f599/x11-packages/xorg-iceauth/process.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d724b921f/x11-packages/xorg-iceauth/process.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1c5d5f599/x11-packages/xorg-iceauth/process.c.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "xorg-luit",
@@ -56778,32 +56768,32 @@
     ],
     "srcurl": "https://xorg.freedesktop.org/releases/individual/xserver/xwayland-23.2.6.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/00517a0f0/x11-packages/xwayland",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/19daf09de/x11-packages/xwayland",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/hw_xwayland_xwayland-shm.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/stubmain.c.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/use_ashmem.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/wayland-scanner-for-build.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_access.c.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_backtrace.c.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_osinit.c.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_utils.c.patch",
-      "https://github.com/termux/termux-packages/blob/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/hw_xwayland_xwayland-shm.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/stubmain.c.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/use_ashmem.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/wayland-scanner-for-build.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_access.c.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_backtrace.c.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_osinit.c.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_utils.c.patch",
+      "https://github.com/termux/termux-packages/blob/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/hw_xwayland_xwayland-shm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/stubmain.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/use_ashmem.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/wayland-scanner-for-build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_access.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_backtrace.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_osinit.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_os_utils.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00517a0f0/x11-packages/xwayland/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/hw_xwayland_xwayland-shm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/stubmain.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/use_ashmem.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/wayland-scanner-for-build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_Xext_xf86bigfont.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_access.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_backtrace.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_osinit.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_os_utils.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/19daf09de/x11-packages/xwayland/xorg-server-1.20.1_xkb_ddxLoad.c.patch"
     ],
     "auto_updated": true
   },
