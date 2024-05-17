@@ -2976,15 +2976,15 @@
   },
   {
     "name": "buf",
-    "version": "1.31.0",
+    "version": "1.32.0",
     "description": "A new way of working with Protocol Buffers",
     "homepage": "https://buf.build",
     "depends": [],
-    "srcurl": "https://github.com/bufbuild/buf/archive/v1.31.0.tar.gz",
+    "srcurl": "https://github.com/bufbuild/buf/archive/v1.32.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b7440fd08/packages/buf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b7440fd08/packages/buf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b7440fd08/packages/buf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d83c24f0/packages/buf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d83c24f0/packages/buf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d83c24f0/packages/buf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -4192,15 +4192,15 @@
   },
   {
     "name": "cloudflared",
-    "version": "2024.4.1",
+    "version": "2024.5.0",
     "description": "A tunneling daemon that proxies traffic from the Cloudflare network to your origins",
     "homepage": "https://github.com/cloudflare/cloudflared",
     "depends": [],
-    "srcurl": "https://github.com/cloudflare/cloudflared/archive/refs/tags/2024.4.1.tar.gz",
+    "srcurl": "https://github.com/cloudflare/cloudflared/archive/refs/tags/2024.5.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/94c9434e4/packages/cloudflared",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/94c9434e4/packages/cloudflared/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/94c9434e4/packages/cloudflared/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a19ed78ea/packages/cloudflared",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a19ed78ea/packages/cloudflared/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a19ed78ea/packages/cloudflared/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -7142,11 +7142,15 @@
     ],
     "srcurl": "https://github.com/espeak-ng/espeak-ng/archive/1.51.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/11138a723/packages/espeak",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11138a723/packages/espeak/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11138a723/packages/espeak/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0023f3b96/packages/espeak",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0023f3b96/packages/espeak/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0023f3b96/packages/espeak/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/0023f3b96/packages/espeak/ed9a7bcf5778a188cdec202ac4316461badb28e1.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/0023f3b96/packages/espeak/ed9a7bcf5778a188cdec202ac4316461badb28e1.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -7295,17 +7299,17 @@
   },
   {
     "name": "eza",
-    "version": "0.18.15",
+    "version": "0.18.16",
     "description": "A modern replacement for ls",
     "homepage": "https://github.com/eza-community/eza",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/eza-community/eza/archive/v0.18.15.tar.gz",
+    "srcurl": "https://github.com/eza-community/eza/archive/v0.18.16.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8bd9ae6fe/packages/eza",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8bd9ae6fe/packages/eza/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8bd9ae6fe/packages/eza/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dcd23316f/packages/eza",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dcd23316f/packages/eza/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dcd23316f/packages/eza/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -8052,20 +8056,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.2.54",
+    "version": "0.2.55",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.2.54.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.2.55.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2c6247f2d/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2c6247f2d/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2c6247f2d/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/72b39a23c/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72b39a23c/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72b39a23c/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2c6247f2d/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/72b39a23c/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2c6247f2d/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/72b39a23c/packages/flyctl/getcpuinfo.patch"
     ],
     "auto_updated": true
   },
@@ -17992,14 +17996,16 @@
     ],
     "srcurl": "https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/633218eec/packages/libmusicbrainz",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/633218eec/packages/libmusicbrainz/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/633218eec/packages/libmusicbrainz/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/33b00066d/packages/libmusicbrainz",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/33b00066d/packages/libmusicbrainz/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/33b00066d/packages/libmusicbrainz/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/633218eec/packages/libmusicbrainz/libmusicbrainz-5.1.0-wildcards.patch.beforehostbuild"
+      "https://github.com/termux/termux-packages/blob/33b00066d/packages/libmusicbrainz/libmusicbrainz-5.1.0-wildcards.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/33b00066d/packages/libmusicbrainz/src-xmlParser-cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/633218eec/packages/libmusicbrainz/libmusicbrainz-5.1.0-wildcards.patch.beforehostbuild"
+      "https://raw.githubusercontent.com/termux/termux-packages/33b00066d/packages/libmusicbrainz/libmusicbrainz-5.1.0-wildcards.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/33b00066d/packages/libmusicbrainz/src-xmlParser-cc.patch"
     ],
     "auto_updated": false
   },
@@ -33414,17 +33420,17 @@
   },
   {
     "name": "scala",
-    "version": "3.4.1",
+    "version": "3.4.2",
     "description": "Scala 3 compiler and standard library.",
     "homepage": "https://www.scala-lang.org",
     "depends": [
       "openjdk-17"
     ],
-    "srcurl": "https://github.com/lampepfl/dotty/releases/download/3.4.1/scala3-3.4.1.tar.gz",
+    "srcurl": "https://github.com/lampepfl/dotty/releases/download/3.4.2/scala3-3.4.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9ddb3fd63/packages/scala",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9ddb3fd63/packages/scala/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9ddb3fd63/packages/scala/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c0c345e6d/packages/scala",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c0c345e6d/packages/scala/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c0c345e6d/packages/scala/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35354,14 +35360,14 @@
     ],
     "srcurl": "https://github.com/cernekee/stoken/archive/v0.93.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b58082d42/packages/stoken",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b58082d42/packages/stoken/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b58082d42/packages/stoken/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/07939e00b/packages/stoken",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/07939e00b/packages/stoken/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/07939e00b/packages/stoken/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b58082d42/packages/stoken/src-cli.c.patch"
+      "https://github.com/termux/termux-packages/blob/07939e00b/packages/stoken/src-cli.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b58082d42/packages/stoken/src-cli.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/07939e00b/packages/stoken/src-cli.c.patch"
     ],
     "auto_updated": true
   },
