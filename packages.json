@@ -3683,19 +3683,19 @@
     "homepage": "https://github.com/ceu-lang/ceu",
     "depends": [
       "lua53",
-      "lua-lpeg",
+      "lua53-lpeg",
       "liblua53"
     ],
     "srcurl": "git+https://github.com/ceu-lang/ceu",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cbd2792de/packages/ceu-lang",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cbd2792de/packages/ceu-lang/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cbd2792de/packages/ceu-lang/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/624528d18/packages/ceu-lang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/624528d18/packages/ceu-lang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/624528d18/packages/ceu-lang/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cbd2792de/packages/ceu-lang/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/624528d18/packages/ceu-lang/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cbd2792de/packages/ceu-lang/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/624528d18/packages/ceu-lang/Makefile.patch"
     ],
     "auto_updated": false
   },
@@ -23048,25 +23048,25 @@
     "auto_updated": true
   },
   {
-    "name": "lua-lpeg",
+    "name": "lua53-lpeg",
     "version": "1.1.0",
     "description": "Pattern-matching library for Lua 5.3",
-    "homepage": "http://www.inf.puc-rio.br/~roberto/lpeg",
+    "homepage": "https://www.inf.puc-rio.br/~roberto/lpeg",
     "depends": [
       "liblua53"
     ],
-    "srcurl": "http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ea0e6bd87/packages/lua-lpeg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ea0e6bd87/packages/lua-lpeg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ea0e6bd87/packages/lua-lpeg/build.sh",
+    "srcurl": "https://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz",
+    "maintainer": "Joshua Kahn @TomJo2000",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/624528d18/packages/lua53-lpeg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/624528d18/packages/lua53-lpeg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/624528d18/packages/lua53-lpeg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ea0e6bd87/packages/lua-lpeg/LICENSE.patch",
-      "https://github.com/termux/termux-packages/blob/ea0e6bd87/packages/lua-lpeg/makefile.patch"
+      "https://github.com/termux/termux-packages/blob/624528d18/packages/lua53-lpeg/LICENSE.patch",
+      "https://github.com/termux/termux-packages/blob/624528d18/packages/lua53-lpeg/makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ea0e6bd87/packages/lua-lpeg/LICENSE.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ea0e6bd87/packages/lua-lpeg/makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/624528d18/packages/lua53-lpeg/LICENSE.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/624528d18/packages/lua53-lpeg/makefile.patch"
     ],
     "auto_updated": false
   },
@@ -30583,7 +30583,7 @@
   },
   {
     "name": "proot-distro",
-    "version": "4.13.0",
+    "version": "4.14.0",
     "description": "Termux official utility for managing proot'ed Linux distributions",
     "homepage": "https://github.com/termux/proot-distro",
     "depends": [
@@ -30598,13 +30598,14 @@
       "sed",
       "tar",
       "termux-tools",
+      "util-linux",
       "xz-utils"
     ],
-    "srcurl": "https://github.com/termux/proot-distro/archive/v4.13.0.tar.gz",
+    "srcurl": "https://github.com/termux/proot-distro/archive/v4.14.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b299eb292/packages/proot-distro",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b299eb292/packages/proot-distro/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b299eb292/packages/proot-distro/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6532bdc4a/packages/proot-distro",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6532bdc4a/packages/proot-distro/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6532bdc4a/packages/proot-distro/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -33130,20 +33131,20 @@
   },
   {
     "name": "ruff",
-    "version": "0.4.7",
+    "version": "0.4.8",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.4.7.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/v0.4.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4d25e2333/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4d25e2333/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4d25e2333/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/34544ce3f/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/34544ce3f/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/34544ce3f/packages/ruff/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4d25e2333/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://github.com/termux/termux-packages/blob/34544ce3f/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4d25e2333/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/34544ce3f/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "auto_updated": true
   },
@@ -36044,17 +36045,21 @@
   },
   {
     "name": "ta-lib",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "description": "Technical analysis library with indicators like ADX",
-    "homepage": "https://sourceforge.net/projects/ta-lib/",
+    "homepage": "https://ta-lib.org/",
     "depends": [],
-    "srcurl": "https://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz",
+    "srcurl": "https://github.com/TA-Lib/ta-lib/archive/refs/tags/v0.5.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd23a889c/packages/ta-lib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd23a889c/packages/ta-lib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd23a889c/packages/ta-lib/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/12b3e16e6/packages/ta-lib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/12b3e16e6/packages/ta-lib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/12b3e16e6/packages/ta-lib/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/12b3e16e6/packages/ta-lib/LICENSE.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/12b3e16e6/packages/ta-lib/LICENSE.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -39281,14 +39286,14 @@
     "depends": [
       "liblua53",
       "libtermkey",
-      "lua-lpeg",
+      "lua53-lpeg",
       "ncurses"
     ],
     "srcurl": "https://github.com/martanne/vis/archive/v0.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e1d04654/packages/vis",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e1d04654/packages/vis/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e1d04654/packages/vis/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/624528d18/packages/vis",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/624528d18/packages/vis/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/624528d18/packages/vis/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -52678,9 +52683,9 @@
     ],
     "srcurl": "https://download.qt.io/official_releases/qt/6.7/6.7.1/submodules/qttools-everywhere-src-6.7.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4193ab333/x11-packages/qt6-qttools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4193ab333/x11-packages/qt6-qttools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4193ab333/x11-packages/qt6-qttools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/09b157fc8/x11-packages/qt6-qttools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/09b157fc8/x11-packages/qt6-qttools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/09b157fc8/x11-packages/qt6-qttools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
