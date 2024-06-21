@@ -1272,6 +1272,34 @@
     "auto_updated": true
   },
   {
+    "name": "arturo",
+    "version": "0.9.83",
+    "description": "Simple, expressive & portable programming language for efficient scripting",
+    "homepage": "https://arturo-lang.io",
+    "depends": [
+      "libgmp",
+      "libmpfr",
+      "libandroid-glob",
+      "libsqlite"
+    ],
+    "srcurl": "https://github.com/arturo-lang/arturo/archive/refs/tags/v0.9.83.tar.gz",
+    "maintainer": "Komo @cattokomo",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dfc893512/packages/arturo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dfc893512/packages/arturo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dfc893512/packages/arturo/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/dfc893512/packages/arturo/build.nims.patch",
+      "https://github.com/termux/termux-packages/blob/dfc893512/packages/arturo/fix-library-import.patch",
+      "https://github.com/termux/termux-packages/blob/dfc893512/packages/arturo/fix-syntax-error.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/dfc893512/packages/arturo/build.nims.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dfc893512/packages/arturo/fix-library-import.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dfc893512/packages/arturo/fix-syntax-error.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "asciidoc",
     "version": "10.2.0",
     "description": "Text document format for short documents, articles, books and UNIX man pages.",
@@ -8025,16 +8053,16 @@
     ],
     "srcurl": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/llvm-project-18.1.7.src.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/flang",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/flang/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/flang/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7242dbee2/packages/flang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7242dbee2/packages/flang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7242dbee2/packages/flang/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/flang/0001-find-native-mlir-tablegen.patch",
-      "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/flang/0002-remove-some-macros-that-breaks-building.patch"
+      "https://github.com/termux/termux-packages/blob/7242dbee2/packages/flang/0001-find-native-mlir-tablegen.patch",
+      "https://github.com/termux/termux-packages/blob/7242dbee2/packages/flang/0002-remove-some-macros-that-breaks-building.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/flang/0001-find-native-mlir-tablegen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/flang/0002-remove-some-macros-that-breaks-building.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7242dbee2/packages/flang/0001-find-native-mlir-tablegen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7242dbee2/packages/flang/0002-remove-some-macros-that-breaks-building.patch"
     ],
     "auto_updated": false
   },
@@ -27691,15 +27719,15 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "21.15.1",
+    "version": "21.16.0",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v21.15.1.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v21.16.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/72c11472e/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72c11472e/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72c11472e/packages/oh-my-posh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/413fbc17b/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/413fbc17b/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/413fbc17b/packages/oh-my-posh/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31009,18 +31037,18 @@
   },
   {
     "name": "pycairo",
-    "version": "1.26.0",
+    "version": "1.26.1",
     "description": "Python bindings for the cairo graphics library",
     "homepage": "https://www.cairographics.org/pycairo/",
     "depends": [
       "libcairo",
       "python"
     ],
-    "srcurl": "https://github.com/pygobject/pycairo/releases/download/v1.26.0/pycairo-1.26.0.tar.gz",
+    "srcurl": "https://github.com/pygobject/pycairo/releases/download/v1.26.1/pycairo-1.26.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/14b25df4f/packages/pycairo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/14b25df4f/packages/pycairo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/14b25df4f/packages/pycairo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/15c673368/packages/pycairo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/15c673368/packages/pycairo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/15c673368/packages/pycairo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31521,18 +31549,18 @@
     ],
     "srcurl": "https://github.com/pypa/pip/archive/24.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/45dbf49f7/packages/python-pip",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d0f544657/packages/python-pip",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d0f544657/packages/python-pip/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d0f544657/packages/python-pip/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/conf.py.patch",
-      "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/45dbf49f7/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://github.com/termux/termux-packages/blob/d0f544657/packages/python-pip/conf.py.patch",
+      "https://github.com/termux/termux-packages/blob/d0f544657/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/d0f544657/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/conf.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/45dbf49f7/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d0f544657/packages/python-pip/conf.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d0f544657/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d0f544657/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "auto_updated": true
   },
@@ -41893,17 +41921,17 @@
   },
   {
     "name": "docker-compose",
-    "version": "2.27.2",
+    "version": "2.27.3",
     "description": "Compose is a tool for defining and running multi-container Docker applications.",
     "homepage": "https://github.com/docker/compose",
     "depends": [
       "docker"
     ],
-    "srcurl": "https://github.com/docker/compose/archive/v2.27.2.tar.gz",
+    "srcurl": "https://github.com/docker/compose/archive/v2.27.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cbdde042a/root-packages/docker-compose",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cbdde042a/root-packages/docker-compose/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cbdde042a/root-packages/docker-compose/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a8f77a13/root-packages/docker-compose",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a8f77a13/root-packages/docker-compose/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a8f77a13/root-packages/docker-compose/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
