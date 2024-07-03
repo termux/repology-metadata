@@ -13592,15 +13592,15 @@
   },
   {
     "name": "kcptun",
-    "version": "20240702",
+    "version": "20240703",
     "description": "A Stable & Secure Tunnel based on KCP with N:M multiplexing and FEC",
     "homepage": "https://github.com/xtaci/kcptun",
     "depends": [],
-    "srcurl": "https://github.com/xtaci/kcptun/archive/refs/tags/v20240702.tar.gz",
+    "srcurl": "https://github.com/xtaci/kcptun/archive/refs/tags/v20240703.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/46ae93f8c/packages/kcptun",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/46ae93f8c/packages/kcptun/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/46ae93f8c/packages/kcptun/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/05f756e5b/packages/kcptun",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/05f756e5b/packages/kcptun/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/05f756e5b/packages/kcptun/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30299,17 +30299,17 @@
   },
   {
     "name": "pocketbase",
-    "version": "0.22.14",
+    "version": "0.22.15",
     "description": "An open source Go backend",
     "homepage": "https://github.com/pocketbase/pocketbase",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/pocketbase/pocketbase/archive/refs/tags/v0.22.14.tar.gz",
+    "srcurl": "https://github.com/pocketbase/pocketbase/archive/refs/tags/v0.22.15.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ed4bd45f4/packages/pocketbase",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ed4bd45f4/packages/pocketbase/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ed4bd45f4/packages/pocketbase/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c2ffab68/packages/pocketbase",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c2ffab68/packages/pocketbase/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c2ffab68/packages/pocketbase/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -48883,29 +48883,28 @@
   },
   {
     "name": "libfm-qt",
-    "version": "1.4.0",
+    "version": "2.0.2",
     "description": "Library providing components to build desktop file managers",
     "homepage": "https://lxqt.github.io",
     "depends": [
       "libc++",
-      "qt5-qtbase",
-      "qt5-qtx11extras",
+      "qt6-qtbase",
       "glib",
       "libxcb",
       "libexif",
       "lxqt-menu-data",
       "menu-cache"
     ],
-    "srcurl": "https://github.com/lxqt/libfm-qt/releases/download/1.4.0/libfm-qt-1.4.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/libfm-qt/releases/download/2.0.2/libfm-qt-2.0.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/libfm-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/libfm-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/libfm-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9dd376b0a/x11-packages/libfm-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9dd376b0a/x11-packages/libfm-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9dd376b0a/x11-packages/libfm-qt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/libfm-qt/fhs_termux_prefix.patch"
+      "https://github.com/termux/termux-packages/blob/9dd376b0a/x11-packages/libfm-qt/fhs_termux_prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/libfm-qt/fhs_termux_prefix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9dd376b0a/x11-packages/libfm-qt/fhs_termux_prefix.patch"
     ],
     "auto_updated": true
   },
@@ -49122,27 +49121,27 @@
   },
   {
     "name": "liblxqt",
-    "version": "1.4.0",
+    "version": "2.0.0",
     "description": "The core library of LXQt",
     "homepage": "https://lxqt.github.io",
     "depends": [
+      "kf6-kwindowsystem",
       "libc++",
-      "qt5-qtbase",
-      "qt5-qtx11extras",
-      "kwindowsystem",
       "libqtxdg",
-      "libxss"
+      "libx11",
+      "libxss",
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/liblxqt/releases/download/1.4.0/liblxqt-1.4.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/liblxqt/releases/download/2.0.0/liblxqt-2.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/liblxqt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/liblxqt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/liblxqt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65f85c561/x11-packages/liblxqt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65f85c561/x11-packages/liblxqt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65f85c561/x11-packages/liblxqt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/liblxqt/add_missing_wordexp.patch"
+      "https://github.com/termux/termux-packages/blob/65f85c561/x11-packages/liblxqt/add_missing_wordexp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/liblxqt/add_missing_wordexp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/65f85c561/x11-packages/liblxqt/add_missing_wordexp.patch"
     ],
     "auto_updated": true
   },
@@ -49315,42 +49314,42 @@
   },
   {
     "name": "libqtxdg",
-    "version": "3.12.0",
-    "description": "Qt 5 implementation of freedesktop.org XDG specifications",
+    "version": "4.0.0",
+    "description": "Qt implementation of freedesktop.org XDG specifications",
     "homepage": "https://lxqt.github.io",
     "depends": [
       "libc++",
-      "qt5-qtbase",
-      "qt5-qtsvg",
+      "qt6-qtbase",
+      "qt6-qtsvg",
       "glib"
     ],
-    "srcurl": "https://github.com/lxqt/libqtxdg/releases/download/3.12.0/libqtxdg-3.12.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/libqtxdg/releases/download/4.0.0/libqtxdg-4.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/libqtxdg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/libqtxdg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/libqtxdg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8bf6d3ab1/x11-packages/libqtxdg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8bf6d3ab1/x11-packages/libqtxdg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8bf6d3ab1/x11-packages/libqtxdg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/libqtxdg/xdgdirs_termux_prefix.patch"
+      "https://github.com/termux/termux-packages/blob/8bf6d3ab1/x11-packages/libqtxdg/xdgdirs_termux_prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/libqtxdg/xdgdirs_termux_prefix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8bf6d3ab1/x11-packages/libqtxdg/xdgdirs_termux_prefix.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "libsysstat",
-    "version": "0.4.6",
+    "version": "1.0.0",
     "description": "A library to query system information",
     "homepage": "https://lxqt.github.io",
     "depends": [
       "libc++",
-      "qt5-qtbase"
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/libsysstat/releases/download/0.4.6/libsysstat-0.4.6.tar.xz",
+    "srcurl": "https://github.com/lxqt/libsysstat/releases/download/1.0.0/libsysstat-1.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/libsysstat",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/libsysstat/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/libsysstat/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/725ab243f/x11-packages/libsysstat",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/725ab243f/x11-packages/libsysstat/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/725ab243f/x11-packages/libsysstat/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50025,41 +50024,41 @@
   },
   {
     "name": "lxqt-about",
-    "version": "1.4.0",
+    "version": "2.0.0",
     "description": "LXQt dialog showing information about LXQt and the system",
     "homepage": "https://lxqt.github.io",
     "depends": [
       "libc++",
-      "qt5-qtbase",
-      "liblxqt"
+      "liblxqt",
+      "libqtxdg",
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/lxqt-about/releases/download/1.4.0/lxqt-about-1.4.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/lxqt-about/releases/download/2.0.0/lxqt-about-2.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/lxqt-about",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/lxqt-about/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/lxqt-about/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/599b03f3e/x11-packages/lxqt-about",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/599b03f3e/x11-packages/lxqt-about/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/599b03f3e/x11-packages/lxqt-about/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "lxqt-archiver",
-    "version": "0.9.1",
+    "version": "1.0.0",
     "description": "A simple & lightweight Qt file archiver",
     "homepage": "https://lxqt.github.io",
     "depends": [
-      "libc++",
-      "qt5-qtbase",
-      "qt5-qtx11extras",
-      "libfm-qt",
       "glib",
-      "json-glib"
+      "json-glib",
+      "libc++",
+      "libfm-qt",
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/lxqt-archiver/releases/download/0.9.1/lxqt-archiver-0.9.1.tar.xz",
+    "srcurl": "https://github.com/lxqt/lxqt-archiver/releases/download/1.0.0/lxqt-archiver-1.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/lxqt-archiver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/lxqt-archiver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/lxqt-archiver/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c50d2912e/x11-packages/lxqt-archiver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c50d2912e/x11-packages/lxqt-archiver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c50d2912e/x11-packages/lxqt-archiver/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50135,56 +50134,57 @@
   },
   {
     "name": "lxqt-globalkeys",
-    "version": "1.4.0",
+    "version": "2.0.0",
     "description": "Tools to set global keyboard shortcuts in LXQt sessions",
     "homepage": "https://lxqt.github.io",
     "depends": [
       "libc++",
-      "qt5-qtbase",
-      "kwindowsystem",
       "liblxqt",
-      "libx11"
+      "libx11",
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/lxqt-globalkeys/releases/download/1.4.0/lxqt-globalkeys-1.4.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/lxqt-globalkeys/releases/download/2.0.0/lxqt-globalkeys-2.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/lxqt-globalkeys",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/lxqt-globalkeys/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/lxqt-globalkeys/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/334da6c6c/x11-packages/lxqt-globalkeys",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/334da6c6c/x11-packages/lxqt-globalkeys/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/334da6c6c/x11-packages/lxqt-globalkeys/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "lxqt-menu-data",
-    "version": "1.4.1",
+    "version": "2.0.0",
     "description": "Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt",
     "homepage": "https://github.com/lxqt/lxqt-menu-data",
     "depends": [],
-    "srcurl": "https://github.com/lxqt/lxqt-menu-data/releases/download/1.4.1/lxqt-menu-data-1.4.1.tar.xz",
+    "srcurl": "https://github.com/lxqt/lxqt-menu-data/releases/download/2.0.0/lxqt-menu-data-2.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bf9cee059/x11-packages/lxqt-menu-data",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bf9cee059/x11-packages/lxqt-menu-data/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bf9cee059/x11-packages/lxqt-menu-data/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0b2c94e4b/x11-packages/lxqt-menu-data",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0b2c94e4b/x11-packages/lxqt-menu-data/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0b2c94e4b/x11-packages/lxqt-menu-data/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "lxqt-notificationd",
-    "version": "1.4.0",
+    "version": "2.0.1",
     "description": "The LXQt notification daemon",
     "homepage": "https://lxqt.github.io",
     "depends": [
+      "kf6-kwindowsystem",
+      "layer-shell-qt",
       "libc++",
-      "qt5-qtbase",
       "liblxqt",
-      "libnotify"
+      "libqtxdg",
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/lxqt-notificationd/releases/download/1.4.0/lxqt-notificationd-1.4.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/lxqt-notificationd/releases/download/2.0.1/lxqt-notificationd-2.0.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/lxqt-notificationd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/lxqt-notificationd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/lxqt-notificationd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1a3060be1/x11-packages/lxqt-notificationd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1a3060be1/x11-packages/lxqt-notificationd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1a3060be1/x11-packages/lxqt-notificationd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50324,17 +50324,17 @@
   },
   {
     "name": "lxqt-themes",
-    "version": "1.3.0",
+    "version": "2.0.0",
     "description": "Themes, graphics and icons for LXQt",
     "homepage": "https://lxqt.github.io",
     "depends": [
       "hicolor-icon-theme"
     ],
-    "srcurl": "https://github.com/lxqt/lxqt-themes/releases/download/1.3.0/lxqt-themes-1.3.0.tar.xz",
+    "srcurl": "https://github.com/lxqt/lxqt-themes/releases/download/2.0.0/lxqt-themes-2.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/lxqt-themes",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/lxqt-themes/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/lxqt-themes/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d58fd7d9/x11-packages/lxqt-themes",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d58fd7d9/x11-packages/lxqt-themes/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d58fd7d9/x11-packages/lxqt-themes/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -51804,23 +51804,23 @@
   },
   {
     "name": "pcmanfm-qt",
-    "version": "1.4.1",
+    "version": "2.0.0",
     "description": "PCManFM-Qt is the file manager of LXQt",
     "homepage": "https://lxqt.github.io",
     "depends": [
+      "desktop-file-utils",
+      "glib",
+      "layer-shell-qt",
       "libc++",
-      "qt5-qtbase",
-      "qt5-qtx11extras",
       "libfm-qt",
-      "liblxqt",
-      "lxmenu-data",
-      "lxqt-menu-data"
+      "libxcb",
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/pcmanfm-qt/releases/download/1.4.1/pcmanfm-qt-1.4.1.tar.xz",
+    "srcurl": "https://github.com/lxqt/pcmanfm-qt/releases/download/2.0.0/pcmanfm-qt-2.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/pcmanfm-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/pcmanfm-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/pcmanfm-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b1aeb92e2/x11-packages/pcmanfm-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b1aeb92e2/x11-packages/pcmanfm-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b1aeb92e2/x11-packages/pcmanfm-qt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -53632,19 +53632,19 @@
   },
   {
     "name": "qtxdg-tools",
-    "version": "3.12.0",
+    "version": "4.0.0",
     "description": "CLI tools for libqtxdg.",
     "homepage": "https://github.com/lxqt/qtxdg-tools",
     "depends": [
       "libc++",
       "libqtxdg",
-      "qt5-qtbase"
+      "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/lxqt/qtxdg-tools/archive/3.12.0.tar.gz",
+    "srcurl": "https://github.com/lxqt/qtxdg-tools/releases/download/4.0.0/qtxdg-tools-4.0.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e29f34cd8/x11-packages/qtxdg-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e29f34cd8/x11-packages/qtxdg-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e29f34cd8/x11-packages/qtxdg-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/afd0caca2/x11-packages/qtxdg-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/afd0caca2/x11-packages/qtxdg-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/afd0caca2/x11-packages/qtxdg-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
