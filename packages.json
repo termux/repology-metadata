@@ -7835,10 +7835,11 @@
       "libssh",
       "libtheora",
       "libv4l",
+      "libvidstab",
+      "libvmaf",
       "libvo-amrwbenc",
       "libvorbis",
       "libvpx",
-      "libvidstab",
       "libwebp",
       "libx264",
       "libx265",
@@ -7852,18 +7853,18 @@
     ],
     "srcurl": "https://www.ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ea86dd5c8/packages/ffmpeg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ea86dd5c8/packages/ffmpeg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ea86dd5c8/packages/ffmpeg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e531e4c49/packages/ffmpeg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e531e4c49/packages/ffmpeg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e531e4c49/packages/ffmpeg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ea86dd5c8/packages/ffmpeg/configure.patch",
-      "https://github.com/termux/termux-packages/blob/ea86dd5c8/packages/ffmpeg/libavcodec-allcodecs.c.patch",
-      "https://github.com/termux/termux-packages/blob/ea86dd5c8/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://github.com/termux/termux-packages/blob/e531e4c49/packages/ffmpeg/configure.patch",
+      "https://github.com/termux/termux-packages/blob/e531e4c49/packages/ffmpeg/libavcodec-allcodecs.c.patch",
+      "https://github.com/termux/termux-packages/blob/e531e4c49/packages/ffmpeg/libavutil-file_open.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ea86dd5c8/packages/ffmpeg/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ea86dd5c8/packages/ffmpeg/libavcodec-allcodecs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ea86dd5c8/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e531e4c49/packages/ffmpeg/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e531e4c49/packages/ffmpeg/libavcodec-allcodecs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e531e4c49/packages/ffmpeg/libavutil-file_open.c.patch"
     ],
     "auto_updated": false
   },
@@ -10808,18 +10809,18 @@
     "depends": [],
     "srcurl": "git+https://github.com/grafana/grafana",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ff7d34247/packages/grafana",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ff7d34247/packages/grafana/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ff7d34247/packages/grafana/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d941cbc31/packages/grafana",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d941cbc31/packages/grafana/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d941cbc31/packages/grafana/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ff7d34247/packages/grafana/go-mod.patch",
-      "https://github.com/termux/termux-packages/blob/ff7d34247/packages/grafana/go-sockaddr.patch",
-      "https://github.com/termux/termux-packages/blob/ff7d34247/packages/grafana/webpack-no-cache.patch"
+      "https://github.com/termux/termux-packages/blob/d941cbc31/packages/grafana/go-mod.patch",
+      "https://github.com/termux/termux-packages/blob/d941cbc31/packages/grafana/go-sockaddr.patch",
+      "https://github.com/termux/termux-packages/blob/d941cbc31/packages/grafana/webpack-no-cache.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ff7d34247/packages/grafana/go-mod.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ff7d34247/packages/grafana/go-sockaddr.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ff7d34247/packages/grafana/webpack-no-cache.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d941cbc31/packages/grafana/go-mod.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d941cbc31/packages/grafana/go-sockaddr.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d941cbc31/packages/grafana/webpack-no-cache.patch"
     ],
     "auto_updated": true
   },
@@ -31765,7 +31766,7 @@
   },
   {
     "name": "python-pyarrow",
-    "version": "16.1.0",
+    "version": "17.0.0",
     "description": "Python bindings for Apache Arrow",
     "homepage": "https://github.com/apache/arrow",
     "depends": [
@@ -31774,20 +31775,18 @@
       "python",
       "python-numpy"
     ],
-    "srcurl": "https://github.com/apache/arrow/archive/refs/tags/apache-arrow-16.1.0.tar.gz",
+    "srcurl": "https://github.com/apache/arrow/archive/refs/tags/apache-arrow-17.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d625bd271/packages/python-pyarrow",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d625bd271/packages/python-pyarrow/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d625bd271/packages/python-pyarrow/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e6fc876c/packages/python-pyarrow",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e6fc876c/packages/python-pyarrow/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e6fc876c/packages/python-pyarrow/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d625bd271/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/d625bd271/packages/python-pyarrow/python-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/d625bd271/packages/python-pyarrow/setup.py.diff"
+      "https://github.com/termux/termux-packages/blob/6e6fc876c/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/6e6fc876c/packages/python-pyarrow/python-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d625bd271/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d625bd271/packages/python-pyarrow/python-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d625bd271/packages/python-pyarrow/setup.py.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/6e6fc876c/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e6fc876c/packages/python-pyarrow/python-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -40135,20 +40134,20 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "version": "1.3.290",
+    "version": "1.3.291",
     "description": "Utility Libraries for Vulkan",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/v1.3.290.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/v1.3.291.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e03c87d5/packages/vulkan-utility-libraries",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e03c87d5/packages/vulkan-utility-libraries/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e03c87d5/packages/vulkan-utility-libraries/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/38987a947/packages/vulkan-utility-libraries",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38987a947/packages/vulkan-utility-libraries/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38987a947/packages/vulkan-utility-libraries/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6e03c87d5/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
+      "https://github.com/termux/termux-packages/blob/38987a947/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6e03c87d5/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/38987a947/packages/vulkan-utility-libraries/0001-do-not-build-for-android.patch"
     ],
     "auto_updated": true
   },
