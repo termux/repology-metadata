@@ -15432,7 +15432,7 @@
   },
   {
     "name": "libcurl",
-    "version": "8.9.0",
+    "version": "8.9.1",
     "description": "Easy-to-use client-side URL transfer library",
     "homepage": "https://curl.se/",
     "depends": [
@@ -15442,11 +15442,11 @@
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://github.com/curl/curl/releases/download/curl-8_9_0/curl-8.9.0.tar.xz",
+    "srcurl": "https://github.com/curl/curl/releases/download/curl-8_9_1/curl-8.9.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c3cf20b1/packages/libcurl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c3cf20b1/packages/libcurl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c3cf20b1/packages/libcurl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/10447a32a/packages/libcurl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10447a32a/packages/libcurl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10447a32a/packages/libcurl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -20026,11 +20026,15 @@
     ],
     "srcurl": "https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.8.0/libslirp-v4.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a8329bbc6/packages/libslirp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a8329bbc6/packages/libslirp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a8329bbc6/packages/libslirp/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e5d16a9f2/packages/libslirp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e5d16a9f2/packages/libslirp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e5d16a9f2/packages/libslirp/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/e5d16a9f2/packages/libslirp/resolvconf.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/e5d16a9f2/packages/libslirp/resolvconf.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -24978,22 +24982,22 @@
   },
   {
     "name": "minio",
-    "version": "2024.07.29.22.14.52",
+    "version": "2024.07.31.05.46.26",
     "description": "Multi-Cloud Object Storage",
     "homepage": "https://min.io/",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-07-29T22-14-52Z.tar.gz",
+    "srcurl": "https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-07-31T05-46-26Z.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bab073782/packages/minio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bab073782/packages/minio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bab073782/packages/minio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdec22394/packages/minio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdec22394/packages/minio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdec22394/packages/minio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bab073782/packages/minio/cmd-net.go.patch"
+      "https://github.com/termux/termux-packages/blob/cdec22394/packages/minio/cmd-net.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bab073782/packages/minio/cmd-net.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cdec22394/packages/minio/cmd-net.go.patch"
     ],
     "auto_updated": true
   },
@@ -36471,15 +36475,15 @@
   },
   {
     "name": "taplo",
-    "version": "0.9.2",
+    "version": "0.9.3",
     "description": "A TOML LSP and toolkit",
     "homepage": "https://taplo.tamasfe.dev/",
     "depends": [],
-    "srcurl": "https://github.com/tamasfe/taplo/archive/refs/tags/release-taplo-cli-0.9.2.tar.gz",
+    "srcurl": "https://github.com/tamasfe/taplo/archive/refs/tags/release-taplo-cli-0.9.3.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2841ee25d/packages/taplo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2841ee25d/packages/taplo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2841ee25d/packages/taplo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a7fafc7f/packages/taplo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a7fafc7f/packages/taplo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a7fafc7f/packages/taplo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
