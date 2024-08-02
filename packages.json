@@ -41353,20 +41353,22 @@
   },
   {
     "name": "yazi",
-    "version": "0.2.5",
+    "version": "0.3.0",
     "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
     "homepage": "https://yazi-rs.github.io/",
     "depends": [],
-    "srcurl": "https://github.com/sxyazi/yazi/archive/refs/tags/v0.2.5.tar.gz",
+    "srcurl": "https://github.com/sxyazi/yazi/archive/refs/tags/v0.3.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/yazi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/yazi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/yazi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d9dea516a/packages/yazi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d9dea516a/packages/yazi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d9dea516a/packages/yazi/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/yazi/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://github.com/termux/termux-packages/blob/d9dea516a/packages/yazi/0001-fix-android-building-error-caused-by-trash-crate-139.patch",
+      "https://github.com/termux/termux-packages/blob/d9dea516a/packages/yazi/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/yazi/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/d9dea516a/packages/yazi/0001-fix-android-building-error-caused-by-trash-crate-139.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d9dea516a/packages/yazi/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "auto_updated": true
   },
@@ -45281,7 +45283,7 @@
   },
   {
     "name": "eog",
-    "version": "45.3",
+    "version": "45.4",
     "description": "Eye of GNOME, an image viewing and cataloging program",
     "homepage": "https://wiki.gnome.org/Apps/EyeOfGnome",
     "depends": [
@@ -45302,11 +45304,11 @@
       "shared-mime-info",
       "zlib"
     ],
-    "srcurl": "https://download.gnome.org/sources/eog/45/eog-45.3.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/eog/45/eog-45.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/127df42bd/x11-packages/eog",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/127df42bd/x11-packages/eog/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/127df42bd/x11-packages/eog/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ddac281e8/x11-packages/eog",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ddac281e8/x11-packages/eog/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ddac281e8/x11-packages/eog/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -53778,6 +53780,31 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c7a4935e2/x11-packages/qt6-shadertools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "qt6ct",
+    "version": "0.9",
+    "description": "Qt 6 Configuration Utility",
+    "homepage": "https://github.com/trialuser02/qt6ct",
+    "depends": [
+      "libc++",
+      "qt6-qtbase",
+      "qt6-qtsvg"
+    ],
+    "srcurl": "https://github.com/trialuser02/qt6ct/archive/0.9/qt6ct-0.9.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6cc0c66db/x11-packages/qt6ct",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6cc0c66db/x11-packages/qt6ct/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6cc0c66db/x11-packages/qt6ct/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/6cc0c66db/x11-packages/qt6ct/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/6cc0c66db/x11-packages/qt6ct/src-qt6ct-common-qt6ct.cpp.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/6cc0c66db/x11-packages/qt6ct/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6cc0c66db/x11-packages/qt6ct/src-qt6ct-common-qt6ct.cpp.patch"
+    ],
     "auto_updated": true
   },
   {
