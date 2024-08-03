@@ -8153,7 +8153,7 @@
   },
   {
     "name": "fluidsynth",
-    "version": "2.3.5",
+    "version": "2.3.6",
     "description": "Software synthesizer based on the SoundFont 2 specifications",
     "homepage": "https://github.com/FluidSynth/fluidsynth",
     "depends": [
@@ -8164,11 +8164,11 @@
       "pulseaudio",
       "readline"
     ],
-    "srcurl": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.5.tar.gz",
+    "srcurl": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/761a8dcdb/packages/fluidsynth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/761a8dcdb/packages/fluidsynth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/761a8dcdb/packages/fluidsynth/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/858d3cb44/packages/fluidsynth",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/858d3cb44/packages/fluidsynth/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/858d3cb44/packages/fluidsynth/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23343,31 +23343,22 @@
   },
   {
     "name": "luvi",
-    "version": "20240216",
+    "version": "20240723",
     "description": "A project in-between luv and luvit.",
     "homepage": "https://luvit.io",
     "depends": [
-      "pcre",
+      "pcre2",
       "openssl",
       "luv",
-      "lua51-lpeg",
       "libluajit"
     ],
     "srcurl": "git+https://github.com/luvit/luvi.git",
     "maintainer": "Komo @cattokomo",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/774036d8a/packages/luvi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/774036d8a/packages/luvi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/774036d8a/packages/luvi/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/774036d8a/packages/luvi/fix-lua-openssl-src.patch",
-      "https://github.com/termux/termux-packages/blob/774036d8a/packages/luvi/luajit-c-bytecode.patch",
-      "https://github.com/termux/termux-packages/blob/774036d8a/packages/luvi/shared-lpeg.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/774036d8a/packages/luvi/fix-lua-openssl-src.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/774036d8a/packages/luvi/luajit-c-bytecode.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/774036d8a/packages/luvi/shared-lpeg.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/51922f2ac/packages/luvi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51922f2ac/packages/luvi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51922f2ac/packages/luvi/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
@@ -24967,22 +24958,22 @@
   },
   {
     "name": "minio",
-    "version": "2024.07.31.05.46.26",
+    "version": "2024.08.03.04.33.23",
     "description": "Multi-Cloud Object Storage",
     "homepage": "https://min.io/",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-07-31T05-46-26Z.tar.gz",
+    "srcurl": "https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-08-03T04-33-23Z.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdec22394/packages/minio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdec22394/packages/minio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdec22394/packages/minio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/249b68671/packages/minio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/249b68671/packages/minio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/249b68671/packages/minio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cdec22394/packages/minio/cmd-net.go.patch"
+      "https://github.com/termux/termux-packages/blob/249b68671/packages/minio/cmd-net.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cdec22394/packages/minio/cmd-net.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/249b68671/packages/minio/cmd-net.go.patch"
     ],
     "auto_updated": true
   },
@@ -51967,7 +51958,7 @@
   },
   {
     "name": "pavucontrol",
-    "version": "6.0",
+    "version": "6.1",
     "description": "PulseAudio Volume Control",
     "homepage": "https://freedesktop.org/software/pulseaudio/pavucontrol/",
     "depends": [
@@ -51980,11 +51971,11 @@
       "pulseaudio",
       "pulseaudio-glib"
     ],
-    "srcurl": "https://gitlab.freedesktop.org/pulseaudio/pavucontrol/-/archive/v6.0/pavucontrol-v6.0.tar.gz",
+    "srcurl": "https://gitlab.freedesktop.org/pulseaudio/pavucontrol/-/archive/v6.1/pavucontrol-v6.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4f78d9fa8/x11-packages/pavucontrol",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4f78d9fa8/x11-packages/pavucontrol/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4f78d9fa8/x11-packages/pavucontrol/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/50c80a05c/x11-packages/pavucontrol",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/50c80a05c/x11-packages/pavucontrol/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/50c80a05c/x11-packages/pavucontrol/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -53069,7 +53060,7 @@
   },
   {
     "name": "qt5-qtlocation",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt 5 Location Library",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53077,18 +53068,18 @@
       "qt5-qtbase",
       "qt5-qtdeclarative"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtlocation-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtlocation-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtlocation",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtlocation/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtlocation/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9af4d78bf/x11-packages/qt5-qtlocation",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9af4d78bf/x11-packages/qt5-qtlocation/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9af4d78bf/x11-packages/qt5-qtlocation/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "qt5-qtmultimedia",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt 5 Multimedia Library",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53100,26 +53091,26 @@
       "gst-plugins-base",
       "gst-plugins-bad"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtmultimedia-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtmultimedia-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtmultimedia",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtmultimedia/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtmultimedia/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b059d7db/x11-packages/qt5-qtmultimedia",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b059d7db/x11-packages/qt5-qtmultimedia/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b059d7db/x11-packages/qt5-qtmultimedia/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtmultimedia/detect_libs_without_pkg_config.patch",
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtmultimedia/gst_include_path.patch",
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtmultimedia/pulse_audio_without_glib.patch"
+      "https://github.com/termux/termux-packages/blob/5b059d7db/x11-packages/qt5-qtmultimedia/detect_libs_without_pkg_config.patch",
+      "https://github.com/termux/termux-packages/blob/5b059d7db/x11-packages/qt5-qtmultimedia/gst_include_path.patch",
+      "https://github.com/termux/termux-packages/blob/5b059d7db/x11-packages/qt5-qtmultimedia/pulse_audio_without_glib.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtmultimedia/detect_libs_without_pkg_config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtmultimedia/gst_include_path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtmultimedia/pulse_audio_without_glib.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5b059d7db/x11-packages/qt5-qtmultimedia/detect_libs_without_pkg_config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5b059d7db/x11-packages/qt5-qtmultimedia/gst_include_path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5b059d7db/x11-packages/qt5-qtmultimedia/pulse_audio_without_glib.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "qt5-qtquickcontrols",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt Quick Controls module",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53127,18 +53118,18 @@
       "qt5-qtbase",
       "qt5-qtdeclarative"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtquickcontrols-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtquickcontrols-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtquickcontrols",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtquickcontrols/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtquickcontrols/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f3b22317e/x11-packages/qt5-qtquickcontrols",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f3b22317e/x11-packages/qt5-qtquickcontrols/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f3b22317e/x11-packages/qt5-qtquickcontrols/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "qt5-qtquickcontrols2",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt Quick Controls2 module",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53146,46 +53137,46 @@
       "qt5-qtbase",
       "qt5-qtdeclarative"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtquickcontrols2-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtquickcontrols2-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtquickcontrols2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtquickcontrols2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtquickcontrols2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b682ac8fb/x11-packages/qt5-qtquickcontrols2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b682ac8fb/x11-packages/qt5-qtquickcontrols2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b682ac8fb/x11-packages/qt5-qtquickcontrols2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage_p.h.patch"
+      "https://github.com/termux/termux-packages/blob/b682ac8fb/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/b682ac8fb/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage_p.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage_p.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b682ac8fb/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b682ac8fb/x11-packages/qt5-qtquickcontrols2/src-quicktemplates2-accessible-qaccessiblequickpage_p.h.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "qt5-qtscript",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt script module",
     "homepage": "https://www.qt.io/",
     "depends": [
       "libc++",
       "qt5-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtscript-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtscript-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7cd7f6531/x11-packages/qt5-qtscript",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7cd7f6531/x11-packages/qt5-qtscript/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7cd7f6531/x11-packages/qt5-qtscript/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6794b936b/x11-packages/qt5-qtscript",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6794b936b/x11-packages/qt5-qtscript/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6794b936b/x11-packages/qt5-qtscript/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7cd7f6531/x11-packages/qt5-qtscript/3rdparty-javascriptcore-yarr-RegexJIT.patch"
+      "https://github.com/termux/termux-packages/blob/6794b936b/x11-packages/qt5-qtscript/3rdparty-javascriptcore-yarr-RegexJIT.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7cd7f6531/x11-packages/qt5-qtscript/3rdparty-javascriptcore-yarr-RegexJIT.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6794b936b/x11-packages/qt5-qtscript/3rdparty-javascriptcore-yarr-RegexJIT.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "qt5-qtsensors",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt 5 Sensors Library",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53193,58 +53184,58 @@
       "qt5-qtbase",
       "qt5-qtdeclarative"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtsensors-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtsensors-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtsensors",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtsensors/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtsensors/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a5df692e9/x11-packages/qt5-qtsensors",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a5df692e9/x11-packages/qt5-qtsensors/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a5df692e9/x11-packages/qt5-qtsensors/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "qt5-qtserialport",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt Serial Port Library",
     "homepage": "https://www.qt.io/",
     "depends": [
       "libc++",
       "qt5-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtserialport-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtserialport-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7cd7f6531/x11-packages/qt5-qtserialport",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7cd7f6531/x11-packages/qt5-qtserialport/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7cd7f6531/x11-packages/qt5-qtserialport/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c1d141ad2/x11-packages/qt5-qtserialport",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c1d141ad2/x11-packages/qt5-qtserialport/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c1d141ad2/x11-packages/qt5-qtserialport/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7cd7f6531/x11-packages/qt5-qtserialport/src-serialport-qserialport_unix.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/c1d141ad2/x11-packages/qt5-qtserialport/src-serialport-qserialport_unix.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7cd7f6531/x11-packages/qt5-qtserialport/src-serialport-qserialport_unix.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c1d141ad2/x11-packages/qt5-qtserialport/src-serialport-qserialport_unix.cpp.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "qt5-qtsvg",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt SVG Library",
     "homepage": "https://www.qt.io/",
     "depends": [
       "libc++",
       "qt5-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtsvg-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtsvg-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtsvg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtsvg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtsvg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/02fdc1b1f/x11-packages/qt5-qtsvg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02fdc1b1f/x11-packages/qt5-qtsvg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02fdc1b1f/x11-packages/qt5-qtsvg/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "qt5-qttools",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt Development Tools (Linguist, Assistant, Designer, etc.)",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53252,22 +53243,22 @@
       "qt5-qtbase",
       "qt5-qtdeclarative"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qttools-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qttools-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/x11-packages/qt5-qttools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/x11-packages/qt5-qttools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/x11-packages/qt5-qttools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/50a0ffc04/x11-packages/qt5-qttools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/50a0ffc04/x11-packages/qt5-qttools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/50a0ffc04/x11-packages/qt5-qttools/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9e90d1b31/x11-packages/qt5-qttools/src-designer-src-uitools-uitools.pro.patch"
+      "https://github.com/termux/termux-packages/blob/50a0ffc04/x11-packages/qt5-qttools/src-designer-src-uitools-uitools.pro.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/x11-packages/qt5-qttools/src-designer-src-uitools-uitools.pro.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/50a0ffc04/x11-packages/qt5-qttools/src-designer-src-uitools-uitools.pro.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "qt5-qtwebchannel",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt 5 WebChannel Library",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53276,11 +53267,11 @@
       "qt5-qtdeclarative",
       "qt5-qtwebsockets"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtwebchannel-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtwebchannel-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtwebchannel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtwebchannel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtwebchannel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4cce4b653/x11-packages/qt5-qtwebchannel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4cce4b653/x11-packages/qt5-qtwebchannel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4cce4b653/x11-packages/qt5-qtwebchannel/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -53438,7 +53429,7 @@
   },
   {
     "name": "qt5-qtwebsockets",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt 5 WebSockets Library",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53446,28 +53437,28 @@
       "qt5-qtbase",
       "qt5-qtdeclarative"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtwebsockets-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtwebsockets-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtwebsockets",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtwebsockets/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtwebsockets/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d42804b74/x11-packages/qt5-qtwebsockets",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d42804b74/x11-packages/qt5-qtwebsockets/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d42804b74/x11-packages/qt5-qtwebsockets/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "qt5-qtx11extras",
-    "version": "5.15.10",
+    "version": "5.15.14",
     "description": "Qt X11 Extras enables the Qt programmer to write applications for the Linux/X11 platform",
     "homepage": "https://www.qt.io/",
     "depends": [
       "qt5-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.10/submodules/qtx11extras-everywhere-opensource-src-5.15.10.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/qtx11extras-everywhere-opensource-src-5.15.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2/x11-packages/qt5-qtx11extras",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2/x11-packages/qt5-qtx11extras/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2/x11-packages/qt5-qtx11extras/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d383da75a/x11-packages/qt5-qtx11extras",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d383da75a/x11-packages/qt5-qtx11extras/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d383da75a/x11-packages/qt5-qtx11extras/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
