@@ -7521,17 +7521,17 @@
   },
   {
     "name": "fastfetch",
-    "version": "2.21.2",
+    "version": "2.21.3",
     "description": "A neofetch-like tool for fetching system information and displaying them in a pretty way",
     "homepage": "https://github.com/fastfetch-cli/fastfetch",
     "depends": [
       "vulkan-loader"
     ],
-    "srcurl": "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.2.tar.gz",
+    "srcurl": "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ac4db53cc/packages/fastfetch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ac4db53cc/packages/fastfetch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ac4db53cc/packages/fastfetch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/489a767fc/packages/fastfetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/489a767fc/packages/fastfetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/489a767fc/packages/fastfetch/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -21751,17 +21751,18 @@
   },
   {
     "name": "libwebrtc-audio-processing",
-    "version": "0.3.1",
+    "version": "1.3",
     "description": "A library containing the AudioProcessing module from the WebRTC project",
-    "homepage": "https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/",
+    "homepage": "https://www.freedesktop.org/software/pulseaudio/webrtc-audio-processing/",
     "depends": [
-      "libc++"
+      "libc++",
+      "abseil-cpp"
     ],
-    "srcurl": "https://freedesktop.org/software/pulseaudio/webrtc-audio-processing/webrtc-audio-processing-0.3.1.tar.gz",
+    "srcurl": "https://www.freedesktop.org/software/pulseaudio/webrtc-audio-processing/webrtc-audio-processing-1.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/981665b32/packages/libwebrtc-audio-processing",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/981665b32/packages/libwebrtc-audio-processing/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/981665b32/packages/libwebrtc-audio-processing/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/983514d74/packages/libwebrtc-audio-processing",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/983514d74/packages/libwebrtc-audio-processing/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/983514d74/packages/libwebrtc-audio-processing/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -23826,7 +23827,7 @@
   },
   {
     "name": "mariadb",
-    "version": "2:11.4.3",
+    "version": "2:11.5.2",
     "description": "A drop-in replacement for mysql server",
     "homepage": "https://mariadb.org",
     "depends": [
@@ -23842,36 +23843,36 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://archive.mariadb.org/mariadb-11.4.3/source/mariadb-11.4.3.tar.gz",
+    "srcurl": "https://archive.mariadb.org/mariadb-11.5.2/source/mariadb-11.5.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a915b690c/packages/mariadb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/879a894f5/packages/mariadb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/client-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/cmake-install_layout.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/configure.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/i686-no-asm-goto.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/my_rdtsc.h.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/scripts-mysql_install_db.sh.patch",
-      "https://github.com/termux/termux-packages/blob/a915b690c/packages/mariadb/support-files.patch"
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/client-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/cmake-install_layout.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/configure.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/i686-no-asm-goto.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/my_rdtsc.h.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/scripts-mysql_install_db.sh.patch",
+      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/support-files.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/client-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/cmake-install_layout.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/configure.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/i686-no-asm-goto.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/my_rdtsc.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/scripts-mysql_install_db.sh.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a915b690c/packages/mariadb/support-files.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/client-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/cmake-install_layout.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/configure.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/i686-no-asm-goto.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/my_rdtsc.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/scripts-mysql_install_db.sh.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/support-files.patch"
     ],
     "auto_updated": true
   },
@@ -30080,20 +30081,20 @@
     ],
     "srcurl": "https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.2.0/pipewire-1.2.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5888ce892/packages/pipewire",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5888ce892/packages/pipewire/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5888ce892/packages/pipewire/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/983514d74/packages/pipewire",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/983514d74/packages/pipewire/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/983514d74/packages/pipewire/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5888ce892/packages/pipewire/IPTOS_DSCP.patch",
-      "https://github.com/termux/termux-packages/blob/5888ce892/packages/pipewire/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/5888ce892/packages/pipewire/reallocarray.diff",
-      "https://github.com/termux/termux-packages/blob/5888ce892/packages/pipewire/runtime_dir.patch"
+      "https://github.com/termux/termux-packages/blob/983514d74/packages/pipewire/IPTOS_DSCP.patch",
+      "https://github.com/termux/termux-packages/blob/983514d74/packages/pipewire/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/983514d74/packages/pipewire/reallocarray.diff",
+      "https://github.com/termux/termux-packages/blob/983514d74/packages/pipewire/runtime_dir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5888ce892/packages/pipewire/IPTOS_DSCP.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5888ce892/packages/pipewire/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5888ce892/packages/pipewire/reallocarray.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/5888ce892/packages/pipewire/runtime_dir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/983514d74/packages/pipewire/IPTOS_DSCP.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/983514d74/packages/pipewire/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/983514d74/packages/pipewire/reallocarray.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/983514d74/packages/pipewire/runtime_dir.patch"
     ],
     "auto_updated": true
   },
@@ -34093,7 +34094,7 @@
   },
   {
     "name": "seafile-client",
-    "version": "9.0.7",
+    "version": "9.0.8",
     "description": "Seafile is a file syncing and sharing software with file encryption and group sharing",
     "homepage": "https://seafile.com",
     "depends": [
@@ -34109,16 +34110,16 @@
       "python",
       "zlib"
     ],
-    "srcurl": "https://github.com/haiwen/seafile/archive/v9.0.7.tar.gz",
+    "srcurl": "https://github.com/haiwen/seafile/archive/v9.0.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9d1e2b7d5/packages/seafile-client",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9d1e2b7d5/packages/seafile-client/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d1e2b7d5/packages/seafile-client/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e74b6b0d/packages/seafile-client",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e74b6b0d/packages/seafile-client/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e74b6b0d/packages/seafile-client/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9d1e2b7d5/packages/seafile-client/configure.ac.patch"
+      "https://github.com/termux/termux-packages/blob/9e74b6b0d/packages/seafile-client/configure.ac.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9d1e2b7d5/packages/seafile-client/configure.ac.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9e74b6b0d/packages/seafile-client/configure.ac.patch"
     ],
     "auto_updated": true
   },
@@ -57150,7 +57151,7 @@
   },
   {
     "name": "xfce4-notifyd",
-    "version": "0.9.5",
+    "version": "0.9.6",
     "description": "simple, visually-appealing notification daemon for Xfce",
     "homepage": "https://docs.xfce.org/apps/notifyd/start",
     "depends": [
@@ -57170,16 +57171,16 @@
       "xfconf",
       "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.5.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/apps/xfce4-notifyd/0.9/xfce4-notifyd-0.9.6.tar.bz2",
     "maintainer": "@Yisus7u7",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f2fa296d5/x11-packages/xfce4-notifyd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f2fa296d5/x11-packages/xfce4-notifyd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f2fa296d5/x11-packages/xfce4-notifyd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0baf22bf3/x11-packages/xfce4-notifyd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0baf22bf3/x11-packages/xfce4-notifyd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0baf22bf3/x11-packages/xfce4-notifyd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f2fa296d5/x11-packages/xfce4-notifyd/fix-hardcoded-paths.patch"
+      "https://github.com/termux/termux-packages/blob/0baf22bf3/x11-packages/xfce4-notifyd/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f2fa296d5/x11-packages/xfce4-notifyd/fix-hardcoded-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0baf22bf3/x11-packages/xfce4-notifyd/fix-hardcoded-paths.patch"
     ],
     "auto_updated": true
   },
