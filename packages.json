@@ -11009,6 +11009,39 @@
     "auto_updated": true
   },
   {
+    "name": "groonga",
+    "version": "14.0.6",
+    "description": "An embeddable fulltext search engine",
+    "homepage": "https://github.com/groonga/groonga/",
+    "depends": [
+      "libandroid-execinfo",
+      "libarrow-cpp",
+      "libc++",
+      "liblz4",
+      "libstemmer",
+      "onigmo",
+      "xxhash",
+      "zlib",
+      "zstd"
+    ],
+    "srcurl": "https://github.com/groonga/groonga/releases/download/v14.0.6/groonga-14.0.6.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/89ea5f49e/packages/groonga",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/cmake-FindGroongalz4.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/lib-grn.h.patch",
+      "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/vendor-CMakeLists.txt.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/cmake-FindGroongalz4.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/lib-grn.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/vendor-CMakeLists.txt.patch"
+    ],
+    "auto_updated": true
+  },
+  {
     "name": "groovy",
     "version": "4.0.16",
     "description": "A powerful multi-faceted programming language for the JVM platform",
@@ -28033,6 +28066,21 @@
     "auto_updated": true
   },
   {
+    "name": "onigmo",
+    "version": "6.2.0",
+    "description": "A regular expressions library forked from Oniguruma",
+    "homepage": "https://github.com/k-takata/Onigmo",
+    "depends": [],
+    "srcurl": "https://github.com/k-takata/Onigmo/releases/download/Onigmo-6.2.0/onigmo-6.2.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/aa8ab7887/packages/onigmo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aa8ab7887/packages/onigmo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aa8ab7887/packages/onigmo/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "oniguruma",
     "version": "6.9.9",
     "description": "Regular expressions library",
@@ -29644,6 +29692,25 @@
       "https://raw.githubusercontent.com/termux/termux-packages/d7b7edb59/packages/pforth/CMakeLists.txt.patch"
     ],
     "auto_updated": false
+  },
+  {
+    "name": "pgroonga",
+    "version": "3.2.2",
+    "description": "A PostgreSQL extension to use Groonga as index",
+    "homepage": "https://github.com/pgroonga/pgroonga",
+    "depends": [
+      "groonga",
+      "libmsgpack",
+      "xxhash"
+    ],
+    "srcurl": "https://github.com/pgroonga/pgroonga/releases/download/3.2.2/pgroonga-3.2.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4097a9d4/packages/pgroonga",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4097a9d4/packages/pgroonga/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4097a9d4/packages/pgroonga/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "photon-rss",
@@ -34404,7 +34471,7 @@
   },
   {
     "name": "sheldon",
-    "version": "0.7.4",
+    "version": "0.8.0",
     "description": "Fast, configurable, shell plugin manager",
     "homepage": "https://github.com/rossmacarthur/sheldon",
     "depends": [
@@ -34413,11 +34480,11 @@
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://github.com/rossmacarthur/sheldon/archive/refs/tags/0.7.4.tar.gz",
+    "srcurl": "https://github.com/rossmacarthur/sheldon/archive/refs/tags/0.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/sheldon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/sheldon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/sheldon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1d9d44f22/packages/sheldon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1d9d44f22/packages/sheldon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1d9d44f22/packages/sheldon/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40718,15 +40785,15 @@
   },
   {
     "name": "wego",
-    "version": "2.2",
+    "version": "2.3",
     "description": "weather app for the terminal",
     "homepage": "https://github.com/schachmat/wego",
     "depends": [],
-    "srcurl": "https://github.com/schachmat/wego/archive/refs/tags/2.2.tar.gz",
+    "srcurl": "https://github.com/schachmat/wego/archive/refs/tags/2.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/551df4d1e/packages/wego",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/551df4d1e/packages/wego/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/551df4d1e/packages/wego/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/09a7621ac/packages/wego",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/09a7621ac/packages/wego/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/09a7621ac/packages/wego/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
