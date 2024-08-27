@@ -4958,14 +4958,16 @@
     ],
     "srcurl": "https://github.com/crowdagger/crowbook/archive/refs/tags/v0.16.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/crowbook",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/crowbook/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/crowbook/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ee77099f6/packages/crowbook",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ee77099f6/packages/crowbook/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ee77099f6/packages/crowbook/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/crowbook/0ff64adee9c7ddf01b9b019fadc04153a1151575.patch"
+      "https://github.com/termux/termux-packages/blob/ee77099f6/packages/crowbook/0ff64adee9c7ddf01b9b019fadc04153a1151575.patch",
+      "https://github.com/termux/termux-packages/blob/ee77099f6/packages/crowbook/time-items-format_items.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/crowbook/0ff64adee9c7ddf01b9b019fadc04153a1151575.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ee77099f6/packages/crowbook/0ff64adee9c7ddf01b9b019fadc04153a1151575.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ee77099f6/packages/crowbook/time-items-format_items.diff"
     ],
     "auto_updated": false
   },
@@ -10441,22 +10443,24 @@
     ],
     "srcurl": "https://storage.googleapis.com/golang/go1.23.0.src.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f5c1084aa/packages/golang",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f5c1084aa/packages/golang/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f5c1084aa/packages/golang/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a6786138f/packages/golang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a6786138f/packages/golang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a6786138f/packages/golang/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f5c1084aa/packages/golang/fix-hardcoded-etc-resolv-conf.diff",
-      "https://github.com/termux/termux-packages/blob/f5c1084aa/packages/golang/src-crypto-x509-root_linux.go.patch",
-      "https://github.com/termux/termux-packages/blob/f5c1084aa/packages/golang/src-os-file_unix.go.patch",
-      "https://github.com/termux/termux-packages/blob/f5c1084aa/packages/golang/src-runtime-cgo-cgo.go.patch",
-      "https://github.com/termux/termux-packages/blob/f5c1084aa/packages/golang/src-runtime-cgo-gcc_android.c.patch"
+      "https://github.com/termux/termux-packages/blob/a6786138f/packages/golang/patch-script/fix-hardcoded-etc-resolv-conf.diff",
+      "https://github.com/termux/termux-packages/blob/a6786138f/packages/golang/patch-script/remove-pidfd.diff",
+      "https://github.com/termux/termux-packages/blob/a6786138f/packages/golang/src-crypto-x509-root_linux.go.patch",
+      "https://github.com/termux/termux-packages/blob/a6786138f/packages/golang/src-os-file_unix.go.patch",
+      "https://github.com/termux/termux-packages/blob/a6786138f/packages/golang/src-runtime-cgo-cgo.go.patch",
+      "https://github.com/termux/termux-packages/blob/a6786138f/packages/golang/src-runtime-cgo-gcc_android.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f5c1084aa/packages/golang/fix-hardcoded-etc-resolv-conf.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/f5c1084aa/packages/golang/src-crypto-x509-root_linux.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f5c1084aa/packages/golang/src-os-file_unix.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f5c1084aa/packages/golang/src-runtime-cgo-cgo.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f5c1084aa/packages/golang/src-runtime-cgo-gcc_android.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a6786138f/packages/golang/patch-script/fix-hardcoded-etc-resolv-conf.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/a6786138f/packages/golang/patch-script/remove-pidfd.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/a6786138f/packages/golang/src-crypto-x509-root_linux.go.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a6786138f/packages/golang/src-os-file_unix.go.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a6786138f/packages/golang/src-runtime-cgo-cgo.go.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a6786138f/packages/golang/src-runtime-cgo-gcc_android.c.patch"
     ],
     "auto_updated": false
   },
@@ -13143,15 +13147,15 @@
   },
   {
     "name": "jfrog-cli",
-    "version": "2.64.0",
+    "version": "2.64.1",
     "description": "A CLI for JFrog products",
     "homepage": "https://jfrog.com/getcli",
     "depends": [],
-    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.64.0.tar.gz",
+    "srcurl": "https://github.com/jfrog/jfrog-cli/archive/v2.64.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ec6bf1c8/packages/jfrog-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ec6bf1c8/packages/jfrog-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ec6bf1c8/packages/jfrog-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ca3fe1325/packages/jfrog-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ca3fe1325/packages/jfrog-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ca3fe1325/packages/jfrog-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -18562,15 +18566,15 @@
   },
   {
     "name": "libnghttp2",
-    "version": "1.62.1",
+    "version": "1.63.0",
     "description": "nghttp HTTP 2.0 library",
     "homepage": "https://nghttp2.org/",
     "depends": [],
-    "srcurl": "https://github.com/nghttp2/nghttp2/releases/download/v1.62.1/nghttp2-1.62.1.tar.xz",
+    "srcurl": "https://github.com/nghttp2/nghttp2/releases/download/v1.63.0/nghttp2-1.63.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e98070be/packages/libnghttp2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e98070be/packages/libnghttp2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e98070be/packages/libnghttp2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a6617b82/packages/libnghttp2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a6617b82/packages/libnghttp2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a6617b82/packages/libnghttp2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23889,34 +23893,34 @@
     ],
     "srcurl": "https://archive.mariadb.org/mariadb-11.5.2/source/mariadb-11.5.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/879a894f5/packages/mariadb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/07f36c3a3/packages/mariadb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/client-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/cmake-install_layout.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/configure.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/i686-no-asm-goto.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/my_rdtsc.h.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/scripts-mysql_install_db.sh.patch",
-      "https://github.com/termux/termux-packages/blob/879a894f5/packages/mariadb/support-files.patch"
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/client-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/cmake-install_layout.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/configure.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/i686-no-asm-goto.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/my_rdtsc.h.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/scripts-mysql_install_db.sh.patch",
+      "https://github.com/termux/termux-packages/blob/07f36c3a3/packages/mariadb/support-files.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/client-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/cmake-install_layout.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/configure.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/i686-no-asm-goto.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/my_rdtsc.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/scripts-mysql_install_db.sh.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/879a894f5/packages/mariadb/support-files.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/client-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/cmake-install_layout.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/cmake-mariadb_connector_c.cmake.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/configure.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/i686-no-asm-goto.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/libmariadb-mariadb_config-mariadb_config.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/my_rdtsc.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/plugin-disks-information_schema_disks.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/scripts-mysql_install_db.sh.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/07f36c3a3/packages/mariadb/support-files.patch"
     ],
     "auto_updated": true
   },
@@ -25038,11 +25042,15 @@
     "depends": [],
     "srcurl": "https://github.com/svenstaro/miniserve/archive/v0.27.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/07474af62/packages/miniserve",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/07474af62/packages/miniserve/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/07474af62/packages/miniserve/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c49d85bbf/packages/miniserve",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c49d85bbf/packages/miniserve/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c49d85bbf/packages/miniserve/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/c49d85bbf/packages/miniserve/time-items-format_items.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/c49d85bbf/packages/miniserve/time-items-format_items.diff"
+    ],
     "auto_updated": true
   },
   {
@@ -27653,18 +27661,18 @@
   },
   {
     "name": "nudoku",
-    "version": "4.0.1",
+    "version": "5.0.0",
     "description": "ncurses based sudoku game",
     "homepage": "http://jubalh.github.io/nudoku/",
     "depends": [
       "libcairo",
       "ncurses"
     ],
-    "srcurl": "https://github.com/jubalh/nudoku/archive/4.0.1.tar.gz",
+    "srcurl": "https://github.com/jubalh/nudoku/archive/5.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a9af7eb4/packages/nudoku",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a9af7eb4/packages/nudoku/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a9af7eb4/packages/nudoku/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8f3af7d2c/packages/nudoku",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8f3af7d2c/packages/nudoku/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8f3af7d2c/packages/nudoku/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -27941,15 +27949,15 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "23.7.2",
+    "version": "23.8.0",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v23.7.2.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v23.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c44870538/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c44870538/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c44870538/packages/oh-my-posh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ad69cf1d/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ad69cf1d/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ad69cf1d/packages/oh-my-posh/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30372,9 +30380,9 @@
     ],
     "srcurl": "git+https://github.com/kornelski/pngquant",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/51253bd66/packages/pngquant",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51253bd66/packages/pngquant/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51253bd66/packages/pngquant/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c3f47653/packages/pngquant",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c3f47653/packages/pngquant/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c3f47653/packages/pngquant/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -33686,17 +33694,17 @@
   },
   {
     "name": "rust-analyzer",
-    "version": "20240826",
+    "version": "20240827",
     "description": "A Rust compiler front-end for IDEs",
     "homepage": "https://github.com/rust-lang/rust-analyzer",
     "depends": [
       "rust-src"
     ],
-    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2024-08-26.tar.gz",
+    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2024-08-27.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4bf32a9ee/packages/rust-analyzer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4bf32a9ee/packages/rust-analyzer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4bf32a9ee/packages/rust-analyzer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f1ecf0ad7/packages/rust-analyzer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f1ecf0ad7/packages/rust-analyzer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f1ecf0ad7/packages/rust-analyzer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -34670,11 +34678,15 @@
     ],
     "srcurl": "https://github.com/Aloxaf/silicon/archive/refs/tags/v0.5.2.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/silicon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/silicon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/silicon/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ed9840e92/packages/silicon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ed9840e92/packages/silicon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ed9840e92/packages/silicon/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/ed9840e92/packages/silicon/bump-time-crate.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/ed9840e92/packages/silicon/bump-time-crate.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -38850,11 +38862,15 @@
     ],
     "srcurl": "git+https://github.com/typst/typst",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/typst",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/typst/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/typst/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/88bb2f414/packages/typst",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88bb2f414/packages/typst/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88bb2f414/packages/typst/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/88bb2f414/packages/typst/time-items-format_items.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/88bb2f414/packages/typst/time-items-format_items.diff"
+    ],
     "auto_updated": true
   },
   {
@@ -40568,15 +40584,15 @@
   },
   {
     "name": "watchexec",
-    "version": "1.22.3",
+    "version": "2.1.2",
     "description": "Executes commands in response to file modifications",
     "homepage": "https://github.com/watchexec/watchexec",
     "depends": [],
-    "srcurl": "https://github.com/watchexec/watchexec/archive/refs/tags/v1.22.3.tar.gz",
+    "srcurl": "https://github.com/watchexec/watchexec/archive/refs/tags/v2.1.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/watchexec",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/watchexec/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/watchexec/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f1903197/packages/watchexec",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f1903197/packages/watchexec/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f1903197/packages/watchexec/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -40640,11 +40656,11 @@
     "depends": [
       "ncurses"
     ],
-    "srcurl": "https://fossies.org/linux/misc/wdiff-1.2.2.tar.gz",
+    "srcurl": "https://ftp.gnu.org/gnu/wdiff/wdiff-1.2.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/68e8fdfbc/packages/wdiff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/68e8fdfbc/packages/wdiff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/68e8fdfbc/packages/wdiff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e9bfaaadd/packages/wdiff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e9bfaaadd/packages/wdiff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e9bfaaadd/packages/wdiff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
