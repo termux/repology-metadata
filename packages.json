@@ -8190,20 +8190,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.2.123",
+    "version": "0.2.124",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.2.123.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.2.124.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c45aafa4e/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c45aafa4e/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c45aafa4e/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e02c5d08/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e02c5d08/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e02c5d08/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c45aafa4e/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/9e02c5d08/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c45aafa4e/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9e02c5d08/packages/flyctl/getcpuinfo.patch"
     ],
     "auto_updated": true
   },
@@ -25015,22 +25015,22 @@
   },
   {
     "name": "minio",
-    "version": "2024.08.26.15.33.07",
+    "version": "2024.08.29.01.40.52",
     "description": "Multi-Cloud Object Storage",
     "homepage": "https://min.io/",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-08-26T15-33-07Z.tar.gz",
+    "srcurl": "https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-08-29T01-40-52Z.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a42b1e85/packages/minio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a42b1e85/packages/minio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a42b1e85/packages/minio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/612a70bbd/packages/minio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/612a70bbd/packages/minio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/612a70bbd/packages/minio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7a42b1e85/packages/minio/cmd-net.go.patch"
+      "https://github.com/termux/termux-packages/blob/612a70bbd/packages/minio/cmd-net.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7a42b1e85/packages/minio/cmd-net.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/612a70bbd/packages/minio/cmd-net.go.patch"
     ],
     "auto_updated": true
   },
@@ -40511,15 +40511,15 @@
   },
   {
     "name": "wasm-component-ld",
-    "version": "0.5.6",
+    "version": "0.5.7",
     "description": "Command line linker for creating WebAssembly components",
     "homepage": "https://github.com/bytecodealliance/wasm-component-ld",
     "depends": [],
-    "srcurl": "https://github.com/bytecodealliance/wasm-component-ld/archive/refs/tags/v0.5.6.tar.gz",
+    "srcurl": "https://github.com/bytecodealliance/wasm-component-ld/archive/refs/tags/v0.5.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f062caa7c/packages/wasm-component-ld",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f062caa7c/packages/wasm-component-ld/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f062caa7c/packages/wasm-component-ld/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d05215c5a/packages/wasm-component-ld",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d05215c5a/packages/wasm-component-ld/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d05215c5a/packages/wasm-component-ld/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56990,6 +56990,28 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/367092418/x11-packages/xfce4-clipman-plugin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "xfce4-cpugraph-plugin",
+    "version": "1.2.10",
+    "description": "Graphical representation of the CPU load",
+    "homepage": "https://docs.xfce.org/panel-plugins/xfce4-cpugraph-plugin/start",
+    "depends": [
+      "libandroid-glob",
+      "xfce4-panel"
+    ],
+    "srcurl": "https://archive.xfce.org/src/panel-plugins/xfce4-cpugraph-plugin/1.2/xfce4-cpugraph-plugin-1.2.10.tar.bz2",
+    "maintainer": "@knyipab",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5d1f392eb/x11-packages/xfce4-cpugraph-plugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5d1f392eb/x11-packages/xfce4-cpugraph-plugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5d1f392eb/x11-packages/xfce4-cpugraph-plugin/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5d1f392eb/x11-packages/xfce4-cpugraph-plugin/0001-cpu-data-thread-stat.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5d1f392eb/x11-packages/xfce4-cpugraph-plugin/0001-cpu-data-thread-stat.patch"
+    ],
     "auto_updated": true
   },
   {
