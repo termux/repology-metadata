@@ -11007,7 +11007,7 @@
   },
   {
     "name": "groonga",
-    "version": "14.0.6",
+    "version": "14.0.7",
     "description": "An embeddable fulltext search engine",
     "homepage": "https://github.com/groonga/groonga/",
     "depends": [
@@ -11017,25 +11017,18 @@
       "liblz4",
       "libstemmer",
       "onigmo",
+      "simdjson",
       "xxhash",
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/groonga/groonga/releases/download/v14.0.6/groonga-14.0.6.tar.gz",
+    "srcurl": "https://github.com/groonga/groonga/releases/download/v14.0.7/groonga-14.0.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/89ea5f49e/packages/groonga",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/cmake-FindGroongalz4.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/lib-grn.h.patch",
-      "https://github.com/termux/termux-packages/blob/89ea5f49e/packages/groonga/vendor-CMakeLists.txt.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/cmake-FindGroongalz4.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/lib-grn.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/89ea5f49e/packages/groonga/vendor-CMakeLists.txt.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9feeace67/packages/groonga",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9feeace67/packages/groonga/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9feeace67/packages/groonga/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -16019,15 +16012,15 @@
   },
   {
     "name": "libexpat",
-    "version": "2.6.2",
+    "version": "2.6.3",
     "description": "XML parsing C library",
     "homepage": "https://libexpat.github.io/",
     "depends": [],
-    "srcurl": "https://github.com/libexpat/libexpat/releases/download/R_2_6_2/expat-2.6.2.tar.bz2",
+    "srcurl": "https://github.com/libexpat/libexpat/releases/download/R_2_6_3/expat-2.6.3.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a926f094e/packages/libexpat",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a926f094e/packages/libexpat/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a926f094e/packages/libexpat/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e499605b5/packages/libexpat",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e499605b5/packages/libexpat/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e499605b5/packages/libexpat/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -34702,6 +34695,23 @@
     "auto_updated": false
   },
   {
+    "name": "simdjson",
+    "version": "3.10.1",
+    "description": "A C++ library to see how fast we can parse JSON with complete validation",
+    "homepage": "https://simdjson.org/",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/simdjson/simdjson/archive/refs/tags/v3.10.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cef0cca03/packages/simdjson",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cef0cca03/packages/simdjson/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cef0cca03/packages/simdjson/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "simh",
     "version": "1:3.12.5",
     "description": "A collection of simulators for computer hardware and software from the past",
@@ -35149,27 +35159,27 @@
   },
   {
     "name": "solidity",
-    "version": "0.8.26",
+    "version": "0.8.27",
     "description": "An Ethereum smart contract-oriented language",
     "homepage": "https://solidity.readthedocs.io",
     "depends": [
       "boost",
       "libc++"
     ],
-    "srcurl": "https://github.com/ethereum/solidity/releases/download/v0.8.26/solidity_0.8.26.tar.gz",
+    "srcurl": "https://github.com/ethereum/solidity/releases/download/v0.8.27/solidity_0.8.27.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7f200c5bd/packages/solidity",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7f200c5bd/packages/solidity/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7f200c5bd/packages/solidity/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/55c697aae/packages/solidity",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7f200c5bd/packages/solidity/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/7f200c5bd/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/7f200c5bd/packages/solidity/libsolutil-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/libsolutil-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7f200c5bd/packages/solidity/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f200c5bd/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7f200c5bd/packages/solidity/libsolutil-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/libsolutil-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -35328,15 +35338,15 @@
   },
   {
     "name": "speedtest-go",
-    "version": "1.7.8",
+    "version": "1.7.9",
     "description": "Command line interface to test internet speed using speedtest.net",
     "homepage": "https://github.com/showwin/speedtest-go/",
     "depends": [],
-    "srcurl": "https://github.com/showwin/speedtest-go/archive/refs/tags/v1.7.8.tar.gz",
+    "srcurl": "https://github.com/showwin/speedtest-go/archive/refs/tags/v1.7.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/15767add6/packages/speedtest-go",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/15767add6/packages/speedtest-go/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/15767add6/packages/speedtest-go/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93512af10/packages/speedtest-go",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93512af10/packages/speedtest-go/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93512af10/packages/speedtest-go/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
