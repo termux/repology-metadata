@@ -8201,20 +8201,20 @@
   },
   {
     "name": "flyctl",
-    "version": "0.3.14",
+    "version": "0.3.15",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.3.14.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.3.15.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1e835ad97/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1e835ad97/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1e835ad97/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bc951f331/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bc951f331/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bc951f331/packages/flyctl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1e835ad97/packages/flyctl/getcpuinfo.patch"
+      "https://github.com/termux/termux-packages/blob/bc951f331/packages/flyctl/getcpuinfo.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1e835ad97/packages/flyctl/getcpuinfo.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bc951f331/packages/flyctl/getcpuinfo.patch"
     ],
     "auto_updated": true
   },
@@ -24777,6 +24777,7 @@
       "libc++",
       "libdrm",
       "libglvnd",
+      "libllvm",
       "libwayland",
       "libx11",
       "libxext",
@@ -24790,30 +24791,32 @@
     ],
     "srcurl": "https://archive.mesa3d.org/mesa-24.0.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4b0b79603/packages/mesa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/df10acb7b/packages/mesa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0001-disable-multithreading-for-llvmpipe.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0002-fix-for-getprogname.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0003-fix-for-anon-file.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0004-do-not-check-xlocale.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0005-virgl-socket-path.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0006-wsi-no-pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0007-use-mtx_t-operations-in-turnip.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0008-workaround-fortify-check.patch",
-      "https://github.com/termux/termux-packages/blob/4b0b79603/packages/mesa/0009-disable-resource_create_front-for-vtest.patch"
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0001-disable-multithreading-for-llvmpipe.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0002-fix-for-getprogname.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0003-fix-for-anon-file.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0004-do-not-check-xlocale.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0005-virgl-socket-path.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0006-wsi-no-pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0007-use-mtx_t-operations-in-turnip.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0008-workaround-fortify-check.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0009-disable-resource_create_front-for-vtest.patch",
+      "https://github.com/termux/termux-packages/blob/df10acb7b/packages/mesa/0010-llvm-19.1.0.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0001-disable-multithreading-for-llvmpipe.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0002-fix-for-getprogname.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0003-fix-for-anon-file.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0004-do-not-check-xlocale.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0005-virgl-socket-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0006-wsi-no-pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0007-use-mtx_t-operations-in-turnip.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0008-workaround-fortify-check.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4b0b79603/packages/mesa/0009-disable-resource_create_front-for-vtest.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0001-disable-multithreading-for-llvmpipe.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0002-fix-for-getprogname.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0003-fix-for-anon-file.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0004-do-not-check-xlocale.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0005-virgl-socket-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0006-wsi-no-pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0007-use-mtx_t-operations-in-turnip.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0008-workaround-fortify-check.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0009-disable-resource_create_front-for-vtest.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/df10acb7b/packages/mesa/0010-llvm-19.1.0.patch"
     ],
     "auto_updated": true
   },
@@ -27759,14 +27762,14 @@
     ],
     "srcurl": "https://github.com/nushell/nushell/archive/0.98.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f0a6bee5/packages/nushell",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f0a6bee5/packages/nushell/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f0a6bee5/packages/nushell/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/55a170291/packages/nushell",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55a170291/packages/nushell/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55a170291/packages/nushell/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9f0a6bee5/packages/nushell/Cargo.lock.patch"
+      "https://github.com/termux/termux-packages/blob/55a170291/packages/nushell/Cargo.lock.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9f0a6bee5/packages/nushell/Cargo.lock.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/55a170291/packages/nushell/Cargo.lock.patch"
     ],
     "auto_updated": true
   },
@@ -38961,14 +38964,14 @@
     ],
     "srcurl": "git+https://github.com/typst/typst",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/88bb2f414/packages/typst",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88bb2f414/packages/typst/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88bb2f414/packages/typst/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a3075489f/packages/typst",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a3075489f/packages/typst/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a3075489f/packages/typst/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/88bb2f414/packages/typst/time-items-format_items.diff"
+      "https://github.com/termux/termux-packages/blob/a3075489f/packages/typst/time-items-format_items.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/88bb2f414/packages/typst/time-items-format_items.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/a3075489f/packages/typst/time-items-format_items.diff"
     ],
     "auto_updated": true
   },
