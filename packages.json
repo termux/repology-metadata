@@ -22957,7 +22957,7 @@
   },
   {
     "name": "llvm-mingw-w64",
-    "version": "20240417",
+    "version": "20241001",
     "description": "MinGW-w64 toolchain based on LLVM",
     "homepage": "https://github.com/mstorsjo/llvm-mingw",
     "depends": [
@@ -22967,60 +22967,64 @@
       "llvm-mingw-w64-libcompiler-rt",
       "llvm-mingw-w64-ucrt"
     ],
-    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20240417/llvm-mingw-20240417-ucrt-ubuntu-20.04-x86_64.tar.xz",
+    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20241001/llvm-mingw-20241001-ucrt-ubuntu-20.04-x86_64.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1da523b22/packages/llvm-mingw-w64",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1da523b22/packages/llvm-mingw-w64/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1da523b22/packages/llvm-mingw-w64/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e4881d4b7/packages/llvm-mingw-w64",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e4881d4b7/packages/llvm-mingw-w64/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e4881d4b7/packages/llvm-mingw-w64/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1da523b22/packages/llvm-mingw-w64/0001-append-sysroot.patch"
+      "https://github.com/termux/termux-packages/blob/e4881d4b7/packages/llvm-mingw-w64/0001-append-sysroot.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1da523b22/packages/llvm-mingw-w64/0001-append-sysroot.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e4881d4b7/packages/llvm-mingw-w64/0001-append-sysroot.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "llvm-mingw-w64-libcompiler-rt",
-    "version": "20240417",
+    "version": "20241001",
     "description": "Compiler runtime libraries for LLVM-MinGW",
     "homepage": "https://www.llvm.org/",
     "depends": [],
-    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20240417/llvm-mingw-20240417-ucrt-ubuntu-20.04-x86_64.tar.xz",
+    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20241001/llvm-mingw-20241001-ucrt-ubuntu-20.04-x86_64.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1da523b22/packages/llvm-mingw-w64-libcompiler-rt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1da523b22/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1da523b22/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e4881d4b7/packages/llvm-mingw-w64-libcompiler-rt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e4881d4b7/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e4881d4b7/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "llvm-mingw-w64-tools",
-    "version": "11.0.0",
+    "version": "12.0.0",
     "description": "MinGW-w64 tools for LLVM-MinGW",
     "homepage": "https://github.com/mstorsjo/llvm-mingw",
     "depends": [],
-    "srcurl": "https://downloads.sourceforge.net/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v11.0.0.tar.bz2",
+    "srcurl": "https://downloads.sourceforge.net/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v12.0.0.tar.bz2",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e90d1b31/packages/llvm-mingw-w64-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e90d1b31/packages/llvm-mingw-w64-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31/packages/llvm-mingw-w64-tools/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9b450358b/packages/llvm-mingw-w64-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9b450358b/packages/llvm-mingw-w64-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9b450358b/packages/llvm-mingw-w64-tools/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/9b450358b/packages/llvm-mingw-w64-tools/0001-do-not-use-posix-spawn.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/9b450358b/packages/llvm-mingw-w64-tools/0001-do-not-use-posix-spawn.patch"
+    ],
     "auto_updated": false
   },
   {
     "name": "llvm-mingw-w64-ucrt",
-    "version": "20240417",
+    "version": "20241001",
     "description": "MinGW-w64 runtime for LLVM-MinGW",
     "homepage": "https://www.mingw-w64.org/",
     "depends": [],
-    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20240417/llvm-mingw-20240417-ucrt-ubuntu-20.04-x86_64.tar.xz",
+    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20241001/llvm-mingw-20241001-ucrt-ubuntu-20.04-x86_64.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1da523b22/packages/llvm-mingw-w64-ucrt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1da523b22/packages/llvm-mingw-w64-ucrt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1da523b22/packages/llvm-mingw-w64-ucrt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e4881d4b7/packages/llvm-mingw-w64-ucrt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e4881d4b7/packages/llvm-mingw-w64-ucrt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e4881d4b7/packages/llvm-mingw-w64-ucrt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -23894,9 +23898,9 @@
     ],
     "srcurl": "https://github.com/ManimCommunity/manim/archive/refs/tags/v0.18.1.tar.gz",
     "maintainer": "Nguyen Khanh @nguynkhn",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f9eeeed11/packages/manim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f9eeeed11/packages/manim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f9eeeed11/packages/manim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/packages/manim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/manim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/manim/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -24056,7 +24060,7 @@
   },
   {
     "name": "matplotlib",
-    "version": "3.9.1",
+    "version": "3.9.2",
     "description": "A comprehensive library for creating static, animated, and interactive visualizations in Python",
     "homepage": "https://matplotlib.org/",
     "depends": [
@@ -24070,11 +24074,11 @@
       "python-pillow",
       "python-pip"
     ],
-    "srcurl": "https://github.com/matplotlib/matplotlib/archive/refs/tags/v3.9.1.tar.gz",
+    "srcurl": "https://github.com/matplotlib/matplotlib/archive/refs/tags/v3.9.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d33d689d8/packages/matplotlib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d33d689d8/packages/matplotlib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d33d689d8/packages/matplotlib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/packages/matplotlib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/matplotlib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/matplotlib/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30197,13 +30201,14 @@
     "description": "Animated pipes terminal screensaver",
     "homepage": "https://github.com/pipeseroni/pipes.sh",
     "depends": [
-      "bash"
+      "bash",
+      "ncurses-utils"
     ],
     "srcurl": "git+https://github.com/pipeseroni/pipes.sh",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/981665b32/packages/pipes.sh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/981665b32/packages/pipes.sh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/981665b32/packages/pipes.sh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1d82e89b4/packages/pipes.sh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1d82e89b4/packages/pipes.sh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1d82e89b4/packages/pipes.sh/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -31639,7 +31644,7 @@
   },
   {
     "name": "python-contourpy",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "description": "Python library for calculating contours in 2D quadrilateral grids",
     "homepage": "https://contourpy.readthedocs.io/",
     "depends": [
@@ -31648,11 +31653,15 @@
     ],
     "srcurl": "git+https://github.com/contourpy/contourpy",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b965d691f/packages/python-contourpy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b965d691f/packages/python-contourpy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b965d691f/packages/python-contourpy/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/packages/python-contourpy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-contourpy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-contourpy/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-contourpy/pyproject.toml.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-contourpy/pyproject.toml.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -31814,7 +31823,7 @@
   },
   {
     "name": "python-numpy",
-    "version": "1.26.5",
+    "version": "2.1.1",
     "description": "The fundamental package for scientific computing with Python",
     "homepage": "https://numpy.org/",
     "depends": [
@@ -31824,20 +31833,20 @@
     ],
     "srcurl": "git+https://github.com/numpy/numpy",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1e6023fde/packages/python-numpy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1e6023fde/packages/python-numpy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1e6023fde/packages/python-numpy/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/packages/python-numpy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-numpy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-numpy/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1e6023fde/packages/python-numpy/test.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-numpy/test.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1e6023fde/packages/python-numpy/test.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-numpy/test.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "python-onnxruntime",
-    "version": "1.19.0",
+    "version": "1.19.2",
     "description": "Cross-platform, high performance ML inferencing and training accelerator",
     "homepage": "https://onnxruntime.ai/",
     "depends": [
@@ -31849,16 +31858,16 @@
     ],
     "srcurl": "git+https://github.com/microsoft/onnxruntime",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ef496a040/packages/python-onnxruntime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ef496a040/packages/python-onnxruntime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ef496a040/packages/python-onnxruntime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/packages/python-onnxruntime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-onnxruntime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-onnxruntime/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ef496a040/packages/python-onnxruntime/0001-use-system-abseil.patch",
-      "https://github.com/termux/termux-packages/blob/ef496a040/packages/python-onnxruntime/0002-use-system-protobuf.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-onnxruntime/0001-use-system-abseil.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-onnxruntime/0002-use-system-protobuf.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ef496a040/packages/python-onnxruntime/0001-use-system-abseil.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ef496a040/packages/python-onnxruntime/0002-use-system-protobuf.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-onnxruntime/0001-use-system-abseil.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-onnxruntime/0002-use-system-protobuf.patch"
     ],
     "auto_updated": false
   },
@@ -31935,16 +31944,16 @@
     ],
     "srcurl": "https://github.com/apache/arrow/archive/refs/tags/apache-arrow-17.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f6da08da3/packages/python-pyarrow",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f6da08da3/packages/python-pyarrow/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f6da08da3/packages/python-pyarrow/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/packages/python-pyarrow",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-pyarrow/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-pyarrow/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f6da08da3/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/f6da08da3/packages/python-pyarrow/python-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-pyarrow/python-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f6da08da3/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f6da08da3/packages/python-pyarrow/python-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-pyarrow/cpp-cmake_modules-FindPython3Alt.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-pyarrow/python-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -31986,7 +31995,7 @@
   },
   {
     "name": "python-scipy",
-    "version": "1.14.0",
+    "version": "1.14.1",
     "description": "Fundamental algorithms for scientific computing in Python",
     "homepage": "https://scipy.org/",
     "depends": [
@@ -31997,9 +32006,9 @@
     ],
     "srcurl": "git+https://github.com/scipy/scipy",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8abd65a63/packages/python-scipy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8abd65a63/packages/python-scipy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8abd65a63/packages/python-scipy/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/packages/python-scipy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/packages/python-scipy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/packages/python-scipy/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -33667,20 +33676,20 @@
   },
   {
     "name": "ruff",
-    "version": "0.6.8",
+    "version": "0.6.9",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/0.6.8.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/0.6.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/36d247b13/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/36d247b13/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/36d247b13/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8981463bd/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8981463bd/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8981463bd/packages/ruff/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/36d247b13/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://github.com/termux/termux-packages/blob/8981463bd/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/36d247b13/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/8981463bd/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "auto_updated": true
   },
@@ -39922,15 +39931,15 @@
   },
   {
     "name": "viddy",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "A modern watch command",
     "homepage": "https://github.com/sachaos/viddy",
     "depends": [],
-    "srcurl": "https://github.com/sachaos/viddy/archive/refs/tags/v1.1.5.tar.gz",
+    "srcurl": "https://github.com/sachaos/viddy/archive/refs/tags/v1.1.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/777f45993/packages/viddy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/777f45993/packages/viddy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/777f45993/packages/viddy/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ff8878431/packages/viddy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ff8878431/packages/viddy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ff8878431/packages/viddy/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40375,15 +40384,15 @@
   },
   {
     "name": "vulkan-headers",
-    "version": "1.3.296",
+    "version": "1.3.297",
     "description": "Vulkan Header files and API registry",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.296.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.297.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4953410bc/packages/vulkan-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4953410bc/packages/vulkan-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4953410bc/packages/vulkan-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2bd594140/packages/vulkan-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2bd594140/packages/vulkan-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2bd594140/packages/vulkan-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -44892,7 +44901,7 @@
   },
   {
     "name": "cherrytree",
-    "version": "1.1.4",
+    "version": "1.2.0",
     "description": "A hierarchical note taking application",
     "homepage": "https://www.giuspen.net/cherrytree/",
     "depends": [
@@ -44902,14 +44911,13 @@
       "gspell",
       "gtk3",
       "gtkmm3",
-      "gtksourceview3",
+      "gtksourceview4",
       "libatkmm-1.6",
       "libc++",
       "libcairo",
       "libcairomm-1.0",
       "libcurl",
       "libglibmm-2.4",
-      "libgtksourceviewmm-3.0",
       "libpangomm-1.4",
       "libsigc++-2.0",
       "libsqlite",
@@ -44919,18 +44927,16 @@
       "libxml2",
       "pango"
     ],
-    "srcurl": "https://github.com/giuspen/cherrytree/archive/refs/tags/v1.1.4.tar.gz",
+    "srcurl": "https://github.com/giuspen/cherrytree/archive/refs/tags/v1.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0da33da39/x11-packages/cherrytree",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/cherrytree/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/cherrytree/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/db9bf7d02/x11-packages/cherrytree",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db9bf7d02/x11-packages/cherrytree/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db9bf7d02/x11-packages/cherrytree/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/cherrytree/fmt-11.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/cherrytree/src-ct-ct_const.h.patch"
+      "https://github.com/termux/termux-packages/blob/db9bf7d02/x11-packages/cherrytree/src-ct-ct_const.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/cherrytree/fmt-11.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/cherrytree/src-ct-ct_const.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/db9bf7d02/x11-packages/cherrytree/src-ct-ct_const.h.patch"
     ],
     "auto_updated": true
   },
@@ -48131,28 +48137,28 @@
     ],
     "srcurl": "https://media.inkscape.org/dl/resources/file/inkscape-1.3.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/aabb76e63/x11-packages/inkscape",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/x11-packages/inkscape",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/6089.patch",
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/6209.patch",
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/6403.patch",
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/inkscape-1.3.2-compile.patch",
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/no-stacktrace.patch",
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/page-size-fix.patch",
-      "https://github.com/termux/termux-packages/blob/aabb76e63/x11-packages/inkscape/src-object-object-set.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/6089.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/6209.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/6403.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/inkscape-1.3.2-compile.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/no-stacktrace.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/page-size-fix.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/inkscape/src-object-object-set.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/6089.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/6209.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/6403.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/inkscape-1.3.2-compile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/no-stacktrace.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/page-size-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/aabb76e63/x11-packages/inkscape/src-object-object-set.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/6089.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/6209.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/6403.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/inkscape-1.3.2-compile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/no-stacktrace.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/page-size-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/inkscape/src-object-object-set.cpp.patch"
     ],
     "auto_updated": false
   },
@@ -51870,14 +51876,14 @@
     ],
     "srcurl": "https://github.com/opencv/opencv/archive/4.10.0/opencv-4.10.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9ee17a959/x11-packages/opencv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9ee17a959/x11-packages/opencv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9ee17a959/x11-packages/opencv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/x11-packages/opencv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/opencv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/opencv/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9ee17a959/x11-packages/opencv/OpenCVConfig.cmake.in.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/opencv/OpenCVConfig.cmake.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9ee17a959/x11-packages/opencv/OpenCVConfig.cmake.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/opencv/OpenCVConfig.cmake.in.patch"
     ],
     "auto_updated": true
   },
@@ -52740,7 +52746,7 @@
   },
   {
     "name": "python-torch",
-    "version": "2.1.2",
+    "version": "2.4.1",
     "description": "Tensors and Dynamic neural networks in Python",
     "homepage": "https://pytorch.org/",
     "depends": [
@@ -52758,36 +52764,34 @@
     ],
     "srcurl": "git+https://github.com/pytorch/pytorch",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0da33da39/x11-packages/python-torch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/x11-packages/python-torch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0001-do-not-error-on-cast-function-type-strict.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0002-fix-macros.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0003-impl-posix-shm.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0004-memalign.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0006-fix-cross-compiling-for-FindAVX.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0007-enable-cxx17-by-default.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://github.com/termux/termux-packages/blob/0da33da39/x11-packages/python-torch/0009-fix-over-optimizing.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/0002-fix-macros.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/0003-impl-posix-shm.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/0004-memalign.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/0009-fix-over-optimizing.patch",
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torch/torch-csrc-autograd-python_function.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0001-do-not-error-on-cast-function-type-strict.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0002-fix-macros.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0003-impl-posix-shm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0004-memalign.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0006-fix-cross-compiling-for-FindAVX.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0007-enable-cxx17-by-default.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0da33da39/x11-packages/python-torch/0009-fix-over-optimizing.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/0002-fix-macros.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/0003-impl-posix-shm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/0004-memalign.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/0009-fix-over-optimizing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torch/torch-csrc-autograd-python_function.cpp.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "python-torchaudio",
-    "version": "2.0.1",
+    "version": "2.4.1",
     "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
     "homepage": "https://github.com/pytorch/audio",
     "depends": [
@@ -52798,26 +52802,20 @@
     ],
     "srcurl": "git+https://github.com/pytorch/audio",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9ff93b9da/x11-packages/python-torchaudio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9ff93b9da/x11-packages/python-torchaudio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9ff93b9da/x11-packages/python-torchaudio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/x11-packages/python-torchaudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torchaudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torchaudio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9ff93b9da/x11-packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch",
-      "https://github.com/termux/termux-packages/blob/9ff93b9da/x11-packages/python-torchaudio/0002-fix-cross-compiling.patch",
-      "https://github.com/termux/termux-packages/blob/9ff93b9da/x11-packages/python-torchaudio/0003-fix-patch-for-sox.patch",
-      "https://github.com/termux/termux-packages/blob/9ff93b9da/x11-packages/python-torchaudio/0004-fix-patch-for-vorbis.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9ff93b9da/x11-packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9ff93b9da/x11-packages/python-torchaudio/0002-fix-cross-compiling.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9ff93b9da/x11-packages/python-torchaudio/0003-fix-patch-for-sox.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9ff93b9da/x11-packages/python-torchaudio/0004-fix-patch-for-vorbis.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "python-torchvision",
-    "version": "0.15.1",
+    "version": "0.19.1",
     "description": "Datasets, Transforms and Models specific to Computer Vision",
     "homepage": "https://github.com/pytorch/vision",
     "depends": [
@@ -52833,14 +52831,14 @@
     ],
     "srcurl": "git+https://github.com/pytorch/vision",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9ff93b9da/x11-packages/python-torchvision",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9ff93b9da/x11-packages/python-torchvision/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9ff93b9da/x11-packages/python-torchvision/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01c8e30d5/x11-packages/python-torchvision",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torchvision/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torchvision/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9ff93b9da/x11-packages/python-torchvision/setup.py.patch"
+      "https://github.com/termux/termux-packages/blob/01c8e30d5/x11-packages/python-torchvision/setup.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9ff93b9da/x11-packages/python-torchvision/setup.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/01c8e30d5/x11-packages/python-torchvision/setup.py.patch"
     ],
     "auto_updated": false
   },
@@ -53676,7 +53674,7 @@
   },
   {
     "name": "qt6-qt5compat",
-    "version": "6.7.2",
+    "version": "6.7.3",
     "description": "Qt6 Module that contains unsupported Qt 5 APIs",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53686,11 +53684,11 @@
       "qt6-qtdeclarative",
       "qt6-shadertools"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.7/6.7.2/submodules/qt5compat-everywhere-src-6.7.2.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.7/6.7.3/submodules/qt5compat-everywhere-src-6.7.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c35267744/x11-packages/qt6-qt5compat",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c35267744/x11-packages/qt6-qt5compat/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c35267744/x11-packages/qt6-qt5compat/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/925f6c8a7/x11-packages/qt6-qt5compat",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/925f6c8a7/x11-packages/qt6-qt5compat/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/925f6c8a7/x11-packages/qt6-qt5compat/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
