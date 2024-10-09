@@ -7344,15 +7344,15 @@
   },
   {
     "name": "exercism",
-    "version": "3.5.1",
+    "version": "3.5.2",
     "description": "A Go based command line tool for exercism.io",
     "homepage": "https://github.com/exercism/cli/",
     "depends": [],
-    "srcurl": "https://github.com/exercism/cli/archive/refs/tags/v3.5.1.tar.gz",
+    "srcurl": "https://github.com/exercism/cli/archive/refs/tags/v3.5.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/64d9dce45/packages/exercism",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/64d9dce45/packages/exercism/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/64d9dce45/packages/exercism/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b4257fecf/packages/exercism",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b4257fecf/packages/exercism/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b4257fecf/packages/exercism/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -7443,17 +7443,17 @@
   },
   {
     "name": "eza",
-    "version": "0.20.1",
+    "version": "0.20.2",
     "description": "A modern replacement for ls",
     "homepage": "https://github.com/eza-community/eza",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/eza-community/eza/archive/v0.20.1.tar.gz",
+    "srcurl": "https://github.com/eza-community/eza/archive/v0.20.2.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/10753d4cb/packages/eza",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10753d4cb/packages/eza/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10753d4cb/packages/eza/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ef18ef24d/packages/eza",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ef18ef24d/packages/eza/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ef18ef24d/packages/eza/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13707,11 +13707,15 @@
     ],
     "srcurl": "https://github.com/funtoo/keychain/archive/2.8.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/af0d4b21d/packages/keychain",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af0d4b21d/packages/keychain/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af0d4b21d/packages/keychain/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/343de5ebc/packages/keychain",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/343de5ebc/packages/keychain/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/343de5ebc/packages/keychain/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/343de5ebc/packages/keychain/keychain.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/343de5ebc/packages/keychain/keychain.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -23346,7 +23350,7 @@
   },
   {
     "name": "lua-language-server",
-    "version": "3.11.0",
+    "version": "3.11.1",
     "description": "Sumneko Lua Language Server coded in Lua",
     "homepage": "https://github.com/sumneko/lua-language-server",
     "depends": [
@@ -23355,24 +23359,24 @@
     ],
     "srcurl": "git+https://github.com/sumneko/lua-language-server",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/00bda6afa/packages/lua-language-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00bda6afa/packages/lua-language-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00bda6afa/packages/lua-language-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5cec40a45/packages/lua-language-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5cec40a45/packages/lua-language-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5cec40a45/packages/lua-language-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/00bda6afa/packages/lua-language-server/android.diff",
-      "https://github.com/termux/termux-packages/blob/00bda6afa/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://github.com/termux/termux-packages/blob/00bda6afa/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://github.com/termux/termux-packages/blob/00bda6afa/packages/lua-language-server/loslib.patch",
-      "https://github.com/termux/termux-packages/blob/00bda6afa/packages/lua-language-server/luaconf.patch",
-      "https://github.com/termux/termux-packages/blob/00bda6afa/packages/lua-language-server/make.lua.diff"
+      "https://github.com/termux/termux-packages/blob/5cec40a45/packages/lua-language-server/android.diff",
+      "https://github.com/termux/termux-packages/blob/5cec40a45/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://github.com/termux/termux-packages/blob/5cec40a45/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://github.com/termux/termux-packages/blob/5cec40a45/packages/lua-language-server/loslib.patch",
+      "https://github.com/termux/termux-packages/blob/5cec40a45/packages/lua-language-server/luaconf.patch",
+      "https://github.com/termux/termux-packages/blob/5cec40a45/packages/lua-language-server/make.lua.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/00bda6afa/packages/lua-language-server/android.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/00bda6afa/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00bda6afa/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00bda6afa/packages/lua-language-server/loslib.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00bda6afa/packages/lua-language-server/luaconf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/00bda6afa/packages/lua-language-server/make.lua.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/5cec40a45/packages/lua-language-server/android.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cec40a45/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cec40a45/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cec40a45/packages/lua-language-server/loslib.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cec40a45/packages/lua-language-server/luaconf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cec40a45/packages/lua-language-server/make.lua.diff"
     ],
     "auto_updated": true
   },
@@ -31096,7 +31100,7 @@
   },
   {
     "name": "proton-bridge",
-    "version": "3.13.0",
+    "version": "3.14.0",
     "description": "ProtonMail Bridge application",
     "homepage": "https://github.com/ProtonMail/proton-bridge",
     "depends": [
@@ -31104,14 +31108,14 @@
     ],
     "srcurl": "git+https://github.com/ProtonMail/proton-bridge",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/388cd7e42/packages/proton-bridge",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/388cd7e42/packages/proton-bridge/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/388cd7e42/packages/proton-bridge/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a514292cb/packages/proton-bridge",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a514292cb/packages/proton-bridge/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a514292cb/packages/proton-bridge/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/388cd7e42/packages/proton-bridge/disable-updater.patch"
+      "https://github.com/termux/termux-packages/blob/a514292cb/packages/proton-bridge/disable-updater.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/388cd7e42/packages/proton-bridge/disable-updater.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a514292cb/packages/proton-bridge/disable-updater.patch"
     ],
     "auto_updated": true
   },
@@ -35270,27 +35274,27 @@
   },
   {
     "name": "solidity",
-    "version": "0.8.27",
+    "version": "0.8.28",
     "description": "An Ethereum smart contract-oriented language",
     "homepage": "https://solidity.readthedocs.io",
     "depends": [
       "boost",
       "libc++"
     ],
-    "srcurl": "https://github.com/ethereum/solidity/releases/download/v0.8.27/solidity_0.8.27.tar.gz",
+    "srcurl": "https://github.com/ethereum/solidity/releases/download/v0.8.28/solidity_0.8.28.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/55c697aae/packages/solidity",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fde10bca4/packages/solidity",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fde10bca4/packages/solidity/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fde10bca4/packages/solidity/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/55c697aae/packages/solidity/libsolutil-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/fde10bca4/packages/solidity/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/fde10bca4/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/fde10bca4/packages/solidity/libsolutil-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/55c697aae/packages/solidity/libsolutil-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fde10bca4/packages/solidity/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fde10bca4/packages/solidity/libsolidity-lsp-DocumentHoverHandler.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fde10bca4/packages/solidity/libsolutil-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -53801,16 +53805,16 @@
     ],
     "srcurl": "https://download.qt.io/official_releases/qt/6.8/6.8.0/submodules/qtdeclarative-everywhere-src-6.8.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/35cbf074d/x11-packages/qt6-qtdeclarative",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/35cbf074d/x11-packages/qt6-qtdeclarative/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/35cbf074d/x11-packages/qt6-qtdeclarative/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/82af505de/x11-packages/qt6-qtdeclarative",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/82af505de/x11-packages/qt6-qtdeclarative/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/82af505de/x11-packages/qt6-qtdeclarative/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "qt6-qtimageformats",
-    "version": "6.7.3",
+    "version": "6.8.0",
     "description": "Plugins for additional image formats: TIFF, TGA, WBMP",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -53820,11 +53824,11 @@
       "libwebp",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.7/6.7.3/submodules/qtimageformats-everywhere-src-6.7.3.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.8/6.8.0/submodules/qtimageformats-everywhere-src-6.8.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a47907523/x11-packages/qt6-qtimageformats",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a47907523/x11-packages/qt6-qtimageformats/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a47907523/x11-packages/qt6-qtimageformats/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e9c4e3437/x11-packages/qt6-qtimageformats",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e9c4e3437/x11-packages/qt6-qtimageformats/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e9c4e3437/x11-packages/qt6-qtimageformats/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
