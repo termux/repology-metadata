@@ -9859,24 +9859,24 @@
   },
   {
     "name": "glslang",
-    "version": "14.3.0",
+    "version": "15.0.0",
     "description": "OpenGL and OpenGL ES shader front end and validator",
     "homepage": "https://github.com/KhronosGroup/glslang",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/KhronosGroup/glslang/archive/refs/tags/14.3.0.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/glslang/archive/refs/tags/15.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f00cf2968/packages/glslang",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f00cf2968/packages/glslang/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f00cf2968/packages/glslang/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/71b568d1a/packages/glslang",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/71b568d1a/packages/glslang/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/71b568d1a/packages/glslang/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f00cf2968/packages/glslang/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/f00cf2968/packages/glslang/revert-only-install-public-headers.patch"
+      "https://github.com/termux/termux-packages/blob/71b568d1a/packages/glslang/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/71b568d1a/packages/glslang/revert-only-install-public-headers.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f00cf2968/packages/glslang/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f00cf2968/packages/glslang/revert-only-install-public-headers.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/71b568d1a/packages/glslang/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/71b568d1a/packages/glslang/revert-only-install-public-headers.patch"
     ],
     "auto_updated": true
   },
@@ -32064,6 +32064,101 @@
     "auto_updated": true
   },
   {
+    "name": "python-torch",
+    "version": "2.4.1",
+    "description": "Tensors and Dynamic neural networks in Python",
+    "homepage": "https://pytorch.org/",
+    "depends": [
+      "libc++",
+      "libopenblas",
+      "libprotobuf",
+      "python",
+      "python-numpy",
+      "python-pip"
+    ],
+    "srcurl": "git+https://github.com/pytorch/pytorch",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e14806ae/packages/python-torch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0002-fix-macros.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0003-impl-posix-shm.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0004-memalign.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0009-fix-over-optimizing.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/0010-cmake-Dependencies.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torch/torch-csrc-autograd-python_function.cpp.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0002-fix-macros.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0003-impl-posix-shm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0004-memalign.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0009-fix-over-optimizing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/0010-cmake-Dependencies.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torch/torch-csrc-autograd-python_function.cpp.patch"
+    ],
+    "auto_updated": false
+  },
+  {
+    "name": "python-torchaudio",
+    "version": "2.4.1",
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
+    "homepage": "https://github.com/pytorch/audio",
+    "depends": [
+      "libc++",
+      "python",
+      "python-pip",
+      "python-torch"
+    ],
+    "srcurl": "git+https://github.com/pytorch/audio",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e14806ae/packages/python-torchaudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torchaudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torchaudio/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch"
+    ],
+    "auto_updated": false
+  },
+  {
+    "name": "python-torchvision",
+    "version": "0.19.1",
+    "description": "Datasets, Transforms and Models specific to Computer Vision",
+    "homepage": "https://github.com/pytorch/vision",
+    "depends": [
+      "libc++",
+      "python",
+      "python-numpy",
+      "python-pillow",
+      "python-pip",
+      "python-torch",
+      "libjpeg-turbo",
+      "libpng",
+      "zlib"
+    ],
+    "srcurl": "git+https://github.com/pytorch/vision",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e14806ae/packages/python-torchvision",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torchvision/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torchvision/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3e14806ae/packages/python-torchvision/setup.py.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3e14806ae/packages/python-torchvision/setup.py.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "python-xlib",
     "version": "0.33",
     "description": "The Python X Library",
@@ -35617,7 +35712,7 @@
   },
   {
     "name": "squid",
-    "version": "6.11",
+    "version": "6.12",
     "description": "Full-featured Web proxy cache server",
     "homepage": "http://www.squid-cache.org",
     "depends": [
@@ -35631,22 +35726,22 @@
       "openldap",
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_11.tar.gz",
+    "srcurl": "https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_12.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f869ca1d9/packages/squid",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f869ca1d9/packages/squid/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f869ca1d9/packages/squid/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c86a246e1/packages/squid",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c86a246e1/packages/squid/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c86a246e1/packages/squid/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f869ca1d9/packages/squid/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/f869ca1d9/packages/squid/no-priv-drop.patch",
-      "https://github.com/termux/termux-packages/blob/f869ca1d9/packages/squid/posix-shm-support.patch",
-      "https://github.com/termux/termux-packages/blob/f869ca1d9/packages/squid/sys-stat.h.patch"
+      "https://github.com/termux/termux-packages/blob/c86a246e1/packages/squid/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/c86a246e1/packages/squid/no-priv-drop.patch",
+      "https://github.com/termux/termux-packages/blob/c86a246e1/packages/squid/posix-shm-support.patch",
+      "https://github.com/termux/termux-packages/blob/c86a246e1/packages/squid/sys-stat.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f869ca1d9/packages/squid/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f869ca1d9/packages/squid/no-priv-drop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f869ca1d9/packages/squid/posix-shm-support.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f869ca1d9/packages/squid/sys-stat.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c86a246e1/packages/squid/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c86a246e1/packages/squid/no-priv-drop.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c86a246e1/packages/squid/posix-shm-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c86a246e1/packages/squid/sys-stat.h.patch"
     ],
     "auto_updated": true
   },
@@ -36448,7 +36543,7 @@
   },
   {
     "name": "swi-prolog",
-    "version": "9.3.12",
+    "version": "9.3.13",
     "description": "Most popular and complete prolog implementation",
     "homepage": "https://swi-prolog.org/",
     "depends": [
@@ -36464,11 +36559,11 @@
       "zlib",
       "pcre2"
     ],
-    "srcurl": "https://www.swi-prolog.org/download/devel/src/swipl-9.3.12.tar.gz",
+    "srcurl": "https://www.swi-prolog.org/download/devel/src/swipl-9.3.13.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ae6b2355/packages/swi-prolog",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ae6b2355/packages/swi-prolog/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ae6b2355/packages/swi-prolog/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/daf9366a3/packages/swi-prolog",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/daf9366a3/packages/swi-prolog/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/daf9366a3/packages/swi-prolog/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -52746,101 +52841,6 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/979f7d20a/x11-packages/python-qscintilla/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "python-torch",
-    "version": "2.4.1",
-    "description": "Tensors and Dynamic neural networks in Python",
-    "homepage": "https://pytorch.org/",
-    "depends": [
-      "libc++",
-      "libopenblas",
-      "libprotobuf",
-      "python",
-      "python-numpy",
-      "python-pip"
-    ],
-    "srcurl": "git+https://github.com/pytorch/pytorch",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/52bd744bc/x11-packages/python-torch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0002-fix-macros.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0003-impl-posix-shm.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0004-memalign.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0009-fix-over-optimizing.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/0010-cmake-Dependencies.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/52bd744bc/x11-packages/python-torch/torch-csrc-autograd-python_function.cpp.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0002-fix-macros.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0003-impl-posix-shm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0004-memalign.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0009-fix-over-optimizing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/0010-cmake-Dependencies.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/52bd744bc/x11-packages/python-torch/torch-csrc-autograd-python_function.cpp.patch"
-    ],
-    "auto_updated": false
-  },
-  {
-    "name": "python-torchaudio",
-    "version": "2.4.1",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
-    "homepage": "https://github.com/pytorch/audio",
-    "depends": [
-      "libc++",
-      "python",
-      "python-pip",
-      "python-torch"
-    ],
-    "srcurl": "git+https://github.com/pytorch/audio",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b373ce6ef/x11-packages/python-torchaudio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b373ce6ef/x11-packages/python-torchaudio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b373ce6ef/x11-packages/python-torchaudio/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b373ce6ef/x11-packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b373ce6ef/x11-packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch"
-    ],
-    "auto_updated": false
-  },
-  {
-    "name": "python-torchvision",
-    "version": "0.19.1",
-    "description": "Datasets, Transforms and Models specific to Computer Vision",
-    "homepage": "https://github.com/pytorch/vision",
-    "depends": [
-      "libc++",
-      "python",
-      "python-numpy",
-      "python-pillow",
-      "python-pip",
-      "python-torch",
-      "libjpeg-turbo",
-      "libpng",
-      "zlib"
-    ],
-    "srcurl": "git+https://github.com/pytorch/vision",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b373ce6ef/x11-packages/python-torchvision",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b373ce6ef/x11-packages/python-torchvision/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b373ce6ef/x11-packages/python-torchvision/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b373ce6ef/x11-packages/python-torchvision/setup.py.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b373ce6ef/x11-packages/python-torchvision/setup.py.patch"
-    ],
     "auto_updated": false
   },
   {
