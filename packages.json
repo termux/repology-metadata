@@ -7806,24 +7806,24 @@
   },
   {
     "name": "fetchmail",
-    "version": "6.5.0",
+    "version": "6.5.1",
     "description": "A remote-mail retrieval utility",
     "homepage": "https://www.fetchmail.info/",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://sourceforge.net/projects/fetchmail/files/branch_6.5/fetchmail-6.5.0.tar.xz",
+    "srcurl": "https://sourceforge.net/projects/fetchmail/files/branch_6.5/fetchmail-6.5.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a87cd222aa/packages/fetchmail",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a87cd222aa/packages/fetchmail/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a87cd222aa/packages/fetchmail/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/29c613b511/packages/fetchmail",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29c613b511/packages/fetchmail/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29c613b511/packages/fetchmail/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a87cd222aa/packages/fetchmail/fetchmailconf-exec-python.patch",
-      "https://github.com/termux/termux-packages/blob/a87cd222aa/packages/fetchmail/fix-passwordlen-redefinition.patch"
+      "https://github.com/termux/termux-packages/blob/29c613b511/packages/fetchmail/fetchmailconf-exec-python.patch",
+      "https://github.com/termux/termux-packages/blob/29c613b511/packages/fetchmail/fix-passwordlen-redefinition.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a87cd222aa/packages/fetchmail/fetchmailconf-exec-python.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a87cd222aa/packages/fetchmail/fix-passwordlen-redefinition.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/29c613b511/packages/fetchmail/fetchmailconf-exec-python.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/29c613b511/packages/fetchmail/fix-passwordlen-redefinition.patch"
     ],
     "auto_updated": true
   },
@@ -15522,11 +15522,17 @@
     ],
     "srcurl": "https://github.com/curl/curl/releases/download/curl-8_11_0/curl-8.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/35555ff2be/packages/libcurl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/35555ff2be/packages/libcurl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/35555ff2be/packages/libcurl/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e0ed46a6a/packages/libcurl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e0ed46a6a/packages/libcurl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e0ed46a6a/packages/libcurl/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/6e0ed46a6a/packages/libcurl/0001-netrc-regression-1.patch",
+      "https://github.com/termux/termux-packages/blob/6e0ed46a6a/packages/libcurl/0002-netrc-regression-2.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/6e0ed46a6a/packages/libcurl/0001-netrc-regression-1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6e0ed46a6a/packages/libcurl/0002-netrc-regression-2.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -23351,7 +23357,7 @@
   },
   {
     "name": "lua-language-server",
-    "version": "3.12.0",
+    "version": "3.13.0",
     "description": "Sumneko Lua Language Server coded in Lua",
     "homepage": "https://github.com/sumneko/lua-language-server",
     "depends": [
@@ -23360,24 +23366,24 @@
     ],
     "srcurl": "git+https://github.com/sumneko/lua-language-server",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bde29610b7/packages/lua-language-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bde29610b7/packages/lua-language-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bde29610b7/packages/lua-language-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b8b231177/packages/lua-language-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b8b231177/packages/lua-language-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b8b231177/packages/lua-language-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bde29610b7/packages/lua-language-server/android.diff",
-      "https://github.com/termux/termux-packages/blob/bde29610b7/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://github.com/termux/termux-packages/blob/bde29610b7/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://github.com/termux/termux-packages/blob/bde29610b7/packages/lua-language-server/loslib.patch",
-      "https://github.com/termux/termux-packages/blob/bde29610b7/packages/lua-language-server/luaconf.patch",
-      "https://github.com/termux/termux-packages/blob/bde29610b7/packages/lua-language-server/make.lua.diff"
+      "https://github.com/termux/termux-packages/blob/1b8b231177/packages/lua-language-server/android.diff",
+      "https://github.com/termux/termux-packages/blob/1b8b231177/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://github.com/termux/termux-packages/blob/1b8b231177/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://github.com/termux/termux-packages/blob/1b8b231177/packages/lua-language-server/loslib.patch",
+      "https://github.com/termux/termux-packages/blob/1b8b231177/packages/lua-language-server/luaconf.patch",
+      "https://github.com/termux/termux-packages/blob/1b8b231177/packages/lua-language-server/make.lua.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bde29610b7/packages/lua-language-server/android.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/bde29610b7/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bde29610b7/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bde29610b7/packages/lua-language-server/loslib.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bde29610b7/packages/lua-language-server/luaconf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bde29610b7/packages/lua-language-server/make.lua.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/1b8b231177/packages/lua-language-server/android.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b8b231177/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b8b231177/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b8b231177/packages/lua-language-server/loslib.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b8b231177/packages/lua-language-server/luaconf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b8b231177/packages/lua-language-server/make.lua.diff"
     ],
     "auto_updated": true
   },
@@ -27775,17 +27781,17 @@
   },
   {
     "name": "nushell",
-    "version": "0.99.1",
+    "version": "0.100.0",
     "description": "A new type of shell operating on structured data",
     "homepage": "https://www.nushell.sh",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/nushell/nushell/archive/0.99.1.tar.gz",
+    "srcurl": "https://github.com/nushell/nushell/archive/0.100.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f8aafc928/packages/nushell",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f8aafc928/packages/nushell/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f8aafc928/packages/nushell/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f61b2b92f1/packages/nushell",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f61b2b92f1/packages/nushell/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f61b2b92f1/packages/nushell/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30569,17 +30575,17 @@
   },
   {
     "name": "pocketbase",
-    "version": "0.22.23",
+    "version": "0.22.24",
     "description": "An open source Go backend",
     "homepage": "https://github.com/pocketbase/pocketbase",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/pocketbase/pocketbase/archive/refs/tags/v0.22.23.tar.gz",
+    "srcurl": "https://github.com/pocketbase/pocketbase/archive/refs/tags/v0.22.24.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/74dee19876/packages/pocketbase",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74dee19876/packages/pocketbase/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74dee19876/packages/pocketbase/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/96e7c10d8e/packages/pocketbase",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/96e7c10d8e/packages/pocketbase/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/96e7c10d8e/packages/pocketbase/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35425,15 +35431,15 @@
   },
   {
     "name": "snowflake",
-    "version": "2.9.2",
+    "version": "2.10.1",
     "description": "Pluggable Transport using WebRTC, inspired by Flashproxy",
     "homepage": "https://snowflake.torproject.org/",
     "depends": [],
-    "srcurl": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/archive/v2.9.2/snowflake-v2.9.2.tar.gz",
+    "srcurl": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/archive/v2.10.1/snowflake-v2.10.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/af6056a309/packages/snowflake",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af6056a309/packages/snowflake/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af6056a309/packages/snowflake/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7491f54e67/packages/snowflake",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7491f54e67/packages/snowflake/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7491f54e67/packages/snowflake/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -37049,7 +37055,7 @@
   },
   {
     "name": "taskwarrior",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "description": "Utility for managing your TODO list",
     "homepage": "https://taskwarrior.org",
     "depends": [
@@ -37058,16 +37064,16 @@
       "libgnutls",
       "libuuid"
     ],
-    "srcurl": "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v3.1.0/task-3.1.0.tar.gz",
+    "srcurl": "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v3.2.0/task-3.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e9296f2164/packages/taskwarrior",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e9296f2164/packages/taskwarrior/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e9296f2164/packages/taskwarrior/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/23f0610ce7/packages/taskwarrior",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23f0610ce7/packages/taskwarrior/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23f0610ce7/packages/taskwarrior/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e9296f2164/packages/taskwarrior/0001-timestamp.patch32"
+      "https://github.com/termux/termux-packages/blob/23f0610ce7/packages/taskwarrior/0001-libcxx-18-sort.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e9296f2164/packages/taskwarrior/0001-timestamp.patch32"
+      "https://raw.githubusercontent.com/termux/termux-packages/23f0610ce7/packages/taskwarrior/0001-libcxx-18-sort.patch"
     ],
     "auto_updated": true
   },
