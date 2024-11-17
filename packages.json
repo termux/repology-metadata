@@ -4339,18 +4339,18 @@
     ],
     "srcurl": "https://www.cmake.org/files/v3.31/cmake-3.31.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/21d2496005/packages/cmake",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/21d2496005/packages/cmake/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/21d2496005/packages/cmake/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/69c8b842d9/packages/cmake",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69c8b842d9/packages/cmake/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69c8b842d9/packages/cmake/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/21d2496005/packages/cmake/Modules-Platform-Android-GNU.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/21d2496005/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/21d2496005/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
+      "https://github.com/termux/termux-packages/blob/69c8b842d9/packages/cmake/Modules-Platform-Android-GNU.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/69c8b842d9/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/69c8b842d9/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/21d2496005/packages/cmake/Modules-Platform-Android-GNU.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/21d2496005/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/21d2496005/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/69c8b842d9/packages/cmake/Modules-Platform-Android-GNU.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69c8b842d9/packages/cmake/Source-cmExecProgramCommand.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/69c8b842d9/packages/cmake/Source-cmLocalUnixMakefileGenerator3.cxx.patch"
     ],
     "auto_updated": true
   },
@@ -11116,15 +11116,16 @@
       "libxml2",
       "littlecms",
       "openal-soft",
+      "openh264",
       "openjpeg",
       "openssl",
       "pango"
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.24.9.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2c44a329e8/packages/gst-plugins-bad",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2c44a329e8/packages/gst-plugins-bad/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2c44a329e8/packages/gst-plugins-bad/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/46c50cd6e2/packages/gst-plugins-bad",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/46c50cd6e2/packages/gst-plugins-bad/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/46c50cd6e2/packages/gst-plugins-bad/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -28520,6 +28521,27 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
+  },
+  {
+    "name": "openh264",
+    "version": "2.5.0",
+    "description": "Codec library supporting H.264 encoding and decoding",
+    "homepage": "https://www.openh264.org/",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/cisco/openh264/archive/refs/tags/v2.5.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/026c47533c/packages/openh264",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/026c47533c/packages/openh264/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/026c47533c/packages/openh264/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/026c47533c/packages/openh264/meson.build.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/026c47533c/packages/openh264/meson.build.patch"
+    ],
+    "auto_updated": true
   },
   {
     "name": "openjdk-17",
