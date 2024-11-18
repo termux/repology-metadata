@@ -12415,7 +12415,7 @@
   },
   {
     "name": "imagemagick",
-    "version": "7.1.1.40",
+    "version": "7.1.1.41",
     "description": "Suite to create, edit, compose, or convert images in a variety of formats",
     "homepage": "https://www.imagemagick.org/",
     "depends": [
@@ -12448,17 +12448,13 @@
       "pango",
       "zlib"
     ],
-    "srcurl": "https://imagemagick.org/archive/releases/ImageMagick-7.1.1-40.tar.xz",
+    "srcurl": "https://imagemagick.org/archive/releases/ImageMagick-7.1.1-41.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a3ffa754d4/packages/imagemagick",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a3ffa754d4/packages/imagemagick/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a3ffa754d4/packages/imagemagick/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a3ffa754d4/packages/imagemagick/0001-remove-new-operator.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a3ffa754d4/packages/imagemagick/0001-remove-new-operator.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a3475db7a4/packages/imagemagick",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a3475db7a4/packages/imagemagick/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a3475db7a4/packages/imagemagick/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -20505,22 +20501,24 @@
   },
   {
     "name": "libsqlite",
-    "version": "3.46.1",
+    "version": "3.47.0",
     "description": "Library implementing a self-contained and transactional SQL database engine",
     "homepage": "https://www.sqlite.org",
     "depends": [
       "zlib"
     ],
-    "srcurl": "https://www.sqlite.org/2024/sqlite-autoconf-3460100.tar.gz",
+    "srcurl": "https://www.sqlite.org/2024/sqlite-autoconf-3470000.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/432b0098d5/packages/libsqlite",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/432b0098d5/packages/libsqlite/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/432b0098d5/packages/libsqlite/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdbde1bf86/packages/libsqlite",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdbde1bf86/packages/libsqlite/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdbde1bf86/packages/libsqlite/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/432b0098d5/packages/libsqlite/sqlite3.c.patch"
+      "https://github.com/termux/termux-packages/blob/cdbde1bf86/packages/libsqlite/0001-Do-not-typedef-Tcl_Size-if-it-is-already-defined.patch",
+      "https://github.com/termux/termux-packages/blob/cdbde1bf86/packages/libsqlite/sqlite3.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/432b0098d5/packages/libsqlite/sqlite3.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cdbde1bf86/packages/libsqlite/0001-Do-not-typedef-Tcl_Size-if-it-is-already-defined.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cdbde1bf86/packages/libsqlite/sqlite3.c.patch"
     ],
     "auto_updated": true
   },
@@ -31765,18 +31763,18 @@
   },
   {
     "name": "python-apsw",
-    "version": "3.46.1.0",
+    "version": "3.47.0.0",
     "description": "Another Python SQLite Wrapper",
     "homepage": "https://github.com/rogerbinns/apsw/",
     "depends": [
       "libsqlite",
       "python"
     ],
-    "srcurl": "https://github.com/rogerbinns/apsw/archive/refs/tags/3.46.1.0.tar.gz",
+    "srcurl": "https://github.com/rogerbinns/apsw/archive/refs/tags/3.47.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5c3fbf9985/packages/python-apsw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5c3fbf9985/packages/python-apsw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5c3fbf9985/packages/python-apsw/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/25bce949da/packages/python-apsw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/25bce949da/packages/python-apsw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/25bce949da/packages/python-apsw/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
