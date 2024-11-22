@@ -18693,25 +18693,25 @@
   },
   {
     "name": "libnss",
-    "version": "3.106",
+    "version": "3.107",
     "description": "Network Security Services (NSS)",
     "homepage": "https://firefox-source-docs.mozilla.org/security/nss/",
     "depends": [
       "libnspr",
       "libsqlite"
     ],
-    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_106_RTM/src/nss-3.106.tar.gz",
+    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b8c034e699/packages/libnss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b8c034e699/packages/libnss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b8c034e699/packages/libnss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e5ab25f3a/packages/libnss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e5ab25f3a/packages/libnss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e5ab25f3a/packages/libnss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b8c034e699/packages/libnss/coreconf-rules.mk.patch",
-      "https://github.com/termux/termux-packages/blob/b8c034e699/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://github.com/termux/termux-packages/blob/0e5ab25f3a/packages/libnss/coreconf-rules.mk.patch",
+      "https://github.com/termux/termux-packages/blob/0e5ab25f3a/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b8c034e699/packages/libnss/coreconf-rules.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b8c034e699/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0e5ab25f3a/packages/libnss/coreconf-rules.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0e5ab25f3a/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "auto_updated": true
   },
@@ -23508,27 +23508,33 @@
   },
   {
     "name": "luvi",
-    "version": "20241009",
-    "description": "A project in-between luv and luvit.",
+    "version": "2.15.0",
+    "description": "A project in-between luv and luvit",
     "homepage": "https://luvit.io",
     "depends": [
-      "pcre2",
-      "openssl",
+      "libluajit",
+      "lua51-lpeg",
       "luv",
-      "libluajit"
+      "openssl",
+      "pcre2",
+      "zlib"
     ],
-    "srcurl": "git+https://github.com/luvit/luvi.git",
+    "srcurl": "git+https://github.com/luvit/luvi",
     "maintainer": "Komo @mbekkomo",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fd55778cb0/packages/luvi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fd55778cb0/packages/luvi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fd55778cb0/packages/luvi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8f33e67894/packages/luvi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8f33e67894/packages/luvi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8f33e67894/packages/luvi/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fd55778cb0/packages/luvi/0001-skip-script-compiling.patch"
+      "https://github.com/termux/termux-packages/blob/8f33e67894/packages/luvi/0001-skip-script-compiling.patch",
+      "https://github.com/termux/termux-packages/blob/8f33e67894/packages/luvi/0002-disable-luajit-version-check.patch",
+      "https://github.com/termux/termux-packages/blob/8f33e67894/packages/luvi/0003-enable-shared-lpeg.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fd55778cb0/packages/luvi/0001-skip-script-compiling.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8f33e67894/packages/luvi/0001-skip-script-compiling.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8f33e67894/packages/luvi/0002-disable-luajit-version-check.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8f33e67894/packages/luvi/0003-enable-shared-lpeg.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "luvit",
@@ -31326,7 +31332,7 @@
   },
   {
     "name": "proxmark3",
-    "version": "1:4.18994",
+    "version": "1:4.19552",
     "description": "The Swiss Army Knife of RFID Research - RRG/Iceman repo",
     "homepage": "https://github.com/RfidResearchGroup/proxmark3",
     "depends": [
@@ -31335,16 +31341,16 @@
       "liblz4",
       "readline"
     ],
-    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/refs/tags/v4.18994.tar.gz",
+    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/refs/tags/v4.19552.tar.gz",
     "maintainer": "Marlin Sööse <marlin.soose@esque.ca>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a0878b3d4/packages/proxmark3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a0878b3d4/packages/proxmark3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a0878b3d4/packages/proxmark3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bbc740a5fb/packages/proxmark3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bbc740a5fb/packages/proxmark3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bbc740a5fb/packages/proxmark3/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7a0878b3d4/packages/proxmark3/use-softfp.patch"
+      "https://github.com/termux/termux-packages/blob/bbc740a5fb/packages/proxmark3/use-softfp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7a0878b3d4/packages/proxmark3/use-softfp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bbc740a5fb/packages/proxmark3/use-softfp.patch"
     ],
     "auto_updated": true
   },
@@ -34003,20 +34009,20 @@
   },
   {
     "name": "ruff",
-    "version": "0.7.4",
+    "version": "0.8.0",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/0.7.4.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/0.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/df22de2c17/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/df22de2c17/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/df22de2c17/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b83958732b/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b83958732b/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b83958732b/packages/ruff/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/df22de2c17/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://github.com/termux/termux-packages/blob/b83958732b/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/df22de2c17/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/b83958732b/packages/ruff/tikv-jemalloc-sys-0.5.3+5.3.0-patched-src-lib.rs.diff"
     ],
     "auto_updated": true
   },
@@ -35220,15 +35226,15 @@
   },
   {
     "name": "sing-box",
-    "version": "1.10.1",
+    "version": "1.10.2",
     "description": "The universal proxy platform",
     "homepage": "https://sing-box.sagernet.org",
     "depends": [],
-    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.10.1.tar.gz",
+    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.10.2.tar.gz",
     "maintainer": "kay9925@outlook.com",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/82ee6f86cd/packages/sing-box",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/82ee6f86cd/packages/sing-box/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/82ee6f86cd/packages/sing-box/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f0aebbdba/packages/sing-box",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f0aebbdba/packages/sing-box/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f0aebbdba/packages/sing-box/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
