@@ -40877,14 +40877,16 @@
     ],
     "srcurl": "https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/v1.4.303.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e7df042062/packages/vulkan-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e7df042062/packages/vulkan-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e7df042062/packages/vulkan-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2a0070513e/packages/vulkan-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2a0070513e/packages/vulkan-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2a0070513e/packages/vulkan-tools/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e7df042062/packages/vulkan-tools/no-android.patch"
+      "https://github.com/termux/termux-packages/blob/2a0070513e/packages/vulkan-tools/0001-no-android.patch",
+      "https://github.com/termux/termux-packages/blob/2a0070513e/packages/vulkan-tools/0002-do-not-search-KHR_display-automatically-on-Termux.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e7df042062/packages/vulkan-tools/no-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2a0070513e/packages/vulkan-tools/0001-no-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2a0070513e/packages/vulkan-tools/0002-do-not-search-KHR_display-automatically-on-Termux.patch"
     ],
     "auto_updated": true
   },
@@ -43074,20 +43076,21 @@
   },
   {
     "name": "erofs-utils",
-    "version": "1.8.2",
+    "version": "1.8.3",
     "description": "A github erofs-utils fork for community development",
     "homepage": "https://github.com/erofs/erofs-utils",
     "depends": [
       "liblz4",
       "liblzma",
       "libfuse2",
-      "libuuid"
+      "libuuid",
+      "zlib"
     ],
-    "srcurl": "https://github.com/erofs/erofs-utils/archive/refs/tags/v1.8.2.tar.gz",
+    "srcurl": "https://github.com/erofs/erofs-utils/archive/refs/tags/v1.8.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5d87c3262/root-packages/erofs-utils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5d87c3262/root-packages/erofs-utils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5d87c3262/root-packages/erofs-utils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/71fca31f33/root-packages/erofs-utils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/71fca31f33/root-packages/erofs-utils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/71fca31f33/root-packages/erofs-utils/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -48929,7 +48932,7 @@
   },
   {
     "name": "kf6-kbookmarks",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Support for bookmarks and the XBEL format",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -48940,11 +48943,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/kbookmarks-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/kbookmarks-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/70e8acb1e6/x11-packages/kf6-kbookmarks",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/70e8acb1e6/x11-packages/kf6-kbookmarks/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/70e8acb1e6/x11-packages/kf6-kbookmarks/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/513122f0c6/x11-packages/kf6-kbookmarks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/513122f0c6/x11-packages/kf6-kbookmarks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/513122f0c6/x11-packages/kf6-kbookmarks/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -48969,7 +48972,7 @@
   },
   {
     "name": "kf6-kcolorscheme",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Classes to read and interact with KColorScheme",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -48979,11 +48982,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/kcolorscheme-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/kcolorscheme-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/10f03a27ac/x11-packages/kf6-kcolorscheme",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10f03a27ac/x11-packages/kf6-kcolorscheme/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10f03a27ac/x11-packages/kf6-kcolorscheme/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/12672ec7e2/x11-packages/kf6-kcolorscheme",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/12672ec7e2/x11-packages/kf6-kcolorscheme/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/12672ec7e2/x11-packages/kf6-kcolorscheme/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49030,7 +49033,7 @@
   },
   {
     "name": "kf6-kconfigwidgets",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Widgets for KConfig",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49043,11 +49046,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/kconfigwidgets-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/kconfigwidgets-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/df03f5197f/x11-packages/kf6-kconfigwidgets",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/df03f5197f/x11-packages/kf6-kconfigwidgets/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/df03f5197f/x11-packages/kf6-kconfigwidgets/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ac6d440a55/x11-packages/kf6-kconfigwidgets",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ac6d440a55/x11-packages/kf6-kconfigwidgets/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ac6d440a55/x11-packages/kf6-kconfigwidgets/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49205,7 +49208,7 @@
   },
   {
     "name": "kf6-kiconthemes",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Support for icon themes",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49220,18 +49223,18 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/kiconthemes-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/kiconthemes-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5121d3a146/x11-packages/kf6-kiconthemes",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5121d3a146/x11-packages/kf6-kiconthemes/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5121d3a146/x11-packages/kf6-kiconthemes/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7be7258165/x11-packages/kf6-kiconthemes",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7be7258165/x11-packages/kf6-kiconthemes/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7be7258165/x11-packages/kf6-kiconthemes/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kf6-kio",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Resource and network access abstraction",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49262,16 +49265,16 @@
       "qt6-qtbase",
       "util-linux"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/kio-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/kio-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/345590a836/x11-packages/kf6-kio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/345590a836/x11-packages/kf6-kio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/345590a836/x11-packages/kf6-kio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f64740f58/x11-packages/kf6-kio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f64740f58/x11-packages/kf6-kio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f64740f58/x11-packages/kf6-kio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/345590a836/x11-packages/kf6-kio/0001-fix-missing-pwent.patch"
+      "https://github.com/termux/termux-packages/blob/9f64740f58/x11-packages/kf6-kio/0001-fix-missing-pwent.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/345590a836/x11-packages/kf6-kio/0001-fix-missing-pwent.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9f64740f58/x11-packages/kf6-kio/0001-fix-missing-pwent.patch"
     ],
     "auto_updated": true
   },
@@ -49427,7 +49430,7 @@
   },
   {
     "name": "kf6-knotifyconfig",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Configuration system for KNotify",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49438,11 +49441,11 @@
       "libcanberra",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/knotifyconfig-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/knotifyconfig-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8295cf1025/x11-packages/kf6-knotifyconfig",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8295cf1025/x11-packages/kf6-knotifyconfig/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8295cf1025/x11-packages/kf6-knotifyconfig/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7828d02bbb/x11-packages/kf6-knotifyconfig",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7828d02bbb/x11-packages/kf6-knotifyconfig/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7828d02bbb/x11-packages/kf6-knotifyconfig/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49491,7 +49494,7 @@
   },
   {
     "name": "kf6-ktextwidgets",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Advanced text editing widgets",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49505,18 +49508,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/ktextwidgets-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/ktextwidgets-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ba2c49b5da/x11-packages/kf6-ktextwidgets",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ba2c49b5da/x11-packages/kf6-ktextwidgets/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ba2c49b5da/x11-packages/kf6-ktextwidgets/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/49b2ffe614/x11-packages/kf6-ktextwidgets",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/49b2ffe614/x11-packages/kf6-ktextwidgets/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/49b2ffe614/x11-packages/kf6-ktextwidgets/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kf6-kwallet",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Secure and unified container for user passwords",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49536,11 +49539,11 @@
       "qca",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/kwallet-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/kwallet-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/27f53996b6/x11-packages/kf6-kwallet",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/27f53996b6/x11-packages/kf6-kwallet/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/27f53996b6/x11-packages/kf6-kwallet/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/803e69e165/x11-packages/kf6-kwallet",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/803e69e165/x11-packages/kf6-kwallet/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/803e69e165/x11-packages/kf6-kwallet/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49598,7 +49601,7 @@
   },
   {
     "name": "kf6-kxmlgui",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "User configurable main windows",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49615,18 +49618,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/kxmlgui-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/kxmlgui-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c1ce60ec95/x11-packages/kf6-kxmlgui",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c1ce60ec95/x11-packages/kf6-kxmlgui/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c1ce60ec95/x11-packages/kf6-kxmlgui/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/38a32783e3/x11-packages/kf6-kxmlgui",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38a32783e3/x11-packages/kf6-kxmlgui/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38a32783e3/x11-packages/kf6-kxmlgui/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kf6-purpose",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Framework for providing abstractions to get the developers purposes fulfilled",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49640,11 +49643,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/purpose-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/purpose-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fe11f81e86/x11-packages/kf6-purpose",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fe11f81e86/x11-packages/kf6-purpose/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fe11f81e86/x11-packages/kf6-purpose/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d93936646/x11-packages/kf6-purpose",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d93936646/x11-packages/kf6-purpose/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d93936646/x11-packages/kf6-purpose/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49675,7 +49678,7 @@
   },
   {
     "name": "kf6-solid",
-    "version": "6.8.0",
+    "version": "6.9.0",
     "description": "Hardware integration and detection",
     "homepage": "https://community.kde.org/Frameworks",
     "depends": [
@@ -49685,11 +49688,11 @@
       "libc++",
       "util-linux"
     ],
-    "srcurl": "https://download.kde.org/stable/frameworks/6.8/solid-6.8.0.tar.xz",
+    "srcurl": "https://download.kde.org/stable/frameworks/6.9/solid-6.9.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/875c961277/x11-packages/kf6-solid",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/875c961277/x11-packages/kf6-solid/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/875c961277/x11-packages/kf6-solid/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/578b3f6a4c/x11-packages/kf6-solid",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/578b3f6a4c/x11-packages/kf6-solid/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/578b3f6a4c/x11-packages/kf6-solid/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
