@@ -14,10 +14,6 @@ jobs:
       with:
         fetch-depth: 0
         token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Install json tools
-      run: |
-        sudo apt update
-        sudo apt install -yq jq
     - name: Clone termux-packages
       run: |
         mkdir -p /tmp/repos
