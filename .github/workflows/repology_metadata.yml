@@ -25,6 +25,14 @@ jobs:
     - name: Generate packages.json
       run: |
         export TERMUX_SCRIPTDIR=/tmp/repos/termux-packages
+        pushd /tmp/repos/termux-packages
+        # Speed up git log by significant amount
+        # See: https://stackoverflow.com/questions/35186829/how-to-improve-git-log-performance
+        git config core.commitGraph true
+        git config gc.writeCommitGraph true
+        git repack -Ad --max-pack-size=1g 
+        git commit-graph write --changed-paths --reachable
+        popd
         bash ./generate-repology-metadata.sh /tmp/repos/termux-packages > ./packages.json
 
         if ! jq . ./packages.json > /dev/null; then
