@@ -7321,15 +7321,15 @@
   },
   {
     "name": "esbuild",
-    "version": "0.24.0",
+    "version": "0.24.1",
     "description": "An extremely fast JavaScript bundler",
     "homepage": "https://esbuild.github.io/",
     "depends": [],
-    "srcurl": "https://github.com/evanw/esbuild/archive/refs/tags/v0.24.0.tar.gz",
+    "srcurl": "https://github.com/evanw/esbuild/archive/refs/tags/v0.24.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fcabda9c4e/packages/esbuild",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fcabda9c4e/packages/esbuild/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fcabda9c4e/packages/esbuild/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3a30189eac/packages/esbuild",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3a30189eac/packages/esbuild/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3a30189eac/packages/esbuild/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -8578,20 +8578,22 @@
   },
   {
     "name": "fselect",
-    "version": "0.8.6",
+    "version": "0.8.7",
     "description": "Find files with SQL-like queries",
     "homepage": "https://fselect.rocks/",
-    "depends": [],
-    "srcurl": "https://github.com/jhspetersson/fselect/archive/0.8.6.tar.gz",
+    "depends": [
+      "openssl"
+    ],
+    "srcurl": "https://github.com/jhspetersson/fselect/archive/0.8.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/906cd14a50/packages/fselect",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/906cd14a50/packages/fselect/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/906cd14a50/packages/fselect/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3b3c821d81/packages/fselect",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3b3c821d81/packages/fselect/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3b3c821d81/packages/fselect/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/906cd14a50/packages/fselect/libmimalloc-sys-tls.diff"
+      "https://github.com/termux/termux-packages/blob/3b3c821d81/packages/fselect/libmimalloc-sys-tls.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/906cd14a50/packages/fselect/libmimalloc-sys-tls.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/3b3c821d81/packages/fselect/libmimalloc-sys-tls.diff"
     ],
     "auto_updated": true
   },
@@ -23439,7 +23441,7 @@
   },
   {
     "name": "lua-language-server",
-    "version": "3.13.4",
+    "version": "3.13.5",
     "description": "Sumneko Lua Language Server coded in Lua",
     "homepage": "https://github.com/sumneko/lua-language-server",
     "depends": [
@@ -23448,24 +23450,24 @@
     ],
     "srcurl": "git+https://github.com/sumneko/lua-language-server",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cc0775cbfc/packages/lua-language-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cc0775cbfc/packages/lua-language-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cc0775cbfc/packages/lua-language-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0f9e9512c1/packages/lua-language-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0f9e9512c1/packages/lua-language-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0f9e9512c1/packages/lua-language-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cc0775cbfc/packages/lua-language-server/android.diff",
-      "https://github.com/termux/termux-packages/blob/cc0775cbfc/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://github.com/termux/termux-packages/blob/cc0775cbfc/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://github.com/termux/termux-packages/blob/cc0775cbfc/packages/lua-language-server/loslib.patch",
-      "https://github.com/termux/termux-packages/blob/cc0775cbfc/packages/lua-language-server/luaconf.patch",
-      "https://github.com/termux/termux-packages/blob/cc0775cbfc/packages/lua-language-server/make.lua.diff"
+      "https://github.com/termux/termux-packages/blob/0f9e9512c1/packages/lua-language-server/android.diff",
+      "https://github.com/termux/termux-packages/blob/0f9e9512c1/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://github.com/termux/termux-packages/blob/0f9e9512c1/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://github.com/termux/termux-packages/blob/0f9e9512c1/packages/lua-language-server/loslib.patch",
+      "https://github.com/termux/termux-packages/blob/0f9e9512c1/packages/lua-language-server/luaconf.patch",
+      "https://github.com/termux/termux-packages/blob/0f9e9512c1/packages/lua-language-server/make.lua.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0775cbfc/packages/lua-language-server/android.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0775cbfc/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0775cbfc/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0775cbfc/packages/lua-language-server/loslib.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0775cbfc/packages/lua-language-server/luaconf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0775cbfc/packages/lua-language-server/make.lua.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9e9512c1/packages/lua-language-server/android.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9e9512c1/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9e9512c1/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9e9512c1/packages/lua-language-server/loslib.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9e9512c1/packages/lua-language-server/luaconf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9e9512c1/packages/lua-language-server/make.lua.diff"
     ],
     "auto_updated": true
   },
@@ -26854,15 +26856,15 @@
   },
   {
     "name": "neocmakelsp",
-    "version": "0.8.13",
+    "version": "0.8.14",
     "description": "a cmake lsp based on tower-lsp and treesitter",
     "homepage": "https://github.com/Decodetalkers/neocmakelsp",
     "depends": [],
-    "srcurl": "https://github.com/Decodetalkers/neocmakelsp/archive/refs/tags/v0.8.13.tar.gz",
+    "srcurl": "https://github.com/Decodetalkers/neocmakelsp/archive/refs/tags/v0.8.14.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c0f18ac372/packages/neocmakelsp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c0f18ac372/packages/neocmakelsp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c0f18ac372/packages/neocmakelsp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bab07ce313/packages/neocmakelsp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bab07ce313/packages/neocmakelsp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bab07ce313/packages/neocmakelsp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31618,15 +31620,15 @@
   },
   {
     "name": "pv",
-    "version": "1.9.15",
+    "version": "1.9.24",
     "description": "Terminal-based tool for monitoring the progress of data through a pipeline",
     "homepage": "https://www.ivarch.com/programs/pv.shtml",
     "depends": [],
-    "srcurl": "https://www.ivarch.com/programs/sources/pv-1.9.15.tar.gz",
+    "srcurl": "https://www.ivarch.com/programs/sources/pv-1.9.24.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/73d946577c/packages/pv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/73d946577c/packages/pv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/73d946577c/packages/pv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e73206b94/packages/pv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e73206b94/packages/pv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e73206b94/packages/pv/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40059,20 +40061,20 @@
   },
   {
     "name": "uv",
-    "version": "0.5.10",
+    "version": "0.5.11",
     "description": "An extremely fast Python package installer and resolver, written in Rust.",
     "homepage": "https://docs.astral.sh/uv/",
     "depends": [],
-    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.5.10.tar.gz",
+    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.5.11.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/861dfc663f/packages/uv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/861dfc663f/packages/uv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/861dfc663f/packages/uv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/042a11491b/packages/uv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/042a11491b/packages/uv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/042a11491b/packages/uv/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/861dfc663f/packages/uv/0001-sys-info-replace-index-with-strchr.diff"
+      "https://github.com/termux/termux-packages/blob/042a11491b/packages/uv/0001-sys-info-replace-index-with-strchr.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/861dfc663f/packages/uv/0001-sys-info-replace-index-with-strchr.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/042a11491b/packages/uv/0001-sys-info-replace-index-with-strchr.diff"
     ],
     "auto_updated": true
   },
@@ -40884,15 +40886,15 @@
   },
   {
     "name": "vulkan-headers",
-    "version": "1.4.303",
+    "version": "1.4.304",
     "description": "Vulkan Header files and API registry",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.303.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.304.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bf8216510b/packages/vulkan-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bf8216510b/packages/vulkan-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bf8216510b/packages/vulkan-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/063f5b4d22/packages/vulkan-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/063f5b4d22/packages/vulkan-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/063f5b4d22/packages/vulkan-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
