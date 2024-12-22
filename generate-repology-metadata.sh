@@ -159,17 +159,34 @@ if [ $# -eq 0 ]; then
 	exit 1
 fi
 
-export FIRST=yes
 echo "["
-for repo_path in $(jq --raw-output 'del(.pkg_format) | keys | .[]' $TERMUX_PACKAGES_DIR/repo.json); do
-	for package_path in $TERMUX_PACKAGES_DIR/$repo_path/*; do
-		if [ "$FIRST" = "yes" ]; then
-			FIRST=no
-		else
-			echo ","
-		fi
-		# Run each package in separate process since we include their environment variables
-		( check_package $package_path )
+FIRST=yes
+repo_paths=$(jq --raw-output 'del(.pkg_format) | keys | .[]' $TERMUX_PACKAGES_DIR/repo.json)
+for repo_path in ${repo_paths[@]}; do
+	i=0
+	package_paths=($TERMUX_PACKAGES_DIR/$repo_path/*)
+	package_paths_count="${#package_paths[@]}"
+	while [ $((i * 100)) -le "${package_paths_count}" ]; do
+		for package_path in "${package_paths[@]:$((i*100)):100}"; do
+			if [ "$FIRST" = "yes" ]; then
+				FIRST=no
+			else
+				echo ","
+			fi
+			( check_package $package_path )
+		done > $( printf "/tmp/repology-metadata-%s.%03d" $repo_path $i ) &
+		i=$((i + 1))
+		FIRST=no
+	done
+	if [ $(jobs -p | grep -c $'\n') -gt $(nproc) ]; then
+		wait -n
+	fi
+done
+wait
+for repo_path in ${repo_paths[@]}; do
+	for file in /tmp/repology-metadata-$repo_path.*; do
+		cat $file
+		rm $file
 	done
 done
 echo ""
