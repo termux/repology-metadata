@@ -7601,15 +7601,15 @@
   },
   {
     "name": "fastfetch",
-    "version": "2.34.0",
+    "version": "2.34.1",
     "description": "A maintained, feature-rich and performance oriented, neofetch like system information tool",
     "homepage": "https://github.com/fastfetch-cli/fastfetch",
     "depends": [],
-    "srcurl": "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.34.0.tar.gz",
+    "srcurl": "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.34.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/933dc3bcbd/packages/fastfetch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/933dc3bcbd/packages/fastfetch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/933dc3bcbd/packages/fastfetch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b2b67c5d33/packages/fastfetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b2b67c5d33/packages/fastfetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b2b67c5d33/packages/fastfetch/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -8295,15 +8295,17 @@
   },
   {
     "name": "fmt",
-    "version": "1:11.1.1",
+    "version": "1:11.1.2",
     "description": "Open-source formatting library for C++",
     "homepage": "https://fmt.dev/latest/index.html",
-    "depends": [],
-    "srcurl": "https://github.com/fmtlib/fmt/archive/11.1.1.tar.gz",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/fmtlib/fmt/archive/11.1.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0de063c9ba/packages/fmt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0de063c9ba/packages/fmt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0de063c9ba/packages/fmt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cafab996ca/packages/fmt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cafab996ca/packages/fmt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cafab996ca/packages/fmt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -26937,7 +26939,7 @@
   },
   {
     "name": "neomutt",
-    "version": "20250109",
+    "version": "20250113",
     "description": "A version of mutt with added features",
     "homepage": "https://neomutt.org/",
     "depends": [
@@ -26952,24 +26954,24 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/neomutt/neomutt/archive/20250109.tar.gz",
+    "srcurl": "https://github.com/neomutt/neomutt/archive/20250113.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e8ae7e67e2/packages/neomutt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e8ae7e67e2/packages/neomutt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e8ae7e67e2/packages/neomutt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7bb36c7432/packages/neomutt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7bb36c7432/packages/neomutt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7bb36c7432/packages/neomutt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e8ae7e67e2/packages/neomutt/autosetup-config.guess.patch",
-      "https://github.com/termux/termux-packages/blob/e8ae7e67e2/packages/neomutt/file.c.patch",
-      "https://github.com/termux/termux-packages/blob/e8ae7e67e2/packages/neomutt/jimsh0.c.patch",
-      "https://github.com/termux/termux-packages/blob/e8ae7e67e2/packages/neomutt/muttlib.c.patch",
-      "https://github.com/termux/termux-packages/blob/e8ae7e67e2/packages/neomutt/smime_keys.patch"
+      "https://github.com/termux/termux-packages/blob/7bb36c7432/packages/neomutt/autosetup-config.guess.patch",
+      "https://github.com/termux/termux-packages/blob/7bb36c7432/packages/neomutt/file.c.patch",
+      "https://github.com/termux/termux-packages/blob/7bb36c7432/packages/neomutt/jimsh0.c.patch",
+      "https://github.com/termux/termux-packages/blob/7bb36c7432/packages/neomutt/muttlib.c.patch",
+      "https://github.com/termux/termux-packages/blob/7bb36c7432/packages/neomutt/smime_keys.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e8ae7e67e2/packages/neomutt/autosetup-config.guess.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e8ae7e67e2/packages/neomutt/file.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e8ae7e67e2/packages/neomutt/jimsh0.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e8ae7e67e2/packages/neomutt/muttlib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e8ae7e67e2/packages/neomutt/smime_keys.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7bb36c7432/packages/neomutt/autosetup-config.guess.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7bb36c7432/packages/neomutt/file.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7bb36c7432/packages/neomutt/jimsh0.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7bb36c7432/packages/neomutt/muttlib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7bb36c7432/packages/neomutt/smime_keys.patch"
     ],
     "auto_updated": true
   },
@@ -34204,17 +34206,17 @@
   },
   {
     "name": "rust-analyzer",
-    "version": "20250108",
+    "version": "20250113",
     "description": "A Rust compiler front-end for IDEs",
     "homepage": "https://rust-analyzer.github.io/",
     "depends": [
       "rust-src"
     ],
-    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2025-01-08.tar.gz",
+    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2025-01-13.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7f6533e240/packages/rust-analyzer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7f6533e240/packages/rust-analyzer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7f6533e240/packages/rust-analyzer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1bfd00866d/packages/rust-analyzer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1bfd00866d/packages/rust-analyzer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1bfd00866d/packages/rust-analyzer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -45827,7 +45829,7 @@
   },
   {
     "name": "devilspie2",
-    "version": "0.44",
+    "version": "0.45",
     "description": "A window-matching utility",
     "homepage": "https://www.nongnu.org/devilspie2/",
     "depends": [
@@ -45836,13 +45838,14 @@
       "liblua54",
       "libwnck",
       "libx11",
-      "libxinerama"
+      "libxinerama",
+      "libxrandr"
     ],
-    "srcurl": "https://download.savannah.nongnu.org/releases/devilspie2/devilspie2-0.44.tar.xz",
+    "srcurl": "https://download.savannah.nongnu.org/releases/devilspie2/devilspie2_0.45-src.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a30c577953/x11-packages/devilspie2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a30c577953/x11-packages/devilspie2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a30c577953/x11-packages/devilspie2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fbac9a09b3/x11-packages/devilspie2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fbac9a09b3/x11-packages/devilspie2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fbac9a09b3/x11-packages/devilspie2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
