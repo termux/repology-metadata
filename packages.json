@@ -4646,9 +4646,9 @@
     ],
     "srcurl": "https://github.com/termux/command-not-found/archive/2.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/debdcdff06/packages/command-not-found",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/debdcdff06/packages/command-not-found/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/debdcdff06/packages/command-not-found/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/66a7206e29/packages/command-not-found",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/66a7206e29/packages/command-not-found/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/66a7206e29/packages/command-not-found/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -23679,18 +23679,18 @@
   },
   {
     "name": "luv",
-    "version": "1.48.0-2",
+    "version": "1.50.0-0",
     "description": "Bare libuv bindings for lua",
     "homepage": "https://github.com/luvit/luv",
     "depends": [
       "libluajit",
       "libuv"
     ],
-    "srcurl": "https://github.com/luvit/luv/releases/download/1.48.0-2/luv-1.48.0-2.tar.gz",
+    "srcurl": "https://github.com/luvit/luv/releases/download/v1.50.0-0/luv-v1.50.0-0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d3e588d71c/packages/luv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d3e588d71c/packages/luv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d3e588d71c/packages/luv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6bab383337/packages/luv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6bab383337/packages/luv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6bab383337/packages/luv/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -46539,7 +46539,7 @@
   },
   {
     "name": "fcitx5-hangul",
-    "version": "5.1.5",
+    "version": "5.1.6",
     "description": "libhangul input method support for fcitx5",
     "homepage": "https://github.com/fcitx/fcitx5-hangul",
     "depends": [
@@ -46547,35 +46547,41 @@
       "libc++",
       "libhangul"
     ],
-    "srcurl": "https://github.com/fcitx/fcitx5-hangul/archive/refs/tags/5.1.5.tar.gz",
+    "srcurl": "https://github.com/fcitx/fcitx5-hangul/archive/refs/tags/5.1.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/03cd799181/x11-packages/fcitx5-hangul",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03cd799181/x11-packages/fcitx5-hangul/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03cd799181/x11-packages/fcitx5-hangul/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/425b41249d/x11-packages/fcitx5-hangul",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/425b41249d/x11-packages/fcitx5-hangul/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/425b41249d/x11-packages/fcitx5-hangul/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "fcitx5-qt",
-    "version": "5.1.8",
+    "version": "5.1.9",
     "description": "Fcitx Qt immodule & library",
     "homepage": "https://fcitx-im.org/",
     "depends": [
       "fcitx5",
       "libc++",
+      "libwayland",
       "libx11",
       "libxcb",
       "libxkbcommon",
-      "qt6-qtbase"
+      "qt6-qtbase",
+      "qt6-qtwayland"
     ],
-    "srcurl": "https://github.com/fcitx/fcitx5-qt/archive/refs/tags/5.1.8.tar.gz",
+    "srcurl": "https://github.com/fcitx/fcitx5-qt/archive/refs/tags/5.1.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dbcb041276/x11-packages/fcitx5-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dbcb041276/x11-packages/fcitx5-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dbcb041276/x11-packages/fcitx5-qt/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5e02161a59/x11-packages/fcitx5-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5e02161a59/x11-packages/fcitx5-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5e02161a59/x11-packages/fcitx5-qt/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5e02161a59/x11-packages/fcitx5-qt/qt6-platforminputcontext-CMakeLists.txt.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5e02161a59/x11-packages/fcitx5-qt/qt6-platforminputcontext-CMakeLists.txt.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -48155,7 +48161,7 @@
   },
   {
     "name": "gtk3",
-    "version": "3.24.43",
+    "version": "3.24.45",
     "description": "GObject-based multi-platform GUI toolkit",
     "homepage": "https://www.gtk.org/",
     "depends": [
@@ -48185,32 +48191,32 @@
       "shared-mime-info",
       "ttf-dejavu"
     ],
-    "srcurl": "https://gitlab.gnome.org/GNOME/gtk/-/archive/3.24.43/gtk-3.24.43.tar.gz",
+    "srcurl": "https://gitlab.gnome.org/GNOME/gtk/-/archive/3.24.45/gtk-3.24.45.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a338cd8a4f/x11-packages/gtk3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d98ac0f32f/x11-packages/gtk3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/0001-no-atk-bridge.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/0003-fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/0004-fix-name-conflicts.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/0005-fix-immodules-linking.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/0006-fix-libintl.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/broadway-server.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/gdkbroadway-server.patch",
-      "https://github.com/termux/termux-packages/blob/a338cd8a4f/x11-packages/gtk3/gdkdisplay-wayland.c.patch"
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/0001-no-atk-bridge.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/0003-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/0004-fix-name-conflicts.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/0005-fix-immodules-linking.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/0006-fix-libintl.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/broadway-server.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/gdkbroadway-server.patch",
+      "https://github.com/termux/termux-packages/blob/d98ac0f32f/x11-packages/gtk3/gdkdisplay-wayland.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/0001-no-atk-bridge.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/0003-fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/0004-fix-name-conflicts.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/0005-fix-immodules-linking.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/0006-fix-libintl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/broadway-server.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/gdkbroadway-server.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a338cd8a4f/x11-packages/gtk3/gdkdisplay-wayland.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/0001-no-atk-bridge.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/0002-dont-update-icon-cache.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/0003-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/0004-fix-name-conflicts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/0005-fix-immodules-linking.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/0006-fix-libintl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/broadway-server.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/gdkbroadway-server.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d98ac0f32f/x11-packages/gtk3/gdkdisplay-wayland.c.patch"
     ],
     "auto_updated": false
   },
