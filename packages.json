@@ -11920,6 +11920,30 @@
     "auto_updated": false
   },
   {
+    "name": "hidapi",
+    "version": "0.14.0",
+    "description": "Simple cross-platform library for communicating with HID devices",
+    "homepage": "https://libusb.info/hidapi",
+    "depends": [
+      "libiconv",
+      "libusb"
+    ],
+    "srcurl": "https://github.com/libusb/hidapi/archive/refs/tags/hidapi-0.14.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c9d62d84d/packages/hidapi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c9d62d84d/packages/hidapi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c9d62d84d/packages/hidapi/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7c9d62d84d/packages/hidapi/libusb-iconv-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/7c9d62d84d/packages/hidapi/termux-iconv-hid.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7c9d62d84d/packages/hidapi/libusb-iconv-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c9d62d84d/packages/hidapi/termux-iconv-hid.c.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "hilbish",
     "version": "2024.07.30",
     "description": "The Moon-powered shell! A comfy and extensible shell for Lua fans!",
@@ -19415,6 +19439,23 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/cc7ec9e69e/packages/libpcap/fix-path-etc-ethers.patch"
     ],
+    "auto_updated": false
+  },
+  {
+    "name": "libpcsclite",
+    "version": "2.0.0",
+    "description": "Middleware to access a smart card using SCard API (PC/SC).",
+    "homepage": "https://pcsclite.apdu.fr/",
+    "depends": [
+      "python"
+    ],
+    "srcurl": "https://pcsclite.apdu.fr/files/pcsc-lite-2.0.0.tar.bz2",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c0f92798ac/packages/libpcsclite",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c0f92798ac/packages/libpcsclite/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c0f92798ac/packages/libpcsclite/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
@@ -29101,6 +29142,30 @@
       "https://raw.githubusercontent.com/termux/termux-packages/935cd8a481/packages/openmpi/oshmem-mca-memheat-ptmalloc-malloc.c.patch"
     ],
     "auto_updated": false
+  },
+  {
+    "name": "opensc",
+    "version": "0.26.1",
+    "description": "Open source smart card tools and middleware",
+    "homepage": "https://github.com/OpenSC/OpenSC",
+    "depends": [
+      "glib",
+      "libpcsclite"
+    ],
+    "srcurl": "https://github.com/OpenSC/OpenSC/releases/download/0.26.1/opensc-0.26.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e1189e96bc/packages/opensc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e1189e96bc/packages/opensc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e1189e96bc/packages/opensc/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/e1189e96bc/packages/opensc/getpass.patch",
+      "https://github.com/termux/termux-packages/blob/e1189e96bc/packages/opensc/libpcsclite-name.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/e1189e96bc/packages/opensc/getpass.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e1189e96bc/packages/opensc/libpcsclite-name.patch"
+    ],
+    "auto_updated": true
   },
   {
     "name": "openscad",
@@ -43828,23 +43893,6 @@
     "auto_updated": false
   },
   {
-    "name": "libpcsclite",
-    "version": "2.0.0",
-    "description": "Middleware to access a smart card using SCard API (PC/SC).",
-    "homepage": "https://pcsclite.apdu.fr/",
-    "depends": [
-      "python"
-    ],
-    "srcurl": "https://pcsclite.apdu.fr/files/pcsc-lite-2.0.0.tar.bz2",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/551828901e/root-packages/libpcsclite",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/551828901e/root-packages/libpcsclite/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/551828901e/root-packages/libpcsclite/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
     "name": "libx86emu",
     "version": "3.5",
     "description": "x86 emulation library",
@@ -48817,7 +48865,7 @@
   },
   {
     "name": "gw",
-    "version": "1.1.2",
+    "version": "1.1.4",
     "description": "A browser for genomic sequencing data (.bam/.cram format)",
     "homepage": "https://github.com/kcleal/gw",
     "depends": [
@@ -48828,11 +48876,11 @@
       "opengl",
       "libcurl"
     ],
-    "srcurl": "https://github.com/kcleal/gw/archive/v1.1.2.tar.gz",
+    "srcurl": "https://github.com/kcleal/gw/archive/v1.1.4.tar.gz",
     "maintainer": "clealk@cardiff.ac.uk",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/da2672e438/x11-packages/gw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/da2672e438/x11-packages/gw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/da2672e438/x11-packages/gw/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/daffaed23f/x11-packages/gw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/daffaed23f/x11-packages/gw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/daffaed23f/x11-packages/gw/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
