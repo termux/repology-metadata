@@ -2964,17 +2964,17 @@
   },
   {
     "name": "broot",
-    "version": "1.44.6",
+    "version": "1.44.7",
     "description": "A better way to navigate directories",
     "homepage": "https://github.com/Canop/broot",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/Canop/broot/archive/refs/tags/v1.44.6.tar.gz",
+    "srcurl": "https://github.com/Canop/broot/archive/refs/tags/v1.44.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/723bf661f2/packages/broot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/723bf661f2/packages/broot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/723bf661f2/packages/broot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2badba47a6/packages/broot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2badba47a6/packages/broot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2badba47a6/packages/broot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -5953,17 +5953,17 @@
   },
   {
     "name": "diffutils",
-    "version": "3.10",
+    "version": "3.11",
     "description": "Programs (cmp, diff, diff3 and sdiff) related to finding differences between files",
     "homepage": "https://www.gnu.org/software/diffutils/",
     "depends": [
       "libiconv"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/diffutils/diffutils-3.10.tar.xz",
+    "srcurl": "https://mirrors.kernel.org/gnu/diffutils/diffutils-3.11.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b346a5ea40/packages/diffutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b346a5ea40/packages/diffutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b346a5ea40/packages/diffutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/46f8c0533f/packages/diffutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/46f8c0533f/packages/diffutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/46f8c0533f/packages/diffutils/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -6272,30 +6272,32 @@
   },
   {
     "name": "dnsutils",
-    "version": "9.20.4",
+    "version": "9.20.5",
     "description": "Clients provided with BIND",
-    "homepage": "https://www.isc.org/downloads/bind/",
+    "homepage": "https://www.isc.org/bind/",
     "depends": [
+      "json-c",
+      "libandroid-glob",
+      "libcap",
+      "libnghttp2",
+      "liburcu",
+      "libuv",
+      "libxml2",
       "openssl",
       "readline",
       "resolv-conf",
-      "zlib",
-      "libuv",
-      "liburcu",
-      "libcap",
-      "libandroid-glob",
-      "libnghttp2"
+      "zlib"
     ],
-    "srcurl": "https://ftp.isc.org/isc/bind9/9.20.4/bind-9.20.4.tar.xz",
+    "srcurl": "https://downloads.isc.org/isc/bind9/9.20.5/bind-9.20.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a26ea03947/packages/dnsutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a26ea03947/packages/dnsutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a26ea03947/packages/dnsutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d35c1c019b/packages/dnsutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d35c1c019b/packages/dnsutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d35c1c019b/packages/dnsutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a26ea03947/packages/dnsutils/bin-delv-delv.c.patch"
+      "https://github.com/termux/termux-packages/blob/d35c1c019b/packages/dnsutils/bin-delv-delv.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a26ea03947/packages/dnsutils/bin-delv-delv.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d35c1c019b/packages/dnsutils/bin-delv-delv.c.patch"
     ],
     "auto_updated": false
   },
@@ -8805,7 +8807,7 @@
   },
   {
     "name": "fzf",
-    "version": "0.59.0",
+    "version": "0.60.0",
     "description": "Command-line fuzzy finder",
     "homepage": "https://junegunn.github.io/fzf/",
     "depends": [
@@ -8813,16 +8815,16 @@
       "findutils",
       "ncurses-utils"
     ],
-    "srcurl": "https://github.com/junegunn/fzf/archive/v0.59.0.tar.gz",
+    "srcurl": "https://github.com/junegunn/fzf/archive/v0.60.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7faf25e0ac/packages/fzf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7faf25e0ac/packages/fzf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7faf25e0ac/packages/fzf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/19848067ab/packages/fzf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/19848067ab/packages/fzf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/19848067ab/packages/fzf/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7faf25e0ac/packages/fzf/bin-fzf-tmux.patch"
+      "https://github.com/termux/termux-packages/blob/19848067ab/packages/fzf/bin-fzf-tmux.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7faf25e0ac/packages/fzf/bin-fzf-tmux.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/19848067ab/packages/fzf/bin-fzf-tmux.patch"
     ],
     "auto_updated": true
   },
