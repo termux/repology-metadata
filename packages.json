@@ -32387,7 +32387,7 @@
   },
   {
     "name": "python-onnxruntime",
-    "version": "1.19.2",
+    "version": "1.20.2",
     "description": "Cross-platform, high performance ML inferencing and training accelerator",
     "homepage": "https://onnxruntime.ai/",
     "depends": [
@@ -32399,18 +32399,22 @@
     ],
     "srcurl": "git+https://github.com/microsoft/onnxruntime",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b373ce6efb/packages/python-onnxruntime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b373ce6efb/packages/python-onnxruntime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b373ce6efb/packages/python-onnxruntime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a388aef011/packages/python-onnxruntime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a388aef011/packages/python-onnxruntime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a388aef011/packages/python-onnxruntime/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b373ce6efb/packages/python-onnxruntime/0001-use-system-abseil.patch",
-      "https://github.com/termux/termux-packages/blob/b373ce6efb/packages/python-onnxruntime/0002-use-system-protobuf.patch"
+      "https://github.com/termux/termux-packages/blob/a388aef011/packages/python-onnxruntime/0001-use-system-abseil.patch",
+      "https://github.com/termux/termux-packages/blob/a388aef011/packages/python-onnxruntime/0002-use-system-protobuf.patch",
+      "https://github.com/termux/termux-packages/blob/a388aef011/packages/python-onnxruntime/0003-build-providers.patch",
+      "https://github.com/termux/termux-packages/blob/a388aef011/packages/python-onnxruntime/0004-cmake-python-find-Development-before-Development.Module.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b373ce6efb/packages/python-onnxruntime/0001-use-system-abseil.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b373ce6efb/packages/python-onnxruntime/0002-use-system-protobuf.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a388aef011/packages/python-onnxruntime/0001-use-system-abseil.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388aef011/packages/python-onnxruntime/0002-use-system-protobuf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388aef011/packages/python-onnxruntime/0003-build-providers.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a388aef011/packages/python-onnxruntime/0004-cmake-python-find-Development-before-Development.Module.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "python-pillow",
@@ -51907,7 +51911,7 @@
   },
   {
     "name": "luanti",
-    "version": "1:5.10.0",
+    "version": "1:5.11.0",
     "description": "An open source voxel game engine.",
     "homepage": "https://www.luanti.org",
     "depends": [
@@ -51932,28 +51936,26 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/minetest/minetest/archive/refs/tags/5.10.0.zip",
+    "srcurl": "https://github.com/luanti-org/luanti/archive/refs/tags/5.11.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b82e9ab9a8/x11-packages/luanti",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/546b6df9d4/x11-packages/luanti",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/546b6df9d4/x11-packages/luanti/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/546b6df9d4/x11-packages/luanti/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/0001-enable-egl-without-sdl2.patch",
-      "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/0002-fix-elf-directory-for-cross-compiling.patch",
-      "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/0003-bionic-libc-x11-wsi-opengl-es-2.patch",
-      "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/0004-prepend-termux-prefix-to-tmp-path.patch",
-      "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/0005-toggle-on-the-recent-upstream-migration-away-from-sdl2.patch",
-      "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/0006-fix-incompatible-type-ekey-code.patch",
-      "https://github.com/termux/termux-packages/blob/b82e9ab9a8/x11-packages/luanti/0007-replace-xdg-open.patch"
+      "https://github.com/termux/termux-packages/blob/546b6df9d4/x11-packages/luanti/0001-fix-elf-directory-for-cross-compiling.patch",
+      "https://github.com/termux/termux-packages/blob/546b6df9d4/x11-packages/luanti/0002-bionic-libc-x11-wsi-opengl-es-2.patch",
+      "https://github.com/termux/termux-packages/blob/546b6df9d4/x11-packages/luanti/0003-prepend-termux-prefix-to-tmp-path.patch",
+      "https://github.com/termux/termux-packages/blob/546b6df9d4/x11-packages/luanti/0004-disable-sdl2.patch",
+      "https://github.com/termux/termux-packages/blob/546b6df9d4/x11-packages/luanti/0005-fix-incompatible-type-ekey-code.patch",
+      "https://github.com/termux/termux-packages/blob/546b6df9d4/x11-packages/luanti/0006-replace-xdg-open.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/0001-enable-egl-without-sdl2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/0002-fix-elf-directory-for-cross-compiling.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/0003-bionic-libc-x11-wsi-opengl-es-2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/0004-prepend-termux-prefix-to-tmp-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/0005-toggle-on-the-recent-upstream-migration-away-from-sdl2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/0006-fix-incompatible-type-ekey-code.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b82e9ab9a8/x11-packages/luanti/0007-replace-xdg-open.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/546b6df9d4/x11-packages/luanti/0001-fix-elf-directory-for-cross-compiling.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/546b6df9d4/x11-packages/luanti/0002-bionic-libc-x11-wsi-opengl-es-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/546b6df9d4/x11-packages/luanti/0003-prepend-termux-prefix-to-tmp-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/546b6df9d4/x11-packages/luanti/0004-disable-sdl2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/546b6df9d4/x11-packages/luanti/0005-fix-incompatible-type-ekey-code.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/546b6df9d4/x11-packages/luanti/0006-replace-xdg-open.patch"
     ],
     "auto_updated": true
   },
