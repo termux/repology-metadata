@@ -4360,7 +4360,7 @@
   },
   {
     "name": "clvk",
-    "version": "0.0.20250121.215854",
+    "version": "0.0.20250224.115625",
     "description": "Experimental implementation of OpenCL on Vulkan",
     "homepage": "https://github.com/kpet/clvk",
     "depends": [
@@ -4369,11 +4369,15 @@
     ],
     "srcurl": "git+https://github.com/kpet/clvk",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6399f58d63/packages/clvk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6399f58d63/packages/clvk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6399f58d63/packages/clvk/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cb33f53d9/packages/clvk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cb33f53d9/packages/clvk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cb33f53d9/packages/clvk/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/9cb33f53d9/packages/clvk/0001-Do-not-use-__builtin_elementwise_popcount-for-clc_po.patch.beforehostbuild"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/9cb33f53d9/packages/clvk/0001-Do-not-use-__builtin_elementwise_popcount-for-clc_po.patch.beforehostbuild"
+    ],
     "auto_updated": true
   },
   {
@@ -9379,15 +9383,15 @@
   },
   {
     "name": "geth",
-    "version": "1.15.3",
+    "version": "1.15.4",
     "description": "Go implementation of the Ethereum protocol",
     "homepage": "https://geth.ethereum.org/",
     "depends": [],
-    "srcurl": "https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.15.3.tar.gz",
+    "srcurl": "https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.15.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8a622fc9df/packages/geth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8a622fc9df/packages/geth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8a622fc9df/packages/geth/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8194f5bd72/packages/geth",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8194f5bd72/packages/geth/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8194f5bd72/packages/geth/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -18946,25 +18950,25 @@
   },
   {
     "name": "libnss",
-    "version": "3.108",
+    "version": "3.109",
     "description": "Network Security Services (NSS)",
     "homepage": "https://firefox-source-docs.mozilla.org/security/nss/",
     "depends": [
       "libnspr",
       "libsqlite"
     ],
-    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_108_RTM/src/nss-3.108.tar.gz",
+    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_109_RTM/src/nss-3.109.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b07506978/packages/libnss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b07506978/packages/libnss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b07506978/packages/libnss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/adbec13ca7/packages/libnss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/adbec13ca7/packages/libnss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/adbec13ca7/packages/libnss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6b07506978/packages/libnss/coreconf-rules.mk.patch",
-      "https://github.com/termux/termux-packages/blob/6b07506978/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://github.com/termux/termux-packages/blob/adbec13ca7/packages/libnss/coreconf-rules.mk.patch",
+      "https://github.com/termux/termux-packages/blob/adbec13ca7/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6b07506978/packages/libnss/coreconf-rules.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6b07506978/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/adbec13ca7/packages/libnss/coreconf-rules.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adbec13ca7/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "auto_updated": true
   },
@@ -32153,7 +32157,7 @@
   },
   {
     "name": "python-cryptography",
-    "version": "44.0.1",
+    "version": "44.0.2",
     "description": "Provides cryptographic recipes and primitives to Python developers",
     "homepage": "https://github.com/pyca/cryptography",
     "depends": [
@@ -32161,11 +32165,11 @@
       "python",
       "python-pip"
     ],
-    "srcurl": "https://github.com/pyca/cryptography/archive/refs/tags/44.0.1.tar.gz",
+    "srcurl": "https://github.com/pyca/cryptography/archive/refs/tags/44.0.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3092bc5c37/packages/python-cryptography",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3092bc5c37/packages/python-cryptography/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3092bc5c37/packages/python-cryptography/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ef9c94b88/packages/python-cryptography",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ef9c94b88/packages/python-cryptography/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ef9c94b88/packages/python-cryptography/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49462,9 +49466,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/breeze-icons-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/49ed5bd6c9/x11-packages/kf6-breeze-icons",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/49ed5bd6c9/x11-packages/kf6-breeze-icons/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/49ed5bd6c9/x11-packages/kf6-breeze-icons/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bfab9e06d7/x11-packages/kf6-breeze-icons",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bfab9e06d7/x11-packages/kf6-breeze-icons/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bfab9e06d7/x11-packages/kf6-breeze-icons/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49484,9 +49488,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/karchive-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cb2899a722/x11-packages/kf6-karchive",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cb2899a722/x11-packages/kf6-karchive/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cb2899a722/x11-packages/kf6-karchive/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bfab9e06d7/x11-packages/kf6-karchive",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bfab9e06d7/x11-packages/kf6-karchive/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bfab9e06d7/x11-packages/kf6-karchive/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49503,14 +49507,14 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kauth-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9370702fb7/x11-packages/kf6-kauth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9370702fb7/x11-packages/kf6-kauth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9370702fb7/x11-packages/kf6-kauth/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bfab9e06d7/x11-packages/kf6-kauth",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bfab9e06d7/x11-packages/kf6-kauth/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bfab9e06d7/x11-packages/kf6-kauth/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9370702fb7/x11-packages/kf6-kauth/Android-Support.patch"
+      "https://github.com/termux/termux-packages/blob/bfab9e06d7/x11-packages/kf6-kauth/Android-Support.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9370702fb7/x11-packages/kf6-kauth/Android-Support.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bfab9e06d7/x11-packages/kf6-kauth/Android-Support.patch"
     ],
     "auto_updated": true
   },
@@ -49568,9 +49572,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kcolorscheme-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/802740a28a/x11-packages/kf6-kcolorscheme",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/802740a28a/x11-packages/kf6-kcolorscheme/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/802740a28a/x11-packages/kf6-kcolorscheme/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bfab9e06d7/x11-packages/kf6-kcolorscheme",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bfab9e06d7/x11-packages/kf6-kcolorscheme/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bfab9e06d7/x11-packages/kf6-kcolorscheme/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49589,9 +49593,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kcompletion-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b5b07fe650/x11-packages/kf6-kcompletion",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b5b07fe650/x11-packages/kf6-kcompletion/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b5b07fe650/x11-packages/kf6-kcompletion/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60e7f1ae88/x11-packages/kf6-kcompletion",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60e7f1ae88/x11-packages/kf6-kcompletion/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60e7f1ae88/x11-packages/kf6-kcompletion/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49608,9 +49612,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kconfig-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3cc7a071ea/x11-packages/kf6-kconfig",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3cc7a071ea/x11-packages/kf6-kconfig/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3cc7a071ea/x11-packages/kf6-kconfig/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60e7f1ae88/x11-packages/kf6-kconfig",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60e7f1ae88/x11-packages/kf6-kconfig/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60e7f1ae88/x11-packages/kf6-kconfig/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49652,16 +49656,16 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kcoreaddons-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6a37860e79/x11-packages/kf6-kcoreaddons",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6a37860e79/x11-packages/kf6-kcoreaddons/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6a37860e79/x11-packages/kf6-kcoreaddons/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60e7f1ae88/x11-packages/kf6-kcoreaddons",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60e7f1ae88/x11-packages/kf6-kcoreaddons/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60e7f1ae88/x11-packages/kf6-kcoreaddons/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6a37860e79/x11-packages/kf6-kcoreaddons/no_redefinition_kuser_unix.patch",
-      "https://github.com/termux/termux-packages/blob/6a37860e79/x11-packages/kf6-kcoreaddons/src-mimetypes-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/60e7f1ae88/x11-packages/kf6-kcoreaddons/no_redefinition_kuser_unix.patch",
+      "https://github.com/termux/termux-packages/blob/60e7f1ae88/x11-packages/kf6-kcoreaddons/src-mimetypes-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6a37860e79/x11-packages/kf6-kcoreaddons/no_redefinition_kuser_unix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6a37860e79/x11-packages/kf6-kcoreaddons/src-mimetypes-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/60e7f1ae88/x11-packages/kf6-kcoreaddons/no_redefinition_kuser_unix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/60e7f1ae88/x11-packages/kf6-kcoreaddons/src-mimetypes-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -49762,9 +49766,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kguiaddons-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/66d0c8776c/x11-packages/kf6-kguiaddons",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/66d0c8776c/x11-packages/kf6-kguiaddons/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/66d0c8776c/x11-packages/kf6-kguiaddons/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60e7f1ae88/x11-packages/kf6-kguiaddons",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60e7f1ae88/x11-packages/kf6-kguiaddons/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60e7f1ae88/x11-packages/kf6-kguiaddons/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49783,9 +49787,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/ki18n-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/611a91ad57/x11-packages/kf6-ki18n",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/611a91ad57/x11-packages/kf6-ki18n/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/611a91ad57/x11-packages/kf6-ki18n/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/954d0f69d7/x11-packages/kf6-ki18n",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/954d0f69d7/x11-packages/kf6-ki18n/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/954d0f69d7/x11-packages/kf6-ki18n/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49809,9 +49813,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kiconthemes-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/32388b2816/x11-packages/kf6-kiconthemes",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32388b2816/x11-packages/kf6-kiconthemes/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32388b2816/x11-packages/kf6-kiconthemes/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/954d0f69d7/x11-packages/kf6-kiconthemes",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/954d0f69d7/x11-packages/kf6-kiconthemes/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/954d0f69d7/x11-packages/kf6-kiconthemes/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49899,9 +49903,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.7.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5916872b57/x11-packages/kf6-kirigami-addons",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5916872b57/x11-packages/kf6-kirigami-addons/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5916872b57/x11-packages/kf6-kirigami-addons/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/954d0f69d7/x11-packages/kf6-kirigami-addons",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/954d0f69d7/x11-packages/kf6-kirigami-addons/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/954d0f69d7/x11-packages/kf6-kirigami-addons/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49918,9 +49922,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kitemmodels-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/872e4b9db8/x11-packages/kf6-kitemmodels",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/872e4b9db8/x11-packages/kf6-kitemmodels/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/872e4b9db8/x11-packages/kf6-kitemmodels/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/954d0f69d7/x11-packages/kf6-kitemmodels",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/954d0f69d7/x11-packages/kf6-kitemmodels/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/954d0f69d7/x11-packages/kf6-kitemmodels/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49936,9 +49940,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kitemviews-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9b375784e1/x11-packages/kf6-kitemviews",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9b375784e1/x11-packages/kf6-kitemviews/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9b375784e1/x11-packages/kf6-kitemviews/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/77b91de646/x11-packages/kf6-kitemviews",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/77b91de646/x11-packages/kf6-kitemviews/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/77b91de646/x11-packages/kf6-kitemviews/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50069,9 +50073,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kservice-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/593e907f85/x11-packages/kf6-kservice",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/593e907f85/x11-packages/kf6-kservice/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/593e907f85/x11-packages/kf6-kservice/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/77b91de646/x11-packages/kf6-kservice",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/77b91de646/x11-packages/kf6-kservice/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/77b91de646/x11-packages/kf6-kservice/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50094,9 +50098,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/ktextwidgets-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e558b47bc9/x11-packages/kf6-ktextwidgets",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e558b47bc9/x11-packages/kf6-ktextwidgets/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e558b47bc9/x11-packages/kf6-ktextwidgets/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/77b91de646/x11-packages/kf6-ktextwidgets",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/77b91de646/x11-packages/kf6-ktextwidgets/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/77b91de646/x11-packages/kf6-ktextwidgets/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50143,14 +50147,14 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/kwidgetsaddons-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4b35cb891d/x11-packages/kf6-kwidgetsaddons",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4b35cb891d/x11-packages/kf6-kwidgetsaddons/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4b35cb891d/x11-packages/kf6-kwidgetsaddons/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/77b91de646/x11-packages/kf6-kwidgetsaddons",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/77b91de646/x11-packages/kf6-kwidgetsaddons/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/77b91de646/x11-packages/kf6-kwidgetsaddons/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4b35cb891d/x11-packages/kf6-kwidgetsaddons/src-kpassworddialog.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/77b91de646/x11-packages/kf6-kwidgetsaddons/src-kpassworddialog.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4b35cb891d/x11-packages/kf6-kwidgetsaddons/src-kpassworddialog.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/77b91de646/x11-packages/kf6-kwidgetsaddons/src-kpassworddialog.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -50296,9 +50300,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.11/sonnet-6.11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3637f0eff3/x11-packages/kf6-sonnet",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3637f0eff3/x11-packages/kf6-sonnet/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3637f0eff3/x11-packages/kf6-sonnet/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/77b91de646/x11-packages/kf6-sonnet",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/77b91de646/x11-packages/kf6-sonnet/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/77b91de646/x11-packages/kf6-sonnet/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
