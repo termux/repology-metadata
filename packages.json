@@ -8385,15 +8385,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.3.87",
+    "version": "0.3.88-pre-1",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.3.87.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.3.88-pre-1.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b9887e44d1/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b9887e44d1/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b9887e44d1/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c0ba95a35/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c0ba95a35/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c0ba95a35/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -10393,25 +10393,19 @@
   },
   {
     "name": "gnushogi",
-    "version": "1.4.2",
+    "version": "1.4.2-p20141119",
     "description": "Program that plays the game of Shogi, also known as Japanese Chess",
     "homepage": "https://www.gnu.org/software/gnushogi/",
     "depends": [
       "ncurses"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/gnushogi/gnushogi-1.4.2.tar.gz",
+    "srcurl": "git+https://git.savannah.gnu.org/git/gnushogi.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5e5e7c2de/packages/gnushogi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5e5e7c2de/packages/gnushogi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2de/packages/gnushogi/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d5e5e7c2de/packages/gnushogi/gnushogi-makefile-in.patch",
-      "https://github.com/termux/termux-packages/blob/d5e5e7c2de/packages/gnushogi/use_libncurses.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2de/packages/gnushogi/gnushogi-makefile-in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d5e5e7c2de/packages/gnushogi/use_libncurses.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e47a543ec/packages/gnushogi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e47a543ec/packages/gnushogi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e47a543ec/packages/gnushogi/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
@@ -13766,15 +13760,15 @@
   },
   {
     "name": "k9s",
-    "version": "0.40.6",
+    "version": "0.40.7",
     "description": "Kubernetes CLI To Manage Your Clusters In Style!",
     "homepage": "https://k9scli.io",
     "depends": [],
-    "srcurl": "https://github.com/derailed/k9s/archive/v0.40.6.tar.gz",
+    "srcurl": "https://github.com/derailed/k9s/archive/v0.40.7.tar.gz",
     "maintainer": "Krishna Kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e8c248c3f4/packages/k9s",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e8c248c3f4/packages/k9s/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e8c248c3f4/packages/k9s/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7b6dd0a73d/packages/k9s",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7b6dd0a73d/packages/k9s/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7b6dd0a73d/packages/k9s/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -19291,6 +19285,23 @@
       "https://raw.githubusercontent.com/termux/termux-packages/9e90d1b31a/packages/libowfat/trysigio.c.patch"
     ],
     "auto_updated": false
+  },
+  {
+    "name": "libp11",
+    "version": "0.4.13",
+    "description": "PKCS#11 wrapper library",
+    "homepage": "https://github.com/OpenSC/libp11",
+    "depends": [
+      "openssl"
+    ],
+    "srcurl": "https://github.com/OpenSC/libp11/releases/download/libp11-0.4.13/libp11-0.4.13.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e535b1fe4/packages/libp11",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e535b1fe4/packages/libp11/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e535b1fe4/packages/libp11/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "libp8-platform",
@@ -25679,7 +25690,7 @@
   },
   {
     "name": "mono",
-    "version": "6.12.0.206",
+    "version": "6.14.0",
     "description": "Framework Mono",
     "homepage": "https://gitlab.winehq.org/mono/mono",
     "depends": [
@@ -25688,34 +25699,36 @@
     ],
     "srcurl": "git+https://gitlab.winehq.org/mono/mono",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/403d1ce2b7/packages/mono",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/403d1ce2b7/packages/mono/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/403d1ce2b7/packages/mono/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/55ac969588/packages/mono",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55ac969588/packages/mono/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55ac969588/packages/mono/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/403d1ce2b7/packages/mono/mono-utils-mono-logger.c.patch",
-      "https://github.com/termux/termux-packages/blob/403d1ce2b7/packages/mono/mono-utils-mono-proclib.c.patch",
-      "https://github.com/termux/termux-packages/blob/403d1ce2b7/packages/mono/mono-utils-mono-threads-posix.c.patch"
+      "https://github.com/termux/termux-packages/blob/55ac969588/packages/mono/mono-utils-mono-logger.c.patch",
+      "https://github.com/termux/termux-packages/blob/55ac969588/packages/mono/mono-utils-mono-proclib.c.patch",
+      "https://github.com/termux/termux-packages/blob/55ac969588/packages/mono/mono-utils-mono-sigcontext.h.patch",
+      "https://github.com/termux/termux-packages/blob/55ac969588/packages/mono/mono-utils-mono-threads-posix.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/403d1ce2b7/packages/mono/mono-utils-mono-logger.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/403d1ce2b7/packages/mono/mono-utils-mono-proclib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/403d1ce2b7/packages/mono/mono-utils-mono-threads-posix.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/55ac969588/packages/mono/mono-utils-mono-logger.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/55ac969588/packages/mono/mono-utils-mono-proclib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/55ac969588/packages/mono/mono-utils-mono-sigcontext.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/55ac969588/packages/mono/mono-utils-mono-threads-posix.c.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "monolith",
-    "version": "2.8.3",
+    "version": "2.9.0",
     "description": "CLI tool for saving complete web pages as a single HTML file",
     "homepage": "https://github.com/Y2Z/monolith",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/Y2Z/monolith/archive/refs/tags/v2.8.3.tar.gz",
+    "srcurl": "https://github.com/Y2Z/monolith/archive/refs/tags/v2.9.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/666b5a4c92/packages/monolith",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/666b5a4c92/packages/monolith/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/666b5a4c92/packages/monolith/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e74c94b29/packages/monolith",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e74c94b29/packages/monolith/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e74c94b29/packages/monolith/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -36982,15 +36995,15 @@
   },
   {
     "name": "svt-av1",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)",
     "homepage": "https://gitlab.com/AOMediaCodec/SVT-AV1",
     "depends": [],
-    "srcurl": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.0/SVT-AV1-v3.0.0.tar.gz",
+    "srcurl": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.1/SVT-AV1-v3.0.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/88c045882e/packages/svt-av1",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88c045882e/packages/svt-av1/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88c045882e/packages/svt-av1/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/143cc8cde2/packages/svt-av1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/143cc8cde2/packages/svt-av1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/143cc8cde2/packages/svt-av1/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -53302,12 +53315,13 @@
   },
   {
     "name": "nextcloud-client",
-    "version": "3.15.3",
+    "version": "3.16.0",
     "description": "Command-line client tool for Nextcloud.",
     "homepage": "https://nextcloud.com/",
     "depends": [
       "dbus",
       "dbus-glib",
+      "libp11",
       "qtkeychain",
       "qt6-qtbase",
       "qt6-qttools",
@@ -53318,20 +53332,20 @@
       "qt6-qtsvg",
       "qt6-qt5compat"
     ],
-    "srcurl": "https://github.com/nextcloud/desktop/archive/refs/tags/v3.15.3.tar.gz",
+    "srcurl": "https://github.com/nextcloud/desktop/archive/refs/tags/v3.16.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2eb55cc222/x11-packages/nextcloud-client",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2eb55cc222/x11-packages/nextcloud-client/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2eb55cc222/x11-packages/nextcloud-client/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7707f37323/x11-packages/nextcloud-client",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7707f37323/x11-packages/nextcloud-client/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7707f37323/x11-packages/nextcloud-client/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2eb55cc222/x11-packages/nextcloud-client/FindInotify.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/2eb55cc222/x11-packages/nextcloud-client/ocsprofileconnector.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/2eb55cc222/x11-packages/nextcloud-client/tokencredentials.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/7707f37323/x11-packages/nextcloud-client/FindInotify.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/7707f37323/x11-packages/nextcloud-client/ocsprofileconnector.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/7707f37323/x11-packages/nextcloud-client/tokencredentials.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2eb55cc222/x11-packages/nextcloud-client/FindInotify.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2eb55cc222/x11-packages/nextcloud-client/ocsprofileconnector.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2eb55cc222/x11-packages/nextcloud-client/tokencredentials.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7707f37323/x11-packages/nextcloud-client/FindInotify.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7707f37323/x11-packages/nextcloud-client/ocsprofileconnector.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7707f37323/x11-packages/nextcloud-client/tokencredentials.cpp.patch"
     ],
     "auto_updated": true
   },
