@@ -6283,6 +6283,7 @@
     "description": "Clients provided with BIND",
     "homepage": "https://www.isc.org/bind/",
     "depends": [
+      "cmocka",
       "json-c",
       "libandroid-execinfo",
       "libandroid-glob",
@@ -6298,14 +6299,16 @@
     ],
     "srcurl": "https://downloads.isc.org/isc/bind9/9.20.6/bind-9.20.6.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ab5108c35/packages/dnsutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ab5108c35/packages/dnsutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ab5108c35/packages/dnsutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c624b0d31a/packages/dnsutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c624b0d31a/packages/dnsutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c624b0d31a/packages/dnsutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1ab5108c35/packages/dnsutils/bin-delv-delv.c.patch"
+      "https://github.com/termux/termux-packages/blob/c624b0d31a/packages/dnsutils/bin-delv-delv.c.patch",
+      "https://github.com/termux/termux-packages/blob/c624b0d31a/packages/dnsutils/socklen_t-fix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1ab5108c35/packages/dnsutils/bin-delv-delv.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c624b0d31a/packages/dnsutils/bin-delv-delv.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c624b0d31a/packages/dnsutils/socklen_t-fix.patch"
     ],
     "auto_updated": true
   },
@@ -7680,30 +7683,30 @@
   },
   {
     "name": "fakeroot",
-    "version": "1.37",
+    "version": "1.37.1",
     "description": "Tool for simulating superuser privileges (with tcp ipc)",
     "homepage": "https://packages.qa.debian.org/f/fakeroot.html",
     "depends": [],
-    "srcurl": "https://deb.debian.org/debian/pool/main/f/fakeroot/fakeroot_1.37.orig.tar.gz",
+    "srcurl": "https://deb.debian.org/debian/pool/main/f/fakeroot/fakeroot_1.37.1.orig.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a60d5b35a4/packages/fakeroot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a60d5b35a4/packages/fakeroot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a60d5b35a4/packages/fakeroot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb7515cd49/packages/fakeroot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb7515cd49/packages/fakeroot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb7515cd49/packages/fakeroot/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a60d5b35a4/packages/fakeroot/communicate.c.patch",
-      "https://github.com/termux/termux-packages/blob/a60d5b35a4/packages/fakeroot/doc-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/a60d5b35a4/packages/fakeroot/dont-wrap-while-environ-is-null.patch",
-      "https://github.com/termux/termux-packages/blob/a60d5b35a4/packages/fakeroot/fakeroot-1.23_faked.c.patch",
-      "https://github.com/termux/termux-packages/blob/a60d5b35a4/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
-      "https://github.com/termux/termux-packages/blob/a60d5b35a4/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
+      "https://github.com/termux/termux-packages/blob/bb7515cd49/packages/fakeroot/communicate.c.patch",
+      "https://github.com/termux/termux-packages/blob/bb7515cd49/packages/fakeroot/doc-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/bb7515cd49/packages/fakeroot/dont-wrap-while-environ-is-null.patch",
+      "https://github.com/termux/termux-packages/blob/bb7515cd49/packages/fakeroot/fakeroot-1.23_faked.c.patch",
+      "https://github.com/termux/termux-packages/blob/bb7515cd49/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
+      "https://github.com/termux/termux-packages/blob/bb7515cd49/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a60d5b35a4/packages/fakeroot/communicate.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a60d5b35a4/packages/fakeroot/doc-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a60d5b35a4/packages/fakeroot/dont-wrap-while-environ-is-null.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a60d5b35a4/packages/fakeroot/fakeroot-1.23_faked.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a60d5b35a4/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a60d5b35a4/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bb7515cd49/packages/fakeroot/communicate.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb7515cd49/packages/fakeroot/doc-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb7515cd49/packages/fakeroot/dont-wrap-while-environ-is-null.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb7515cd49/packages/fakeroot/fakeroot-1.23_faked.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb7515cd49/packages/fakeroot/fakeroot-1.23_libfakeroot.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb7515cd49/packages/fakeroot/fakeroot-1.23_scripts_fakeroot.in.patch"
     ],
     "auto_updated": true
   },
@@ -9588,15 +9591,15 @@
   },
   {
     "name": "gifski",
-    "version": "1.32.0",
+    "version": "1.33.0",
     "description": "GIF encoder based on libimagequant",
     "homepage": "https://gif.ski/",
     "depends": [],
-    "srcurl": "https://github.com/ImageOptim/gifski/archive/1.32.0.tar.gz",
+    "srcurl": "https://github.com/ImageOptim/gifski/archive/1.33.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e6ce2f4cb/packages/gifski",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e6ce2f4cb/packages/gifski/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e6ce2f4cb/packages/gifski/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb65f72793/packages/gifski",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb65f72793/packages/gifski/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb65f72793/packages/gifski/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23243,23 +23246,23 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b4896",
+    "version": "0.0.0-b4897",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b4896.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b4897.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f51e5ee33b/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f51e5ee33b/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f51e5ee33b/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6410348c81/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6410348c81/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6410348c81/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f51e5ee33b/packages/llama-cpp/0001-search-dirs.patch"
+      "https://github.com/termux/termux-packages/blob/6410348c81/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f51e5ee33b/packages/llama-cpp/0001-search-dirs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6410348c81/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "auto_updated": true
   },
@@ -28782,7 +28785,7 @@
   },
   {
     "name": "openfoam",
-    "version": "2406",
+    "version": "2412",
     "description": "OpenFOAM is a CFD software written in C++",
     "homepage": "https://www.openfoam.com",
     "depends": [
@@ -28794,48 +28797,46 @@
       "readline",
       "zlib"
     ],
-    "srcurl": "https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2406/openfoam-OpenFOAM-v2406.tar.bz2",
+    "srcurl": "https://develop.openfoam.com/Development/openfoam/-/archive/OpenFOAM-v2412/openfoam-OpenFOAM-v2412.tar.bz2",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a43a555f14/packages/openfoam",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/adf4fd3f05/packages/openfoam",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/0001-Revert-COMP-remove-wmake-rules-for-ARM7-discontinued.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/0002-fix-build-with-cgal-5.5.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/0003-ambiguous-use-of-overloaded-operator-with-streampos.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/etc-bashrc.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/etc-config.sh-CGAL.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/etc-config.sh-mpi.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/etc-config.sh-settings.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/etc-config.sh-unset.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/src-OSspecific-POSIX-Allwmake.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/src-OSspecific-POSIX-POSIX.C.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/src-OSspecific-POSIX-signals-sigFpe.C.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/src-OpenFOAM-Make-options.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/src-OpenFOAM-db-IOstreams-IOstreams-Istream.C.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/src-OpenFOAM-primitives-ints-int64-int64.H.patch32",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/wmake-makefiles-general.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/wmake-rules.patch",
-      "https://github.com/termux/termux-packages/blob/a43a555f14/packages/openfoam/wmake-scripts-sysFunctions.patch"
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/0001-Revert-COMP-remove-wmake-rules-for-ARM7-discontinued.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/0003-ambiguous-use-of-overloaded-operator-with-streampos.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/etc-bashrc.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/etc-config.sh-CGAL.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/etc-config.sh-mpi.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/etc-config.sh-settings.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/etc-config.sh-unset.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/src-OSspecific-POSIX-Allwmake.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/src-OSspecific-POSIX-POSIX.C.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/src-OSspecific-POSIX-signals-sigFpe.C.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/src-OpenFOAM-Make-options.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/src-OpenFOAM-db-IOstreams-IOstreams-Istream.C.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/src-OpenFOAM-primitives-ints-int64-int64.H.patch32",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/wmake-makefiles-general.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/wmake-rules.patch",
+      "https://github.com/termux/termux-packages/blob/adf4fd3f05/packages/openfoam/wmake-scripts-sysFunctions.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/0001-Revert-COMP-remove-wmake-rules-for-ARM7-discontinued.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/0002-fix-build-with-cgal-5.5.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/0003-ambiguous-use-of-overloaded-operator-with-streampos.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/etc-bashrc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/etc-config.sh-CGAL.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/etc-config.sh-mpi.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/etc-config.sh-settings.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/etc-config.sh-unset.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/src-OSspecific-POSIX-Allwmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/src-OSspecific-POSIX-POSIX.C.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/src-OSspecific-POSIX-signals-sigFpe.C.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/src-OpenFOAM-Make-options.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/src-OpenFOAM-db-IOstreams-IOstreams-Istream.C.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/src-OpenFOAM-primitives-ints-int64-int64.H.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/wmake-makefiles-general.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/wmake-rules.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a43a555f14/packages/openfoam/wmake-scripts-sysFunctions.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/0001-Revert-COMP-remove-wmake-rules-for-ARM7-discontinued.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/0003-ambiguous-use-of-overloaded-operator-with-streampos.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/etc-bashrc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/etc-config.sh-CGAL.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/etc-config.sh-mpi.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/etc-config.sh-settings.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/etc-config.sh-unset.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/src-OSspecific-POSIX-Allwmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/src-OSspecific-POSIX-POSIX.C.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/src-OSspecific-POSIX-signals-sigFpe.C.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/src-OpenFOAM-Make-options.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/src-OpenFOAM-db-IOstreams-IOstreams-Istream.C.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/src-OpenFOAM-primitives-ints-int64-int64.H.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/wmake-makefiles-general.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/wmake-rules.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/adf4fd3f05/packages/openfoam/wmake-scripts-sysFunctions.patch"
     ],
     "auto_updated": false
   },
@@ -32576,7 +32577,7 @@
   },
   {
     "name": "python-torch",
-    "version": "2.5.0",
+    "version": "2.6.0",
     "description": "Tensors and Dynamic neural networks in Python",
     "homepage": "https://pytorch.org/",
     "depends": [
@@ -32589,38 +32590,36 @@
     ],
     "srcurl": "git+https://github.com/pytorch/pytorch",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ebc10e1ab0/packages/python-torch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f3ef74dc20/packages/python-torch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0002-fix-macros.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0003-impl-posix-shm.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0004-memalign.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0006-fix-for-format-string.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0007-cmake-Dependencies.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0009-fix-over-optimizing.patch",
-      "https://github.com/termux/termux-packages/blob/ebc10e1ab0/packages/python-torch/0010-upstream-cpuinfo-prctl.patch"
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0002-fix-macros.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0003-impl-posix-shm.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0004-memalign.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0006-fix-for-format-string.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0007-cmake-Dependencies.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torch/0009-fix-over-optimizing.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0002-fix-macros.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0003-impl-posix-shm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0004-memalign.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0005-fix-arm-target-triple.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0006-fix-for-format-string.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0007-cmake-Dependencies.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0008-fix-for-narrowing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0009-fix-over-optimizing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ebc10e1ab0/packages/python-torch/0010-upstream-cpuinfo-prctl.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0001-cmake-python-find-Development-before-Development.Module.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0002-fix-macros.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0003-impl-posix-shm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0004-memalign.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0005-fix-arm-target-triple.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0006-fix-for-format-string.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0007-cmake-Dependencies.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0008-fix-for-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torch/0009-fix-over-optimizing.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "python-torchaudio",
-    "version": "2.5.0",
+    "version": "2.6.0",
     "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
     "homepage": "https://github.com/pytorch/audio",
     "depends": [
@@ -32630,24 +32629,24 @@
       "python-torch",
       "torchaudio-ffmpeg"
     ],
-    "srcurl": "https://github.com/pytorch/audio/archive/refs/tags/v2.5.0.tar.gz",
+    "srcurl": "https://github.com/pytorch/audio/archive/refs/tags/v2.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/28f62597cb/packages/python-torchaudio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/28f62597cb/packages/python-torchaudio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/28f62597cb/packages/python-torchaudio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f3ef74dc20/packages/python-torchaudio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torchaudio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torchaudio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/28f62597cb/packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch",
-      "https://github.com/termux/termux-packages/blob/28f62597cb/packages/python-torchaudio/ffmpeg-configure.patch"
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch",
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torchaudio/ffmpeg-configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/28f62597cb/packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/28f62597cb/packages/python-torchaudio/ffmpeg-configure.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torchaudio/0001-do-not-try-to-import-torch-when-cross-compiling.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torchaudio/ffmpeg-configure.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "python-torchvision",
-    "version": "0.20.0",
+    "version": "0.21.0",
     "description": "Datasets, Transforms and Models specific to Computer Vision",
     "homepage": "https://github.com/pytorch/vision",
     "depends": [
@@ -32663,16 +32662,16 @@
       "libwebp",
       "zlib"
     ],
-    "srcurl": "https://github.com/pytorch/vision/archive/refs/tags/v0.20.0.tar.gz",
+    "srcurl": "https://github.com/pytorch/vision/archive/refs/tags/v0.21.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/56756648e0/packages/python-torchvision",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/56756648e0/packages/python-torchvision/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/56756648e0/packages/python-torchvision/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f3ef74dc20/packages/python-torchvision",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torchvision/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torchvision/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/56756648e0/packages/python-torchvision/setup.py.patch"
+      "https://github.com/termux/termux-packages/blob/f3ef74dc20/packages/python-torchvision/setup.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/56756648e0/packages/python-torchvision/setup.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f3ef74dc20/packages/python-torchvision/setup.py.patch"
     ],
     "auto_updated": false
   },
@@ -48588,7 +48587,7 @@
   },
   {
     "name": "gtk4",
-    "version": "4.16.12",
+    "version": "4.18.2",
     "description": "GObject-based multi-platform GUI toolkit",
     "homepage": "https://www.gtk.org/",
     "depends": [
@@ -48603,6 +48602,7 @@
       "harfbuzz",
       "iso-codes",
       "libcairo",
+      "libdrm",
       "libepoxy",
       "libjpeg-turbo",
       "libpng",
@@ -48620,24 +48620,24 @@
       "pango",
       "shared-mime-info"
     ],
-    "srcurl": "https://download.gnome.org/sources/gtk/4.16/gtk-4.16.12.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/gtk/4.18/gtk-4.18.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e7bb077a3f/x11-packages/gtk4",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e7bb077a3f/x11-packages/gtk4/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e7bb077a3f/x11-packages/gtk4/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ca46ea1c9a/x11-packages/gtk4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ca46ea1c9a/x11-packages/gtk4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ca46ea1c9a/x11-packages/gtk4/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e7bb077a3f/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
-      "https://github.com/termux/termux-packages/blob/e7bb077a3f/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
-      "https://github.com/termux/termux-packages/blob/e7bb077a3f/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
-      "https://github.com/termux/termux-packages/blob/e7bb077a3f/x11-packages/gtk4/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/e7bb077a3f/x11-packages/gtk4/no-egl.patch"
+      "https://github.com/termux/termux-packages/blob/ca46ea1c9a/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
+      "https://github.com/termux/termux-packages/blob/ca46ea1c9a/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
+      "https://github.com/termux/termux-packages/blob/ca46ea1c9a/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
+      "https://github.com/termux/termux-packages/blob/ca46ea1c9a/x11-packages/gtk4/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/ca46ea1c9a/x11-packages/gtk4/no-egl.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e7bb077a3f/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e7bb077a3f/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e7bb077a3f/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e7bb077a3f/x11-packages/gtk4/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e7bb077a3f/x11-packages/gtk4/no-egl.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ca46ea1c9a/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ca46ea1c9a/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ca46ea1c9a/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ca46ea1c9a/x11-packages/gtk4/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ca46ea1c9a/x11-packages/gtk4/no-egl.patch"
     ],
     "auto_updated": false
   },
