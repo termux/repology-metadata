@@ -9230,7 +9230,7 @@
   },
   {
     "name": "gegl",
-    "version": "0.4.54",
+    "version": "0.4.56",
     "description": "Data flow based image processing framework",
     "homepage": "https://gegl.org/",
     "depends": [
@@ -9254,11 +9254,11 @@
       "pango",
       "poppler"
     ],
-    "srcurl": "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.54.tar.xz",
+    "srcurl": "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.56.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/45eb0baeb9/packages/gegl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/45eb0baeb9/packages/gegl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/45eb0baeb9/packages/gegl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4cddd74061/packages/gegl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4cddd74061/packages/gegl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4cddd74061/packages/gegl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23243,23 +23243,23 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b4893",
+    "version": "0.0.0-b4896",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b4893.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b4896.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/edf07af532/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edf07af532/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edf07af532/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f51e5ee33b/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f51e5ee33b/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f51e5ee33b/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/edf07af532/packages/llama-cpp/0001-search-dirs.patch"
+      "https://github.com/termux/termux-packages/blob/f51e5ee33b/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/edf07af532/packages/llama-cpp/0001-search-dirs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f51e5ee33b/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "auto_updated": true
   },
@@ -47994,6 +47994,44 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aad8327d20/x11-packages/glmark2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "glslviewer",
+    "version": "3.2.4",
+    "description": "Console-based GLSL Sandbox for 2D/3D shaders",
+    "homepage": "https://patriciogonzalezvivo.com/2015/glslViewer/",
+    "depends": [
+      "ffmpeg",
+      "glfw",
+      "glu",
+      "libdrm",
+      "liblo",
+      "libxcb",
+      "mesa-dev",
+      "ncurses"
+    ],
+    "srcurl": "git+https://github.com/patriciogonzalezvivo/glslViewer",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/abf124e770/x11-packages/glslviewer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abf124e770/x11-packages/glslviewer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abf124e770/x11-packages/glslviewer/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/abf124e770/x11-packages/glslviewer/cast-getexposure-setuniform.patch",
+      "https://github.com/termux/termux-packages/blob/abf124e770/x11-packages/glslviewer/disable-update-databases.patch",
+      "https://github.com/termux/termux-packages/blob/abf124e770/x11-packages/glslviewer/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/abf124e770/x11-packages/glslviewer/rename-pipe-variable-to-avoid-unistd-collision.patch",
+      "https://github.com/termux/termux-packages/blob/abf124e770/x11-packages/glslviewer/system-liblo.patch",
+      "https://github.com/termux/termux-packages/blob/abf124e770/x11-packages/glslviewer/vera-find-glfw.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/abf124e770/x11-packages/glslviewer/cast-getexposure-setuniform.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abf124e770/x11-packages/glslviewer/disable-update-databases.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abf124e770/x11-packages/glslviewer/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abf124e770/x11-packages/glslviewer/rename-pipe-variable-to-avoid-unistd-collision.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abf124e770/x11-packages/glslviewer/system-liblo.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abf124e770/x11-packages/glslviewer/vera-find-glfw.patch"
+    ],
     "auto_updated": true
   },
   {
