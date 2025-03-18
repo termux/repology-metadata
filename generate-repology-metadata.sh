@@ -49,6 +49,8 @@ else
 	exit 1
 fi
 
+exclude_pkgs=""
+
 print_json_element() {
 	entry="$1" # For example "name"
 	value="$2" # For example "libandroid-support"
@@ -120,8 +122,8 @@ check_package() {
 	. build.sh
 
 	echo "  {"
-	print_json_element "name" "$pkg"
-	print_json_element "version" "$TERMUX_PKG_VERSION"
+	print_json_element "name" "${TERMUX_PKG_REPOLOGY_METADATA_NAME:-${pkg}}"
+	print_json_element "version" "${TERMUX_PKG_REPOLOGY_METADATA_VERSION:-${TERMUX_PKG_VERSION}}"
 	print_json_element "description" "$TERMUX_PKG_DESCRIPTION"
 	print_json_element "homepage" "$TERMUX_PKG_HOMEPAGE"
 
@@ -129,7 +131,8 @@ check_package() {
         #   Remove (optional) versioning, as in TERMUX_PKG_DEPENDS="libfoo (>= 1.0)"
         #   Only print first option in case of "or", as in TERMUX_PKG_DEPENDS="openssh | dropbear"
         #   Replace comma with space
-	print_json_array   "depends" "$(sed -e 's@([^)]*)@@g' -e 's@|[^,$]*@,@g' -e 's@,@ @g' <<<$TERMUX_PKG_DEPENDS)"
+	print_json_array   "depends" "$(sed -e 's@([^)]*)@@g' -e 's@|[^,$]*@,@g' -e 's@,@\n@g' <<<$TERMUX_PKG_DEPENDS | \
+		grep -Fvx "$exclude_pkgs" | xargs)"
 
 	if [ "$TERMUX_PKG_SRCURL" != "" ]; then
 		print_json_element "srcurl" "$TERMUX_PKG_SRCURL"
@@ -162,12 +165,17 @@ fi
 echo "["
 FIRST=yes
 repo_paths=$(jq --raw-output 'del(.pkg_format) | keys | .[]' $TERMUX_PACKAGES_DIR/repo.json)
+
+exclude_pkgs=$'\n'"$(env -C $TERMUX_PACKAGES_DIR grep -rlE '^TERMUX_PKG_GENERATE_REPOLOGY_METADATA=false$' ${repo_paths[@]} --include=build.sh | \
+	sed -E 's@.*/([^/]+)/build\.sh@\1@')"$'\n'
+
 for repo_path in ${repo_paths[@]}; do
 	i=0
 	package_paths=($TERMUX_PACKAGES_DIR/$repo_path/*)
 	package_paths_count="${#package_paths[@]}"
 	while [ $((i * 100)) -le "${package_paths_count}" ]; do
 		for package_path in "${package_paths[@]:$((i*100)):100}"; do
+			[[ $'\n'"$exclude_pkgs"$'\n' == *$'\n'"${package_path#*/}"$'\n'* ]] && continue
 			if [ "$FIRST" = "yes" ]; then
 				FIRST=no
 			else
