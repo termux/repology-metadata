@@ -3681,7 +3681,7 @@
   },
   {
     "name": "ccache",
-    "version": "4.11",
+    "version": "4.11.1",
     "description": "Compiler cache for fast recompilation of C/C++ code",
     "homepage": "https://ccache.samba.org",
     "depends": [
@@ -3693,11 +3693,11 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/ccache/ccache/releases/download/v4.11/ccache-4.11.tar.xz",
+    "srcurl": "https://github.com/ccache/ccache/releases/download/v4.11.1/ccache-4.11.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d6c66b605/packages/ccache",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d6c66b605/packages/ccache/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d6c66b605/packages/ccache/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f862ff2210/packages/ccache",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f862ff2210/packages/ccache/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f862ff2210/packages/ccache/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -6506,32 +6506,34 @@
   },
   {
     "name": "dotnet8.0",
-    "version": "8.0.13",
+    "version": "8.0.14",
     "description": ".NET 8.0",
     "homepage": "https://dotnet.microsoft.com/en-us/",
     "depends": [],
     "srcurl": "git+https://github.com/dotnet/dotnet",
     "maintainer": "@truboxl",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d11fb6d078/packages/dotnet8.0",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3899bb9231/packages/dotnet8.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/0001-build-all-libs.patch",
-      "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/0002-define-memfd_create.patch",
-      "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
-      "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/0004-ndk-r26.patch",
-      "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
-      "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/d11fb6d078/packages/dotnet8.0/0007-aspire_fix-gitinfo-target.patch"
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0001-build-all-libs.patch",
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0002-define-memfd_create.patch",
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0004-ndk-r26.patch",
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0007-aspire_fix-gitinfo-target.patch",
+      "https://github.com/termux/termux-packages/blob/3899bb9231/packages/dotnet8.0/0008-fix-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/0001-build-all-libs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/0002-define-memfd_create.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/0004-ndk-r26.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d11fb6d078/packages/dotnet8.0/0007-aspire_fix-gitinfo-target.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0001-build-all-libs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0002-define-memfd_create.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0004-ndk-r26.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0007-aspire_fix-gitinfo-target.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3899bb9231/packages/dotnet8.0/0008-fix-paths.patch"
     ],
     "auto_updated": false
   },
@@ -19212,15 +19214,15 @@
   },
   {
     "name": "libosmium",
-    "version": "2.21.0",
+    "version": "2.22.0",
     "description": "Library for reading from and writing to OSM files in XML and PBF formats",
     "homepage": "https://osmcode.org/libosmium/",
     "depends": [],
-    "srcurl": "https://github.com/osmcode/libosmium/archive/v2.21.0.tar.gz",
+    "srcurl": "https://github.com/osmcode/libosmium/archive/v2.22.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9a92be4d1a/packages/libosmium",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9a92be4d1a/packages/libosmium/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9a92be4d1a/packages/libosmium/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d030e5ee2d/packages/libosmium",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d030e5ee2d/packages/libosmium/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d030e5ee2d/packages/libosmium/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23246,23 +23248,23 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b4901",
+    "version": "0.0.0-b4903",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b4901.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b4903.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e5e35f3aa6/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e5e35f3aa6/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e5e35f3aa6/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d0f8cfc3ff/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d0f8cfc3ff/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d0f8cfc3ff/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e5e35f3aa6/packages/llama-cpp/0001-search-dirs.patch"
+      "https://github.com/termux/termux-packages/blob/d0f8cfc3ff/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e5e35f3aa6/packages/llama-cpp/0001-search-dirs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d0f8cfc3ff/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "auto_updated": true
   },
@@ -29435,7 +29437,7 @@
   },
   {
     "name": "osmium-tool",
-    "version": "1.17.0",
+    "version": "1.18.0",
     "description": "A multipurpose command line tool based on the Osmium Library",
     "homepage": "https://osmcode.org/osmium-tool/",
     "depends": [
@@ -29446,11 +29448,11 @@
       "liblz4",
       "zlib"
     ],
-    "srcurl": "https://github.com/osmcode/osmium-tool/archive/v1.17.0.tar.gz",
+    "srcurl": "https://github.com/osmcode/osmium-tool/archive/v1.18.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37dbf0fd45/packages/osmium-tool",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37dbf0fd45/packages/osmium-tool/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37dbf0fd45/packages/osmium-tool/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b5d56a2f5/packages/osmium-tool",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b5d56a2f5/packages/osmium-tool/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b5d56a2f5/packages/osmium-tool/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -32154,6 +32156,24 @@
     "auto_updated": true
   },
   {
+    "name": "python-brotli",
+    "version": "1.1.0",
+    "description": "lossless compression algorithm and format (Python bindings)",
+    "homepage": "https://github.com/google/brotli",
+    "depends": [
+      "python",
+      "python-pip"
+    ],
+    "srcurl": "https://github.com/google/brotli/archive/v1.1.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6a2c2fd96d/packages/python-brotli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6a2c2fd96d/packages/python-brotli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6a2c2fd96d/packages/python-brotli/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "python-contourpy",
     "version": "1.3.1",
     "description": "Python library for calculating contours in 2D quadrilateral grids",
@@ -32449,6 +32469,24 @@
     "auto_updated": true
   },
   {
+    "name": "python-pycryptodomex",
+    "version": "3.22.0",
+    "description": "A self-contained Python package of low-level cryptographic primitives",
+    "homepage": "https://www.pycryptodome.org/",
+    "depends": [
+      "python",
+      "python-pip"
+    ],
+    "srcurl": "https://github.com/Legrandin/pycryptodome/archive/refs/tags/v3.22.0x.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/78791cebd2/packages/python-pycryptodomex",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/78791cebd2/packages/python-pycryptodomex/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/78791cebd2/packages/python-pycryptodomex/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "python-pynvim",
     "version": "0.5.0",
     "description": "Python client for Neovim",
@@ -32695,6 +32733,29 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/bb825f0367/packages/python-xlib/Xlib-support-unix_connect.py.patch"
     ],
+    "auto_updated": true
+  },
+  {
+    "name": "python-yt-dlp",
+    "version": "2025.02.19",
+    "description": "A youtube-dl fork with additional features and fixes",
+    "homepage": "https://github.com/yt-dlp/yt-dlp",
+    "depends": [
+      "libc++",
+      "libexpat",
+      "openssl",
+      "python",
+      "python-brotli",
+      "python-pip",
+      "python-pycryptodomex"
+    ],
+    "srcurl": "https://github.com/yt-dlp/yt-dlp/archive/refs/tags/2025.02.19.tar.gz",
+    "maintainer": "Joshua Kahn @TomJo2000",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1eba37cd97/packages/python-yt-dlp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1eba37cd97/packages/python-yt-dlp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1eba37cd97/packages/python-yt-dlp/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -33495,17 +33556,17 @@
   },
   {
     "name": "recode",
-    "version": "3.7.14",
+    "version": "3.7.15",
     "description": "Charset converter tool and library",
     "homepage": "https://github.com/pinard/Recode",
     "depends": [
       "libiconv"
     ],
-    "srcurl": "https://github.com/rrthomas/recode/releases/download/v3.7.14/recode-3.7.14.tar.gz",
+    "srcurl": "https://github.com/rrthomas/recode/releases/download/v3.7.15/recode-3.7.15.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/11ea8aff34/packages/recode",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/11ea8aff34/packages/recode/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/11ea8aff34/packages/recode/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b5724d872c/packages/recode",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b5724d872c/packages/recode/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b5724d872c/packages/recode/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35021,15 +35082,15 @@
   },
   {
     "name": "senpai",
-    "version": "1:0.3.0",
+    "version": "1:0.4.0",
     "description": "An IRC client that works best with bouncers",
-    "homepage": "https://git.sr.ht/~taiite/senpai",
+    "homepage": "https://git.sr.ht/~delthas/senpai",
     "depends": [],
-    "srcurl": "https://git.sr.ht/~taiite/senpai/archive/v0.3.0.tar.gz",
+    "srcurl": "https://git.sr.ht/~delthas/senpai/archive/v0.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8dd97f183e/packages/senpai",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8dd97f183e/packages/senpai/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8dd97f183e/packages/senpai/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/87ceb9c409/packages/senpai",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87ceb9c409/packages/senpai/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87ceb9c409/packages/senpai/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -36691,15 +36752,15 @@
   },
   {
     "name": "storj-uplink",
-    "version": "1.122.9",
+    "version": "1.123.4",
     "description": "Storj DCS Uplink CLI",
     "homepage": "https://www.storj.io/integrations/uplink-cli",
     "depends": [],
-    "srcurl": "https://github.com/storj/storj/archive/refs/tags/v1.122.9.tar.gz",
+    "srcurl": "https://github.com/storj/storj/archive/refs/tags/v1.123.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1bdf6d43e6/packages/storj-uplink",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1bdf6d43e6/packages/storj-uplink/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1bdf6d43e6/packages/storj-uplink/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ca825e40d/packages/storj-uplink",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ca825e40d/packages/storj-uplink/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ca825e40d/packages/storj-uplink/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40608,28 +40669,26 @@
     ],
     "srcurl": "https://github.com/vim/vim/archive/v9.1.1200.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bf410a5e84/packages/vim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3f5084b69a/packages/vim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/fix-writing-archive.patch",
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/src-auto-configure.patch",
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/vimtutor.patch",
-      "https://github.com/termux/termux-packages/blob/bf410a5e84/packages/vim/vterm_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/fix-writing-archive.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/packages/vim/vimtutor.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/fix-writing-archive.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bf410a5e84/packages/vim/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/fix-writing-archive.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/packages/vim/vimtutor.patch"
     ],
     "auto_updated": true
   },
@@ -47397,7 +47456,7 @@
   },
   {
     "name": "foot",
-    "version": "1.20.2",
+    "version": "1.21.0",
     "description": "Fast, lightweight and minimalistic Wayland terminal emulator",
     "homepage": "https://codeberg.org/dnkl/foot",
     "depends": [
@@ -47410,20 +47469,22 @@
       "libxkbcommon",
       "utf8proc"
     ],
-    "srcurl": "https://codeberg.org/dnkl/foot/archive/1.20.2.tar.gz",
+    "srcurl": "https://codeberg.org/dnkl/foot/archive/1.21.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/adf0640e8c/x11-packages/foot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/adf0640e8c/x11-packages/foot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/adf0640e8c/x11-packages/foot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/35bdf6dcd7/x11-packages/foot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/35bdf6dcd7/x11-packages/foot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/35bdf6dcd7/x11-packages/foot/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/adf0640e8c/x11-packages/foot/0001-fix-wayland-scanner-path.patch",
-      "https://github.com/termux/termux-packages/blob/adf0640e8c/x11-packages/foot/0002-fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/adf0640e8c/x11-packages/foot/doc-meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/35bdf6dcd7/x11-packages/foot/0001-fix-wayland-scanner-path.patch",
+      "https://github.com/termux/termux-packages/blob/35bdf6dcd7/x11-packages/foot/0002-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/35bdf6dcd7/x11-packages/foot/doc-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/35bdf6dcd7/x11-packages/foot/xmalloc.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/adf0640e8c/x11-packages/foot/0001-fix-wayland-scanner-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/adf0640e8c/x11-packages/foot/0002-fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/adf0640e8c/x11-packages/foot/doc-meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/35bdf6dcd7/x11-packages/foot/0001-fix-wayland-scanner-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/35bdf6dcd7/x11-packages/foot/0002-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/35bdf6dcd7/x11-packages/foot/doc-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/35bdf6dcd7/x11-packages/foot/xmalloc.c.patch"
     ],
     "auto_updated": true
   },
@@ -50803,7 +50864,7 @@
   },
   {
     "name": "libfcft",
-    "version": "3.1.9",
+    "version": "3.3.1",
     "description": "A small font loading and glyph rasterization library",
     "homepage": "https://codeberg.org/dnkl/fcft",
     "depends": [
@@ -50813,16 +50874,16 @@
       "libpixman",
       "utf8proc"
     ],
-    "srcurl": "https://codeberg.org/dnkl/fcft/archive/3.1.9.tar.gz",
+    "srcurl": "https://codeberg.org/dnkl/fcft/archive/3.3.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1d4fc677bf/x11-packages/libfcft",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1d4fc677bf/x11-packages/libfcft/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1d4fc677bf/x11-packages/libfcft/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/53b438a64d/x11-packages/libfcft",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/53b438a64d/x11-packages/libfcft/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/53b438a64d/x11-packages/libfcft/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1d4fc677bf/x11-packages/libfcft/doc-meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/53b438a64d/x11-packages/libfcft/doc-meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1d4fc677bf/x11-packages/libfcft/doc-meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/53b438a64d/x11-packages/libfcft/doc-meson.build.patch"
     ],
     "auto_updated": true
   },
@@ -57483,28 +57544,26 @@
     ],
     "srcurl": "https://github.com/vim/vim/archive/v9.1.1200.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b950e05df1/x11-packages/vim-gtk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3f5084b69a/x11-packages/vim-gtk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/fix-writing-archive.patch",
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/src-auto-configure.patch",
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/src-evalfunc.c.patch",
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/vimtutor.patch",
-      "https://github.com/termux/termux-packages/blob/b950e05df1/x11-packages/vim-gtk/vterm_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/fix-writing-archive.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/src-evalfunc.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f5084b69a/x11-packages/vim-gtk/vimtutor.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/fix-writing-archive.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/src-auto-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/src-evalfunc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/vimtutor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b950e05df1/x11-packages/vim-gtk/vterm_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/fix-writing-archive.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/src-evalfunc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f5084b69a/x11-packages/vim-gtk/vimtutor.patch"
     ],
     "auto_updated": true
   },
