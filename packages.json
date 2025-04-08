@@ -3207,17 +3207,21 @@
   },
   {
     "name": "cabal-install",
-    "version": "3.8.1.0",
+    "version": "3.14.1.1",
     "description": "The command-line interface for Haskell-Cabal and Hackage",
     "homepage": "https://www.haskell.org/cabal/",
     "depends": [
-      "libffi"
+      "libffi",
+      "libiconv",
+      "libgmp",
+      "zlib",
+      "libandroid-posix-semaphore"
     ],
-    "srcurl": "https://hackage.haskell.org/package/cabal-install-3.8.1.0/cabal-install-3.8.1.0.tar.gz",
+    "srcurl": "https://hackage.haskell.org/package/cabal-install-3.14.1.1/cabal-install-3.14.1.1.tar.gz",
     "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0714755c2a/packages/cabal-install",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0714755c2a/packages/cabal-install/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0714755c2a/packages/cabal-install/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2a6fdc9bf3/packages/cabal-install",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2a6fdc9bf3/packages/cabal-install/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2a6fdc9bf3/packages/cabal-install/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -5211,7 +5215,7 @@
   },
   {
     "name": "cups",
-    "version": "2.4.11",
+    "version": "2.4.12",
     "description": "Common UNIX Printing System",
     "homepage": "https://www.cups.org/",
     "depends": [
@@ -5221,28 +5225,28 @@
       "libiconv",
       "zlib"
     ],
-    "srcurl": "https://github.com/OpenPrinting/cups/releases/download/v2.4.11/cups-2.4.11-source.tar.gz",
+    "srcurl": "https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec04985f71/packages/cups",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93cb59cc96/packages/cups",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/cups-desktop-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/cups-scheduler-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/cups-thread-private.h.patch",
-      "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/cups-thread.c.patch",
-      "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/defconfig-fixes.patch",
-      "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/no-sbindir.patch",
-      "https://github.com/termux/termux-packages/blob/ec04985f71/packages/cups/no-tmpdir-permission-check.patch"
+      "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/cups-desktop-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/cups-scheduler-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/cups-thread-private.h.patch",
+      "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/cups-thread.c.patch",
+      "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/defconfig-fixes.patch",
+      "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/no-sbindir.patch",
+      "https://github.com/termux/termux-packages/blob/93cb59cc96/packages/cups/no-tmpdir-permission-check.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/cups-desktop-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/cups-scheduler-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/cups-thread-private.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/cups-thread.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/defconfig-fixes.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/no-sbindir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ec04985f71/packages/cups/no-tmpdir-permission-check.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/cups-desktop-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/cups-scheduler-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/cups-thread-private.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/cups-thread.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/defconfig-fixes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/no-sbindir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93cb59cc96/packages/cups/no-tmpdir-permission-check.patch"
     ],
     "auto_updated": true
   },
@@ -9410,43 +9414,51 @@
     "auto_updated": true
   },
   {
-    "name": "ghc-libs",
-    "version": "9.2.5",
-    "description": "The Glasgow Haskell Compiler libraries",
+    "name": "ghc",
+    "version": "9.12.2",
+    "description": "The Glasgow Haskell Compiler",
     "homepage": "https://www.haskell.org/ghc/",
     "depends": [
       "libiconv",
       "libffi",
-      "ncurses",
       "libgmp",
-      "libandroid-posix-semaphore"
+      "libandroid-posix-semaphore",
+      "ncurses"
     ],
-    "srcurl": "https://downloads.haskell.org/~ghc/9.2.5/ghc-9.2.5-src.tar.xz",
-    "maintainer": "Aditya Alok <alok@termux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e47633889e/packages/ghc-libs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/build.sh",
+    "srcurl": "https://downloads.haskell.org/~ghc/9.12.2/ghc-9.12.2-src.tar.xz",
+    "maintainer": "Aditya Alok <alok@termux.dev>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e21578f662/packages/ghc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/always_link_m.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/correct-host-triplet.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/fix-target-elf-check.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/libiserv-enable-network.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/semaphore.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/set-default-prefix.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/undefined_symbols.patch",
-      "https://github.com/termux/termux-packages/blob/e47633889e/packages/ghc-libs/utils-extra-ghc-opts.patch"
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/always-use-pic.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/cabal-set-default-prefix.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/disable-no-pie.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/elf-types.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/fix-arch-check.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/hadrian-bindist-config.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/hadrian-bindist-use-host-ghc-pkg.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/hadrian-disable-speed-hack.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/hadrian-do-not-add-cross-prefix.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/hadrian-enable-disabled-packages.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/hadrian-fix-packages-settings.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/hadrian-fix-program-rule.patch",
+      "https://github.com/termux/termux-packages/blob/e21578f662/packages/ghc/rts-heap-reservation.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/always-use-pic-on-android-for-dynexec.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/always_link_m.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/correct-host-triplet.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/fix-target-elf-check.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/libiserv-enable-network.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/semaphore.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/set-default-prefix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/undefined_symbols.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47633889e/packages/ghc-libs/utils-extra-ghc-opts.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/always-use-pic.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/cabal-set-default-prefix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/disable-no-pie.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/elf-types.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/fix-arch-check.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/hadrian-bindist-config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/hadrian-bindist-use-host-ghc-pkg.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/hadrian-disable-speed-hack.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/hadrian-do-not-add-cross-prefix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/hadrian-enable-disabled-packages.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/hadrian-fix-packages-settings.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/hadrian-fix-program-rule.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e21578f662/packages/ghc/rts-heap-reservation.patch"
     ],
     "auto_updated": false
   },
@@ -13201,7 +13213,7 @@
   },
   {
     "name": "jackett",
-    "version": "0.22.1740",
+    "version": "0.22.1744",
     "description": "API Support for your favorite torrent trackers",
     "homepage": "https://github.com/jackett/jackett",
     "depends": [
@@ -13209,11 +13221,11 @@
       "dotnet-host",
       "dotnet-runtime-8.0"
     ],
-    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.1740.tar.gz",
+    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.1744.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c4d59ba7da/packages/jackett",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c4d59ba7da/packages/jackett/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c4d59ba7da/packages/jackett/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c4e8530354/packages/jackett",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c4e8530354/packages/jackett/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c4e8530354/packages/jackett/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -15941,7 +15953,7 @@
   },
   {
     "name": "libduckdb",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "An in-process SQL OLAP database management system",
     "homepage": "https://duckdb.org/",
     "depends": [
@@ -15950,14 +15962,14 @@
     ],
     "srcurl": "git+https://github.com/duckdb/duckdb",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d3cb4fb9b/packages/libduckdb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d3cb4fb9b/packages/libduckdb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d3cb4fb9b/packages/libduckdb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e0a2e6d073/packages/libduckdb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e0a2e6d073/packages/libduckdb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e0a2e6d073/packages/libduckdb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3d3cb4fb9b/packages/libduckdb/tools-shell-shell.c.patch"
+      "https://github.com/termux/termux-packages/blob/e0a2e6d073/packages/libduckdb/tools-shell-shell.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3d3cb4fb9b/packages/libduckdb/tools-shell-shell.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e0a2e6d073/packages/libduckdb/tools-shell-shell.c.patch"
     ],
     "auto_updated": true
   },
@@ -23228,7 +23240,7 @@
   },
   {
     "name": "llvm-mingw-w64",
-    "version": "20241030",
+    "version": "20250402",
     "description": "MinGW-w64 toolchain based on LLVM",
     "homepage": "https://github.com/mstorsjo/llvm-mingw",
     "depends": [
@@ -23238,30 +23250,30 @@
       "llvm-mingw-w64-libcompiler-rt",
       "llvm-mingw-w64-ucrt"
     ],
-    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20241030/llvm-mingw-20241030-ucrt-ubuntu-20.04-x86_64.tar.xz",
+    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20250402/llvm-mingw-20250402-ucrt-ubuntu-20.04-x86_64.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3de87f8875/packages/llvm-mingw-w64",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3de87f8875/packages/llvm-mingw-w64/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3de87f8875/packages/llvm-mingw-w64/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/05500a4a4c/packages/llvm-mingw-w64",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/05500a4a4c/packages/llvm-mingw-w64/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/05500a4a4c/packages/llvm-mingw-w64/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3de87f8875/packages/llvm-mingw-w64/0001-append-sysroot.patch"
+      "https://github.com/termux/termux-packages/blob/05500a4a4c/packages/llvm-mingw-w64/0001-append-sysroot.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3de87f8875/packages/llvm-mingw-w64/0001-append-sysroot.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/05500a4a4c/packages/llvm-mingw-w64/0001-append-sysroot.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "llvm-mingw-w64-libcompiler-rt",
-    "version": "20241030",
+    "version": "20250402",
     "description": "Compiler runtime libraries for LLVM-MinGW",
     "homepage": "https://www.llvm.org/",
     "depends": [],
-    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20241030/llvm-mingw-20241030-ucrt-ubuntu-20.04-x86_64.tar.xz",
+    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20250402/llvm-mingw-20250402-ucrt-ubuntu-20.04-x86_64.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3de87f8875/packages/llvm-mingw-w64-libcompiler-rt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3de87f8875/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3de87f8875/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93249dc188/packages/llvm-mingw-w64-libcompiler-rt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93249dc188/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93249dc188/packages/llvm-mingw-w64-libcompiler-rt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -23287,15 +23299,15 @@
   },
   {
     "name": "llvm-mingw-w64-ucrt",
-    "version": "20241030",
+    "version": "20250402",
     "description": "MinGW-w64 runtime for LLVM-MinGW",
     "homepage": "https://www.mingw-w64.org/",
     "depends": [],
-    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20241030/llvm-mingw-20241030-ucrt-ubuntu-20.04-x86_64.tar.xz",
+    "srcurl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20250402/llvm-mingw-20250402-ucrt-ubuntu-20.04-x86_64.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3de87f8875/packages/llvm-mingw-w64-ucrt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3de87f8875/packages/llvm-mingw-w64-ucrt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3de87f8875/packages/llvm-mingw-w64-ucrt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1fa82dea9b/packages/llvm-mingw-w64-ucrt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1fa82dea9b/packages/llvm-mingw-w64-ucrt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1fa82dea9b/packages/llvm-mingw-w64-ucrt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -35259,13 +35271,15 @@
     "description": "Shell script analysis tool",
     "homepage": "https://www.shellcheck.net/",
     "depends": [
-      "libffi"
+      "libffi",
+      "libgmp",
+      "libiconv"
     ],
     "srcurl": "https://hackage.haskell.org/package/ShellCheck-0.10.0/ShellCheck-0.10.0.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3203a79a49/packages/shellcheck",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3203a79a49/packages/shellcheck/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3203a79a49/packages/shellcheck/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/57832aa374/packages/shellcheck",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/57832aa374/packages/shellcheck/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/57832aa374/packages/shellcheck/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -35530,15 +35544,15 @@
   },
   {
     "name": "sing-box",
-    "version": "1.11.6",
+    "version": "1.11.7",
     "description": "The universal proxy platform",
     "homepage": "https://sing-box.sagernet.org",
     "depends": [],
-    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.11.6.tar.gz",
+    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.11.7.tar.gz",
     "maintainer": "kay9925@outlook.com",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/80f56b9c2b/packages/sing-box",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/80f56b9c2b/packages/sing-box/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/80f56b9c2b/packages/sing-box/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d6d19011a/packages/sing-box",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d6d19011a/packages/sing-box/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d6d19011a/packages/sing-box/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -43453,17 +43467,17 @@
   },
   {
     "name": "ethtool",
-    "version": "6.11",
+    "version": "6.14",
     "description": "standard Linux utility for controlling network drivers and hardware, particularly for wired Ethernet devices",
     "homepage": "https://mirrors.edge.kernel.org/pub/software/network/ethtool/",
     "depends": [
       "libmnl"
     ],
-    "srcurl": "https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.11.tar.xz",
+    "srcurl": "https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.14.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a774630ff/root-packages/ethtool",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a774630ff/root-packages/ethtool/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a774630ff/root-packages/ethtool/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/aff7c91e1e/root-packages/ethtool",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aff7c91e1e/root-packages/ethtool/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aff7c91e1e/root-packages/ethtool/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
