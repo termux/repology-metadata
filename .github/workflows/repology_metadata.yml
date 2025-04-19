@@ -16,6 +16,8 @@ jobs:
     - name: Clone termux-packages
       run: |
         mkdir -p /tmp/repos
+        # We are doing a full clone because we are extracting the commit ids of
+        # the last commit where the patch files and build.sh were changed
         git clone https://github.com/termux/termux-packages.git /tmp/repos/termux-packages
     - name: Generate packages.json
       run: |
