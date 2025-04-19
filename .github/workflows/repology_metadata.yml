@@ -16,7 +16,7 @@ jobs:
     - name: Clone termux-packages
       run: |
         mkdir -p /tmp/repos
-        git clone --depth=1 https://github.com/termux/termux-packages.git /tmp/repos/termux-packages
+        git clone https://github.com/termux/termux-packages.git /tmp/repos/termux-packages
     - name: Generate packages.json
       run: |
         export TERMUX_SCRIPTDIR=/tmp/repos/termux-packages
