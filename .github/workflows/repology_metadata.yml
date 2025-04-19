@@ -19,10 +19,7 @@ jobs:
         # We are doing a full clone because we are extracting the commit ids of
         # the last commit where the patch files and build.sh were changed
         git clone https://github.com/termux/termux-packages.git /tmp/repos/termux-packages
-    - name: Generate packages.json
-      run: |
-        export TERMUX_SCRIPTDIR=/tmp/repos/termux-packages
-        pushd /tmp/repos/termux-packages
+        cd /tmp/repos/termux-packages
         # Speed up git log by significant amount
         # See: https://stackoverflow.com/questions/35186829/how-to-improve-git-log-performance
         #
@@ -36,7 +33,9 @@ jobs:
         git config gc.writeCommitGraph true
         git repack -Ad --max-pack-size=1g 
         git commit-graph write --changed-paths --reachable
-        popd
+    - name: Generate packages.json
+      run: |
+        export TERMUX_SCRIPTDIR=/tmp/repos/termux-packages
         bash ./generate-repology-metadata.sh /tmp/repos/termux-packages > ./packages.json
 
         if ! jq . ./packages.json > /dev/null; then
