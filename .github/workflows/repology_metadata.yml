@@ -25,9 +25,13 @@ jobs:
         pushd /tmp/repos/termux-packages
         # Speed up git log by significant amount
         # See: https://stackoverflow.com/questions/35186829/how-to-improve-git-log-performance
+        #
         # git gc further reduces the time to build the metadata on my 20-thread laptop from 1m42s to 0m12s
         # The other optimistions are taken from the above linked stackoverflow post
-        git gc --aggressive
+        #
+        # Although the improvements are great on my powerful laptop, the CI only has 2 cores, so this just
+        # slows it down as gc is a CPU intensive task. 
+        # git gc --aggressive
         git config core.commitGraph true
         git config gc.writeCommitGraph true
         git repack -Ad --max-pack-size=1g 
