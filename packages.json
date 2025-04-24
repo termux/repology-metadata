@@ -334,6 +334,23 @@
     "auto_updated": true
   },
   {
+    "name": "ada",
+    "version": "3.2.2",
+    "description": "WHATWG-compliant and fast URL parser written in modern C++",
+    "homepage": "https://github.com/ada-url/ada",
+    "depends": [
+      "libc++"
+    ],
+    "srcurl": "https://github.com/ada-url/ada/archive/refs/tags/v3.2.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5bc1f7936/packages/ada",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5bc1f7936/packages/ada/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/packages/ada/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "adms",
     "version": "2.3.7",
     "description": "A code generator for the Verilog-AMS language",
@@ -3313,25 +3330,25 @@
   },
   {
     "name": "calc",
-    "version": "2.15.1.0",
+    "version": "2.15.1.1",
     "description": "Arbitrary precision console calculator",
     "homepage": "http://www.isthe.com/chongo/tech/comp/calc/",
     "depends": [
       "ncurses",
       "readline"
     ],
-    "srcurl": "https://github.com/lcn2/calc/releases/download/v2.15.1.0/calc-2.15.1.0.tar.bz2",
+    "srcurl": "https://github.com/lcn2/calc/releases/download/v2.15.1.1/calc-2.15.1.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/543887652/packages/calc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/543887652/packages/calc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/543887652/packages/calc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4fd34fc78/packages/calc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4fd34fc78/packages/calc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4fd34fc78/packages/calc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/543887652/packages/calc/Makefile.config.patch",
-      "https://github.com/termux/termux-packages/blob/543887652/packages/calc/Makefile.target.patch"
+      "https://github.com/termux/termux-packages/blob/4fd34fc78/packages/calc/Makefile.config.patch",
+      "https://github.com/termux/termux-packages/blob/4fd34fc78/packages/calc/Makefile.target.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/543887652/packages/calc/Makefile.config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/543887652/packages/calc/Makefile.target.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4fd34fc78/packages/calc/Makefile.config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fd34fc78/packages/calc/Makefile.target.patch"
     ],
     "auto_updated": true
   },
@@ -19974,6 +19991,25 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
+  },
+  {
+    "name": "librnnoise",
+    "version": "0.2",
+    "description": "RNN-based noise suppression",
+    "homepage": "https://jmvalin.ca/demo/rnnoise/",
+    "depends": [],
+    "srcurl": "https://gitlab.xiph.org/xiph/rnnoise/-/archive/v0.2/rnnoise-v0.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5bc1f7936/packages/librnnoise",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5bc1f7936/packages/librnnoise/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/packages/librnnoise/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5bc1f7936/packages/librnnoise/0001-upstream-mr-5.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/packages/librnnoise/0001-upstream-mr-5.patch"
+    ],
+    "auto_updated": false
   },
   {
     "name": "librocksdb",
@@ -57321,6 +57357,66 @@
     "auto_updated": true
   },
   {
+    "name": "telegram-desktop",
+    "version": "5.13.1",
+    "description": "Telegram Desktop Client",
+    "homepage": "https://desktop.telegram.org/",
+    "depends": [
+      "abseil-cpp",
+      "boost",
+      "ffmpeg",
+      "glib",
+      "hicolor-icon-theme",
+      "hunspell",
+      "kf6-kcoreaddons",
+      "libandroid-shmem",
+      "libdispatch",
+      "libdrm",
+      "liblz4",
+      "libminizip",
+      "libprotobuf",
+      "librnnoise",
+      "libsigc++-3.0",
+      "libx11",
+      "libxcomposite",
+      "libxdamage",
+      "libxrandr",
+      "libxtst",
+      "openal-soft",
+      "opengl",
+      "openh264",
+      "openssl",
+      "pipewire",
+      "pulseaudio",
+      "qt6-qtbase",
+      "qt6-qtimageformats",
+      "qt6-qtsvg",
+      "xxhash"
+    ],
+    "srcurl": "https://github.com/telegramdesktop/tdesktop/releases/download/v5.13.1/tdesktop-5.13.1-full.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5bc1f7936/x11-packages/telegram-desktop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5bc1f7936/x11-packages/telegram-desktop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/x11-packages/telegram-desktop/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5bc1f7936/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://github.com/termux/termux-packages/blob/5bc1f7936/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
+      "https://github.com/termux/termux-packages/blob/5bc1f7936/x11-packages/telegram-desktop/0003-qt-6.9.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5bc1f7936/x11-packages/telegram-desktop/0004-libtgvoip-no-android.patch",
+      "https://github.com/termux/termux-packages/blob/5bc1f7936/x11-packages/telegram-desktop/0005-memfd-create.patch",
+      "https://github.com/termux/termux-packages/blob/5bc1f7936/x11-packages/telegram-desktop/0006-argument-deduction.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/x11-packages/telegram-desktop/0003-qt-6.9.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/x11-packages/telegram-desktop/0004-libtgvoip-no-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/x11-packages/telegram-desktop/0005-memfd-create.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5bc1f7936/x11-packages/telegram-desktop/0006-argument-deduction.patch"
+    ],
+    "auto_updated": true
+  },
+  {
     "name": "telepathy-glib",
     "version": "1:0.24.2",
     "description": "GLib bindings for the Telepathy D-Bus protocol",
@@ -57401,22 +57497,23 @@
       "qt6-qtbase",
       "qt6-qtdeclarative",
       "qt6-qt5compat",
+      "qt6-qttools",
       "zlib"
     ],
     "srcurl": "https://github.com/TeXworks/texworks/archive/refs/tags/release-0.6.10.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/73e805962/x11-packages/texworks",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/73e805962/x11-packages/texworks/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/73e805962/x11-packages/texworks/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d6105f33a/x11-packages/texworks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d6105f33a/x11-packages/texworks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d6105f33a/x11-packages/texworks/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/73e805962/x11-packages/texworks/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/73e805962/x11-packages/texworks/fix-findpoppler.patch",
-      "https://github.com/termux/termux-packages/blob/73e805962/x11-packages/texworks/src-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/d6105f33a/x11-packages/texworks/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/d6105f33a/x11-packages/texworks/fix-findpoppler.patch",
+      "https://github.com/termux/termux-packages/blob/d6105f33a/x11-packages/texworks/src-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/73e805962/x11-packages/texworks/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/73e805962/x11-packages/texworks/fix-findpoppler.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/73e805962/x11-packages/texworks/src-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d6105f33a/x11-packages/texworks/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d6105f33a/x11-packages/texworks/fix-findpoppler.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d6105f33a/x11-packages/texworks/src-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
