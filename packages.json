@@ -34713,6 +34713,39 @@
     "auto_updated": false
   },
   {
+    "name": "sbcl",
+    "version": "2.5.3",
+    "description": "A high performance Common Lisp compiler",
+    "homepage": "http://www.sbcl.org/",
+    "depends": [
+      "zstd"
+    ],
+    "srcurl": "https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.5.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6aaca0a4/packages/sbcl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/disable-close_range-syscall.patch",
+      "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/disable-failing-tests-that-were-only-enabled-on-x86.patch",
+      "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/disable-intermittently-failing-tests.patch",
+      "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/disable-tests-that-only-fail-in-termux-proot.patch",
+      "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/fix-build-on-device.patch",
+      "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/fix-stat-st_nlink-x86.patch",
+      "https://github.com/termux/termux-packages/blob/c6aaca0a4/packages/sbcl/pass-testsuite-on-device.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/disable-close_range-syscall.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/disable-failing-tests-that-were-only-enabled-on-x86.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/disable-intermittently-failing-tests.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/disable-tests-that-only-fail-in-termux-proot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/fix-build-on-device.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/fix-stat-st_nlink-x86.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6aaca0a4/packages/sbcl/pass-testsuite-on-device.patch"
+    ],
+    "auto_updated": true
+  },
+  {
     "name": "sc-im",
     "version": "0.8.4",
     "description": "An improved version of sc, a spreadsheet calculator",
