@@ -18898,25 +18898,25 @@
   },
   {
     "name": "libnss",
-    "version": "3.110",
+    "version": "3.111",
     "description": "Network Security Services (NSS)",
     "homepage": "https://firefox-source-docs.mozilla.org/security/nss/",
     "depends": [
       "libnspr",
       "libsqlite"
     ],
-    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_110_RTM/src/nss-3.110.tar.gz",
+    "srcurl": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_111_RTM/src/nss-3.111.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ca56d405b/packages/libnss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ca56d405b/packages/libnss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ca56d405b/packages/libnss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4b8c0acf5/packages/libnss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4b8c0acf5/packages/libnss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4b8c0acf5/packages/libnss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ca56d405b/packages/libnss/coreconf-rules.mk.patch",
-      "https://github.com/termux/termux-packages/blob/ca56d405b/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://github.com/termux/termux-packages/blob/4b8c0acf5/packages/libnss/coreconf-rules.mk.patch",
+      "https://github.com/termux/termux-packages/blob/4b8c0acf5/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ca56d405b/packages/libnss/coreconf-rules.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ca56d405b/packages/libnss/lib-freebl-stubs.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4b8c0acf5/packages/libnss/coreconf-rules.mk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4b8c0acf5/packages/libnss/lib-freebl-stubs.c.patch"
     ],
     "auto_updated": true
   },
@@ -23910,10 +23910,11 @@
   },
   {
     "name": "lynx",
-    "version": "2.8.9rel.1",
+    "version": "2.9.2",
     "description": "The text web browser",
     "homepage": "http://lynx.browser.org/",
     "depends": [
+      "brotli",
       "libiconv",
       "ncurses",
       "openssl",
@@ -23921,24 +23922,22 @@
       "libidn",
       "zlib"
     ],
-    "srcurl": "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.8.9rel.1.tar.bz2",
+    "srcurl": "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b71dab9fd/packages/lynx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b71dab9fd/packages/lynx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b71dab9fd/packages/lynx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cd3abe8de/packages/lynx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cd3abe8de/packages/lynx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cd3abe8de/packages/lynx/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b71dab9fd/packages/lynx/configure-clang16.patch",
-      "https://github.com/termux/termux-packages/blob/b71dab9fd/packages/lynx/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/b71dab9fd/packages/lynx/lynx2.8.9dev.19_WWW_Library_Implementation_www_tcp.h.patch",
-      "https://github.com/termux/termux-packages/blob/b71dab9fd/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
-      "https://github.com/termux/termux-packages/blob/b71dab9fd/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
+      "https://github.com/termux/termux-packages/blob/cd3abe8de/packages/lynx/configure-clang16.patch",
+      "https://github.com/termux/termux-packages/blob/cd3abe8de/packages/lynx/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/cd3abe8de/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
+      "https://github.com/termux/termux-packages/blob/cd3abe8de/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b71dab9fd/packages/lynx/configure-clang16.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b71dab9fd/packages/lynx/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b71dab9fd/packages/lynx/lynx2.8.9dev.19_WWW_Library_Implementation_www_tcp.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b71dab9fd/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b71dab9fd/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cd3abe8de/packages/lynx/configure-clang16.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cd3abe8de/packages/lynx/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cd3abe8de/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cd3abe8de/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
     ],
     "auto_updated": false
   },
@@ -34773,30 +34772,30 @@
     ],
     "srcurl": "https://github.com/andmarti1424/sc-im/archive/v0.8.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c7b2af963/packages/sc-im",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cc2c5c48c/packages/sc-im",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/clipboard.c.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/cmds_normal.c.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/cmds_visual.c.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/file.c.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/plot.c.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/src-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/src-interp.c.patch",
-      "https://github.com/termux/termux-packages/blob/c7b2af963/packages/sc-im/xls.c.patch"
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/clipboard.c.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/cmds_normal.c.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/cmds_visual.c.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/file.c.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/plot.c.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/src-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/src-interp.c.patch",
+      "https://github.com/termux/termux-packages/blob/cc2c5c48c/packages/sc-im/xls.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/clipboard.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/cmds_normal.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/cmds_visual.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/file.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/plot.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/src-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/src-interp.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c7b2af963/packages/sc-im/xls.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/clipboard.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/cmds_normal.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/cmds_visual.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/file.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/plot.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/src-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/src-interp.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cc2c5c48c/packages/sc-im/xls.c.patch"
     ],
     "auto_updated": true
   },
@@ -49136,7 +49135,7 @@
   },
   {
     "name": "gtk4",
-    "version": "4.18.4",
+    "version": "4.18.5",
     "description": "GObject-based multi-platform GUI toolkit",
     "homepage": "https://www.gtk.org/",
     "depends": [
@@ -49168,24 +49167,24 @@
       "pango",
       "shared-mime-info"
     ],
-    "srcurl": "https://download.gnome.org/sources/gtk/4.18/gtk-4.18.4.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/gtk/4.18/gtk-4.18.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e0183329f/x11-packages/gtk4",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e0183329f/x11-packages/gtk4/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e0183329f/x11-packages/gtk4/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1673c80eb/x11-packages/gtk4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1673c80eb/x11-packages/gtk4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1673c80eb/x11-packages/gtk4/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e0183329f/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
-      "https://github.com/termux/termux-packages/blob/e0183329f/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
-      "https://github.com/termux/termux-packages/blob/e0183329f/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
-      "https://github.com/termux/termux-packages/blob/e0183329f/x11-packages/gtk4/meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/e0183329f/x11-packages/gtk4/no-egl.patch"
+      "https://github.com/termux/termux-packages/blob/1673c80eb/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
+      "https://github.com/termux/termux-packages/blob/1673c80eb/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
+      "https://github.com/termux/termux-packages/blob/1673c80eb/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
+      "https://github.com/termux/termux-packages/blob/1673c80eb/x11-packages/gtk4/meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/1673c80eb/x11-packages/gtk4/no-egl.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e0183329f/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0183329f/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0183329f/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0183329f/x11-packages/gtk4/meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0183329f/x11-packages/gtk4/no-egl.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1673c80eb/x11-packages/gtk4/avoid-using-opengl-renderer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1673c80eb/x11-packages/gtk4/demos-print-editor-print-editor.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1673c80eb/x11-packages/gtk4/gdkdisplay-wayland.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1673c80eb/x11-packages/gtk4/meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1673c80eb/x11-packages/gtk4/no-egl.patch"
     ],
     "auto_updated": false
   },
