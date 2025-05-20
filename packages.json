@@ -5453,29 +5453,29 @@
   },
   {
     "name": "dart",
-    "version": "3.7.3",
+    "version": "3.8.0",
     "description": "Dart is a general-purpose programming language",
     "homepage": "https://dart.dev/",
     "depends": [
       "gzip",
       "tar"
     ],
-    "srcurl": "https://github.com/dart-lang/sdk/archive/refs/tags/3.7.3.tar.gz",
+    "srcurl": "https://github.com/dart-lang/sdk/archive/refs/tags/3.8.0.tar.gz",
     "maintainer": "@samujjal-gogoi",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/950158d8d/packages/dart",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/950158d8d/packages/dart/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/dart/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dfd8e5459/packages/dart",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dfd8e5459/packages/dart/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dfd8e5459/packages/dart/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/dart/sdk-pkg-_fe_analyzer_shared-lib-src-util-colors.dart.patch",
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/dart/sdk-runtime-bin-directory_linux.cc.patch",
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/dart/sdk-runtime-vm-os_android.cc.patch",
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/dart/sdk-sdk-lib-_internal-vm-bin-process_patch.dart.patch"
+      "https://github.com/termux/termux-packages/blob/dfd8e5459/packages/dart/sdk-pkg-_fe_analyzer_shared-lib-src-util-colors.dart.patch",
+      "https://github.com/termux/termux-packages/blob/dfd8e5459/packages/dart/sdk-runtime-bin-directory_linux.cc.patch",
+      "https://github.com/termux/termux-packages/blob/dfd8e5459/packages/dart/sdk-runtime-vm-os_android.cc.patch",
+      "https://github.com/termux/termux-packages/blob/dfd8e5459/packages/dart/sdk-sdk-lib-_internal-vm-bin-process_patch.dart.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/dart/sdk-pkg-_fe_analyzer_shared-lib-src-util-colors.dart.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/dart/sdk-runtime-bin-directory_linux.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/dart/sdk-runtime-vm-os_android.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/dart/sdk-sdk-lib-_internal-vm-bin-process_patch.dart.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/dfd8e5459/packages/dart/sdk-pkg-_fe_analyzer_shared-lib-src-util-colors.dart.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dfd8e5459/packages/dart/sdk-runtime-bin-directory_linux.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dfd8e5459/packages/dart/sdk-runtime-vm-os_android.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dfd8e5459/packages/dart/sdk-sdk-lib-_internal-vm-bin-process_patch.dart.patch"
     ],
     "auto_updated": true
   },
@@ -8233,7 +8233,6 @@
     "depends": [
       "bc",
       "libandroid-support",
-      "libandroid-spawn",
       "libc++",
       "ncurses",
       "ncurses-utils",
@@ -8242,22 +8241,22 @@
     ],
     "srcurl": "https://github.com/fish-shell/fish-shell/releases/download/4.0.2/fish-4.0.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/196bbe866/packages/fish",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/196bbe866/packages/fish/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/196bbe866/packages/fish/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c869d61a6/packages/fish",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c869d61a6/packages/fish/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c869d61a6/packages/fish/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/196bbe866/packages/fish/Cargo.toml.patch",
-      "https://github.com/termux/termux-packages/blob/196bbe866/packages/fish/build.rs.patch",
-      "https://github.com/termux/termux-packages/blob/196bbe866/packages/fish/libc-src-unix-linux_like-android-mod.rs.diff",
-      "https://github.com/termux/termux-packages/blob/196bbe866/packages/fish/libc-src-unix-linux_like-android.diff",
-      "https://github.com/termux/termux-packages/blob/196bbe866/packages/fish/share-tools-create_manpage_completions.py.patch"
+      "https://github.com/termux/termux-packages/blob/c869d61a6/packages/fish/Cargo.toml.patch",
+      "https://github.com/termux/termux-packages/blob/c869d61a6/packages/fish/build.rs.patch",
+      "https://github.com/termux/termux-packages/blob/c869d61a6/packages/fish/do-not-import-posix-spawn.patch",
+      "https://github.com/termux/termux-packages/blob/c869d61a6/packages/fish/force-d_ino-and-st_mode-types-on-32-bit-android.patch",
+      "https://github.com/termux/termux-packages/blob/c869d61a6/packages/fish/share-tools-create_manpage_completions.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/196bbe866/packages/fish/Cargo.toml.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/196bbe866/packages/fish/build.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/196bbe866/packages/fish/libc-src-unix-linux_like-android-mod.rs.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/196bbe866/packages/fish/libc-src-unix-linux_like-android.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/196bbe866/packages/fish/share-tools-create_manpage_completions.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c869d61a6/packages/fish/Cargo.toml.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c869d61a6/packages/fish/build.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c869d61a6/packages/fish/do-not-import-posix-spawn.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c869d61a6/packages/fish/force-d_ino-and-st_mode-types-on-32-bit-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c869d61a6/packages/fish/share-tools-create_manpage_completions.py.patch"
     ],
     "auto_updated": true
   },
@@ -8357,15 +8356,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.3.126",
+    "version": "0.3.128",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/v0.3.126.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/v0.3.128.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/46bda1908/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/46bda1908/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/46bda1908/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7516a7c30/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7516a7c30/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7516a7c30/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12909,24 +12908,24 @@
   },
   {
     "name": "iperf3",
-    "version": "3.18",
+    "version": "3.19",
     "description": "TCP, UDP, and SCTP network bandwidth measurement tool",
     "homepage": "https://github.com/esnet/iperf",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/esnet/iperf/releases/download/3.18/iperf-3.18.tar.gz",
+    "srcurl": "https://github.com/esnet/iperf/archive/refs/tags/3.19.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e15f6252/packages/iperf3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e15f6252/packages/iperf3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e15f6252/packages/iperf3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1f7a7a05c/packages/iperf3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1f7a7a05c/packages/iperf3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1f7a7a05c/packages/iperf3/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0e15f6252/packages/iperf3/main_Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/0e15f6252/packages/iperf3/src-iperf_api.c.patch"
+      "https://github.com/termux/termux-packages/blob/1f7a7a05c/packages/iperf3/main_Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/1f7a7a05c/packages/iperf3/src-iperf_api.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0e15f6252/packages/iperf3/main_Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e15f6252/packages/iperf3/src-iperf_api.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1f7a7a05c/packages/iperf3/main_Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1f7a7a05c/packages/iperf3/src-iperf_api.c.patch"
     ],
     "auto_updated": true
   },
@@ -23260,23 +23259,23 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b5432",
+    "version": "0.0.0-b5437",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b5432.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b5437.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/98dbbd7cb/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98dbbd7cb/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98dbbd7cb/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cb65a8ceb/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cb65a8ceb/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cb65a8ceb/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/98dbbd7cb/packages/llama-cpp/0001-search-dirs.patch"
+      "https://github.com/termux/termux-packages/blob/cb65a8ceb/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/98dbbd7cb/packages/llama-cpp/0001-search-dirs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cb65a8ceb/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "auto_updated": true
   },
@@ -26087,7 +26086,7 @@
   },
   {
     "name": "mpd",
-    "version": "0.24.3",
+    "version": "0.24.4",
     "description": "Music player daemon",
     "homepage": "https://www.musicpd.org",
     "depends": [
@@ -26124,30 +26123,30 @@
       "zlib",
       "fmt"
     ],
-    "srcurl": "https://github.com/MusicPlayerDaemon/MPD/archive/v0.24.3.tar.gz",
+    "srcurl": "https://github.com/MusicPlayerDaemon/MPD/archive/v0.24.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1771c6daa/packages/mpd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ac8794f16/packages/mpd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/doc-mpdconf.example.patch",
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/registry.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/src-input-Error.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/1771c6daa/packages/mpd/thread-Util.cxx.patch"
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/doc-mpdconf.example.patch",
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/registry.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/src-input-Error.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/ac8794f16/packages/mpd/thread-Util.cxx.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/doc-mpdconf.example.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/registry.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/src-input-Error.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/src-io-FileOutputStream.hxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/src-lib-gcrypt-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/src-output-plugins-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1771c6daa/packages/mpd/thread-Util.cxx.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/doc-mpdconf.example.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/registry.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/src-input-Error.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/src-io-FileOutputStream.hxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/src-lib-gcrypt-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/src-output-plugins-meson.build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/src-output-plugins-sles-SlesOutputPlugin.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ac8794f16/packages/mpd/thread-Util.cxx.patch"
     ],
     "auto_updated": true
   },
@@ -27129,15 +27128,15 @@
   },
   {
     "name": "neocmakelsp",
-    "version": "0.8.22",
+    "version": "0.8.23",
     "description": "a cmake lsp based on tower-lsp and treesitter",
     "homepage": "https://neocmakelsp.github.io/",
     "depends": [],
-    "srcurl": "https://github.com/neocmakelsp/neocmakelsp/archive/refs/tags/v0.8.22.tar.gz",
+    "srcurl": "https://github.com/neocmakelsp/neocmakelsp/archive/refs/tags/v0.8.23.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5836ef66d/packages/neocmakelsp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5836ef66d/packages/neocmakelsp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5836ef66d/packages/neocmakelsp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/35b2fe957/packages/neocmakelsp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/35b2fe957/packages/neocmakelsp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/35b2fe957/packages/neocmakelsp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40393,7 +40392,7 @@
   },
   {
     "name": "urdfdom",
-    "version": "4.0.1",
+    "version": "5.0.0",
     "description": "Unified Robot Description Format (URDF) parser library and tools",
     "homepage": "https://github.com/ros/urdfdom",
     "depends": [
@@ -40402,11 +40401,11 @@
       "urdfdom-headers",
       "console-bridge"
     ],
-    "srcurl": "https://github.com/ros/urdfdom/archive/refs/tags/4.0.1.tar.gz",
+    "srcurl": "https://github.com/ros/urdfdom/archive/refs/tags/5.0.0.tar.gz",
     "maintainer": "Pooya Moradi <pvonmoradi@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e02aa56ce/packages/urdfdom",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e02aa56ce/packages/urdfdom/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e02aa56ce/packages/urdfdom/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/64558ea3a/packages/urdfdom",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/64558ea3a/packages/urdfdom/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/64558ea3a/packages/urdfdom/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -41311,22 +41310,22 @@
   },
   {
     "name": "vtm",
-    "version": "0.9.99.71",
+    "version": "2025.05.20",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://vtm.netxs.online/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v0.9.99.71.tar.gz",
+    "srcurl": "https://github.com/netxs-group/vtm/archive/refs/tags/v2025.05.20.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4938111a8/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4938111a8/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4938111a8/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c2fb42c86/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c2fb42c86/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c2fb42c86/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4938111a8/packages/vtm/0001-fmod.patch"
+      "https://github.com/termux/termux-packages/blob/c2fb42c86/packages/vtm/0001-fmod.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4938111a8/packages/vtm/0001-fmod.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c2fb42c86/packages/vtm/0001-fmod.patch"
     ],
     "auto_updated": true
   },
@@ -41712,15 +41711,15 @@
   },
   {
     "name": "wasmtime",
-    "version": "32.0.0",
+    "version": "33.0.0",
     "description": "A standalone runtime for WebAssembly",
     "homepage": "https://wasmtime.dev/",
     "depends": [],
     "srcurl": "git+https://github.com/bytecodealliance/wasmtime",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/95256e2bf/packages/wasmtime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95256e2bf/packages/wasmtime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95256e2bf/packages/wasmtime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cd7790ab1/packages/wasmtime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cd7790ab1/packages/wasmtime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cd7790ab1/packages/wasmtime/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -43751,7 +43750,7 @@
   },
   {
     "name": "fio",
-    "version": "3.39",
+    "version": "3.40",
     "description": "Flexible I/O Tester",
     "homepage": "https://github.com/axboe/fio",
     "depends": [
@@ -43759,20 +43758,20 @@
       "libandroid-shmem",
       "libaio"
     ],
-    "srcurl": "https://github.com/axboe/fio/archive/refs/tags/fio-3.39.tar.gz",
+    "srcurl": "https://github.com/axboe/fio/archive/refs/tags/fio-3.40.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ceec5602/root-packages/fio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ceec5602/root-packages/fio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ceec5602/root-packages/fio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/13de7d6c8/root-packages/fio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/13de7d6c8/root-packages/fio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/13de7d6c8/root-packages/fio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5ceec5602/root-packages/fio/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/5ceec5602/root-packages/fio/configure.patch",
-      "https://github.com/termux/termux-packages/blob/5ceec5602/root-packages/fio/fix-hardcoded-path.patch"
+      "https://github.com/termux/termux-packages/blob/13de7d6c8/root-packages/fio/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/13de7d6c8/root-packages/fio/configure.patch",
+      "https://github.com/termux/termux-packages/blob/13de7d6c8/root-packages/fio/fix-hardcoded-path.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5ceec5602/root-packages/fio/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5ceec5602/root-packages/fio/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5ceec5602/root-packages/fio/fix-hardcoded-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/13de7d6c8/root-packages/fio/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/13de7d6c8/root-packages/fio/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/13de7d6c8/root-packages/fio/fix-hardcoded-path.patch"
     ],
     "auto_updated": true
   },
@@ -58199,7 +58198,7 @@
   },
   {
     "name": "thunderbird",
-    "version": "138.0.1",
+    "version": "138.0.2",
     "description": "Unofficial Thunderbird email client",
     "homepage": "https://www.thunderbird.net",
     "depends": [
@@ -58237,80 +58236,80 @@
       "pulseaudio",
       "zlib"
     ],
-    "srcurl": "https://archive.mozilla.org/pub/thunderbird/releases/138.0.1/source/thunderbird-138.0.1.source.tar.xz",
+    "srcurl": "https://archive.mozilla.org/pub/thunderbird/releases/138.0.2/source/thunderbird-138.0.2.source.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2db4c261f/x11-packages/thunderbird",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/614899117/x11-packages/thunderbird",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0002-configure-fix-arm-options.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0003-configure-fix-rustflags.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0008-fix-marcos.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0009-impl-posix-shmem.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0013-fix-rust-compile.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0015-skia-termux.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0016-protobuf-no-android-log.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0017-fix-include-dir-for-cpufeatures.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0018-fix-sigbus.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0019-do-not-call-get-pci-status.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0020-fix-missing-include-for-zlib-module.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0021-configure-no-pack-relative-relocs.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0022-check-if-dlpi_name-is-nullptr-before-using.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0023-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0024-disable-native-https-dns-resolve.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0025-webextensions.storage.sync.kinto-true.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0026-fix-popup-white-borders.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0027-fix-tagged-pointer.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0028-fix-headless-mode.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0029-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0030-fix-dlopen-library-name.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0031-wayland-proxy-no-pthread-cancel.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0032-disable-systray-x86_64.patch",
-      "https://github.com/termux/termux-packages/blob/2db4c261f/x11-packages/thunderbird/0033-toolbar-based-custom-compose-window-width-for-ralfwerner.patch"
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0002-configure-fix-arm-options.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0003-configure-fix-rustflags.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0008-fix-marcos.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0009-impl-posix-shmem.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0013-fix-rust-compile.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0015-skia-termux.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0016-protobuf-no-android-log.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0017-fix-include-dir-for-cpufeatures.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0018-fix-sigbus.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0019-do-not-call-get-pci-status.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0020-fix-missing-include-for-zlib-module.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0021-configure-no-pack-relative-relocs.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0022-check-if-dlpi_name-is-nullptr-before-using.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0023-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0024-disable-native-https-dns-resolve.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0025-webextensions.storage.sync.kinto-true.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0026-fix-popup-white-borders.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0027-fix-tagged-pointer.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0028-fix-headless-mode.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0029-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0030-fix-dlopen-library-name.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0031-wayland-proxy-no-pthread-cancel.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0032-disable-systray-x86_64.patch",
+      "https://github.com/termux/termux-packages/blob/614899117/x11-packages/thunderbird/0033-toolbar-based-custom-compose-window-width-for-ralfwerner.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0002-configure-fix-arm-options.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0003-configure-fix-rustflags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0008-fix-marcos.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0009-impl-posix-shmem.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0013-fix-rust-compile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0015-skia-termux.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0016-protobuf-no-android-log.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0017-fix-include-dir-for-cpufeatures.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0018-fix-sigbus.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0019-do-not-call-get-pci-status.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0020-fix-missing-include-for-zlib-module.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0021-configure-no-pack-relative-relocs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0022-check-if-dlpi_name-is-nullptr-before-using.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0023-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0024-disable-native-https-dns-resolve.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0025-webextensions.storage.sync.kinto-true.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0026-fix-popup-white-borders.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0027-fix-tagged-pointer.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0028-fix-headless-mode.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0029-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0030-fix-dlopen-library-name.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0031-wayland-proxy-no-pthread-cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0032-disable-systray-x86_64.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2db4c261f/x11-packages/thunderbird/0033-toolbar-based-custom-compose-window-width-for-ralfwerner.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0001-configure-treat-termux-as-linux.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0002-configure-fix-arm-options.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0003-configure-fix-rustflags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0004-configure-do-not-check-libstdcxx-headers.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0005-configure-do-not-append-sysroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0006-configure-do-not-enable-alsa.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0007-fix-link-with-libcxx-18.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0008-fix-marcos.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0009-impl-posix-shmem.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0010-do-not-check-time_t-for-system-libevent.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0011-use-UnderrunHandlerNoop.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0012-do-not-use-adaptive-mutex.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0013-fix-rust-compile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0014-unset-thread-priority-scheduling-macro.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0015-skia-termux.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0016-protobuf-no-android-log.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0017-fix-include-dir-for-cpufeatures.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0018-fix-sigbus.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0019-do-not-call-get-pci-status.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0020-fix-missing-include-for-zlib-module.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0021-configure-no-pack-relative-relocs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0022-check-if-dlpi_name-is-nullptr-before-using.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0023-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0024-disable-native-https-dns-resolve.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0025-webextensions.storage.sync.kinto-true.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0026-fix-popup-white-borders.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0027-fix-tagged-pointer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0028-fix-headless-mode.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0029-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0030-fix-dlopen-library-name.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0031-wayland-proxy-no-pthread-cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0032-disable-systray-x86_64.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/614899117/x11-packages/thunderbird/0033-toolbar-based-custom-compose-window-width-for-ralfwerner.patch"
     ],
     "auto_updated": true
   },
