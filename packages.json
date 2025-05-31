@@ -23283,23 +23283,23 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b5548",
+    "version": "0.0.0-b5552",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b5548.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b5552.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d300307cc/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d300307cc/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d300307cc/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/596fbb73a/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/596fbb73a/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/596fbb73a/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d300307cc/packages/llama-cpp/0001-search-dirs.patch"
+      "https://github.com/termux/termux-packages/blob/596fbb73a/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d300307cc/packages/llama-cpp/0001-search-dirs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/596fbb73a/packages/llama-cpp/0001-search-dirs.patch"
     ],
     "auto_updated": true
   },
@@ -28484,15 +28484,15 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "26.0.4",
+    "version": "26.0.5",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v26.0.4.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v26.0.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f4cc5d909/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f4cc5d909/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f4cc5d909/packages/oh-my-posh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d53f07ce8/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d53f07ce8/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d53f07ce8/packages/oh-my-posh/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30005,25 +30005,26 @@
   },
   {
     "name": "pass-otp",
-    "version": "1.2.0",
-    "description": "A pass extension for managing one-time-password (OTP) tokens",
+    "version": "1.2.0-p20221228",
+    "description": "A pass/passage extension for managing one-time-password (OTP) tokens",
     "homepage": "https://github.com/tadfisher/pass-otp",
     "depends": [
-      "oathtool",
-      "pass"
+      "oathtool"
     ],
-    "srcurl": "https://github.com/tadfisher/pass-otp/archive/v1.2.0.tar.gz",
+    "srcurl": "https://github.com/tadfisher/pass-otp/archive/a364d2a71ad24158a009c266102ce0d91149de67.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/63545d96c/packages/pass-otp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/63545d96c/packages/pass-otp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/63545d96c/packages/pass-otp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/23565a232/packages/pass-otp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23565a232/packages/pass-otp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23565a232/packages/pass-otp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/63545d96c/packages/pass-otp/otp.bash.patch"
+      "https://github.com/termux/termux-packages/blob/23565a232/packages/pass-otp/otp.bash.patch",
+      "https://github.com/termux/termux-packages/blob/23565a232/packages/pass-otp/support-passage.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/63545d96c/packages/pass-otp/otp.bash.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/23565a232/packages/pass-otp/otp.bash.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/23565a232/packages/pass-otp/support-passage.patch"
     ],
-    "auto_updated": true
+    "auto_updated": false
   },
   {
     "name": "passage",
@@ -30037,14 +30038,14 @@
     ],
     "srcurl": "https://github.com/FiloSottile/passage/archive/refs/tags/1.7.4a2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/414ce9a8d/packages/passage",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/414ce9a8d/packages/passage/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/414ce9a8d/packages/passage/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2099d3a78/packages/passage",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2099d3a78/packages/passage/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2099d3a78/packages/passage/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/414ce9a8d/packages/passage/src-password-store.sh.patch"
+      "https://github.com/termux/termux-packages/blob/2099d3a78/packages/passage/src-password-store.sh.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/414ce9a8d/packages/passage/src-password-store.sh.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2099d3a78/packages/passage/src-password-store.sh.patch"
     ],
     "auto_updated": false
   },
