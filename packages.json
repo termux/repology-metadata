@@ -15776,7 +15776,7 @@
   },
   {
     "name": "libcurl",
-    "version": "8.14.0",
+    "version": "8.14.1",
     "description": "Easy-to-use client-side URL transfer library",
     "homepage": "https://curl.se/",
     "depends": [
@@ -15786,11 +15786,11 @@
       "openssl",
       "zlib"
     ],
-    "srcurl": "https://github.com/curl/curl/releases/download/curl-8_14_0/curl-8.14.0.tar.xz",
+    "srcurl": "https://github.com/curl/curl/releases/download/curl-8_14_1/curl-8.14.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2a88e824/packages/libcurl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2a88e824/packages/libcurl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2a88e824/packages/libcurl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/81b66d234/packages/libcurl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/81b66d234/packages/libcurl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/81b66d234/packages/libcurl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -34600,22 +34600,24 @@
     ],
     "srcurl": "https://static.rust-lang.org/dist/rustc-1.87.0-src.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/950158d8d/packages/rust",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/950158d8d/packages/rust/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/rust/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/83cbedc6b/packages/rust",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/83cbedc6b/packages/rust/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/83cbedc6b/packages/rust/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/rust/0001-set-TERMUX_PKG_API_LEVEL.diff",
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/rust/0002-no-signal_handler.patch",
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/rust/0003-link-with-libc++_shared.patch",
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/rust/0004-set-TMPDIR.patch",
-      "https://github.com/termux/termux-packages/blob/950158d8d/packages/rust/0005-define-fn-backtrace-getauxval.patch"
+      "https://github.com/termux/termux-packages/blob/83cbedc6b/packages/rust/0001-set-TERMUX_PKG_API_LEVEL.diff",
+      "https://github.com/termux/termux-packages/blob/83cbedc6b/packages/rust/0002-no-signal_handler.patch",
+      "https://github.com/termux/termux-packages/blob/83cbedc6b/packages/rust/0003-link-with-libc++_shared.patch",
+      "https://github.com/termux/termux-packages/blob/83cbedc6b/packages/rust/0004-set-TMPDIR.patch",
+      "https://github.com/termux/termux-packages/blob/83cbedc6b/packages/rust/0005-define-fn-backtrace-getauxval.patch",
+      "https://github.com/termux/termux-packages/blob/83cbedc6b/packages/rust/0006-suppress-hard-linking-failed-warning.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/rust/0001-set-TERMUX_PKG_API_LEVEL.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/rust/0002-no-signal_handler.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/rust/0003-link-with-libc++_shared.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/rust/0004-set-TMPDIR.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/950158d8d/packages/rust/0005-define-fn-backtrace-getauxval.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/83cbedc6b/packages/rust/0001-set-TERMUX_PKG_API_LEVEL.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/83cbedc6b/packages/rust/0002-no-signal_handler.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/83cbedc6b/packages/rust/0003-link-with-libc++_shared.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/83cbedc6b/packages/rust/0004-set-TMPDIR.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/83cbedc6b/packages/rust/0005-define-fn-backtrace-getauxval.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/83cbedc6b/packages/rust/0006-suppress-hard-linking-failed-warning.patch"
     ],
     "auto_updated": true
   },
@@ -35700,17 +35702,17 @@
   },
   {
     "name": "simdjson",
-    "version": "3.12.3",
+    "version": "3.13.0",
     "description": "A C++ library to see how fast we can parse JSON with complete validation",
     "homepage": "https://simdjson.org/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/simdjson/simdjson/archive/refs/tags/v3.12.3.tar.gz",
+    "srcurl": "https://github.com/simdjson/simdjson/archive/refs/tags/v3.13.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e6820444f/packages/simdjson",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e6820444f/packages/simdjson/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e6820444f/packages/simdjson/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/18a53d186/packages/simdjson",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/18a53d186/packages/simdjson/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/18a53d186/packages/simdjson/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -38902,14 +38904,14 @@
     ],
     "srcurl": "git+https://github.com/tinygo-org/tinygo",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c56bcdc45/packages/tinygo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c56bcdc45/packages/tinygo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c56bcdc45/packages/tinygo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2629fd203/packages/tinygo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2629fd203/packages/tinygo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2629fd203/packages/tinygo/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c56bcdc45/packages/tinygo/GNUmakefile.patch"
+      "https://github.com/termux/termux-packages/blob/2629fd203/packages/tinygo/GNUmakefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c56bcdc45/packages/tinygo/GNUmakefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2629fd203/packages/tinygo/GNUmakefile.patch"
     ],
     "auto_updated": true
   },
@@ -41904,11 +41906,15 @@
     ],
     "srcurl": "https://github.com/vi/websocat/archive/refs/tags/v1.14.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/69fe4f9e9/packages/websocat",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69fe4f9e9/packages/websocat/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69fe4f9e9/packages/websocat/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e0c7ad868/packages/websocat",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e0c7ad868/packages/websocat/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e0c7ad868/packages/websocat/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/e0c7ad868/packages/websocat/traitobject-rust-1.87.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/e0c7ad868/packages/websocat/traitobject-rust-1.87.diff"
+    ],
     "auto_updated": true
   },
   {
@@ -56430,7 +56436,7 @@
   },
   {
     "name": "qt6-qtbase",
-    "version": "6.9.0",
+    "version": "6.9.1",
     "description": "A cross-platform application and UI framework",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -56467,38 +56473,38 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtbase-everywhere-src-6.9.0.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.1/submodules/qtbase-everywhere-src-6.9.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/98c175e37/x11-packages/qt6-qtbase",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/08209f56a/x11-packages/qt6-qtbase",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/98c175e37/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixthemes.cpp.patch.beforehostbuild"
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/08209f56a/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixthemes.cpp.patch.beforehostbuild"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/98c175e37/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixthemes.cpp.patch.beforehostbuild"
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/08209f56a/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixthemes.cpp.patch.beforehostbuild"
     ],
     "auto_updated": true
   },
@@ -56523,18 +56529,18 @@
   },
   {
     "name": "qt6-qtdeclarative",
-    "version": "6.9.0",
+    "version": "6.9.1",
     "description": "Classes for QML and JavaScript languages",
     "homepage": "https://www.qt.io/",
     "depends": [
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtdeclarative-everywhere-src-6.9.0.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.1/submodules/qtdeclarative-everywhere-src-6.9.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2db31e2c7/x11-packages/qt6-qtdeclarative",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2db31e2c7/x11-packages/qt6-qtdeclarative/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2db31e2c7/x11-packages/qt6-qtdeclarative/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdfefac60/x11-packages/qt6-qtdeclarative",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdfefac60/x11-packages/qt6-qtdeclarative/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdfefac60/x11-packages/qt6-qtdeclarative/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56562,25 +56568,25 @@
   },
   {
     "name": "qt6-qtlanguageserver",
-    "version": "6.9.0",
+    "version": "6.9.1",
     "description": "An implementation of the Language Server Protocol",
     "homepage": "https://www.qt.io/",
     "depends": [
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtlanguageserver-everywhere-src-6.9.0.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.1/submodules/qtlanguageserver-everywhere-src-6.9.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d9ee8e8e/x11-packages/qt6-qtlanguageserver",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d9ee8e8e/x11-packages/qt6-qtlanguageserver/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d9ee8e8e/x11-packages/qt6-qtlanguageserver/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e8f64548/x11-packages/qt6-qtlanguageserver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e8f64548/x11-packages/qt6-qtlanguageserver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e8f64548/x11-packages/qt6-qtlanguageserver/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "qt6-qtmultimedia",
-    "version": "6.9.0",
+    "version": "6.9.1",
     "description": "Qt6 Multimedia Library",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -56594,11 +56600,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtmultimedia-everywhere-src-6.9.0.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.1/submodules/qtmultimedia-everywhere-src-6.9.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4f0b697d8/x11-packages/qt6-qtmultimedia",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4f0b697d8/x11-packages/qt6-qtmultimedia/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4f0b697d8/x11-packages/qt6-qtmultimedia/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d832b0c5d/x11-packages/qt6-qtmultimedia",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d832b0c5d/x11-packages/qt6-qtmultimedia/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d832b0c5d/x11-packages/qt6-qtmultimedia/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56741,18 +56747,18 @@
   },
   {
     "name": "qt6-shadertools",
-    "version": "6.9.0",
+    "version": "6.9.1",
     "description": "Qt6 Shader Tools",
     "homepage": "https://www.qt.io/",
     "depends": [
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.0/submodules/qtshadertools-everywhere-src-6.9.0.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.9/6.9.1/submodules/qtshadertools-everywhere-src-6.9.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f91cfdab9/x11-packages/qt6-shadertools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f91cfdab9/x11-packages/qt6-shadertools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f91cfdab9/x11-packages/qt6-shadertools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3b85d8b7/x11-packages/qt6-shadertools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3b85d8b7/x11-packages/qt6-shadertools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3b85d8b7/x11-packages/qt6-shadertools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
