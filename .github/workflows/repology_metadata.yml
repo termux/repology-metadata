@@ -27,11 +27,11 @@ jobs:
         # The other optimistions are taken from the above linked stackoverflow post
         #
         # Although the improvements are great on my powerful laptop, the CI only has 2 cores, so this just
-        # slows it down as gc is a CPU intensive task. 
+        # slows it down as gc is a CPU intensive task.
         # git gc --aggressive
         git config core.commitGraph true
         git config gc.writeCommitGraph true
-        git repack -Ad --max-pack-size=1g 
+        git repack -Ad --max-pack-size=1g
         git commit-graph write --changed-paths --reachable
     - name: Generate packages.json
       run: |
@@ -45,7 +45,7 @@ jobs:
 
         if [ $(git diff ./packages.json | wc -l) -gt 0 ]; then
           git config --global user.name "Termux Github Actions"
-          git config --global user.email "contact@termux.org"
+          git config --global user.email "contact@termux.dev"
           git add ./packages.json
           git commit -m "Generate new metadata for Repology"
           git push
