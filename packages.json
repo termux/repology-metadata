@@ -23344,25 +23344,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b5891",
+    "version": "0.0.0-b5893",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b5891.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b5893.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/af7b48d55/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af7b48d55/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af7b48d55/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d74c8782/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d74c8782/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d74c8782/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/af7b48d55/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/af7b48d55/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/8d74c8782/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/8d74c8782/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/af7b48d55/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/af7b48d55/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8d74c8782/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d74c8782/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -34223,7 +34223,7 @@
   },
   {
     "name": "rizin",
-    "version": "0.7.4",
+    "version": "0.8.1",
     "description": "UNIX-like reverse engineering framework and command-line toolset.",
     "homepage": "https://rizin.re",
     "depends": [
@@ -34239,13 +34239,17 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/rizinorg/rizin/releases/download/v0.7.4/rizin-src-v0.7.4.tar.xz",
+    "srcurl": "https://github.com/rizinorg/rizin/releases/download/v0.8.1/rizin-src-v0.8.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a9fa77ba5/packages/rizin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a9fa77ba5/packages/rizin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a9fa77ba5/packages/rizin/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cf5fedc1d/packages/rizin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cf5fedc1d/packages/rizin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cf5fedc1d/packages/rizin/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/cf5fedc1d/packages/rizin/0001-workaround-name-conflict.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/cf5fedc1d/packages/rizin/0001-workaround-name-conflict.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -43991,34 +43995,34 @@
   },
   {
     "name": "frida",
-    "version": "16.1.1",
+    "version": "17.2.11",
     "description": "Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers",
     "homepage": "https://www.frida.re/",
-    "depends": [
-      "libiconv"
-    ],
+    "depends": [],
     "srcurl": "git+https://github.com/frida/frida",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b63cbad82/root-packages/frida",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cefd364d/root-packages/frida",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/Makefile.linux.mk.patch",
-      "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/driver-wrapper-android.sh.in.patch",
-      "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/frida-python-src-_frida.c.patch",
-      "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/frida-python-src-meson.build.patch",
-      "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/frida-python-version.diff",
-      "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/frida-resource-compiler.patch",
-      "https://github.com/termux/termux-packages/blob/b63cbad82/root-packages/frida/setup-env.sh.patch"
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/frida-resource-compiler.patch",
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/glib-no-pidfd_open-syscall.diff",
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/ndk-version-and-api-level.patch",
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/no-pidfd_open-syscall.patch",
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/quickcompile.patch",
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/releng-env_generic.py.patch",
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/skip-elf-cleaner.patch",
+      "https://github.com/termux/termux-packages/blob/9cefd364d/root-packages/frida/version-script.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/Makefile.linux.mk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/driver-wrapper-android.sh.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/frida-python-src-_frida.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/frida-python-src-meson.build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/frida-python-version.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/frida-resource-compiler.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b63cbad82/root-packages/frida/setup-env.sh.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/frida-resource-compiler.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/glib-no-pidfd_open-syscall.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/ndk-version-and-api-level.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/no-pidfd_open-syscall.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/quickcompile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/releng-env_generic.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/skip-elf-cleaner.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cefd364d/root-packages/frida/version-script.patch"
     ],
     "auto_updated": false
   },
