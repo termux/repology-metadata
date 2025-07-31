@@ -1026,11 +1026,15 @@
     ],
     "srcurl": "https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/380e6734b/packages/apr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/380e6734b/packages/apr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/380e6734b/packages/apr/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0002ca94a/packages/apr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0002ca94a/packages/apr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0002ca94a/packages/apr/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/0002ca94a/packages/apr/apr-config-do-not-use-upstream-cross-compiler-detection.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/0002ca94a/packages/apr/apr-config-do-not-use-upstream-cross-compiler-detection.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -7244,7 +7248,7 @@
   },
   {
     "name": "eltclsh",
-    "version": "1.19",
+    "version": "1.20",
     "description": "Interactive shell for TCL programming language",
     "homepage": "https://homepages.laas.fr/mallet/soft/shell/eltclsh",
     "depends": [
@@ -7252,11 +7256,11 @@
       "libedit",
       "tcl"
     ],
-    "srcurl": "https://www.openrobots.org/distfiles/eltclsh/eltclsh-1.19.tar.gz",
+    "srcurl": "https://www.openrobots.org/distfiles/eltclsh/eltclsh-1.20.tar.gz",
     "maintainer": "@flosnvjx",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f56828d5/packages/eltclsh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f56828d5/packages/eltclsh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f56828d5/packages/eltclsh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bb9c380e/packages/eltclsh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bb9c380e/packages/eltclsh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bb9c380e/packages/eltclsh/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13363,7 +13367,7 @@
   },
   {
     "name": "jackett",
-    "version": "0.22.2208",
+    "version": "0.22.2213",
     "description": "API Support for your favorite torrent trackers",
     "homepage": "https://github.com/jackett/jackett",
     "depends": [
@@ -13371,11 +13375,11 @@
       "dotnet-host",
       "dotnet-runtime-8.0"
     ],
-    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.2208.tar.gz",
+    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.2213.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/14d7008b5/packages/jackett",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/14d7008b5/packages/jackett/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/14d7008b5/packages/jackett/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/00ee8a960/packages/jackett",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00ee8a960/packages/jackett/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00ee8a960/packages/jackett/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -24321,10 +24325,11 @@
   },
   {
     "name": "mailutils",
-    "version": "3.19",
+    "version": "3.20",
     "description": "Mailutils is a swiss army knife of electronic mail handling. ",
     "homepage": "https://mailutils.org/",
     "depends": [
+      "gdbm",
       "libandroid-glob",
       "libcrypt",
       "libiconv",
@@ -24333,34 +24338,34 @@
       "ncurses",
       "readline"
     ],
-    "srcurl": "https://ftp.gnu.org/gnu/mailutils/mailutils-3.19.tar.xz",
+    "srcurl": "https://ftp.gnu.org/gnu/mailutils/mailutils-3.20.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e2c460e37/packages/mailutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/84fc67278/packages/mailutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/lib-Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/lib-mailcap.c.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/lib-manlock.c.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/libmailutils-diag-bt.c.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/lu.c.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/mail-send.c.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/mh-send.c.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/mh-show.c.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/paths.patch",
-      "https://github.com/termux/termux-packages/blob/e2c460e37/packages/mailutils/pwen.patch"
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/lib-Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/lib-mailcap.c.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/lib-manlock.c.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/libmailutils-diag-bt.c.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/lu.c.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/mail-send.c.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/mh-send.c.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/mh-show.c.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/paths.patch",
+      "https://github.com/termux/termux-packages/blob/84fc67278/packages/mailutils/pwen.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/lib-Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/lib-mailcap.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/lib-manlock.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/libmailutils-diag-bt.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/lu.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/mail-send.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/mh-send.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/mh-show.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e2c460e37/packages/mailutils/pwen.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/lib-Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/lib-mailcap.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/lib-manlock.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/libmailutils-diag-bt.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/lu.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/mail-send.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/mh-send.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/mh-show.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/84fc67278/packages/mailutils/pwen.patch"
     ],
     "auto_updated": true
   },
@@ -28747,22 +28752,22 @@
   },
   {
     "name": "ollama",
-    "version": "0.10.0",
+    "version": "0.10.1",
     "description": "Get up and running with large language models",
     "homepage": "https://ollama.com/",
     "depends": [],
     "srcurl": "git+https://github.com/ollama/ollama",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1d3a4a0de/packages/ollama",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1d3a4a0de/packages/ollama/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1d3a4a0de/packages/ollama/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d2ece86b/packages/ollama",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d2ece86b/packages/ollama/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d2ece86b/packages/ollama/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1d3a4a0de/packages/ollama/0001-do-not-install-runtime-deps.patch",
-      "https://github.com/termux/termux-packages/blob/1d3a4a0de/packages/ollama/0002-properly-search-libs-on-android.patch"
+      "https://github.com/termux/termux-packages/blob/7d2ece86b/packages/ollama/0001-do-not-install-runtime-deps.patch",
+      "https://github.com/termux/termux-packages/blob/7d2ece86b/packages/ollama/0002-properly-search-libs-on-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1d3a4a0de/packages/ollama/0001-do-not-install-runtime-deps.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1d3a4a0de/packages/ollama/0002-properly-search-libs-on-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7d2ece86b/packages/ollama/0001-do-not-install-runtime-deps.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7d2ece86b/packages/ollama/0002-properly-search-libs-on-android.patch"
     ],
     "auto_updated": true
   },
@@ -33586,30 +33591,28 @@
   },
   {
     "name": "radare2",
-    "version": "5.9.8",
-    "description": "Advanced Hexadecimal Editor",
-    "homepage": "https://rada.re",
+    "version": "6.0.0",
+    "description": "UNIX-like reverse engineering framework and command-line toolset",
+    "homepage": "https://www.radare.org/",
     "depends": [
       "libuv"
     ],
-    "srcurl": "https://github.com/radare/radare2/archive/5.9.8.tar.gz",
+    "srcurl": "https://github.com/radareorg/radare2/archive/refs/tags/6.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d988988f9/packages/radare2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d988988f9/packages/radare2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d988988f9/packages/radare2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/25d69c6cd/packages/radare2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/25d69c6cd/packages/radare2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/25d69c6cd/packages/radare2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d988988f9/packages/radare2/cs_release-disable.patch",
-      "https://github.com/termux/termux-packages/blob/d988988f9/packages/radare2/libr-crypto-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/d988988f9/packages/radare2/libr-esil-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/d988988f9/packages/radare2/libr-lang-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/d988988f9/packages/radare2/libr-reg-Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/25d69c6cd/packages/radare2/libr-esil-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/25d69c6cd/packages/radare2/libr-lang-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/25d69c6cd/packages/radare2/libr-muta-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/25d69c6cd/packages/radare2/libr-reg-Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d988988f9/packages/radare2/cs_release-disable.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d988988f9/packages/radare2/libr-crypto-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d988988f9/packages/radare2/libr-esil-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d988988f9/packages/radare2/libr-lang-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d988988f9/packages/radare2/libr-reg-Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/25d69c6cd/packages/radare2/libr-esil-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25d69c6cd/packages/radare2/libr-lang-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25d69c6cd/packages/radare2/libr-muta-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/25d69c6cd/packages/radare2/libr-reg-Makefile.patch"
     ],
     "auto_updated": true
   },
@@ -44721,7 +44724,7 @@
   },
   {
     "name": "lvm2",
-    "version": "2.03.33",
+    "version": "2.03.34",
     "description": "A device-mapper library from LVM2 package",
     "homepage": "https://sourceware.org/lvm2/",
     "depends": [
@@ -44730,18 +44733,16 @@
       "libblkid",
       "readline"
     ],
-    "srcurl": "https://mirrors.kernel.org/sourceware/lvm2/releases/LVM2.2.03.33.tgz",
+    "srcurl": "https://mirrors.kernel.org/sourceware/lvm2/releases/LVM2.2.03.34.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f270f8c2/root-packages/lvm2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f270f8c2/root-packages/lvm2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f270f8c2/root-packages/lvm2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/25203330d/root-packages/lvm2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/25203330d/root-packages/lvm2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/25203330d/root-packages/lvm2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5f270f8c2/root-packages/lvm2/fix-stack.patch",
-      "https://github.com/termux/termux-packages/blob/5f270f8c2/root-packages/lvm2/lib-device-device_id.c.patch"
+      "https://github.com/termux/termux-packages/blob/25203330d/root-packages/lvm2/fix-stack.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5f270f8c2/root-packages/lvm2/fix-stack.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5f270f8c2/root-packages/lvm2/lib-device-device_id.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/25203330d/root-packages/lvm2/fix-stack.patch"
     ],
     "auto_updated": true
   },
