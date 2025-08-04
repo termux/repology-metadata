@@ -23439,25 +23439,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b6075",
+    "version": "0.0.0-b6082",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6075.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6082.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cf56dc8ad/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cf56dc8ad/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cf56dc8ad/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c545a4993/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c545a4993/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c545a4993/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cf56dc8ad/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/cf56dc8ad/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/c545a4993/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/c545a4993/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cf56dc8ad/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cf56dc8ad/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c545a4993/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c545a4993/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -34916,17 +34916,17 @@
   },
   {
     "name": "rust-analyzer",
-    "version": "20250728",
+    "version": "20250804",
     "description": "A Rust compiler front-end for IDEs",
     "homepage": "https://rust-analyzer.github.io/",
     "depends": [
       "rust-src"
     ],
-    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2025-07-28.tar.gz",
+    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2025-08-04.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b0bd89f46/packages/rust-analyzer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b0bd89f46/packages/rust-analyzer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b0bd89f46/packages/rust-analyzer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/685573990/packages/rust-analyzer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/685573990/packages/rust-analyzer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/685573990/packages/rust-analyzer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -36067,15 +36067,15 @@
   },
   {
     "name": "sing-box",
-    "version": "1.11.15",
+    "version": "1.12.0",
     "description": "The universal proxy platform",
     "homepage": "https://sing-box.sagernet.org",
     "depends": [],
-    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.11.15.tar.gz",
+    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.0.tar.gz",
     "maintainer": "kay9925@outlook.com",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37359e0b1/packages/sing-box",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37359e0b1/packages/sing-box/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37359e0b1/packages/sing-box/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a4de69f30/packages/sing-box",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a4de69f30/packages/sing-box/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a4de69f30/packages/sing-box/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -36287,45 +36287,47 @@
   },
   {
     "name": "snapcast-server",
-    "version": "0.31.0",
+    "version": "0.32.0",
     "description": "A multiroom client-server audio player (server)",
     "homepage": "https://github.com/badaix/snapcast",
     "depends": [
       "libc++",
       "libexpat",
       "libflac",
+      "libogg",
       "libopus",
       "libsoxr",
-      "libvorbis"
+      "libvorbis",
+      "openssl"
     ],
-    "srcurl": "https://github.com/badaix/snapcast/archive/v0.31.0.tar.gz",
+    "srcurl": "https://github.com/badaix/snapcast/archive/v0.32.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0be8460b5/packages/snapcast-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/804c585a7/packages/snapcast-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/client-snapclient.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/server-config.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/server-control_session_http.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/server-etc-snapserver.conf.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/server-server_settings.hpp.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/server-snapserver.1.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/server-snapserver.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/0be8460b5/packages/snapcast-server/test-test_main.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/client-snapclient.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/server-config.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/server-control_session_http.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/server-etc-snapserver.conf.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/server-server_settings.hpp.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/server-snapserver.1.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/server-snapserver.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/804c585a7/packages/snapcast-server/test-test_main.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/client-snapclient.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/server-config.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/server-control_session_http.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/server-etc-snapserver.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/server-server_settings.hpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/server-snapserver.1.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/server-snapserver.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0be8460b5/packages/snapcast-server/test-test_main.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/client-snapclient.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/server-config.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/server-control_session_http.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/server-etc-snapserver.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/server-server_settings.hpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/server-snapserver.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/server-snapserver.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/server-streamreader-airplay_stream.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/804c585a7/packages/snapcast-server/test-test_main.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -48719,19 +48721,19 @@
   },
   {
     "name": "flameshot",
-    "version": "12.1.0",
+    "version": "13.0.0",
     "description": "Powerful yet simple to use screenshot software",
     "homepage": "https://flameshot.org/",
     "depends": [
       "libc++",
-      "qt5-qtbase",
-      "qt5-qtsvg"
+      "qt6-qtbase",
+      "qt6-qtsvg"
     ],
-    "srcurl": "https://github.com/flameshot-org/flameshot/archive/refs/tags/v12.1.0.tar.gz",
+    "srcurl": "https://github.com/flameshot-org/flameshot/archive/refs/tags/v13.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/02a2a68c4/x11-packages/flameshot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02a2a68c4/x11-packages/flameshot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02a2a68c4/x11-packages/flameshot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd7282901/x11-packages/flameshot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd7282901/x11-packages/flameshot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd7282901/x11-packages/flameshot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
