@@ -1427,11 +1427,15 @@
     ],
     "srcurl": "https://ftp.gnu.org/gnu/aspell/aspell-0.60.8.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/02ed00d3b/packages/aspell",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02ed00d3b/packages/aspell/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02ed00d3b/packages/aspell/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/33db15f3e/packages/aspell",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/33db15f3e/packages/aspell/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/33db15f3e/packages/aspell/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/33db15f3e/packages/aspell/android-14-support.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/33db15f3e/packages/aspell/android-14-support.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -13371,7 +13375,7 @@
   },
   {
     "name": "jackett",
-    "version": "0.22.2367",
+    "version": "0.22.2374",
     "description": "API Support for your favorite torrent trackers",
     "homepage": "https://github.com/jackett/jackett",
     "depends": [
@@ -13379,11 +13383,11 @@
       "dotnet-host",
       "dotnet-runtime-8.0"
     ],
-    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.2367.tar.gz",
+    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.2374.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/913abccea/packages/jackett",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/913abccea/packages/jackett/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/913abccea/packages/jackett/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3f0a86466/packages/jackett",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3f0a86466/packages/jackett/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3f0a86466/packages/jackett/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -22317,7 +22321,7 @@
   },
   {
     "name": "libwayland",
-    "version": "1.23.1",
+    "version": "1.24.0",
     "description": "Wayland protocol library",
     "homepage": "https://wayland.freedesktop.org/",
     "depends": [
@@ -22326,32 +22330,30 @@
       "libffi",
       "libxml2"
     ],
-    "srcurl": "https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.1/downloads/wayland-1.23.1.tar.xz",
+    "srcurl": "https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.24.0/downloads/wayland-1.24.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a72152f7/packages/libwayland",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a72152f7/packages/libwayland/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a72152f7/packages/libwayland/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/64d260fc3/packages/libwayland",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/64d260fc3/packages/libwayland/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/64d260fc3/packages/libwayland/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4a72152f7/packages/libwayland/src-wayland-util.h.patch",
-      "https://github.com/termux/termux-packages/blob/4a72152f7/packages/libwayland/xdg-runtime-dir.patch"
+      "https://github.com/termux/termux-packages/blob/64d260fc3/packages/libwayland/xdg-runtime-dir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4a72152f7/packages/libwayland/src-wayland-util.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4a72152f7/packages/libwayland/xdg-runtime-dir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/64d260fc3/packages/libwayland/xdg-runtime-dir.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "libwayland-protocols",
-    "version": "1.41",
+    "version": "1.45",
     "description": "Wayland protocols library",
     "homepage": "https://wayland.freedesktop.org/",
     "depends": [],
-    "srcurl": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.41/downloads/wayland-protocols-1.41.tar.xz",
+    "srcurl": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.45/downloads/wayland-protocols-1.45.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a72152f7/packages/libwayland-protocols",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a72152f7/packages/libwayland-protocols/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a72152f7/packages/libwayland-protocols/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ad3386b4a/packages/libwayland-protocols",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ad3386b4a/packages/libwayland-protocols/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ad3386b4a/packages/libwayland-protocols/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23445,25 +23447,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b6318",
+    "version": "0.0.0-b6322",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6318.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6322.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5ad87e6d/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5ad87e6d/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5ad87e6d/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d88fe8dd/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d88fe8dd/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d88fe8dd/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d5ad87e6d/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/d5ad87e6d/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/8d88fe8dd/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/8d88fe8dd/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d5ad87e6d/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d5ad87e6d/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8d88fe8dd/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d88fe8dd/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -44003,22 +44005,22 @@
   },
   {
     "name": "bindfs",
-    "version": "1.18.1",
+    "version": "1.18.2",
     "description": "A FUSE filesystem for mirroring a directory to another directory.",
     "homepage": "https://bindfs.org/",
     "depends": [
       "libfuse3"
     ],
-    "srcurl": "https://bindfs.org/downloads/bindfs-1.18.1.tar.gz",
+    "srcurl": "https://bindfs.org/downloads/bindfs-1.18.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d9e58b48f/root-packages/bindfs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d9e58b48f/root-packages/bindfs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d9e58b48f/root-packages/bindfs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4f1a218b/root-packages/bindfs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4f1a218b/root-packages/bindfs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4f1a218b/root-packages/bindfs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d9e58b48f/root-packages/bindfs/getpwent.patch"
+      "https://github.com/termux/termux-packages/blob/d4f1a218b/root-packages/bindfs/getpwent.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d9e58b48f/root-packages/bindfs/getpwent.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d4f1a218b/root-packages/bindfs/getpwent.patch"
     ],
     "auto_updated": true
   },
@@ -48481,7 +48483,7 @@
   },
   {
     "name": "feh",
-    "version": "3.11",
+    "version": "3.11.1",
     "description": "Fast and light imlib2-based image viewer",
     "homepage": "https://feh.finalrewind.org/",
     "depends": [
@@ -48492,28 +48494,28 @@
       "libx11",
       "libxinerama"
     ],
-    "srcurl": "https://feh.finalrewind.org/feh-3.11.tar.bz2",
+    "srcurl": "https://feh.finalrewind.org/feh-3.11.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3d4101608/x11-packages/feh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/997001cb3/x11-packages/feh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/feh-3.0_src_Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/feh-3.0_src_events.c.patch",
-      "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/feh-3.0_src_filelist.c.patch",
-      "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/feh-3.0_src_imlib.c.patch",
-      "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/feh-3.0_src_keyevents.c.patch",
-      "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/feh-3.0_src_options.c.patch",
-      "https://github.com/termux/termux-packages/blob/3d4101608/x11-packages/feh/feh-3.0_src_slideshow.c.patch"
+      "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/feh-3.0_src_Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/feh-3.0_src_events.c.patch",
+      "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/feh-3.0_src_filelist.c.patch",
+      "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/feh-3.0_src_imlib.c.patch",
+      "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/feh-3.0_src_keyevents.c.patch",
+      "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/feh-3.0_src_options.c.patch",
+      "https://github.com/termux/termux-packages/blob/997001cb3/x11-packages/feh/feh-3.0_src_slideshow.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/feh-3.0_src_Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/feh-3.0_src_events.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/feh-3.0_src_filelist.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/feh-3.0_src_imlib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/feh-3.0_src_keyevents.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/feh-3.0_src_options.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3d4101608/x11-packages/feh/feh-3.0_src_slideshow.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/feh-3.0_src_Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/feh-3.0_src_events.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/feh-3.0_src_filelist.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/feh-3.0_src_imlib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/feh-3.0_src_keyevents.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/feh-3.0_src_options.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/997001cb3/x11-packages/feh/feh-3.0_src_slideshow.c.patch"
     ],
     "auto_updated": true
   },
