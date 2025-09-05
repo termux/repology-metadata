@@ -1378,20 +1378,20 @@
   },
   {
     "name": "asciinema",
-    "version": "3.0.0-rc.5",
+    "version": "1:3.0.0~rc.5",
     "description": "Record and share your terminal sessions, the right way",
     "homepage": "https://asciinema.org/",
     "depends": [],
     "srcurl": "https://github.com/asciinema/asciinema/archive/v3.0.0-rc.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4b4976a66/packages/asciinema",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4b4976a66/packages/asciinema/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4b4976a66/packages/asciinema/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/046a2d48c/packages/asciinema",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/046a2d48c/packages/asciinema/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/046a2d48c/packages/asciinema/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4b4976a66/packages/asciinema/locale.rs.patch"
+      "https://github.com/termux/termux-packages/blob/046a2d48c/packages/asciinema/locale.rs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4b4976a66/packages/asciinema/locale.rs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/046a2d48c/packages/asciinema/locale.rs.patch"
     ],
     "auto_updated": true
   },
@@ -2433,18 +2433,18 @@
   },
   {
     "name": "bitcoin",
-    "version": "29.0",
+    "version": "29.1",
     "description": "Bitcoin Core",
     "homepage": "https://bitcoincore.org/",
     "depends": [
       "libc++",
       "libevent"
     ],
-    "srcurl": "https://github.com/bitcoin/bitcoin/archive/refs/tags/v29.0.tar.gz",
+    "srcurl": "https://github.com/bitcoin/bitcoin/archive/refs/tags/v29.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/49c02742b/packages/bitcoin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/49c02742b/packages/bitcoin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/49c02742b/packages/bitcoin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec4ff7a5e/packages/bitcoin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec4ff7a5e/packages/bitcoin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec4ff7a5e/packages/bitcoin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -7749,9 +7749,9 @@
     "depends": [],
     "srcurl": "https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.52.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f26003899/packages/fastfetch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f26003899/packages/fastfetch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f26003899/packages/fastfetch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/88d4d38fe/packages/fastfetch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88d4d38fe/packages/fastfetch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88d4d38fe/packages/fastfetch/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12082,6 +12082,28 @@
     "auto_updated": false
   },
   {
+    "name": "hledger-ui",
+    "version": "1.43.2",
+    "description": "hledger-ui - terminal interface (TUI) for hledger, a robust, friendly plain text accounting app.",
+    "homepage": "https://hledger.org/",
+    "depends": [
+      "libffi",
+      "libiconv",
+      "libgmp",
+      "zlib",
+      "ncurses",
+      "asciinema"
+    ],
+    "srcurl": "https://hackage.haskell.org/package/hledger-ui-1.43.2/hledger-ui-1.43.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60244d4f9/packages/hledger-ui",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60244d4f9/packages/hledger-ui/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60244d4f9/packages/hledger-ui/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
     "name": "hoedown",
     "version": "3.0.7",
     "description": "Hoedown is a revived fork of Sundown, the Markdown parser based on the original code of the Upskirt library",
@@ -13381,7 +13403,7 @@
   },
   {
     "name": "jackett",
-    "version": "0.22.2418",
+    "version": "0.22.2429",
     "description": "API Support for your favorite torrent trackers",
     "homepage": "https://github.com/jackett/jackett",
     "depends": [
@@ -13389,11 +13411,11 @@
       "dotnet-host",
       "dotnet-runtime-8.0"
     ],
-    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.2418.tar.gz",
+    "srcurl": "https://github.com/Jackett/Jackett/archive/refs/tags/v0.22.2429.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/01ed05d04/packages/jackett",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01ed05d04/packages/jackett/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01ed05d04/packages/jackett/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/85e4e945d/packages/jackett",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/85e4e945d/packages/jackett/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/85e4e945d/packages/jackett/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23467,25 +23489,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b6387",
+    "version": "0.0.0-b6390",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6387.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6390.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6752fb8f0/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6752fb8f0/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6752fb8f0/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8e00e59ef/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8e00e59ef/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8e00e59ef/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6752fb8f0/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/6752fb8f0/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/8e00e59ef/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/8e00e59ef/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6752fb8f0/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6752fb8f0/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8e00e59ef/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8e00e59ef/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -38016,15 +38038,15 @@
   },
   {
     "name": "syncthing",
-    "version": "2.0.6",
+    "version": "2.0.7",
     "description": "Decentralized file synchronization",
     "homepage": "https://syncthing.net/",
     "depends": [],
-    "srcurl": "https://github.com/syncthing/syncthing/archive/refs/tags/v2.0.6.tar.gz",
+    "srcurl": "https://github.com/syncthing/syncthing/archive/refs/tags/v2.0.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/937941a86/packages/syncthing",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/937941a86/packages/syncthing/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/937941a86/packages/syncthing/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/41147255b/packages/syncthing",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/41147255b/packages/syncthing/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/41147255b/packages/syncthing/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -41885,24 +41907,24 @@
   },
   {
     "name": "vtm",
-    "version": "2025.09.02",
+    "version": "2025.09.05",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://github.com/directvt/vtm",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2025.09.02.tar.gz",
+    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2025.09.05.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/acb1be082/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/acb1be082/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/acb1be082/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fdf0afde0/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fdf0afde0/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fdf0afde0/packages/vtm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/acb1be082/packages/vtm/0001-fmod.patch",
-      "https://github.com/termux/termux-packages/blob/acb1be082/packages/vtm/0002-no-libinput.patch"
+      "https://github.com/termux/termux-packages/blob/fdf0afde0/packages/vtm/0001-fmod.patch",
+      "https://github.com/termux/termux-packages/blob/fdf0afde0/packages/vtm/0002-no-libinput.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/acb1be082/packages/vtm/0001-fmod.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/acb1be082/packages/vtm/0002-no-libinput.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fdf0afde0/packages/vtm/0001-fmod.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fdf0afde0/packages/vtm/0002-no-libinput.patch"
     ],
     "auto_updated": true
   },
