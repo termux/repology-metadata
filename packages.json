@@ -1152,6 +1152,29 @@
     "auto_updated": false
   },
   {
+    "name": "apt-show-versions",
+    "version": "0.22.16",
+    "description": "Lists available package versions with distribution",
+    "homepage": "https://salsa.debian.org/debian/apt-show-versions",
+    "depends": [
+      "apt",
+      "libapt-pkg-perl",
+      "perl"
+    ],
+    "srcurl": "https://salsa.debian.org/debian/apt-show-versions/-/archive/0.22.16/apt-show-versions-0.22.16.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e9661daa/packages/apt-show-versions",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e9661daa/packages/apt-show-versions/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e9661daa/packages/apt-show-versions/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/9e9661daa/packages/apt-show-versions/termux.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/9e9661daa/packages/apt-show-versions/termux.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "aptly",
     "version": "1.6.2",
     "description": "A Swiss Army knife for Debian repository management",
@@ -8305,7 +8328,7 @@
   },
   {
     "name": "fish",
-    "version": "4.0.2",
+    "version": "4.0.6",
     "description": "The user-friendly command line shell",
     "homepage": "https://fishshell.com/",
     "depends": [
@@ -8317,24 +8340,28 @@
       "mandoc",
       "pcre2"
     ],
-    "srcurl": "https://github.com/fish-shell/fish-shell/releases/download/4.0.2/fish-4.0.2.tar.xz",
+    "srcurl": "https://github.com/fish-shell/fish-shell/releases/download/4.0.6/fish-4.0.6.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/172373a9a/packages/fish",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/172373a9a/packages/fish/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/172373a9a/packages/fish/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/036d4ea4d/packages/fish",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/172373a9a/packages/fish/Cargo.toml.patch",
-      "https://github.com/termux/termux-packages/blob/172373a9a/packages/fish/build.rs.patch",
-      "https://github.com/termux/termux-packages/blob/172373a9a/packages/fish/do-not-import-posix-spawn.patch",
-      "https://github.com/termux/termux-packages/blob/172373a9a/packages/fish/force-d_ino-and-st_mode-types-on-32-bit-android.patch",
-      "https://github.com/termux/termux-packages/blob/172373a9a/packages/fish/share-tools-create_manpage_completions.py.patch"
+      "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/Cargo.toml.patch",
+      "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/build.rs.patch",
+      "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/do-not-import-posix-spawn.patch",
+      "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/force-d_ino-and-st_mode-types-on-32-bit-android.patch",
+      "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/partial-revert-d68f8bd.patch",
+      "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/revert-6644cc9.patch",
+      "https://github.com/termux/termux-packages/blob/036d4ea4d/packages/fish/share-tools-create_manpage_completions.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/172373a9a/packages/fish/Cargo.toml.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/172373a9a/packages/fish/build.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/172373a9a/packages/fish/do-not-import-posix-spawn.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/172373a9a/packages/fish/force-d_ino-and-st_mode-types-on-32-bit-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/172373a9a/packages/fish/share-tools-create_manpage_completions.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/Cargo.toml.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/build.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/do-not-import-posix-spawn.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/force-d_ino-and-st_mode-types-on-32-bit-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/partial-revert-d68f8bd.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/revert-6644cc9.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036d4ea4d/packages/fish/share-tools-create_manpage_completions.py.patch"
     ],
     "auto_updated": true
   },
@@ -14549,25 +14576,23 @@
   },
   {
     "name": "lesspipe",
-    "version": "2.19",
+    "version": "2.20",
     "description": "An input filter for the pager less",
     "homepage": "http://www-zeuthen.desy.de/~friebel/unix/lesspipe.html",
     "depends": [
       "less",
       "file"
     ],
-    "srcurl": "https://github.com/wofr06/lesspipe/archive/refs/tags/v2.19.tar.gz",
+    "srcurl": "https://github.com/wofr06/lesspipe/archive/refs/tags/v2.20.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/17b1002e8/packages/lesspipe",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17b1002e8/packages/lesspipe/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17b1002e8/packages/lesspipe/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/796ceabde/packages/lesspipe",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/796ceabde/packages/lesspipe/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/796ceabde/packages/lesspipe/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/17b1002e8/packages/lesspipe/configure.patch",
-      "https://github.com/termux/termux-packages/blob/17b1002e8/packages/lesspipe/lesspipe.sh.patch"
+      "https://github.com/termux/termux-packages/blob/796ceabde/packages/lesspipe/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/17b1002e8/packages/lesspipe/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17b1002e8/packages/lesspipe/lesspipe.sh.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/796ceabde/packages/lesspipe/configure.patch"
     ],
     "auto_updated": true
   },
@@ -30090,20 +30115,22 @@
     ],
     "srcurl": "https://ftp.debian.org/debian/pool/main/p/pacman4console/pacman4console_1.3.orig.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/64f7c5268/packages/pacman4console",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/64f7c5268/packages/pacman4console/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/64f7c5268/packages/pacman4console/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f55224a8e/packages/pacman4console",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f55224a8e/packages/pacman4console/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f55224a8e/packages/pacman4console/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/64f7c5268/packages/pacman4console/1-pacman.c.patch",
-      "https://github.com/termux/termux-packages/blob/64f7c5268/packages/pacman4console/2-pacman.c.patch",
-      "https://github.com/termux/termux-packages/blob/64f7c5268/packages/pacman4console/3-pacman.c.patch",
-      "https://github.com/termux/termux-packages/blob/64f7c5268/packages/pacman4console/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/f55224a8e/packages/pacman4console/0001-pacman.c.patch",
+      "https://github.com/termux/termux-packages/blob/f55224a8e/packages/pacman4console/0002-pacman.c.patch",
+      "https://github.com/termux/termux-packages/blob/f55224a8e/packages/pacman4console/0003-pacman.c.patch",
+      "https://github.com/termux/termux-packages/blob/f55224a8e/packages/pacman4console/0004-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/f55224a8e/packages/pacman4console/0005-change-share-subdirectory.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/64f7c5268/packages/pacman4console/1-pacman.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64f7c5268/packages/pacman4console/2-pacman.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64f7c5268/packages/pacman4console/3-pacman.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/64f7c5268/packages/pacman4console/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f55224a8e/packages/pacman4console/0001-pacman.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f55224a8e/packages/pacman4console/0002-pacman.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f55224a8e/packages/pacman4console/0003-pacman.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f55224a8e/packages/pacman4console/0004-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f55224a8e/packages/pacman4console/0005-change-share-subdirectory.patch"
     ],
     "auto_updated": false
   },
@@ -30575,26 +30602,6 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
-  },
-  {
-    "name": "pdf2djvu",
-    "version": "0.9.19",
-    "description": "PDF to DjVu converter",
-    "homepage": "https://github.com/jwilk/pdf2djvu",
-    "depends": [
-      "djvulibre",
-      "libc++",
-      "libiconv",
-      "poppler"
-    ],
-    "srcurl": "https://github.com/jwilk/pdf2djvu/releases/download/0.9.19/pdf2djvu-0.9.19.tar.xz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fed3d4371/packages/pdf2djvu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fed3d4371/packages/pdf2djvu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fed3d4371/packages/pdf2djvu/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
   },
   {
     "name": "pdf2svg",
@@ -49195,46 +49202,46 @@
   },
   {
     "name": "firefoxpwa",
-    "version": "2.15.0",
+    "version": "2.16.0",
     "description": "A tool to install, manage and use Progressive Web Apps (PWAs) in Mozilla Firefox (native component)",
     "homepage": "https://pwasforfirefox.filips.si/",
     "depends": [
       "firefox"
     ],
-    "srcurl": "https://github.com/filips123/PWAsForFirefox/archive/refs/tags/v2.15.0.tar.gz",
+    "srcurl": "https://github.com/filips123/PWAsForFirefox/archive/refs/tags/v2.16.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d409fce76/x11-packages/firefoxpwa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6809d16aa/x11-packages/firefoxpwa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_Cargo.toml.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_build.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_manifests_termux.json.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_components_runtime.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_connector_process.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_console_app.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_console_runtime.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_console_site.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_directories.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_integrations_categories.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_integrations_implementation_mod.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_integrations_utils.rs.patch",
-      "https://github.com/termux/termux-packages/blob/d409fce76/x11-packages/firefoxpwa/native_src_storage.rs.patch"
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_Cargo.toml.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_build.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_manifests_termux.json.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_components_runtime.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_connector_process.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_console_app.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_console_runtime.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_console_site.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_directories.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_integrations_categories.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_integrations_implementation_mod.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_integrations_utils.rs.patch",
+      "https://github.com/termux/termux-packages/blob/6809d16aa/x11-packages/firefoxpwa/native_src_storage.rs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_Cargo.toml.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_build.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_manifests_termux.json.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_components_runtime.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_connector_process.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_console_app.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_console_runtime.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_console_site.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_directories.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_integrations_categories.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_integrations_implementation_mod.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_integrations_utils.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d409fce76/x11-packages/firefoxpwa/native_src_storage.rs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_Cargo.toml.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_build.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_manifests_termux.json.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_components_runtime.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_connector_process.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_console_app.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_console_runtime.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_console_site.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_directories.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_integrations_categories.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_integrations_implementation_mod.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_integrations_utils.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6809d16aa/x11-packages/firefoxpwa/native_src_storage.rs.patch"
     ],
     "auto_updated": true
   },
@@ -50024,16 +50031,18 @@
     ],
     "srcurl": "https://downloads.sourceforge.net/glew/glew-2.2.0.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d9458fb3/x11-packages/glew",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d9458fb3/x11-packages/glew/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d9458fb3/x11-packages/glew/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3bbc4a151/x11-packages/glew",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3bbc4a151/x11-packages/glew/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3bbc4a151/x11-packages/glew/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8d9458fb3/x11-packages/glew/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/8d9458fb3/x11-packages/glew/termux-glew-support.patch"
+      "https://github.com/termux/termux-packages/blob/3bbc4a151/x11-packages/glew/0001-termux-glew-support.patch",
+      "https://github.com/termux/termux-packages/blob/3bbc4a151/x11-packages/glew/0002-egl-support.patch",
+      "https://github.com/termux/termux-packages/blob/3bbc4a151/x11-packages/glew/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8d9458fb3/x11-packages/glew/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8d9458fb3/x11-packages/glew/termux-glew-support.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3bbc4a151/x11-packages/glew/0001-termux-glew-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3bbc4a151/x11-packages/glew/0002-egl-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3bbc4a151/x11-packages/glew/Makefile.patch"
     ],
     "auto_updated": false
   },
