@@ -23628,25 +23628,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b6622",
+    "version": "0.0.0-b6628",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6622.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6628.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6d126ac1/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6d126ac1/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6d126ac1/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/491942e71/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/491942e71/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/491942e71/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c6d126ac1/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/c6d126ac1/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/491942e71/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/491942e71/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c6d126ac1/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c6d126ac1/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/491942e71/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/491942e71/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -28834,17 +28834,21 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "26.26.0",
+    "version": "26.26.1",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v26.26.0.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v26.26.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/db8c528bf/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db8c528bf/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db8c528bf/packages/oh-my-posh/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/79b60cbf2/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/79b60cbf2/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/79b60cbf2/packages/oh-my-posh/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/79b60cbf2/packages/oh-my-posh/issue-26712.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/79b60cbf2/packages/oh-my-posh/issue-26712.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -35376,34 +35380,34 @@
   },
   {
     "name": "sbcl",
-    "version": "2.5.8",
+    "version": "2.5.9",
     "description": "A high performance Common Lisp compiler",
     "homepage": "http://www.sbcl.org/",
     "depends": [
       "zstd"
     ],
-    "srcurl": "https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.5.8.tar.gz",
+    "srcurl": "https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.5.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6a279304c/packages/sbcl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0dafd1f0c/packages/sbcl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/disable-close_range-syscall.patch",
-      "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/disable-failing-tests-that-were-only-enabled-on-x86.patch",
-      "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/disable-intermittently-failing-tests.patch",
-      "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/disable-tests-that-only-fail-in-termux-proot.patch",
-      "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/fix-build-on-device.patch",
-      "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/fix-stat-st_nlink-x86.patch",
-      "https://github.com/termux/termux-packages/blob/6a279304c/packages/sbcl/pass-testsuite-on-device.patch"
+      "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/disable-close_range-syscall.patch",
+      "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/disable-failing-tests-that-were-only-enabled-on-x86.patch",
+      "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/disable-intermittently-failing-tests.patch",
+      "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/disable-tests-that-only-fail-in-termux-proot.patch",
+      "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/fix-build-on-device.patch",
+      "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/fix-stat-st_nlink-x86.patch",
+      "https://github.com/termux/termux-packages/blob/0dafd1f0c/packages/sbcl/pass-testsuite-on-device.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/disable-close_range-syscall.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/disable-failing-tests-that-were-only-enabled-on-x86.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/disable-intermittently-failing-tests.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/disable-tests-that-only-fail-in-termux-proot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/fix-build-on-device.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/fix-stat-st_nlink-x86.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6a279304c/packages/sbcl/pass-testsuite-on-device.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/disable-close_range-syscall.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/disable-failing-tests-that-were-only-enabled-on-x86.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/disable-intermittently-failing-tests.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/disable-tests-that-only-fail-in-termux-proot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/fix-build-on-device.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/fix-stat-st_nlink-x86.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0dafd1f0c/packages/sbcl/pass-testsuite-on-device.patch"
     ],
     "auto_updated": true
   },
