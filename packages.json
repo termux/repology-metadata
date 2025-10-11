@@ -9303,11 +9303,15 @@
     ],
     "srcurl": "https://download.gnome.org/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b311d0242/packages/gdk-pixbuf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b311d0242/packages/gdk-pixbuf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b311d0242/packages/gdk-pixbuf/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/553ce72aa/packages/gdk-pixbuf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/553ce72aa/packages/gdk-pixbuf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/553ce72aa/packages/gdk-pixbuf/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/553ce72aa/packages/gdk-pixbuf/xfce-window-list-icons.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/553ce72aa/packages/gdk-pixbuf/xfce-window-list-icons.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -21104,18 +21108,18 @@
   },
   {
     "name": "libspdlog",
-    "version": "1.15.3",
+    "version": "1.16.0",
     "description": "Very fast, header-only/compiled, C++ logging library",
     "homepage": "https://github.com/gabime/spdlog",
     "depends": [
       "libc++",
       "fmt"
     ],
-    "srcurl": "https://github.com/gabime/spdlog/archive/refs/tags/v1.15.3.tar.gz",
+    "srcurl": "https://github.com/gabime/spdlog/archive/refs/tags/v1.16.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3303e979b/packages/libspdlog",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3303e979b/packages/libspdlog/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3303e979b/packages/libspdlog/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/97b6351c9/packages/libspdlog",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/97b6351c9/packages/libspdlog/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/97b6351c9/packages/libspdlog/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23665,25 +23669,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b6732",
+    "version": "0.0.0-b6735",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6732.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6735.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/909dfc1b5/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/909dfc1b5/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/909dfc1b5/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e775b3eca/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e775b3eca/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e775b3eca/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/909dfc1b5/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/909dfc1b5/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/e775b3eca/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/e775b3eca/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/909dfc1b5/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/909dfc1b5/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e775b3eca/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e775b3eca/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -27075,7 +27079,7 @@
   },
   {
     "name": "mympd",
-    "version": "22.1.0",
+    "version": "22.1.1",
     "description": "A standalone and lightweight web-based MPD client",
     "homepage": "https://jcorporation.github.io/myMPD/",
     "depends": [
@@ -27086,24 +27090,24 @@
       "pcre2",
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/jcorporation/myMPD/archive/refs/tags/v22.1.0.tar.gz",
+    "srcurl": "https://github.com/jcorporation/myMPD/archive/refs/tags/v22.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c1d53a3f/packages/mympd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c1d53a3f/packages/mympd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c1d53a3f/packages/mympd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e05135255/packages/mympd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e05135255/packages/mympd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e05135255/packages/mympd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7c1d53a3f/packages/mympd/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/7c1d53a3f/packages/mympd/dist-libmpdclient-include-config.h.patch",
-      "https://github.com/termux/termux-packages/blob/7c1d53a3f/packages/mympd/src-lib-cacertstore.c.patch",
-      "https://github.com/termux/termux-packages/blob/7c1d53a3f/packages/mympd/src-lib-http_client.c.patch",
-      "https://github.com/termux/termux-packages/blob/7c1d53a3f/packages/mympd/src-mympd_client-autoconf.c.patch"
+      "https://github.com/termux/termux-packages/blob/e05135255/packages/mympd/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/e05135255/packages/mympd/dist-libmpdclient-include-config.h.patch",
+      "https://github.com/termux/termux-packages/blob/e05135255/packages/mympd/src-lib-cacertstore.c.patch",
+      "https://github.com/termux/termux-packages/blob/e05135255/packages/mympd/src-lib-http_client.c.patch",
+      "https://github.com/termux/termux-packages/blob/e05135255/packages/mympd/src-mympd_client-autoconf.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7c1d53a3f/packages/mympd/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7c1d53a3f/packages/mympd/dist-libmpdclient-include-config.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7c1d53a3f/packages/mympd/src-lib-cacertstore.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7c1d53a3f/packages/mympd/src-lib-http_client.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7c1d53a3f/packages/mympd/src-mympd_client-autoconf.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e05135255/packages/mympd/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e05135255/packages/mympd/dist-libmpdclient-include-config.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e05135255/packages/mympd/src-lib-cacertstore.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e05135255/packages/mympd/src-lib-http_client.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e05135255/packages/mympd/src-mympd_client-autoconf.c.patch"
     ],
     "auto_updated": true
   },
