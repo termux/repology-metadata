@@ -20575,14 +20575,16 @@
     "depends": [],
     "srcurl": "https://github.com/libsndfile/libsamplerate/archive/refs/tags/0.2.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0d1721147/packages/libsamplerate",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0d1721147/packages/libsamplerate/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0d1721147/packages/libsamplerate/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3723edb51/packages/libsamplerate",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3723edb51/packages/libsamplerate/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3723edb51/packages/libsamplerate/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0d1721147/packages/libsamplerate/CMakeLists.txt.patch32"
+      "https://github.com/termux/termux-packages/blob/3723edb51/packages/libsamplerate/CMakeLists.txt.patch32",
+      "https://github.com/termux/termux-packages/blob/3723edb51/packages/libsamplerate/fix-pkgconfig-file.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0d1721147/packages/libsamplerate/CMakeLists.txt.patch32"
+      "https://raw.githubusercontent.com/termux/termux-packages/3723edb51/packages/libsamplerate/CMakeLists.txt.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/3723edb51/packages/libsamplerate/fix-pkgconfig-file.patch"
     ],
     "auto_updated": false
   },
@@ -23663,25 +23665,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b6730",
+    "version": "0.0.0-b6732",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6730.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6732.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cc0382a41/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cc0382a41/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cc0382a41/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/909dfc1b5/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/909dfc1b5/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/909dfc1b5/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cc0382a41/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/cc0382a41/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/909dfc1b5/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/909dfc1b5/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0382a41/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cc0382a41/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/909dfc1b5/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/909dfc1b5/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -35547,25 +35549,19 @@
   },
   {
     "name": "sccache",
-    "version": "0.10.0",
+    "version": "0.11.0",
     "description": "sccache is ccache with cloud storage",
     "homepage": "https://github.com/mozilla/sccache",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/mozilla/sccache/archive/refs/tags/v0.10.0.tar.gz",
+    "srcurl": "https://github.com/mozilla/sccache/archive/refs/tags/v0.11.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e47542648/packages/sccache",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e47542648/packages/sccache/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e47542648/packages/sccache/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e47542648/packages/sccache/src-net.rs.patch",
-      "https://github.com/termux/termux-packages/blob/e47542648/packages/sccache/src-server.rs.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e47542648/packages/sccache/src-net.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e47542648/packages/sccache/src-server.rs.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7de347812/packages/sccache",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7de347812/packages/sccache/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7de347812/packages/sccache/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -50378,7 +50374,7 @@
   },
   {
     "name": "gnome-calculator",
-    "version": "49.0.1",
+    "version": "49.1",
     "description": "GNOME Scientific calculator",
     "homepage": "https://apps.gnome.org/Calculator",
     "depends": [
@@ -50392,11 +50388,11 @@
       "libsoup3",
       "libxml2"
     ],
-    "srcurl": "https://download.gnome.org/sources/gnome-calculator/49/gnome-calculator-49.0.1.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/gnome-calculator/49/gnome-calculator-49.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3108b5e51/x11-packages/gnome-calculator",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3108b5e51/x11-packages/gnome-calculator/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3108b5e51/x11-packages/gnome-calculator/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1c84781db/x11-packages/gnome-calculator",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1c84781db/x11-packages/gnome-calculator/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1c84781db/x11-packages/gnome-calculator/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
