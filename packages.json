@@ -412,15 +412,15 @@
   },
   {
     "name": "agg",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "description": "asciinema gif generator",
     "homepage": "https://github.com/asciinema/agg",
     "depends": [],
-    "srcurl": "https://github.com/asciinema/agg/archive/refs/tags/v1.6.0.tar.gz",
+    "srcurl": "https://github.com/asciinema/agg/archive/refs/tags/v1.7.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ca79f7efa/packages/agg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ca79f7efa/packages/agg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ca79f7efa/packages/agg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8cc824ef4/packages/agg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8cc824ef4/packages/agg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8cc824ef4/packages/agg/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -6357,7 +6357,7 @@
   },
   {
     "name": "dnsutils",
-    "version": "9.20.13",
+    "version": "9.20.15",
     "description": "Clients provided with BIND",
     "homepage": "https://www.isc.org/bind/",
     "depends": [
@@ -6376,18 +6376,18 @@
       "resolv-conf",
       "zlib"
     ],
-    "srcurl": "https://downloads.isc.org/isc/bind9/9.20.13/bind-9.20.13.tar.xz",
+    "srcurl": "https://downloads.isc.org/isc/bind9/9.20.15/bind-9.20.15.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b9f2ca707/packages/dnsutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b9f2ca707/packages/dnsutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b9f2ca707/packages/dnsutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cf52b71de/packages/dnsutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cf52b71de/packages/dnsutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cf52b71de/packages/dnsutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b9f2ca707/packages/dnsutils/bin-delv-delv.c.patch",
-      "https://github.com/termux/termux-packages/blob/b9f2ca707/packages/dnsutils/socklen_t-fix.patch"
+      "https://github.com/termux/termux-packages/blob/cf52b71de/packages/dnsutils/bin-delv-delv.c.patch",
+      "https://github.com/termux/termux-packages/blob/cf52b71de/packages/dnsutils/socklen_t-fix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b9f2ca707/packages/dnsutils/bin-delv-delv.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b9f2ca707/packages/dnsutils/socklen_t-fix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cf52b71de/packages/dnsutils/bin-delv-delv.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cf52b71de/packages/dnsutils/socklen_t-fix.patch"
     ],
     "auto_updated": true
   },
@@ -6674,20 +6674,24 @@
   },
   {
     "name": "doxygen",
-    "version": "1.14.0",
+    "version": "1.15.0",
     "description": "A documentation system for C++, C, Java, IDL and PHP",
     "homepage": "http://www.doxygen.org",
     "depends": [
       "libc++",
       "libiconv"
     ],
-    "srcurl": "https://github.com/doxygen/doxygen/archive/Release_1_14_0.tar.gz",
+    "srcurl": "https://github.com/doxygen/doxygen/archive/Release_1_15_0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/84bcd3bd0/packages/doxygen",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84bcd3bd0/packages/doxygen/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84bcd3bd0/packages/doxygen/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ad83c1486/packages/doxygen",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ad83c1486/packages/doxygen/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ad83c1486/packages/doxygen/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/ad83c1486/packages/doxygen/0001-disable-ipo.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/ad83c1486/packages/doxygen/0001-disable-ipo.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -22107,7 +22111,7 @@
   },
   {
     "name": "libunbound",
-    "version": "1.24.0",
+    "version": "1.24.1",
     "description": "A validating, recursive, caching DNS resolver",
     "homepage": "https://unbound.net/",
     "depends": [
@@ -22116,18 +22120,18 @@
       "openssl",
       "resolv-conf"
     ],
-    "srcurl": "https://nlnetlabs.nl/downloads/unbound/unbound-1.24.0.tar.gz",
+    "srcurl": "https://nlnetlabs.nl/downloads/unbound/unbound-1.24.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3379a83d/packages/libunbound",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3379a83d/packages/libunbound/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3379a83d/packages/libunbound/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/be92d0e3c/packages/libunbound",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/be92d0e3c/packages/libunbound/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/be92d0e3c/packages/libunbound/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b3379a83d/packages/libunbound/libunbound-libunbound.c.patch",
-      "https://github.com/termux/termux-packages/blob/b3379a83d/packages/libunbound/smallapp-unbound-host.c.patch"
+      "https://github.com/termux/termux-packages/blob/be92d0e3c/packages/libunbound/libunbound-libunbound.c.patch",
+      "https://github.com/termux/termux-packages/blob/be92d0e3c/packages/libunbound/smallapp-unbound-host.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b3379a83d/packages/libunbound/libunbound-libunbound.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b3379a83d/packages/libunbound/smallapp-unbound-host.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/be92d0e3c/packages/libunbound/libunbound-libunbound.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/be92d0e3c/packages/libunbound/smallapp-unbound-host.c.patch"
     ],
     "auto_updated": true
   },
@@ -28037,32 +28041,32 @@
     ],
     "srcurl": "https://nginx.org/download/nginx-1.29.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5fb90fa07/packages/nginx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c08224005/packages/nginx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/Android-crossfile.patch32",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/Android-crossfile.patch64",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/auto-unix.patch",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/cross-compile-nginx.patch",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/nginx.c.patch",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/src-core-ngx_cycle.c.patch",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/src-core-ngx_file.c.patch",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/src-event-modules-ngx_epoll_module.c.patch",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/src-os-unix-ngx_linux_config.h.patch",
-      "https://github.com/termux/termux-packages/blob/5fb90fa07/packages/nginx/src-os-unix-ngx_setaffinity.h.patch"
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/Android-crossfile.patch32",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/Android-crossfile.patch64",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/auto-unix.patch",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/cross-compile-nginx.patch",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/nginx.c.patch",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/src-core-ngx_cycle.c.patch",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/src-core-ngx_file.c.patch",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/src-event-modules-ngx_epoll_module.c.patch",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/src-os-unix-ngx_linux_config.h.patch",
+      "https://github.com/termux/termux-packages/blob/c08224005/packages/nginx/src-os-unix-ngx_setaffinity.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/Android-crossfile.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/Android-crossfile.patch64",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/auto-unix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/cross-compile-nginx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/nginx.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/src-core-ngx_cycle.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/src-core-ngx_file.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/src-event-modules-ngx_epoll_module.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/src-os-unix-ngx_linux_config.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5fb90fa07/packages/nginx/src-os-unix-ngx_setaffinity.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/Android-crossfile.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/Android-crossfile.patch64",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/auto-unix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/cross-compile-nginx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/nginx.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/src-core-ngx_cycle.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/src-core-ngx_file.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/src-event-modules-ngx_epoll_module.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/src-os-unix-ngx_linux_config.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c08224005/packages/nginx/src-os-unix-ngx_setaffinity.h.patch"
     ],
     "auto_updated": true
   },
@@ -36493,15 +36497,15 @@
   },
   {
     "name": "sing-box",
-    "version": "1.12.10",
+    "version": "1.12.11",
     "description": "The universal proxy platform",
     "homepage": "https://sing-box.sagernet.org",
     "depends": [],
-    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.10.tar.gz",
+    "srcurl": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.11.tar.gz",
     "maintainer": "kay9925@outlook.com",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1a18aa123/packages/sing-box",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1a18aa123/packages/sing-box/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1a18aa123/packages/sing-box/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/98303e115/packages/sing-box",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98303e115/packages/sing-box/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98303e115/packages/sing-box/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -44657,17 +44661,17 @@
   },
   {
     "name": "docker-compose",
-    "version": "2.40.1",
+    "version": "2.40.2",
     "description": "Compose is a tool for defining and running multi-container Docker applications.",
     "homepage": "https://github.com/docker/compose",
     "depends": [
       "docker"
     ],
-    "srcurl": "https://github.com/docker/compose/archive/v2.40.1.tar.gz",
+    "srcurl": "https://github.com/docker/compose/archive/v2.40.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/293fea831/root-packages/docker-compose",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/293fea831/root-packages/docker-compose/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/293fea831/root-packages/docker-compose/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8fc1276e2/root-packages/docker-compose",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8fc1276e2/root-packages/docker-compose/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8fc1276e2/root-packages/docker-compose/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56452,7 +56456,7 @@
   },
   {
     "name": "musescore",
-    "version": "4.6.2",
+    "version": "4.6.3",
     "description": "A music score editor/player",
     "homepage": "https://musescore.org/",
     "depends": [
@@ -56467,18 +56471,18 @@
       "libsndfile",
       "alsa-lib"
     ],
-    "srcurl": "https://github.com/musescore/MuseScore/archive/refs/tags/v4.6.2.tar.gz",
+    "srcurl": "https://github.com/musescore/MuseScore/archive/refs/tags/v4.6.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d92f4d394/x11-packages/musescore",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d92f4d394/x11-packages/musescore/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d92f4d394/x11-packages/musescore/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5260e3863/x11-packages/musescore",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5260e3863/x11-packages/musescore/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5260e3863/x11-packages/musescore/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d92f4d394/x11-packages/musescore/cmake-find-qtprivate-libraries.patch",
-      "https://github.com/termux/termux-packages/blob/d92f4d394/x11-packages/musescore/on-device-build-support.patch"
+      "https://github.com/termux/termux-packages/blob/5260e3863/x11-packages/musescore/cmake-find-qtprivate-libraries.patch",
+      "https://github.com/termux/termux-packages/blob/5260e3863/x11-packages/musescore/on-device-build-support.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d92f4d394/x11-packages/musescore/cmake-find-qtprivate-libraries.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d92f4d394/x11-packages/musescore/on-device-build-support.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5260e3863/x11-packages/musescore/cmake-find-qtprivate-libraries.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5260e3863/x11-packages/musescore/on-device-build-support.patch"
     ],
     "auto_updated": true
   },
@@ -60263,7 +60267,7 @@
   },
   {
     "name": "telegram-desktop",
-    "version": "6.2.3",
+    "version": "6.2.4",
     "description": "Telegram Desktop Client",
     "homepage": "https://desktop.telegram.org/",
     "depends": [
@@ -60301,26 +60305,26 @@
       "xxhash",
       "zlib"
     ],
-    "srcurl": "https://github.com/telegramdesktop/tdesktop/releases/download/v6.2.3/tdesktop-6.2.3-full.tar.gz",
+    "srcurl": "https://github.com/telegramdesktop/tdesktop/releases/download/v6.2.4/tdesktop-6.2.4-full.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b124a6f20/x11-packages/telegram-desktop",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b124a6f20/x11-packages/telegram-desktop/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b124a6f20/x11-packages/telegram-desktop/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/76f1b9fc4/x11-packages/telegram-desktop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/76f1b9fc4/x11-packages/telegram-desktop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/76f1b9fc4/x11-packages/telegram-desktop/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b124a6f20/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
-      "https://github.com/termux/termux-packages/blob/b124a6f20/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
-      "https://github.com/termux/termux-packages/blob/b124a6f20/x11-packages/telegram-desktop/0003-argument-deduction.patch",
-      "https://github.com/termux/termux-packages/blob/b124a6f20/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
-      "https://github.com/termux/termux-packages/blob/b124a6f20/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
-      "https://github.com/termux/termux-packages/blob/b124a6f20/x11-packages/telegram-desktop/0006-gir-version.patch"
+      "https://github.com/termux/termux-packages/blob/76f1b9fc4/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://github.com/termux/termux-packages/blob/76f1b9fc4/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
+      "https://github.com/termux/termux-packages/blob/76f1b9fc4/x11-packages/telegram-desktop/0003-argument-deduction.patch",
+      "https://github.com/termux/termux-packages/blob/76f1b9fc4/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
+      "https://github.com/termux/termux-packages/blob/76f1b9fc4/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
+      "https://github.com/termux/termux-packages/blob/76f1b9fc4/x11-packages/telegram-desktop/0006-gir-version.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b124a6f20/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b124a6f20/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b124a6f20/x11-packages/telegram-desktop/0003-argument-deduction.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b124a6f20/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b124a6f20/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b124a6f20/x11-packages/telegram-desktop/0006-gir-version.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/76f1b9fc4/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/76f1b9fc4/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/76f1b9fc4/x11-packages/telegram-desktop/0003-argument-deduction.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/76f1b9fc4/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/76f1b9fc4/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/76f1b9fc4/x11-packages/telegram-desktop/0006-gir-version.patch"
     ],
     "auto_updated": true
   },
