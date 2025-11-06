@@ -21313,26 +21313,24 @@
   },
   {
     "name": "libsqlite",
-    "version": "3.50.4",
+    "version": "3.51.0",
     "description": "Library implementing a self-contained and transactional SQL database engine",
     "homepage": "https://www.sqlite.org",
     "depends": [
       "zlib"
     ],
-    "srcurl": "https://www.sqlite.org/2025/sqlite-src-3500400.zip",
+    "srcurl": "https://www.sqlite.org/2025/sqlite-src-3510000.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/210cf16e3/packages/libsqlite",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/210cf16e3/packages/libsqlite/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/210cf16e3/packages/libsqlite/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/150f407d8/packages/libsqlite",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/150f407d8/packages/libsqlite/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/150f407d8/packages/libsqlite/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/210cf16e3/packages/libsqlite/backport-tool-buildtclext.tcl.patch",
-      "https://github.com/termux/termux-packages/blob/210cf16e3/packages/libsqlite/src-os_unix.c.patch",
-      "https://github.com/termux/termux-packages/blob/210cf16e3/packages/libsqlite/src-tclsqlite.patch"
+      "https://github.com/termux/termux-packages/blob/150f407d8/packages/libsqlite/src-os_unix.c.patch",
+      "https://github.com/termux/termux-packages/blob/150f407d8/packages/libsqlite/src-tclsqlite.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/210cf16e3/packages/libsqlite/backport-tool-buildtclext.tcl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/210cf16e3/packages/libsqlite/src-os_unix.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/210cf16e3/packages/libsqlite/src-tclsqlite.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/150f407d8/packages/libsqlite/src-os_unix.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/150f407d8/packages/libsqlite/src-tclsqlite.patch"
     ],
     "auto_updated": true
   },
@@ -23776,25 +23774,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b6967",
+    "version": "0.0.0-b6970",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6967.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b6970.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a067aeef9/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a067aeef9/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a067aeef9/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d5895b9c/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d5895b9c/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d5895b9c/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a067aeef9/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/a067aeef9/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/7d5895b9c/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/7d5895b9c/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a067aeef9/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a067aeef9/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7d5895b9c/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7d5895b9c/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -27015,6 +27013,27 @@
     "auto_updated": false
   },
   {
+    "name": "mujs",
+    "version": "1.3.7",
+    "description": "A lightweight Javascript interpreter designed for embedding in other software",
+    "homepage": "https://mujs.com/",
+    "depends": [
+      "readline"
+    ],
+    "srcurl": "https://codeberg.org/ccxvii/mujs/archive/1.3.7.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a4851e2d7/packages/mujs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a4851e2d7/packages/mujs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a4851e2d7/packages/mujs/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/a4851e2d7/packages/mujs/ldflags.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/a4851e2d7/packages/mujs/ldflags.patch"
+    ],
+    "auto_updated": true
+  },
+  {
     "name": "multitail",
     "version": "7.1.5",
     "description": "Tool to monitor logfiles and command output in multiple windows in a terminal, colorize, filter and merge",
@@ -29003,20 +29022,20 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "27.5.1",
+    "version": "27.5.2",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v27.5.1.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v27.5.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b12b7ebc8/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b12b7ebc8/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b12b7ebc8/packages/oh-my-posh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/36277ed5c/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/36277ed5c/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/36277ed5c/packages/oh-my-posh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b12b7ebc8/packages/oh-my-posh/issue-26712.patch"
+      "https://github.com/termux/termux-packages/blob/36277ed5c/packages/oh-my-posh/issue-26712.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b12b7ebc8/packages/oh-my-posh/issue-26712.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/36277ed5c/packages/oh-my-posh/issue-26712.patch"
     ],
     "auto_updated": true
   },
@@ -33017,18 +33036,18 @@
   },
   {
     "name": "python-apsw",
-    "version": "3.50.4.0",
+    "version": "3.51.0.0",
     "description": "Another Python SQLite Wrapper",
-    "homepage": "https://github.com/rogerbinns/apsw/",
+    "homepage": "https://rogerbinns.github.io/apsw/",
     "depends": [
       "libsqlite",
       "python"
     ],
-    "srcurl": "https://github.com/rogerbinns/apsw/releases/download/3.50.4.0/apsw-3.50.4.0.zip",
+    "srcurl": "https://github.com/rogerbinns/apsw/releases/download/3.51.0.0/apsw-3.51.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb59935c3/packages/python-apsw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb59935c3/packages/python-apsw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb59935c3/packages/python-apsw/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9446c7170/packages/python-apsw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9446c7170/packages/python-apsw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9446c7170/packages/python-apsw/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35998,15 +36017,15 @@
   },
   {
     "name": "seanime",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "Self-hosted anime and manga server for sea rovers.",
     "homepage": "https://github.com/5rahim/seanime",
     "depends": [],
-    "srcurl": "https://github.com/5rahim/seanime/archive/refs/tags/v3.0.0.tar.gz",
+    "srcurl": "https://github.com/5rahim/seanime/archive/refs/tags/v3.0.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/acde0a1be/packages/seanime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/acde0a1be/packages/seanime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/acde0a1be/packages/seanime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/276a664ec/packages/seanime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/276a664ec/packages/seanime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/276a664ec/packages/seanime/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -46595,7 +46614,7 @@
   },
   {
     "name": "ark",
-    "version": "25.08.2",
+    "version": "25.08.3",
     "description": "KDE Archiving Tool",
     "homepage": "https://apps.kde.org/ark",
     "depends": [
@@ -46628,11 +46647,11 @@
       "unrar",
       "zlib"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/25.08.2/src/ark-25.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/25.08.3/src/ark-25.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e3b7a6ec/x11-packages/ark",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e3b7a6ec/x11-packages/ark/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e3b7a6ec/x11-packages/ark/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3c318ea92/x11-packages/ark",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3c318ea92/x11-packages/ark/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3c318ea92/x11-packages/ark/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -48956,7 +48975,7 @@
   },
   {
     "name": "elisa",
-    "version": "25.08.2",
+    "version": "25.08.3",
     "description": "A simple music player developed by KDE",
     "homepage": "https://apps.kde.org/elisa/",
     "depends": [
@@ -48981,11 +49000,11 @@
       "qt6-qtmultimedia",
       "vlc"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/25.08.2/src/elisa-25.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/25.08.3/src/elisa-25.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f2cd889e/x11-packages/elisa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f2cd889e/x11-packages/elisa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f2cd889e/x11-packages/elisa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ed6d810c0/x11-packages/elisa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ed6d810c0/x11-packages/elisa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ed6d810c0/x11-packages/elisa/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49599,7 +49618,7 @@
   },
   {
     "name": "filelight",
-    "version": "25.08.2",
+    "version": "25.08.3",
     "description": "View disk usage information",
     "homepage": "https://apps.kde.org/filelight/",
     "depends": [
@@ -49616,11 +49635,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/25.08.2/src/filelight-25.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/25.08.3/src/filelight-25.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f588c7048/x11-packages/filelight",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f588c7048/x11-packages/filelight/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f588c7048/x11-packages/filelight/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/25a1aa176/x11-packages/filelight",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/25a1aa176/x11-packages/filelight/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/25a1aa176/x11-packages/filelight/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -52094,7 +52113,7 @@
   },
   {
     "name": "kcalc",
-    "version": "25.08.2",
+    "version": "25.08.3",
     "description": "Scientific Calculator by KDE",
     "homepage": "https://apps.kde.org/kcalc/",
     "depends": [
@@ -52114,18 +52133,18 @@
       "libmpfr",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/25.08.2/src/kcalc-25.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/25.08.3/src/kcalc-25.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d2ac365da/x11-packages/kcalc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d2ac365da/x11-packages/kcalc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d2ac365da/x11-packages/kcalc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/06f232ed3/x11-packages/kcalc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/06f232ed3/x11-packages/kcalc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/06f232ed3/x11-packages/kcalc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kdegraphics-mobipocket",
-    "version": "25.08.2",
+    "version": "25.08.3",
     "description": "A library to handle mobipocket files",
     "homepage": "https://invent.kde.org/graphics/kdegraphics-mobipocket",
     "depends": [
@@ -52133,18 +52152,18 @@
       "qt6-qt5compat",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/25.08.2/src/kdegraphics-mobipocket-25.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/25.08.3/src/kdegraphics-mobipocket-25.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/29c73a9d0/x11-packages/kdegraphics-mobipocket",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29c73a9d0/x11-packages/kdegraphics-mobipocket/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29c73a9d0/x11-packages/kdegraphics-mobipocket/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ead5f016e/x11-packages/kdegraphics-mobipocket",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ead5f016e/x11-packages/kdegraphics-mobipocket/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ead5f016e/x11-packages/kdegraphics-mobipocket/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kdenlive",
-    "version": "25.08.2",
+    "version": "25.08.3",
     "description": "A non-linear video editor for Linux using the MLT video framework",
     "homepage": "https://apps.kde.org/kdenlive/",
     "depends": [
@@ -52185,11 +52204,11 @@
       "qt6-qtsvg",
       "shared-mime-info"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/25.08.2/src/kdenlive-25.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/25.08.3/src/kdenlive-25.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/00a04a92b/x11-packages/kdenlive",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00a04a92b/x11-packages/kdenlive/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00a04a92b/x11-packages/kdenlive/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/479fd5c5a/x11-packages/kdenlive",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/479fd5c5a/x11-packages/kdenlive/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/479fd5c5a/x11-packages/kdenlive/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -53361,7 +53380,7 @@
   },
   {
     "name": "konsole",
-    "version": "25.08.2",
+    "version": "25.08.3",
     "description": "KDE terminal emulator",
     "homepage": "https://apps.kde.org/konsole/",
     "depends": [
@@ -53387,11 +53406,11 @@
       "qt6-qtbase",
       "qt6-qtmultimedia"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/25.08.2/src/konsole-25.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/25.08.3/src/konsole-25.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/290c12771/x11-packages/konsole",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/290c12771/x11-packages/konsole/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/290c12771/x11-packages/konsole/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b7e3fd716/x11-packages/konsole",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b7e3fd716/x11-packages/konsole/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b7e3fd716/x11-packages/konsole/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
