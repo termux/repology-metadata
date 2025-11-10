@@ -23144,28 +23144,27 @@
   },
   {
     "name": "libxml2",
-    "version": "2.15.0",
+    "version": "2.15.1",
     "description": "Library for parsing XML documents",
     "homepage": "https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home",
     "depends": [
+      "libandroid-glob",
       "libiconv",
       "libicu",
       "zlib"
     ],
-    "srcurl": "https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.0.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a224ca8fe/packages/libxml2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a224ca8fe/packages/libxml2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a224ca8fe/packages/libxml2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6713210e1/packages/libxml2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6713210e1/packages/libxml2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6713210e1/packages/libxml2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a224ca8fe/packages/libxml2/backport-dc307e3-mandir-fix.patch",
-      "https://github.com/termux/termux-packages/blob/a224ca8fe/packages/libxml2/no-doxygen.patch",
-      "https://github.com/termux/termux-packages/blob/a224ca8fe/packages/libxml2/revert-Make-xmlFreeNodeList-non-recursive.patch"
+      "https://github.com/termux/termux-packages/blob/6713210e1/packages/libxml2/no-doxygen.patch",
+      "https://github.com/termux/termux-packages/blob/6713210e1/packages/libxml2/revert-Make-xmlFreeNodeList-non-recursive.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a224ca8fe/packages/libxml2/backport-dc307e3-mandir-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a224ca8fe/packages/libxml2/no-doxygen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a224ca8fe/packages/libxml2/revert-Make-xmlFreeNodeList-non-recursive.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6713210e1/packages/libxml2/no-doxygen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6713210e1/packages/libxml2/revert-Make-xmlFreeNodeList-non-recursive.patch"
     ],
     "auto_updated": true
   },
@@ -23774,25 +23773,25 @@
   },
   {
     "name": "llama-cpp",
-    "version": "0.0.0-b7007",
+    "version": "0.0.0-b7010",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
       "libc++",
       "libcurl"
     ],
-    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b7007.tar.gz",
+    "srcurl": "https://github.com/ggml-org/llama.cpp/archive/refs/tags/b7010.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8e24cf456/packages/llama-cpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8e24cf456/packages/llama-cpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8e24cf456/packages/llama-cpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c45673570/packages/llama-cpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c45673570/packages/llama-cpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c45673570/packages/llama-cpp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8e24cf456/packages/llama-cpp/0001-search-dirs.patch",
-      "https://github.com/termux/termux-packages/blob/8e24cf456/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://github.com/termux/termux-packages/blob/c45673570/packages/llama-cpp/0001-search-dirs.patch",
+      "https://github.com/termux/termux-packages/blob/c45673570/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8e24cf456/packages/llama-cpp/0001-search-dirs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8e24cf456/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c45673570/packages/llama-cpp/0001-search-dirs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c45673570/packages/llama-cpp/0002-do-not-install-backend-libs.patch"
     ],
     "auto_updated": true
   },
@@ -27014,22 +27013,22 @@
   },
   {
     "name": "mujs",
-    "version": "1.3.7",
+    "version": "1.3.8",
     "description": "A lightweight Javascript interpreter designed for embedding in other software",
     "homepage": "https://mujs.com/",
     "depends": [
       "readline"
     ],
-    "srcurl": "https://codeberg.org/ccxvii/mujs/archive/1.3.7.tar.gz",
+    "srcurl": "https://codeberg.org/ccxvii/mujs/archive/1.3.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/506443086/packages/mujs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/506443086/packages/mujs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/506443086/packages/mujs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/301bcdc57/packages/mujs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/301bcdc57/packages/mujs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/301bcdc57/packages/mujs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/506443086/packages/mujs/ldflags.patch"
+      "https://github.com/termux/termux-packages/blob/301bcdc57/packages/mujs/ldflags.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/506443086/packages/mujs/ldflags.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/301bcdc57/packages/mujs/ldflags.patch"
     ],
     "auto_updated": true
   },
@@ -40161,15 +40160,15 @@
   },
   {
     "name": "topgrade",
-    "version": "16.1.2",
+    "version": "16.2.0",
     "description": "Upgrade all the things",
     "homepage": "https://github.com/topgrade-rs/topgrade/",
     "depends": [],
-    "srcurl": "https://github.com/topgrade-rs/topgrade/archive/v16.1.2.tar.gz",
+    "srcurl": "https://github.com/topgrade-rs/topgrade/archive/v16.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/46abaed4b/packages/topgrade",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/46abaed4b/packages/topgrade/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/46abaed4b/packages/topgrade/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3a7c17f36/packages/topgrade",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3a7c17f36/packages/topgrade/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3a7c17f36/packages/topgrade/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -45543,15 +45542,15 @@
   },
   {
     "name": "nexttrace",
-    "version": "1.4.3-beta.1",
+    "version": "1.5.0~beta.1",
     "description": "An open source visual routing tool that pursues light weight",
     "homepage": "https://github.com/nxtrace/Ntrace-V1",
     "depends": [],
-    "srcurl": "https://github.com/nxtrace/Ntrace-V1/archive/refs/tags/v1.4.3-beta.1.tar.gz",
+    "srcurl": "https://github.com/nxtrace/Ntrace-V1/archive/refs/tags/v1.5.0-beta.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/245176f8e/root-packages/nexttrace",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/245176f8e/root-packages/nexttrace/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/245176f8e/root-packages/nexttrace/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ffab0874/root-packages/nexttrace",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ffab0874/root-packages/nexttrace/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ffab0874/root-packages/nexttrace/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
