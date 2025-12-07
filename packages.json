@@ -3130,45 +3130,49 @@
     "version": "1.37.0",
     "description": "Tiny versions of many common UNIX utilities into a single small executable",
     "homepage": "https://busybox.net/",
-    "depends": [],
+    "depends": [
+      "libandroid-selinux"
+    ],
     "srcurl": "https://busybox.net/downloads/busybox-1.37.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/65a2f9c81/packages/busybox",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/edad12a49/packages/busybox",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0000-use-clang.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0001-clang-fix.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0002-hardcoded-paths-fix.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0003-strchrnul-fix.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0005-no-change-identity.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0006-miscutils-crond.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0007-miscutils-crontab.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0008-networking-ftpd-no-chroot.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0009-networking-httpd-default-port.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0011-networking-tftp-no-chroot.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0012-util-linux-mount-no-addmntent.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0013-busybox-1.36.1-kernel-6.8.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0014-fix-segfault.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0015-fix-ipv6.patch",
-      "https://github.com/termux/termux-packages/blob/65a2f9c81/packages/busybox/0016-fix-ipv6-2.patch"
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0000-use-clang.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0001-clang-fix.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0002-hardcoded-paths-fix.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0003-strchrnul-fix.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0005-no-change-identity.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0006-miscutils-crond.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0007-miscutils-crontab.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0008-networking-ftpd-no-chroot.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0009-networking-httpd-default-port.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0011-networking-tftp-no-chroot.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0012-util-linux-mount-no-addmntent.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0013-busybox-1.36.1-kernel-6.8.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0014-fix-segfault.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0015-fix-ipv6.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/0016-fix-ipv6-2.patch",
+      "https://github.com/termux/termux-packages/blob/edad12a49/packages/busybox/selinux.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0000-use-clang.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0001-clang-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0002-hardcoded-paths-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0003-strchrnul-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0005-no-change-identity.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0006-miscutils-crond.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0007-miscutils-crontab.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0008-networking-ftpd-no-chroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0009-networking-httpd-default-port.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0011-networking-tftp-no-chroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0012-util-linux-mount-no-addmntent.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0013-busybox-1.36.1-kernel-6.8.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0014-fix-segfault.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0015-fix-ipv6.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65a2f9c81/packages/busybox/0016-fix-ipv6-2.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0000-use-clang.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0001-clang-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0002-hardcoded-paths-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0003-strchrnul-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0005-no-change-identity.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0006-miscutils-crond.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0007-miscutils-crontab.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0008-networking-ftpd-no-chroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0009-networking-httpd-default-port.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0011-networking-tftp-no-chroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0012-util-linux-mount-no-addmntent.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0013-busybox-1.36.1-kernel-6.8.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0014-fix-segfault.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0015-fix-ipv6.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/0016-fix-ipv6-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edad12a49/packages/busybox/selinux.patch"
     ],
     "auto_updated": false
   },
@@ -7495,24 +7499,24 @@
     ],
     "srcurl": "git+https://github.com/emscripten-core/emscripten",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e0dadb498/packages/emscripten",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e0dadb498/packages/emscripten/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e0dadb498/packages/emscripten/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d39d5c954/packages/emscripten",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d39d5c954/packages/emscripten/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d39d5c954/packages/emscripten/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e0dadb498/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
-      "https://github.com/termux/termux-packages/blob/e0dadb498/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
-      "https://github.com/termux/termux-packages/blob/e0dadb498/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
-      "https://github.com/termux/termux-packages/blob/e0dadb498/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
-      "https://github.com/termux/termux-packages/blob/e0dadb498/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
-      "https://github.com/termux/termux-packages/blob/e0dadb498/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
+      "https://github.com/termux/termux-packages/blob/d39d5c954/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
+      "https://github.com/termux/termux-packages/blob/d39d5c954/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
+      "https://github.com/termux/termux-packages/blob/d39d5c954/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
+      "https://github.com/termux/termux-packages/blob/d39d5c954/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
+      "https://github.com/termux/termux-packages/blob/d39d5c954/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
+      "https://github.com/termux/termux-packages/blob/d39d5c954/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e0dadb498/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0dadb498/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0dadb498/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0dadb498/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0dadb498/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0dadb498/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/d39d5c954/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d39d5c954/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d39d5c954/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d39d5c954/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d39d5c954/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d39d5c954/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
     ],
     "auto_updated": true
   },
@@ -17861,11 +17865,15 @@
     ],
     "srcurl": "git+https://github.com/libimobiledevice/libimobiledevice",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/440e3cad0/packages/libimobiledevice",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/440e3cad0/packages/libimobiledevice/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/440e3cad0/packages/libimobiledevice/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/612d7ed68/packages/libimobiledevice",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/612d7ed68/packages/libimobiledevice/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/612d7ed68/packages/libimobiledevice/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/612d7ed68/packages/libimobiledevice/common-userpref.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/612d7ed68/packages/libimobiledevice/common-userpref.c.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -20247,14 +20255,14 @@
     ],
     "srcurl": "https://github.com/protocolbuffers/protobuf/archive/v33.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/404f483c7/packages/libprotobuf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/404f483c7/packages/libprotobuf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/404f483c7/packages/libprotobuf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3fe5e3eb3/packages/libprotobuf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3fe5e3eb3/packages/libprotobuf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3fe5e3eb3/packages/libprotobuf/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/404f483c7/packages/libprotobuf/retain-linker-array.patch"
+      "https://github.com/termux/termux-packages/blob/3fe5e3eb3/packages/libprotobuf/retain-linker-array.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/404f483c7/packages/libprotobuf/retain-linker-array.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3fe5e3eb3/packages/libprotobuf/retain-linker-array.patch"
     ],
     "auto_updated": false
   },
@@ -24956,18 +24964,18 @@
   },
   {
     "name": "marksman",
-    "version": "2024.12.18",
+    "version": "2025.11.30",
     "description": "LSP language server for editing Markdown files",
     "homepage": "https://github.com/artempyanykh/marksman",
     "depends": [
       "dotnet-host",
-      "dotnet-runtime-8.0"
+      "dotnet-runtime-9.0"
     ],
     "srcurl": "git+https://github.com/artempyanykh/marksman",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3203a79a4/packages/marksman",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3203a79a4/packages/marksman/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3203a79a4/packages/marksman/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ad78f3eaf/packages/marksman",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ad78f3eaf/packages/marksman/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ad78f3eaf/packages/marksman/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -29073,20 +29081,20 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "28.1.0",
+    "version": "28.1.1",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v28.1.0.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/v28.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f91e2906/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f91e2906/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f91e2906/packages/oh-my-posh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/235567d13/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/235567d13/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/235567d13/packages/oh-my-posh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5f91e2906/packages/oh-my-posh/issue-26712.patch"
+      "https://github.com/termux/termux-packages/blob/235567d13/packages/oh-my-posh/issue-26712.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5f91e2906/packages/oh-my-posh/issue-26712.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/235567d13/packages/oh-my-posh/issue-26712.patch"
     ],
     "auto_updated": true
   },
@@ -32556,29 +32564,6 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
-  },
-  {
-    "name": "protobuf-static",
-    "version": "33.1",
-    "description": "Protocol buffers C++ library (static)",
-    "homepage": "https://github.com/protocolbuffers/protobuf",
-    "depends": [
-      "abseil-cpp",
-      "libc++",
-      "zlib"
-    ],
-    "srcurl": "https://github.com/protocolbuffers/protobuf/archive/v33.1.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8af718ec2/packages/protobuf-static",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8af718ec2/packages/protobuf-static/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8af718ec2/packages/protobuf-static/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8af718ec2/packages/protobuf-static/retain-linker-array.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8af718ec2/packages/protobuf-static/retain-linker-array.patch"
-    ],
-    "auto_updated": false
   },
   {
     "name": "proton-bridge",
@@ -44405,18 +44390,18 @@
   },
   {
     "name": "zls",
-    "version": "0.15.0",
+    "version": "0.15.1",
     "description": "Zig language server",
     "homepage": "https://github.com/zigtools/zls",
     "depends": [],
-    "srcurl": "https://github.com/zigtools/zls/archive/refs/tags/0.15.0.tar.gz",
+    "srcurl": "https://github.com/zigtools/zls/archive/refs/tags/0.15.1.tar.gz",
     "maintainer": "Joshua Kahn @TomJo2000",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1198b5f8c/packages/zls",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1198b5f8c/packages/zls/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1198b5f8c/packages/zls/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/adb6aa2bf/packages/zls",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/adb6aa2bf/packages/zls/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/adb6aa2bf/packages/zls/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "znc",
