@@ -556,23 +556,25 @@
   },
   {
     "name": "alsa-lib",
-    "version": "1.2.14",
+    "version": "1.2.15",
     "description": "The Advanced Linux Sound Architecture (ALSA) - library",
     "homepage": "https://www.alsa-project.org",
     "depends": [
       "libandroid-sysv-semaphore",
       "libandroid-shmem"
     ],
-    "srcurl": "https://github.com/alsa-project/alsa-lib/archive/refs/tags/v1.2.14.tar.gz",
+    "srcurl": "https://github.com/alsa-project/alsa-lib/archive/refs/tags/v1.2.15.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c113984fa/packages/alsa-lib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c113984fa/packages/alsa-lib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c113984fa/packages/alsa-lib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9691eab7c/packages/alsa-lib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9691eab7c/packages/alsa-lib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9691eab7c/packages/alsa-lib/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c113984fa/packages/alsa-lib/0001-path.patch"
+      "https://github.com/termux/termux-packages/blob/9691eab7c/packages/alsa-lib/0001-path.patch",
+      "https://github.com/termux/termux-packages/blob/9691eab7c/packages/alsa-lib/src-ucm-ucm_exec.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c113984fa/packages/alsa-lib/0001-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9691eab7c/packages/alsa-lib/0001-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9691eab7c/packages/alsa-lib/src-ucm-ucm_exec.c.patch"
     ],
     "auto_updated": true
   },
@@ -3232,24 +3234,24 @@
   },
   {
     "name": "c-ares",
-    "version": "1.34.5",
+    "version": "1.34.6",
     "description": "Library for asynchronous DNS requests (including name resolves)",
     "homepage": "https://c-ares.org/",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/c-ares/c-ares/archive/v1.34.5.tar.gz",
+    "srcurl": "https://github.com/c-ares/c-ares/archive/v1.34.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a179c8737/packages/c-ares",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a179c8737/packages/c-ares/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a179c8737/packages/c-ares/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/92a9cf5b8/packages/c-ares",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92a9cf5b8/packages/c-ares/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92a9cf5b8/packages/c-ares/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a179c8737/packages/c-ares/0001-disable-ares-android.patch",
-      "https://github.com/termux/termux-packages/blob/a179c8737/packages/c-ares/0002-fix-path-etc-hosts.patch"
+      "https://github.com/termux/termux-packages/blob/92a9cf5b8/packages/c-ares/0001-disable-ares-android.patch",
+      "https://github.com/termux/termux-packages/blob/92a9cf5b8/packages/c-ares/0002-fix-path-etc-hosts.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a179c8737/packages/c-ares/0001-disable-ares-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a179c8737/packages/c-ares/0002-fix-path-etc-hosts.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/92a9cf5b8/packages/c-ares/0001-disable-ares-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/92a9cf5b8/packages/c-ares/0002-fix-path-etc-hosts.patch"
     ],
     "auto_updated": true
   },
@@ -4428,7 +4430,7 @@
   },
   {
     "name": "clvk",
-    "version": "0.0.20251107.020807",
+    "version": "0.0.20251208.172026",
     "description": "Experimental implementation of OpenCL on Vulkan",
     "homepage": "https://github.com/kpet/clvk",
     "depends": [
@@ -4437,18 +4439,18 @@
     ],
     "srcurl": "git+https://github.com/kpet/clvk",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f532fe8bb/packages/clvk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f532fe8bb/packages/clvk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f532fe8bb/packages/clvk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4bf37f1cd/packages/clvk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4bf37f1cd/packages/clvk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4bf37f1cd/packages/clvk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f532fe8bb/packages/clvk/0001-Do-not-use-__builtin_elementwise_popcount-for-clc_po.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/f532fe8bb/packages/clvk/0002-Do-not-use-__builtin_elementwise_maximumnum-for-clc_.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/f532fe8bb/packages/clvk/0002-Do-not-use-__builtin_elementwise_minimumnum-for-clc_.patch.beforehostbuild"
+      "https://github.com/termux/termux-packages/blob/4bf37f1cd/packages/clvk/0001-Do-not-use-__builtin_elementwise_popcount-for-clc_po.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/4bf37f1cd/packages/clvk/0002-Do-not-use-__builtin_elementwise_maximumnum-for-clc_.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/4bf37f1cd/packages/clvk/0002-Do-not-use-__builtin_elementwise_minimumnum-for-clc_.patch.beforehostbuild"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f532fe8bb/packages/clvk/0001-Do-not-use-__builtin_elementwise_popcount-for-clc_po.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/f532fe8bb/packages/clvk/0002-Do-not-use-__builtin_elementwise_maximumnum-for-clc_.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/f532fe8bb/packages/clvk/0002-Do-not-use-__builtin_elementwise_minimumnum-for-clc_.patch.beforehostbuild"
+      "https://raw.githubusercontent.com/termux/termux-packages/4bf37f1cd/packages/clvk/0001-Do-not-use-__builtin_elementwise_popcount-for-clc_po.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/4bf37f1cd/packages/clvk/0002-Do-not-use-__builtin_elementwise_maximumnum-for-clc_.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/4bf37f1cd/packages/clvk/0002-Do-not-use-__builtin_elementwise_minimumnum-for-clc_.patch.beforehostbuild"
     ],
     "auto_updated": true
   },
@@ -30480,20 +30482,20 @@
   },
   {
     "name": "oxlint",
-    "version": "1.31.0",
+    "version": "1.32.0",
     "description": "Oxc JavaScript linter",
     "homepage": "https://oxc.rs/",
     "depends": [],
-    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.31.0.tar.gz",
+    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.32.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37e0e17c7/packages/oxlint",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37e0e17c7/packages/oxlint/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37e0e17c7/packages/oxlint/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2d656887b/packages/oxlint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2d656887b/packages/oxlint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2d656887b/packages/oxlint/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/37e0e17c7/packages/oxlint/32-bit-arm.patch"
+      "https://github.com/termux/termux-packages/blob/2d656887b/packages/oxlint/32-bit-arm.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/37e0e17c7/packages/oxlint/32-bit-arm.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2d656887b/packages/oxlint/32-bit-arm.patch"
     ],
     "auto_updated": true
   },
