@@ -20714,22 +20714,23 @@
     "homepage": "https://rocksdb.org/",
     "depends": [
       "gflags",
-      "libc++"
+      "libc++",
+      "libsnappy"
     ],
     "srcurl": "https://github.com/facebook/rocksdb/archive/refs/tags/v8.11.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2a3ca2caa/packages/librocksdb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2a3ca2caa/packages/librocksdb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2a3ca2caa/packages/librocksdb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd8cb1d1b/packages/librocksdb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd8cb1d1b/packages/librocksdb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd8cb1d1b/packages/librocksdb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2a3ca2caa/packages/librocksdb/env-fs_posix.cc.patch",
-      "https://github.com/termux/termux-packages/blob/2a3ca2caa/packages/librocksdb/rocksdb.pc.in.patch",
-      "https://github.com/termux/termux-packages/blob/2a3ca2caa/packages/librocksdb/toku_time.h.patch"
+      "https://github.com/termux/termux-packages/blob/dd8cb1d1b/packages/librocksdb/env-fs_posix.cc.patch",
+      "https://github.com/termux/termux-packages/blob/dd8cb1d1b/packages/librocksdb/rocksdb.pc.in.patch",
+      "https://github.com/termux/termux-packages/blob/dd8cb1d1b/packages/librocksdb/toku_time.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2a3ca2caa/packages/librocksdb/env-fs_posix.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2a3ca2caa/packages/librocksdb/rocksdb.pc.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2a3ca2caa/packages/librocksdb/toku_time.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/dd8cb1d1b/packages/librocksdb/env-fs_posix.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dd8cb1d1b/packages/librocksdb/rocksdb.pc.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/dd8cb1d1b/packages/librocksdb/toku_time.h.patch"
     ],
     "auto_updated": true
   },
@@ -23613,7 +23614,7 @@
   },
   {
     "name": "libzim",
-    "version": "9.4.0",
+    "version": "9.4.1",
     "description": "The ZIM library is the reference implementation for the ZIM file format.",
     "homepage": "https://openzim.org",
     "depends": [
@@ -23623,11 +23624,11 @@
       "libxapian",
       "zstd"
     ],
-    "srcurl": "https://github.com/openzim/libzim/archive/9.4.0.tar.gz",
+    "srcurl": "https://github.com/openzim/libzim/archive/9.4.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/38306d94d/packages/libzim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38306d94d/packages/libzim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38306d94d/packages/libzim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7999df57e/packages/libzim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7999df57e/packages/libzim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7999df57e/packages/libzim/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -24449,6 +24450,36 @@
       "https://raw.githubusercontent.com/termux/termux-packages/0cb624c0f/packages/lua-lpeg/makefile.patch"
     ],
     "auto_updated": false
+  },
+  {
+    "name": "luajit-lgi",
+    "version": "0.9.2",
+    "description": "Dynamic Lua binding to GObject libraries using GObject-Introspection",
+    "homepage": "https://github.com/lgi-devs/lgi",
+    "depends": [
+      "glib",
+      "gobject-introspection",
+      "libffi",
+      "libluajit"
+    ],
+    "srcurl": "https://github.com/lgi-devs/lgi/archive/0.9.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3508721c/packages/luajit-lgi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3508721c/packages/luajit-lgi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3508721c/packages/luajit-lgi/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/b3508721c/packages/luajit-lgi/glib-2.86.patch",
+      "https://github.com/termux/termux-packages/blob/b3508721c/packages/luajit-lgi/lgi-0.9.2-lua-5.4.patch",
+      "https://github.com/termux/termux-packages/blob/b3508721c/packages/luajit-lgi/lgi-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/b3508721c/packages/luajit-lgi/lgi-override-cairo.lua.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/b3508721c/packages/luajit-lgi/glib-2.86.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b3508721c/packages/luajit-lgi/lgi-0.9.2-lua-5.4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b3508721c/packages/luajit-lgi/lgi-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b3508721c/packages/luajit-lgi/lgi-override-cairo.lua.patch"
+    ],
+    "auto_updated": true
   },
   {
     "name": "luarocks",
@@ -26023,15 +26054,15 @@
   },
   {
     "name": "miller",
-    "version": "6.15.0",
+    "version": "6.16.0",
     "description": "Like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON",
     "homepage": "https://miller.readthedocs.io/",
     "depends": [],
     "srcurl": "git+https://github.com/johnkerl/miller",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/95668aa2f/packages/miller",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95668aa2f/packages/miller/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95668aa2f/packages/miller/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e0f6d661/packages/miller",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e0f6d661/packages/miller/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e0f6d661/packages/miller/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31763,53 +31794,38 @@
     "auto_updated": false
   },
   {
-    "name": "pika",
-    "version": "3.4.1",
-    "description": "A persistent huge storage service, compatible with the vast majority of Redis interfaces",
-    "homepage": "https://github.com/OpenAtomFoundation/pika",
+    "name": "pikiwidb",
+    "version": "3.5.6",
+    "description": "Redis-Compatible database developed by Qihoo's infrastructure team",
+    "homepage": "https://github.com/OpenAtomFoundation/pikiwidb",
     "depends": [
       "abseil-cpp",
+      "fmt",
+      "gflags",
       "google-glog",
       "libc++",
       "libprotobuf",
-      "librocksdb"
+      "librocksdb",
+      "zlib"
     ],
-    "srcurl": "git+https://github.com/OpenAtomFoundation/pika",
+    "srcurl": "https://github.com/OpenAtomFoundation/pikiwidb/archive/refs/tags/v3.5.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6917ab7e/packages/pika",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/30ade1200/packages/pikiwidb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30ade1200/packages/pikiwidb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30ade1200/packages/pikiwidb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/include-pika_statistic.h.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/src-pika_admin.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/src-pika_repl_client_conn.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-blackwidow-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-blackwidow-src-coding.h.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-blackwidow-src-db_checkpoint.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-blackwidow-src-options_helper.h.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-pink-pink-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-pink-pink-src-http_conn.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-slash-slash-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-slash-slash-src-env.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b6917ab7e/packages/pika/third-slash-slash-src-posix.cc.patch"
+      "https://github.com/termux/termux-packages/blob/30ade1200/packages/pikiwidb/fmt-11.patch",
+      "https://github.com/termux/termux-packages/blob/30ade1200/packages/pikiwidb/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/30ade1200/packages/pikiwidb/src-net-src-thread_pool.cc.patch",
+      "https://github.com/termux/termux-packages/blob/30ade1200/packages/pikiwidb/termux.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/include-pika_statistic.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/src-pika_admin.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/src-pika_repl_client_conn.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-blackwidow-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-blackwidow-src-coding.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-blackwidow-src-db_checkpoint.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-blackwidow-src-options_helper.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-pink-pink-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-pink-pink-src-http_conn.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-slash-slash-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-slash-slash-src-env.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6917ab7e/packages/pika/third-slash-slash-src-posix.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/30ade1200/packages/pikiwidb/fmt-11.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/30ade1200/packages/pikiwidb/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/30ade1200/packages/pikiwidb/src-net-src-thread_pool.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/30ade1200/packages/pikiwidb/termux.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "pinentry",
@@ -40995,6 +41011,36 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/153d6e045/packages/ttf-dejavu",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/153d6e045/packages/ttf-dejavu/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/153d6e045/packages/ttf-dejavu/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
+    "name": "ttf-jetbrains-mono",
+    "version": "2.304",
+    "description": "A free and open-source typeface for developers",
+    "homepage": "https://www.jetbrains.com/lp/mono/",
+    "depends": [],
+    "srcurl": "https://github.com/JetBrains/JetBrainsMono/releases/download/v2.304/JetBrainsMono-2.304.zip",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e6d6e4e6/packages/ttf-jetbrains-mono",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e6d6e4e6/packages/ttf-jetbrains-mono/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e6d6e4e6/packages/ttf-jetbrains-mono/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
+    "name": "ttf-nerd-fonts-symbols",
+    "version": "3.4.0",
+    "description": "Symbols-only font containing the Nerd Font icons",
+    "homepage": "https://www.nerdfonts.com/",
+    "depends": [],
+    "srcurl": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/NerdFontsSymbolsOnly.zip",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5716213cc/packages/ttf-nerd-fonts-symbols",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5716213cc/packages/ttf-nerd-fonts-symbols/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5716213cc/packages/ttf-nerd-fonts-symbols/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -52592,7 +52638,7 @@
   },
   {
     "name": "icewm",
-    "version": "3.9.0",
+    "version": "4.0.0",
     "description": "Window manager with goals of speed, simplicity, and usability",
     "homepage": "https://ice-wm.org/",
     "depends": [
@@ -52612,24 +52658,22 @@
       "libxres",
       "xdg-utils"
     ],
-    "srcurl": "https://github.com/ice-wm/icewm/releases/download/3.9.0/icewm-3.9.0.tar.lz",
+    "srcurl": "https://github.com/ice-wm/icewm/releases/download/4.0.0/icewm-4.0.0.tar.lz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3a9b0cf1/x11-packages/icewm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3a9b0cf1/x11-packages/icewm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3a9b0cf1/x11-packages/icewm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/73c1edede/x11-packages/icewm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/73c1edede/x11-packages/icewm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/73c1edede/x11-packages/icewm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b3a9b0cf1/x11-packages/icewm/cross-compiling.patch",
-      "https://github.com/termux/termux-packages/blob/b3a9b0cf1/x11-packages/icewm/fix-mailbox-port-datatype.patch",
-      "https://github.com/termux/termux-packages/blob/b3a9b0cf1/x11-packages/icewm/genpref.diff",
-      "https://github.com/termux/termux-packages/blob/b3a9b0cf1/x11-packages/icewm/mblen.patch",
-      "https://github.com/termux/termux-packages/blob/b3a9b0cf1/x11-packages/icewm/suppress-network-permission-warning.patch"
+      "https://github.com/termux/termux-packages/blob/73c1edede/x11-packages/icewm/cross-compiling.patch",
+      "https://github.com/termux/termux-packages/blob/73c1edede/x11-packages/icewm/genpref.diff",
+      "https://github.com/termux/termux-packages/blob/73c1edede/x11-packages/icewm/mblen.patch",
+      "https://github.com/termux/termux-packages/blob/73c1edede/x11-packages/icewm/suppress-network-permission-warning.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b3a9b0cf1/x11-packages/icewm/cross-compiling.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b3a9b0cf1/x11-packages/icewm/fix-mailbox-port-datatype.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b3a9b0cf1/x11-packages/icewm/genpref.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/b3a9b0cf1/x11-packages/icewm/mblen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b3a9b0cf1/x11-packages/icewm/suppress-network-permission-warning.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/73c1edede/x11-packages/icewm/cross-compiling.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/73c1edede/x11-packages/icewm/genpref.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/73c1edede/x11-packages/icewm/mblen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/73c1edede/x11-packages/icewm/suppress-network-permission-warning.patch"
     ],
     "auto_updated": true
   },
@@ -52676,22 +52720,22 @@
     ],
     "srcurl": "https://media.inkscape.org/dl/resources/file/inkscape-1.4.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/71d732492/x11-packages/inkscape",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/71d732492/x11-packages/inkscape/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/71d732492/x11-packages/inkscape/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657bf5cf4/x11-packages/inkscape",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/inkscape/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/inkscape/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/71d732492/x11-packages/inkscape/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/71d732492/x11-packages/inkscape/link-graphicsmagick-statically.patch",
-      "https://github.com/termux/termux-packages/blob/71d732492/x11-packages/inkscape/no-stacktrace.patch",
-      "https://github.com/termux/termux-packages/blob/71d732492/x11-packages/inkscape/page-size-fix.patch",
-      "https://github.com/termux/termux-packages/blob/71d732492/x11-packages/inkscape/src-object-object-set.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/inkscape/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/inkscape/link-graphicsmagick-statically.patch",
+      "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/inkscape/no-stacktrace.patch",
+      "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/inkscape/page-size-fix.patch",
+      "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/inkscape/src-object-object-set.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/71d732492/x11-packages/inkscape/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71d732492/x11-packages/inkscape/link-graphicsmagick-statically.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71d732492/x11-packages/inkscape/no-stacktrace.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71d732492/x11-packages/inkscape/page-size-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71d732492/x11-packages/inkscape/src-object-object-set.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/inkscape/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/inkscape/link-graphicsmagick-statically.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/inkscape/no-stacktrace.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/inkscape/page-size-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/inkscape/src-object-object-set.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -52957,16 +53001,16 @@
     ],
     "srcurl": "https://github.com/keepassxreboot/keepassxc/releases/download/2.7.11/keepassxc-2.7.11-src.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a54dc8e8f/x11-packages/keepassxc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a54dc8e8f/x11-packages/keepassxc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a54dc8e8f/x11-packages/keepassxc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/657bf5cf4/x11-packages/keepassxc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/keepassxc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/keepassxc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a54dc8e8f/x11-packages/keepassxc/src-core-FileWatcher.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a54dc8e8f/x11-packages/keepassxc/src-gui-entry-EntryView.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/keepassxc/src-core-FileWatcher.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/657bf5cf4/x11-packages/keepassxc/src-gui-entry-EntryView.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a54dc8e8f/x11-packages/keepassxc/src-core-FileWatcher.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a54dc8e8f/x11-packages/keepassxc/src-gui-entry-EntryView.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/keepassxc/src-core-FileWatcher.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/657bf5cf4/x11-packages/keepassxc/src-gui-entry-EntryView.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -62995,7 +63039,7 @@
   },
   {
     "name": "wxmaxima",
-    "version": "25.04.0",
+    "version": "26.01.0",
     "description": "A document based interface for the computer algebra system Maxima",
     "homepage": "https://wxmaxima-developers.github.io/wxmaxima/",
     "depends": [
@@ -63003,17 +63047,13 @@
       "maxima",
       "wxwidgets"
     ],
-    "srcurl": "https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-25.04.0.tar.gz",
+    "srcurl": "https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-26.01.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2ef08b85/x11-packages/wxmaxima",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2ef08b85/x11-packages/wxmaxima/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2ef08b85/x11-packages/wxmaxima/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a2ef08b85/x11-packages/wxmaxima/wxwidgets-3.3.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a2ef08b85/x11-packages/wxmaxima/wxwidgets-3.3.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7f4ce9974/x11-packages/wxmaxima",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7f4ce9974/x11-packages/wxmaxima/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7f4ce9974/x11-packages/wxmaxima/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
