@@ -4194,6 +4194,21 @@
     "auto_updated": false
   },
   {
+    "name": "cjson",
+    "version": "1.7.19",
+    "description": "Ultralightweight JSON parser in ANSI C",
+    "homepage": "https://github.com/DaveGamble/cJSON",
+    "depends": [],
+    "srcurl": "https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.19.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/809787fe3/packages/cjson",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/809787fe3/packages/cjson/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/809787fe3/packages/cjson/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "ckermit",
     "version": "9.0.302",
     "description": "A combined network and serial communication software package",
@@ -19036,26 +19051,28 @@
   },
   {
     "name": "libmosquitto",
-    "version": "2.0.22",
+    "version": "2.1.0",
     "description": "MQTT library",
     "homepage": "https://mosquitto.org/",
     "depends": [
       "c-ares",
+      "cjson",
       "libc++",
+      "libsqlite",
       "openssl"
     ],
-    "srcurl": "https://mosquitto.org/files/source/mosquitto-2.0.22.tar.gz",
+    "srcurl": "https://mosquitto.org/files/source/mosquitto-2.1.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/506ae084f/packages/libmosquitto",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/506ae084f/packages/libmosquitto/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/506ae084f/packages/libmosquitto/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4948d8807/packages/libmosquitto",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4948d8807/packages/libmosquitto/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4948d8807/packages/libmosquitto/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/506ae084f/packages/libmosquitto/config.patch",
-      "https://github.com/termux/termux-packages/blob/506ae084f/packages/libmosquitto/tmp-dir.patch"
+      "https://github.com/termux/termux-packages/blob/4948d8807/packages/libmosquitto/config.patch",
+      "https://github.com/termux/termux-packages/blob/4948d8807/packages/libmosquitto/tmp-dir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/506ae084f/packages/libmosquitto/config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/506ae084f/packages/libmosquitto/tmp-dir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4948d8807/packages/libmosquitto/config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4948d8807/packages/libmosquitto/tmp-dir.patch"
     ],
     "auto_updated": true
   },
@@ -33883,7 +33900,7 @@
   },
   {
     "name": "python-pip",
-    "version": "25.3",
+    "version": "26.0",
     "description": "The PyPA recommended tool for installing Python packages",
     "homepage": "https://pip.pypa.io/",
     "depends": [
@@ -33892,18 +33909,18 @@
       "pkg-config",
       "python"
     ],
-    "srcurl": "https://github.com/pypa/pip/archive/refs/tags/25.3.tar.gz",
+    "srcurl": "https://github.com/pypa/pip/archive/refs/tags/26.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ee8132d58/packages/python-pip",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ee8132d58/packages/python-pip/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ee8132d58/packages/python-pip/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb05e902f/packages/python-pip",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb05e902f/packages/python-pip/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb05e902f/packages/python-pip/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ee8132d58/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/ee8132d58/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://github.com/termux/termux-packages/blob/eb05e902f/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/eb05e902f/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ee8132d58/packages/python-pip/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ee8132d58/packages/python-pip/install_py_preventing_pip_from_installing.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/eb05e902f/packages/python-pip/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/eb05e902f/packages/python-pip/install_py_preventing_pip_from_installing.patch"
     ],
     "auto_updated": true
   },
@@ -40921,17 +40938,17 @@
   },
   {
     "name": "tree",
-    "version": "2.2.1",
+    "version": "2.3.0",
     "description": "Recursive directory lister producing a depth indented listing of files",
     "homepage": "http://mama.indstate.edu/users/ice/tree/",
     "depends": [
       "libandroid-support"
     ],
-    "srcurl": "https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.2.1/unix-tree-2.2.1.tar.gz",
+    "srcurl": "https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.3.0/unix-tree-2.3.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dad7b53d3/packages/tree",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dad7b53d3/packages/tree/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dad7b53d3/packages/tree/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5916902a9/packages/tree",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5916902a9/packages/tree/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5916902a9/packages/tree/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -44468,15 +44485,15 @@
   },
   {
     "name": "yq",
-    "version": "4.50.1",
+    "version": "4.52.1",
     "description": "A lightweight and portable command-line YAML, JSON and XML processor",
     "homepage": "https://mikefarah.gitbook.io/yq/",
     "depends": [],
-    "srcurl": "https://github.com/mikefarah/yq/archive/refs/tags/v4.50.1.tar.gz",
+    "srcurl": "https://github.com/mikefarah/yq/archive/refs/tags/v4.52.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a12335ba4/packages/yq",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a12335ba4/packages/yq/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a12335ba4/packages/yq/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7e068de39/packages/yq",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7e068de39/packages/yq/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7e068de39/packages/yq/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
