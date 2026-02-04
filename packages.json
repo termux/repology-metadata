@@ -5952,7 +5952,7 @@
   },
   {
     "name": "deno",
-    "version": "1:2.6.6",
+    "version": "1:2.6.8",
     "description": "A modern runtime for JavaScript and TypeScript",
     "homepage": "https://deno.land/",
     "depends": [
@@ -5961,48 +5961,50 @@
       "libsqlite",
       "zlib"
     ],
-    "srcurl": "https://github.com/denoland/deno/releases/download/v2.6.6/deno_src.tar.gz",
+    "srcurl": "https://github.com/denoland/deno/releases/download/v2.6.8/deno_src.tar.gz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c211f0df/packages/deno",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1b810c34d/packages/deno",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0001-fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0002-disable-upgrading-via-cli.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0003-use-prebuilt-snapshot.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0004-fix-webgpu-compilation.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0005-use-libz-sys-default-features.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0006-dont-enable-libsqlite3-sys-bundled-feature.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0007-disable-unallowed-syscalls.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0008-do-not-use-compile-time-platform-str.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/0009-ioctl-type.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/cmake-pass-cmake-policy-version-minimum.diff",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/deno-panic-dyn_slide.diff",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/deno-snapshot-build-generator.diff",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/rusty-v8-search-files-with-target-suffix.diff",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/v8-patches/0101-reland-jumbo-scripts.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/v8-patches/0102-reland-jumbo-cflags.patch",
-      "https://github.com/termux/termux-packages/blob/0c211f0df/packages/deno/v8-patches/0103-reland-jumbo-for-v8.patch"
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0001-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0002-disable-upgrading-via-cli.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0003-use-prebuilt-snapshot.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0004-fix-webgpu-compilation.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0005-use-libz-sys-default-features.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0006-dont-enable-libsqlite3-sys-bundled-feature.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0007-disable-unallowed-syscalls.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0008-do-not-use-compile-time-platform-str.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/0009-ioctl-type.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/cmake-pass-cmake-policy-version-minimum.diff",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/deno-panic-dyn_slide.diff",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/deno-snapshot-build-generator.diff",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/rusty-v8-search-files-with-target-suffix.diff",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/v8-patches/0002-install-sysroot.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/v8-patches/0101-reland-jumbo-scripts.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/v8-patches/0102-reland-jumbo-cflags.patch",
+      "https://github.com/termux/termux-packages/blob/1b810c34d/packages/deno/v8-patches/0103-reland-jumbo-for-v8.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0001-fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0002-disable-upgrading-via-cli.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0003-use-prebuilt-snapshot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0004-fix-webgpu-compilation.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0005-use-libz-sys-default-features.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0006-dont-enable-libsqlite3-sys-bundled-feature.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0007-disable-unallowed-syscalls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0008-do-not-use-compile-time-platform-str.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/0009-ioctl-type.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/cmake-pass-cmake-policy-version-minimum.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/deno-panic-dyn_slide.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/deno-snapshot-build-generator.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/rusty-v8-search-files-with-target-suffix.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/v8-patches/0101-reland-jumbo-scripts.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/v8-patches/0102-reland-jumbo-cflags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0c211f0df/packages/deno/v8-patches/0103-reland-jumbo-for-v8.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0001-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0002-disable-upgrading-via-cli.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0003-use-prebuilt-snapshot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0004-fix-webgpu-compilation.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0005-use-libz-sys-default-features.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0006-dont-enable-libsqlite3-sys-bundled-feature.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0007-disable-unallowed-syscalls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0008-do-not-use-compile-time-platform-str.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/0009-ioctl-type.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/cmake-pass-cmake-policy-version-minimum.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/deno-panic-dyn_slide.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/deno-snapshot-build-generator.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/rusty-v8-search-files-with-target-suffix.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/v8-patches/0002-install-sysroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/v8-patches/0101-reland-jumbo-scripts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/v8-patches/0102-reland-jumbo-cflags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1b810c34d/packages/deno/v8-patches/0103-reland-jumbo-for-v8.patch"
     ],
     "auto_updated": true
   },
@@ -17671,7 +17673,7 @@
   },
   {
     "name": "libgrpc",
-    "version": "1.76.0",
+    "version": "1.78.0",
     "description": "High performance, open source, general RPC framework that puts mobile and HTTP/2 first",
     "homepage": "https://grpc.io/",
     "depends": [
@@ -17687,20 +17689,20 @@
     ],
     "srcurl": "git+https://github.com/grpc/grpc",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b04b2df52/packages/libgrpc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b04b2df52/packages/libgrpc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b04b2df52/packages/libgrpc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/084eb6c28/packages/libgrpc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/084eb6c28/packages/libgrpc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/084eb6c28/packages/libgrpc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b04b2df52/packages/libgrpc/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/b04b2df52/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b04b2df52/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://github.com/termux/termux-packages/blob/b04b2df52/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://github.com/termux/termux-packages/blob/084eb6c28/packages/libgrpc/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/084eb6c28/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://github.com/termux/termux-packages/blob/084eb6c28/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://github.com/termux/termux-packages/blob/084eb6c28/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b04b2df52/packages/libgrpc/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b04b2df52/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b04b2df52/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b04b2df52/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/084eb6c28/packages/libgrpc/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/084eb6c28/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/084eb6c28/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/084eb6c28/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "auto_updated": true
   },
@@ -29387,7 +29389,7 @@
   },
   {
     "name": "npm",
-    "version": "11.8.0",
+    "version": "11.9.0",
     "description": "The package manager for JavaScript",
     "homepage": "https://docs.npmjs.com/cli/",
     "depends": [
@@ -29395,9 +29397,9 @@
     ],
     "srcurl": "git+https://github.com/npm/cli.git",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/aa800c6e5/packages/npm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aa800c6e5/packages/npm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aa800c6e5/packages/npm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bcafce2e/packages/npm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bcafce2e/packages/npm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bcafce2e/packages/npm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -33911,7 +33913,7 @@
   },
   {
     "name": "python-grpcio",
-    "version": "1.76.0",
+    "version": "1.78.0",
     "description": "High performance, open source, general RPC framework that puts mobile and HTTP/2 first",
     "homepage": "https://grpc.io/",
     "depends": [
@@ -33927,20 +33929,20 @@
     ],
     "srcurl": "git+https://github.com/grpc/grpc",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9244a4ece/packages/python-grpcio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9244a4ece/packages/python-grpcio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9244a4ece/packages/python-grpcio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f3184c27/packages/python-grpcio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f3184c27/packages/python-grpcio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f3184c27/packages/python-grpcio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9244a4ece/packages/python-grpcio/setup.py.patch",
-      "https://github.com/termux/termux-packages/blob/9244a4ece/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9244a4ece/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9244a4ece/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://github.com/termux/termux-packages/blob/2f3184c27/packages/python-grpcio/setup.py.patch",
+      "https://github.com/termux/termux-packages/blob/2f3184c27/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://github.com/termux/termux-packages/blob/2f3184c27/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://github.com/termux/termux-packages/blob/2f3184c27/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9244a4ece/packages/python-grpcio/setup.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9244a4ece/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9244a4ece/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9244a4ece/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2f3184c27/packages/python-grpcio/setup.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2f3184c27/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2f3184c27/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2f3184c27/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "auto_updated": true
   },
@@ -42303,25 +42305,25 @@
   },
   {
     "name": "unrar",
-    "version": "7.2.3",
+    "version": "7.2.4",
     "description": "Tool for extracting files from .rar archives",
     "homepage": "https://www.rarlab.com/",
     "depends": [
       "libandroid-support",
       "libc++"
     ],
-    "srcurl": "https://www.rarlab.com/rar/unrarsrc-7.2.3.tar.gz",
+    "srcurl": "https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a23e04a73/packages/unrar",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a23e04a73/packages/unrar/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a23e04a73/packages/unrar/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/648238ac8/packages/unrar",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/648238ac8/packages/unrar/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/648238ac8/packages/unrar/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a23e04a73/packages/unrar/makefile.patch",
-      "https://github.com/termux/termux-packages/blob/a23e04a73/packages/unrar/os.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/648238ac8/packages/unrar/makefile.patch",
+      "https://github.com/termux/termux-packages/blob/648238ac8/packages/unrar/os.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a23e04a73/packages/unrar/makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a23e04a73/packages/unrar/os.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/648238ac8/packages/unrar/makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/648238ac8/packages/unrar/os.hpp.patch"
     ],
     "auto_updated": true
   },
@@ -46360,23 +46362,23 @@
   },
   {
     "name": "libccid",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "A generic USB CCID (Chip/Smart Card Interface Devices) driver and ICCD (Integrated Circuit(s) Card Devices).",
     "homepage": "https://ccid.apdu.fr/",
     "depends": [
       "libusb",
       "pcscd"
     ],
-    "srcurl": "https://github.com/LudovicRousseau/CCID/archive/refs/tags/1.7.0.tar.gz",
+    "srcurl": "https://github.com/LudovicRousseau/CCID/archive/refs/tags/1.7.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d9c4df05f/root-packages/libccid",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d9c4df05f/root-packages/libccid/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d9c4df05f/root-packages/libccid/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e723a726f/root-packages/libccid",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e723a726f/root-packages/libccid/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e723a726f/root-packages/libccid/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d9c4df05f/root-packages/libccid/issetugid.patch"
+      "https://github.com/termux/termux-packages/blob/e723a726f/root-packages/libccid/issetugid.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d9c4df05f/root-packages/libccid/issetugid.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e723a726f/root-packages/libccid/issetugid.patch"
     ],
     "auto_updated": true
   },
