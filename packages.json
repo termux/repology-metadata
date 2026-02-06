@@ -4427,20 +4427,20 @@
   },
   {
     "name": "cloudflared",
-    "version": "2026.1.2",
+    "version": "2026.2.0",
     "description": "A tunneling daemon that proxies traffic from the Cloudflare network to your origins",
     "homepage": "https://github.com/cloudflare/cloudflared",
     "depends": [],
-    "srcurl": "https://github.com/cloudflare/cloudflared/archive/refs/tags/2026.1.2.tar.gz",
+    "srcurl": "https://github.com/cloudflare/cloudflared/archive/refs/tags/2026.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4bbed5b43/packages/cloudflared",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4bbed5b43/packages/cloudflared/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4bbed5b43/packages/cloudflared/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f99409378/packages/cloudflared",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f99409378/packages/cloudflared/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f99409378/packages/cloudflared/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4bbed5b43/packages/cloudflared/0001-disable-install-service.patch"
+      "https://github.com/termux/termux-packages/blob/f99409378/packages/cloudflared/0001-disable-install-service.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4bbed5b43/packages/cloudflared/0001-disable-install-service.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f99409378/packages/cloudflared/0001-disable-install-service.patch"
     ],
     "auto_updated": true
   },
@@ -9033,20 +9033,20 @@
   },
   {
     "name": "frp",
-    "version": "0.66.0",
+    "version": "0.67.0",
     "description": "A fast reverse proxy to expose a local server behind a NAT or firewall to the internet",
     "homepage": "https://github.com/fatedier/frp",
     "depends": [],
-    "srcurl": "https://github.com/fatedier/frp/archive/refs/tags/v0.66.0.tar.gz",
+    "srcurl": "https://github.com/fatedier/frp/archive/refs/tags/v0.67.0.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586c/packages/frp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586c/packages/frp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586c/packages/frp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/acd7fa6fd/packages/frp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/acd7fa6fd/packages/frp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/acd7fa6fd/packages/frp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/91fad586c/packages/frp/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/acd7fa6fd/packages/frp/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586c/packages/frp/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/acd7fa6fd/packages/frp/Makefile.patch"
     ],
     "auto_updated": true
   },
@@ -11242,6 +11242,21 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/04beae80e/packages/gost",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/04beae80e/packages/gost/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/04beae80e/packages/gost/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "gotify",
+    "version": "2.8.0",
+    "description": "A simple server for sending and receiving messages in real-time per WebSocket.",
+    "homepage": "https://github.com/gotify/server",
+    "depends": [],
+    "srcurl": "https://github.com/gotify/server/archive/refs/tags/v2.8.0.tar.gz",
+    "maintainer": "Izumi Sena Sora <info@unordinary.eu.org>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/abd9d262d/packages/gotify",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abd9d262d/packages/gotify/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abd9d262d/packages/gotify/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -19400,24 +19415,24 @@
   },
   {
     "name": "libnettle",
-    "version": "4.0",
+    "version": "4.0+really3.10.2",
     "description": "Cryptographic library that is designed to fit easily in more or less any context",
     "homepage": "https://www.lysator.liu.se/~nisse/nettle/",
     "depends": [
       "libgmp"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/nettle/nettle-4.0.tar.gz",
+    "srcurl": "https://mirrors.kernel.org/gnu/nettle/nettle-3.10.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/72f82459c/packages/libnettle",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72f82459c/packages/libnettle/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72f82459c/packages/libnettle/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a2d45673/packages/libnettle",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a2d45673/packages/libnettle/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a2d45673/packages/libnettle/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/72f82459c/packages/libnettle/configure.patch"
+      "https://github.com/termux/termux-packages/blob/0a2d45673/packages/libnettle/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/72f82459c/packages/libnettle/configure.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0a2d45673/packages/libnettle/configure.patch"
     ],
-    "auto_updated": true
+    "auto_updated": false
   },
   {
     "name": "libnewt",
@@ -28217,18 +28232,18 @@
   },
   {
     "name": "ncspot",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "description": "An ncurses Spotify client written in Rust",
     "homepage": "https://github.com/hrkfdn/ncspot",
     "depends": [
       "dbus",
       "pulseaudio"
     ],
-    "srcurl": "https://github.com/hrkfdn/ncspot/archive/refs/tags/v1.3.2.tar.gz",
+    "srcurl": "https://github.com/hrkfdn/ncspot/archive/refs/tags/v1.3.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f67019fd6/packages/ncspot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f67019fd6/packages/ncspot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f67019fd6/packages/ncspot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6adba8ad7/packages/ncspot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6adba8ad7/packages/ncspot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6adba8ad7/packages/ncspot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31146,23 +31161,23 @@
   },
   {
     "name": "p11-kit",
-    "version": "0.26.1",
+    "version": "0.26.2",
     "description": "Provides a way to load and enumerate PKCS#11 modules",
     "homepage": "https://p11-glue.github.io/p11-glue/p11-kit.html",
     "depends": [
       "libffi",
       "libtasn1"
     ],
-    "srcurl": "https://github.com/p11-glue/p11-kit/releases/download/0.26.1/p11-kit-0.26.1.tar.xz",
+    "srcurl": "https://github.com/p11-glue/p11-kit/releases/download/0.26.2/p11-kit-0.26.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7826792df/packages/p11-kit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7826792df/packages/p11-kit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7826792df/packages/p11-kit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e036adfab/packages/p11-kit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e036adfab/packages/p11-kit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e036adfab/packages/p11-kit/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7826792df/packages/p11-kit/0001-workaround-asn1Parser-for-cross-compile.diff"
+      "https://github.com/termux/termux-packages/blob/e036adfab/packages/p11-kit/0001-workaround-asn1Parser-for-cross-compile.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7826792df/packages/p11-kit/0001-workaround-asn1Parser-for-cross-compile.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/e036adfab/packages/p11-kit/0001-workaround-asn1Parser-for-cross-compile.diff"
     ],
     "auto_updated": true
   },
@@ -42802,15 +42817,15 @@
   },
   {
     "name": "vale",
-    "version": "3.13.0",
+    "version": "3.13.1",
     "description": "A syntax-aware linter for prose built with speed and extensibility in mind",
     "homepage": "https://vale.sh",
     "depends": [],
-    "srcurl": "https://github.com/errata-ai/vale/archive/refs/tags/v3.13.0.tar.gz",
+    "srcurl": "https://github.com/errata-ai/vale/archive/refs/tags/v3.13.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa5ff63e3/packages/vale",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa5ff63e3/packages/vale/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa5ff63e3/packages/vale/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dc3feb376/packages/vale",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dc3feb376/packages/vale/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dc3feb376/packages/vale/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49601,7 +49616,7 @@
   },
   {
     "name": "code-oss",
-    "version": "1.108.2",
+    "version": "1.109.0",
     "description": "Visual Studio Code - OSS",
     "homepage": "https://github.com/microsoft/vscode",
     "depends": [
@@ -49613,30 +49628,30 @@
     ],
     "srcurl": "git+https://github.com/microsoft/vscode",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bdb566e48/x11-packages/code-oss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fbe66ab32/x11-packages/code-oss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0001-set-enableTelemetry-to-false-by-default.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0002-remove-more-telemetry.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0003-use-open-vsx.org-as-extensions-gallery.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0004-vscode-fix-pathes.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0005-native-keymap-no-pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0006-reset-nodedir-for-host-build.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0007-unset-more-compiler-flags-for-host-build.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0008-gulp-build-root.patch",
-      "https://github.com/termux/termux-packages/blob/bdb566e48/x11-packages/code-oss/0009-openvsx-extension-signature.patch"
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0001-set-enableTelemetry-to-false-by-default.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0002-remove-more-telemetry.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0003-use-open-vsx.org-as-extensions-gallery.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0004-vscode-fix-pathes.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0005-native-keymap-no-pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0006-reset-nodedir-for-host-build.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0007-unset-more-compiler-flags-for-host-build.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0008-gulp-build-root.patch",
+      "https://github.com/termux/termux-packages/blob/fbe66ab32/x11-packages/code-oss/0009-openvsx-extension-signature.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0001-set-enableTelemetry-to-false-by-default.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0002-remove-more-telemetry.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0003-use-open-vsx.org-as-extensions-gallery.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0004-vscode-fix-pathes.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0005-native-keymap-no-pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0006-reset-nodedir-for-host-build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0007-unset-more-compiler-flags-for-host-build.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0008-gulp-build-root.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bdb566e48/x11-packages/code-oss/0009-openvsx-extension-signature.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0001-set-enableTelemetry-to-false-by-default.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0002-remove-more-telemetry.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0003-use-open-vsx.org-as-extensions-gallery.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0004-vscode-fix-pathes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0005-native-keymap-no-pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0006-reset-nodedir-for-host-build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0007-unset-more-compiler-flags-for-host-build.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0008-gulp-build-root.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fbe66ab32/x11-packages/code-oss/0009-openvsx-extension-signature.patch"
     ],
     "auto_updated": true
   },
@@ -50287,7 +50302,7 @@
   },
   {
     "name": "electron-for-code-oss",
-    "version": "39.2.7",
+    "version": "39.3.0",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
     "homepage": "https://github.com/electron/electron",
     "depends": [
@@ -50311,20 +50326,20 @@
     ],
     "srcurl": "git+https://github.com/electron/electron",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/54c15ed04/x11-packages/electron-for-code-oss",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/54c15ed04/x11-packages/electron-for-code-oss/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/54c15ed04/x11-packages/electron-for-code-oss/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4096ec4d3/x11-packages/electron-for-code-oss",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4096ec4d3/x11-packages/electron-for-code-oss/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4096ec4d3/x11-packages/electron-for-code-oss/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/54c15ed04/x11-packages/electron-for-code-oss/9001-use-prebuilt-snapshot.patch",
-      "https://github.com/termux/termux-packages/blob/54c15ed04/x11-packages/electron-for-code-oss/9002-use-prebuilt-cross-tools.patch",
-      "https://github.com/termux/termux-packages/blob/54c15ed04/x11-packages/electron-for-code-oss/9003-v8-use-prebuilt-cross-tools.patch",
-      "https://github.com/termux/termux-packages/blob/54c15ed04/x11-packages/electron-for-code-oss/9004-use-prebuilt-js2c-binary.patch"
+      "https://github.com/termux/termux-packages/blob/4096ec4d3/x11-packages/electron-for-code-oss/9001-use-prebuilt-snapshot.patch",
+      "https://github.com/termux/termux-packages/blob/4096ec4d3/x11-packages/electron-for-code-oss/9002-use-prebuilt-cross-tools.patch",
+      "https://github.com/termux/termux-packages/blob/4096ec4d3/x11-packages/electron-for-code-oss/9003-v8-use-prebuilt-cross-tools.patch",
+      "https://github.com/termux/termux-packages/blob/4096ec4d3/x11-packages/electron-for-code-oss/9004-use-prebuilt-js2c-binary.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/54c15ed04/x11-packages/electron-for-code-oss/9001-use-prebuilt-snapshot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/54c15ed04/x11-packages/electron-for-code-oss/9002-use-prebuilt-cross-tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/54c15ed04/x11-packages/electron-for-code-oss/9003-v8-use-prebuilt-cross-tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/54c15ed04/x11-packages/electron-for-code-oss/9004-use-prebuilt-js2c-binary.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4096ec4d3/x11-packages/electron-for-code-oss/9001-use-prebuilt-snapshot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4096ec4d3/x11-packages/electron-for-code-oss/9002-use-prebuilt-cross-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4096ec4d3/x11-packages/electron-for-code-oss/9003-v8-use-prebuilt-cross-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4096ec4d3/x11-packages/electron-for-code-oss/9004-use-prebuilt-js2c-binary.patch"
     ],
     "auto_updated": false
   },
@@ -59968,18 +59983,18 @@
   },
   {
     "name": "ncspot-mpris",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "description": "An ncurses Spotify client written in Rust (with MPRIS support)",
     "homepage": "https://github.com/hrkfdn/ncspot",
     "depends": [
       "dbus",
       "pulseaudio"
     ],
-    "srcurl": "https://github.com/hrkfdn/ncspot/archive/refs/tags/v1.3.2.tar.gz",
+    "srcurl": "https://github.com/hrkfdn/ncspot/archive/refs/tags/v1.3.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3c203de3d/x11-packages/ncspot-mpris",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3c203de3d/x11-packages/ncspot-mpris/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3c203de3d/x11-packages/ncspot-mpris/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/920ad56c1/x11-packages/ncspot-mpris",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/920ad56c1/x11-packages/ncspot-mpris/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/920ad56c1/x11-packages/ncspot-mpris/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
