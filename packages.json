@@ -3997,7 +3997,7 @@
   },
   {
     "name": "chafa",
-    "version": "1.18.0",
+    "version": "1.18.1",
     "description": "Image-to-text converter supporting a wide range of symbols, etc.",
     "homepage": "https://hpjansson.org/chafa/",
     "depends": [
@@ -4011,11 +4011,11 @@
       "libtiff",
       "libwebp"
     ],
-    "srcurl": "https://github.com/hpjansson/chafa/releases/download/1.18.0/chafa-1.18.0.tar.xz",
+    "srcurl": "https://github.com/hpjansson/chafa/releases/download/1.18.1/chafa-1.18.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3b297a6f/packages/chafa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3b297a6f/packages/chafa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3b297a6f/packages/chafa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c4e64fc84/packages/chafa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c4e64fc84/packages/chafa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c4e64fc84/packages/chafa/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12070,6 +12070,21 @@
     "auto_updated": true
   },
   {
+    "name": "gweather-locations",
+    "version": "2025.1",
+    "description": "The GWeather locations database",
+    "homepage": "https://gitlab.gnome.org/GNOME/gweather-locations",
+    "depends": [],
+    "srcurl": "https://download.gnome.org/sources/gweather-locations/2025/gweather-locations-2025.1.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f31bd3f69/packages/gweather-locations",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f31bd3f69/packages/gweather-locations/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f31bd3f69/packages/gweather-locations/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "gzip",
     "version": "1.14",
     "description": "Standard GNU file compression utilities",
@@ -12801,17 +12816,17 @@
   },
   {
     "name": "hugo",
-    "version": "0.155.2",
+    "version": "0.155.3",
     "description": "A fast and flexible static site generator",
     "homepage": "https://gohugo.io/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/gohugoio/hugo/archive/refs/tags/v0.155.2.tar.gz",
+    "srcurl": "https://github.com/gohugoio/hugo/archive/refs/tags/v0.155.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/74ffbf0dd/packages/hugo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74ffbf0dd/packages/hugo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74ffbf0dd/packages/hugo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6927755d7/packages/hugo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6927755d7/packages/hugo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6927755d7/packages/hugo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -22216,18 +22231,21 @@
       "libc++",
       "libcurl",
       "openssl",
+      "resolv-conf",
       "zlib"
     ],
     "srcurl": "https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.16.6.tar.gz",
     "maintainer": "Krishna Kanhaiya @kcubeterm",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586c/packages/libtorrent",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586c/packages/libtorrent/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586c/packages/libtorrent/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/005f3f7e7/packages/libtorrent",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/005f3f7e7/packages/libtorrent/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/005f3f7e7/packages/libtorrent/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/91fad586c/packages/libtorrent/0001-fix-build-for-32bit.patch"
+      "https://github.com/termux/termux-packages/blob/005f3f7e7/packages/libtorrent/0001-fix-build-for-32bit.patch",
+      "https://github.com/termux/termux-packages/blob/005f3f7e7/packages/libtorrent/resolv-conf.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586c/packages/libtorrent/0001-fix-build-for-32bit.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/005f3f7e7/packages/libtorrent/0001-fix-build-for-32bit.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/005f3f7e7/packages/libtorrent/resolv-conf.patch"
     ],
     "auto_updated": true
   },
@@ -35382,33 +35400,33 @@
   },
   {
     "name": "redis",
-    "version": "1:8.4.0",
+    "version": "1:8.4.1",
     "description": "In-memory data structure store used as a database, cache and message broker",
     "homepage": "https://redis.io/",
     "depends": [
       "libandroid-execinfo",
       "libandroid-glob"
     ],
-    "srcurl": "https://download.redis.io/releases/redis-8.4.0.tar.gz",
+    "srcurl": "https://download.redis.io/releases/redis-8.4.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cbb0715a/packages/redis",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cbb0715a/packages/redis/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cbb0715a/packages/redis/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f12f7401b/packages/redis",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f12f7401b/packages/redis/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f12f7401b/packages/redis/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9cbb0715a/packages/redis/fix-deps-lua.patch",
-      "https://github.com/termux/termux-packages/blob/9cbb0715a/packages/redis/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/9cbb0715a/packages/redis/redis.conf.patch",
-      "https://github.com/termux/termux-packages/blob/9cbb0715a/packages/redis/setproctitle.patch",
-      "https://github.com/termux/termux-packages/blob/9cbb0715a/packages/redis/src-server.h.patch",
-      "https://github.com/termux/termux-packages/blob/9cbb0715a/packages/redis/tests-modules-Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/f12f7401b/packages/redis/fix-deps-lua.patch",
+      "https://github.com/termux/termux-packages/blob/f12f7401b/packages/redis/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/f12f7401b/packages/redis/redis.conf.patch",
+      "https://github.com/termux/termux-packages/blob/f12f7401b/packages/redis/setproctitle.patch",
+      "https://github.com/termux/termux-packages/blob/f12f7401b/packages/redis/src-server.h.patch",
+      "https://github.com/termux/termux-packages/blob/f12f7401b/packages/redis/tests-modules-Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9cbb0715a/packages/redis/fix-deps-lua.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9cbb0715a/packages/redis/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9cbb0715a/packages/redis/redis.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9cbb0715a/packages/redis/setproctitle.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9cbb0715a/packages/redis/src-server.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9cbb0715a/packages/redis/tests-modules-Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f12f7401b/packages/redis/fix-deps-lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f12f7401b/packages/redis/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f12f7401b/packages/redis/redis.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f12f7401b/packages/redis/setproctitle.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f12f7401b/packages/redis/src-server.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f12f7401b/packages/redis/tests-modules-Makefile.patch"
     ],
     "auto_updated": true
   },
@@ -52079,6 +52097,25 @@
     "auto_updated": true
   },
   {
+    "name": "geocode-glib",
+    "version": "3.26.4",
+    "description": "Convenience library for the geocoding and reverse geocoding",
+    "homepage": "https://gitlab.gnome.org/GNOME/geocode-glib",
+    "depends": [
+      "glib",
+      "json-glib",
+      "libsoup3"
+    ],
+    "srcurl": "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ccd4d3eee/x11-packages/geocode-glib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ccd4d3eee/x11-packages/geocode-glib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ccd4d3eee/x11-packages/geocode-glib/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
     "name": "ghex",
     "version": "48.3",
     "description": "A simple binary editor for the Gnome desktop.",
@@ -52443,6 +52480,29 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/53421fd49/x11-packages/gnome-calculator",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/53421fd49/x11-packages/gnome-calculator/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/53421fd49/x11-packages/gnome-calculator/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "gnome-clocks",
+    "version": "49.0",
+    "description": "Keep track of time",
+    "homepage": "https://apps.gnome.org/Clocks/",
+    "depends": [
+      "geoclue",
+      "geocode-glib",
+      "glib",
+      "gnome-desktop4",
+      "gtk4",
+      "libadwaita",
+      "libgweather"
+    ],
+    "srcurl": "https://download.gnome.org/sources/gnome-clocks/49/gnome-clocks-49.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/af8082f92/x11-packages/gnome-clocks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af8082f92/x11-packages/gnome-clocks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af8082f92/x11-packages/gnome-clocks/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56733,6 +56793,33 @@
     "auto_updated": true
   },
   {
+    "name": "libgweather",
+    "version": "4.5.0",
+    "description": "Location and timezone database and weather-lookup library",
+    "homepage": "https://gitlab.gnome.org/GNOME/libgweather",
+    "depends": [
+      "geocode-glib",
+      "glib",
+      "gobject-introspection",
+      "gweather-locations",
+      "json-glib",
+      "libsoup3",
+      "libxml2"
+    ],
+    "srcurl": "https://download.gnome.org/sources/libgweather/4.5/libgweather-4.5.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8581ca6d9/x11-packages/libgweather",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8581ca6d9/x11-packages/libgweather/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8581ca6d9/x11-packages/libgweather/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/8581ca6d9/x11-packages/libgweather/enable-gir.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/8581ca6d9/x11-packages/libgweather/enable-gir.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "libhandy",
     "version": "1.8.3",
     "description": "Building blocks for modern adaptive GNOME apps",
@@ -57893,7 +57980,7 @@
   },
   {
     "name": "luanti",
-    "version": "1:5.15.0",
+    "version": "1:5.15.1",
     "description": "An open source voxel game engine.",
     "homepage": "https://www.luanti.org",
     "depends": [
@@ -57917,24 +58004,24 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/luanti-org/luanti/archive/refs/tags/5.15.0.tar.gz",
+    "srcurl": "https://github.com/luanti-org/luanti/archive/refs/tags/5.15.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d8ccaa1d7/x11-packages/luanti",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d8ccaa1d7/x11-packages/luanti/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d8ccaa1d7/x11-packages/luanti/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e3273822/x11-packages/luanti",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e3273822/x11-packages/luanti/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e3273822/x11-packages/luanti/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d8ccaa1d7/x11-packages/luanti/0001-bionic-libc-x11-wsi-opengl-es-2.patch",
-      "https://github.com/termux/termux-packages/blob/d8ccaa1d7/x11-packages/luanti/0002-prepend-termux-prefix-to-tmp-path.patch",
-      "https://github.com/termux/termux-packages/blob/d8ccaa1d7/x11-packages/luanti/0003-replace-xdg-open.patch",
-      "https://github.com/termux/termux-packages/blob/d8ccaa1d7/x11-packages/luanti/0004-scrambled-keycodes-workaround.patch",
-      "https://github.com/termux/termux-packages/blob/d8ccaa1d7/x11-packages/luanti/0005-sdl-force-egl.patch"
+      "https://github.com/termux/termux-packages/blob/2e3273822/x11-packages/luanti/0001-bionic-libc-x11-wsi-opengl-es-2.patch",
+      "https://github.com/termux/termux-packages/blob/2e3273822/x11-packages/luanti/0002-prepend-termux-prefix-to-tmp-path.patch",
+      "https://github.com/termux/termux-packages/blob/2e3273822/x11-packages/luanti/0003-replace-xdg-open.patch",
+      "https://github.com/termux/termux-packages/blob/2e3273822/x11-packages/luanti/0004-scrambled-keycodes-workaround.patch",
+      "https://github.com/termux/termux-packages/blob/2e3273822/x11-packages/luanti/0005-sdl-force-egl.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d8ccaa1d7/x11-packages/luanti/0001-bionic-libc-x11-wsi-opengl-es-2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d8ccaa1d7/x11-packages/luanti/0002-prepend-termux-prefix-to-tmp-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d8ccaa1d7/x11-packages/luanti/0003-replace-xdg-open.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d8ccaa1d7/x11-packages/luanti/0004-scrambled-keycodes-workaround.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d8ccaa1d7/x11-packages/luanti/0005-sdl-force-egl.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2e3273822/x11-packages/luanti/0001-bionic-libc-x11-wsi-opengl-es-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e3273822/x11-packages/luanti/0002-prepend-termux-prefix-to-tmp-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e3273822/x11-packages/luanti/0003-replace-xdg-open.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e3273822/x11-packages/luanti/0004-scrambled-keycodes-workaround.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e3273822/x11-packages/luanti/0005-sdl-force-egl.patch"
     ],
     "auto_updated": true
   },
@@ -65234,7 +65321,7 @@
   },
   {
     "name": "wine-stable",
-    "version": "10.0",
+    "version": "11.0",
     "description": "A compatibility layer for running Windows programs",
     "homepage": "https://www.winehq.org/",
     "depends": [
@@ -65256,26 +65343,30 @@
       "vulkan-loader",
       "xorg-xrandr"
     ],
-    "srcurl": "https://dl.winehq.org/wine/source/10.0/wine-10.0.tar.xz",
+    "srcurl": "https://dl.winehq.org/wine/source/11.0/wine-11.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5af19e402/x11-packages/wine-stable",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5af19e402/x11-packages/wine-stable/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5af19e402/x11-packages/wine-stable/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d1ee93fd8/x11-packages/wine-stable",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5af19e402/x11-packages/wine-stable/0001-fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/5af19e402/x11-packages/wine-stable/0002-fix-defines.patch",
-      "https://github.com/termux/termux-packages/blob/5af19e402/x11-packages/wine-stable/0003-fix-socket-ipx.patch",
-      "https://github.com/termux/termux-packages/blob/5af19e402/x11-packages/wine-stable/0004-no-pthread_mutexattr_setprotocol.patch",
-      "https://github.com/termux/termux-packages/blob/5af19e402/x11-packages/wine-stable/9998-fix-winegcc-build-target.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/5af19e402/x11-packages/wine-stable/9999-fix-winebuild-as-type.patch.beforehostbuild"
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/0001-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/0002-fix-defines.patch",
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/0003-fix-socket-ipx.patch",
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/0004-no-pthread_mutexattr_setprotocol.patch",
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/0005-iwyu-dlls-ntdll-unix-unix_private.h.patch",
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/9997-clang-as-arm.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/9998-fix-winegcc-build-target.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/d1ee93fd8/x11-packages/wine-stable/9999-fix-winebuild-as-type.patch.beforehostbuild"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5af19e402/x11-packages/wine-stable/0001-fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5af19e402/x11-packages/wine-stable/0002-fix-defines.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5af19e402/x11-packages/wine-stable/0003-fix-socket-ipx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5af19e402/x11-packages/wine-stable/0004-no-pthread_mutexattr_setprotocol.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5af19e402/x11-packages/wine-stable/9998-fix-winegcc-build-target.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/5af19e402/x11-packages/wine-stable/9999-fix-winebuild-as-type.patch.beforehostbuild"
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/0001-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/0002-fix-defines.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/0003-fix-socket-ipx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/0004-no-pthread_mutexattr_setprotocol.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/0005-iwyu-dlls-ntdll-unix-unix_private.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/9997-clang-as-arm.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/9998-fix-winegcc-build-target.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/d1ee93fd8/x11-packages/wine-stable/9999-fix-winebuild-as-type.patch.beforehostbuild"
     ],
     "auto_updated": false
   },
