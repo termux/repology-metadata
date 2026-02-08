@@ -1578,7 +1578,7 @@
   },
   {
     "name": "asymptote",
-    "version": "3.05",
+    "version": "3.06",
     "description": "A powerful descriptive vector graphics language for technical drawing",
     "homepage": "https://asymptote.sourceforge.io/",
     "depends": [
@@ -1589,13 +1589,17 @@
       "ncurses",
       "readline"
     ],
-    "srcurl": "https://downloads.sourceforge.net/asymptote/asymptote-3.05.src.tgz",
+    "srcurl": "https://downloads.sourceforge.net/asymptote/asymptote-3.06.src.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bdbce94dc/packages/asymptote",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bdbce94dc/packages/asymptote/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bdbce94dc/packages/asymptote/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/17f1843af/packages/asymptote",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17f1843af/packages/asymptote/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17f1843af/packages/asymptote/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/17f1843af/packages/asymptote/disable-x11.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/17f1843af/packages/asymptote/disable-x11.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -7873,17 +7877,17 @@
   },
   {
     "name": "exiftool",
-    "version": "13.49",
+    "version": "13.50",
     "description": "Utility for reading, writing and editing meta information in a wide variety of files.",
     "homepage": "https://exiftool.org/",
     "depends": [
       "perl"
     ],
-    "srcurl": "https://exiftool.org/Image-ExifTool-13.49.tar.gz",
+    "srcurl": "https://exiftool.org/Image-ExifTool-13.50.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/78adde4ac/packages/exiftool",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/78adde4ac/packages/exiftool/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/78adde4ac/packages/exiftool/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ed10c928/packages/exiftool",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ed10c928/packages/exiftool/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ed10c928/packages/exiftool/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -26172,20 +26176,20 @@
   },
   {
     "name": "mediamtx",
-    "version": "1.16.0",
+    "version": "1.16.1",
     "description": "Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy",
     "homepage": "https://github.com/bluenviron/mediamtx",
     "depends": [],
-    "srcurl": "https://github.com/bluenviron/mediamtx/archive/refs/tags/v1.16.0.tar.gz",
+    "srcurl": "https://github.com/bluenviron/mediamtx/archive/refs/tags/v1.16.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/04e3603d5/packages/mediamtx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/04e3603d5/packages/mediamtx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/04e3603d5/packages/mediamtx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c97e72942/packages/mediamtx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c97e72942/packages/mediamtx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c97e72942/packages/mediamtx/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/04e3603d5/packages/mediamtx/internal-core-core.go.patch"
+      "https://github.com/termux/termux-packages/blob/c97e72942/packages/mediamtx/internal-core-core.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/04e3603d5/packages/mediamtx/internal-core-core.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c97e72942/packages/mediamtx/internal-core-core.go.patch"
     ],
     "auto_updated": true
   },
@@ -28053,23 +28057,23 @@
   },
   {
     "name": "navidrome",
-    "version": "0.60.0",
+    "version": "0.60.2",
     "description": "Modern Music Server and Streamer compatible with Subsonic/Airsonic",
     "homepage": "https://www.navidrome.org/",
     "depends": [
       "taglib",
       "ffmpeg"
     ],
-    "srcurl": "https://github.com/navidrome/navidrome/archive/refs/tags/v0.60.0.tar.gz",
+    "srcurl": "https://github.com/navidrome/navidrome/archive/refs/tags/v0.60.2.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f04f4321c/packages/navidrome",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f04f4321c/packages/navidrome/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f04f4321c/packages/navidrome/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d9038ac1b/packages/navidrome",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d9038ac1b/packages/navidrome/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d9038ac1b/packages/navidrome/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f04f4321c/packages/navidrome/conf-configuration.go.patch"
+      "https://github.com/termux/termux-packages/blob/d9038ac1b/packages/navidrome/conf-configuration.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f04f4321c/packages/navidrome/conf-configuration.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d9038ac1b/packages/navidrome/conf-configuration.go.patch"
     ],
     "auto_updated": true
   },
@@ -41965,7 +41969,7 @@
   },
   {
     "name": "txikijs",
-    "version": "1:24.12.0",
+    "version": "1:26.2.0",
     "description": "A small and powerful JavaScript runtime",
     "homepage": "https://github.com/saghul/txiki.js",
     "depends": [
@@ -41974,20 +41978,18 @@
     ],
     "srcurl": "git+https://github.com/saghul/txiki.js",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6908bcb5/packages/txikijs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6908bcb5/packages/txikijs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6908bcb5/packages/txikijs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd85b6843/packages/txikijs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c6908bcb5/packages/txikijs/deps-libuv-src-unix-core.c.patch",
-      "https://github.com/termux/termux-packages/blob/c6908bcb5/packages/txikijs/deps-wasm3-source-m3_api_wasi.c.patch",
-      "https://github.com/termux/termux-packages/blob/c6908bcb5/packages/txikijs/deps-wasm3-source-m3_config_platforms.h.patch",
-      "https://github.com/termux/termux-packages/blob/c6908bcb5/packages/txikijs/libuv-use-C11.patch"
+      "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/deps-libuv-src-unix-core.c.patch",
+      "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/deps-quickjs-quickjs.c.patch",
+      "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/deps-wamr-core-shared-platform-linux-platform_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c6908bcb5/packages/txikijs/deps-libuv-src-unix-core.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c6908bcb5/packages/txikijs/deps-wasm3-source-m3_api_wasi.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c6908bcb5/packages/txikijs/deps-wasm3-source-m3_config_platforms.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/c6908bcb5/packages/txikijs/libuv-use-C11.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/deps-libuv-src-unix-core.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/deps-quickjs-quickjs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/deps-wamr-core-shared-platform-linux-platform_internal.h.patch"
     ],
     "auto_updated": true
   },
@@ -45144,22 +45146,22 @@
   },
   {
     "name": "z3",
-    "version": "4.15.4",
+    "version": "4.15.5",
     "description": "Z3 is a theorem prover from Microsoft Research",
     "homepage": "https://github.com/Z3Prover/z3",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.4.tar.gz",
+    "srcurl": "https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/37ce03307/packages/z3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/37ce03307/packages/z3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/37ce03307/packages/z3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a63067904/packages/z3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a63067904/packages/z3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a63067904/packages/z3/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/37ce03307/packages/z3/scripts-mk_util.py.patch"
+      "https://github.com/termux/termux-packages/blob/a63067904/packages/z3/scripts-mk_util.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/37ce03307/packages/z3/scripts-mk_util.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a63067904/packages/z3/scripts-mk_util.py.patch"
     ],
     "auto_updated": true
   },
@@ -55442,9 +55444,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.22/kwallet-6.22.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a484f1ca0/x11-packages/kf6-kwallet",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a484f1ca0/x11-packages/kf6-kwallet/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a484f1ca0/x11-packages/kf6-kwallet/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/21fa9cda2/x11-packages/kf6-kwallet",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/21fa9cda2/x11-packages/kf6-kwallet/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/21fa9cda2/x11-packages/kf6-kwallet/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -55988,6 +55990,41 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/6c9d88905/x11-packages/kvantum",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c9d88905/x11-packages/kvantum/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c9d88905/x11-packages/kvantum/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "kwalletmanager",
+    "version": "25.12.2",
+    "description": "Wallet management tool",
+    "homepage": "https://invent.kde.org/utilities/kwalletmanager",
+    "depends": [
+      "kf6-karchive",
+      "kf6-kcmutils",
+      "kf6-kcodecs",
+      "kf6-kconfig",
+      "kf6-kconfigwidgets",
+      "kf6-kcoreaddons",
+      "kf6-kcrash",
+      "kf6-kdbusaddons",
+      "kf6-ki18n",
+      "kf6-kio",
+      "kf6-kitemviews",
+      "kf6-kservice",
+      "kf6-kstatusnotifieritem",
+      "kf6-kwallet",
+      "kf6-kwidgetsaddons",
+      "kf6-kwindowsystem",
+      "kf6-kxmlgui",
+      "libc++",
+      "qt6-qtbase"
+    ],
+    "srcurl": "https://download.kde.org/stable/release-service/25.12.2/src/kwalletmanager-25.12.2.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1223d0833/x11-packages/kwalletmanager",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1223d0833/x11-packages/kwalletmanager/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1223d0833/x11-packages/kwalletmanager/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63768,7 +63805,7 @@
   },
   {
     "name": "spotify-qt",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "description": "Lightweight Spotify client using Qt",
     "homepage": "https://github.com/kraxarn/spotify-qt",
     "depends": [
@@ -63776,18 +63813,18 @@
       "qt6-qtbase",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://github.com/kraxarn/spotify-qt/archive/refs/tags/v4.0.1.tar.gz",
+    "srcurl": "https://github.com/kraxarn/spotify-qt/archive/refs/tags/v4.0.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a80e702c/x11-packages/spotify-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a80e702c/x11-packages/spotify-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a80e702c/x11-packages/spotify-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e55dcddb/x11-packages/spotify-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e55dcddb/x11-packages/spotify-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e55dcddb/x11-packages/spotify-qt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7a80e702c/x11-packages/spotify-qt/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/7a80e702c/x11-packages/spotify-qt/fix-hardcoded-paths.patch"
+      "https://github.com/termux/termux-packages/blob/4e55dcddb/x11-packages/spotify-qt/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/4e55dcddb/x11-packages/spotify-qt/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7a80e702c/x11-packages/spotify-qt/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a80e702c/x11-packages/spotify-qt/fix-hardcoded-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4e55dcddb/x11-packages/spotify-qt/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e55dcddb/x11-packages/spotify-qt/fix-hardcoded-paths.patch"
     ],
     "auto_updated": true
   },
