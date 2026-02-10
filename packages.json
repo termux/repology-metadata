@@ -7305,20 +7305,20 @@
   },
   {
     "name": "ed",
-    "version": "1.22.4",
+    "version": "1.22.5",
     "description": "Classic UNIX line editor",
     "homepage": "https://www.gnu.org/software/ed/",
     "depends": [],
-    "srcurl": "https://mirrors.kernel.org/gnu/ed/ed-1.22.4.tar.lz",
+    "srcurl": "https://mirrors.kernel.org/gnu/ed/ed-1.22.5.tar.lz",
     "maintainer": "Oliver Schmidhauser @Neo-Oli",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7585a7a54/packages/ed",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7585a7a54/packages/ed/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7585a7a54/packages/ed/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/118d5bcf9/packages/ed",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/118d5bcf9/packages/ed/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/118d5bcf9/packages/ed/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7585a7a54/packages/ed/configure.patch"
+      "https://github.com/termux/termux-packages/blob/118d5bcf9/packages/ed/configure.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7585a7a54/packages/ed/configure.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/118d5bcf9/packages/ed/configure.patch"
     ],
     "auto_updated": true
   },
@@ -8337,7 +8337,6 @@
       "libbs2b",
       "libbz2",
       "libdav1d",
-      "libgnutls",
       "libiconv",
       "liblzma",
       "libmp3lame",
@@ -8364,6 +8363,7 @@
       "libzmq",
       "littlecms",
       "ocl-icd",
+      "openssl",
       "rubberband",
       "svt-av1",
       "vulkan-icd",
@@ -8372,22 +8372,22 @@
     ],
     "srcurl": "https://www.ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1336822d6/packages/ffmpeg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1336822d6/packages/ffmpeg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1336822d6/packages/ffmpeg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5cfbcdcdd/packages/ffmpeg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5cfbcdcdd/packages/ffmpeg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5cfbcdcdd/packages/ffmpeg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1336822d6/packages/ffmpeg/backport-Android15-MediaCodec-fix.patch",
-      "https://github.com/termux/termux-packages/blob/1336822d6/packages/ffmpeg/cherry-pick-for-libvpx-1.16.0.patch",
-      "https://github.com/termux/termux-packages/blob/1336822d6/packages/ffmpeg/configure.patch",
-      "https://github.com/termux/termux-packages/blob/1336822d6/packages/ffmpeg/libavcodec-allcodecs.c.patch",
-      "https://github.com/termux/termux-packages/blob/1336822d6/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://github.com/termux/termux-packages/blob/5cfbcdcdd/packages/ffmpeg/backport-Android15-MediaCodec-fix.patch",
+      "https://github.com/termux/termux-packages/blob/5cfbcdcdd/packages/ffmpeg/cherry-pick-for-libvpx-1.16.0.patch",
+      "https://github.com/termux/termux-packages/blob/5cfbcdcdd/packages/ffmpeg/configure.patch",
+      "https://github.com/termux/termux-packages/blob/5cfbcdcdd/packages/ffmpeg/libavcodec-allcodecs.c.patch",
+      "https://github.com/termux/termux-packages/blob/5cfbcdcdd/packages/ffmpeg/libavutil-file_open.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1336822d6/packages/ffmpeg/backport-Android15-MediaCodec-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1336822d6/packages/ffmpeg/cherry-pick-for-libvpx-1.16.0.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1336822d6/packages/ffmpeg/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1336822d6/packages/ffmpeg/libavcodec-allcodecs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1336822d6/packages/ffmpeg/libavutil-file_open.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5cfbcdcdd/packages/ffmpeg/backport-Android15-MediaCodec-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cfbcdcdd/packages/ffmpeg/cherry-pick-for-libvpx-1.16.0.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cfbcdcdd/packages/ffmpeg/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cfbcdcdd/packages/ffmpeg/libavcodec-allcodecs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5cfbcdcdd/packages/ffmpeg/libavutil-file_open.c.patch"
     ],
     "auto_updated": false
   },
@@ -11958,9 +11958,9 @@
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a5019535/packages/gstreamer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a5019535/packages/gstreamer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a5019535/packages/gstreamer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/22c28e819/packages/gstreamer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/22c28e819/packages/gstreamer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/22c28e819/packages/gstreamer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30787,64 +30787,64 @@
     ],
     "srcurl": "https://github.com/openssh/openssh-portable/archive/refs/tags/V_10_2_P1.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f2a1bd1ae/packages/openssh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c7bf0468c/packages/openssh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/auth-passwd.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/auth.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/contrib_ssh-copy-id.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/defines.h.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/hostfile.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/loginrec.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/misc.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/mux.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/openbsd-compat_explicit_bzero.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/openbsd-compat_xcrypt.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/pathnames.h.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/readconf.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/servconf.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/session.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sftp-server.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/ssh-agent.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/ssh-keygen.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/ssh_config.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sshd-auth.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sshd-session.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sshd.8.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sshd.c.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sshd_config.5.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sshd_config.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/openssh/sshpty.c.patch"
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/auth-passwd.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/auth.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/contrib_ssh-copy-id.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/defines.h.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/hostfile.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/loginrec.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/misc.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/mux.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/openbsd-compat_explicit_bzero.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/openbsd-compat_xcrypt.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/pathnames.h.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/readconf.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/servconf.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/session.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sftp-server.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/ssh-agent.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/ssh-keygen.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/ssh_config.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sshd-auth.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sshd-session.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sshd.8.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sshd.c.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sshd_config.5.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sshd_config.patch",
+      "https://github.com/termux/termux-packages/blob/c7bf0468c/packages/openssh/sshpty.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/auth-passwd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/auth.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/contrib_ssh-copy-id.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/defines.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/hostfile.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/loginrec.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/misc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/mux.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/openbsd-compat_explicit_bzero.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/openbsd-compat_xcrypt.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/pathnames.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/readconf.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/servconf.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/session.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sftp-server.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/ssh-agent.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/ssh-keygen.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/ssh_config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sshd-auth.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sshd-session.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sshd.8.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sshd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sshd_config.5.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sshd_config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/openssh/sshpty.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/auth-passwd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/auth.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/contrib_ssh-copy-id.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/defines.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/hostfile.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/loginrec.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/misc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/mux.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/openbsd-compat_explicit_bzero.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/openbsd-compat_xcrypt.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/pathnames.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/readconf.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/servconf.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/session.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sftp-server.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/ssh-agent.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/ssh-keygen.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/ssh_config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sshd-auth.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sshd-session.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sshd.8.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sshd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sshd_config.5.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sshd_config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7bf0468c/packages/openssh/sshpty.c.patch"
     ],
     "auto_updated": true
   },
@@ -33238,7 +33238,7 @@
   },
   {
     "name": "proton-bridge",
-    "version": "3.21.2",
+    "version": "3.22.0",
     "description": "ProtonMail Bridge application",
     "homepage": "https://github.com/ProtonMail/proton-bridge",
     "depends": [
@@ -33247,14 +33247,16 @@
     ],
     "srcurl": "git+https://github.com/ProtonMail/proton-bridge",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/337d1436f/packages/proton-bridge",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/337d1436f/packages/proton-bridge/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/337d1436f/packages/proton-bridge/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d00e8f06/packages/proton-bridge",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d00e8f06/packages/proton-bridge/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d00e8f06/packages/proton-bridge/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/337d1436f/packages/proton-bridge/disable-updater.patch"
+      "https://github.com/termux/termux-packages/blob/8d00e8f06/packages/proton-bridge/disable-fido.patch",
+      "https://github.com/termux/termux-packages/blob/8d00e8f06/packages/proton-bridge/disable-updater.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/337d1436f/packages/proton-bridge/disable-updater.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8d00e8f06/packages/proton-bridge/disable-fido.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d00e8f06/packages/proton-bridge/disable-updater.patch"
     ],
     "auto_updated": true
   },
@@ -41971,7 +41973,7 @@
   },
   {
     "name": "txikijs",
-    "version": "1:26.2.0",
+    "version": "1:26.2.1",
     "description": "A small and powerful JavaScript runtime",
     "homepage": "https://github.com/saghul/txiki.js",
     "depends": [
@@ -41980,18 +41982,18 @@
     ],
     "srcurl": "git+https://github.com/saghul/txiki.js",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd85b6843/packages/txikijs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eac8ad403/packages/txikijs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eac8ad403/packages/txikijs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eac8ad403/packages/txikijs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/deps-libuv-src-unix-core.c.patch",
-      "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/deps-quickjs-quickjs.c.patch",
-      "https://github.com/termux/termux-packages/blob/bd85b6843/packages/txikijs/deps-wamr-core-shared-platform-linux-platform_internal.h.patch"
+      "https://github.com/termux/termux-packages/blob/eac8ad403/packages/txikijs/deps-libuv-src-unix-core.c.patch",
+      "https://github.com/termux/termux-packages/blob/eac8ad403/packages/txikijs/deps-quickjs-quickjs.c.patch",
+      "https://github.com/termux/termux-packages/blob/eac8ad403/packages/txikijs/deps-wamr-core-shared-platform-linux-platform_internal.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/deps-libuv-src-unix-core.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/deps-quickjs-quickjs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bd85b6843/packages/txikijs/deps-wamr-core-shared-platform-linux-platform_internal.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/eac8ad403/packages/txikijs/deps-libuv-src-unix-core.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/eac8ad403/packages/txikijs/deps-quickjs-quickjs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/eac8ad403/packages/txikijs/deps-wamr-core-shared-platform-linux-platform_internal.h.patch"
     ],
     "auto_updated": true
   },
@@ -42464,18 +42466,18 @@
   },
   {
     "name": "upower",
-    "version": "1.91.0",
+    "version": "1.91.1",
     "description": "Power management support for DeviceKit",
     "homepage": "https://upower.freedesktop.org/",
     "depends": [
       "glib",
       "gobject-introspection"
     ],
-    "srcurl": "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.0/upower-v1.91.0.tar.gz",
+    "srcurl": "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.1/upower-v1.91.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bf9f13338/packages/upower",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bf9f13338/packages/upower/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bf9f13338/packages/upower/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/17253f1a0/packages/upower",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17253f1a0/packages/upower/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17253f1a0/packages/upower/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54286,9 +54288,9 @@
       "okular"
     ],
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ae017e798/x11-packages/kde-applications",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ae017e798/x11-packages/kde-applications/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ae017e798/x11-packages/kde-applications/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5162f434e/x11-packages/kde-applications",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5162f434e/x11-packages/kde-applications/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5162f434e/x11-packages/kde-applications/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -55585,6 +55587,24 @@
     "auto_updated": true
   },
   {
+    "name": "kf6-kplotting",
+    "version": "6.22.0",
+    "description": "Lightweight plotting framework",
+    "homepage": "https://invent.kde.org/frameworks/kplotting",
+    "depends": [
+      "libc++",
+      "qt6-qtbase"
+    ],
+    "srcurl": "https://download.kde.org/stable/frameworks/6.22/kplotting-6.22.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/19d46b223/x11-packages/kf6-kplotting",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/19d46b223/x11-packages/kf6-kplotting/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/19d46b223/x11-packages/kf6-kplotting/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "kf6-kpty",
     "version": "6.22.0",
     "description": "Pty abstraction",
@@ -56578,8 +56598,51 @@
     "auto_updated": true
   },
   {
+    "name": "ktorrent",
+    "version": "25.12.2",
+    "description": "A powerful BitTorrent client for KDE",
+    "homepage": "https://invent.kde.org/network/ktorrent",
+    "depends": [
+      "kf6-karchive",
+      "kf6-kcmutils",
+      "kf6-kcompletion",
+      "kf6-kconfig",
+      "kf6-kconfigwidgets",
+      "kf6-kcoreaddons",
+      "kf6-kcrash",
+      "kf6-kdbusaddons",
+      "kf6-kglobalaccel",
+      "kf6-ki18n",
+      "kf6-kiconthemes",
+      "kf6-kio",
+      "kf6-knotifications",
+      "kf6-knotifyconfig",
+      "kf6-kparts",
+      "kf6-kstatusnotifieritem",
+      "kf6-ktextwidgets",
+      "kf6-kwidgetsaddons",
+      "kf6-kwindowsystem",
+      "kf6-kxmlgui",
+      "libc++",
+      "libktorrent",
+      "libmaxminddb",
+      "phonon-qt6",
+      "qt6-qt5compat",
+      "qt6-qtbase",
+      "qt6-qtwebengine"
+    ],
+    "srcurl": "https://download.kde.org/stable/release-service/25.12.2/src/ktorrent-25.12.2.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fd3e35920/x11-packages/ktorrent",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fd3e35920/x11-packages/ktorrent/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fd3e35920/x11-packages/ktorrent/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "kvantum",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "SVG-based theme engine for Qt6",
     "homepage": "https://github.com/tsujan/Kvantum",
     "depends": [
@@ -56589,11 +56652,11 @@
       "qt6-qtbase",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://github.com/tsujan/Kvantum/releases/download/V1.1.5/Kvantum-1.1.5.tar.xz",
+    "srcurl": "https://github.com/tsujan/Kvantum/releases/download/V1.1.6/Kvantum-1.1.6.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c9d88905/x11-packages/kvantum",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c9d88905/x11-packages/kvantum/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c9d88905/x11-packages/kvantum/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c8a7546a1/x11-packages/kvantum",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c8a7546a1/x11-packages/kvantum/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c8a7546a1/x11-packages/kvantum/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -57600,6 +57663,31 @@
       "https://raw.githubusercontent.com/termux/termux-packages/a49a2bf83/x11-packages/libksysguard/disable-gpu-plugin.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/a49a2bf83/x11-packages/libksysguard/disable-sensors.patch"
     ],
+    "auto_updated": true
+  },
+  {
+    "name": "libktorrent",
+    "version": "25.12.2",
+    "description": "A BitTorrent protocol implementation",
+    "homepage": "https://invent.kde.org/network/libktorrent",
+    "depends": [
+      "kf6-karchive",
+      "kf6-kconfig",
+      "kf6-kcoreaddons",
+      "kf6-ki18n",
+      "kf6-kio",
+      "libc++",
+      "libgmp",
+      "openssl",
+      "qt6-qtbase"
+    ],
+    "srcurl": "https://download.kde.org/stable/release-service/25.12.2/src/libktorrent-25.12.2.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/399150c40/x11-packages/libktorrent",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/399150c40/x11-packages/libktorrent/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/399150c40/x11-packages/libktorrent/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -65811,7 +65899,7 @@
   },
   {
     "name": "texworks",
-    "version": "0.6.10",
+    "version": "0.6.11",
     "description": "TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents",
     "homepage": "https://www.tug.org/texworks/",
     "depends": [
@@ -65825,20 +65913,20 @@
       "qt6-qttools",
       "zlib"
     ],
-    "srcurl": "https://github.com/TeXworks/texworks/archive/refs/tags/release-0.6.10.tar.gz",
+    "srcurl": "https://github.com/TeXworks/texworks/archive/refs/tags/release-0.6.11.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/38c3eedfb/x11-packages/texworks",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38c3eedfb/x11-packages/texworks/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38c3eedfb/x11-packages/texworks/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/26ad0ada9/x11-packages/texworks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/26ad0ada9/x11-packages/texworks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/26ad0ada9/x11-packages/texworks/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/38c3eedfb/x11-packages/texworks/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/38c3eedfb/x11-packages/texworks/fix-findpoppler.patch",
-      "https://github.com/termux/termux-packages/blob/38c3eedfb/x11-packages/texworks/src-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/26ad0ada9/x11-packages/texworks/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/26ad0ada9/x11-packages/texworks/fix-findpoppler.patch",
+      "https://github.com/termux/termux-packages/blob/26ad0ada9/x11-packages/texworks/src-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/38c3eedfb/x11-packages/texworks/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/38c3eedfb/x11-packages/texworks/fix-findpoppler.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/38c3eedfb/x11-packages/texworks/src-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/26ad0ada9/x11-packages/texworks/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/26ad0ada9/x11-packages/texworks/fix-findpoppler.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/26ad0ada9/x11-packages/texworks/src-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
