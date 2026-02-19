@@ -2441,6 +2441,37 @@
     "auto_updated": true
   },
   {
+    "name": "binutils",
+    "version": "2.46.0",
+    "description": "A GNU collection of binary utilities",
+    "homepage": "https://www.gnu.org/software/binutils/",
+    "depends": [
+      "binutils-bin",
+      "zlib",
+      "zstd"
+    ],
+    "srcurl": "https://mirrors.kernel.org/gnu/binutils/binutils-2.46.0.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0365ce247/packages/binutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0365ce247/packages/binutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0365ce247/packages/binutils/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/0365ce247/packages/binutils/bfd-dynamic_interpreter.patch",
+      "https://github.com/termux/termux-packages/blob/0365ce247/packages/binutils/gas-decrease-input-buffer-size.patch",
+      "https://github.com/termux/termux-packages/blob/0365ce247/packages/binutils/native_lib_dirs.patch32",
+      "https://github.com/termux/termux-packages/blob/0365ce247/packages/binutils/native_lib_dirs.patch64",
+      "https://github.com/termux/termux-packages/blob/0365ce247/packages/binutils/no-hardlink.patch.beforehostbuild"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/0365ce247/packages/binutils/bfd-dynamic_interpreter.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0365ce247/packages/binutils/gas-decrease-input-buffer-size.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0365ce247/packages/binutils/native_lib_dirs.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/0365ce247/packages/binutils/native_lib_dirs.patch64",
+      "https://raw.githubusercontent.com/termux/termux-packages/0365ce247/packages/binutils/no-hardlink.patch.beforehostbuild"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "binutils-is-llvm",
     "version": "0.3",
     "description": "Use llvm as binutils",
@@ -2450,41 +2481,11 @@
       "llvm"
     ],
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b0f34b978/packages/binutils-is-llvm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b0f34b978/packages/binutils-is-llvm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b0f34b978/packages/binutils-is-llvm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0592ee05d/packages/binutils-is-llvm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0592ee05d/packages/binutils-is-llvm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0592ee05d/packages/binutils-is-llvm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "binutils-libs",
-    "version": "2.45.1",
-    "description": "GNU Binutils libraries",
-    "homepage": "https://www.gnu.org/software/binutils/",
-    "depends": [
-      "zlib",
-      "zstd"
-    ],
-    "srcurl": "https://mirrors.kernel.org/gnu/binutils/binutils-2.45.1.tar.xz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3ab0a60f9/packages/binutils-libs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3ab0a60f9/packages/binutils-libs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3ab0a60f9/packages/binutils-libs/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3ab0a60f9/packages/binutils-libs/bfd-dynamic_interpreter.patch",
-      "https://github.com/termux/termux-packages/blob/3ab0a60f9/packages/binutils-libs/gas-decrease-input-buffer-size.patch",
-      "https://github.com/termux/termux-packages/blob/3ab0a60f9/packages/binutils-libs/native_lib_dirs.patch32",
-      "https://github.com/termux/termux-packages/blob/3ab0a60f9/packages/binutils-libs/native_lib_dirs.patch64",
-      "https://github.com/termux/termux-packages/blob/3ab0a60f9/packages/binutils-libs/no-hardlink.patch.beforehostbuild"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3ab0a60f9/packages/binutils-libs/bfd-dynamic_interpreter.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ab0a60f9/packages/binutils-libs/gas-decrease-input-buffer-size.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ab0a60f9/packages/binutils-libs/native_lib_dirs.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ab0a60f9/packages/binutils-libs/native_lib_dirs.patch64",
-      "https://raw.githubusercontent.com/termux/termux-packages/3ab0a60f9/packages/binutils-libs/no-hardlink.patch.beforehostbuild"
-    ],
     "auto_updated": false
   },
   {
@@ -4798,26 +4799,26 @@
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/coreutils/coreutils-9.10.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/71fb68cb4/packages/coreutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f7532733a/packages/coreutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/configure.patch",
-      "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/date.c.patch",
-      "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/pwd.c.patch",
-      "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/selinux.patch",
-      "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/src-hostid.c.patch",
-      "https://github.com/termux/termux-packages/blob/71fb68cb4/packages/coreutils/src-ls.c.patch"
+      "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/configure.patch",
+      "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/date.c.patch",
+      "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/pwd.c.patch",
+      "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/selinux.patch",
+      "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/src-hostid.c.patch",
+      "https://github.com/termux/termux-packages/blob/f7532733a/packages/coreutils/src-ls.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/date.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/pwd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/selinux.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/src-hostid.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/71fb68cb4/packages/coreutils/src-ls.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/date.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/pwd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/selinux.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/src-hostid.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7532733a/packages/coreutils/src-ls.c.patch"
     ],
     "auto_updated": false
   },
@@ -24379,36 +24380,36 @@
     "description": "Sumneko Lua Language Server coded in Lua",
     "homepage": "https://github.com/sumneko/lua-language-server",
     "depends": [
+      "binutils",
       "libandroid-spawn",
-      "binutils-libs",
       "libc++"
     ],
     "srcurl": "git+https://github.com/sumneko/lua-language-server",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f2a1bd1ae/packages/lua-language-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb9ba7e1d/packages/lua-language-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/android.diff",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/force-cast-unw_context_t.diff",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/hostbuild-force-link.diff",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/loslib.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/luaconf.patch",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/make.lua.diff",
-      "https://github.com/termux/termux-packages/blob/f2a1bd1ae/packages/lua-language-server/no-kernel_sigaction.patch"
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/android.diff",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/force-cast-unw_context_t.diff",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/hostbuild-force-link.diff",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/loslib.patch",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/luaconf.patch",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/make.lua.diff",
+      "https://github.com/termux/termux-packages/blob/bb9ba7e1d/packages/lua-language-server/no-kernel_sigaction.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/android.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/bee.lua-project-common.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/force-cast-unw_context_t.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/hostbuild-force-link.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/loslib.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/luaconf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/make.lua.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae/packages/lua-language-server/no-kernel_sigaction.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/android.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/bee.lua-bee-net-endpoint.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/bee.lua-project-common.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/force-cast-unw_context_t.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/hostbuild-force-link.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/loslib.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/luaconf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/make.lua.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb9ba7e1d/packages/lua-language-server/no-kernel_sigaction.patch"
     ],
     "auto_updated": true
   },
@@ -48747,7 +48748,7 @@
   },
   {
     "name": "chromium",
-    "version": "145.0.7632.45",
+    "version": "145.0.7632.75+really144.0.7559.132",
     "description": "Chromium web browser",
     "homepage": "https://www.chromium.org/Home",
     "depends": [
@@ -48769,22 +48770,22 @@
       "pulseaudio",
       "zlib"
     ],
-    "srcurl": "https://commondatastorage.googleapis.com/chromium-browser-official/chromium-145.0.7632.45-lite.tar.xz",
+    "srcurl": "https://commondatastorage.googleapis.com/chromium-browser-official/chromium-144.0.7559.132-lite.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a637a48b0/x11-packages/chromium",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a637a48b0/x11-packages/chromium/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a637a48b0/x11-packages/chromium/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b5466450/x11-packages/chromium",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b5466450/x11-packages/chromium/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b5466450/x11-packages/chromium/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a637a48b0/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
-      "https://github.com/termux/termux-packages/blob/a637a48b0/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
-      "https://github.com/termux/termux-packages/blob/a637a48b0/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
-      "https://github.com/termux/termux-packages/blob/a637a48b0/x11-packages/chromium/9004-use-prebuilt-pdfium.patch"
+      "https://github.com/termux/termux-packages/blob/8b5466450/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
+      "https://github.com/termux/termux-packages/blob/8b5466450/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
+      "https://github.com/termux/termux-packages/blob/8b5466450/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
+      "https://github.com/termux/termux-packages/blob/8b5466450/x11-packages/chromium/9004-use-prebuilt-pdfium.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a637a48b0/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a637a48b0/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a637a48b0/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a637a48b0/x11-packages/chromium/9004-use-prebuilt-pdfium.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8b5466450/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8b5466450/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8b5466450/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8b5466450/x11-packages/chromium/9004-use-prebuilt-pdfium.patch"
     ],
     "auto_updated": false
   },
