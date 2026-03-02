@@ -7253,7 +7253,7 @@
   },
   {
     "name": "edbrowse",
-    "version": "3.8.15",
+    "version": "3.8.16",
     "description": "Line based editor, browser, and mail client",
     "homepage": "https://edbrowse.org/",
     "depends": [
@@ -7261,16 +7261,21 @@
       "libcurl",
       "openssl",
       "pcre2",
+      "quickjs-ng",
       "readline",
       "unixodbc"
     ],
-    "srcurl": "https://github.com/edbrowse/edbrowse/archive/refs/tags/v3.8.15.tar.gz",
+    "srcurl": "https://github.com/edbrowse/edbrowse/archive/refs/tags/v3.8.16.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/babef1cf1/packages/edbrowse",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/babef1cf1/packages/edbrowse/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/babef1cf1/packages/edbrowse/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a85e46b4/packages/edbrowse",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a85e46b4/packages/edbrowse/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a85e46b4/packages/edbrowse/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7a85e46b4/packages/edbrowse/src-isup.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7a85e46b4/packages/edbrowse/src-isup.c.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -9033,7 +9038,7 @@
   },
   {
     "name": "fzf",
-    "version": "0.68.0",
+    "version": "0.70.0",
     "description": "Command-line fuzzy finder",
     "homepage": "https://junegunn.github.io/fzf/",
     "depends": [
@@ -9041,16 +9046,16 @@
       "findutils",
       "ncurses-utils"
     ],
-    "srcurl": "https://github.com/junegunn/fzf/archive/refs/tags/v0.68.0.tar.gz",
+    "srcurl": "https://github.com/junegunn/fzf/archive/refs/tags/v0.70.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3b6993c72/packages/fzf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3b6993c72/packages/fzf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3b6993c72/packages/fzf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/54daaec2f/packages/fzf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/54daaec2f/packages/fzf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/54daaec2f/packages/fzf/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3b6993c72/packages/fzf/bin-fzf-tmux.patch"
+      "https://github.com/termux/termux-packages/blob/54daaec2f/packages/fzf/bin-fzf-tmux.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3b6993c72/packages/fzf/bin-fzf-tmux.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/54daaec2f/packages/fzf/bin-fzf-tmux.patch"
     ],
     "auto_updated": true
   },
@@ -14455,7 +14460,7 @@
   },
   {
     "name": "kiwix-tools",
-    "version": "3.8.1",
+    "version": "3.8.2",
     "description": "A collection of Kiwix related command line tools",
     "homepage": "https://github.com/kiwix/kiwix-tools",
     "depends": [
@@ -14464,11 +14469,11 @@
       "libkiwix",
       "libzim"
     ],
-    "srcurl": "https://github.com/kiwix/kiwix-tools/archive/refs/tags/3.8.1.tar.gz",
+    "srcurl": "https://github.com/kiwix/kiwix-tools/archive/refs/tags/3.8.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4f852f8c/packages/kiwix-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4f852f8c/packages/kiwix-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4f852f8c/packages/kiwix-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/32c859c21/packages/kiwix-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32c859c21/packages/kiwix-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32c859c21/packages/kiwix-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -18295,7 +18300,7 @@
   },
   {
     "name": "libkiwix",
-    "version": "14.1.1",
+    "version": "14.2.0",
     "description": "A library that contains a lot of things used by other kiwix programs",
     "homepage": "https://github.com/kiwix/libkiwix",
     "depends": [
@@ -18308,16 +18313,16 @@
       "libzim",
       "zlib"
     ],
-    "srcurl": "https://github.com/kiwix/libkiwix/archive/refs/tags/14.1.1.tar.gz",
+    "srcurl": "https://github.com/kiwix/libkiwix/archive/refs/tags/14.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c2114ebe1/packages/libkiwix",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c2114ebe1/packages/libkiwix/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c2114ebe1/packages/libkiwix/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dfb98dc76/packages/libkiwix",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dfb98dc76/packages/libkiwix/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dfb98dc76/packages/libkiwix/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c2114ebe1/packages/libkiwix/src-tools-pathTools.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/dfb98dc76/packages/libkiwix/src-tools-pathTools.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c2114ebe1/packages/libkiwix/src-tools-pathTools.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/dfb98dc76/packages/libkiwix/src-tools-pathTools.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -25905,15 +25910,15 @@
   },
   {
     "name": "mdds",
-    "version": "3.2.0",
+    "version": "3.2.1",
     "description": "A collection of multi-dimensional data structures and indexing algorithms",
     "homepage": "https://gitlab.com/mdds/mdds",
     "depends": [],
-    "srcurl": "https://gitlab.com/api/v4/projects/mdds%2Fmdds/packages/generic/source/3.2.0/mdds-3.2.0.tar.xz",
+    "srcurl": "https://gitlab.com/api/v4/projects/mdds%2Fmdds/packages/generic/source/3.2.1/mdds-3.2.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b3d38a31/packages/mdds",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b3d38a31/packages/mdds/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b3d38a31/packages/mdds/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/387e615ab/packages/mdds",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/387e615ab/packages/mdds/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/387e615ab/packages/mdds/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -30977,15 +30982,15 @@
   },
   {
     "name": "oxlint",
-    "version": "1.50.0",
+    "version": "1.51.0",
     "description": "Oxc JavaScript linter",
     "homepage": "https://oxc.rs/",
     "depends": [],
-    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.50.0.tar.gz",
+    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.51.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f490feb29/packages/oxlint",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f490feb29/packages/oxlint/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f490feb29/packages/oxlint/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4c77f3e43/packages/oxlint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4c77f3e43/packages/oxlint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4c77f3e43/packages/oxlint/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -34627,6 +34632,21 @@
       "https://raw.githubusercontent.com/termux/termux-packages/2ce2fd30b/packages/quickjs/Makefile.patch"
     ],
     "auto_updated": false
+  },
+  {
+    "name": "quickjs-ng",
+    "version": "0.12.1",
+    "description": "Embeddable JavaScript engine in C (NG fork)",
+    "homepage": "https://quickjs-ng.github.io/quickjs/",
+    "depends": [],
+    "srcurl": "https://github.com/quickjs-ng/quickjs/archive/refs/tags/v0.12.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/72cb4a8de/packages/quickjs-ng",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72cb4a8de/packages/quickjs-ng/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72cb4a8de/packages/quickjs-ng/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "quilt",
@@ -38430,15 +38450,15 @@
   },
   {
     "name": "storj-uplink",
-    "version": "1.148.3",
+    "version": "1.148.4",
     "description": "Storj DCS Uplink CLI",
     "homepage": "https://www.storj.io/integrations/uplink-cli",
     "depends": [],
-    "srcurl": "https://github.com/storj/storj/archive/refs/tags/v1.148.3.tar.gz",
+    "srcurl": "https://github.com/storj/storj/archive/refs/tags/v1.148.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e722000b1/packages/storj-uplink",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e722000b1/packages/storj-uplink/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e722000b1/packages/storj-uplink/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1167c970c/packages/storj-uplink",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1167c970c/packages/storj-uplink/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1167c970c/packages/storj-uplink/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
