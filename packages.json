@@ -4718,9 +4718,9 @@
     ],
     "srcurl": "https://github.com/termux/command-not-found/archive/refs/tags/3.2.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4930e52915/packages/command-not-found",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4930e52915/packages/command-not-found/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4930e52915/packages/command-not-found/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ebd99765e2/packages/command-not-found",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ebd99765e2/packages/command-not-found/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ebd99765e2/packages/command-not-found/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -6634,19 +6634,58 @@
   },
   {
     "name": "dotnet-host",
-    "version": "9.0",
+    "version": "10.0",
     "description": "A metapackage for .NET Host",
     "homepage": "https://dotnet.microsoft.com/en-us/",
     "depends": [
-      "dotnet-host-9.0"
+      "dotnet-host-10.0"
     ],
     "maintainer": "@truboxl",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0efbbc168f/packages/dotnet-host",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0efbbc168f/packages/dotnet-host/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0efbbc168f/packages/dotnet-host/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/71c92ae61f/packages/dotnet-host",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/71c92ae61f/packages/dotnet-host/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/71c92ae61f/packages/dotnet-host/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
+  },
+  {
+    "name": "dotnet10.0",
+    "version": "10.0.3",
+    "description": ".NET 10.0",
+    "homepage": "https://dotnet.microsoft.com/en-us/",
+    "depends": [],
+    "srcurl": "git+https://github.com/dotnet/dotnet",
+    "maintainer": "@truboxl",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f71329778/packages/dotnet10.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0001-build-all-libs.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0002-define-memfd_create.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0004-disable-lttng-fatal-error.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0007-set-TargetsLinuxBionic-from-TargetRid.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0008-add-prebuilt-baseline-for-mono-llvm.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0011-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/5f71329778/packages/dotnet10.0/0012-runtime-fix-runpath-issues.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0001-build-all-libs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0002-define-memfd_create.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0004-disable-lttng-fatal-error.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0007-set-TargetsLinuxBionic-from-TargetRid.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0008-add-prebuilt-baseline-for-mono-llvm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0011-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/dotnet10.0/0012-runtime-fix-runpath-issues.patch"
+    ],
+    "auto_updated": true
   },
   {
     "name": "dotnet8.0",
@@ -6689,34 +6728,34 @@
     "depends": [],
     "srcurl": "git+https://github.com/dotnet/dotnet",
     "maintainer": "@truboxl",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a99e8eb024/packages/dotnet9.0",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a65ba34909/packages/dotnet9.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0001-build-all-libs.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0002-define-memfd_create.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0007-runtime-eng-DotNetBuild.props.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0008-aspire_fix-gitinfo-target.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0009-src-runtime-src-coreclr-vm-threadstatics.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0011-fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/a99e8eb024/packages/dotnet9.0/0012-runtime-fix-runpath-issues.patch"
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0001-build-all-libs.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0002-define-memfd_create.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0007-runtime-eng-DotNetBuild.props.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0008-aspire_fix-gitinfo-target.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0009-src-runtime-src-coreclr-vm-threadstatics.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0011-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/a65ba34909/packages/dotnet9.0/0012-runtime-fix-runpath-issues.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0001-build-all-libs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0002-define-memfd_create.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0007-runtime-eng-DotNetBuild.props.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0008-aspire_fix-gitinfo-target.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0009-src-runtime-src-coreclr-vm-threadstatics.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0011-fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a99e8eb024/packages/dotnet9.0/0012-runtime-fix-runpath-issues.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0001-build-all-libs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0002-define-memfd_create.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0007-runtime-eng-DotNetBuild.props.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0008-aspire_fix-gitinfo-target.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0009-src-runtime-src-coreclr-vm-threadstatics.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0011-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a65ba34909/packages/dotnet9.0/0012-runtime-fix-runpath-issues.patch"
     ],
     "auto_updated": true
   },
@@ -12020,7 +12059,7 @@
   },
   {
     "name": "harfbuzz",
-    "version": "13.0.0",
+    "version": "13.0.1",
     "description": "OpenType text shaping engine",
     "homepage": "https://www.freedesktop.org/wiki/Software/HarfBuzz/",
     "depends": [
@@ -12029,18 +12068,16 @@
       "libcairo",
       "libgraphite"
     ],
-    "srcurl": "https://github.com/harfbuzz/harfbuzz/archive/refs/tags/13.0.0.tar.gz",
+    "srcurl": "https://github.com/harfbuzz/harfbuzz/archive/refs/tags/13.0.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8ecae77610/packages/harfbuzz",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8ecae77610/packages/harfbuzz/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8ecae77610/packages/harfbuzz/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a888b5db73/packages/harfbuzz",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a888b5db73/packages/harfbuzz/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a888b5db73/packages/harfbuzz/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8ecae77610/packages/harfbuzz/correct-shared-library-suffix.patch",
-      "https://github.com/termux/termux-packages/blob/8ecae77610/packages/harfbuzz/src-hb-vector-svg-utils.cc.patch"
+      "https://github.com/termux/termux-packages/blob/a888b5db73/packages/harfbuzz/correct-shared-library-suffix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8ecae77610/packages/harfbuzz/correct-shared-library-suffix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8ecae77610/packages/harfbuzz/src-hb-vector-svg-utils.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a888b5db73/packages/harfbuzz/correct-shared-library-suffix.patch"
     ],
     "auto_updated": true
   },
@@ -28320,24 +28357,24 @@
       "tree-sitter-parsers",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/neovim/neovim/archive/f1c82be1a1.tar.gz",
+    "srcurl": "https://github.com/neovim/neovim/archive/e8e694d837.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/afc0299849/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/afc0299849/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/afc0299849/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ff4fbc9d3d/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ff4fbc9d3d/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ff4fbc9d3d/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/afc0299849/packages/neovim-nightly/add-target-to-gen-preprocessing.diff",
-      "https://github.com/termux/termux-packages/blob/afc0299849/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://github.com/termux/termux-packages/blob/afc0299849/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/afc0299849/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://github.com/termux/termux-packages/blob/afc0299849/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/ff4fbc9d3d/packages/neovim-nightly/add-target-to-gen-preprocessing.diff",
+      "https://github.com/termux/termux-packages/blob/ff4fbc9d3d/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://github.com/termux/termux-packages/blob/ff4fbc9d3d/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/ff4fbc9d3d/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://github.com/termux/termux-packages/blob/ff4fbc9d3d/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/afc0299849/packages/neovim-nightly/add-target-to-gen-preprocessing.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/afc0299849/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/afc0299849/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/afc0299849/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/afc0299849/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ff4fbc9d3d/packages/neovim-nightly/add-target-to-gen-preprocessing.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/ff4fbc9d3d/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ff4fbc9d3d/packages/neovim-nightly/runtime-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ff4fbc9d3d/packages/neovim-nightly/src-nvim-eval-funcs.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ff4fbc9d3d/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "auto_updated": true
   },
@@ -28567,9 +28604,9 @@
       "netstandard-targeting-pack-2.1-9.0"
     ],
     "maintainer": "@truboxl",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/09341275a0/packages/netstandard-targeting-pack-2.1",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/09341275a0/packages/netstandard-targeting-pack-2.1/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/09341275a0/packages/netstandard-targeting-pack-2.1/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f71329778/packages/netstandard-targeting-pack-2.1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f71329778/packages/netstandard-targeting-pack-2.1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f71329778/packages/netstandard-targeting-pack-2.1/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -46447,7 +46484,7 @@
   },
   {
     "name": "nfs-utils",
-    "version": "2.8.5",
+    "version": "2.8.6",
     "description": "Linux NFS userland utilities",
     "homepage": "https://linux-nfs.org/",
     "depends": [
@@ -46463,38 +46500,38 @@
       "libuuid",
       "openldap"
     ],
-    "srcurl": "https://downloads.sourceforge.net/nfs/nfs-utils-2.8.5.tar.bz2",
+    "srcurl": "https://downloads.sourceforge.net/nfs/nfs-utils-2.8.6.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4634d56f8c/root-packages/nfs-utils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e25d4c631/root-packages/nfs-utils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/support-export-export.c.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/support-include-sockaddr.h.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/support-nfs-conffile.c.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/support-reexport-backend_sqlite.c.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/utils-mount-fstab.h.patch",
-      "https://github.com/termux/termux-packages/blob/4634d56f8c/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/support-export-export.c.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/support-include-sockaddr.h.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/support-nfs-conffile.c.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/support-reexport-backend_sqlite.c.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/utils-mount-fstab.h.patch",
+      "https://github.com/termux/termux-packages/blob/2e25d4c631/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/support-export-export.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/support-include-sockaddr.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/support-nfs-conffile.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/support-reexport-backend_sqlite.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/utils-mount-fstab.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4634d56f8c/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/nfs-utils-2.5.2-no-werror.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/support-export-export.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/support-include-sockaddr.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/support-nfs-conffile.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/support-nfs-rpcmisc.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/support-nfs-svc_socket.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/support-nfsidmap-libnfsidmap.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/support-reexport-backend_sqlite.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/tools-nfsrahead-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/utils-mount-fstab.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2e25d4c631/root-packages/nfs-utils/utils-mount-nfsumount.c.patch"
     ],
     "auto_updated": true
   },
