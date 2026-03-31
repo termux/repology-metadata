@@ -8129,6 +8129,29 @@
     "auto_updated": false
   },
   {
+    "name": "fcgiwrap",
+    "version": "1.1.0",
+    "description": "A simple server for running CGI applications over FastCGI",
+    "homepage": "https://github.com/gnosek/fcgiwrap",
+    "depends": [
+      "fcgi"
+    ],
+    "srcurl": "https://github.com/gnosek/fcgiwrap/archive/99c942c.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b46d2672f5/packages/fcgiwrap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b46d2672f5/packages/fcgiwrap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b46d2672f5/packages/fcgiwrap/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/b46d2672f5/packages/fcgiwrap/fix-kill-parameters.patch",
+      "https://github.com/termux/termux-packages/blob/b46d2672f5/packages/fcgiwrap/prefix-unnecessary.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/b46d2672f5/packages/fcgiwrap/fix-kill-parameters.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b46d2672f5/packages/fcgiwrap/prefix-unnecessary.patch"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "fclones",
     "version": "0.35.0",
     "description": "Efficient Duplicate File Finder",
@@ -8728,15 +8751,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.4.27",
+    "version": "0.4.28",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.27.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.28.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9d1a959d19/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9d1a959d19/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d1a959d19/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e2d0b727c2/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e2d0b727c2/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e2d0b727c2/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -24706,26 +24729,26 @@
   },
   {
     "name": "luajit",
-    "version": "1:2.1.1774638290+gfbb36bb",
+    "version": "1:2.1.1774896198+g18b087c",
     "description": "Just-In-Time Compiler for Lua",
     "homepage": "https://luajit.org/",
     "depends": [],
     "srcurl": "git+https://github.com/LuaJIT/LuaJIT.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/03fa30717e/packages/luajit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03fa30717e/packages/luajit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03fa30717e/packages/luajit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b920409daf/packages/luajit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b920409daf/packages/luajit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b920409daf/packages/luajit/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/03fa30717e/packages/luajit/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/03fa30717e/packages/luajit/etc-luajit.pc.patch",
-      "https://github.com/termux/termux-packages/blob/03fa30717e/packages/luajit/src-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/03fa30717e/packages/luajit/tmpdir-fix.patch"
+      "https://github.com/termux/termux-packages/blob/b920409daf/packages/luajit/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/b920409daf/packages/luajit/etc-luajit.pc.patch",
+      "https://github.com/termux/termux-packages/blob/b920409daf/packages/luajit/src-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/b920409daf/packages/luajit/tmpdir-fix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/03fa30717e/packages/luajit/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/03fa30717e/packages/luajit/etc-luajit.pc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/03fa30717e/packages/luajit/src-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/03fa30717e/packages/luajit/tmpdir-fix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b920409daf/packages/luajit/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b920409daf/packages/luajit/etc-luajit.pc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b920409daf/packages/luajit/src-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b920409daf/packages/luajit/tmpdir-fix.patch"
     ],
     "auto_updated": true
   },
@@ -37219,17 +37242,17 @@
   },
   {
     "name": "simdjson",
-    "version": "4.5.0",
+    "version": "4.6.0",
     "description": "A C++ library to see how fast we can parse JSON with complete validation",
     "homepage": "https://simdjson.org/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/simdjson/simdjson/archive/refs/tags/v4.5.0.tar.gz",
+    "srcurl": "https://github.com/simdjson/simdjson/archive/refs/tags/v4.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/23c431d081/packages/simdjson",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23c431d081/packages/simdjson/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23c431d081/packages/simdjson/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b0d689bd1b/packages/simdjson",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b0d689bd1b/packages/simdjson/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b0d689bd1b/packages/simdjson/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -38300,17 +38323,17 @@
   },
   {
     "name": "sslscan",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "description": "Utility to discover supported cipher suites on SSL/TLS enabled servers",
     "homepage": "https://github.com/rbsec/sslscan",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/rbsec/sslscan/archive/refs/tags/2.2.1.tar.gz",
+    "srcurl": "https://github.com/rbsec/sslscan/archive/refs/tags/2.2.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/packages/sslscan",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/packages/sslscan/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/packages/sslscan/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a0bdc6c0d0/packages/sslscan",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a0bdc6c0d0/packages/sslscan/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a0bdc6c0d0/packages/sslscan/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -41747,15 +41770,15 @@
   },
   {
     "name": "turbo",
-    "version": "2.9.0",
+    "version": "2.9.1",
     "description": "High-performance build system for JS/TS",
     "homepage": "https://turbo.build/",
     "depends": [],
-    "srcurl": "https://github.com/vercel/turbo/archive/refs/tags/v2.9.0.tar.gz",
+    "srcurl": "https://github.com/vercel/turbo/archive/refs/tags/v2.9.1.tar.gz",
     "maintainer": "@xingguangcuican6666",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/87ffe2707a/packages/turbo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87ffe2707a/packages/turbo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87ffe2707a/packages/turbo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f1daffa789/packages/turbo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f1daffa789/packages/turbo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f1daffa789/packages/turbo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63363,18 +63386,20 @@
     ],
     "srcurl": "https://download.kde.org/stable/plasma/6.6.3/powerdevil-6.6.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2df290f372/x11-packages/powerdevil",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2df290f372/x11-packages/powerdevil/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2df290f372/x11-packages/powerdevil/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5749ded472/x11-packages/powerdevil",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5749ded472/x11-packages/powerdevil/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5749ded472/x11-packages/powerdevil/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2df290f372/x11-packages/powerdevil/disable-udev.patch",
-      "https://github.com/termux/termux-packages/blob/2df290f372/x11-packages/powerdevil/fix-time-t-narrowing.patch",
-      "https://github.com/termux/termux-packages/blob/2df290f372/x11-packages/powerdevil/use-session-bus.patch"
+      "https://github.com/termux/termux-packages/blob/5749ded472/x11-packages/powerdevil/disable-udev.patch",
+      "https://github.com/termux/termux-packages/blob/5749ded472/x11-packages/powerdevil/fix-time-t-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/5749ded472/x11-packages/powerdevil/termux-backlight.patch",
+      "https://github.com/termux/termux-packages/blob/5749ded472/x11-packages/powerdevil/use-session-bus.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2df290f372/x11-packages/powerdevil/disable-udev.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2df290f372/x11-packages/powerdevil/fix-time-t-narrowing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2df290f372/x11-packages/powerdevil/use-session-bus.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5749ded472/x11-packages/powerdevil/disable-udev.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5749ded472/x11-packages/powerdevil/fix-time-t-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5749ded472/x11-packages/powerdevil/termux-backlight.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5749ded472/x11-packages/powerdevil/use-session-bus.patch"
     ],
     "auto_updated": true
   },
