@@ -9526,7 +9526,7 @@
   },
   {
     "name": "gdk-pixbuf",
-    "version": "2.44.5",
+    "version": "2.44.6",
     "description": "Library for image loading and manipulation",
     "homepage": "https://wiki.gnome.org/Projects/GdkPixbuf",
     "depends": [
@@ -9536,11 +9536,11 @@
       "libjpeg-turbo",
       "zstd"
     ],
-    "srcurl": "https://download.gnome.org/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.5.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/gdk-pixbuf/2.44/gdk-pixbuf-2.44.6.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b39f4e113/packages/gdk-pixbuf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b39f4e113/packages/gdk-pixbuf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b39f4e113/packages/gdk-pixbuf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f80cc877ed/packages/gdk-pixbuf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f80cc877ed/packages/gdk-pixbuf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f80cc877ed/packages/gdk-pixbuf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13073,7 +13073,7 @@
   },
   {
     "name": "icecast",
-    "version": "2.4.4",
+    "version": "2.5.0",
     "description": "Icecast is a streaming media (audio/video) server",
     "homepage": "https://icecast.org",
     "depends": [
@@ -13084,20 +13084,17 @@
       "libxml2",
       "libxslt",
       "media-types",
-      "openssl"
+      "openssl",
+      "libigloo"
     ],
-    "srcurl": "https://downloads.xiph.org/releases/icecast/icecast-2.4.4.tar.gz",
+    "srcurl": "https://downloads.xiph.org/releases/icecast/icecast-2.5.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/92364a651f/packages/icecast",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92364a651f/packages/icecast/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92364a651f/packages/icecast/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/92364a651f/packages/icecast/thread.c.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/92364a651f/packages/icecast/thread.c.patch"
-    ],
-    "auto_updated": false
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2fd641bf9/packages/icecast",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2fd641bf9/packages/icecast/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2fd641bf9/packages/icecast/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "ices",
@@ -18106,6 +18103,23 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/eec56cc0cb/packages/libidn2/0000-disable-versioning-of-symbols.patch"
     ],
+    "auto_updated": true
+  },
+  {
+    "name": "libigloo",
+    "version": "0.9.5",
+    "description": "Generic C framework used and developed by the Icecast project",
+    "homepage": "https://icecast.org",
+    "depends": [
+      "rhash"
+    ],
+    "srcurl": "https://downloads.xiph.org/releases/igloo/libigloo-0.9.5.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2fd641bf9/packages/libigloo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2fd641bf9/packages/libigloo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2fd641bf9/packages/libigloo/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -28006,23 +28020,23 @@
   },
   {
     "name": "navidrome",
-    "version": "0.60.3",
+    "version": "0.61.0",
     "description": "Modern Music Server and Streamer compatible with Subsonic/Airsonic",
     "homepage": "https://www.navidrome.org/",
     "depends": [
       "taglib",
       "ffmpeg"
     ],
-    "srcurl": "https://github.com/navidrome/navidrome/archive/refs/tags/v0.60.3.tar.gz",
+    "srcurl": "https://github.com/navidrome/navidrome/archive/refs/tags/v0.61.0.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cef3ead56/packages/navidrome",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cef3ead56/packages/navidrome/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cef3ead56/packages/navidrome/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/174af0e74e/packages/navidrome",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/174af0e74e/packages/navidrome/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/174af0e74e/packages/navidrome/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9cef3ead56/packages/navidrome/prepend-prefix.patch"
+      "https://github.com/termux/termux-packages/blob/174af0e74e/packages/navidrome/prepend-prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9cef3ead56/packages/navidrome/prepend-prefix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/174af0e74e/packages/navidrome/prepend-prefix.patch"
     ],
     "auto_updated": true
   },
@@ -28424,18 +28438,18 @@
       "tree-sitter-parsers",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/neovim/neovim/archive/1bcf2d7f90.tar.gz",
+    "srcurl": "https://github.com/neovim/neovim/archive/8367340b05.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/649f849b9d/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/649f849b9d/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/649f849b9d/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3792537743/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3792537743/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3792537743/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/649f849b9d/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://github.com/termux/termux-packages/blob/649f849b9d/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/3792537743/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://github.com/termux/termux-packages/blob/3792537743/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/649f849b9d/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/649f849b9d/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3792537743/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3792537743/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "auto_updated": true
   },
@@ -32186,7 +32200,7 @@
   },
   {
     "name": "picolisp",
-    "version": "25.12",
+    "version": "26.3",
     "description": "Lisp interpreter and application server framework",
     "homepage": "https://picolisp.com/wiki/?home",
     "depends": [
@@ -32195,16 +32209,16 @@
       "openssl",
       "readline"
     ],
-    "srcurl": "https://software-lab.de/picoLisp-25.12.tgz",
+    "srcurl": "https://software-lab.de/picoLisp-26.3.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1e2c0bce86/packages/picolisp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1e2c0bce86/packages/picolisp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1e2c0bce86/packages/picolisp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/212f316267/packages/picolisp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/212f316267/packages/picolisp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/212f316267/packages/picolisp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1e2c0bce86/packages/picolisp/fix-bash-completion.patch"
+      "https://github.com/termux/termux-packages/blob/212f316267/packages/picolisp/fix-bash-completion.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1e2c0bce86/packages/picolisp/fix-bash-completion.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/212f316267/packages/picolisp/fix-bash-completion.patch"
     ],
     "auto_updated": true
   },
@@ -43669,15 +43683,15 @@
   },
   {
     "name": "wakatime-cli",
-    "version": "2.0.7",
+    "version": "2.0.12",
     "description": "Command line interface used by all WakaTime text editor plugins",
     "homepage": "https://wakatime.com/plugins/",
     "depends": [],
-    "srcurl": "https://github.com/wakatime/wakatime-cli/archive/refs/tags/v2.0.7.tar.gz",
+    "srcurl": "https://github.com/wakatime/wakatime-cli/archive/refs/tags/v2.0.12.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b8872898a5/packages/wakatime-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b8872898a5/packages/wakatime-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b8872898a5/packages/wakatime-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/92c75168a4/packages/wakatime-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92c75168a4/packages/wakatime-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92c75168a4/packages/wakatime-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -66670,7 +66684,7 @@
   },
   {
     "name": "the-powder-toy",
-    "version": "99.3.384",
+    "version": "99.4.393",
     "description": "The Powder Toy is a free physics sandbox game",
     "homepage": "https://powdertoy.co.uk/",
     "depends": [
@@ -66684,20 +66698,20 @@
       "libpng",
       "sdl2"
     ],
-    "srcurl": "https://github.com/ThePowderToy/The-Powder-Toy/archive/refs/tags/v99.3.384.tar.gz",
+    "srcurl": "https://github.com/ThePowderToy/The-Powder-Toy/archive/refs/tags/v99.4.393.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e09bff1b97/x11-packages/the-powder-toy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e09bff1b97/x11-packages/the-powder-toy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e09bff1b97/x11-packages/the-powder-toy/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0f5b2e37a7/x11-packages/the-powder-toy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0f5b2e37a7/x11-packages/the-powder-toy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0f5b2e37a7/x11-packages/the-powder-toy/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e09bff1b97/x11-packages/the-powder-toy/02-no-install-prompt.patch",
-      "https://github.com/termux/termux-packages/blob/e09bff1b97/x11-packages/the-powder-toy/03-saves-dir-path.patch",
-      "https://github.com/termux/termux-packages/blob/e09bff1b97/x11-packages/the-powder-toy/04-no-android.patch"
+      "https://github.com/termux/termux-packages/blob/0f5b2e37a7/x11-packages/the-powder-toy/02-no-install-prompt.patch",
+      "https://github.com/termux/termux-packages/blob/0f5b2e37a7/x11-packages/the-powder-toy/03-saves-dir-path.patch",
+      "https://github.com/termux/termux-packages/blob/0f5b2e37a7/x11-packages/the-powder-toy/04-no-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e09bff1b97/x11-packages/the-powder-toy/02-no-install-prompt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e09bff1b97/x11-packages/the-powder-toy/03-saves-dir-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e09bff1b97/x11-packages/the-powder-toy/04-no-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0f5b2e37a7/x11-packages/the-powder-toy/02-no-install-prompt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f5b2e37a7/x11-packages/the-powder-toy/03-saves-dir-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f5b2e37a7/x11-packages/the-powder-toy/04-no-android.patch"
     ],
     "auto_updated": true
   },
