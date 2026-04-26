@@ -1641,7 +1641,7 @@
   },
   {
     "name": "at-spi2-core",
-    "version": "2.60.1",
+    "version": "2.60.2",
     "description": "Assistive Technology Service Provider Interface (AT-SPI)",
     "homepage": "https://wiki.gnome.org/Accessibility",
     "depends": [
@@ -1651,11 +1651,11 @@
       "libxi",
       "libxtst"
     ],
-    "srcurl": "https://gitlab.gnome.org/GNOME/at-spi2-core/-/archive/2.60.1/at-spi2-core-2.60.1.tar.gz",
+    "srcurl": "https://gitlab.gnome.org/GNOME/at-spi2-core/-/archive/2.60.2/at-spi2-core-2.60.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/181fe2729a/packages/at-spi2-core",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/181fe2729a/packages/at-spi2-core/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/181fe2729a/packages/at-spi2-core/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b54465678d/packages/at-spi2-core",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b54465678d/packages/at-spi2-core/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b54465678d/packages/at-spi2-core/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -1991,29 +1991,27 @@
   },
   {
     "name": "awscli",
-    "version": "2.34.0",
+    "version": "2.34.37",
     "description": "Universal Command Line Interface for Amazon Web Services",
     "homepage": "https://aws.amazon.com/cli",
     "depends": [
       "libandroid-posix-semaphore",
       "libandroid-support",
-      "libbz2",
-      "libexpat",
-      "libffi",
-      "liblzma",
-      "libsqlite",
-      "mandoc",
-      "openssl",
-      "readline",
-      "zlib"
+      "mandoc"
     ],
-    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.34.0.tar.gz",
+    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.34.37.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9df310809a/packages/awscli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9df310809a/packages/awscli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9df310809a/packages/awscli/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3bdcfcccba/packages/awscli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3bdcfcccba/packages/awscli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3bdcfcccba/packages/awscli/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/3bdcfcccba/packages/awscli/remove-ios-support.patch",
+      "https://github.com/termux/termux-packages/blob/3bdcfcccba/packages/awscli/remove-no-build-isolation.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/3bdcfcccba/packages/awscli/remove-ios-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3bdcfcccba/packages/awscli/remove-no-build-isolation.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -4803,9 +4801,9 @@
     ],
     "srcurl": "https://github.com/termux/command-not-found/archive/refs/tags/v3.4.1.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/845ac074cb/packages/command-not-found",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/845ac074cb/packages/command-not-found/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/845ac074cb/packages/command-not-found/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e724dfe89/packages/command-not-found",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e724dfe89/packages/command-not-found/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e724dfe89/packages/command-not-found/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -8766,7 +8764,7 @@
   },
   {
     "name": "flint",
-    "version": "3.4.0",
+    "version": "3.5.0",
     "description": "C library for doing number theory",
     "homepage": "http://www.flintlib.org",
     "depends": [
@@ -8774,17 +8772,13 @@
       "libgmp",
       "libmpfr"
     ],
-    "srcurl": "https://github.com/flintlib/flint/releases/download/v3.4.0/flint-3.4.0.tar.gz",
+    "srcurl": "https://github.com/flintlib/flint/releases/download/v3.5.0/flint-3.5.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e06d3e536/packages/flint",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e06d3e536/packages/flint/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e06d3e536/packages/flint/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0e06d3e536/packages/flint/cherry-pick-32-bit-support.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0e06d3e536/packages/flint/cherry-pick-32-bit-support.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/61244de20f/packages/flint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/61244de20f/packages/flint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/61244de20f/packages/flint/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -70047,15 +70041,15 @@
   },
   {
     "name": "xorg-font-util",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "X.Org font utilities",
     "homepage": "https://xorg.freedesktop.org/",
     "depends": [],
-    "srcurl": "https://xorg.freedesktop.org/releases/individual/font/font-util-1.4.1.tar.xz",
+    "srcurl": "https://xorg.freedesktop.org/releases/individual/font/font-util-1.4.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a76134031f/x11-packages/xorg-font-util",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a76134031f/x11-packages/xorg-font-util/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a76134031f/x11-packages/xorg-font-util/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb7a3a27f1/x11-packages/xorg-font-util",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb7a3a27f1/x11-packages/xorg-font-util/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb7a3a27f1/x11-packages/xorg-font-util/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -70567,18 +70561,18 @@
   },
   {
     "name": "xorg-xrandr",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "description": "Primitive command line interface to RandR extension",
     "homepage": "https://xorg.freedesktop.org/",
     "depends": [
       "libx11",
       "libxrandr"
     ],
-    "srcurl": "https://xorg.freedesktop.org/releases/individual/app/xrandr-1.5.3.tar.xz",
+    "srcurl": "https://xorg.freedesktop.org/releases/individual/app/xrandr-1.5.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d3dbd1c59f/x11-packages/xorg-xrandr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d3dbd1c59f/x11-packages/xorg-xrandr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d3dbd1c59f/x11-packages/xorg-xrandr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2a92d49ef7/x11-packages/xorg-xrandr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2a92d49ef7/x11-packages/xorg-xrandr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2a92d49ef7/x11-packages/xorg-xrandr/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
