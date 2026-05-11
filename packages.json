@@ -8983,6 +8983,37 @@
     "auto_updated": true
   },
   {
+    "name": "foundry",
+    "version": "1.7.1",
+    "description": "A blazing fast, portable and modular toolkit for Ethereum application development",
+    "homepage": "https://github.com/foundry-rs/foundry",
+    "depends": [
+      "libiconv",
+      "ca-certificates",
+      "zlib",
+      "openssl",
+      "libssh2",
+      "pcre2",
+      "libgit2"
+    ],
+    "srcurl": "https://github.com/foundry-rs/foundry/archive/refs/tags/v1.7.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/007be926bc/packages/foundry",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/007be926bc/packages/foundry/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/007be926bc/packages/foundry/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/007be926bc/packages/foundry/aws-lc-sys.diff",
+      "https://github.com/termux/termux-packages/blob/007be926bc/packages/foundry/fix-git-error.patch",
+      "https://github.com/termux/termux-packages/blob/007be926bc/packages/foundry/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/007be926bc/packages/foundry/aws-lc-sys.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/007be926bc/packages/foundry/fix-git-error.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/007be926bc/packages/foundry/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+    ],
+    "auto_updated": false
+  },
+  {
     "name": "freecolor",
     "version": "0.9.3",
     "description": "Freecolor is a replacement for Linux that displays free memory graphically",
@@ -16673,22 +16704,22 @@
   },
   {
     "name": "libde265",
-    "version": "1.0.16",
+    "version": "1.0.18",
     "description": "H.265/HEVC video stream decoder library",
     "homepage": "https://github.com/strukturag/libde265",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/strukturag/libde265/releases/download/v1.0.16/libde265-1.0.16.tar.gz",
+    "srcurl": "https://github.com/strukturag/libde265/releases/download/v1.0.18/libde265-1.0.18.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c531f9ef60/packages/libde265",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c531f9ef60/packages/libde265/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c531f9ef60/packages/libde265/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7044df3b99/packages/libde265",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7044df3b99/packages/libde265/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7044df3b99/packages/libde265/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c531f9ef60/packages/libde265/only_export_decoder_api.patch"
+      "https://github.com/termux/termux-packages/blob/7044df3b99/packages/libde265/backport-b4d0b53.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c531f9ef60/packages/libde265/only_export_decoder_api.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7044df3b99/packages/libde265/backport-b4d0b53.patch"
     ],
     "auto_updated": true
   },
@@ -33271,9 +33302,9 @@
     ],
     "srcurl": "https://github.com/termux/proot/archive/ee10b279a38d34b6704345bc448d18f019ca1b49.zip",
     "maintainer": "Michal Bednarski @michalbednarski",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/83239469b8/packages/proot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/83239469b8/packages/proot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/83239469b8/packages/proot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9d76ad8178/packages/proot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9d76ad8178/packages/proot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d76ad8178/packages/proot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -35057,15 +35088,15 @@
   },
   {
     "name": "railway-cli",
-    "version": "4.57.1",
+    "version": "4.57.2",
     "description": "This is the command line interface for Railway",
     "homepage": "https://railway.app",
     "depends": [],
-    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v4.57.1.tar.gz",
+    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v4.57.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3cefb62908/packages/railway-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3cefb62908/packages/railway-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3cefb62908/packages/railway-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/752e2952f1/packages/railway-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/752e2952f1/packages/railway-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/752e2952f1/packages/railway-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
