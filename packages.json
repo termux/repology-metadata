@@ -31,20 +31,21 @@
   },
   {
     "name": "2ping",
-    "version": "4.5.1",
+    "version": "4.6.1",
     "description": "A bi-directional ping utility",
     "homepage": "https://www.finnie.org/software/2ping/",
     "depends": [
-      "python"
+      "python",
+      "python-pip"
     ],
-    "srcurl": "https://github.com/rfinnie/2ping/archive/refs/tags/v4.5.1.tar.gz",
+    "srcurl": "https://github.com/rfinnie/2ping/archive/refs/tags/v4.6.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3825296db/packages/2ping",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3825296db/packages/2ping/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3825296db/packages/2ping/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0b095d60a6/packages/2ping",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0b095d60a6/packages/2ping/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0b095d60a6/packages/2ping/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "6tunnel",
@@ -492,20 +493,20 @@
   },
   {
     "name": "algernon",
-    "version": "1.17.6",
+    "version": "1.17.7",
     "description": "Small self-contained web server with Lua, Markdown, QUIC, Redis and PostgreSQL support",
     "homepage": "https://algernon.roboticoverlords.org/",
     "depends": [],
-    "srcurl": "https://github.com/xyproto/algernon/archive/refs/tags/v1.17.6.tar.gz",
+    "srcurl": "https://github.com/xyproto/algernon/archive/refs/tags/v1.17.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/031e63cf70/packages/algernon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/031e63cf70/packages/algernon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/031e63cf70/packages/algernon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/843c8d0985/packages/algernon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/843c8d0985/packages/algernon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/843c8d0985/packages/algernon/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/031e63cf70/packages/algernon/fix-hardcoded-paths.patch"
+      "https://github.com/termux/termux-packages/blob/843c8d0985/packages/algernon/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/031e63cf70/packages/algernon/fix-hardcoded-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/843c8d0985/packages/algernon/fix-hardcoded-paths.patch"
     ],
     "auto_updated": true
   },
@@ -3413,15 +3414,15 @@
   },
   {
     "name": "caddy",
-    "version": "2.11.2",
+    "version": "2.11.3",
     "description": "Fast, cross-platform HTTP/2 web server",
     "homepage": "https://caddyserver.com/",
     "depends": [],
-    "srcurl": "https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.2.tar.gz",
+    "srcurl": "https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa80883a25/packages/caddy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa80883a25/packages/caddy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa80883a25/packages/caddy/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4124723906/packages/caddy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4124723906/packages/caddy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4124723906/packages/caddy/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -3902,29 +3903,46 @@
     "auto_updated": false
   },
   {
+    "name": "cdk",
+    "version": "5.0-20260119",
+    "description": "Curses Development Kit",
+    "homepage": "https://dickey.his.com/cdk/cdk.html",
+    "depends": [
+      "ncurses"
+    ],
+    "srcurl": "https://github.com/ThomasDickey/cdk-snapshots/archive/refs/tags/t20260119.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/89bbd72836/packages/cdk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/89bbd72836/packages/cdk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/89bbd72836/packages/cdk/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
+  },
+  {
     "name": "cfengine",
-    "version": "1:3.25.0",
+    "version": "1:3.27.0",
     "description": "CFEngine is a configuration management technology",
     "homepage": "https://cfengine.com/",
     "depends": [
       "libandroid-glob",
       "liblmdb",
+      "librsync",
       "libxml2",
       "libyaml",
       "openssl",
-      "pcre2",
-      "librsync"
+      "pcre2"
     ],
     "srcurl": "git+https://github.com/cfengine/core",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/10d8f4e6d3/packages/cfengine",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/10d8f4e6d3/packages/cfengine/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/10d8f4e6d3/packages/cfengine/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/119650c06b/packages/cfengine",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/119650c06b/packages/cfengine/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/119650c06b/packages/cfengine/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/10d8f4e6d3/packages/cfengine/pthread_cancel.patch"
+      "https://github.com/termux/termux-packages/blob/119650c06b/packages/cfengine/pthread_cancel.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/10d8f4e6d3/packages/cfengine/pthread_cancel.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/119650c06b/packages/cfengine/pthread_cancel.patch"
     ],
     "auto_updated": false
   },
@@ -4365,21 +4383,6 @@
     "auto_updated": true
   },
   {
-    "name": "clidle",
-    "version": "2022.05.25",
-    "description": "Play Wordle over SSH",
-    "homepage": "https://github.com/ajeetdsouza/clidle",
-    "depends": [],
-    "srcurl": "git+https://github.com/ajeetdsouza/clidle",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/75d0e1dadf/packages/clidle",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/75d0e1dadf/packages/clidle/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/75d0e1dadf/packages/clidle/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
     "name": "clifm",
     "version": "1.27.1",
     "description": "The shell-like, command line terminal file manager: simple, fast, extensible, and lightweight as hell",
@@ -4471,24 +4474,20 @@
   },
   {
     "name": "clpeak",
-    "version": "1.1.5",
+    "version": "1.1.7",
     "description": "A tool which profiles OpenCL devices to find their peak capacities",
     "homepage": "https://github.com/krrishnarraj/clpeak",
     "depends": [
       "libc++",
       "ocl-icd"
     ],
-    "srcurl": "git+https://github.com/krrishnarraj/clpeak",
+    "srcurl": "https://github.com/krrishnarraj/clpeak/archive/refs/tags/1.1.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f0b295f5d9/packages/clpeak",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f0b295f5d9/packages/clpeak/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f0b295f5d9/packages/clpeak/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f0b295f5d9/packages/clpeak/aligned-alloc.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f0b295f5d9/packages/clpeak/aligned-alloc.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/db59b404bd/packages/clpeak",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db59b404bd/packages/clpeak/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db59b404bd/packages/clpeak/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
@@ -6703,24 +6702,24 @@
   },
   {
     "name": "dos2unix",
-    "version": "7.5.4",
+    "version": "7.5.5",
     "description": "Converts between DOS and Unix text files",
     "homepage": "https://waterlan.home.xs4all.nl/dos2unix.html",
     "depends": [
       "libandroid-support"
     ],
-    "srcurl": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.4.tar.gz",
+    "srcurl": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/db1d099586/packages/dos2unix",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db1d099586/packages/dos2unix/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db1d099586/packages/dos2unix/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/417bf7cbf5/packages/dos2unix",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/417bf7cbf5/packages/dos2unix/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/417bf7cbf5/packages/dos2unix/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/db1d099586/packages/dos2unix/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/417bf7cbf5/packages/dos2unix/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/db1d099586/packages/dos2unix/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/417bf7cbf5/packages/dos2unix/Makefile.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "dosfstools",
@@ -6772,40 +6771,40 @@
   },
   {
     "name": "dotnet10.0",
-    "version": "10.0.7",
+    "version": "10.0.8",
     "description": ".NET 10.0",
     "homepage": "https://dotnet.microsoft.com/en-us/",
     "depends": [],
     "srcurl": "git+https://github.com/dotnet/dotnet",
     "maintainer": "@truboxl",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9d31a9034b/packages/dotnet10.0",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ab8514f60a/packages/dotnet10.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0001-build-all-libs.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0002-define-memfd_create.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0004-disable-lttng-fatal-error.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0007-set-TargetsLinuxBionic-from-TargetRid.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0008-add-prebuilt-baseline-for-mono-llvm.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0011-fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/9d31a9034b/packages/dotnet10.0/0012-runtime-fix-runpath-issues.patch"
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0001-build-all-libs.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0002-define-memfd_create.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0004-disable-lttng-fatal-error.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0007-set-TargetsLinuxBionic-from-TargetRid.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0008-add-prebuilt-baseline-for-mono-llvm.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0011-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/ab8514f60a/packages/dotnet10.0/0012-runtime-fix-runpath-issues.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0001-build-all-libs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0002-define-memfd_create.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0004-disable-lttng-fatal-error.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0007-set-TargetsLinuxBionic-from-TargetRid.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0008-add-prebuilt-baseline-for-mono-llvm.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0011-fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9d31a9034b/packages/dotnet10.0/0012-runtime-fix-runpath-issues.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0001-build-all-libs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0002-define-memfd_create.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0003-runtime-src-native-libs-System.IO.Compression.Native.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0004-disable-lttng-fatal-error.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0005-runtime-src-native-libs-System.Security.Cryptography.Native-opensslshim.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0006-runtime-eng-common-cross-toolchain.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0007-set-TargetsLinuxBionic-from-TargetRid.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0008-add-prebuilt-baseline-for-mono-llvm.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0010-revert-stop-setting-separate-properties-BUNDLE_PROP-HOSTPOLICY_EMBEDDED-PINVOKE_OVERRIDE.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0011-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/ab8514f60a/packages/dotnet10.0/0012-runtime-fix-runpath-issues.patch"
     ],
     "auto_updated": true
   },
@@ -8853,15 +8852,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.4.50",
+    "version": "0.4.51",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.50.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.51.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8e26743234/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8e26743234/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8e26743234/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5474a1316e/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5474a1316e/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5474a1316e/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -9721,20 +9720,20 @@
   },
   {
     "name": "gdu",
-    "version": "5.34.4",
+    "version": "5.36.1",
     "description": "Fast disk usage analyzer with console interface written in Go",
     "homepage": "https://github.com/dundee/gdu",
     "depends": [],
-    "srcurl": "https://github.com/dundee/gdu/archive/refs/tags/v5.34.4.tar.gz",
+    "srcurl": "https://github.com/dundee/gdu/archive/refs/tags/v5.36.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6f722b5f4d/packages/gdu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6f722b5f4d/packages/gdu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6f722b5f4d/packages/gdu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b12aaa23b/packages/gdu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b12aaa23b/packages/gdu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b12aaa23b/packages/gdu/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6f722b5f4d/packages/gdu/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/8b12aaa23b/packages/gdu/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6f722b5f4d/packages/gdu/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8b12aaa23b/packages/gdu/Makefile.patch"
     ],
     "auto_updated": true
   },
@@ -10317,15 +10316,15 @@
   },
   {
     "name": "git-town",
-    "version": "22.2.0",
+    "version": "22.7.1",
     "description": "Git branches made easy",
     "homepage": "https://www.git-town.com",
     "depends": [],
-    "srcurl": "https://github.com/git-town/git-town/archive/refs/tags/v22.2.0.tar.gz",
+    "srcurl": "https://github.com/git-town/git-town/archive/refs/tags/v22.7.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2fecc6e46b/packages/git-town",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2fecc6e46b/packages/git-town/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2fecc6e46b/packages/git-town/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8cd153a69d/packages/git-town",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8cd153a69d/packages/git-town/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8cd153a69d/packages/git-town/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -10436,15 +10435,15 @@
   },
   {
     "name": "glab-cli",
-    "version": "1.95.0",
+    "version": "1.96.0",
     "description": "A GitLab CLI tool bringing GitLab to your command line",
     "homepage": "https://gitlab.com/gitlab-org/cli",
     "depends": [],
-    "srcurl": "https://gitlab.com/gitlab-org/cli/-/archive/v1.95.0/cli-1.95.0.tar.bz2",
+    "srcurl": "https://gitlab.com/gitlab-org/cli/-/archive/v1.96.0/cli-1.96.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/966d9be5c0/packages/glab-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/966d9be5c0/packages/glab-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/966d9be5c0/packages/glab-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a03051f07a/packages/glab-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a03051f07a/packages/glab-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a03051f07a/packages/glab-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -10561,15 +10560,15 @@
   },
   {
     "name": "glm",
-    "version": "1.0.1",
-    "description": "C++ mathematics library for graphics software based on the GLSL specifications",
+    "version": "1.0.3",
+    "description": "C++ mathematics library for graphics programming",
     "homepage": "https://glm.g-truc.net/",
     "depends": [],
-    "srcurl": "https://github.com/g-truc/glm/archive/refs/tags/1.0.1.tar.gz",
+    "srcurl": "https://github.com/g-truc/glm/archive/refs/tags/1.0.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/packages/glm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/packages/glm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/packages/glm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f0b83f0481/packages/glm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f0b83f0481/packages/glm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f0b83f0481/packages/glm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -11630,17 +11629,17 @@
   },
   {
     "name": "gradle",
-    "version": "1:9.5.0",
+    "version": "1:9.5.1",
     "description": "Powerful build system for the JVM",
     "homepage": "https://gradle.org/",
     "depends": [
       "openjdk-21"
     ],
-    "srcurl": "https://services.gradle.org/distributions/gradle-9.5.0-bin.zip",
+    "srcurl": "https://services.gradle.org/distributions/gradle-9.5.1-bin.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/af634f7255/packages/gradle",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af634f7255/packages/gradle/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af634f7255/packages/gradle/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6194341b74/packages/gradle",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6194341b74/packages/gradle/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6194341b74/packages/gradle/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12112,7 +12111,7 @@
   },
   {
     "name": "gst-python",
-    "version": "1.28.2",
+    "version": "1.28.3",
     "description": "Python bindings for GStreamer",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
@@ -12122,16 +12121,16 @@
       "pygobject",
       "python"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.28.2.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.28.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a9f18a70cb/packages/gst-python",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a9f18a70cb/packages/gst-python/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a9f18a70cb/packages/gst-python/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/87e4b53ea9/packages/gst-python",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87e4b53ea9/packages/gst-python/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87e4b53ea9/packages/gst-python/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a9f18a70cb/packages/gst-python/gi-overrides-meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/87e4b53ea9/packages/gst-python/gi-overrides-meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a9f18a70cb/packages/gst-python/gi-overrides-meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/87e4b53ea9/packages/gst-python/gi-overrides-meson.build.patch"
     ],
     "auto_updated": true
   },
@@ -16241,23 +16240,6 @@
     "auto_updated": false
   },
   {
-    "name": "libcdk",
-    "version": "5.0-20250116",
-    "description": "Curses Development Kit",
-    "homepage": "https://dickey.his.com/cdk/cdk.html",
-    "depends": [
-      "ncurses"
-    ],
-    "srcurl": "https://github.com/ThomasDickey/cdk-snapshots/archive/refs/tags/t20250116.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d724075b91/packages/libcdk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d724075b91/packages/libcdk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d724075b91/packages/libcdk/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
     "name": "libcec",
     "version": "7.1.1",
     "description": "Provides support for Pulse-Eight's USB-CEC adapter and other CEC capable hardware",
@@ -19353,18 +19335,18 @@
   },
   {
     "name": "libmpc",
-    "version": "1.3.1",
+    "version": "1.4.1",
     "description": "Library for the arithmetic of complex numbers with arbitrarily high precision",
     "homepage": "https://www.multiprecision.org/",
     "depends": [
       "libgmp",
       "libmpfr"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/mpc/mpc-1.3.1.tar.gz",
+    "srcurl": "https://mirrors.kernel.org/gnu/mpc/mpc-1.4.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fb20df43d5/packages/libmpc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fb20df43d5/packages/libmpc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fb20df43d5/packages/libmpc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6f2c5fcc48/packages/libmpc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6f2c5fcc48/packages/libmpc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6f2c5fcc48/packages/libmpc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -35088,15 +35070,15 @@
   },
   {
     "name": "railway-cli",
-    "version": "4.57.5",
+    "version": "4.58.0",
     "description": "This is the command line interface for Railway",
     "homepage": "https://railway.app",
     "depends": [],
-    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v4.57.5.tar.gz",
+    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v4.58.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/abcdf56ddb/packages/railway-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abcdf56ddb/packages/railway-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abcdf56ddb/packages/railway-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/29c0cfa238/packages/railway-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29c0cfa238/packages/railway-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29c0cfa238/packages/railway-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -38190,15 +38172,15 @@
   },
   {
     "name": "spirv-headers",
-    "version": "1.4.341.0",
+    "version": "1.4.350.0",
     "description": "SPIR-V Headers",
     "homepage": "https://github.com/KhronosGroup/SPIRV-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.4.341.0.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.4.350.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b36fdec41/packages/spirv-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b36fdec41/packages/spirv-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b36fdec41/packages/spirv-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/260503c24e/packages/spirv-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/260503c24e/packages/spirv-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/260503c24e/packages/spirv-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -38223,39 +38205,39 @@
   },
   {
     "name": "spirv-tools",
-    "version": "1.4.341.0",
+    "version": "1.4.350.0",
     "description": "SPIR-V Tools",
     "homepage": "https://github.com/KhronosGroup/SPIRV-Tools",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.4.341.0.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.4.350.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b81612acdb/packages/spirv-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b81612acdb/packages/spirv-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b81612acdb/packages/spirv-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/551f70091a/packages/spirv-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/551f70091a/packages/spirv-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/551f70091a/packages/spirv-tools/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b81612acdb/packages/spirv-tools/CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/551f70091a/packages/spirv-tools/CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b81612acdb/packages/spirv-tools/CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/551f70091a/packages/spirv-tools/CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "sqlcipher",
-    "version": "4.15.0",
+    "version": "4.16.0",
     "description": "SQLCipher is an SQLite extension that provides 256 bit AES encryption of database files",
     "homepage": "https://github.com/sqlcipher/sqlcipher",
     "depends": [
       "libedit",
       "openssl"
     ],
-    "srcurl": "https://github.com/sqlcipher/sqlcipher/archive/refs/tags/v4.15.0.tar.gz",
+    "srcurl": "https://github.com/sqlcipher/sqlcipher/archive/refs/tags/v4.16.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cc89e77aeb/packages/sqlcipher",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cc89e77aeb/packages/sqlcipher/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cc89e77aeb/packages/sqlcipher/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fc2bdb91f6/packages/sqlcipher",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fc2bdb91f6/packages/sqlcipher/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fc2bdb91f6/packages/sqlcipher/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -39797,20 +39779,20 @@
   },
   {
     "name": "teleport-tsh",
-    "version": "18.7.6",
+    "version": "18.8.0",
     "description": "Secure Access for Developers that doesn't get in the way",
     "homepage": "https://github.com/gravitational/teleport",
     "depends": [],
-    "srcurl": "https://github.com/gravitational/teleport/archive/refs/tags/v18.7.6.tar.gz",
+    "srcurl": "https://github.com/gravitational/teleport/archive/refs/tags/v18.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/834ddfd695/packages/teleport-tsh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/834ddfd695/packages/teleport-tsh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/834ddfd695/packages/teleport-tsh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a66fef42f6/packages/teleport-tsh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a66fef42f6/packages/teleport-tsh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a66fef42f6/packages/teleport-tsh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/834ddfd695/packages/teleport-tsh/metadata_linux.go.patch"
+      "https://github.com/termux/termux-packages/blob/a66fef42f6/packages/teleport-tsh/metadata_linux.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/834ddfd695/packages/teleport-tsh/metadata_linux.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a66fef42f6/packages/teleport-tsh/metadata_linux.go.patch"
     ],
     "auto_updated": true
   },
@@ -42842,17 +42824,17 @@
   },
   {
     "name": "uv",
-    "version": "0.11.13",
+    "version": "0.11.14",
     "description": "An extremely fast Python package installer and resolver, written in Rust.",
     "homepage": "https://docs.astral.sh/uv/",
     "depends": [
       "zstd"
     ],
-    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.11.13.tar.gz",
+    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.11.14.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2008f26b8a/packages/uv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2008f26b8a/packages/uv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2008f26b8a/packages/uv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/00f21ea3f7/packages/uv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/00f21ea3f7/packages/uv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/00f21ea3f7/packages/uv/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -47611,20 +47593,20 @@
     ],
     "srcurl": "https://github.com/zmap/zmap/archive/refs/tags/v4.3.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2ed906c70c/root-packages/zmap",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2ed906c70c/root-packages/zmap/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2ed906c70c/root-packages/zmap/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a97d035ee/root-packages/zmap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a97d035ee/root-packages/zmap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a97d035ee/root-packages/zmap/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2ed906c70c/root-packages/zmap/default-blocklist-path.patch",
-      "https://github.com/termux/termux-packages/blob/2ed906c70c/root-packages/zmap/hostbuild.diff",
-      "https://github.com/termux/termux-packages/blob/2ed906c70c/root-packages/zmap/use-yacc.patch",
-      "https://github.com/termux/termux-packages/blob/2ed906c70c/root-packages/zmap/util-setaffinity.patch"
+      "https://github.com/termux/termux-packages/blob/0a97d035ee/root-packages/zmap/default-blocklist-path.patch",
+      "https://github.com/termux/termux-packages/blob/0a97d035ee/root-packages/zmap/hostbuild.diff",
+      "https://github.com/termux/termux-packages/blob/0a97d035ee/root-packages/zmap/use-yacc.patch",
+      "https://github.com/termux/termux-packages/blob/0a97d035ee/root-packages/zmap/util-setaffinity.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2ed906c70c/root-packages/zmap/default-blocklist-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2ed906c70c/root-packages/zmap/hostbuild.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/2ed906c70c/root-packages/zmap/use-yacc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2ed906c70c/root-packages/zmap/util-setaffinity.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0a97d035ee/root-packages/zmap/default-blocklist-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0a97d035ee/root-packages/zmap/hostbuild.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/0a97d035ee/root-packages/zmap/use-yacc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0a97d035ee/root-packages/zmap/util-setaffinity.patch"
     ],
     "auto_updated": false
   },
@@ -48347,7 +48329,7 @@
   },
   {
     "name": "aurorae",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "A themeable window decoration for KWin",
     "homepage": "https://invent.kde.org/plasma/aurorae",
     "depends": [
@@ -48366,11 +48348,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/aurorae-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/aurorae-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/797ba0e73c/x11-packages/aurorae",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/797ba0e73c/x11-packages/aurorae/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/797ba0e73c/x11-packages/aurorae/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ffee7fd695/x11-packages/aurorae",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ffee7fd695/x11-packages/aurorae/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ffee7fd695/x11-packages/aurorae/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -48625,7 +48607,7 @@
   },
   {
     "name": "breeze",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Artwork, styles and assets for the Breeze visual style for the Plasma Desktop",
     "homepage": "https://invent.kde.org/plasma/breeze",
     "depends": [
@@ -48645,28 +48627,28 @@
       "qt6-qtdeclarative",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/breeze-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/breeze-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f35731dac1/x11-packages/breeze",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f35731dac1/x11-packages/breeze/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f35731dac1/x11-packages/breeze/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c7c8a2cd6c/x11-packages/breeze",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c7c8a2cd6c/x11-packages/breeze/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c7c8a2cd6c/x11-packages/breeze/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "breeze-gtk",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Breeze widget theme for GTK 2 and 3",
     "homepage": "https://invent.kde.org/plasma/breeze-gtk",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/breeze-gtk-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/breeze-gtk-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5bb8975e23/x11-packages/breeze-gtk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5bb8975e23/x11-packages/breeze-gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5bb8975e23/x11-packages/breeze-gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/73a90b078a/x11-packages/breeze-gtk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/73a90b078a/x11-packages/breeze-gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/73a90b078a/x11-packages/breeze-gtk/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50121,26 +50103,26 @@
     "description": "A MIDI-Sequencer which targets both terminal purists and visually impaired people",
     "homepage": "https://pi4.informatik.uni-mannheim.de/~haensel/cuse/",
     "depends": [
+      "cdk",
       "libc++",
-      "libcdk",
       "ncurses",
       "sdl",
       "sdl-mixer"
     ],
     "srcurl": "https://downloads.sourceforge.net/project/cuse/cuse-0.6.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d44504307d/x11-packages/cuse",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d44504307d/x11-packages/cuse/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d44504307d/x11-packages/cuse/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/086914f8f1/x11-packages/cuse",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/086914f8f1/x11-packages/cuse/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/086914f8f1/x11-packages/cuse/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d44504307d/x11-packages/cuse/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/d44504307d/x11-packages/cuse/src-CuSE.cxx.patch",
-      "https://github.com/termux/termux-packages/blob/d44504307d/x11-packages/cuse/src-sequencer.h.patch"
+      "https://github.com/termux/termux-packages/blob/086914f8f1/x11-packages/cuse/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/086914f8f1/x11-packages/cuse/src-CuSE.cxx.patch",
+      "https://github.com/termux/termux-packages/blob/086914f8f1/x11-packages/cuse/src-sequencer.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d44504307d/x11-packages/cuse/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d44504307d/x11-packages/cuse/src-CuSE.cxx.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d44504307d/x11-packages/cuse/src-sequencer.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/086914f8f1/x11-packages/cuse/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/086914f8f1/x11-packages/cuse/src-CuSE.cxx.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/086914f8f1/x11-packages/cuse/src-sequencer.h.patch"
     ],
     "auto_updated": false
   },
@@ -50481,7 +50463,7 @@
   },
   {
     "name": "dosbox-x",
-    "version": "2025.02.01",
+    "version": "2026.05.02",
     "description": "A cross-platform DOS emulator based on the DOSBox project",
     "homepage": "https://dosbox-x.com/",
     "depends": [
@@ -50502,20 +50484,18 @@
       "sdl2-net",
       "zlib"
     ],
-    "srcurl": "https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2025.02.01.tar.gz",
+    "srcurl": "https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2026.05.02.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/851dcb9c37/x11-packages/dosbox-x",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/851dcb9c37/x11-packages/dosbox-x/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/851dcb9c37/x11-packages/dosbox-x/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ae57b4fa8/x11-packages/dosbox-x",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ae57b4fa8/x11-packages/dosbox-x/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ae57b4fa8/x11-packages/dosbox-x/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/851dcb9c37/x11-packages/dosbox-x/esfmu-1.2.6.patch",
-      "https://github.com/termux/termux-packages/blob/851dcb9c37/x11-packages/dosbox-x/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/851dcb9c37/x11-packages/dosbox-x/src-gamelink-gamelink.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/0ae57b4fa8/x11-packages/dosbox-x/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/0ae57b4fa8/x11-packages/dosbox-x/src-gamelink-gamelink.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/851dcb9c37/x11-packages/dosbox-x/esfmu-1.2.6.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/851dcb9c37/x11-packages/dosbox-x/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/851dcb9c37/x11-packages/dosbox-x/src-gamelink-gamelink.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0ae57b4fa8/x11-packages/dosbox-x/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ae57b4fa8/x11-packages/dosbox-x/src-gamelink-gamelink.cpp.patch"
     ],
     "auto_updated": false
   },
@@ -52875,9 +52855,9 @@
     ],
     "srcurl": "https://download.gnome.org/sources/gnome-calculator/50/gnome-calculator-50.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/74c93da4f0/x11-packages/gnome-calculator",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74c93da4f0/x11-packages/gnome-calculator/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74c93da4f0/x11-packages/gnome-calculator/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8fda74e198/x11-packages/gnome-calculator",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8fda74e198/x11-packages/gnome-calculator/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8fda74e198/x11-packages/gnome-calculator/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54480,7 +54460,7 @@
   },
   {
     "name": "kactivitymanagerd",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "System service to manage user activities and track the usage patterns",
     "homepage": "https://invent.kde.org/plasma/kactivitymanagerd",
     "depends": [
@@ -54495,11 +54475,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kactivitymanagerd-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kactivitymanagerd-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fc29fc28ee/x11-packages/kactivitymanagerd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fc29fc28ee/x11-packages/kactivitymanagerd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fc29fc28ee/x11-packages/kactivitymanagerd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a1721049ce/x11-packages/kactivitymanagerd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a1721049ce/x11-packages/kactivitymanagerd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a1721049ce/x11-packages/kactivitymanagerd/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54660,7 +54640,7 @@
   },
   {
     "name": "kde-cli-tools",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Tools based on KDE Frameworks to better interact with the system",
     "homepage": "https://invent.kde.org/plasma/kde-cli-tools",
     "depends": [
@@ -54679,18 +54659,18 @@
       "qt6-qtbase",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kde-cli-tools-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kde-cli-tools-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/35df12f3b5/x11-packages/kde-cli-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/35df12f3b5/x11-packages/kde-cli-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/35df12f3b5/x11-packages/kde-cli-tools/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2b949fbc26/x11-packages/kde-cli-tools",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2b949fbc26/x11-packages/kde-cli-tools/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2b949fbc26/x11-packages/kde-cli-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kde-gtk-config",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Syncs KDE settings to GTK applications",
     "homepage": "https://invent.kde.org/plasma/kde-gtk-config",
     "depends": [
@@ -54708,11 +54688,11 @@
       "qt6-qtsvg",
       "xsettingsd"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kde-gtk-config-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kde-gtk-config-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f49069921d/x11-packages/kde-gtk-config",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f49069921d/x11-packages/kde-gtk-config/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f49069921d/x11-packages/kde-gtk-config/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cc564e7eb7/x11-packages/kde-gtk-config",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cc564e7eb7/x11-packages/kde-gtk-config/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cc564e7eb7/x11-packages/kde-gtk-config/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54770,7 +54750,7 @@
   },
   {
     "name": "kdecoration",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Plugin-based library to create window decorations",
     "homepage": "https://invent.kde.org/plasma/kdecoration",
     "depends": [
@@ -54778,11 +54758,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kdecoration-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kdecoration-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/38a9f5e6dd/x11-packages/kdecoration",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/38a9f5e6dd/x11-packages/kdecoration/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/38a9f5e6dd/x11-packages/kdecoration/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d7237edf3a/x11-packages/kdecoration",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d7237edf3a/x11-packages/kdecoration/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d7237edf3a/x11-packages/kdecoration/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56618,7 +56598,7 @@
   },
   {
     "name": "kglobalacceld",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Daemon providing Global Keyboard Shortcut (Accelerator) functionality",
     "homepage": "https://invent.kde.org/plasma/kglobalacceld",
     "depends": [
@@ -56637,11 +56617,11 @@
       "qt6-qtbase",
       "xcb-util-keysyms"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kglobalacceld-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kglobalacceld-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/227ae70bc1/x11-packages/kglobalacceld",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/227ae70bc1/x11-packages/kglobalacceld/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/227ae70bc1/x11-packages/kglobalacceld/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/87fef81b47/x11-packages/kglobalacceld",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87fef81b47/x11-packages/kglobalacceld/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87fef81b47/x11-packages/kglobalacceld/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56730,7 +56710,7 @@
   },
   {
     "name": "kinfocenter",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "A utility that provides information about a computer system",
     "homepage": "https://invent.kde.org/plasma/kinfocenter",
     "depends": [
@@ -56760,16 +56740,16 @@
       "vulkan-tools",
       "xorg-xdpyinfo"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kinfocenter-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kinfocenter-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ebffcfc10e/x11-packages/kinfocenter",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ebffcfc10e/x11-packages/kinfocenter/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ebffcfc10e/x11-packages/kinfocenter/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/13d63d9aa9/x11-packages/kinfocenter",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/13d63d9aa9/x11-packages/kinfocenter/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/13d63d9aa9/x11-packages/kinfocenter/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ebffcfc10e/x11-packages/kinfocenter/cmake-disable-udev.patch"
+      "https://github.com/termux/termux-packages/blob/13d63d9aa9/x11-packages/kinfocenter/cmake-disable-udev.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ebffcfc10e/x11-packages/kinfocenter/cmake-disable-udev.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/13d63d9aa9/x11-packages/kinfocenter/cmake-disable-udev.patch"
     ],
     "auto_updated": true
   },
@@ -56896,7 +56876,7 @@
   },
   {
     "name": "kmenuedit",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KDE menu editor",
     "homepage": "https://invent.kde.org/plasma/kmenuedit",
     "depends": [
@@ -56919,18 +56899,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kmenuedit-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kmenuedit-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/afa2278180/x11-packages/kmenuedit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/afa2278180/x11-packages/kmenuedit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/afa2278180/x11-packages/kmenuedit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f73365fa44/x11-packages/kmenuedit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f73365fa44/x11-packages/kmenuedit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f73365fa44/x11-packages/kmenuedit/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "knighttime",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KDE Helper for scheduling the dark-light cycle",
     "homepage": "https://invent.kde.org/plasma/knighttime",
     "depends": [
@@ -56942,11 +56922,11 @@
       "qt6-qtbase",
       "qt6-qtpositioning"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/knighttime-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/knighttime-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b9d58349d/x11-packages/knighttime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b9d58349d/x11-packages/knighttime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b9d58349d/x11-packages/knighttime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/63e496c6de/x11-packages/knighttime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/63e496c6de/x11-packages/knighttime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/63e496c6de/x11-packages/knighttime/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -57128,7 +57108,7 @@
   },
   {
     "name": "kpipewire",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Components relating to pipewire use in Plasma",
     "homepage": "https://invent.kde.org/plasma/kpipewire",
     "depends": [
@@ -57144,16 +57124,16 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kpipewire-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kpipewire-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/84694eee85/x11-packages/kpipewire",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84694eee85/x11-packages/kpipewire/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84694eee85/x11-packages/kpipewire/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/94e2bd2387/x11-packages/kpipewire",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/94e2bd2387/x11-packages/kpipewire/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/94e2bd2387/x11-packages/kpipewire/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/84694eee85/x11-packages/kpipewire/silence-pipewire.patch"
+      "https://github.com/termux/termux-packages/blob/94e2bd2387/x11-packages/kpipewire/silence-pipewire.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/84694eee85/x11-packages/kpipewire/silence-pipewire.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/94e2bd2387/x11-packages/kpipewire/silence-pipewire.patch"
     ],
     "auto_updated": true
   },
@@ -57299,7 +57279,7 @@
   },
   {
     "name": "ksystemstats",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "A plugin based system monitoring daemon",
     "homepage": "https://invent.kde.org/plasma/ksystemstats",
     "depends": [
@@ -57312,18 +57292,18 @@
       "libksysguard",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/ksystemstats-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/ksystemstats-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/66118b018b/x11-packages/ksystemstats",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/66118b018b/x11-packages/ksystemstats/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/66118b018b/x11-packages/ksystemstats/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/865534534a/x11-packages/ksystemstats",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/865534534a/x11-packages/ksystemstats/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/865534534a/x11-packages/ksystemstats/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/66118b018b/x11-packages/ksystemstats/disable-sensors.patch",
-      "https://github.com/termux/termux-packages/blob/66118b018b/x11-packages/ksystemstats/getloadavg.patch"
+      "https://github.com/termux/termux-packages/blob/865534534a/x11-packages/ksystemstats/disable-sensors.patch",
+      "https://github.com/termux/termux-packages/blob/865534534a/x11-packages/ksystemstats/getloadavg.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/66118b018b/x11-packages/ksystemstats/disable-sensors.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/66118b018b/x11-packages/ksystemstats/getloadavg.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/865534534a/x11-packages/ksystemstats/disable-sensors.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/865534534a/x11-packages/ksystemstats/getloadavg.patch"
     ],
     "auto_updated": true
   },
@@ -57500,7 +57480,7 @@
   },
   {
     "name": "kwayland",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Qt-style Client and Server library wrapper for Wayland libraries",
     "homepage": "https://invent.kde.org/plasma/kwayland",
     "depends": [
@@ -57509,11 +57489,11 @@
       "qt6-qtbase",
       "qt6-qtwayland"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kwayland-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kwayland-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5d5c1541d1/x11-packages/kwayland",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5d5c1541d1/x11-packages/kwayland/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5d5c1541d1/x11-packages/kwayland/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9ffe4a27a6/x11-packages/kwayland",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9ffe4a27a6/x11-packages/kwayland/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9ffe4a27a6/x11-packages/kwayland/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -57569,7 +57549,7 @@
   },
   {
     "name": "kwin-x11",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "An easy to use, but flexible, X Window Manager",
     "homepage": "https://invent.kde.org/plasma/kwin-x11",
     "depends": [
@@ -57625,22 +57605,22 @@
       "xcb-util-keysyms",
       "xcb-util-wm"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/kwin-x11-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kwin-x11-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/30edaadb1f/x11-packages/kwin-x11",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30edaadb1f/x11-packages/kwin-x11/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30edaadb1f/x11-packages/kwin-x11/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f7f51afd26/x11-packages/kwin-x11",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f7f51afd26/x11-packages/kwin-x11/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f7f51afd26/x11-packages/kwin-x11/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/30edaadb1f/x11-packages/kwin-x11/add-qtdbus.patch",
-      "https://github.com/termux/termux-packages/blob/30edaadb1f/x11-packages/kwin-x11/disable-compositor.patch",
-      "https://github.com/termux/termux-packages/blob/30edaadb1f/x11-packages/kwin-x11/disable-udev.patch",
-      "https://github.com/termux/termux-packages/blob/30edaadb1f/x11-packages/kwin-x11/kwin-force-egl.patch"
+      "https://github.com/termux/termux-packages/blob/f7f51afd26/x11-packages/kwin-x11/add-qtdbus.patch",
+      "https://github.com/termux/termux-packages/blob/f7f51afd26/x11-packages/kwin-x11/disable-compositor.patch",
+      "https://github.com/termux/termux-packages/blob/f7f51afd26/x11-packages/kwin-x11/disable-udev.patch",
+      "https://github.com/termux/termux-packages/blob/f7f51afd26/x11-packages/kwin-x11/kwin-force-egl.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/30edaadb1f/x11-packages/kwin-x11/add-qtdbus.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/30edaadb1f/x11-packages/kwin-x11/disable-compositor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/30edaadb1f/x11-packages/kwin-x11/disable-udev.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/30edaadb1f/x11-packages/kwin-x11/kwin-force-egl.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f7f51afd26/x11-packages/kwin-x11/add-qtdbus.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7f51afd26/x11-packages/kwin-x11/disable-compositor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7f51afd26/x11-packages/kwin-x11/disable-udev.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f7f51afd26/x11-packages/kwin-x11/kwin-force-egl.patch"
     ],
     "auto_updated": true
   },
@@ -57696,7 +57676,7 @@
   },
   {
     "name": "layer-shell-qt",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Qt component to allow applications to make use of the Wayland wl-layer-shell protocol",
     "homepage": "https://invent.kde.org/plasma/layer-shell-qt",
     "depends": [
@@ -57705,11 +57685,11 @@
       "qt6-qtdeclarative",
       "libwayland"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/layer-shell-qt-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/layer-shell-qt-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/eaa9cef14d/x11-packages/layer-shell-qt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eaa9cef14d/x11-packages/layer-shell-qt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eaa9cef14d/x11-packages/layer-shell-qt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b529112087/x11-packages/layer-shell-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b529112087/x11-packages/layer-shell-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b529112087/x11-packages/layer-shell-qt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -58363,7 +58343,7 @@
   },
   {
     "name": "libkscreen",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KDE screen management software",
     "homepage": "https://invent.kde.org/plasma/libkscreen",
     "depends": [
@@ -58373,18 +58353,18 @@
       "qt6-qtbase",
       "qt6-qtwayland"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/libkscreen-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/libkscreen-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3407636a47/x11-packages/libkscreen",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3407636a47/x11-packages/libkscreen/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3407636a47/x11-packages/libkscreen/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/89aa33ef43/x11-packages/libkscreen",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/89aa33ef43/x11-packages/libkscreen/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/89aa33ef43/x11-packages/libkscreen/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "libksysguard",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KSysGuard library provides API to read and manage processes running on the system",
     "homepage": "https://invent.kde.org/plasma/libksysguard",
     "depends": [
@@ -58408,18 +58388,18 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/libksysguard-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/libksysguard-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d7e5501a28/x11-packages/libksysguard",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d7e5501a28/x11-packages/libksysguard/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d7e5501a28/x11-packages/libksysguard/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/14bc38f4f4/x11-packages/libksysguard",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/14bc38f4f4/x11-packages/libksysguard/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/14bc38f4f4/x11-packages/libksysguard/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d7e5501a28/x11-packages/libksysguard/disable-gpu-plugin.patch",
-      "https://github.com/termux/termux-packages/blob/d7e5501a28/x11-packages/libksysguard/disable-sensors.patch"
+      "https://github.com/termux/termux-packages/blob/14bc38f4f4/x11-packages/libksysguard/disable-gpu-plugin.patch",
+      "https://github.com/termux/termux-packages/blob/14bc38f4f4/x11-packages/libksysguard/disable-sensors.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d7e5501a28/x11-packages/libksysguard/disable-gpu-plugin.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d7e5501a28/x11-packages/libksysguard/disable-sensors.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/14bc38f4f4/x11-packages/libksysguard/disable-gpu-plugin.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/14bc38f4f4/x11-packages/libksysguard/disable-sensors.patch"
     ],
     "auto_updated": true
   },
@@ -58692,7 +58672,7 @@
   },
   {
     "name": "libplasma",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Plasma library and runtime components",
     "homepage": "https://invent.kde.org/plasma/libplasma",
     "depends": [
@@ -58721,11 +58701,11 @@
       "qt6-qtdeclarative",
       "qt6-qtwayland"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/libplasma-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/libplasma-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3a2742eec8/x11-packages/libplasma",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3a2742eec8/x11-packages/libplasma/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3a2742eec8/x11-packages/libplasma/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4726025212/x11-packages/libplasma",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4726025212/x11-packages/libplasma/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4726025212/x11-packages/libplasma/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -60532,9 +60512,9 @@
     ],
     "srcurl": "https://github.com/mate-desktop/mate-calc/releases/download/v1.28.0/mate-calc-1.28.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/17148e7554/x11-packages/mate-calc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17148e7554/x11-packages/mate-calc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17148e7554/x11-packages/mate-calc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8fda74e198/x11-packages/mate-calc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8fda74e198/x11-packages/mate-calc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8fda74e198/x11-packages/mate-calc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -61171,7 +61151,7 @@
   },
   {
     "name": "milou",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "A dedicated search application built on top of Baloo",
     "homepage": "https://invent.kde.org/plasma/milou",
     "depends": [
@@ -61183,11 +61163,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/milou-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/milou-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f795bf38fb/x11-packages/milou",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f795bf38fb/x11-packages/milou/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f795bf38fb/x11-packages/milou/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7b34750648/x11-packages/milou",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7b34750648/x11-packages/milou/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7b34750648/x11-packages/milou/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -62180,17 +62160,17 @@
   },
   {
     "name": "ocean-sound-theme",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Ocean Sound Theme for Plasma",
     "homepage": "https://invent.kde.org/plasma/ocean-sound-theme",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/ocean-sound-theme-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/ocean-sound-theme-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/18238bd515/x11-packages/ocean-sound-theme",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/18238bd515/x11-packages/ocean-sound-theme/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/18238bd515/x11-packages/ocean-sound-theme/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/61786b6983/x11-packages/ocean-sound-theme",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/61786b6983/x11-packages/ocean-sound-theme/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/61786b6983/x11-packages/ocean-sound-theme/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -62649,7 +62629,7 @@
   },
   {
     "name": "oxygen",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KDE Oxygen style",
     "homepage": "https://invent.kde.org/plasma/oxygen",
     "depends": [
@@ -62670,11 +62650,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/oxygen-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/oxygen-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb4f4d7413/x11-packages/oxygen",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb4f4d7413/x11-packages/oxygen/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb4f4d7413/x11-packages/oxygen/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b5bab0d195/x11-packages/oxygen",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b5bab0d195/x11-packages/oxygen/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b5bab0d195/x11-packages/oxygen/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -62698,17 +62678,17 @@
   },
   {
     "name": "oxygen-sounds",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "The Oxygen Sound Theme by KDE",
     "homepage": "https://invent.kde.org/plasma/oxygen-sounds",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/oxygen-sounds-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/oxygen-sounds-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/51a5f8a229/x11-packages/oxygen-sounds",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/51a5f8a229/x11-packages/oxygen-sounds/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/51a5f8a229/x11-packages/oxygen-sounds/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/48223e4a9a/x11-packages/oxygen-sounds",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/48223e4a9a/x11-packages/oxygen-sounds/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/48223e4a9a/x11-packages/oxygen-sounds/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63144,7 +63124,7 @@
   },
   {
     "name": "plasma-activities",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Core components for KDE's Activities",
     "homepage": "https://invent.kde.org/plasma/plasma-activities",
     "depends": [
@@ -63154,18 +63134,18 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-activities-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-activities-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6dc00619a4/x11-packages/plasma-activities",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6dc00619a4/x11-packages/plasma-activities/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6dc00619a4/x11-packages/plasma-activities/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/64cd1dc965/x11-packages/plasma-activities",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/64cd1dc965/x11-packages/plasma-activities/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/64cd1dc965/x11-packages/plasma-activities/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "plasma-activities-stats",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Provides usage data for KDE activities",
     "homepage": "https://invent.kde.org/plasma/plasma-activities-stats",
     "depends": [
@@ -63174,11 +63154,11 @@
       "plasma-activities",
       "qt6-qttools"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-activities-stats-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-activities-stats-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b599ee5c7a/x11-packages/plasma-activities-stats",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b599ee5c7a/x11-packages/plasma-activities-stats/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b599ee5c7a/x11-packages/plasma-activities-stats/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/40880cc011/x11-packages/plasma-activities-stats",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/40880cc011/x11-packages/plasma-activities-stats/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/40880cc011/x11-packages/plasma-activities-stats/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63303,7 +63283,7 @@
   },
   {
     "name": "plasma-integration",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Qt Platform Theme integration plugins for the Plasma workspaces",
     "homepage": "https://invent.kde.org/plasma/plasma-integration",
     "depends": [
@@ -63330,22 +63310,22 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-integration-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-integration-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b934bde092/x11-packages/plasma-integration",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b934bde092/x11-packages/plasma-integration/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b934bde092/x11-packages/plasma-integration/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/351bef8b54/x11-packages/plasma-integration",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/351bef8b54/x11-packages/plasma-integration/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/351bef8b54/x11-packages/plasma-integration/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b934bde092/x11-packages/plasma-integration/force-qt6-software-renderer.patch"
+      "https://github.com/termux/termux-packages/blob/351bef8b54/x11-packages/plasma-integration/force-qt6-software-renderer.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b934bde092/x11-packages/plasma-integration/force-qt6-software-renderer.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/351bef8b54/x11-packages/plasma-integration/force-qt6-software-renderer.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "plasma-pa",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Plasma applet for audio volume management using PulseAudio",
     "homepage": "https://invent.kde.org/plasma/plasma-pa",
     "depends": [
@@ -63370,22 +63350,22 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-pa-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-pa-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f251b62186/x11-packages/plasma-pa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f251b62186/x11-packages/plasma-pa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f251b62186/x11-packages/plasma-pa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/931fb87b4a/x11-packages/plasma-pa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/931fb87b4a/x11-packages/plasma-pa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/931fb87b4a/x11-packages/plasma-pa/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f251b62186/x11-packages/plasma-pa/enable-virtual-devices-by-default.patch"
+      "https://github.com/termux/termux-packages/blob/931fb87b4a/x11-packages/plasma-pa/enable-virtual-devices-by-default.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f251b62186/x11-packages/plasma-pa/enable-virtual-devices-by-default.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/931fb87b4a/x11-packages/plasma-pa/enable-virtual-devices-by-default.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "plasma-sdk",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Applications useful for Plasma development",
     "homepage": "https://invent.kde.org/plasma/plasma-sdk",
     "depends": [
@@ -63415,18 +63395,18 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-sdk-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-sdk-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/297074eeb0/x11-packages/plasma-sdk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/297074eeb0/x11-packages/plasma-sdk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/297074eeb0/x11-packages/plasma-sdk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/76c709612f/x11-packages/plasma-sdk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/76c709612f/x11-packages/plasma-sdk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/76c709612f/x11-packages/plasma-sdk/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "plasma-systemmonitor",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "An interface for monitoring system sensors, process information and other system resources",
     "homepage": "https://invent.kde.org/plasma/plasma-systemmonitor",
     "depends": [
@@ -63452,11 +63432,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-systemmonitor-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-systemmonitor-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c0e92860d/x11-packages/plasma-systemmonitor",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c0e92860d/x11-packages/plasma-systemmonitor/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c0e92860d/x11-packages/plasma-systemmonitor/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/69b0a829e8/x11-packages/plasma-systemmonitor",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69b0a829e8/x11-packages/plasma-systemmonitor/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69b0a829e8/x11-packages/plasma-systemmonitor/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63518,7 +63498,7 @@
   },
   {
     "name": "plasma-workspace",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KDE Plasma Workspace",
     "homepage": "https://invent.kde.org/plasma/plasma-workspace",
     "depends": [
@@ -63610,57 +63590,57 @@
       "xorg-xrdb",
       "zlib"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-workspace-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-workspace-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4689ff313/x11-packages/plasma-workspace",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4fe8c65850/x11-packages/plasma-workspace",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/cmake-disable-udev.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/crypt.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
-      "https://github.com/termux/termux-packages/blob/d4689ff313/x11-packages/plasma-workspace/startplasma.patch"
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/cmake-disable-udev.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/crypt.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
+      "https://github.com/termux/termux-packages/blob/4fe8c65850/x11-packages/plasma-workspace/startplasma.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/cmake-disable-udev.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/crypt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d4689ff313/x11-packages/plasma-workspace/startplasma.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/cmake-disable-udev.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/crypt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4fe8c65850/x11-packages/plasma-workspace/startplasma.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "plasma-workspace-wallpapers",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Additional wallpapers for the Plasma Workspace",
     "homepage": "https://invent.kde.org/plasma/plasma-workspace-wallpapers",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma-workspace-wallpapers-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma-workspace-wallpapers-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7195926adf/x11-packages/plasma-workspace-wallpapers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7195926adf/x11-packages/plasma-workspace-wallpapers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7195926adf/x11-packages/plasma-workspace-wallpapers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4db8a696e4/x11-packages/plasma-workspace-wallpapers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4db8a696e4/x11-packages/plasma-workspace-wallpapers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4db8a696e4/x11-packages/plasma-workspace-wallpapers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "plasma5support",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Porting aid to migrate from KDE Platform 5 to KDE Frameworks 6",
     "homepage": "https://invent.kde.org/plasma/plasma5support",
     "depends": [
@@ -63682,11 +63662,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/plasma5support-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/plasma5support-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ad1975b9d0/x11-packages/plasma5support",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ad1975b9d0/x11-packages/plasma5support/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ad1975b9d0/x11-packages/plasma5support/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/262041f6d9/x11-packages/plasma5support",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/262041f6d9/x11-packages/plasma5support/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/262041f6d9/x11-packages/plasma5support/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63876,7 +63856,7 @@
   },
   {
     "name": "powerdevil",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Manages the power consumption settings of a Plasma Shell",
     "homepage": "https://invent.kde.org/plasma/powerdevil",
     "depends": [
@@ -63907,22 +63887,22 @@
       "kf6-solid",
       "libwayland"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/powerdevil-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/powerdevil-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ed9b3dcbb0/x11-packages/powerdevil",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ed9b3dcbb0/x11-packages/powerdevil/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ed9b3dcbb0/x11-packages/powerdevil/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/add18a91bc/x11-packages/powerdevil",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/add18a91bc/x11-packages/powerdevil/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/add18a91bc/x11-packages/powerdevil/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ed9b3dcbb0/x11-packages/powerdevil/disable-udev.patch",
-      "https://github.com/termux/termux-packages/blob/ed9b3dcbb0/x11-packages/powerdevil/fix-time-t-narrowing.patch",
-      "https://github.com/termux/termux-packages/blob/ed9b3dcbb0/x11-packages/powerdevil/termux-backlight.patch",
-      "https://github.com/termux/termux-packages/blob/ed9b3dcbb0/x11-packages/powerdevil/use-session-bus.patch"
+      "https://github.com/termux/termux-packages/blob/add18a91bc/x11-packages/powerdevil/disable-udev.patch",
+      "https://github.com/termux/termux-packages/blob/add18a91bc/x11-packages/powerdevil/fix-time-t-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/add18a91bc/x11-packages/powerdevil/termux-backlight.patch",
+      "https://github.com/termux/termux-packages/blob/add18a91bc/x11-packages/powerdevil/use-session-bus.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ed9b3dcbb0/x11-packages/powerdevil/disable-udev.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ed9b3dcbb0/x11-packages/powerdevil/fix-time-t-narrowing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ed9b3dcbb0/x11-packages/powerdevil/termux-backlight.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ed9b3dcbb0/x11-packages/powerdevil/use-session-bus.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/add18a91bc/x11-packages/powerdevil/disable-udev.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/add18a91bc/x11-packages/powerdevil/fix-time-t-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/add18a91bc/x11-packages/powerdevil/termux-backlight.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/add18a91bc/x11-packages/powerdevil/use-session-bus.patch"
     ],
     "auto_updated": true
   },
@@ -63960,7 +63940,7 @@
   },
   {
     "name": "print-manager",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": " A tool for managing print jobs and printers",
     "homepage": "https://invent.kde.org/plasma/print-manager",
     "depends": [
@@ -63981,16 +63961,16 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/print-manager-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/print-manager-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/467a6a1333/x11-packages/print-manager",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/467a6a1333/x11-packages/print-manager/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/467a6a1333/x11-packages/print-manager/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/72de36b47b/x11-packages/print-manager",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/72de36b47b/x11-packages/print-manager/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/72de36b47b/x11-packages/print-manager/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/467a6a1333/x11-packages/print-manager/use-8631-port.patch"
+      "https://github.com/termux/termux-packages/blob/72de36b47b/x11-packages/print-manager/use-8631-port.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/467a6a1333/x11-packages/print-manager/use-8631-port.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/72de36b47b/x11-packages/print-manager/use-8631-port.patch"
     ],
     "auto_updated": true
   },
@@ -64454,7 +64434,7 @@
   },
   {
     "name": "qqc2-breeze-style",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "Applications useful for Plasma development",
     "homepage": "https://invent.kde.org/plasma/qqc2-breeze-style",
     "depends": [
@@ -64467,11 +64447,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/qqc2-breeze-style-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/qqc2-breeze-style-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f41099716/x11-packages/qqc2-breeze-style",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f41099716/x11-packages/qqc2-breeze-style/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f41099716/x11-packages/qqc2-breeze-style/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5aa38dc350/x11-packages/qqc2-breeze-style",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5aa38dc350/x11-packages/qqc2-breeze-style/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5aa38dc350/x11-packages/qqc2-breeze-style/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -66689,7 +66669,7 @@
   },
   {
     "name": "spectacle",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KDE screenshot capture utility",
     "homepage": "https://apps.kde.org/spectacle/",
     "depends": [
@@ -66727,11 +66707,11 @@
       "xcb-util-cursor",
       "xcb-util-image"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/spectacle-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/spectacle-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/afbf2ee436/x11-packages/spectacle",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/afbf2ee436/x11-packages/spectacle/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/afbf2ee436/x11-packages/spectacle/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0a0d6bc648/x11-packages/spectacle",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0a0d6bc648/x11-packages/spectacle/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0a0d6bc648/x11-packages/spectacle/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -66990,7 +66970,7 @@
   },
   {
     "name": "systemsettings",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "KDE system manager for hardware, software, and workspaces",
     "homepage": "https://invent.kde.org/plasma/systemsettings",
     "depends": [
@@ -67018,11 +66998,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/systemsettings-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/systemsettings-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1cc86d8687/x11-packages/systemsettings",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1cc86d8687/x11-packages/systemsettings/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1cc86d8687/x11-packages/systemsettings/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dc21742791/x11-packages/systemsettings",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dc21742791/x11-packages/systemsettings/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dc21742791/x11-packages/systemsettings/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -69206,7 +69186,7 @@
   },
   {
     "name": "xdg-desktop-portal-kde",
-    "version": "6.6.4",
+    "version": "6.6.5",
     "description": "A backend implementation for xdg-desktop-portal that is using Qt/KDE",
     "homepage": "https://invent.kde.org/plasma/xdg-desktop-portal-kde",
     "depends": [
@@ -69235,11 +69215,11 @@
       "qt6-qtdeclarative",
       "xdg-desktop-portal"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.4/xdg-desktop-portal-kde-6.6.4.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/xdg-desktop-portal-kde-6.6.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b0517a653/x11-packages/xdg-desktop-portal-kde",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b0517a653/x11-packages/xdg-desktop-portal-kde/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b0517a653/x11-packages/xdg-desktop-portal-kde/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/23433216df/x11-packages/xdg-desktop-portal-kde",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23433216df/x11-packages/xdg-desktop-portal-kde/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23433216df/x11-packages/xdg-desktop-portal-kde/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
