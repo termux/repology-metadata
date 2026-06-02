@@ -557,23 +557,25 @@
   },
   {
     "name": "alsa-lib",
-    "version": "1.2.15.3",
+    "version": "1.2.16",
     "description": "The Advanced Linux Sound Architecture (ALSA) - library",
     "homepage": "https://www.alsa-project.org",
     "depends": [
       "libandroid-sysv-semaphore",
       "libandroid-shmem"
     ],
-    "srcurl": "https://github.com/alsa-project/alsa-lib/archive/refs/tags/v1.2.15.3.tar.gz",
+    "srcurl": "https://github.com/alsa-project/alsa-lib/archive/refs/tags/v1.2.16.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ce85e8a8f/packages/alsa-lib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ce85e8a8f/packages/alsa-lib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ce85e8a8f/packages/alsa-lib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a87b519fb6/packages/alsa-lib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a87b519fb6/packages/alsa-lib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a87b519fb6/packages/alsa-lib/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1ce85e8a8f/packages/alsa-lib/0001-path.patch"
+      "https://github.com/termux/termux-packages/blob/a87b519fb6/packages/alsa-lib/0001-path.patch",
+      "https://github.com/termux/termux-packages/blob/a87b519fb6/packages/alsa-lib/configure.ac.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1ce85e8a8f/packages/alsa-lib/0001-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a87b519fb6/packages/alsa-lib/0001-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a87b519fb6/packages/alsa-lib/configure.ac.patch"
     ],
     "auto_updated": true
   },
@@ -9347,7 +9349,7 @@
   },
   {
     "name": "gap",
-    "version": "4.15.1",
+    "version": "4.16.0",
     "description": "GAP is a system for computational discrete algebra, with particular emphasis on Computational Group Theory",
     "homepage": "https://www.gap-system.org/",
     "depends": [
@@ -9356,16 +9358,16 @@
       "zlib",
       "gap-packages"
     ],
-    "srcurl": "https://github.com/gap-system/gap/releases/download/v4.15.1/gap-4.15.1.tar.gz",
+    "srcurl": "https://github.com/gap-system/gap/releases/download/v4.16.0/gap-4.16.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/992fcc4f82/packages/gap",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/992fcc4f82/packages/gap/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/992fcc4f82/packages/gap/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c2414555d4/packages/gap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c2414555d4/packages/gap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c2414555d4/packages/gap/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/992fcc4f82/packages/gap/compiled.h-path.patch"
+      "https://github.com/termux/termux-packages/blob/c2414555d4/packages/gap/compiled.h-path.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/992fcc4f82/packages/gap/compiled.h-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c2414555d4/packages/gap/compiled.h-path.patch"
     ],
     "auto_updated": true
   },
@@ -17734,7 +17736,7 @@
   },
   {
     "name": "libgnutls",
-    "version": "3.8.11",
+    "version": "3.8.13",
     "description": "Secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them",
     "homepage": "https://www.gnutls.org/",
     "depends": [
@@ -17747,18 +17749,18 @@
       "libunistring",
       "zlib"
     ],
-    "srcurl": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz",
+    "srcurl": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a1ca5e4aa4/packages/libgnutls",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a1ca5e4aa4/packages/libgnutls/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a1ca5e4aa4/packages/libgnutls/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eeb3de8fc3/packages/libgnutls",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eeb3de8fc3/packages/libgnutls/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eeb3de8fc3/packages/libgnutls/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a1ca5e4aa4/packages/libgnutls/gl-stdio-impl.h.patch",
-      "https://github.com/termux/termux-packages/blob/a1ca5e4aa4/packages/libgnutls/src-gl-stdio-impl.h.patch"
+      "https://github.com/termux/termux-packages/blob/eeb3de8fc3/packages/libgnutls/gl-stdio-impl.h.patch",
+      "https://github.com/termux/termux-packages/blob/eeb3de8fc3/packages/libgnutls/src-gl-stdio-impl.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a1ca5e4aa4/packages/libgnutls/gl-stdio-impl.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a1ca5e4aa4/packages/libgnutls/src-gl-stdio-impl.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/eeb3de8fc3/packages/libgnutls/gl-stdio-impl.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/eeb3de8fc3/packages/libgnutls/src-gl-stdio-impl.h.patch"
     ],
     "auto_updated": false
   },
@@ -19483,24 +19485,20 @@
   },
   {
     "name": "libnats-c",
-    "version": "3.12.0",
+    "version": "3.13.0",
     "description": "A C client for the NATS messaging system",
     "homepage": "https://nats-io.github.io/nats.c/",
     "depends": [
       "libprotobuf-c",
       "openssl"
     ],
-    "srcurl": "https://github.com/nats-io/nats.c/archive/refs/tags/v3.12.0.tar.gz",
+    "srcurl": "https://github.com/nats-io/nats.c/archive/refs/tags/v3.13.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b026ca40f/packages/libnats-c",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b026ca40f/packages/libnats-c/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b026ca40f/packages/libnats-c/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8b026ca40f/packages/libnats-c/src-libnats.pc.in.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8b026ca40f/packages/libnats-c/src-libnats.pc.in.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/edc24bdf1c/packages/libnats-c",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edc24bdf1c/packages/libnats-c/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edc24bdf1c/packages/libnats-c/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -20982,7 +20980,7 @@
   },
   {
     "name": "librsvg",
-    "version": "2.62.2",
+    "version": "2.62.3",
     "description": "Library to render SVG files using cairo",
     "homepage": "https://wiki.gnome.org/action/show/Projects/LibRsvg",
     "depends": [
@@ -20997,18 +20995,18 @@
       "libxml2",
       "pango"
     ],
-    "srcurl": "https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.2.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/librsvg/2.62/librsvg-2.62.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd122abe32/packages/librsvg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd122abe32/packages/librsvg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd122abe32/packages/librsvg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/61af68a7bb/packages/librsvg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/61af68a7bb/packages/librsvg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/61af68a7bb/packages/librsvg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bd122abe32/packages/librsvg/do-not-use-pkg-config-to-find-vapigen.patch",
-      "https://github.com/termux/termux-packages/blob/bd122abe32/packages/librsvg/meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/61af68a7bb/packages/librsvg/do-not-use-pkg-config-to-find-vapigen.patch",
+      "https://github.com/termux/termux-packages/blob/61af68a7bb/packages/librsvg/meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bd122abe32/packages/librsvg/do-not-use-pkg-config-to-find-vapigen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bd122abe32/packages/librsvg/meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/61af68a7bb/packages/librsvg/do-not-use-pkg-config-to-find-vapigen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/61af68a7bb/packages/librsvg/meson.build.patch"
     ],
     "auto_updated": true
   },
@@ -28578,18 +28576,18 @@
       "tree-sitter-parsers",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/neovim/neovim/archive/edcaf1887a.tar.gz",
+    "srcurl": "https://github.com/neovim/neovim/archive/a5d4b4e0fc.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e0191da884/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e0191da884/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e0191da884/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c57a475f5/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c57a475f5/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c57a475f5/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e0191da884/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://github.com/termux/termux-packages/blob/e0191da884/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/7c57a475f5/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://github.com/termux/termux-packages/blob/7c57a475f5/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e0191da884/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e0191da884/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7c57a475f5/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c57a475f5/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "auto_updated": true
   },
@@ -45110,7 +45108,7 @@
   },
   {
     "name": "yosys",
-    "version": "0.65",
+    "version": "0.66",
     "description": "A framework for RTL synthesis tools",
     "homepage": "https://yosyshq.net/yosys/",
     "depends": [
@@ -45127,20 +45125,20 @@
     ],
     "srcurl": "git+https://github.com/YosysHQ/yosys",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/79ea3b433c/packages/yosys",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/79ea3b433c/packages/yosys/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/79ea3b433c/packages/yosys/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9315a073ad/packages/yosys",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9315a073ad/packages/yosys/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9315a073ad/packages/yosys/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/79ea3b433c/packages/yosys/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/79ea3b433c/packages/yosys/fix-32bit.patch",
-      "https://github.com/termux/termux-packages/blob/79ea3b433c/packages/yosys/kernel-io.cc.patch",
-      "https://github.com/termux/termux-packages/blob/79ea3b433c/packages/yosys/techlibs-easic-synth_easic.cc.patch"
+      "https://github.com/termux/termux-packages/blob/9315a073ad/packages/yosys/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/9315a073ad/packages/yosys/fix-32bit.patch",
+      "https://github.com/termux/termux-packages/blob/9315a073ad/packages/yosys/kernel-io.cc.patch",
+      "https://github.com/termux/termux-packages/blob/9315a073ad/packages/yosys/techlibs-easic-synth_easic.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/79ea3b433c/packages/yosys/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/79ea3b433c/packages/yosys/fix-32bit.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/79ea3b433c/packages/yosys/kernel-io.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/79ea3b433c/packages/yosys/techlibs-easic-synth_easic.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9315a073ad/packages/yosys/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9315a073ad/packages/yosys/fix-32bit.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9315a073ad/packages/yosys/kernel-io.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9315a073ad/packages/yosys/techlibs-easic-synth_easic.cc.patch"
     ],
     "auto_updated": true
   },
@@ -48247,28 +48245,30 @@
   },
   {
     "name": "audacious",
-    "version": "4.5.1",
+    "version": "4.6",
     "description": "An advanced audio player",
     "homepage": "https://audacious-media-player.org",
     "depends": [
       "libarchive",
       "libc++",
       "qt6-qtbase",
+      "qt6-qttools",
       "qt6-qtsvg",
+      "qt6-qtdeclarative",
       "dbus-glib"
     ],
-    "srcurl": "https://distfiles.audacious-media-player.org/audacious-4.5.1.tar.bz2",
+    "srcurl": "https://distfiles.audacious-media-player.org/audacious-4.6.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/07c1e89718/x11-packages/audacious",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/07c1e89718/x11-packages/audacious/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/07c1e89718/x11-packages/audacious/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/18fa3675a7/x11-packages/audacious",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/18fa3675a7/x11-packages/audacious/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/18fa3675a7/x11-packages/audacious/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "audacious-plugins",
-    "version": "4.5.1",
+    "version": "4.6",
     "description": "Plugins for Audacious",
     "homepage": "https://audacious-media-player.org",
     "depends": [
@@ -48297,17 +48297,13 @@
       "sdl2",
       "zlib"
     ],
-    "srcurl": "https://distfiles.audacious-media-player.org/audacious-plugins-4.5.1.tar.bz2",
+    "srcurl": "https://distfiles.audacious-media-player.org/audacious-plugins-4.6.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b91e282a54/x11-packages/audacious-plugins",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b91e282a54/x11-packages/audacious-plugins/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b91e282a54/x11-packages/audacious-plugins/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b91e282a54/x11-packages/audacious-plugins/configure-pkg-config.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b91e282a54/x11-packages/audacious-plugins/configure-pkg-config.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ef61b57a79/x11-packages/audacious-plugins",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ef61b57a79/x11-packages/audacious-plugins/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ef61b57a79/x11-packages/audacious-plugins/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -61913,6 +61909,25 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/571009583c/x11-packages/mozo",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/571009583c/x11-packages/mozo/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/571009583c/x11-packages/mozo/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "mpc-qt",
+    "version": "26.01",
+    "description": "Media Player Classic Qute Theater",
+    "homepage": "https://mpc-qt.github.io/",
+    "depends": [
+      "mpv-x",
+      "qt6-qtbase",
+      "qt6-qtsvg"
+    ],
+    "srcurl": "https://github.com/mpc-qt/mpc-qt/archive/refs/tags/v26.01.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5800795657/x11-packages/mpc-qt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5800795657/x11-packages/mpc-qt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5800795657/x11-packages/mpc-qt/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
