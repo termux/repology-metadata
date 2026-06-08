@@ -897,16 +897,21 @@
     "version": "9.0.0-r76",
     "description": "bionic libc, libicuuc, liblzma, zlib, and boringssl for package builder and termux-docker",
     "homepage": "https://source.android.com/",
-    "depends": [],
+    "depends": [
+      "resolv-conf"
+    ],
+    "srcurl": "https://android.googlesource.com/platform/manifest",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c69ff18778/packages/aosp-libs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c69ff18778/packages/aosp-libs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c69ff18778/packages/aosp-libs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c5478cf35a/packages/aosp-libs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c5478cf35a/packages/aosp-libs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c5478cf35a/packages/aosp-libs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c69ff18778/packages/aosp-libs/toybox-enable-su-disable-selinux.patch"
+      "https://github.com/termux/termux-packages/blob/c5478cf35a/packages/aosp-libs/bionic-force-reenable-resolv-conf.patch",
+      "https://github.com/termux/termux-packages/blob/c5478cf35a/packages/aosp-libs/toybox-enable-su-disable-selinux.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c69ff18778/packages/aosp-libs/toybox-enable-su-disable-selinux.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c5478cf35a/packages/aosp-libs/bionic-force-reenable-resolv-conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c5478cf35a/packages/aosp-libs/toybox-enable-su-disable-selinux.patch"
     ],
     "auto_updated": false
   },
@@ -3243,23 +3248,23 @@
   },
   {
     "name": "byobu",
-    "version": "7.0",
+    "version": "7.8",
     "description": "Byobu is a GPLv3 open source text-based window manager and terminal multiplexer",
     "homepage": "https://www.byobu.org/",
     "depends": [
       "gawk",
       "tmux"
     ],
-    "srcurl": "https://github.com/dustinkirkland/byobu/archive/refs/tags/7.0.tar.gz",
+    "srcurl": "https://github.com/dustinkirkland/byobu/archive/refs/tags/7.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f775c75fc0/packages/byobu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f775c75fc0/packages/byobu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f775c75fc0/packages/byobu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cebeea244/packages/byobu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cebeea244/packages/byobu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cebeea244/packages/byobu/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f775c75fc0/packages/byobu/usr-bin-byobu.in.patch"
+      "https://github.com/termux/termux-packages/blob/9cebeea244/packages/byobu/usr-bin-byobu.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f775c75fc0/packages/byobu/usr-bin-byobu.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9cebeea244/packages/byobu/usr-bin-byobu.in.patch"
     ],
     "auto_updated": true
   },
@@ -36351,17 +36356,17 @@
   },
   {
     "name": "rust-analyzer",
-    "version": "2026-06-01",
+    "version": "2026-06-08",
     "description": "A Rust compiler front-end for IDEs",
     "homepage": "https://rust-analyzer.github.io/",
     "depends": [
       "rust-src"
     ],
-    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2026-06-01.tar.gz",
+    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2026-06-08.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4fc85508b3/packages/rust-analyzer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4fc85508b3/packages/rust-analyzer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4fc85508b3/packages/rust-analyzer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3af699c226/packages/rust-analyzer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3af699c226/packages/rust-analyzer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3af699c226/packages/rust-analyzer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -71515,7 +71520,7 @@
   },
   {
     "name": "xournalpp",
-    "version": "1.3.4",
+    "version": "1.3.5",
     "description": "A hand note taking software",
     "homepage": "https://github.com/xournalpp/xournalpp",
     "depends": [
@@ -71538,11 +71543,11 @@
       "qpdf",
       "zlib"
     ],
-    "srcurl": "https://github.com/xournalpp/xournalpp/archive/refs/tags/v1.3.4.tar.gz",
+    "srcurl": "https://github.com/xournalpp/xournalpp/archive/refs/tags/v1.3.5.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4738760e19/x11-packages/xournalpp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4738760e19/x11-packages/xournalpp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4738760e19/x11-packages/xournalpp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f0d33d608f/x11-packages/xournalpp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f0d33d608f/x11-packages/xournalpp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f0d33d608f/x11-packages/xournalpp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
