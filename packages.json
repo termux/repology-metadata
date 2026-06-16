@@ -1435,20 +1435,20 @@
   },
   {
     "name": "asciinema",
-    "version": "1:3.2.0",
+    "version": "1:3.2.1",
     "description": "Record and share your terminal sessions, the right way",
     "homepage": "https://asciinema.org/",
     "depends": [],
-    "srcurl": "https://github.com/asciinema/asciinema/archive/refs/tags/v3.2.0.tar.gz",
+    "srcurl": "https://github.com/asciinema/asciinema/archive/refs/tags/v3.2.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5d8431bcd0/packages/asciinema",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5d8431bcd0/packages/asciinema/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5d8431bcd0/packages/asciinema/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5420d52fb9/packages/asciinema",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5420d52fb9/packages/asciinema/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5420d52fb9/packages/asciinema/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5d8431bcd0/packages/asciinema/locale.rs.patch"
+      "https://github.com/termux/termux-packages/blob/5420d52fb9/packages/asciinema/locale.rs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5d8431bcd0/packages/asciinema/locale.rs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5420d52fb9/packages/asciinema/locale.rs.patch"
     ],
     "auto_updated": true
   },
@@ -3141,15 +3141,15 @@
   },
   {
     "name": "buf",
-    "version": "1.70.0",
+    "version": "1.71.0",
     "description": "A new way of working with Protocol Buffers",
     "homepage": "https://buf.build",
     "depends": [],
-    "srcurl": "https://github.com/bufbuild/buf/archive/refs/tags/v1.70.0.tar.gz",
+    "srcurl": "https://github.com/bufbuild/buf/archive/refs/tags/v1.71.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/98ab818126/packages/buf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98ab818126/packages/buf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98ab818126/packages/buf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/177c9b7ff8/packages/buf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/177c9b7ff8/packages/buf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/177c9b7ff8/packages/buf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -3174,52 +3174,54 @@
   },
   {
     "name": "busybox",
-    "version": "1.37.0",
+    "version": "1.38.0",
     "description": "Tiny versions of many common UNIX utilities into a single small executable",
     "homepage": "https://busybox.net/",
     "depends": [
       "libandroid-selinux"
     ],
-    "srcurl": "https://busybox.net/downloads/busybox-1.37.0.tar.bz2",
+    "srcurl": "https://busybox.net/downloads/busybox-1.38.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/edad12a496/packages/busybox",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c819078b2c/packages/busybox",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0000-use-clang.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0001-clang-fix.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0002-hardcoded-paths-fix.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0003-strchrnul-fix.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0005-no-change-identity.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0006-miscutils-crond.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0007-miscutils-crontab.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0008-networking-ftpd-no-chroot.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0009-networking-httpd-default-port.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0011-networking-tftp-no-chroot.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0012-util-linux-mount-no-addmntent.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0013-busybox-1.36.1-kernel-6.8.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0014-fix-segfault.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0015-fix-ipv6.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/0016-fix-ipv6-2.patch",
-      "https://github.com/termux/termux-packages/blob/edad12a496/packages/busybox/selinux.patch"
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0000-use-clang.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0001-clang-fix.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0002-hardcoded-paths-fix.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0003-strchrnul-fix.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0004-no-change-identity.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0005-miscutils-crond.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0006-miscutils-crontab.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0007-networking-ftpd-no-chroot.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0008-networking-httpd-default-port.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0009-networking-tftp-no-chroot.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0010-util-linux-mount-no-addmntent.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0011-busybox-1.36.1-kernel-6.8.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0012-fix-segfault.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0013-fix-ipv6.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0014-fix-ipv6-2.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0015-selinux.patch",
+      "https://github.com/termux/termux-packages/blob/c819078b2c/packages/busybox/0016-explicit_bzero.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0000-use-clang.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0001-clang-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0002-hardcoded-paths-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0003-strchrnul-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0005-no-change-identity.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0006-miscutils-crond.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0007-miscutils-crontab.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0008-networking-ftpd-no-chroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0009-networking-httpd-default-port.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0011-networking-tftp-no-chroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0012-util-linux-mount-no-addmntent.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0013-busybox-1.36.1-kernel-6.8.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0014-fix-segfault.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0015-fix-ipv6.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/0016-fix-ipv6-2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/edad12a496/packages/busybox/selinux.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0000-use-clang.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0001-clang-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0002-hardcoded-paths-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0003-strchrnul-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0004-no-change-identity.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0005-miscutils-crond.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0006-miscutils-crontab.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0007-networking-ftpd-no-chroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0008-networking-httpd-default-port.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0009-networking-tftp-no-chroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0010-util-linux-mount-no-addmntent.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0011-busybox-1.36.1-kernel-6.8.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0012-fix-segfault.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0013-fix-ipv6.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0014-fix-ipv6-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0015-selinux.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c819078b2c/packages/busybox/0016-explicit_bzero.patch"
     ],
     "auto_updated": false
   },
@@ -7110,15 +7112,15 @@
   },
   {
     "name": "dua",
-    "version": "2.34.0",
+    "version": "2.35.0",
     "description": "View disk space usage and delete unwanted data, fast",
     "homepage": "https://github.com/Byron/dua-cli",
     "depends": [],
-    "srcurl": "https://github.com/Byron/dua-cli/archive/refs/tags/v2.34.0.tar.gz",
+    "srcurl": "https://github.com/Byron/dua-cli/archive/refs/tags/v2.35.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8c6ad3ad86/packages/dua",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8c6ad3ad86/packages/dua/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8c6ad3ad86/packages/dua/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/567c4f9cd3/packages/dua",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/567c4f9cd3/packages/dua/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/567c4f9cd3/packages/dua/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -11291,23 +11293,23 @@
   },
   {
     "name": "gomuks",
-    "version": "26.05",
+    "version": "26.06",
     "description": "A terminal Matrix client written in Go",
     "homepage": "https://go.mau.fi/gomuks",
     "depends": [
       "libolm",
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/gomuks/gomuks/archive/refs/tags/v0.2605.0.tar.gz",
+    "srcurl": "https://github.com/gomuks/gomuks/archive/refs/tags/v0.2606.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/042b6d591b/packages/gomuks",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/042b6d591b/packages/gomuks/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/042b6d591b/packages/gomuks/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9d21a61cd0/packages/gomuks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9d21a61cd0/packages/gomuks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d21a61cd0/packages/gomuks/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/042b6d591b/packages/gomuks/goheif-no-pthread_getaffinity_np.diff"
+      "https://github.com/termux/termux-packages/blob/9d21a61cd0/packages/gomuks/goheif-no-pthread_getaffinity_np.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/042b6d591b/packages/gomuks/goheif-no-pthread_getaffinity_np.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/9d21a61cd0/packages/gomuks/goheif-no-pthread_getaffinity_np.diff"
     ],
     "auto_updated": true
   },
@@ -20693,17 +20695,17 @@
   },
   {
     "name": "libpugixml",
-    "version": "1.15",
+    "version": "1.16",
     "description": "Light-weight, simple and fast XML parser for C++ with XPath support",
     "homepage": "https://pugixml.org/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/zeux/pugixml/archive/refs/tags/v1.15.tar.gz",
+    "srcurl": "https://github.com/zeux/pugixml/archive/refs/tags/v1.16.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e714c30c35/packages/libpugixml",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e714c30c35/packages/libpugixml/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e714c30c35/packages/libpugixml/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/68d506ad33/packages/libpugixml",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/68d506ad33/packages/libpugixml/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/68d506ad33/packages/libpugixml/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -25097,7 +25099,7 @@
   },
   {
     "name": "lux-cli",
-    "version": "0.32.0",
+    "version": "0.33.0",
     "description": "A package manager for Lua, similar to luarocks",
     "homepage": "https://lux.lumen-labs.org",
     "depends": [
@@ -25109,11 +25111,11 @@
       "openssl",
       "xz-utils"
     ],
-    "srcurl": "https://github.com/lumen-oss/lux/archive/refs/tags/v0.32.0.tar.gz",
+    "srcurl": "https://github.com/lumen-oss/lux/archive/refs/tags/v0.33.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c76ee61ae1/packages/lux-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c76ee61ae1/packages/lux-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c76ee61ae1/packages/lux-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c47dc7282f/packages/lux-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c47dc7282f/packages/lux-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c47dc7282f/packages/lux-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -29886,20 +29888,20 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "29.15.1",
+    "version": "29.16.0",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/refs/tags/v29.15.1.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/refs/tags/v29.16.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/250ea5663c/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/250ea5663c/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/250ea5663c/packages/oh-my-posh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e83e780f45/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e83e780f45/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e83e780f45/packages/oh-my-posh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/250ea5663c/packages/oh-my-posh/issue-26712.patch"
+      "https://github.com/termux/termux-packages/blob/e83e780f45/packages/oh-my-posh/issue-26712.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/250ea5663c/packages/oh-my-posh/issue-26712.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e83e780f45/packages/oh-my-posh/issue-26712.patch"
     ],
     "auto_updated": true
   },
@@ -33359,25 +33361,25 @@
   },
   {
     "name": "proot",
-    "version": "5.1.107.78",
+    "version": "5.1.107.79",
     "description": "Emulate chroot, bind mount and binfmt_misc for non-root users",
     "homepage": "https://proot-me.github.io/",
     "depends": [
       "libandroid-shmem",
       "libtalloc"
     ],
-    "srcurl": "https://github.com/termux/proot/archive/v5.1.107.78.zip",
+    "srcurl": "https://github.com/termux/proot/archive/v5.1.107.79.zip",
     "maintainer": "Michal Bednarski @michalbednarski",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/29c4a2b4f5/packages/proot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29c4a2b4f5/packages/proot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29c4a2b4f5/packages/proot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1702d2784a/packages/proot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1702d2784a/packages/proot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1702d2784a/packages/proot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "proot-distro",
-    "version": "5.2.0",
+    "version": "5.3.0",
     "description": "Termux official utility for managing proot'ed Linux distributions",
     "homepage": "https://github.com/termux/proot-distro",
     "depends": [
@@ -33385,11 +33387,11 @@
       "python",
       "python-pip"
     ],
-    "srcurl": "https://github.com/termux/proot-distro/archive/refs/tags/v5.2.0.tar.gz",
+    "srcurl": "https://github.com/termux/proot-distro/archive/refs/tags/v5.3.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b243e44944/packages/proot-distro",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b243e44944/packages/proot-distro/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b243e44944/packages/proot-distro/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/19ad6ff1cb/packages/proot-distro",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/19ad6ff1cb/packages/proot-distro/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/19ad6ff1cb/packages/proot-distro/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35153,15 +35155,15 @@
   },
   {
     "name": "railway-cli",
-    "version": "5.14.0",
+    "version": "5.15.0",
     "description": "This is the command line interface for Railway",
     "homepage": "https://railway.app",
     "depends": [],
-    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v5.14.0.tar.gz",
+    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v5.15.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5540c335f0/packages/railway-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5540c335f0/packages/railway-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5540c335f0/packages/railway-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ae9584971b/packages/railway-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ae9584971b/packages/railway-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ae9584971b/packages/railway-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -42197,17 +42199,17 @@
   },
   {
     "name": "typst",
-    "version": "0.14.2",
+    "version": "0.15.0",
     "description": "A new markup-based typesetting system that is powerful and easy to learn",
     "homepage": "https://typst.app/",
     "depends": [
       "openssl"
     ],
-    "srcurl": "https://github.com/typst/typst/archive/refs/tags/v0.14.2.tar.gz",
+    "srcurl": "https://github.com/typst/typst/archive/refs/tags/v0.15.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1cc8a751fe/packages/typst",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1cc8a751fe/packages/typst/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1cc8a751fe/packages/typst/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8739b3591b/packages/typst",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8739b3591b/packages/typst/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8739b3591b/packages/typst/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -43965,15 +43967,15 @@
   },
   {
     "name": "wakatime-cli",
-    "version": "2.16.1",
+    "version": "2.18.0",
     "description": "Command line interface used by all WakaTime text editor plugins",
     "homepage": "https://wakatime.com/plugins/",
     "depends": [],
-    "srcurl": "https://github.com/wakatime/wakatime-cli/archive/refs/tags/v2.16.1.tar.gz",
+    "srcurl": "https://github.com/wakatime/wakatime-cli/archive/refs/tags/v2.18.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/42792669ab/packages/wakatime-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/42792669ab/packages/wakatime-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/42792669ab/packages/wakatime-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1c760be6a5/packages/wakatime-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1c760be6a5/packages/wakatime-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1c760be6a5/packages/wakatime-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -58059,7 +58061,7 @@
   },
   {
     "name": "kscreen",
-    "version": "6.6.5",
+    "version": "6.7.0",
     "description": "KDE's screen management software",
     "homepage": "https://invent.kde.org/plasma/kscreen",
     "depends": [
@@ -58086,11 +58088,11 @@
       "qt6-qtdeclarative",
       "qt6-qtsensors"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/kscreen-6.6.5.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.7.0/kscreen-6.7.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a4f30be3da/x11-packages/kscreen",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a4f30be3da/x11-packages/kscreen/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a4f30be3da/x11-packages/kscreen/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3162088813/x11-packages/kscreen",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3162088813/x11-packages/kscreen/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3162088813/x11-packages/kscreen/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -67778,7 +67780,7 @@
   },
   {
     "name": "spectacle",
-    "version": "6.6.5",
+    "version": "6.7.0",
     "description": "KDE screenshot capture utility",
     "homepage": "https://apps.kde.org/spectacle/",
     "depends": [
@@ -67811,16 +67813,17 @@
       "qt6-qtdeclarative",
       "qt6-qtimageformats",
       "qt6-qtmultimedia",
+      "tesseract",
       "libwayland",
       "xcb-util",
       "xcb-util-cursor",
       "xcb-util-image"
     ],
-    "srcurl": "https://download.kde.org/stable/plasma/6.6.5/spectacle-6.6.5.tar.xz",
+    "srcurl": "https://download.kde.org/stable/plasma/6.7.0/spectacle-6.7.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fe6f35b228/x11-packages/spectacle",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fe6f35b228/x11-packages/spectacle/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fe6f35b228/x11-packages/spectacle/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9145471d48/x11-packages/spectacle",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9145471d48/x11-packages/spectacle/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9145471d48/x11-packages/spectacle/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
