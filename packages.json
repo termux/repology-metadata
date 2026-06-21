@@ -3549,17 +3549,17 @@
   },
   {
     "name": "cargo-binstall",
-    "version": "1.20.0",
+    "version": "1.20.1",
     "description": "Tool to fetch and install precompiled musl-based static binaries from the Rust ecosystem",
     "homepage": "https://github.com/cargo-bins/cargo-binstall",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/cargo-bins/cargo-binstall/archive/refs/tags/v1.20.0.tar.gz",
+    "srcurl": "https://github.com/cargo-bins/cargo-binstall/archive/refs/tags/v1.20.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f24feb6a84/packages/cargo-binstall",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f24feb6a84/packages/cargo-binstall/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f24feb6a84/packages/cargo-binstall/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/84c9e34702/packages/cargo-binstall",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84c9e34702/packages/cargo-binstall/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84c9e34702/packages/cargo-binstall/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -7112,15 +7112,15 @@
   },
   {
     "name": "dua",
-    "version": "2.36.0",
+    "version": "2.37.0",
     "description": "View disk space usage and delete unwanted data, fast",
     "homepage": "https://github.com/Byron/dua-cli",
     "depends": [],
-    "srcurl": "https://github.com/Byron/dua-cli/archive/refs/tags/v2.36.0.tar.gz",
+    "srcurl": "https://github.com/Byron/dua-cli/archive/refs/tags/v2.37.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/53097dcb79/packages/dua",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/53097dcb79/packages/dua/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/53097dcb79/packages/dua/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/46794b5718/packages/dua",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/46794b5718/packages/dua/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/46794b5718/packages/dua/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -34446,10 +34446,11 @@
   },
   {
     "name": "python-scipy",
-    "version": "1.17.1",
+    "version": "1.18.0",
     "description": "Fundamental algorithms for scientific computing in Python",
     "homepage": "https://scipy.org/",
     "depends": [
+      "libandroid-complex-math",
       "libc++",
       "libopenblas",
       "python",
@@ -34458,11 +34459,19 @@
     ],
     "srcurl": "git+https://github.com/scipy/scipy",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2cfa854c22/packages/python-scipy",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2cfa854c22/packages/python-scipy/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2cfa854c22/packages/python-scipy/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b4f0b60d1/packages/python-scipy",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b4f0b60d1/packages/python-scipy/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b4f0b60d1/packages/python-scipy/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5b4f0b60d1/packages/python-scipy/0001-android-complex-math.patch",
+      "https://github.com/termux/termux-packages/blob/5b4f0b60d1/packages/python-scipy/0002-pthread-affinity.patch",
+      "https://github.com/termux/termux-packages/blob/5b4f0b60d1/packages/python-scipy/0003-boost-math-LDBL_MANT_DIG.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5b4f0b60d1/packages/python-scipy/0001-android-complex-math.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5b4f0b60d1/packages/python-scipy/0002-pthread-affinity.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5b4f0b60d1/packages/python-scipy/0003-boost-math-LDBL_MANT_DIG.patch"
+    ],
     "auto_updated": true
   },
   {
