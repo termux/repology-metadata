@@ -2020,7 +2020,7 @@
   },
   {
     "name": "awscli",
-    "version": "2.35.15",
+    "version": "2.35.16",
     "description": "Universal Command Line Interface for Amazon Web Services",
     "homepage": "https://aws.amazon.com/cli",
     "depends": [
@@ -2028,20 +2028,20 @@
       "libandroid-support",
       "mandoc"
     ],
-    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.35.15.tar.gz",
+    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.35.16.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3a89a41e12/packages/awscli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3a89a41e12/packages/awscli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3a89a41e12/packages/awscli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/53c85019b8/packages/awscli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/53c85019b8/packages/awscli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/53c85019b8/packages/awscli/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3a89a41e12/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://github.com/termux/termux-packages/blob/3a89a41e12/packages/awscli/remove-aosp-dlls.patch",
-      "https://github.com/termux/termux-packages/blob/3a89a41e12/packages/awscli/remove-no-build-isolation.patch"
+      "https://github.com/termux/termux-packages/blob/53c85019b8/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://github.com/termux/termux-packages/blob/53c85019b8/packages/awscli/remove-aosp-dlls.patch",
+      "https://github.com/termux/termux-packages/blob/53c85019b8/packages/awscli/remove-no-build-isolation.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3a89a41e12/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3a89a41e12/packages/awscli/remove-aosp-dlls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/3a89a41e12/packages/awscli/remove-no-build-isolation.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/53c85019b8/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/53c85019b8/packages/awscli/remove-aosp-dlls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/53c85019b8/packages/awscli/remove-no-build-isolation.patch"
     ],
     "auto_updated": true
   },
@@ -5135,6 +5135,25 @@
     "auto_updated": false
   },
   {
+    "name": "cpptrace",
+    "version": "1.0.4",
+    "description": "Self-contained stacktrace library for C++11 and newer",
+    "homepage": "https://github.com/jeremy-rifkin/cpptrace",
+    "depends": [
+      "libc++",
+      "libdwarf",
+      "zstd"
+    ],
+    "srcurl": "https://github.com/jeremy-rifkin/cpptrace/archive/refs/tags/v1.0.4.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b8e84c2a35/packages/cpptrace",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b8e84c2a35/packages/cpptrace/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b8e84c2a35/packages/cpptrace/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "cppunit",
     "version": "1.15.1",
     "description": "A C++ unit testing framework",
@@ -6691,17 +6710,17 @@
   },
   {
     "name": "doctest",
-    "version": "2.5.2",
+    "version": "2.5.3",
     "description": "The fastest feature-rich C++11/14/17/20 single-header testing framework",
     "homepage": "https://github.com/doctest/doctest",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/doctest/doctest/archive/refs/tags/v2.5.2.tar.gz",
+    "srcurl": "https://github.com/doctest/doctest/archive/refs/tags/v2.5.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/20bb4b87ad/packages/doctest",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/20bb4b87ad/packages/doctest/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/20bb4b87ad/packages/doctest/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/15d8c57397/packages/doctest",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/15d8c57397/packages/doctest/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/15d8c57397/packages/doctest/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -8904,15 +8923,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.4.66",
+    "version": "0.4.67",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.66.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.67.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/abc37d2d23/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abc37d2d23/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abc37d2d23/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3d0374578/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3d0374578/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3d0374578/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -16984,6 +17003,25 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/a2ef08b857/packages/libdvdread",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2ef08b857/packages/libdvdread/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2ef08b857/packages/libdvdread/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "libdwarf",
+    "version": "2.3.1",
+    "description": "Library for handling DWARF Debugging Information Format",
+    "homepage": "https://www.prevanders.net/dwarf.html",
+    "depends": [
+      "elfutils",
+      "zlib",
+      "zstd"
+    ],
+    "srcurl": "https://github.com/davea42/libdwarf-code/releases/download/v2.3.1/libdwarf-2.3.1.tar.xz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6bce38da6f/packages/libdwarf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6bce38da6f/packages/libdwarf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6bce38da6f/packages/libdwarf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -26875,6 +26913,21 @@
     "auto_updated": true
   },
   {
+    "name": "miniz",
+    "version": "3.1.2",
+    "description": "Single C source file zlib-replacement library",
+    "homepage": "https://github.com/richgel999/miniz",
+    "depends": [],
+    "srcurl": "https://github.com/richgel999/miniz/archive/refs/tags/3.1.2.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6be68c1b24/packages/miniz",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6be68c1b24/packages/miniz/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6be68c1b24/packages/miniz/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "minizinc",
     "version": "2.9.7",
     "description": "A medium-level constraint modelling language",
@@ -31369,15 +31422,15 @@
   },
   {
     "name": "oxlint",
-    "version": "1.72.0",
+    "version": "1.73.0",
     "description": "Oxc JavaScript linter",
     "homepage": "https://oxc.rs/",
     "depends": [],
-    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.72.0.tar.gz",
+    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.73.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/633278df6f/packages/oxlint",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/633278df6f/packages/oxlint/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/633278df6f/packages/oxlint/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5e4cee3c0c/packages/oxlint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5e4cee3c0c/packages/oxlint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5e4cee3c0c/packages/oxlint/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -31851,17 +31904,17 @@
   },
   {
     "name": "patchelf",
-    "version": "0.19.0",
+    "version": "0.19.1",
     "description": "Utility to modify the dynamic linker and RPATH of ELF executables",
     "homepage": "https://nixos.org/patchelf.html",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/NixOS/patchelf/archive/refs/tags/0.19.0.tar.gz",
+    "srcurl": "https://github.com/NixOS/patchelf/archive/refs/tags/0.19.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e94c05baa9/packages/patchelf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e94c05baa9/packages/patchelf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e94c05baa9/packages/patchelf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6cccbfdb2c/packages/patchelf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6cccbfdb2c/packages/patchelf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6cccbfdb2c/packages/patchelf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35757,17 +35810,17 @@
   },
   {
     "name": "remind",
-    "version": "1:06.02.07",
+    "version": "1:06.02.08",
     "description": "Sophisticated calendar and alarm program",
     "homepage": "https://dianne.skoll.ca/projects/remind/",
     "depends": [
       "libandroid-glob"
     ],
-    "srcurl": "https://dianne.skoll.ca/projects/remind/download/remind-06.02.07.tar.gz",
+    "srcurl": "https://dianne.skoll.ca/projects/remind/download/remind-06.02.08.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ecd4da280/packages/remind",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ecd4da280/packages/remind/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ecd4da280/packages/remind/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/efe1269dd3/packages/remind",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/efe1269dd3/packages/remind/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/efe1269dd3/packages/remind/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -38934,6 +38987,21 @@
     "package_patch_raw_urls": [
       "https://raw.githubusercontent.com/termux/termux-packages/0be64cb9e2/packages/stdoutisatty/soname.patch"
     ],
+    "auto_updated": true
+  },
+  {
+    "name": "stduuid",
+    "version": "1.2.3",
+    "description": "C++17 cross-platform single-header library implementation for universally unique identifiers",
+    "homepage": "https://github.com/mariusbancila/stduuid",
+    "depends": [],
+    "srcurl": "https://github.com/mariusbancila/stduuid/archive/refs/tags/v1.2.3.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c046ee15a3/packages/stduuid",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c046ee15a3/packages/stduuid/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c046ee15a3/packages/stduuid/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -43083,17 +43151,17 @@
   },
   {
     "name": "uv",
-    "version": "0.11.26",
+    "version": "0.11.27",
     "description": "An extremely fast Python package installer and resolver, written in Rust.",
     "homepage": "https://docs.astral.sh/uv/",
     "depends": [
       "zstd"
     ],
-    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.11.26.tar.gz",
+    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.11.27.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bed57b8174/packages/uv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bed57b8174/packages/uv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bed57b8174/packages/uv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9d67b7274c/packages/uv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9d67b7274c/packages/uv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d67b7274c/packages/uv/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -43145,22 +43213,22 @@
   },
   {
     "name": "v2ray",
-    "version": "5.49.0",
+    "version": "5.51.2",
     "description": "A platform for building proxies to bypass network restrictions",
     "homepage": "https://www.v2fly.org/",
     "depends": [],
     "srcurl": "git+https://github.com/v2fly/v2ray-core",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c462f4eeab/packages/v2ray",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c462f4eeab/packages/v2ray/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c462f4eeab/packages/v2ray/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2679b752a0/packages/v2ray",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2679b752a0/packages/v2ray/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2679b752a0/packages/v2ray/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c462f4eeab/packages/v2ray/0001-fix-config-paths.diff",
-      "https://github.com/termux/termux-packages/blob/c462f4eeab/packages/v2ray/0002-change-geoip-path.patch"
+      "https://github.com/termux/termux-packages/blob/2679b752a0/packages/v2ray/0001-fix-config-paths.diff",
+      "https://github.com/termux/termux-packages/blob/2679b752a0/packages/v2ray/0002-change-geoip-path.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c462f4eeab/packages/v2ray/0001-fix-config-paths.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/c462f4eeab/packages/v2ray/0002-change-geoip-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2679b752a0/packages/v2ray/0001-fix-config-paths.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/2679b752a0/packages/v2ray/0002-change-geoip-path.patch"
     ],
     "auto_updated": true
   },
@@ -43819,7 +43887,7 @@
   },
   {
     "name": "vtm",
-    "version": "2026.06.29",
+    "version": "2026.07.05",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://github.com/directvt/vtm",
     "depends": [
@@ -43829,11 +43897,11 @@
       "lua54",
       "lunasvg"
     ],
-    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2026.06.29.tar.gz",
+    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2026.07.05.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa519c5543/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa519c5543/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa519c5543/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/54a7161528/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/54a7161528/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/54a7161528/packages/vtm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -70067,6 +70135,45 @@
       "https://raw.githubusercontent.com/termux/termux-packages/6b180a1787/x11-packages/transmission-gtk/fix_paths.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/6b180a1787/x11-packages/transmission-gtk/libtransmission-CMakeLists.txt.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/6b180a1787/x11-packages/transmission-gtk/no_quota.patch"
+    ],
+    "auto_updated": true
+  },
+  {
+    "name": "trenchbroom",
+    "version": "2026.1",
+    "description": "Level editor for Quake-engine based games",
+    "homepage": "https://trenchbroom.github.io/",
+    "depends": [
+      "assimp",
+      "cpptrace",
+      "freeimage",
+      "libtinyxml2",
+      "opengl",
+      "qt6-qtbase",
+      "qt6-qtsvg"
+    ],
+    "srcurl": "https://github.com/TrenchBroom/TrenchBroom/archive/refs/tags/v2026.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c97696288/x11-packages/trenchbroom",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/disable-manual-generation.patch",
+      "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/disable-no_warn_duplicate_libraries.patch",
+      "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/disable-tests.patch",
+      "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/disable-updater.patch",
+      "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/disable-vcpkg.patch",
+      "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/set-version.diff",
+      "https://github.com/termux/termux-packages/blob/7c97696288/x11-packages/trenchbroom/stduuid-header-location.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/disable-manual-generation.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/disable-no_warn_duplicate_libraries.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/disable-tests.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/disable-updater.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/disable-vcpkg.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/set-version.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/7c97696288/x11-packages/trenchbroom/stduuid-header-location.patch"
     ],
     "auto_updated": true
   },
