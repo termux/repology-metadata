@@ -6692,6 +6692,48 @@
     "auto_updated": false
   },
   {
+    "name": "docker-cli",
+    "version": "24.0.6",
+    "description": "Set of products that use OS-level virtualization to deliver software in packages called containers.",
+    "homepage": "https://docker.com",
+    "depends": [],
+    "srcurl": "https://github.com/docker/cli/archive/refs/tags/v24.0.6.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa08fe3821/packages/docker-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa08fe3821/packages/docker-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa08fe3821/packages/docker-cli/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/fa08fe3821/packages/docker-cli/00-fix_paths.patch",
+      "https://github.com/termux/termux-packages/blob/fa08fe3821/packages/docker-cli/01-android_is_linux.patch",
+      "https://github.com/termux/termux-packages/blob/fa08fe3821/packages/docker-cli/02-hardcode_runtime.GOOS.patch",
+      "https://github.com/termux/termux-packages/blob/fa08fe3821/packages/docker-cli/03-fix_on-device_build.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/fa08fe3821/packages/docker-cli/00-fix_paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fa08fe3821/packages/docker-cli/01-android_is_linux.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fa08fe3821/packages/docker-cli/02-hardcode_runtime.GOOS.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fa08fe3821/packages/docker-cli/03-fix_on-device_build.patch"
+    ],
+    "auto_updated": false
+  },
+  {
+    "name": "docker-compose",
+    "version": "5.3.1",
+    "description": "Compose is a tool for defining and running multi-container Docker applications.",
+    "homepage": "https://github.com/docker/compose",
+    "depends": [
+      "docker-cli"
+    ],
+    "srcurl": "https://github.com/docker/compose/archive/refs/tags/v5.3.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/67a8c842fb/packages/docker-compose",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/67a8c842fb/packages/docker-compose/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/67a8c842fb/packages/docker-compose/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "docopt",
     "version": "0.6.3",
     "description": "Command line arguments parser for C++11 and later",
@@ -8093,17 +8135,17 @@
   },
   {
     "name": "eza",
-    "version": "0.23.4",
+    "version": "0.23.5",
     "description": "A modern replacement for ls",
     "homepage": "https://github.com/eza-community/eza",
     "depends": [
       "libgit2"
     ],
-    "srcurl": "https://github.com/eza-community/eza/archive/refs/tags/v0.23.4.tar.gz",
+    "srcurl": "https://github.com/eza-community/eza/archive/refs/tags/v0.23.5.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f2a1bd1ae4/packages/eza",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f2a1bd1ae4/packages/eza/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f2a1bd1ae4/packages/eza/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/70e50f24a8/packages/eza",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/70e50f24a8/packages/eza/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/70e50f24a8/packages/eza/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -8971,7 +9013,7 @@
   },
   {
     "name": "fontconfig",
-    "version": "2.18.1",
+    "version": "2.18.2",
     "description": "Library for configuring and customizing font access",
     "homepage": "https://www.freedesktop.org/wiki/Software/fontconfig/",
     "depends": [
@@ -8979,16 +9021,16 @@
       "libexpat",
       "ttf-dejavu"
     ],
-    "srcurl": "https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.18.1/fontconfig-2.18.1.tar.gz",
+    "srcurl": "https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.18.2/fontconfig-2.18.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1e730ef6e1/packages/fontconfig",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1e730ef6e1/packages/fontconfig/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1e730ef6e1/packages/fontconfig/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f47319bc98/packages/fontconfig",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f47319bc98/packages/fontconfig/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f47319bc98/packages/fontconfig/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1e730ef6e1/packages/fontconfig/fcatomic.c.patch"
+      "https://github.com/termux/termux-packages/blob/f47319bc98/packages/fontconfig/fcatomic.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1e730ef6e1/packages/fontconfig/fcatomic.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f47319bc98/packages/fontconfig/fcatomic.c.patch"
     ],
     "auto_updated": true
   },
@@ -12042,7 +12084,7 @@
   },
   {
     "name": "gst-libav",
-    "version": "1.28.4",
+    "version": "1.28.5",
     "description": "GStreamer Libav plug-in contains one plugin with a set of elements using the Libav library code",
     "homepage": "https://gstreamer.freedesktop.org/modules/gst-libav.html",
     "depends": [
@@ -12051,11 +12093,11 @@
       "gst-plugins-base",
       "gstreamer"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.4.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4a42b0fa2c/packages/gst-libav",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4a42b0fa2c/packages/gst-libav/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4a42b0fa2c/packages/gst-libav/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/43aacab49b/packages/gst-libav",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/43aacab49b/packages/gst-libav/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/43aacab49b/packages/gst-libav/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12099,7 +12141,7 @@
   },
   {
     "name": "gst-plugins-base",
-    "version": "1.28.4",
+    "version": "1.28.5",
     "description": "GStreamer base plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
@@ -12120,16 +12162,16 @@
       "libxv",
       "zlib"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.4.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/940e79d247/packages/gst-plugins-base",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/940e79d247/packages/gst-plugins-base/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/940e79d247/packages/gst-plugins-base/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d7d249561a/packages/gst-plugins-base",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d7d249561a/packages/gst-plugins-base/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d7d249561a/packages/gst-plugins-base/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/940e79d247/packages/gst-plugins-base/partially-revert-10411.patch"
+      "https://github.com/termux/termux-packages/blob/d7d249561a/packages/gst-plugins-base/partially-revert-10411.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/940e79d247/packages/gst-plugins-base/partially-revert-10411.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d7d249561a/packages/gst-plugins-base/partially-revert-10411.patch"
     ],
     "auto_updated": true
   },
@@ -12217,17 +12259,17 @@
   },
   {
     "name": "gstreamer",
-    "version": "1.28.4",
+    "version": "1.28.5",
     "description": "Open source multimedia framework",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
       "glib"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.4.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e3d3431376/packages/gstreamer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e3d3431376/packages/gstreamer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e3d3431376/packages/gstreamer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bbfecc542c/packages/gstreamer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bbfecc542c/packages/gstreamer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bbfecc542c/packages/gstreamer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -26342,6 +26384,21 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
+  },
+  {
+    "name": "mdf2iso",
+    "version": "0.3.1",
+    "description": "Small utility that converts MDF images to ISO format",
+    "homepage": "https://salsa.debian.org/debian/mdf2iso",
+    "depends": [],
+    "srcurl": "https://salsa.debian.org/debian/mdf2iso/-/archive/upstream/0.3.1/mdf2iso-upstream-0.3.1.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/363da9924c/packages/mdf2iso",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/363da9924c/packages/mdf2iso/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/363da9924c/packages/mdf2iso/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": false
   },
   {
     "name": "mdns-scan",
@@ -45956,34 +46013,36 @@
     ],
     "srcurl": "https://www.zsh.org/pub/zsh-5.9.1.tar.xz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2b8aa63f24/packages/zsh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a06c5cba8f/packages/zsh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/Src-exec.c.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/Src-glob.c.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/Src-init.c.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/Src-module.c.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/compaudit.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/compinit.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/configure.ac.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/man-path.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/no-priv-calls.patch",
-      "https://github.com/termux/termux-packages/blob/2b8aa63f24/packages/zsh/tmp_path.patch"
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/Src-exec.c.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/Src-glob.c.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/Src-init.c.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/Src-module.c.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/abs-comp.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/compaudit.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/compinit.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/man-path.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/no-priv-calls.patch",
+      "https://github.com/termux/termux-packages/blob/a06c5cba8f/packages/zsh/tmp_path.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/Src-exec.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/Src-glob.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/Src-init.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/Src-module.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/compaudit.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/compinit.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/configure.ac.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/man-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/no-priv-calls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2b8aa63f24/packages/zsh/tmp_path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/Src-exec.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/Src-glob.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/Src-init.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/Src-module.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/abs-comp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/compaudit.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/compinit.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/man-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/no-priv-calls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a06c5cba8f/packages/zsh/tmp_path.patch"
     ],
     "auto_updated": false
   },
@@ -46376,8 +46435,8 @@
     "auto_updated": true
   },
   {
-    "name": "docker",
-    "version": "1:24.0.6",
+    "name": "dockerd",
+    "version": "24.0.6",
     "description": "Set of products that use OS-level virtualization to deliver software in packages called containers.",
     "homepage": "https://docker.com",
     "depends": [
@@ -46387,47 +46446,18 @@
     ],
     "srcurl": "https://github.com/moby/moby/archive/refs/tags/v24.0.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/root-packages/docker",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7926f9cc67/root-packages/dockerd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7926f9cc67/root-packages/dockerd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7926f9cc67/root-packages/dockerd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/config.go.patch",
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/database.go.patch",
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/hardcode-runtime.GOOS.patch",
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/manager.go.patch",
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/moby__daemon_unix.go.patch",
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/resolvconf.patch",
-      "https://github.com/termux/termux-packages/blob/91fad586ce/root-packages/docker/socket-path.patch"
+      "https://github.com/termux/termux-packages/blob/7926f9cc67/root-packages/dockerd/00-fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/7926f9cc67/root-packages/dockerd/01-hardcode-runtime.GOOS.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/config.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/database.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/hardcode-runtime.GOOS.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/manager.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/moby__daemon_unix.go.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/resolvconf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/root-packages/docker/socket-path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7926f9cc67/root-packages/dockerd/00-fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7926f9cc67/root-packages/dockerd/01-hardcode-runtime.GOOS.patch"
     ],
     "auto_updated": false
-  },
-  {
-    "name": "docker-compose",
-    "version": "5.3.1",
-    "description": "Compose is a tool for defining and running multi-container Docker applications.",
-    "homepage": "https://github.com/docker/compose",
-    "depends": [
-      "docker"
-    ],
-    "srcurl": "https://github.com/docker/compose/archive/refs/tags/v5.3.1.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e93a8ab1d/root-packages/docker-compose",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e93a8ab1d/root-packages/docker-compose/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e93a8ab1d/root-packages/docker-compose/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
   },
   {
     "name": "encfs",
@@ -47112,19 +47142,19 @@
     "description": "minikube implements a local Kubernetes cluster.",
     "homepage": "https://github.com/kubernetes/minikube",
     "depends": [
-      "docker",
+      "dockerd",
       "kubectl"
     ],
     "srcurl": "https://github.com/kubernetes/minikube/archive/refs/tags/v1.38.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c94dc896e6/root-packages/minikube",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c94dc896e6/root-packages/minikube/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c94dc896e6/root-packages/minikube/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/06162168b3/root-packages/minikube",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/06162168b3/root-packages/minikube/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/06162168b3/root-packages/minikube/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c94dc896e6/root-packages/minikube/disable-libvirt.patch"
+      "https://github.com/termux/termux-packages/blob/06162168b3/root-packages/minikube/disable-libvirt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c94dc896e6/root-packages/minikube/disable-libvirt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/06162168b3/root-packages/minikube/disable-libvirt.patch"
     ],
     "auto_updated": true
   },
@@ -47737,18 +47767,18 @@
     ],
     "srcurl": "https://github.com/vergoh/vnstat/releases/download/v2.13/vnstat-2.13.tar.gz",
     "maintainer": "@Denzy7",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/07277d3bc3/root-packages/vnstat",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/07277d3bc3/root-packages/vnstat/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/07277d3bc3/root-packages/vnstat/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b9dd39a822/root-packages/vnstat",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b9dd39a822/root-packages/vnstat/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b9dd39a822/root-packages/vnstat/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/07277d3bc3/root-packages/vnstat/cfg-vnstat.conf.patch",
-      "https://github.com/termux/termux-packages/blob/07277d3bc3/root-packages/vnstat/src-common.h.patch",
-      "https://github.com/termux/termux-packages/blob/07277d3bc3/root-packages/vnstat/src-daemon.c.patch"
+      "https://github.com/termux/termux-packages/blob/b9dd39a822/root-packages/vnstat/cfg-vnstat.conf.patch",
+      "https://github.com/termux/termux-packages/blob/b9dd39a822/root-packages/vnstat/src-common.h.patch",
+      "https://github.com/termux/termux-packages/blob/b9dd39a822/root-packages/vnstat/src-daemon.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/07277d3bc3/root-packages/vnstat/cfg-vnstat.conf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/07277d3bc3/root-packages/vnstat/src-common.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/07277d3bc3/root-packages/vnstat/src-daemon.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b9dd39a822/root-packages/vnstat/cfg-vnstat.conf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b9dd39a822/root-packages/vnstat/src-common.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b9dd39a822/root-packages/vnstat/src-daemon.c.patch"
     ],
     "auto_updated": true
   },
@@ -73451,6 +73481,46 @@
       "https://raw.githubusercontent.com/termux/termux-packages/166f6109c7/x11-packages/xrdp/fix-tmpdir.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/166f6109c7/x11-packages/xrdp/no-getlogin_r.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/166f6109c7/x11-packages/xrdp/termux-dont-have-shadow.patch"
+    ],
+    "auto_updated": true
+  },
+  {
+    "name": "xscreensaver",
+    "version": "6.15",
+    "description": "Screen saver and OpenGL demos for the X Window System",
+    "homepage": "https://www.jwz.org/xscreensaver",
+    "depends": [
+      "at-spi2-core",
+      "gdk-pixbuf",
+      "glib",
+      "glu",
+      "gtk3",
+      "opengl",
+      "libandroid-shmem",
+      "libjpeg-turbo",
+      "libx11",
+      "libxext",
+      "libxft",
+      "libxi",
+      "libxml2",
+      "libxmu",
+      "libxrandr",
+      "libxt",
+      "libxxf86vm",
+      "xdg-utils"
+    ],
+    "srcurl": "https://www.jwz.org/xscreensaver/xscreensaver-6.15.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/21d63fc8f1/x11-packages/xscreensaver",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/21d63fc8f1/x11-packages/xscreensaver/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/21d63fc8f1/x11-packages/xscreensaver/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/21d63fc8f1/x11-packages/xscreensaver/force-allow-autoconf-unrecognized-opts.patch",
+      "https://github.com/termux/termux-packages/blob/21d63fc8f1/x11-packages/xscreensaver/force-disable-pam.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/21d63fc8f1/x11-packages/xscreensaver/force-allow-autoconf-unrecognized-opts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/21d63fc8f1/x11-packages/xscreensaver/force-disable-pam.patch"
     ],
     "auto_updated": true
   },
