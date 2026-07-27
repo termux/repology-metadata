@@ -70,16 +70,18 @@
     "depends": [],
     "srcurl": "https://www.7-zip.org/a/7z2602-src.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91b8177cf4/packages/7zip",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91b8177cf4/packages/7zip/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91b8177cf4/packages/7zip/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f86ee93b3b/packages/7zip",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f86ee93b3b/packages/7zip/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f86ee93b3b/packages/7zip/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/91b8177cf4/packages/7zip/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/91b8177cf4/packages/7zip/no-timespec_get.patch"
+      "https://github.com/termux/termux-packages/blob/f86ee93b3b/packages/7zip/disable-asm-x86.patch",
+      "https://github.com/termux/termux-packages/blob/f86ee93b3b/packages/7zip/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/f86ee93b3b/packages/7zip/no-timespec_get.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/91b8177cf4/packages/7zip/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/91b8177cf4/packages/7zip/no-timespec_get.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f86ee93b3b/packages/7zip/disable-asm-x86.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f86ee93b3b/packages/7zip/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f86ee93b3b/packages/7zip/no-timespec_get.patch"
     ],
     "auto_updated": false
   },
@@ -7182,47 +7184,47 @@
   },
   {
     "name": "dropbear",
-    "version": "2026.91",
+    "version": "2026.94",
     "description": "Small SSH server and client",
     "homepage": "https://matt.ucc.asn.au/dropbear/dropbear.html",
     "depends": [
       "termux-auth",
       "zlib"
     ],
-    "srcurl": "https://matt.ucc.asn.au/dropbear/releases/dropbear-2026.91.tar.bz2",
+    "srcurl": "https://matt.ucc.asn.au/dropbear/releases/dropbear-2026.94.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8dacb78662/packages/dropbear",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4e132cc744/packages/dropbear",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/common-session.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/compat.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/default_options.h.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/gensignkey.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/loginrec.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/sshpty.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/svr-agentfwd.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/svr-auth.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/svr-authpasswd.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/svr-chansession.c.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/svr-session.patch",
-      "https://github.com/termux/termux-packages/blob/8dacb78662/packages/dropbear/sysoptions.h.patch"
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/common-session.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/compat.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/default_options.h.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/gensignkey.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/loginrec.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/sshpty.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/svr-agentfwd.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/svr-auth.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/svr-authpasswd.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/svr-chansession.c.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/svr-session.patch",
+      "https://github.com/termux/termux-packages/blob/4e132cc744/packages/dropbear/sysoptions.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/common-session.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/compat.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/default_options.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/gensignkey.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/loginrec.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/sshpty.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/svr-agentfwd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/svr-auth.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/svr-authpasswd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/svr-chansession.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/svr-session.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8dacb78662/packages/dropbear/sysoptions.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/common-session.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/compat.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/default_options.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/gensignkey.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/loginrec.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/sshpty.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/svr-agentfwd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/svr-auth.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/svr-authpasswd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/svr-chansession.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/svr-session.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4e132cc744/packages/dropbear/sysoptions.h.patch"
     ],
     "auto_updated": false
   },
@@ -12220,6 +12222,7 @@
       "librsvg",
       "libsndfile",
       "libsrt",
+      "libsrtp",
       "libx11",
       "libxml2",
       "littlecms",
@@ -12231,9 +12234,9 @@
     ],
     "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5206f407cd/packages/gst-plugins-bad",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5206f407cd/packages/gst-plugins-bad/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5206f407cd/packages/gst-plugins-bad/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/92582ccde4/packages/gst-plugins-bad",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/92582ccde4/packages/gst-plugins-bad/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/92582ccde4/packages/gst-plugins-bad/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12547,14 +12550,14 @@
     "depends": [],
     "srcurl": "https://github.com/Automattic/harper/archive/refs/tags/v2.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c99ea851fc/packages/harper",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c99ea851fc/packages/harper/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c99ea851fc/packages/harper/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/883541e666/packages/harper",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/883541e666/packages/harper/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/883541e666/packages/harper/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c99ea851fc/packages/harper/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://github.com/termux/termux-packages/blob/883541e666/packages/harper/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c99ea851fc/packages/harper/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/883541e666/packages/harper/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "auto_updated": true
   },
@@ -22392,6 +22395,21 @@
     "auto_updated": true
   },
   {
+    "name": "libsrtp",
+    "version": "2.8.0",
+    "description": "Library for SRTP (Secure Realtime Transport Protocol)",
+    "homepage": "https://github.com/cisco/libsrtp",
+    "depends": [],
+    "srcurl": "https://github.com/cisco/libsrtp/archive/refs/tags/v2.8.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/79b0139b35/packages/libsrtp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/79b0139b35/packages/libsrtp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/79b0139b35/packages/libsrtp/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "libssh",
     "version": "0.12.1",
     "description": "Tiny C SSH library",
@@ -24330,7 +24348,7 @@
   },
   {
     "name": "libxmlb",
-    "version": "0.3.28",
+    "version": "0.3.29",
     "description": "Library to help create and query binary XML blobs",
     "homepage": "https://github.com/hughsie/libxmlb",
     "depends": [
@@ -24339,11 +24357,11 @@
       "libstemmer",
       "zstd"
     ],
-    "srcurl": "https://github.com/hughsie/libxmlb/releases/download/0.3.28/libxmlb-0.3.28.tar.xz",
+    "srcurl": "https://github.com/hughsie/libxmlb/releases/download/0.3.29/libxmlb-0.3.29.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6ae80a2f38/packages/libxmlb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6ae80a2f38/packages/libxmlb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6ae80a2f38/packages/libxmlb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c2042a1e08/packages/libxmlb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c2042a1e08/packages/libxmlb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c2042a1e08/packages/libxmlb/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -32045,15 +32063,15 @@
   },
   {
     "name": "oxlint",
-    "version": "1.75.0",
+    "version": "1.76.0",
     "description": "Oxc JavaScript linter",
     "homepage": "https://oxc.rs/",
     "depends": [],
-    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.75.0.tar.gz",
+    "srcurl": "https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.76.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b3d344241/packages/oxlint",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b3d344241/packages/oxlint/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b3d344241/packages/oxlint/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/229800d3fe/packages/oxlint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/229800d3fe/packages/oxlint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/229800d3fe/packages/oxlint/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40047,7 +40065,7 @@
   },
   {
     "name": "suitesparse",
-    "version": "2:7.12.2",
+    "version": "2:7.12.3",
     "description": "A Suite of Sparse matrix packages.",
     "homepage": "https://github.com/DrTimothyAldenDavis/SuiteSparse",
     "depends": [
@@ -40056,16 +40074,16 @@
       "libmpfr",
       "libopenblas"
     ],
-    "srcurl": "https://github.com/DrTimothyAldenDavis/SuiteSparse/archive/refs/tags/v7.12.2.tar.gz",
+    "srcurl": "https://github.com/DrTimothyAldenDavis/SuiteSparse/archive/refs/tags/v7.12.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e57166df19/packages/suitesparse",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e57166df19/packages/suitesparse/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e57166df19/packages/suitesparse/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e55a63667b/packages/suitesparse",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e55a63667b/packages/suitesparse/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e55a63667b/packages/suitesparse/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e57166df19/packages/suitesparse/0001-android-complex-math.patch"
+      "https://github.com/termux/termux-packages/blob/e55a63667b/packages/suitesparse/0001-android-complex-math.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e57166df19/packages/suitesparse/0001-android-complex-math.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e55a63667b/packages/suitesparse/0001-android-complex-math.patch"
     ],
     "auto_updated": true
   },
@@ -43062,20 +43080,20 @@
   },
   {
     "name": "ty",
-    "version": "0.0.63",
+    "version": "0.0.64",
     "description": "An extremely fast Python type checker and language server, written in Rust",
     "homepage": "https://github.com/astral-sh/ty",
     "depends": [],
-    "srcurl": "https://github.com/astral-sh/ty/releases/download/0.0.63/source.tar.gz",
+    "srcurl": "https://github.com/astral-sh/ty/releases/download/0.0.64/source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8de008acce/packages/ty",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8de008acce/packages/ty/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8de008acce/packages/ty/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e4e8c35a74/packages/ty",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e4e8c35a74/packages/ty/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e4e8c35a74/packages/ty/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8de008acce/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://github.com/termux/termux-packages/blob/e4e8c35a74/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8de008acce/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/e4e8c35a74/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "auto_updated": true
   },
@@ -43923,26 +43941,26 @@
     ],
     "srcurl": "https://github.com/valkey-io/valkey/archive/refs/tags/9.1.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fc3813968f/packages/valkey",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5a2960e08/packages/valkey",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/fix-cflags.patch",
-      "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/fix-deps-lua.patch",
-      "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/fix-unused-variable-static-assert-i686.patch",
-      "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/rename-struct-user.patch",
-      "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/setproctitle.patch",
-      "https://github.com/termux/termux-packages/blob/fc3813968f/packages/valkey/valkey.conf.patch"
+      "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/fix-cflags.patch",
+      "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/fix-deps-lua.patch",
+      "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/fix-unused-variable-static-assert-i686.patch",
+      "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/rename-struct-user.patch",
+      "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/setproctitle.patch",
+      "https://github.com/termux/termux-packages/blob/d5a2960e08/packages/valkey/valkey.conf.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/fix-cflags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/fix-deps-lua.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/fix-unused-variable-static-assert-i686.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/rename-struct-user.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/setproctitle.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fc3813968f/packages/valkey/valkey.conf.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/fix-cflags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/fix-deps-lua.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/fix-unused-variable-static-assert-i686.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/rename-struct-user.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/setproctitle.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d5a2960e08/packages/valkey/valkey.conf.patch"
     ],
     "auto_updated": true
   },
@@ -44816,15 +44834,15 @@
   },
   {
     "name": "wakatime-cli",
-    "version": "2.22.2",
+    "version": "2.23.0",
     "description": "Command line interface used by all WakaTime text editor plugins",
     "homepage": "https://wakatime.com/plugins/",
     "depends": [],
-    "srcurl": "https://github.com/wakatime/wakatime-cli/archive/refs/tags/v2.22.2.tar.gz",
+    "srcurl": "https://github.com/wakatime/wakatime-cli/archive/refs/tags/v2.23.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e1e6e658e/packages/wakatime-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e1e6e658e/packages/wakatime-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e1e6e658e/packages/wakatime-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8c870fea92/packages/wakatime-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8c870fea92/packages/wakatime-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8c870fea92/packages/wakatime-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49233,7 +49251,7 @@
   },
   {
     "name": "appstream-glib",
-    "version": "0.8.3",
+    "version": "0.8.4",
     "description": "Provides GObjects and helper methods to make it easy to read and write AppStream metadata",
     "homepage": "https://people.freedesktop.org/~hughsient/appstream-glib/",
     "depends": [
@@ -49251,16 +49269,16 @@
       "libyaml",
       "pango"
     ],
-    "srcurl": "https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.3.tar.xz",
+    "srcurl": "https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cfa589d81a/x11-packages/appstream-glib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cfa589d81a/x11-packages/appstream-glib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cfa589d81a/x11-packages/appstream-glib/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8856076359/x11-packages/appstream-glib",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8856076359/x11-packages/appstream-glib/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8856076359/x11-packages/appstream-glib/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cfa589d81a/x11-packages/appstream-glib/libappstream-builder-plugins-meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/8856076359/x11-packages/appstream-glib/libappstream-builder-plugins-meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cfa589d81a/x11-packages/appstream-glib/libappstream-builder-plugins-meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8856076359/x11-packages/appstream-glib/libappstream-builder-plugins-meson.build.patch"
     ],
     "auto_updated": true
   },
@@ -72590,7 +72608,7 @@
   },
   {
     "name": "telegram-desktop",
-    "version": "7.0.5",
+    "version": "7.0.6",
     "description": "Telegram Desktop Client",
     "homepage": "https://desktop.telegram.org/",
     "depends": [
@@ -72629,28 +72647,28 @@
       "xxhash",
       "zlib"
     ],
-    "srcurl": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.0.5/tdesktop-7.0.5-full.tar.gz",
+    "srcurl": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.0.6/tdesktop-7.0.6-full.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8c06853f83/x11-packages/telegram-desktop",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f3242dc18d/x11-packages/telegram-desktop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
-      "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
-      "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
-      "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
-      "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
-      "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
-      "https://github.com/termux/termux-packages/blob/8c06853f83/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch"
+      "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
+      "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
+      "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
+      "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
+      "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
+      "https://github.com/termux/termux-packages/blob/f3242dc18d/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8c06853f83/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/0002-webrtc-clang20.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f3242dc18d/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch"
     ],
     "auto_updated": true
   },
