@@ -2088,14 +2088,14 @@
     ],
     "srcurl": "https://github.com/Azure/azure-cli/archive/refs/tags/azure-cli-2.90.0.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/07c61493a2/packages/azure-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/07c61493a2/packages/azure-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/07c61493a2/packages/azure-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a0418fcd8d/packages/azure-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a0418fcd8d/packages/azure-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a0418fcd8d/packages/azure-cli/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/07c61493a2/packages/azure-cli/fix-version-pin.patch"
+      "https://github.com/termux/termux-packages/blob/a0418fcd8d/packages/azure-cli/fix-version-pin.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/07c61493a2/packages/azure-cli/fix-version-pin.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a0418fcd8d/packages/azure-cli/fix-version-pin.patch"
     ],
     "auto_updated": true
   },
@@ -9247,11 +9247,15 @@
     ],
     "srcurl": "https://github.com/flintlib/flint/releases/download/v3.6.0/flint-3.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f59eef0f9/packages/flint",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f59eef0f9/packages/flint/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f59eef0f9/packages/flint/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/667fd58882/packages/flint",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/667fd58882/packages/flint/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/667fd58882/packages/flint/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/667fd58882/packages/flint/prepend-prefix-to-tmpdir.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/667fd58882/packages/flint/prepend-prefix-to-tmpdir.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -13861,6 +13865,25 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
+  },
+  {
+    "name": "hurl",
+    "version": "8.0.1",
+    "description": "Command line tool that runs and tests HTTP requests defined in a plain text format",
+    "homepage": "https://hurl.dev",
+    "depends": [
+      "libcurl",
+      "libxml2",
+      "openssl"
+    ],
+    "srcurl": "https://github.com/Orange-OpenSource/hurl/archive/refs/tags/8.0.1.tar.gz",
+    "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e8c195eb65/packages/hurl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e8c195eb65/packages/hurl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e8c195eb65/packages/hurl/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "hut",
@@ -30199,18 +30222,18 @@
       "tree-sitter-parsers",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/neovim/neovim/archive/050fa30632.tar.gz",
+    "srcurl": "https://github.com/neovim/neovim/archive/36cc62b276.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d16139a186/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d16139a186/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d16139a186/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f2b659d3e4/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f2b659d3e4/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f2b659d3e4/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d16139a186/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://github.com/termux/termux-packages/blob/d16139a186/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/f2b659d3e4/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://github.com/termux/termux-packages/blob/f2b659d3e4/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d16139a186/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d16139a186/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f2b659d3e4/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f2b659d3e4/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "auto_updated": true
   },
@@ -36994,18 +37017,22 @@
     ],
     "srcurl": "https://github.com/Radarr/Radarr/archive/refs/tags/v6.3.0.10514.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5402bd9548/packages/radarr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5402bd9548/packages/radarr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5402bd9548/packages/radarr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2a367b717f/packages/radarr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2a367b717f/packages/radarr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2a367b717f/packages/radarr/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5402bd9548/packages/radarr/fix-diskspace-optimization.patch",
-      "https://github.com/termux/termux-packages/blob/5402bd9548/packages/radarr/fix-dotnet10-cookie-redirect.patch",
-      "https://github.com/termux/termux-packages/blob/5402bd9548/packages/radarr/remove-happy-eyeballs-connect-callback.patch"
+      "https://github.com/termux/termux-packages/blob/2a367b717f/packages/radarr/fix-diskspace-optimization.patch",
+      "https://github.com/termux/termux-packages/blob/2a367b717f/packages/radarr/fix-dotnet10-cookie-redirect.patch",
+      "https://github.com/termux/termux-packages/blob/2a367b717f/packages/radarr/fix-resilient-rescan.patch",
+      "https://github.com/termux/termux-packages/blob/2a367b717f/packages/radarr/fix-symlink-transfer.patch",
+      "https://github.com/termux/termux-packages/blob/2a367b717f/packages/radarr/remove-happy-eyeballs-connect-callback.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5402bd9548/packages/radarr/fix-diskspace-optimization.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5402bd9548/packages/radarr/fix-dotnet10-cookie-redirect.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5402bd9548/packages/radarr/remove-happy-eyeballs-connect-callback.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2a367b717f/packages/radarr/fix-diskspace-optimization.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2a367b717f/packages/radarr/fix-dotnet10-cookie-redirect.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2a367b717f/packages/radarr/fix-resilient-rescan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2a367b717f/packages/radarr/fix-symlink-transfer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2a367b717f/packages/radarr/remove-happy-eyeballs-connect-callback.patch"
     ],
     "auto_updated": true
   },
@@ -38380,17 +38407,17 @@
   },
   {
     "name": "rust-analyzer",
-    "version": "2026-08-31",
+    "version": "2026-09-07",
     "description": "A Rust compiler front-end for IDEs",
     "homepage": "https://rust-analyzer.github.io/",
     "depends": [
       "rust-src"
     ],
-    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2026-08-31.tar.gz",
+    "srcurl": "https://github.com/rust-lang/rust-analyzer/archive/refs/tags/2026-09-07.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4544f8d972/packages/rust-analyzer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4544f8d972/packages/rust-analyzer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4544f8d972/packages/rust-analyzer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1144614a29/packages/rust-analyzer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1144614a29/packages/rust-analyzer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1144614a29/packages/rust-analyzer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -40003,20 +40030,24 @@
     ],
     "srcurl": "https://github.com/Sonarr/Sonarr/archive/refs/tags/v4.0.19.2979.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/378bcf1af6/packages/sonarr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/378bcf1af6/packages/sonarr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/378bcf1af6/packages/sonarr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cb43d1250c/packages/sonarr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cb43d1250c/packages/sonarr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cb43d1250c/packages/sonarr/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/378bcf1af6/packages/sonarr/fix-diskspace-optimization.patch",
-      "https://github.com/termux/termux-packages/blob/378bcf1af6/packages/sonarr/fix-dotnet10-cookie-redirect.patch",
-      "https://github.com/termux/termux-packages/blob/378bcf1af6/packages/sonarr/fix-queue-argumentnull.patch",
-      "https://github.com/termux/termux-packages/blob/378bcf1af6/packages/sonarr/remove-happy-eyeballs-connect-callback.patch"
+      "https://github.com/termux/termux-packages/blob/cb43d1250c/packages/sonarr/fix-diskspace-optimization.patch",
+      "https://github.com/termux/termux-packages/blob/cb43d1250c/packages/sonarr/fix-dotnet10-cookie-redirect.patch",
+      "https://github.com/termux/termux-packages/blob/cb43d1250c/packages/sonarr/fix-queue-argumentnull.patch",
+      "https://github.com/termux/termux-packages/blob/cb43d1250c/packages/sonarr/fix-resilient-rescan.patch",
+      "https://github.com/termux/termux-packages/blob/cb43d1250c/packages/sonarr/fix-symlink-transfer.patch",
+      "https://github.com/termux/termux-packages/blob/cb43d1250c/packages/sonarr/remove-happy-eyeballs-connect-callback.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/378bcf1af6/packages/sonarr/fix-diskspace-optimization.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/378bcf1af6/packages/sonarr/fix-dotnet10-cookie-redirect.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/378bcf1af6/packages/sonarr/fix-queue-argumentnull.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/378bcf1af6/packages/sonarr/remove-happy-eyeballs-connect-callback.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/cb43d1250c/packages/sonarr/fix-diskspace-optimization.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cb43d1250c/packages/sonarr/fix-dotnet10-cookie-redirect.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cb43d1250c/packages/sonarr/fix-queue-argumentnull.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cb43d1250c/packages/sonarr/fix-resilient-rescan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cb43d1250c/packages/sonarr/fix-symlink-transfer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/cb43d1250c/packages/sonarr/remove-happy-eyeballs-connect-callback.patch"
     ],
     "auto_updated": true
   },
@@ -70498,7 +70529,7 @@
   },
   {
     "name": "pwsafe",
-    "version": "3.72.1",
+    "version": "3.72.2",
     "description": "Popular secure and convenient password manager",
     "homepage": "https://pwsafe.org/",
     "depends": [
@@ -70507,20 +70538,24 @@
       "wxwidgets",
       "xerces-c"
     ],
-    "srcurl": "https://github.com/pwsafe/pwsafe/archive/refs/tags/3.72.1.tar.gz",
+    "srcurl": "https://github.com/pwsafe/pwsafe/archive/refs/tags/3.72.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/22bf1b1010/x11-packages/pwsafe",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/22bf1b1010/x11-packages/pwsafe/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/22bf1b1010/x11-packages/pwsafe/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fcf40aabb4/x11-packages/pwsafe",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fcf40aabb4/x11-packages/pwsafe/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fcf40aabb4/x11-packages/pwsafe/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/22bf1b1010/x11-packages/pwsafe/disable-language.patch",
-      "https://github.com/termux/termux-packages/blob/22bf1b1010/x11-packages/pwsafe/prepend-prefix.patch",
-      "https://github.com/termux/termux-packages/blob/22bf1b1010/x11-packages/pwsafe/wxwidgets-workaround.patch"
+      "https://github.com/termux/termux-packages/blob/fcf40aabb4/x11-packages/pwsafe/disable-etc-os-release.patch",
+      "https://github.com/termux/termux-packages/blob/fcf40aabb4/x11-packages/pwsafe/disable-language.patch",
+      "https://github.com/termux/termux-packages/blob/fcf40aabb4/x11-packages/pwsafe/disable-stack-clash-protection.patch",
+      "https://github.com/termux/termux-packages/blob/fcf40aabb4/x11-packages/pwsafe/fix-open.patch",
+      "https://github.com/termux/termux-packages/blob/fcf40aabb4/x11-packages/pwsafe/prepend-prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/22bf1b1010/x11-packages/pwsafe/disable-language.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/22bf1b1010/x11-packages/pwsafe/prepend-prefix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/22bf1b1010/x11-packages/pwsafe/wxwidgets-workaround.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fcf40aabb4/x11-packages/pwsafe/disable-etc-os-release.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fcf40aabb4/x11-packages/pwsafe/disable-language.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fcf40aabb4/x11-packages/pwsafe/disable-stack-clash-protection.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fcf40aabb4/x11-packages/pwsafe/fix-open.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/fcf40aabb4/x11-packages/pwsafe/prepend-prefix.patch"
     ],
     "auto_updated": true
   },
