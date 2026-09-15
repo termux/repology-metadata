@@ -2100,6 +2100,21 @@
     "auto_updated": true
   },
   {
+    "name": "azure-dev-cli",
+    "version": "1.34.0",
+    "description": "Developer-centric CLI for creating, provisioning and deploying Azure applications (azd)",
+    "homepage": "https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/",
+    "depends": [],
+    "srcurl": "https://github.com/Azure/azure-dev/archive/refs/tags/azure-dev-cli_1.34.0.tar.gz",
+    "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e9b4c9bde8/packages/azure-dev-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e9b4c9bde8/packages/azure-dev-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e9b4c9bde8/packages/azure-dev-cli/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
     "name": "b3sum",
     "version": "1.8.7",
     "description": "A command line utility for calculating BLAKE3 hashes, similar to Coreutils tools like b2sum or md5sum",
@@ -2311,6 +2326,77 @@
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b5e9faabf/packages/bat/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "bazel",
+    "version": "9.2.0",
+    "description": "Correct, reproducible, and fast builds for everyone",
+    "homepage": "https://bazel.build/",
+    "depends": [
+      "libarchive",
+      "openjdk-21",
+      "patch",
+      "unzip",
+      "zip"
+    ],
+    "srcurl": "https://github.com/bazelbuild/bazel/releases/download/9.2.0/bazel-9.2.0-dist.zip",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/47644966d8/packages/bazel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0001-strerror_r.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0002-impl-wait3.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0003-disable-sandbox.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0004-spawn.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0005-bazelrc-path.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0006-force-use-external-patch_tools.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0007-import-termux-patches.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0008-run-elf-cleaner-for-bundled-tools.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0009-compile-cpu_profiler-with-fPIC.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0010-disable-network-usage-monitor.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0011-fix-patches-import.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/0101-import-termux-cross-deps.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/absl.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/cares-config.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/cares.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/grpc.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/protobuf.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/rules_cc.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/z-absl.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/z-cares-config.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/z-cares.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/z-grpc.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/z-protobuf.patch",
+      "https://github.com/termux/termux-packages/blob/47644966d8/packages/bazel/dep-patches/z-rules_cc.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0001-strerror_r.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0002-impl-wait3.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0003-disable-sandbox.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0004-spawn.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0005-bazelrc-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0006-force-use-external-patch_tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0007-import-termux-patches.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0008-run-elf-cleaner-for-bundled-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0009-compile-cpu_profiler-with-fPIC.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0010-disable-network-usage-monitor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0011-fix-patches-import.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/0101-import-termux-cross-deps.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/absl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/cares-config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/cares.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/grpc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/protobuf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/rules_cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/z-absl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/z-cares-config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/z-cares.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/z-grpc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/z-protobuf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/47644966d8/packages/bazel/dep-patches/z-rules_cc.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -3260,26 +3346,28 @@
     "depends": [],
     "srcurl": "git+https://github.com/oven-sh/bun",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f42013368a/packages/bun",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b32cd29ee7/packages/bun",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/0001-default-to-symlink-install-backend.patch",
-      "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/0002-remove-Werror-and-unsupported-flags.patch",
-      "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/0003-disable-close_range.patch",
-      "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/0004-disable-openat2.patch",
-      "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/0005-disable-fchmodat2.patch",
-      "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/0006-set-termux-tmpdir.patch",
-      "https://github.com/termux/termux-packages/blob/f42013368a/packages/bun/0007-fix-bash-completion-empty-regex.patch"
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0001-default-to-symlink-install-backend.patch",
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0002-remove-Werror-and-unsupported-flags.patch",
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0003-disable-close_range.patch",
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0004-disable-openat2.patch",
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0005-disable-fchmodat2.patch",
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0006-set-termux-tmpdir.patch",
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0007-fix-bash-completion-empty-regex.patch",
+      "https://github.com/termux/termux-packages/blob/b32cd29ee7/packages/bun/0008-fix-symlink-bin-chmod.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/0001-default-to-symlink-install-backend.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/0002-remove-Werror-and-unsupported-flags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/0003-disable-close_range.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/0004-disable-openat2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/0005-disable-fchmodat2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/0006-set-termux-tmpdir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f42013368a/packages/bun/0007-fix-bash-completion-empty-regex.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0001-default-to-symlink-install-backend.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0002-remove-Werror-and-unsupported-flags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0003-disable-close_range.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0004-disable-openat2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0005-disable-fchmodat2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0006-set-termux-tmpdir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0007-fix-bash-completion-empty-regex.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b32cd29ee7/packages/bun/0008-fix-symlink-bin-chmod.patch"
     ],
     "auto_updated": true
   },
@@ -15013,7 +15101,7 @@
   },
   {
     "name": "jellyfin-server",
-    "version": "12.0",
+    "version": "12.1",
     "description": "A free media system for organizing and streaming media (server)",
     "homepage": "https://jellyfin.org",
     "depends": [
@@ -15025,20 +15113,20 @@
       "libesqlite3",
       "jellyfin-ffmpeg"
     ],
-    "srcurl": "https://github.com/jellyfin/jellyfin/archive/refs/tags/v12.0.tar.gz",
+    "srcurl": "https://github.com/jellyfin/jellyfin/archive/refs/tags/v12.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/260dbbfd62/packages/jellyfin-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/260dbbfd62/packages/jellyfin-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/260dbbfd62/packages/jellyfin-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/114dd33f17/packages/jellyfin-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/114dd33f17/packages/jellyfin-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/114dd33f17/packages/jellyfin-server/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/260dbbfd62/packages/jellyfin-server/ffmpeg-configure.patch",
-      "https://github.com/termux/termux-packages/blob/260dbbfd62/packages/jellyfin-server/ffmpeg-libavutil-file_open.c.patch",
-      "https://github.com/termux/termux-packages/blob/260dbbfd62/packages/jellyfin-server/jellyfin-defaults.patch"
+      "https://github.com/termux/termux-packages/blob/114dd33f17/packages/jellyfin-server/ffmpeg-configure.patch",
+      "https://github.com/termux/termux-packages/blob/114dd33f17/packages/jellyfin-server/ffmpeg-libavutil-file_open.c.patch",
+      "https://github.com/termux/termux-packages/blob/114dd33f17/packages/jellyfin-server/jellyfin-defaults.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/260dbbfd62/packages/jellyfin-server/ffmpeg-configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/260dbbfd62/packages/jellyfin-server/ffmpeg-libavutil-file_open.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/260dbbfd62/packages/jellyfin-server/jellyfin-defaults.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/114dd33f17/packages/jellyfin-server/ffmpeg-configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/114dd33f17/packages/jellyfin-server/ffmpeg-libavutil-file_open.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/114dd33f17/packages/jellyfin-server/jellyfin-defaults.patch"
     ],
     "auto_updated": false
   },
@@ -18811,9 +18899,9 @@
     ],
     "srcurl": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.9.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a14acd1adf/packages/libglibmm-2.4",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a14acd1adf/packages/libglibmm-2.4/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a14acd1adf/packages/libglibmm-2.4/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/735a212a97/packages/libglibmm-2.4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/735a212a97/packages/libglibmm-2.4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/735a212a97/packages/libglibmm-2.4/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -19610,6 +19698,21 @@
       "https://raw.githubusercontent.com/termux/termux-packages/b5f939ba5c/packages/libiodbc/iodbcinst-SQLInstallDriver.c.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/b5f939ba5c/packages/libiodbc/iodbcinst-SQLInstallDriverEx.c.patch"
     ],
+    "auto_updated": false
+  },
+  {
+    "name": "libiptcdata",
+    "version": "1.0.4",
+    "description": "a C library for manipulating the IPTC metadata stored within multimedia files",
+    "homepage": "https://libiptcdata.sourceforge.net/",
+    "depends": [],
+    "srcurl": "https://downloads.sourceforge.net/libiptcdata/libiptcdata/libiptcdata-1.0.4.tar.gz",
+    "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d8d08420f2/packages/libiptcdata",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d8d08420f2/packages/libiptcdata/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d8d08420f2/packages/libiptcdata/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
@@ -22214,11 +22317,15 @@
     ],
     "srcurl": "https://www.libraw.org/data/LibRaw-0.22.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ac116b159/packages/libraw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ac116b159/packages/libraw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ac116b159/packages/libraw/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f413fb3bc/packages/libraw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f413fb3bc/packages/libraw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f413fb3bc/packages/libraw/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/5f413fb3bc/packages/libraw/0001-pkgconfig-use-libcxx-shared.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/5f413fb3bc/packages/libraw/0001-pkgconfig-use-libcxx-shared.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -33068,6 +33175,21 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
+  },
+  {
+    "name": "oxipng",
+    "version": "10.2.1",
+    "description": "Multithreaded PNG optimizer written in Rust",
+    "homepage": "https://github.com/oxipng/oxipng",
+    "depends": [],
+    "srcurl": "https://github.com/oxipng/oxipng/archive/refs/tags/v10.2.1.tar.gz",
+    "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/62f9bb77de/packages/oxipng",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/62f9bb77de/packages/oxipng/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/62f9bb77de/packages/oxipng/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "oxlint",
@@ -45646,6 +45768,24 @@
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
+  },
+  {
+    "name": "vhs",
+    "version": "0.12.0",
+    "description": "Your CLI home video recorder",
+    "homepage": "https://github.com/charmbracelet/vhs",
+    "depends": [
+      "ttyd",
+      "ffmpeg"
+    ],
+    "srcurl": "git+https://github.com/charmbracelet/vhs",
+    "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/49656ba765/packages/vhs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/49656ba765/packages/vhs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/49656ba765/packages/vhs/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "viddy",
@@ -72751,6 +72891,44 @@
       "https://raw.githubusercontent.com/termux/termux-packages/0d90f2a9f5/x11-packages/quickshell/fill-memfd.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/0d90f2a9f5/x11-packages/quickshell/use-qstandardpaths-for-runtime-dir.patch",
       "https://raw.githubusercontent.com/termux/termux-packages/0d90f2a9f5/x11-packages/quickshell/use-session-bus.patch"
+    ],
+    "auto_updated": true
+  },
+  {
+    "name": "rawtherapee",
+    "version": "5.13",
+    "description": "raw image converter and digital photo processor",
+    "homepage": "https://www.rawtherapee.com/",
+    "depends": [
+      "exiv2",
+      "fftw",
+      "glib",
+      "gtk3",
+      "gtkmm3",
+      "lensfun",
+      "libcanberra",
+      "libexpat",
+      "libglibmm-2.4",
+      "libiptcdata",
+      "libjpeg-turbo",
+      "libpng",
+      "libraw",
+      "librsvg",
+      "libsigc++-2.0",
+      "libtiff",
+      "littlecms",
+      "zlib"
+    ],
+    "srcurl": "https://github.com/Beep6581/RawTherapee/releases/download/5.13/rawtherapee-5.13.tar.xz",
+    "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/793ffde18a/x11-packages/rawtherapee",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/793ffde18a/x11-packages/rawtherapee/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/793ffde18a/x11-packages/rawtherapee/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/793ffde18a/x11-packages/rawtherapee/0001-dirbrowser-root-subdirs.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/793ffde18a/x11-packages/rawtherapee/0001-dirbrowser-root-subdirs.patch"
     ],
     "auto_updated": true
   },
