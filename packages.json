@@ -3296,7 +3296,7 @@
   },
   {
     "name": "btrfs-progs",
-    "version": "7.0",
+    "version": "7.1",
     "description": "Utilities for Btrfs filesystem",
     "homepage": "https://btrfs.readthedocs.io/en/latest/",
     "depends": [
@@ -3307,13 +3307,23 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://github.com/kdave/btrfs-progs/archive/refs/tags/v7.0.tar.gz",
+    "srcurl": "https://github.com/kdave/btrfs-progs/archive/refs/tags/v7.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/23a150ca81/packages/btrfs-progs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23a150ca81/packages/btrfs-progs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23a150ca81/packages/btrfs-progs/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1237b34b59/packages/btrfs-progs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1237b34b59/packages/btrfs-progs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1237b34b59/packages/btrfs-progs/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/1237b34b59/packages/btrfs-progs/common_array.c.patch",
+      "https://github.com/termux/termux-packages/blob/1237b34b59/packages/btrfs-progs/configure.ac.patch",
+      "https://github.com/termux/termux-packages/blob/1237b34b59/packages/btrfs-progs/include_kerncompat.h.patch",
+      "https://github.com/termux/termux-packages/blob/1237b34b59/packages/btrfs-progs/libbtrfsutil_subvolume.c.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/1237b34b59/packages/btrfs-progs/common_array.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1237b34b59/packages/btrfs-progs/configure.ac.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1237b34b59/packages/btrfs-progs/include_kerncompat.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1237b34b59/packages/btrfs-progs/libbtrfsutil_subvolume.c.patch"
+    ],
     "auto_updated": true
   },
   {
@@ -4214,7 +4224,7 @@
   },
   {
     "name": "cfengine",
-    "version": "1:3.27.1",
+    "version": "1:3.28.0",
     "description": "CFEngine is a configuration management technology",
     "homepage": "https://cfengine.com/",
     "depends": [
@@ -4228,14 +4238,14 @@
     ],
     "srcurl": "git+https://github.com/cfengine/core",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/569b295496/packages/cfengine",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/569b295496/packages/cfengine/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/569b295496/packages/cfengine/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5aacead9c/packages/cfengine",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5aacead9c/packages/cfengine/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5aacead9c/packages/cfengine/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/569b295496/packages/cfengine/pthread_cancel.patch"
+      "https://github.com/termux/termux-packages/blob/d5aacead9c/packages/cfengine/pthread_cancel.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/569b295496/packages/cfengine/pthread_cancel.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d5aacead9c/packages/cfengine/pthread_cancel.patch"
     ],
     "auto_updated": false
   },
@@ -7171,25 +7181,27 @@
   },
   {
     "name": "doge",
-    "version": "0.2.8",
+    "version": "0.2.9",
     "description": "A command-line DNS client",
     "homepage": "https://github.com/Dj-Codeman/dog_community",
     "depends": [
       "openssl",
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/Dj-Codeman/dog_community/archive/refs/tags/v0.2.8.tar.gz",
+    "srcurl": "https://github.com/Dj-Codeman/dog_community/archive/refs/tags/v0.2.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/eb9da0b638/packages/doge",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eb9da0b638/packages/doge/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eb9da0b638/packages/doge/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93ce536155/packages/doge",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93ce536155/packages/doge/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93ce536155/packages/doge/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/eb9da0b638/packages/doge/src-resolve.rs.patch"
+      "https://github.com/termux/termux-packages/blob/93ce536155/packages/doge/Cargo.lock.patch",
+      "https://github.com/termux/termux-packages/blob/93ce536155/packages/doge/src-resolve.rs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/eb9da0b638/packages/doge/src-resolve.rs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/93ce536155/packages/doge/Cargo.lock.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93ce536155/packages/doge/src-resolve.rs.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "doggo",
@@ -20172,20 +20184,20 @@
   },
   {
     "name": "liblmdb",
-    "version": "0.9.35",
+    "version": "1.0.2",
     "description": "LMDB implements a simplified variant of the BerkeleyDB (BDB) API",
     "homepage": "https://symas.com/lmdb/",
     "depends": [],
-    "srcurl": "https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.35/openldap-LMDB_0.9.35.tar.gz",
+    "srcurl": "https://git.openldap.org/openldap/openldap/-/archive/LMDB_1.0.2/openldap-LMDB_1.0.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0b55806115/packages/liblmdb",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0b55806115/packages/liblmdb/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0b55806115/packages/liblmdb/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a7b364a0cc/packages/liblmdb",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a7b364a0cc/packages/liblmdb/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a7b364a0cc/packages/liblmdb/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0b55806115/packages/liblmdb/Makefile.patch"
+      "https://github.com/termux/termux-packages/blob/a7b364a0cc/packages/liblmdb/Makefile.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0b55806115/packages/liblmdb/Makefile.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a7b364a0cc/packages/liblmdb/Makefile.patch"
     ],
     "auto_updated": true
   },
@@ -21079,22 +21091,22 @@
   },
   {
     "name": "libnfs",
-    "version": "7.0.2",
+    "version": "8.0.0",
     "description": "NFS client library",
     "homepage": "https://github.com/sahlberg/libnfs",
     "depends": [
       "libgnutls"
     ],
-    "srcurl": "https://github.com/sahlberg/libnfs/archive/refs/tags/libnfs-7.0.2.tar.gz",
+    "srcurl": "https://github.com/sahlberg/libnfs/archive/refs/tags/libnfs-8.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/74c5821d1a/packages/libnfs",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74c5821d1a/packages/libnfs/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74c5821d1a/packages/libnfs/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e4486aea0a/packages/libnfs",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e4486aea0a/packages/libnfs/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e4486aea0a/packages/libnfs/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/74c5821d1a/packages/libnfs/add-timeh.patch"
+      "https://github.com/termux/termux-packages/blob/e4486aea0a/packages/libnfs/add-timeh.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/74c5821d1a/packages/libnfs/add-timeh.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e4486aea0a/packages/libnfs/add-timeh.patch"
     ],
     "auto_updated": true
   },
@@ -28648,29 +28660,29 @@
   },
   {
     "name": "mise",
-    "version": "2026.9.11",
+    "version": "2026.9.12",
     "description": "dev tools, env vars, task runner",
     "homepage": "https://mise.jdx.dev/",
     "depends": [
       "bzip2",
       "openssl"
     ],
-    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.9.11.tar.gz",
+    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.9.12.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8401d29c36/packages/mise",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8401d29c36/packages/mise/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8401d29c36/packages/mise/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/af8f90a4ec/packages/mise",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af8f90a4ec/packages/mise/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af8f90a4ec/packages/mise/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8401d29c36/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/8401d29c36/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/8401d29c36/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/8401d29c36/packages/mise/stat-mode-32-bit-android.patch"
+      "https://github.com/termux/termux-packages/blob/af8f90a4ec/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/af8f90a4ec/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/af8f90a4ec/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/af8f90a4ec/packages/mise/stat-mode-32-bit-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8401d29c36/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/8401d29c36/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/8401d29c36/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/8401d29c36/packages/mise/stat-mode-32-bit-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/af8f90a4ec/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/af8f90a4ec/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/af8f90a4ec/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/af8f90a4ec/packages/mise/stat-mode-32-bit-android.patch"
     ],
     "auto_updated": true
   },
@@ -34126,7 +34138,7 @@
   },
   {
     "name": "pgcli",
-    "version": "4.7.0",
+    "version": "4.7.1",
     "description": "Postgres CLI with autocompletion and syntax highlighting",
     "homepage": "https://www.pgcli.com",
     "depends": [
@@ -34134,11 +34146,11 @@
       "python-pip",
       "libpq"
     ],
-    "srcurl": "https://github.com/dbcli/pgcli/archive/refs/tags/v4.7.0.tar.gz",
+    "srcurl": "https://github.com/dbcli/pgcli/archive/refs/tags/v4.7.1.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/44618fc225/packages/pgcli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/44618fc225/packages/pgcli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/44618fc225/packages/pgcli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/acdf88ba86/packages/pgcli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/acdf88ba86/packages/pgcli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/acdf88ba86/packages/pgcli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35565,7 +35577,7 @@
   },
   {
     "name": "proxmark3",
-    "version": "1:4.21611",
+    "version": "1:4.23346",
     "description": "The Swiss Army Knife of RFID Research - RRG/Iceman repo",
     "homepage": "https://github.com/RfidResearchGroup/proxmark3",
     "depends": [
@@ -35575,11 +35587,11 @@
       "readline",
       "python"
     ],
-    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/refs/tags/v4.21611.tar.gz",
+    "srcurl": "https://github.com/RfidResearchGroup/proxmark3/archive/refs/tags/v4.23346.tar.gz",
     "maintainer": "Marlin Sööse <marlin.soose@esque.ca>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7590a559ad/packages/proxmark3",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7590a559ad/packages/proxmark3/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7590a559ad/packages/proxmark3/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/047474a57c/packages/proxmark3",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/047474a57c/packages/proxmark3/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/047474a57c/packages/proxmark3/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
