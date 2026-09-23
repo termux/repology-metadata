@@ -10151,10 +10151,11 @@
   },
   {
     "name": "gdal",
-    "version": "3.12.4",
+    "version": "3.13.3",
     "description": "A translator library for raster and vector geospatial data formats",
     "homepage": "https://gdal.org",
     "depends": [
+      "cfitsio",
       "giflib",
       "json-c",
       "libc++",
@@ -10180,18 +10181,20 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://download.osgeo.org/gdal/3.12.4/gdal-3.12.4.tar.xz",
+    "srcurl": "https://download.osgeo.org/gdal/3.13.3/gdal-3.13.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d6bf36858b/packages/gdal",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d6bf36858b/packages/gdal/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d6bf36858b/packages/gdal/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bf1992f582/packages/gdal",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bf1992f582/packages/gdal/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bf1992f582/packages/gdal/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d6bf36858b/packages/gdal/cmake-helpers-GdalCompilationFlags.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/d6bf36858b/packages/gdal/disable-mono.patch"
+      "https://github.com/termux/termux-packages/blob/bf1992f582/packages/gdal/cmake-helpers-GdalCompilationFlags.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/bf1992f582/packages/gdal/disable-mono.patch",
+      "https://github.com/termux/termux-packages/blob/bf1992f582/packages/gdal/disable-python-bindings.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d6bf36858b/packages/gdal/cmake-helpers-GdalCompilationFlags.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d6bf36858b/packages/gdal/disable-mono.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bf1992f582/packages/gdal/cmake-helpers-GdalCompilationFlags.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bf1992f582/packages/gdal/disable-mono.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bf1992f582/packages/gdal/disable-python-bindings.patch"
     ],
     "auto_updated": true
   },
@@ -13737,27 +13740,27 @@
   },
   {
     "name": "hstr",
-    "version": "3.1",
+    "version": "3.2",
     "description": "Shell history suggest box for bash and zsh",
     "homepage": "https://github.com/dvorka/hstr",
     "depends": [
       "ncurses",
       "readline"
     ],
-    "srcurl": "https://github.com/dvorka/hstr/archive/refs/tags/3.1.tar.gz",
+    "srcurl": "https://github.com/dvorka/hstr/archive/refs/tags/v3.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f119e2a31a/packages/hstr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f119e2a31a/packages/hstr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f119e2a31a/packages/hstr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d3d4ddcf2/packages/hstr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d3d4ddcf2/packages/hstr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d3d4ddcf2/packages/hstr/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f119e2a31a/packages/hstr/no-TIOCSTI.patch",
-      "https://github.com/termux/termux-packages/blob/f119e2a31a/packages/hstr/src-hstr_utils.c.patch"
+      "https://github.com/termux/termux-packages/blob/8d3d4ddcf2/packages/hstr/no-TIOCSTI.patch",
+      "https://github.com/termux/termux-packages/blob/8d3d4ddcf2/packages/hstr/src-hstr_utils.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f119e2a31a/packages/hstr/no-TIOCSTI.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f119e2a31a/packages/hstr/src-hstr_utils.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8d3d4ddcf2/packages/hstr/no-TIOCSTI.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8d3d4ddcf2/packages/hstr/src-hstr_utils.c.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "html-xml-utils",
@@ -16201,15 +16204,15 @@
   },
   {
     "name": "lego",
-    "version": "5.5.1",
+    "version": "5.5.2",
     "description": "Let's Encrypt/ACME client and library written in Go",
     "homepage": "https://github.com/go-acme/lego",
     "depends": [],
-    "srcurl": "https://github.com/go-acme/lego/archive/refs/tags/v5.5.1.tar.gz",
+    "srcurl": "https://github.com/go-acme/lego/archive/refs/tags/v5.5.2.tar.gz",
     "maintainer": "Izumi Sena Sora <info@unordinary.eu.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f03f543f41/packages/lego",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f03f543f41/packages/lego/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f03f543f41/packages/lego/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b205a4cf8d/packages/lego",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b205a4cf8d/packages/lego/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b205a4cf8d/packages/lego/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -16776,20 +16779,20 @@
   },
   {
     "name": "libaom",
-    "version": "3.15.0",
+    "version": "3.15.1",
     "description": "AV1 Video Codec Library",
     "homepage": "https://aomedia.org/",
     "depends": [],
-    "srcurl": "https://storage.googleapis.com/aom-releases/libaom-3.15.0.tar.gz",
+    "srcurl": "https://storage.googleapis.com/aom-releases/libaom-3.15.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/456240dfb6/packages/libaom",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/456240dfb6/packages/libaom/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/456240dfb6/packages/libaom/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4324605f0a/packages/libaom",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4324605f0a/packages/libaom/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4324605f0a/packages/libaom/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/456240dfb6/packages/libaom/arm_cpudetect-always-neon.patch"
+      "https://github.com/termux/termux-packages/blob/4324605f0a/packages/libaom/arm_cpudetect-always-neon.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/456240dfb6/packages/libaom/arm_cpudetect-always-neon.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4324605f0a/packages/libaom/arm_cpudetect-always-neon.patch"
     ],
     "auto_updated": true
   },
@@ -21531,20 +21534,20 @@
   },
   {
     "name": "libopusenc",
-    "version": "0.2.1",
+    "version": "0.3",
     "description": "High-level API for encoding .opus files",
     "homepage": "https://github.com/xiph/libopusenc",
     "depends": [
       "libopus"
     ],
-    "srcurl": "https://archive.mozilla.org/pub/opus/libopusenc-0.2.1.tar.gz",
+    "srcurl": "https://downloads.xiph.org/releases/opus/libopusenc-0.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e914cca17c/packages/libopusenc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e914cca17c/packages/libopusenc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e914cca17c/packages/libopusenc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3140ef218/packages/libopusenc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3140ef218/packages/libopusenc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3140ef218/packages/libopusenc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "liborc",
@@ -25837,7 +25840,7 @@
   },
   {
     "name": "links",
-    "version": "2.29",
+    "version": "2.30",
     "description": "Links is a text and graphics mode WWW browser",
     "homepage": "http://links.twibright.com",
     "depends": [
@@ -25859,20 +25862,18 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "http://links.twibright.com/download/links-2.29.tar.bz2",
+    "srcurl": "http://links.twibright.com/download/links-2.30.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/65d2a04e6e/packages/links",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65d2a04e6e/packages/links/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65d2a04e6e/packages/links/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8123c8485f/packages/links",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8123c8485f/packages/links/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8123c8485f/packages/links/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/65d2a04e6e/packages/links/configure-clang16.patch",
-      "https://github.com/termux/termux-packages/blob/65d2a04e6e/packages/links/fix-hardcoded-paths.patch"
+      "https://github.com/termux/termux-packages/blob/8123c8485f/packages/links/fix-hardcoded-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/65d2a04e6e/packages/links/configure-clang16.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/65d2a04e6e/packages/links/fix-hardcoded-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8123c8485f/packages/links/fix-hardcoded-paths.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "lipl",
@@ -26567,22 +26568,22 @@
     "depends": [],
     "srcurl": "https://www.lua.org/ftp/lua-5.4.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ae33d5c8ee/packages/lua54",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ae33d5c8ee/packages/lua54/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ae33d5c8ee/packages/lua54/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/786fd8627e/packages/lua54",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/786fd8627e/packages/lua54/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/786fd8627e/packages/lua54/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ae33d5c8ee/packages/lua54/LICENSE.patch",
-      "https://github.com/termux/termux-packages/blob/ae33d5c8ee/packages/lua54/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/ae33d5c8ee/packages/lua54/src-Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/ae33d5c8ee/packages/lua54/src-loslib.c.patch",
-      "https://github.com/termux/termux-packages/blob/ae33d5c8ee/packages/lua54/src-luaconf.h.patch"
+      "https://github.com/termux/termux-packages/blob/786fd8627e/packages/lua54/LICENSE.patch",
+      "https://github.com/termux/termux-packages/blob/786fd8627e/packages/lua54/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/786fd8627e/packages/lua54/src-Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/786fd8627e/packages/lua54/src-loslib.c.patch",
+      "https://github.com/termux/termux-packages/blob/786fd8627e/packages/lua54/src-luaconf.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ae33d5c8ee/packages/lua54/LICENSE.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ae33d5c8ee/packages/lua54/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ae33d5c8ee/packages/lua54/src-Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ae33d5c8ee/packages/lua54/src-loslib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ae33d5c8ee/packages/lua54/src-luaconf.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/786fd8627e/packages/lua54/LICENSE.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/786fd8627e/packages/lua54/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/786fd8627e/packages/lua54/src-Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/786fd8627e/packages/lua54/src-loslib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/786fd8627e/packages/lua54/src-luaconf.h.patch"
     ],
     "auto_updated": false
   },
@@ -26881,7 +26882,7 @@
   },
   {
     "name": "lynx",
-    "version": "2.9.2",
+    "version": "2.9.3",
     "description": "The text web browser",
     "homepage": "http://lynx.browser.org/",
     "depends": [
@@ -26893,24 +26894,22 @@
       "libidn",
       "zlib"
     ],
-    "srcurl": "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2",
+    "srcurl": "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.3.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4605b61962/packages/lynx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4605b61962/packages/lynx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4605b61962/packages/lynx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/240df658fd/packages/lynx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/240df658fd/packages/lynx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/240df658fd/packages/lynx/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4605b61962/packages/lynx/configure-clang16.patch",
-      "https://github.com/termux/termux-packages/blob/4605b61962/packages/lynx/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/4605b61962/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
-      "https://github.com/termux/termux-packages/blob/4605b61962/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
+      "https://github.com/termux/termux-packages/blob/240df658fd/packages/lynx/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/240df658fd/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
+      "https://github.com/termux/termux-packages/blob/240df658fd/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4605b61962/packages/lynx/configure-clang16.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4605b61962/packages/lynx/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4605b61962/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4605b61962/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/240df658fd/packages/lynx/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/240df658fd/packages/lynx/lynx2.8.9dev.19_src_LYMain.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/240df658fd/packages/lynx/lynx2.8.9dev.19_userdefs.h.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "lyrebird",
@@ -27871,7 +27870,7 @@
   },
   {
     "name": "mdbook-plantuml",
-    "version": "0.8.0",
+    "version": "2.0.0",
     "description": "mdBook preprocessor to render PlantUML code blocks as images in your book",
     "homepage": "https://github.com/sytsereitsma/mdbook-plantuml",
     "depends": [
@@ -27879,18 +27878,12 @@
     ],
     "srcurl": "git+https://github.com/sytsereitsma/mdbook-plantuml",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f22a260b8/packages/mdbook-plantuml",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f22a260b8/packages/mdbook-plantuml/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f22a260b8/packages/mdbook-plantuml/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2f22a260b8/packages/mdbook-plantuml/0001-update-mdbook.patch",
-      "https://github.com/termux/termux-packages/blob/2f22a260b8/packages/mdbook-plantuml/traitobject-rust-1.87.diff"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2f22a260b8/packages/mdbook-plantuml/0001-update-mdbook.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2f22a260b8/packages/mdbook-plantuml/traitobject-rust-1.87.diff"
-    ],
-    "auto_updated": false
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7bc61a4572/packages/mdbook-plantuml",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7bc61a4572/packages/mdbook-plantuml/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7bc61a4572/packages/mdbook-plantuml/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "mdbook-presentation-preprocessor",
@@ -34194,7 +34187,7 @@
   },
   {
     "name": "pgroonga",
-    "version": "4.0.8",
+    "version": "4.0.9",
     "description": "A PostgreSQL extension to use Groonga as index",
     "homepage": "https://github.com/pgroonga/pgroonga",
     "depends": [
@@ -34202,16 +34195,16 @@
       "libmsgpack",
       "xxhash"
     ],
-    "srcurl": "https://github.com/pgroonga/pgroonga/releases/download/4.0.8/pgroonga-4.0.8.tar.gz",
+    "srcurl": "https://github.com/pgroonga/pgroonga/releases/download/4.0.9/pgroonga-4.0.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c81dc8f53c/packages/pgroonga",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c81dc8f53c/packages/pgroonga/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c81dc8f53c/packages/pgroonga/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8ddbd44b24/packages/pgroonga",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8ddbd44b24/packages/pgroonga/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8ddbd44b24/packages/pgroonga/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/c81dc8f53c/packages/pgroonga/meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/8ddbd44b24/packages/pgroonga/meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/c81dc8f53c/packages/pgroonga/meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8ddbd44b24/packages/pgroonga/meson.build.patch"
     ],
     "auto_updated": true
   },
@@ -48485,9 +48478,24 @@
     "depends": [],
     "srcurl": "https://github.com/openziti/zrok/releases/download/v1.1.11/source-v1.1.11.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e8a03a641a/packages/zrok",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e8a03a641a/packages/zrok/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e8a03a641a/packages/zrok/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d0450c044f/packages/zrok",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d0450c044f/packages/zrok/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d0450c044f/packages/zrok/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
+  },
+  {
+    "name": "zrok2",
+    "version": "2.0.4",
+    "description": "An open source sharing solution built on OpenZiti",
+    "homepage": "https://zrok.io/",
+    "depends": [],
+    "srcurl": "https://github.com/openziti/zrok/releases/download/v2.0.4/source-v2.0.4.tar.gz",
+    "maintainer": "Joshua Kahn <tom@termux.dev>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8af0fb218a/packages/zrok2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8af0fb218a/packages/zrok2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8af0fb218a/packages/zrok2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -49813,26 +49821,26 @@
   },
   {
     "name": "ntfs-3g",
-    "version": "2026.7.7",
+    "version": "2026.9.18",
     "description": "NTFS-3G Safe Read/Write NTFS Driver",
     "homepage": "https://github.com/tuxera/ntfs-3g",
     "depends": [
       "libfuse2"
     ],
-    "srcurl": "https://github.com/tuxera/ntfs-3g/archive/refs/tags/2026.7.7.tar.gz",
+    "srcurl": "https://github.com/tuxera/ntfs-3g/archive/refs/tags/2026.9.18.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/de28652c19/root-packages/ntfs-3g",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/de28652c19/root-packages/ntfs-3g/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/de28652c19/root-packages/ntfs-3g/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c29dab914c/root-packages/ntfs-3g",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c29dab914c/root-packages/ntfs-3g/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c29dab914c/root-packages/ntfs-3g/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/de28652c19/root-packages/ntfs-3g/fix-hardcoded-path.patch",
-      "https://github.com/termux/termux-packages/blob/de28652c19/root-packages/ntfs-3g/fix-symlink.patch",
-      "https://github.com/termux/termux-packages/blob/de28652c19/root-packages/ntfs-3g/remove-ldconfig.patch"
+      "https://github.com/termux/termux-packages/blob/c29dab914c/root-packages/ntfs-3g/fix-hardcoded-path.patch",
+      "https://github.com/termux/termux-packages/blob/c29dab914c/root-packages/ntfs-3g/fix-symlink.patch",
+      "https://github.com/termux/termux-packages/blob/c29dab914c/root-packages/ntfs-3g/remove-ldconfig.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/de28652c19/root-packages/ntfs-3g/fix-hardcoded-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/de28652c19/root-packages/ntfs-3g/fix-symlink.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/de28652c19/root-packages/ntfs-3g/remove-ldconfig.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c29dab914c/root-packages/ntfs-3g/fix-hardcoded-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c29dab914c/root-packages/ntfs-3g/fix-symlink.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c29dab914c/root-packages/ntfs-3g/remove-ldconfig.patch"
     ],
     "auto_updated": true
   },
@@ -79344,7 +79352,7 @@
   },
   {
     "name": "zen-browser",
-    "version": "1.22.2b",
+    "version": "1.22.3b",
     "description": "Zen is a firefox-based browser with the aim of pushing your productivity to a new level!",
     "homepage": "https://zen-browser.app",
     "depends": [
@@ -79381,80 +79389,80 @@
       "pulseaudio",
       "zlib"
     ],
-    "srcurl": "https://github.com/zen-browser/desktop/releases/download/1.22.2b/zen.source.tar.zst",
+    "srcurl": "https://github.com/zen-browser/desktop/releases/download/1.22.3b/zen.source.tar.zst",
     "maintainer": "@sabamdarif",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5d2784f487/x11-packages/zen-browser",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bcb1424d9/x11-packages/zen-browser",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0002-configure-fix-arm-options.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0003-configure-fix-rustflags.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0008-fix-macros.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0009-impl-posix-shmem.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0013-fix-rust-compile.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0015-protobuf-no-android-log.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0017-fix-sigbus.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0025-fix-popup-white-borders.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0026-fix-tagged-pointer.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0029-fix-sigbus-2.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0030-tagged-pointer-2.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0031-Bug-2053518-Handle-the-oe-linux-rust-targets-added-in.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/0032-rename-success-x11success.patch",
-      "https://github.com/termux/termux-packages/blob/5d2784f487/x11-packages/zen-browser/1001-fix-webrender-cbindgen.patch"
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0002-configure-fix-arm-options.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0003-configure-fix-rustflags.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0008-fix-macros.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0009-impl-posix-shmem.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0013-fix-rust-compile.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0015-protobuf-no-android-log.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0017-fix-sigbus.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0025-fix-popup-white-borders.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0026-fix-tagged-pointer.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0029-fix-sigbus-2.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0030-tagged-pointer-2.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0031-Bug-2053518-Handle-the-oe-linux-rust-targets-added-in.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/0032-rename-success-x11success.patch",
+      "https://github.com/termux/termux-packages/blob/0bcb1424d9/x11-packages/zen-browser/1001-fix-webrender-cbindgen.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0002-configure-fix-arm-options.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0003-configure-fix-rustflags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0008-fix-macros.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0009-impl-posix-shmem.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0013-fix-rust-compile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0015-protobuf-no-android-log.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0017-fix-sigbus.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0025-fix-popup-white-borders.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0026-fix-tagged-pointer.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0029-fix-sigbus-2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0030-tagged-pointer-2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0031-Bug-2053518-Handle-the-oe-linux-rust-targets-added-in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/0032-rename-success-x11success.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5d2784f487/x11-packages/zen-browser/1001-fix-webrender-cbindgen.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0001-configure-treat-termux-as-linux.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0002-configure-fix-arm-options.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0003-configure-fix-rustflags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0004-configure-do-not-check-libstdcxx-headers.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0005-configure-do-not-append-sysroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0006-configure-do-not-enable-alsa.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0007-fix-link-with-libcxx-18.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0008-fix-macros.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0009-impl-posix-shmem.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0010-do-not-check-time_t-for-system-libevent.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0011-use-UnderrunHandlerNoop.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0012-do-not-use-adaptive-mutex.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0013-fix-rust-compile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0014-unset-thread-priority-scheduling-macro.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0015-protobuf-no-android-log.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0016-fix-include-dir-for-cpufeatures.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0017-fix-sigbus.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0018-do-not-call-get-pci-status.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0019-fix-missing-include-for-zlib-module.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0020-configure-no-pack-relative-relocs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0021-check-if-dlpi_name-is-nullptr-before-using.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0022-fix-missing-include-for-macro-MOZ_TRY-in-TimeZone.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0023-disable-native-https-dns-resolve.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0024-webextensions.storage.sync.kinto-true.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0025-fix-popup-white-borders.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0026-fix-tagged-pointer.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0027-prepend-prefix-to-nsXREDirProvider-absolute-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0028-rust-cc-do-not-concatenates-all-the-CFLAGS.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0029-fix-sigbus-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0030-tagged-pointer-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0031-Bug-2053518-Handle-the-oe-linux-rust-targets-added-in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/0032-rename-success-x11success.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bcb1424d9/x11-packages/zen-browser/1001-fix-webrender-cbindgen.patch"
     ],
     "auto_updated": true
   },
