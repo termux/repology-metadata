@@ -2054,7 +2054,7 @@
   },
   {
     "name": "awscli",
-    "version": "2.37.1",
+    "version": "2.37.2",
     "description": "Universal Command Line Interface for Amazon Web Services",
     "homepage": "https://aws.amazon.com/cli",
     "depends": [
@@ -2062,20 +2062,20 @@
       "libandroid-support",
       "mandoc"
     ],
-    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.37.1.tar.gz",
+    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.37.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fdacc21cd6/packages/awscli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fdacc21cd6/packages/awscli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fdacc21cd6/packages/awscli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0f9981a60c/packages/awscli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0f9981a60c/packages/awscli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0f9981a60c/packages/awscli/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fdacc21cd6/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://github.com/termux/termux-packages/blob/fdacc21cd6/packages/awscli/remove-aosp-dlls.patch",
-      "https://github.com/termux/termux-packages/blob/fdacc21cd6/packages/awscli/remove-no-build-isolation.patch"
+      "https://github.com/termux/termux-packages/blob/0f9981a60c/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://github.com/termux/termux-packages/blob/0f9981a60c/packages/awscli/remove-aosp-dlls.patch",
+      "https://github.com/termux/termux-packages/blob/0f9981a60c/packages/awscli/remove-no-build-isolation.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fdacc21cd6/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fdacc21cd6/packages/awscli/remove-aosp-dlls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fdacc21cd6/packages/awscli/remove-no-build-isolation.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9981a60c/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9981a60c/packages/awscli/remove-aosp-dlls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0f9981a60c/packages/awscli/remove-no-build-isolation.patch"
     ],
     "auto_updated": true
   },
@@ -9419,15 +9419,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.4.107",
+    "version": "0.4.108",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.107.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.108.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/166eb473ab/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/166eb473ab/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/166eb473ab/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/965f643506/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/965f643506/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/965f643506/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -9457,11 +9457,15 @@
     ],
     "srcurl": "https://github.com/fmtlib/fmt/archive/refs/tags/11.2.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/packages/fmt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/packages/fmt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/packages/fmt/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1a6b338d6e/packages/fmt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1a6b338d6e/packages/fmt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1a6b338d6e/packages/fmt/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/1a6b338d6e/packages/fmt/upstream-4477.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/1a6b338d6e/packages/fmt/upstream-4477.patch"
+    ],
     "auto_updated": false
   },
   {
@@ -10514,7 +10518,7 @@
   },
   {
     "name": "gexiv2",
-    "version": "0.14.6",
+    "version": "0.14.7",
     "description": "A GObject-based Exiv2 wrapper",
     "homepage": "https://wiki.gnome.org/Projects/gexiv2",
     "depends": [
@@ -10522,11 +10526,11 @@
       "glib",
       "libc++"
     ],
-    "srcurl": "https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.6.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.7.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2bd822eb32/packages/gexiv2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2bd822eb32/packages/gexiv2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2bd822eb32/packages/gexiv2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c97dbc8f06/packages/gexiv2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c97dbc8f06/packages/gexiv2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c97dbc8f06/packages/gexiv2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -14526,26 +14530,26 @@
     ],
     "srcurl": "https://mirrors.kernel.org/gnu/inetutils/inetutils-2.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ce46c2bb88/packages/inetutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5e32bb7124/packages/inetutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/disable-fdsan.patch",
-      "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/ftpd.c.patch",
-      "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/if_index.c.patch",
-      "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/man-Makefile.am.patch",
-      "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/src-logger.patch",
-      "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/telnet-sys_bsd.c.patch",
-      "https://github.com/termux/termux-packages/blob/ce46c2bb88/packages/inetutils/utmp_logout.c.patch"
+      "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/disable-fdsan.patch",
+      "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/ftpd.c.patch",
+      "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/if_index.c.patch",
+      "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/man-Makefile.am.patch",
+      "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/src-logger.patch",
+      "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/telnet-sys_bsd.c.patch",
+      "https://github.com/termux/termux-packages/blob/5e32bb7124/packages/inetutils/utmp_logout.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/disable-fdsan.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/ftpd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/if_index.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/man-Makefile.am.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/src-logger.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/telnet-sys_bsd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ce46c2bb88/packages/inetutils/utmp_logout.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/disable-fdsan.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/ftpd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/if_index.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/man-Makefile.am.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/src-logger.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/telnet-sys_bsd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5e32bb7124/packages/inetutils/utmp_logout.c.patch"
     ],
     "auto_updated": true
   },
@@ -15064,17 +15068,17 @@
   },
   {
     "name": "jadx",
-    "version": "1.5.5",
+    "version": "1.5.6",
     "description": "Dex to Java decompiler",
     "homepage": "https://github.com/skylot/jadx",
     "depends": [
       "openjdk-21"
     ],
-    "srcurl": "https://github.com/skylot/jadx/archive/refs/tags/v1.5.5.tar.gz",
+    "srcurl": "https://github.com/skylot/jadx/archive/refs/tags/v1.5.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/049e23eb35/packages/jadx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/049e23eb35/packages/jadx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/049e23eb35/packages/jadx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/370c6c1713/packages/jadx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/370c6c1713/packages/jadx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/370c6c1713/packages/jadx/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -17316,9 +17320,9 @@
     ],
     "srcurl": "https://www.cairographics.org/releases/cairomm-1.14.6.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cfa62a3dcd/packages/libcairomm-1.0",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cfa62a3dcd/packages/libcairomm-1.0/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cfa62a3dcd/packages/libcairomm-1.0/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65dff9f786/packages/libcairomm-1.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65dff9f786/packages/libcairomm-1.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65dff9f786/packages/libcairomm-1.0/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -18955,9 +18959,9 @@
     ],
     "srcurl": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.10.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/48f8cbde6e/packages/libglibmm-2.4",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/48f8cbde6e/packages/libglibmm-2.4/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/48f8cbde6e/packages/libglibmm-2.4/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65dff9f786/packages/libglibmm-2.4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65dff9f786/packages/libglibmm-2.4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65dff9f786/packages/libglibmm-2.4/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -21759,16 +21763,16 @@
     ],
     "srcurl": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2b53f56222/packages/libpangomm-1.4",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2b53f56222/packages/libpangomm-1.4/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2b53f56222/packages/libpangomm-1.4/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65dff9f786/packages/libpangomm-1.4",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65dff9f786/packages/libpangomm-1.4/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65dff9f786/packages/libpangomm-1.4/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "libpangomm-2.48",
-    "version": "2.56.2",
+    "version": "2.58.0",
     "description": "A C++ API for Pango",
     "homepage": "https://www.gtkmm.org/",
     "depends": [
@@ -21779,11 +21783,11 @@
       "libsigc++-3.0",
       "pango"
     ],
-    "srcurl": "https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.2.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/pangomm/2.58/pangomm-2.58.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e70ac53c24/packages/libpangomm-2.48",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e70ac53c24/packages/libpangomm-2.48/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e70ac53c24/packages/libpangomm-2.48/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bf2e6652ef/packages/libpangomm-2.48",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bf2e6652ef/packages/libpangomm-2.48/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bf2e6652ef/packages/libpangomm-2.48/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -22864,9 +22868,9 @@
     ],
     "srcurl": "https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/527d8ba2b8/packages/libsigc++-2.0",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/527d8ba2b8/packages/libsigc++-2.0/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/527d8ba2b8/packages/libsigc++-2.0/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65dff9f786/packages/libsigc++-2.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65dff9f786/packages/libsigc++-2.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65dff9f786/packages/libsigc++-2.0/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -30130,23 +30134,23 @@
   },
   {
     "name": "navidrome",
-    "version": "0.64.1",
+    "version": "0.64.2",
     "description": "Modern Music Server and Streamer compatible with Subsonic/Airsonic",
     "homepage": "https://www.navidrome.org/",
     "depends": [
       "taglib",
       "ffmpeg"
     ],
-    "srcurl": "https://github.com/navidrome/navidrome/archive/refs/tags/v0.64.1.tar.gz",
+    "srcurl": "https://github.com/navidrome/navidrome/archive/refs/tags/v0.64.2.tar.gz",
     "maintainer": "2096779623 <admin@utermux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a6ad4e59e8/packages/navidrome",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a6ad4e59e8/packages/navidrome/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a6ad4e59e8/packages/navidrome/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5d5eed8db/packages/navidrome",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5d5eed8db/packages/navidrome/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5d5eed8db/packages/navidrome/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a6ad4e59e8/packages/navidrome/prepend-prefix.patch"
+      "https://github.com/termux/termux-packages/blob/d5d5eed8db/packages/navidrome/prepend-prefix.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a6ad4e59e8/packages/navidrome/prepend-prefix.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d5d5eed8db/packages/navidrome/prepend-prefix.patch"
     ],
     "auto_updated": true
   },
@@ -33202,15 +33206,15 @@
   },
   {
     "name": "orbiton",
-    "version": "2.74.4",
+    "version": "2.74.5",
     "description": "Small, fast and limited text editor",
     "homepage": "https://roboticoverlords.org/orbiton/",
     "depends": [],
-    "srcurl": "https://github.com/xyproto/orbiton/archive/refs/tags/v2.74.4.tar.gz",
+    "srcurl": "https://github.com/xyproto/orbiton/archive/refs/tags/v2.74.5.tar.gz",
     "maintainer": "Alexander F. Rødseth <xyproto@archlinux.org>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/432b577e0f/packages/orbiton",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/432b577e0f/packages/orbiton/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/432b577e0f/packages/orbiton/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01b90378d6/packages/orbiton",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01b90378d6/packages/orbiton/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01b90378d6/packages/orbiton/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -35463,18 +35467,18 @@
   },
   {
     "name": "proot",
-    "version": "5.1.107.94",
+    "version": "5.1.107.95",
     "description": "Emulate chroot, bind mount and binfmt_misc for non-root users",
     "homepage": "https://proot-me.github.io/",
     "depends": [
       "libandroid-shmem",
       "libtalloc"
     ],
-    "srcurl": "https://github.com/termux/proot/archive/v5.1.107.94.zip",
+    "srcurl": "https://github.com/termux/proot/archive/v5.1.107.95.zip",
     "maintainer": "Michal Bednarski @michalbednarski",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdfc7b8773/packages/proot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdfc7b8773/packages/proot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdfc7b8773/packages/proot/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f62cfca293/packages/proot",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f62cfca293/packages/proot/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f62cfca293/packages/proot/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -38825,15 +38829,15 @@
   },
   {
     "name": "ruff",
-    "version": "0.16.8",
+    "version": "0.16.9",
     "description": "An extremely fast Python linter, written in Rust",
     "homepage": "https://github.com/charliermarsh/ruff",
     "depends": [],
-    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/0.16.8.tar.gz",
+    "srcurl": "https://github.com/charliermarsh/ruff/archive/refs/tags/0.16.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2eede34f5/packages/ruff",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2eede34f5/packages/ruff/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2eede34f5/packages/ruff/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/674b54a857/packages/ruff",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/674b54a857/packages/ruff/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/674b54a857/packages/ruff/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -46476,15 +46480,15 @@
   },
   {
     "name": "vulkan-headers",
-    "version": "1.4.363",
+    "version": "1.4.364",
     "description": "Vulkan Header files and API registry",
     "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
     "depends": [],
-    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.363.tar.gz",
+    "srcurl": "https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.364.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/02c1a06989/packages/vulkan-headers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02c1a06989/packages/vulkan-headers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02c1a06989/packages/vulkan-headers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4facef32a3/packages/vulkan-headers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4facef32a3/packages/vulkan-headers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4facef32a3/packages/vulkan-headers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -46823,15 +46827,15 @@
   },
   {
     "name": "wasmtime",
-    "version": "49.0.0",
+    "version": "49.0.1",
     "description": "A standalone runtime for WebAssembly",
     "homepage": "https://wasmtime.dev/",
     "depends": [],
     "srcurl": "git+https://github.com/bytecodealliance/wasmtime",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0918e83b43/packages/wasmtime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0918e83b43/packages/wasmtime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0918e83b43/packages/wasmtime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/58cfeefa75/packages/wasmtime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/58cfeefa75/packages/wasmtime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/58cfeefa75/packages/wasmtime/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54762,7 +54766,7 @@
   },
   {
     "name": "epiphany",
-    "version": "51.0",
+    "version": "51.1",
     "description": "A GNOME web browser based on the WebKit rendering engine",
     "homepage": "https://wiki.gnome.org/Apps/Web",
     "depends": [
@@ -54790,18 +54794,18 @@
       "pango",
       "webkitgtk-6.0"
     ],
-    "srcurl": "https://download.gnome.org/sources/epiphany/51/epiphany-51.0.tar.xz",
+    "srcurl": "https://download.gnome.org/sources/epiphany/51/epiphany-51.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bee021419b/x11-packages/epiphany",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bee021419b/x11-packages/epiphany/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bee021419b/x11-packages/epiphany/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d5c142b1d7/x11-packages/epiphany",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d5c142b1d7/x11-packages/epiphany/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d5c142b1d7/x11-packages/epiphany/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/bee021419b/x11-packages/epiphany/getrandom.patch",
-      "https://github.com/termux/termux-packages/blob/bee021419b/x11-packages/epiphany/meson.build.patch"
+      "https://github.com/termux/termux-packages/blob/d5c142b1d7/x11-packages/epiphany/getrandom.patch",
+      "https://github.com/termux/termux-packages/blob/d5c142b1d7/x11-packages/epiphany/meson.build.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/bee021419b/x11-packages/epiphany/getrandom.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/bee021419b/x11-packages/epiphany/meson.build.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d5c142b1d7/x11-packages/epiphany/getrandom.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d5c142b1d7/x11-packages/epiphany/meson.build.patch"
     ],
     "auto_updated": true
   },
@@ -61611,7 +61615,7 @@
   },
   {
     "name": "kirigami-addons",
-    "version": "1.14.1",
+    "version": "1.14.2",
     "description": "Add-ons for the Kirigami framework",
     "homepage": "https://invent.kde.org/libraries/kirigami-addons",
     "depends": [
@@ -61629,11 +61633,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.14.1.tar.xz",
+    "srcurl": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.14.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ea4c80dd36/x11-packages/kirigami-addons",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ea4c80dd36/x11-packages/kirigami-addons/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ea4c80dd36/x11-packages/kirigami-addons/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b1e5b6874/x11-packages/kirigami-addons",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b1e5b6874/x11-packages/kirigami-addons/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b1e5b6874/x11-packages/kirigami-addons/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -65934,9 +65938,9 @@
     ],
     "srcurl": "https://download.gnome.org/sources/libxml++/2.42/libxml++-2.42.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/527d8ba2b8/x11-packages/libxml++-2.6",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/527d8ba2b8/x11-packages/libxml++-2.6/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/527d8ba2b8/x11-packages/libxml++-2.6/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65dff9f786/x11-packages/libxml++-2.6",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65dff9f786/x11-packages/libxml++-2.6/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65dff9f786/x11-packages/libxml++-2.6/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
