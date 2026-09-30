@@ -2058,7 +2058,7 @@
   },
   {
     "name": "awscli",
-    "version": "2.37.5",
+    "version": "2.37.6",
     "description": "Universal Command Line Interface for Amazon Web Services",
     "homepage": "https://aws.amazon.com/cli",
     "depends": [
@@ -2066,20 +2066,20 @@
       "libandroid-support",
       "mandoc"
     ],
-    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.37.5.tar.gz",
+    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.37.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1665789c26/packages/awscli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1665789c26/packages/awscli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1665789c26/packages/awscli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/abca560799/packages/awscli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abca560799/packages/awscli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abca560799/packages/awscli/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1665789c26/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://github.com/termux/termux-packages/blob/1665789c26/packages/awscli/remove-aosp-dlls.patch",
-      "https://github.com/termux/termux-packages/blob/1665789c26/packages/awscli/remove-no-build-isolation.patch"
+      "https://github.com/termux/termux-packages/blob/abca560799/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://github.com/termux/termux-packages/blob/abca560799/packages/awscli/remove-aosp-dlls.patch",
+      "https://github.com/termux/termux-packages/blob/abca560799/packages/awscli/remove-no-build-isolation.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1665789c26/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1665789c26/packages/awscli/remove-aosp-dlls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1665789c26/packages/awscli/remove-no-build-isolation.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/abca560799/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abca560799/packages/awscli/remove-aosp-dlls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/abca560799/packages/awscli/remove-no-build-isolation.patch"
     ],
     "auto_updated": true
   },
@@ -4146,7 +4146,7 @@
   },
   {
     "name": "ccextractor",
-    "version": "0.94",
+    "version": "0.96.6",
     "description": "A tool used to produce subtitles for TV recordings",
     "homepage": "https://ccextractor.org/",
     "depends": [
@@ -4158,24 +4158,28 @@
       "libprotobuf-c",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/CCExtractor/ccextractor/archive/refs/tags/v0.94.tar.gz",
+    "srcurl": "https://github.com/CCExtractor/ccextractor/archive/refs/tags/v0.96.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ca992eed7/packages/ccextractor",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ca992eed7/packages/ccextractor/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ca992eed7/packages/ccextractor/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/06aa8ab4ee/packages/ccextractor",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/06aa8ab4ee/packages/ccextractor/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/06aa8ab4ee/packages/ccextractor/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1ca992eed7/packages/ccextractor/src-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/1ca992eed7/packages/ccextractor/src-lib_ccx-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/1ca992eed7/packages/ccextractor/src-lib_ccx-ccx_sub_entry_message.pb-c.h.patch",
-      "https://github.com/termux/termux-packages/blob/1ca992eed7/packages/ccextractor/src-lib_ccx-params.c.patch"
+      "https://github.com/termux/termux-packages/blob/06aa8ab4ee/packages/ccextractor/src-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/06aa8ab4ee/packages/ccextractor/src-ccextractor.c.patch",
+      "https://github.com/termux/termux-packages/blob/06aa8ab4ee/packages/ccextractor/src-lib_ccx-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/06aa8ab4ee/packages/ccextractor/src-lib_ccx-params.c.patch",
+      "https://github.com/termux/termux-packages/blob/06aa8ab4ee/packages/ccextractor/src-rust-src-decoder-tv_screen.rs.patch",
+      "https://github.com/termux/termux-packages/blob/06aa8ab4ee/packages/ccextractor/version-0.96.6.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1ca992eed7/packages/ccextractor/src-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1ca992eed7/packages/ccextractor/src-lib_ccx-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1ca992eed7/packages/ccextractor/src-lib_ccx-ccx_sub_entry_message.pb-c.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1ca992eed7/packages/ccextractor/src-lib_ccx-params.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/06aa8ab4ee/packages/ccextractor/src-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/06aa8ab4ee/packages/ccextractor/src-ccextractor.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/06aa8ab4ee/packages/ccextractor/src-lib_ccx-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/06aa8ab4ee/packages/ccextractor/src-lib_ccx-params.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/06aa8ab4ee/packages/ccextractor/src-rust-src-decoder-tv_screen.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/06aa8ab4ee/packages/ccextractor/version-0.96.6.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "ccls",
@@ -9427,15 +9431,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.4.109",
+    "version": "0.4.110",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.109.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.110.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/94f3459cb0/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/94f3459cb0/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/94f3459cb0/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ea4aaf050/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ea4aaf050/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ea4aaf050/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -11039,18 +11043,18 @@
   },
   {
     "name": "gitea",
-    "version": "1.27.3",
+    "version": "28.0.0",
     "description": "Git with a cup of tea, painless self-hosted git service",
     "homepage": "https://gitea.io",
     "depends": [
       "dash",
       "git"
     ],
-    "srcurl": "https://github.com/go-gitea/gitea/archive/refs/tags/v1.27.3.tar.gz",
+    "srcurl": "https://github.com/go-gitea/gitea/archive/refs/tags/v28.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1bd025fdc1/packages/gitea",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1bd025fdc1/packages/gitea/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1bd025fdc1/packages/gitea/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0d547fc855/packages/gitea",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0d547fc855/packages/gitea/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0d547fc855/packages/gitea/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -32153,45 +32157,35 @@
   },
   {
     "name": "oorexx",
-    "version": "4.2.0",
+    "version": "5.2.0",
     "description": "Open Object Rexx",
     "homepage": "https://www.oorexx.org/",
     "depends": [
       "libandroid-posix-semaphore",
+      "libandroid-spawn",
       "libandroid-wordexp",
       "libc++",
-      "libcrypt"
+      "libcrypt",
+      "ncurses"
     ],
-    "srcurl": "https://downloads.sourceforge.net/project/oorexx/oorexx/4.2.0/ooRexx-4.2.0-source.tar.gz",
+    "srcurl": "https://downloads.sourceforge.net/project/oorexx/oorexx/5.2.0/oorexx-5.2.0-13156.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/53d9db55a4/packages/oorexx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8fb84e9f75/packages/oorexx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8fb84e9f75/packages/oorexx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8fb84e9f75/packages/oorexx/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/configure.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/extensions-rexxutil-platform-unix-rexxutil.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/interpreter-api-InterpreterAPI.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/interpreter-api-ThreadContextStubs.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/interpreter-platform-unix-ErrorMessages.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/interpreter-platform-unix-ExternalFunctions.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/53d9db55a4/packages/oorexx/interpreter-platform-unix-SystemCommands.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/8fb84e9f75/packages/oorexx/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/8fb84e9f75/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/8fb84e9f75/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/8fb84e9f75/packages/oorexx/interpreter-platform-unix-PlatformDefinitions.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/configure.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/extensions-rexxutil-platform-unix-rexxutil.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/interpreter-api-InterpreterAPI.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/interpreter-api-ThreadContextStubs.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/interpreter-platform-unix-ErrorMessages.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/interpreter-platform-unix-ExternalFunctions.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/53d9db55a4/packages/oorexx/interpreter-platform-unix-SystemCommands.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/8fb84e9f75/packages/oorexx/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8fb84e9f75/packages/oorexx/common-platform-unix-SysLibrary.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8fb84e9f75/packages/oorexx/extensions-platform-unix-rxunixsys-rxunixsys.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/8fb84e9f75/packages/oorexx/interpreter-platform-unix-PlatformDefinitions.h.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "open-adventure",
@@ -34864,23 +34858,23 @@
   },
   {
     "name": "pnpm",
-    "version": "12.8.1",
+    "version": "12.8.2",
     "description": "Fast, disk space efficient package manager for JavaScript",
     "homepage": "https://pnpm.io",
     "depends": [
       "git",
       "nodejs"
     ],
-    "srcurl": "https://github.com/pnpm/pnpm/archive/refs/tags/v12.8.1.tar.gz",
+    "srcurl": "https://github.com/pnpm/pnpm/archive/refs/tags/v12.8.2.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cdb42bcd4/packages/pnpm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cdb42bcd4/packages/pnpm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cdb42bcd4/packages/pnpm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/630e645815/packages/pnpm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/630e645815/packages/pnpm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/630e645815/packages/pnpm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9cdb42bcd4/packages/pnpm/sha2-no-asm.diff"
+      "https://github.com/termux/termux-packages/blob/630e645815/packages/pnpm/sha2-no-asm.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9cdb42bcd4/packages/pnpm/sha2-no-asm.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/630e645815/packages/pnpm/sha2-no-asm.diff"
     ],
     "auto_updated": true
   },
@@ -40007,26 +40001,26 @@
     ],
     "srcurl": "https://github.com/Dadoum/Sideloader/archive/ed89e287ec64d39f09cacc1d1903b8a5af074201.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e392c87ee0/packages/sideloader",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/036f3e5f56/packages/sideloader",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
-      "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
-      "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
-      "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
-      "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
-      "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
-      "https://github.com/termux/termux-packages/blob/e392c87ee0/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
+      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
+      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
+      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
+      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
+      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
+      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
+      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/e392c87ee0/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
     ],
     "auto_updated": false
   },
@@ -45684,17 +45678,17 @@
   },
   {
     "name": "uv",
-    "version": "0.12.20",
+    "version": "0.12.21",
     "description": "An extremely fast Python package installer and resolver, written in Rust.",
     "homepage": "https://docs.astral.sh/uv/",
     "depends": [
       "zstd"
     ],
-    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.12.20.tar.gz",
+    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.12.21.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd2394c509/packages/uv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd2394c509/packages/uv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd2394c509/packages/uv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9480e4f858/packages/uv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9480e4f858/packages/uv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9480e4f858/packages/uv/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -46094,7 +46088,7 @@
   },
   {
     "name": "vim",
-    "version": "9.2.1100",
+    "version": "9.2.1150",
     "description": "Vi IMproved - enhanced vi editor",
     "homepage": "https://www.vim.org",
     "depends": [
@@ -46102,28 +46096,28 @@
       "libsodium",
       "ncurses"
     ],
-    "srcurl": "https://github.com/vim/vim/archive/refs/tags/v9.2.1100.tar.gz",
+    "srcurl": "https://github.com/vim/vim/archive/refs/tags/v9.2.1150.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a5a70dfb3e/packages/vim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/963116d3f2/packages/vim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
-      "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/fix-writing-archive.patch",
-      "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/revert-1fe0d1e.patch",
-      "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/a5a70dfb3e/packages/vim/vimtutor.patch"
+      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/fix-writing-archive.patch",
+      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/revert-1fe0d1e.patch",
+      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/vimtutor.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/fix-writing-archive.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/revert-1fe0d1e.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a5a70dfb3e/packages/vim/vimtutor.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/fix-writing-archive.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/revert-1fe0d1e.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/vimtutor.patch"
     ],
     "auto_updated": true
   },
@@ -46441,7 +46435,7 @@
   },
   {
     "name": "vtm",
-    "version": "2026.09.27",
+    "version": "2026.09.28",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://github.com/directvt/vtm",
     "depends": [
@@ -46451,11 +46445,11 @@
       "lua54",
       "lunasvg"
     ],
-    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2026.09.27.tar.gz",
+    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2026.09.28.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9d494427b3/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9d494427b3/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9d494427b3/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7388183a99/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7388183a99/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7388183a99/packages/vtm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -48533,15 +48527,15 @@
   },
   {
     "name": "zrok2",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "description": "An open source sharing solution built on OpenZiti",
     "homepage": "https://zrok.io/",
     "depends": [],
-    "srcurl": "https://github.com/openziti/zrok/releases/download/v2.0.5/source-v2.0.5.tar.gz",
+    "srcurl": "https://github.com/openziti/zrok/releases/download/v2.0.6/source-v2.0.6.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e79c5b27fc/packages/zrok2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e79c5b27fc/packages/zrok2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e79c5b27fc/packages/zrok2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c8e6290a7b/packages/zrok2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c8e6290a7b/packages/zrok2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c8e6290a7b/packages/zrok2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -70338,7 +70332,7 @@
   },
   {
     "name": "plank-reloaded",
-    "version": "0.11.172",
+    "version": "0.11.173",
     "description": "Fork of the original Plank project, providing a simple dock for X11 desktop environments",
     "homepage": "https://github.com/zquestz/plank-reloaded",
     "depends": [
@@ -70358,20 +70352,20 @@
       "pango",
       "libdbusmenu-gtk3"
     ],
-    "srcurl": "https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.172.tar.gz",
+    "srcurl": "https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.173.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4249d15b54/x11-packages/plank-reloaded",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4249d15b54/x11-packages/plank-reloaded/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4249d15b54/x11-packages/plank-reloaded/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/52b6f09a8e/x11-packages/plank-reloaded",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/52b6f09a8e/x11-packages/plank-reloaded/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/52b6f09a8e/x11-packages/plank-reloaded/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4249d15b54/x11-packages/plank-reloaded/disable-help2man.patch",
-      "https://github.com/termux/termux-packages/blob/4249d15b54/x11-packages/plank-reloaded/disable-test.patch",
-      "https://github.com/termux/termux-packages/blob/4249d15b54/x11-packages/plank-reloaded/fix-math-symbols.patch"
+      "https://github.com/termux/termux-packages/blob/52b6f09a8e/x11-packages/plank-reloaded/disable-help2man.patch",
+      "https://github.com/termux/termux-packages/blob/52b6f09a8e/x11-packages/plank-reloaded/disable-test.patch",
+      "https://github.com/termux/termux-packages/blob/52b6f09a8e/x11-packages/plank-reloaded/fix-math-symbols.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4249d15b54/x11-packages/plank-reloaded/disable-help2man.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4249d15b54/x11-packages/plank-reloaded/disable-test.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4249d15b54/x11-packages/plank-reloaded/fix-math-symbols.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/52b6f09a8e/x11-packages/plank-reloaded/disable-help2man.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/52b6f09a8e/x11-packages/plank-reloaded/disable-test.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/52b6f09a8e/x11-packages/plank-reloaded/fix-math-symbols.patch"
     ],
     "auto_updated": true
   },
@@ -73649,7 +73643,7 @@
   },
   {
     "name": "schismtracker",
-    "version": "20251014",
+    "version": "20260524",
     "description": "A free and open-source reimplementation of Impulse Tracker, a program used to create high quality music",
     "homepage": "https://schismtracker.org/",
     "depends": [
@@ -73659,16 +73653,16 @@
       "sdl2",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/schismtracker/schismtracker/archive/refs/tags/20251014.tar.gz",
+    "srcurl": "https://github.com/schismtracker/schismtracker/archive/refs/tags/20260524.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/acf2d8ebe2/x11-packages/schismtracker",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/acf2d8ebe2/x11-packages/schismtracker/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/acf2d8ebe2/x11-packages/schismtracker/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d0f94da1e5/x11-packages/schismtracker",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d0f94da1e5/x11-packages/schismtracker/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d0f94da1e5/x11-packages/schismtracker/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/acf2d8ebe2/x11-packages/schismtracker/partially-revert-db8b7a7.patch"
+      "https://github.com/termux/termux-packages/blob/d0f94da1e5/x11-packages/schismtracker/partially-revert-db8b7a7.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/acf2d8ebe2/x11-packages/schismtracker/partially-revert-db8b7a7.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d0f94da1e5/x11-packages/schismtracker/partially-revert-db8b7a7.patch"
     ],
     "auto_updated": true
   },
