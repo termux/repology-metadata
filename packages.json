@@ -9447,15 +9447,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.4.113",
+    "version": "0.4.114",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.113.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.114.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2ffbd944cb/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2ffbd944cb/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2ffbd944cb/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7926668090/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7926668090/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7926668090/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -11193,17 +11193,17 @@
   },
   {
     "name": "gleam",
-    "version": "1.19.0",
+    "version": "1.19.1",
     "description": "A friendly language for building type-safe, scalable systems!",
     "homepage": "https://gleam.run",
     "depends": [
       "erlang"
     ],
-    "srcurl": "https://github.com/gleam-lang/gleam/archive/refs/tags/v1.19.0.tar.gz",
+    "srcurl": "https://github.com/gleam-lang/gleam/archive/refs/tags/v1.19.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3170359415/packages/gleam",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3170359415/packages/gleam/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3170359415/packages/gleam/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/eba7f631ce/packages/gleam",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/eba7f631ce/packages/gleam/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/eba7f631ce/packages/gleam/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12503,17 +12503,17 @@
   },
   {
     "name": "gradle",
-    "version": "1:9.8.0",
+    "version": "1:9.8.1",
     "description": "Powerful build system for the JVM",
     "homepage": "https://gradle.org/",
     "depends": [
       "openjdk-21"
     ],
-    "srcurl": "https://services.gradle.org/distributions/gradle-9.8.0-bin.zip",
+    "srcurl": "https://services.gradle.org/distributions/gradle-9.8.1-bin.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e64e3baa1d/packages/gradle",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e64e3baa1d/packages/gradle/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e64e3baa1d/packages/gradle/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01d04e2af8/packages/gradle",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01d04e2af8/packages/gradle/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01d04e2af8/packages/gradle/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -14039,14 +14039,15 @@
   },
   {
     "name": "hunspell-nl",
-    "version": "2013.07.22",
+    "version": "1:2.20.23",
     "description": "Dutch dictionary for hunspell",
     "homepage": "https://www.opentaal.org/",
     "depends": [],
+    "srcurl": "https://raw.githubusercontent.com/OpenTaal/opentaal-hunspell/1c22bc3d61b2/README.md",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/151a3ebdb6/packages/hunspell-nl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/151a3ebdb6/packages/hunspell-nl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/151a3ebdb6/packages/hunspell-nl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0eafb9cccc/packages/hunspell-nl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0eafb9cccc/packages/hunspell-nl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0eafb9cccc/packages/hunspell-nl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -14568,31 +14569,23 @@
   },
   {
     "name": "innoextract",
-    "version": "1.9",
+    "version": "1.13.0",
     "description": "A tool to unpack installers created by Inno Setup",
-    "homepage": "https://constexpr.org/innoextract/",
+    "homepage": "https://github.com/crazy-max/innoextract",
     "depends": [
       "libc++",
       "boost",
       "liblzma",
       "libiconv"
     ],
-    "srcurl": "https://constexpr.org/innoextract/files/innoextract-1.9/innoextract-1.9.tar.gz",
+    "srcurl": "https://github.com/crazy-max/innoextract/archive/refs/tags/v1.13.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f542d56c0a/packages/innoextract",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f542d56c0a/packages/innoextract/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f542d56c0a/packages/innoextract/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f542d56c0a/packages/innoextract/backported-boost1.87.patch",
-      "https://github.com/termux/termux-packages/blob/f542d56c0a/packages/innoextract/boost-1.89.patch",
-      "https://github.com/termux/termux-packages/blob/f542d56c0a/packages/innoextract/cmake4.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f542d56c0a/packages/innoextract/backported-boost1.87.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f542d56c0a/packages/innoextract/boost-1.89.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f542d56c0a/packages/innoextract/cmake4.patch"
-    ],
-    "auto_updated": false
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d0803fd548/packages/innoextract",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d0803fd548/packages/innoextract/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d0803fd548/packages/innoextract/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
+    "auto_updated": true
   },
   {
     "name": "inotify-tools",
@@ -15491,15 +15484,15 @@
   },
   {
     "name": "jujutsu",
-    "version": "0.45.1",
+    "version": "0.46.0",
     "description": "A Git-compatible VCS that is both simple and powerful",
     "homepage": "https://jj-vcs.github.io/jj/",
     "depends": [],
-    "srcurl": "https://github.com/jj-vcs/jj/archive/refs/tags/v0.45.1.tar.gz",
+    "srcurl": "https://github.com/jj-vcs/jj/archive/refs/tags/v0.46.0.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/be427d6a38/packages/jujutsu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/be427d6a38/packages/jujutsu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/be427d6a38/packages/jujutsu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/84b752a294/packages/jujutsu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84b752a294/packages/jujutsu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84b752a294/packages/jujutsu/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -24764,16 +24757,16 @@
     ],
     "srcurl": "https://github.com/webmproject/libwebp/archive/refs/tags/v1.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ee8132d582/packages/libwebp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ee8132d582/packages/libwebp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ee8132d582/packages/libwebp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/243417fa13/packages/libwebp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/243417fa13/packages/libwebp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/243417fa13/packages/libwebp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ee8132d582/packages/libwebp/disable-check-cpufeatures.patch",
-      "https://github.com/termux/termux-packages/blob/ee8132d582/packages/libwebp/libwebp-1.3.1-pkgconfig-files.patch"
+      "https://github.com/termux/termux-packages/blob/243417fa13/packages/libwebp/disable-check-cpufeatures.patch",
+      "https://github.com/termux/termux-packages/blob/243417fa13/packages/libwebp/libwebp-1.3.1-pkgconfig-files.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ee8132d582/packages/libwebp/disable-check-cpufeatures.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/ee8132d582/packages/libwebp/libwebp-1.3.1-pkgconfig-files.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/243417fa13/packages/libwebp/disable-check-cpufeatures.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/243417fa13/packages/libwebp/libwebp-1.3.1-pkgconfig-files.patch"
     ],
     "auto_updated": true
   },
@@ -33795,22 +33788,22 @@
   },
   {
     "name": "pastebinit",
-    "version": "1.5.1",
+    "version": "1.8.0",
     "description": "Command-line pastebin client",
     "homepage": "https://launchpad.net/pastebinit",
     "depends": [
       "python"
     ],
-    "srcurl": "https://github.com/felixonmars/pastebinit/archive/refs/tags/1.5.1.tar.gz",
+    "srcurl": "https://github.com/pastebinit/pastebinit/archive/refs/tags/1.8.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8acb573e7a/packages/pastebinit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8acb573e7a/packages/pastebinit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8acb573e7a/packages/pastebinit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/56d7fe970f/packages/pastebinit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/56d7fe970f/packages/pastebinit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/56d7fe970f/packages/pastebinit/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8acb573e7a/packages/pastebinit/fix-paths.patch"
+      "https://github.com/termux/termux-packages/blob/56d7fe970f/packages/pastebinit/fix-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8acb573e7a/packages/pastebinit/fix-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/56d7fe970f/packages/pastebinit/fix-paths.patch"
     ],
     "auto_updated": true
   },
@@ -34411,17 +34404,17 @@
   },
   {
     "name": "php-redis",
-    "version": "6.3.0RC1",
+    "version": "6.3.0",
     "description": "PHP extension for interfacing with Redis",
     "homepage": "https://github.com/phpredis/phpredis",
     "depends": [
       "php"
     ],
-    "srcurl": "https://github.com/phpredis/phpredis/archive/refs/tags/6.3.0RC1.tar.gz",
+    "srcurl": "https://github.com/phpredis/phpredis/archive/refs/tags/6.3.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/packages/php-redis",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/packages/php-redis/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/packages/php-redis/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/54d3c554ea/packages/php-redis",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/54d3c554ea/packages/php-redis/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/54d3c554ea/packages/php-redis/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -43857,7 +43850,7 @@
   },
   {
     "name": "tor",
-    "version": "0.4.9.13",
+    "version": "0.4.9.14",
     "description": "The Onion Router anonymizing overlay network",
     "homepage": "https://www.torproject.org",
     "depends": [
@@ -43867,20 +43860,20 @@
       "resolv-conf",
       "zlib"
     ],
-    "srcurl": "https://www.torproject.org/dist/tor-0.4.9.13.tar.gz",
+    "srcurl": "https://www.torproject.org/dist/tor-0.4.9.14.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/70f58a7aec/packages/tor",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/70f58a7aec/packages/tor/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/70f58a7aec/packages/tor/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4111603a0/packages/tor",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4111603a0/packages/tor/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4111603a0/packages/tor/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/70f58a7aec/packages/tor/remove-adbism.patch",
-      "https://github.com/termux/termux-packages/blob/70f58a7aec/packages/tor/src-app-main-main.c.patch",
-      "https://github.com/termux/termux-packages/blob/70f58a7aec/packages/tor/src-feature-relay-dns.c.patch"
+      "https://github.com/termux/termux-packages/blob/d4111603a0/packages/tor/remove-adbism.patch",
+      "https://github.com/termux/termux-packages/blob/d4111603a0/packages/tor/src-app-main-main.c.patch",
+      "https://github.com/termux/termux-packages/blob/d4111603a0/packages/tor/src-feature-relay-dns.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/70f58a7aec/packages/tor/remove-adbism.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/70f58a7aec/packages/tor/src-app-main-main.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/70f58a7aec/packages/tor/src-feature-relay-dns.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d4111603a0/packages/tor/remove-adbism.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d4111603a0/packages/tor/src-app-main-main.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d4111603a0/packages/tor/src-feature-relay-dns.c.patch"
     ],
     "auto_updated": true
   },
@@ -46489,7 +46482,7 @@
   },
   {
     "name": "vtm",
-    "version": "2026.10.02",
+    "version": "2026.10.03",
     "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
     "homepage": "https://github.com/directvt/vtm",
     "depends": [
@@ -46499,11 +46492,11 @@
       "lua54",
       "lunasvg"
     ],
-    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2026.10.02.tar.gz",
+    "srcurl": "https://github.com/directvt/vtm/archive/refs/tags/v2026.10.03.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/88bb0e78f7/packages/vtm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88bb0e78f7/packages/vtm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88bb0e78f7/packages/vtm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e3f01c45db/packages/vtm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e3f01c45db/packages/vtm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e3f01c45db/packages/vtm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -55455,7 +55448,7 @@
   },
   {
     "name": "far2l",
-    "version": "2.9.0",
+    "version": "2.9.1",
     "description": "FAR Manager v2",
     "homepage": "https://github.com/elfmz/far2l",
     "depends": [
@@ -55464,30 +55457,30 @@
       "libc++",
       "libuchardet"
     ],
-    "srcurl": "https://github.com/elfmz/far2l/archive/refs/tags/v_2.9.0.tar.gz",
+    "srcurl": "https://github.com/elfmz/far2l/archive/refs/tags/v_2.9.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9118f1d4c4/x11-packages/far2l",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/91ea2b1ccc/x11-packages/far2l",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/NetRocks-src-Protocol-SSH-SSHConnection.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/far2l-plugins-adb-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/far2l-src-LookupDebugSymbol.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/far2l-src-Patch7zCP.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/far2l-src-cfg-ConfigOpt.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/far2l-src-setattr.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/multiarc-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/9118f1d4c4/x11-packages/far2l/multiarc-src-formats-rar-unrar-os.hpp.patch"
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/NetRocks-src-Protocol-SSH-SSHConnection.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/far2l-plugins-adb-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/far2l-src-LookupDebugSymbol.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/far2l-src-Patch7zCP.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/far2l-src-cfg-ConfigOpt.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/far2l-src-setattr.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/multiarc-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/91ea2b1ccc/x11-packages/far2l/multiarc-src-formats-rar-unrar-os.hpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/NetRocks-src-Protocol-SSH-SSHConnection.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/far2l-plugins-adb-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/far2l-src-LookupDebugSymbol.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/far2l-src-Patch7zCP.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/far2l-src-cfg-ConfigOpt.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/far2l-src-setattr.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/multiarc-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9118f1d4c4/x11-packages/far2l/multiarc-src-formats-rar-unrar-os.hpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/NetRocks-src-Protocol-SSH-SSHConnection.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/far2l-plugins-adb-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/far2l-src-LookupDebugSymbol.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/far2l-src-Patch7zCP.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/far2l-src-cfg-ConfigOpt.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/far2l-src-setattr.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/multiarc-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/91ea2b1ccc/x11-packages/far2l/multiarc-src-formats-rar-unrar-os.hpp.patch"
     ],
     "auto_updated": true
   },
@@ -73605,7 +73598,7 @@
   },
   {
     "name": "qtutilities",
-    "version": "6.22.2",
+    "version": "6.22.3",
     "description": "Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models",
     "homepage": "https://github.com/Martchus/qtutilities",
     "depends": [
@@ -73614,16 +73607,16 @@
       "libx11",
       "qt6-qtbase"
     ],
-    "srcurl": "https://github.com/Martchus/qtutilities/archive/refs/tags/v6.22.2.tar.gz",
+    "srcurl": "https://github.com/Martchus/qtutilities/archive/refs/tags/v6.22.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fc8cedb2e0/x11-packages/qtutilities",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fc8cedb2e0/x11-packages/qtutilities/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fc8cedb2e0/x11-packages/qtutilities/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5fbd3641a8/x11-packages/qtutilities",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5fbd3641a8/x11-packages/qtutilities/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5fbd3641a8/x11-packages/qtutilities/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fc8cedb2e0/x11-packages/qtutilities/no-android.patch"
+      "https://github.com/termux/termux-packages/blob/5fbd3641a8/x11-packages/qtutilities/no-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fc8cedb2e0/x11-packages/qtutilities/no-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5fbd3641a8/x11-packages/qtutilities/no-android.patch"
     ],
     "auto_updated": true
   },
@@ -74010,7 +74003,7 @@
   },
   {
     "name": "ruffle",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "description": "A Flash Player emulator written in Rust",
     "homepage": "https://ruffle.rs/",
     "depends": [
@@ -74020,24 +74013,24 @@
       "gtk3",
       "openh264"
     ],
-    "srcurl": "https://github.com/ruffle-rs/ruffle/archive/refs/tags/v0.7.0.tar.gz",
+    "srcurl": "https://github.com/ruffle-rs/ruffle/archive/refs/tags/v0.7.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dac98bdfcc/x11-packages/ruffle",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dac98bdfcc/x11-packages/ruffle/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dac98bdfcc/x11-packages/ruffle/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6cd0bba843/x11-packages/ruffle",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6cd0bba843/x11-packages/ruffle/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6cd0bba843/x11-packages/ruffle/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/dac98bdfcc/x11-packages/ruffle/0001-openh264-2.6.0.patch",
-      "https://github.com/termux/termux-packages/blob/dac98bdfcc/x11-packages/ruffle/0002-openh264.patch",
-      "https://github.com/termux/termux-packages/blob/dac98bdfcc/x11-packages/ruffle/fontdb-load-fonts.diff",
-      "https://github.com/termux/termux-packages/blob/dac98bdfcc/x11-packages/ruffle/smithay-client-toolkit-no-shm.diff",
-      "https://github.com/termux/termux-packages/blob/dac98bdfcc/x11-packages/ruffle/wayland-cursor-no-shm.diff"
+      "https://github.com/termux/termux-packages/blob/6cd0bba843/x11-packages/ruffle/0001-openh264-2.6.0.patch",
+      "https://github.com/termux/termux-packages/blob/6cd0bba843/x11-packages/ruffle/0002-openh264.patch",
+      "https://github.com/termux/termux-packages/blob/6cd0bba843/x11-packages/ruffle/fontdb-load-fonts.diff",
+      "https://github.com/termux/termux-packages/blob/6cd0bba843/x11-packages/ruffle/smithay-client-toolkit-no-shm.diff",
+      "https://github.com/termux/termux-packages/blob/6cd0bba843/x11-packages/ruffle/wayland-cursor-no-shm.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/dac98bdfcc/x11-packages/ruffle/0001-openh264-2.6.0.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dac98bdfcc/x11-packages/ruffle/0002-openh264.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/dac98bdfcc/x11-packages/ruffle/fontdb-load-fonts.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/dac98bdfcc/x11-packages/ruffle/smithay-client-toolkit-no-shm.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/dac98bdfcc/x11-packages/ruffle/wayland-cursor-no-shm.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/6cd0bba843/x11-packages/ruffle/0001-openh264-2.6.0.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6cd0bba843/x11-packages/ruffle/0002-openh264.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6cd0bba843/x11-packages/ruffle/fontdb-load-fonts.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/6cd0bba843/x11-packages/ruffle/smithay-client-toolkit-no-shm.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/6cd0bba843/x11-packages/ruffle/wayland-cursor-no-shm.diff"
     ],
     "auto_updated": true
   },
