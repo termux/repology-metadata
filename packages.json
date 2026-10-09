@@ -2058,7 +2058,7 @@
   },
   {
     "name": "awscli",
-    "version": "2.37.10",
+    "version": "2.37.11",
     "description": "Universal Command Line Interface for Amazon Web Services",
     "homepage": "https://aws.amazon.com/cli",
     "depends": [
@@ -2066,20 +2066,20 @@
       "libandroid-support",
       "mandoc"
     ],
-    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.37.10.tar.gz",
+    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.37.11.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1f8333572b/packages/awscli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1f8333572b/packages/awscli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1f8333572b/packages/awscli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bedb1d8417/packages/awscli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bedb1d8417/packages/awscli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bedb1d8417/packages/awscli/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1f8333572b/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://github.com/termux/termux-packages/blob/1f8333572b/packages/awscli/remove-aosp-dlls.patch",
-      "https://github.com/termux/termux-packages/blob/1f8333572b/packages/awscli/remove-no-build-isolation.patch"
+      "https://github.com/termux/termux-packages/blob/bedb1d8417/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://github.com/termux/termux-packages/blob/bedb1d8417/packages/awscli/remove-aosp-dlls.patch",
+      "https://github.com/termux/termux-packages/blob/bedb1d8417/packages/awscli/remove-no-build-isolation.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1f8333572b/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1f8333572b/packages/awscli/remove-aosp-dlls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/1f8333572b/packages/awscli/remove-no-build-isolation.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bedb1d8417/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bedb1d8417/packages/awscli/remove-aosp-dlls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bedb1d8417/packages/awscli/remove-no-build-isolation.patch"
     ],
     "auto_updated": true
   },
@@ -5069,7 +5069,7 @@
   },
   {
     "name": "codex",
-    "version": "0.161.0",
+    "version": "0.162.0",
     "description": "Lightweight coding agent that runs in your terminal",
     "homepage": "https://github.com/openai/codex",
     "depends": [
@@ -5077,34 +5077,34 @@
       "libc++",
       "openssl"
     ],
-    "srcurl": "https://github.com/openai/codex/archive/refs/tags/rust-v0.161.0.tar.gz",
+    "srcurl": "https://github.com/openai/codex/archive/refs/tags/rust-v0.162.0.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2e8fa6379b/packages/codex",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f4354d483a/packages/codex",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/android-daemon-auto-start.patch",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/rust-cc-allow-warnings.diff",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/v8-patches/0002-install-sysroot.patch",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
-      "https://github.com/termux/termux-packages/blob/2e8fa6379b/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/android-daemon-auto-start.patch",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/rust-cc-allow-warnings.diff",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/v8-patches/0002-install-sysroot.patch",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
+      "https://github.com/termux/termux-packages/blob/f4354d483a/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/android-daemon-auto-start.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/rust-cc-allow-warnings.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/v8-patches/0002-install-sysroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2e8fa6379b/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/android-daemon-auto-start.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/rust-cc-allow-warnings.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/v8-patches/0002-install-sysroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f4354d483a/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
     ],
     "auto_updated": true
   },
@@ -8298,7 +8298,7 @@
   },
   {
     "name": "emscripten",
-    "version": "6.0.11",
+    "version": "6.0.12",
     "description": "Emscripten: An LLVM-to-WebAssembly Compiler",
     "homepage": "https://emscripten.org",
     "depends": [
@@ -8307,24 +8307,24 @@
     ],
     "srcurl": "git+https://github.com/emscripten-core/emscripten",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/73f17b6da9/packages/emscripten",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/73f17b6da9/packages/emscripten/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/73f17b6da9/packages/emscripten/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3159d7649a/packages/emscripten",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3159d7649a/packages/emscripten/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3159d7649a/packages/emscripten/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/73f17b6da9/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
-      "https://github.com/termux/termux-packages/blob/73f17b6da9/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
-      "https://github.com/termux/termux-packages/blob/73f17b6da9/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
-      "https://github.com/termux/termux-packages/blob/73f17b6da9/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
-      "https://github.com/termux/termux-packages/blob/73f17b6da9/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
-      "https://github.com/termux/termux-packages/blob/73f17b6da9/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
+      "https://github.com/termux/termux-packages/blob/3159d7649a/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
+      "https://github.com/termux/termux-packages/blob/3159d7649a/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
+      "https://github.com/termux/termux-packages/blob/3159d7649a/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
+      "https://github.com/termux/termux-packages/blob/3159d7649a/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
+      "https://github.com/termux/termux-packages/blob/3159d7649a/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
+      "https://github.com/termux/termux-packages/blob/3159d7649a/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/73f17b6da9/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/73f17b6da9/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/73f17b6da9/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/73f17b6da9/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/73f17b6da9/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/73f17b6da9/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/3159d7649a/packages/emscripten/llvm-project-clang-lib-Driver-ToolChain.cpp.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3159d7649a/packages/emscripten/llvm-project-clang-lib-Driver-ToolChains-Linux.cpp.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3159d7649a/packages/emscripten/llvm-project-compiler-rt-CMakeLists.txt.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3159d7649a/packages/emscripten/llvm-project-compiler-rt-lib-builtins-CMakeLists.txt.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3159d7649a/packages/emscripten/llvm-project-libunwind-CMakeLists.txt.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/3159d7649a/packages/emscripten/llvm-project-llvm-tools-llvm-rtdyld-llvm-rtdyld.cpp.diff"
     ],
     "auto_updated": true
   },
@@ -9488,15 +9488,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.4.114",
+    "version": "0.4.115",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.114.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.4.115.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7926668090/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7926668090/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7926668090/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/70c1354c70/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/70c1354c70/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/70c1354c70/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12866,7 +12866,7 @@
   },
   {
     "name": "gst-libav",
-    "version": "1.28.7",
+    "version": "1.28.8",
     "description": "GStreamer Libav plug-in contains one plugin with a set of elements using the Libav library code",
     "homepage": "https://gstreamer.freedesktop.org/modules/gst-libav.html",
     "depends": [
@@ -12875,18 +12875,18 @@
       "gst-plugins-base",
       "gstreamer"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.28.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8ba645c74a/packages/gst-libav",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8ba645c74a/packages/gst-libav/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8ba645c74a/packages/gst-libav/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/86b7cad1e2/packages/gst-libav",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/86b7cad1e2/packages/gst-libav/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/86b7cad1e2/packages/gst-libav/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "gst-plugins-bad",
-    "version": "1.28.7",
+    "version": "1.28.8",
     "description": "GStreamer Bad Plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
@@ -12913,18 +12913,18 @@
       "openssl",
       "pango"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/84882506fd/packages/gst-plugins-bad",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/84882506fd/packages/gst-plugins-bad/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/84882506fd/packages/gst-plugins-bad/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4b73b783b5/packages/gst-plugins-bad",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4b73b783b5/packages/gst-plugins-bad/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4b73b783b5/packages/gst-plugins-bad/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "gst-plugins-base",
-    "version": "1.28.7",
+    "version": "1.28.8",
     "description": "GStreamer base plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
@@ -12945,22 +12945,22 @@
       "libxv",
       "zlib"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/69c24d604d/packages/gst-plugins-base",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69c24d604d/packages/gst-plugins-base/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69c24d604d/packages/gst-plugins-base/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d38f30fb8b/packages/gst-plugins-base",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d38f30fb8b/packages/gst-plugins-base/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d38f30fb8b/packages/gst-plugins-base/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/69c24d604d/packages/gst-plugins-base/partially-revert-10411.patch"
+      "https://github.com/termux/termux-packages/blob/d38f30fb8b/packages/gst-plugins-base/partially-revert-10411.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/69c24d604d/packages/gst-plugins-base/partially-revert-10411.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d38f30fb8b/packages/gst-plugins-base/partially-revert-10411.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "gst-plugins-good",
-    "version": "1.28.7",
+    "version": "1.28.8",
     "description": "GStreamer Good Plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
@@ -12984,33 +12984,33 @@
       "pulseaudio",
       "zlib"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/09bb423e27/packages/gst-plugins-good",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/09bb423e27/packages/gst-plugins-good/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/09bb423e27/packages/gst-plugins-good/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/613d74d9f7/packages/gst-plugins-good",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/613d74d9f7/packages/gst-plugins-good/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/613d74d9f7/packages/gst-plugins-good/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/09bb423e27/packages/gst-plugins-good/autoplug_libcaca.patch"
+      "https://github.com/termux/termux-packages/blob/613d74d9f7/packages/gst-plugins-good/autoplug_libcaca.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/09bb423e27/packages/gst-plugins-good/autoplug_libcaca.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/613d74d9f7/packages/gst-plugins-good/autoplug_libcaca.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "gst-plugins-ugly",
-    "version": "1.28.7",
+    "version": "1.28.8",
     "description": "GStreamer Ugly Plug-ins",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
       "glib",
       "gst-plugins-base"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/81513edb3b/packages/gst-plugins-ugly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/81513edb3b/packages/gst-plugins-ugly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/81513edb3b/packages/gst-plugins-ugly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/adb58c1fc5/packages/gst-plugins-ugly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/adb58c1fc5/packages/gst-plugins-ugly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/adb58c1fc5/packages/gst-plugins-ugly/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13042,17 +13042,17 @@
   },
   {
     "name": "gstreamer",
-    "version": "1.28.7",
+    "version": "1.28.8",
     "description": "Open source multimedia framework",
     "homepage": "https://gstreamer.freedesktop.org/",
     "depends": [
       "glib"
     ],
-    "srcurl": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.7.tar.xz",
+    "srcurl": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.8.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/70d7c3a881/packages/gstreamer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/70d7c3a881/packages/gstreamer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/70d7c3a881/packages/gstreamer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/de9ced49ac/packages/gstreamer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/de9ced49ac/packages/gstreamer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/de9ced49ac/packages/gstreamer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -28161,20 +28161,20 @@
   },
   {
     "name": "mediamtx",
-    "version": "1.21.1",
+    "version": "1.21.2",
     "description": "Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy",
     "homepage": "https://github.com/bluenviron/mediamtx",
     "depends": [],
-    "srcurl": "https://github.com/bluenviron/mediamtx/archive/refs/tags/v1.21.1.tar.gz",
+    "srcurl": "https://github.com/bluenviron/mediamtx/archive/refs/tags/v1.21.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/98dfd6b949/packages/mediamtx",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98dfd6b949/packages/mediamtx/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98dfd6b949/packages/mediamtx/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/63906ede29/packages/mediamtx",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/63906ede29/packages/mediamtx/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/63906ede29/packages/mediamtx/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/98dfd6b949/packages/mediamtx/internal-core-core.go.patch"
+      "https://github.com/termux/termux-packages/blob/63906ede29/packages/mediamtx/internal-core-core.go.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/98dfd6b949/packages/mediamtx/internal-core-core.go.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/63906ede29/packages/mediamtx/internal-core-core.go.patch"
     ],
     "auto_updated": true
   },
@@ -30645,18 +30645,18 @@
       "tree-sitter-parsers",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/neovim/neovim/archive/27ee55c09d.tar.gz",
+    "srcurl": "https://github.com/neovim/neovim/archive/402a494f47.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/659277a39e/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/659277a39e/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/659277a39e/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3555924b6c/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3555924b6c/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3555924b6c/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/659277a39e/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://github.com/termux/termux-packages/blob/659277a39e/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/3555924b6c/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://github.com/termux/termux-packages/blob/3555924b6c/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/659277a39e/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/659277a39e/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3555924b6c/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3555924b6c/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "auto_updated": true
   },
@@ -34955,23 +34955,23 @@
   },
   {
     "name": "pnpm",
-    "version": "12.10.1",
+    "version": "12.11.0",
     "description": "Fast, disk space efficient package manager for JavaScript",
     "homepage": "https://pnpm.io",
     "depends": [
       "git",
       "nodejs"
     ],
-    "srcurl": "https://github.com/pnpm/pnpm/archive/refs/tags/v12.10.1.tar.gz",
+    "srcurl": "https://github.com/pnpm/pnpm/archive/refs/tags/v12.11.0.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e4c28a83c4/packages/pnpm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e4c28a83c4/packages/pnpm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e4c28a83c4/packages/pnpm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/65ca30ad7f/packages/pnpm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/65ca30ad7f/packages/pnpm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/65ca30ad7f/packages/pnpm/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e4c28a83c4/packages/pnpm/sha2-no-asm.diff"
+      "https://github.com/termux/termux-packages/blob/65ca30ad7f/packages/pnpm/sha2-no-asm.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e4c28a83c4/packages/pnpm/sha2-no-asm.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/65ca30ad7f/packages/pnpm/sha2-no-asm.diff"
     ],
     "auto_updated": true
   },
@@ -37719,15 +37719,15 @@
   },
   {
     "name": "railway-cli",
-    "version": "5.64.0",
+    "version": "5.64.1",
     "description": "This is the command line interface for Railway",
     "homepage": "https://railway.app",
     "depends": [],
-    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v5.64.0.tar.gz",
+    "srcurl": "https://github.com/railwayapp/cli/archive/refs/tags/v5.64.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/671492fcc3/packages/railway-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/671492fcc3/packages/railway-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/671492fcc3/packages/railway-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f030c218a/packages/railway-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f030c218a/packages/railway-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f030c218a/packages/railway-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -45782,15 +45782,15 @@
   },
   {
     "name": "uv",
-    "version": "0.12.23",
+    "version": "0.12.24",
     "description": "An extremely fast Python package installer and resolver, written in Rust.",
     "homepage": "https://docs.astral.sh/uv/",
     "depends": [],
-    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.12.23.tar.gz",
+    "srcurl": "https://github.com/astral-sh/uv/archive/refs/tags/0.12.24.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6cb5de678f/packages/uv",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6cb5de678f/packages/uv/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6cb5de678f/packages/uv/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/822ffe257c/packages/uv",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/822ffe257c/packages/uv/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/822ffe257c/packages/uv/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -59922,16 +59922,16 @@
     ],
     "srcurl": "https://download.kde.org/stable/plasma/6.7.5/kdeplasma-addons-6.7.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/09d7e9f495/x11-packages/kdeplasma-addons",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/09d7e9f495/x11-packages/kdeplasma-addons/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/09d7e9f495/x11-packages/kdeplasma-addons/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1829928d38/x11-packages/kdeplasma-addons",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1829928d38/x11-packages/kdeplasma-addons/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1829928d38/x11-packages/kdeplasma-addons/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/09d7e9f495/x11-packages/kdeplasma-addons/disable-kameleon-qmk-helper.patch",
-      "https://github.com/termux/termux-packages/blob/09d7e9f495/x11-packages/kdeplasma-addons/fix-undefined-behavior-improper-use-of-qnetworkinformation.patch"
+      "https://github.com/termux/termux-packages/blob/1829928d38/x11-packages/kdeplasma-addons/disable-kameleon-qmk-helper.patch",
+      "https://github.com/termux/termux-packages/blob/1829928d38/x11-packages/kdeplasma-addons/fix-undefined-behavior-improper-use-of-qnetworkinformation.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/09d7e9f495/x11-packages/kdeplasma-addons/disable-kameleon-qmk-helper.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/09d7e9f495/x11-packages/kdeplasma-addons/fix-undefined-behavior-improper-use-of-qnetworkinformation.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/1829928d38/x11-packages/kdeplasma-addons/disable-kameleon-qmk-helper.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1829928d38/x11-packages/kdeplasma-addons/fix-undefined-behavior-improper-use-of-qnetworkinformation.patch"
     ],
     "auto_updated": true
   },
@@ -64218,20 +64218,20 @@
     ],
     "srcurl": "https://download.kde.org/stable/plasma/6.7.5/kwin-x11-6.7.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a3652fd851/x11-packages/kwin-x11",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a3652fd851/x11-packages/kwin-x11/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a3652fd851/x11-packages/kwin-x11/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/28e7f872fc/x11-packages/kwin-x11",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/28e7f872fc/x11-packages/kwin-x11/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/28e7f872fc/x11-packages/kwin-x11/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a3652fd851/x11-packages/kwin-x11/add-qtdbus.patch",
-      "https://github.com/termux/termux-packages/blob/a3652fd851/x11-packages/kwin-x11/disable-compositor.patch",
-      "https://github.com/termux/termux-packages/blob/a3652fd851/x11-packages/kwin-x11/disable-udev.patch",
-      "https://github.com/termux/termux-packages/blob/a3652fd851/x11-packages/kwin-x11/kwin-force-egl.patch"
+      "https://github.com/termux/termux-packages/blob/28e7f872fc/x11-packages/kwin-x11/add-qtdbus.patch",
+      "https://github.com/termux/termux-packages/blob/28e7f872fc/x11-packages/kwin-x11/disable-compositor.patch",
+      "https://github.com/termux/termux-packages/blob/28e7f872fc/x11-packages/kwin-x11/disable-udev.patch",
+      "https://github.com/termux/termux-packages/blob/28e7f872fc/x11-packages/kwin-x11/kwin-force-egl.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a3652fd851/x11-packages/kwin-x11/add-qtdbus.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3652fd851/x11-packages/kwin-x11/disable-compositor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3652fd851/x11-packages/kwin-x11/disable-udev.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a3652fd851/x11-packages/kwin-x11/kwin-force-egl.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/28e7f872fc/x11-packages/kwin-x11/add-qtdbus.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28e7f872fc/x11-packages/kwin-x11/disable-compositor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28e7f872fc/x11-packages/kwin-x11/disable-udev.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28e7f872fc/x11-packages/kwin-x11/kwin-force-egl.patch"
     ],
     "auto_updated": true
   },
@@ -65695,16 +65695,16 @@
     ],
     "srcurl": "https://github.com/lxqt/libqtxdg/releases/download/4.4.0/libqtxdg-4.4.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/59ab56a64e/x11-packages/libqtxdg",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/59ab56a64e/x11-packages/libqtxdg/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/59ab56a64e/x11-packages/libqtxdg/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/76bb0bd8fe/x11-packages/libqtxdg",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/76bb0bd8fe/x11-packages/libqtxdg/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/76bb0bd8fe/x11-packages/libqtxdg/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/59ab56a64e/x11-packages/libqtxdg/src-qtxdg-xdgdirs.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/59ab56a64e/x11-packages/libqtxdg/src-xdgiconloader-xdgiconloader.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/76bb0bd8fe/x11-packages/libqtxdg/src-qtxdg-xdgdirs.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/76bb0bd8fe/x11-packages/libqtxdg/src-xdgiconloader-xdgiconloader.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/59ab56a64e/x11-packages/libqtxdg/src-qtxdg-xdgdirs.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/59ab56a64e/x11-packages/libqtxdg/src-xdgiconloader-xdgiconloader.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/76bb0bd8fe/x11-packages/libqtxdg/src-qtxdg-xdgdirs.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/76bb0bd8fe/x11-packages/libqtxdg/src-xdgiconloader-xdgiconloader.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -67156,22 +67156,22 @@
     ],
     "srcurl": "https://github.com/lxqt/lxqt-panel/releases/download/2.4.1/lxqt-panel-2.4.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d2a2d5430b/x11-packages/lxqt-panel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d2a2d5430b/x11-packages/lxqt-panel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d2a2d5430b/x11-packages/lxqt-panel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b70ba07637/x11-packages/lxqt-panel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b70ba07637/x11-packages/lxqt-panel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b70ba07637/x11-packages/lxqt-panel/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d2a2d5430b/x11-packages/lxqt-panel/panel-backends-wayland-wlroots-lxqttaskbarwlrwm.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/d2a2d5430b/x11-packages/lxqt-panel/plugin-directorymenu-directorymenuconfiguration.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/d2a2d5430b/x11-packages/lxqt-panel/plugin-fancymenu-lxqtfancymenuconfiguration.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/d2a2d5430b/x11-packages/lxqt-panel/plugin-kbindicator-src-x11-kbdlayout.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/d2a2d5430b/x11-packages/lxqt-panel/plugin-mainmenu-lxqtmainmenuconfiguration.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/b70ba07637/x11-packages/lxqt-panel/panel-backends-wayland-wlroots-lxqttaskbarwlrwm.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/b70ba07637/x11-packages/lxqt-panel/plugin-directorymenu-directorymenuconfiguration.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/b70ba07637/x11-packages/lxqt-panel/plugin-fancymenu-lxqtfancymenuconfiguration.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/b70ba07637/x11-packages/lxqt-panel/plugin-kbindicator-src-x11-kbdlayout.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/b70ba07637/x11-packages/lxqt-panel/plugin-mainmenu-lxqtmainmenuconfiguration.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d2a2d5430b/x11-packages/lxqt-panel/panel-backends-wayland-wlroots-lxqttaskbarwlrwm.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d2a2d5430b/x11-packages/lxqt-panel/plugin-directorymenu-directorymenuconfiguration.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d2a2d5430b/x11-packages/lxqt-panel/plugin-fancymenu-lxqtfancymenuconfiguration.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d2a2d5430b/x11-packages/lxqt-panel/plugin-kbindicator-src-x11-kbdlayout.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/d2a2d5430b/x11-packages/lxqt-panel/plugin-mainmenu-lxqtmainmenuconfiguration.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b70ba07637/x11-packages/lxqt-panel/panel-backends-wayland-wlroots-lxqttaskbarwlrwm.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b70ba07637/x11-packages/lxqt-panel/plugin-directorymenu-directorymenuconfiguration.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b70ba07637/x11-packages/lxqt-panel/plugin-fancymenu-lxqtfancymenuconfiguration.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b70ba07637/x11-packages/lxqt-panel/plugin-kbindicator-src-x11-kbdlayout.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b70ba07637/x11-packages/lxqt-panel/plugin-mainmenu-lxqtmainmenuconfiguration.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -67218,16 +67218,16 @@
     ],
     "srcurl": "https://github.com/lxqt/lxqt-qtplugin/releases/download/2.4.0/lxqt-qtplugin-2.4.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a93fb8fa6f/x11-packages/lxqt-qtplugin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a93fb8fa6f/x11-packages/lxqt-qtplugin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a93fb8fa6f/x11-packages/lxqt-qtplugin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/23d2690915/x11-packages/lxqt-qtplugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23d2690915/x11-packages/lxqt-qtplugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23d2690915/x11-packages/lxqt-qtplugin/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a93fb8fa6f/x11-packages/lxqt-qtplugin/src-CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/a93fb8fa6f/x11-packages/lxqt-qtplugin/src-lxqtplatformtheme.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/23d2690915/x11-packages/lxqt-qtplugin/src-CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/23d2690915/x11-packages/lxqt-qtplugin/src-lxqtplatformtheme.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a93fb8fa6f/x11-packages/lxqt-qtplugin/src-CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a93fb8fa6f/x11-packages/lxqt-qtplugin/src-lxqtplatformtheme.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/23d2690915/x11-packages/lxqt-qtplugin/src-CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/23d2690915/x11-packages/lxqt-qtplugin/src-lxqtplatformtheme.cpp.patch"
     ],
     "auto_updated": true
   },
@@ -71423,36 +71423,36 @@
     ],
     "srcurl": "https://download.kde.org/stable/plasma/6.7.5/plasma-workspace-6.7.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f3b62e8c6d/x11-packages/plasma-workspace",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/28538d6ee9/x11-packages/plasma-workspace",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/cmake-disable-udev.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/crypt.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/disable-networkmanager.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/remove-virtualkeyboard-mode-property.patch",
-      "https://github.com/termux/termux-packages/blob/f3b62e8c6d/x11-packages/plasma-workspace/startplasma.patch"
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/cmake-disable-udev.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/crypt.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/disable-networkmanager.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/remove-virtualkeyboard-mode-property.patch",
+      "https://github.com/termux/termux-packages/blob/28538d6ee9/x11-packages/plasma-workspace/startplasma.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/cmake-disable-udev.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/crypt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/disable-networkmanager.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/remove-virtualkeyboard-mode-property.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/f3b62e8c6d/x11-packages/plasma-workspace/startplasma.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/cmake-disable-kscreenlocker.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/cmake-disable-udev.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-3.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker-4.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-kscreenlocker.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/cpp-disable-polkit.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/crypt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/disable-networkmanager.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/partial-revert-a71a52be.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/remove-virtualkeyboard-mode-property.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/28538d6ee9/x11-packages/plasma-workspace/startplasma.patch"
     ],
     "auto_updated": true
   },
@@ -71725,20 +71725,20 @@
     ],
     "srcurl": "https://download.kde.org/stable/plasma/6.7.5/powerdevil-6.7.5.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/17254bd7c9/x11-packages/powerdevil",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/17254bd7c9/x11-packages/powerdevil/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/17254bd7c9/x11-packages/powerdevil/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7af71185dd/x11-packages/powerdevil",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7af71185dd/x11-packages/powerdevil/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7af71185dd/x11-packages/powerdevil/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/17254bd7c9/x11-packages/powerdevil/disable-udev.patch",
-      "https://github.com/termux/termux-packages/blob/17254bd7c9/x11-packages/powerdevil/fix-time-t-narrowing.patch",
-      "https://github.com/termux/termux-packages/blob/17254bd7c9/x11-packages/powerdevil/termux-backlight.patch",
-      "https://github.com/termux/termux-packages/blob/17254bd7c9/x11-packages/powerdevil/use-session-bus.patch"
+      "https://github.com/termux/termux-packages/blob/7af71185dd/x11-packages/powerdevil/disable-udev.patch",
+      "https://github.com/termux/termux-packages/blob/7af71185dd/x11-packages/powerdevil/fix-time-t-narrowing.patch",
+      "https://github.com/termux/termux-packages/blob/7af71185dd/x11-packages/powerdevil/termux-backlight.patch",
+      "https://github.com/termux/termux-packages/blob/7af71185dd/x11-packages/powerdevil/use-session-bus.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/17254bd7c9/x11-packages/powerdevil/disable-udev.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17254bd7c9/x11-packages/powerdevil/fix-time-t-narrowing.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17254bd7c9/x11-packages/powerdevil/termux-backlight.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/17254bd7c9/x11-packages/powerdevil/use-session-bus.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7af71185dd/x11-packages/powerdevil/disable-udev.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7af71185dd/x11-packages/powerdevil/fix-time-t-narrowing.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7af71185dd/x11-packages/powerdevil/termux-backlight.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/7af71185dd/x11-packages/powerdevil/use-session-bus.patch"
     ],
     "auto_updated": true
   },
@@ -72471,24 +72471,24 @@
     ],
     "srcurl": "https://download.qt.io/official_releases/qtcreator/20.0/20.0.2/qt-creator-opensource-src-20.0.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/86174c8d50/x11-packages/qt-creator",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/86174c8d50/x11-packages/qt-creator/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/86174c8d50/x11-packages/qt-creator/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/98c8b1d0d0/x11-packages/qt-creator",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98c8b1d0d0/x11-packages/qt-creator/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98c8b1d0d0/x11-packages/qt-creator/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/86174c8d50/x11-packages/qt-creator/32-bit-no-__int128_t.patch",
-      "https://github.com/termux/termux-packages/blob/86174c8d50/x11-packages/qt-creator/fix-pdb-error.patch",
-      "https://github.com/termux/termux-packages/blob/86174c8d50/x11-packages/qt-creator/no-malloc_trim.patch",
-      "https://github.com/termux/termux-packages/blob/86174c8d50/x11-packages/qt-creator/no-pthread_getname_np.patch",
-      "https://github.com/termux/termux-packages/blob/86174c8d50/x11-packages/qt-creator/no-utmpxname.patch",
-      "https://github.com/termux/termux-packages/blob/86174c8d50/x11-packages/qt-creator/shm_open.patch"
+      "https://github.com/termux/termux-packages/blob/98c8b1d0d0/x11-packages/qt-creator/32-bit-no-__int128_t.patch",
+      "https://github.com/termux/termux-packages/blob/98c8b1d0d0/x11-packages/qt-creator/fix-pdb-error.patch",
+      "https://github.com/termux/termux-packages/blob/98c8b1d0d0/x11-packages/qt-creator/no-malloc_trim.patch",
+      "https://github.com/termux/termux-packages/blob/98c8b1d0d0/x11-packages/qt-creator/no-pthread_getname_np.patch",
+      "https://github.com/termux/termux-packages/blob/98c8b1d0d0/x11-packages/qt-creator/no-utmpxname.patch",
+      "https://github.com/termux/termux-packages/blob/98c8b1d0d0/x11-packages/qt-creator/shm_open.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/86174c8d50/x11-packages/qt-creator/32-bit-no-__int128_t.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/86174c8d50/x11-packages/qt-creator/fix-pdb-error.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/86174c8d50/x11-packages/qt-creator/no-malloc_trim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/86174c8d50/x11-packages/qt-creator/no-pthread_getname_np.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/86174c8d50/x11-packages/qt-creator/no-utmpxname.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/86174c8d50/x11-packages/qt-creator/shm_open.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/98c8b1d0d0/x11-packages/qt-creator/32-bit-no-__int128_t.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98c8b1d0d0/x11-packages/qt-creator/fix-pdb-error.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98c8b1d0d0/x11-packages/qt-creator/no-malloc_trim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98c8b1d0d0/x11-packages/qt-creator/no-pthread_getname_np.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98c8b1d0d0/x11-packages/qt-creator/no-utmpxname.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98c8b1d0d0/x11-packages/qt-creator/shm_open.patch"
     ],
     "auto_updated": true
   },
@@ -73603,14 +73603,14 @@
     ],
     "srcurl": "https://www.opencode.net/trialuser/qt6ct/-/archive/0.11/qt6ct-0.11.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ad62dbf70c/x11-packages/qt6ct",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ad62dbf70c/x11-packages/qt6ct/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ad62dbf70c/x11-packages/qt6ct/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c48f9c772/x11-packages/qt6ct",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c48f9c772/x11-packages/qt6ct/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c48f9c772/x11-packages/qt6ct/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ad62dbf70c/x11-packages/qt6ct/src-qt6ct-common-qt6ct.cpp.patch"
+      "https://github.com/termux/termux-packages/blob/7c48f9c772/x11-packages/qt6ct/src-qt6ct-common-qt6ct.cpp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ad62dbf70c/x11-packages/qt6ct/src-qt6ct-common-qt6ct.cpp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/7c48f9c772/x11-packages/qt6ct/src-qt6ct-common-qt6ct.cpp.patch"
     ],
     "auto_updated": true
   },
