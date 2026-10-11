@@ -3499,23 +3499,23 @@
   },
   {
     "name": "byobu",
-    "version": "7.20",
+    "version": "7.21",
     "description": "Byobu is a GPLv3 open source text-based window manager and terminal multiplexer",
     "homepage": "https://www.byobu.org/",
     "depends": [
       "gawk",
       "tmux"
     ],
-    "srcurl": "https://github.com/dustinkirkland/byobu/archive/refs/tags/7.20.tar.gz",
+    "srcurl": "https://github.com/dustinkirkland/byobu/archive/refs/tags/7.21.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1ede3e9b3d/packages/byobu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1ede3e9b3d/packages/byobu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1ede3e9b3d/packages/byobu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3e79eaca08/packages/byobu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3e79eaca08/packages/byobu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3e79eaca08/packages/byobu/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1ede3e9b3d/packages/byobu/usr-bin-byobu.in.patch"
+      "https://github.com/termux/termux-packages/blob/3e79eaca08/packages/byobu/usr-bin-byobu.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1ede3e9b3d/packages/byobu/usr-bin-byobu.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3e79eaca08/packages/byobu/usr-bin-byobu.in.patch"
     ],
     "auto_updated": true
   },
@@ -4407,15 +4407,15 @@
   },
   {
     "name": "chezmoi",
-    "version": "2.73.0",
+    "version": "2.73.1",
     "description": "Manage your dotfiles across multiple machines",
     "homepage": "https://chezmoi.io",
     "depends": [],
-    "srcurl": "https://github.com/twpayne/chezmoi/archive/refs/tags/v2.73.0.tar.gz",
+    "srcurl": "https://github.com/twpayne/chezmoi/archive/refs/tags/v2.73.1.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3b7c386b2f/packages/chezmoi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3b7c386b2f/packages/chezmoi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3b7c386b2f/packages/chezmoi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b15096b1f/packages/chezmoi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b15096b1f/packages/chezmoi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b15096b1f/packages/chezmoi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -5340,7 +5340,7 @@
   },
   {
     "name": "coreutils",
-    "version": "9.11",
+    "version": "9.12",
     "description": "Basic file, shell and text manipulation utilities from the GNU project",
     "homepage": "https://www.gnu.org/software/coreutils/",
     "depends": [
@@ -5350,28 +5350,30 @@
       "libiconv",
       "openssl"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/coreutils/coreutils-9.11.tar.xz",
+    "srcurl": "https://mirrors.kernel.org/gnu/coreutils/coreutils-9.12.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/74c9404a9d/packages/coreutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2dafb4d53b/packages/coreutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/configure.patch",
-      "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/date.c.patch",
-      "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/pwd.c.patch",
-      "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/selinux.patch",
-      "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/src-hostid.c.patch",
-      "https://github.com/termux/termux-packages/blob/74c9404a9d/packages/coreutils/src-ls.c.patch"
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/backport-782a1e5b-env-sanitizer-too-aggressive.patch",
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/configure.patch",
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/date.c.patch",
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/pwd.c.patch",
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/selinux.patch",
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/src-hostid.c.patch",
+      "https://github.com/termux/termux-packages/blob/2dafb4d53b/packages/coreutils/src-ls.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/date.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/pwd.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/selinux.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/src-hostid.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/74c9404a9d/packages/coreutils/src-ls.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/backport-782a1e5b-env-sanitizer-too-aggressive.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/date.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/pwd.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/selinux.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/src-hostid.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2dafb4d53b/packages/coreutils/src-ls.c.patch"
     ],
     "auto_updated": false
   },
@@ -5729,9 +5731,9 @@
     ],
     "srcurl": "git+https://github.com/crystal-lang/crystal",
     "maintainer": "@HertzDevil",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3331631f88/packages/crystal",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3331631f88/packages/crystal/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3331631f88/packages/crystal/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c03cb76356/packages/crystal",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c03cb76356/packages/crystal/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c03cb76356/packages/crystal/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -7226,15 +7228,15 @@
   },
   {
     "name": "doctl",
-    "version": "1.181.0",
+    "version": "1.182.0",
     "description": "The official command line interface for the DigitalOcean API",
     "homepage": "https://github.com/digitalocean/doctl",
     "depends": [],
-    "srcurl": "https://github.com/digitalocean/doctl/archive/refs/tags/v1.181.0.tar.gz",
+    "srcurl": "https://github.com/digitalocean/doctl/archive/refs/tags/v1.182.0.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d8677d96d1/packages/doctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d8677d96d1/packages/doctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d8677d96d1/packages/doctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a8890f975b/packages/doctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a8890f975b/packages/doctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a8890f975b/packages/doctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12165,15 +12167,15 @@
   },
   {
     "name": "goose",
-    "version": "3.28.0",
+    "version": "3.29.0",
     "description": "A database migration tool. Supports SQL migrations and Go functions.",
     "homepage": "https://pressly.github.io/goose",
     "depends": [],
-    "srcurl": "https://github.com/pressly/goose/archive/refs/tags/v3.28.0.tar.gz",
+    "srcurl": "https://github.com/pressly/goose/archive/refs/tags/v3.29.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/28a925ee84/packages/goose",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/28a925ee84/packages/goose/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/28a925ee84/packages/goose/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/73ee4ce9dc/packages/goose",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/73ee4ce9dc/packages/goose/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/73ee4ce9dc/packages/goose/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13665,6 +13667,28 @@
       "https://raw.githubusercontent.com/termux/termux-packages/6413822cc1/packages/hilbish/fix-hardcoded-path.patch"
     ],
     "auto_updated": false
+  },
+  {
+    "name": "hk",
+    "version": "2.5.0",
+    "description": "A tool for managing git hooks",
+    "homepage": "https://hk.jdx.dev/",
+    "depends": [
+      "git",
+      "zlib"
+    ],
+    "srcurl": "https://github.com/jdx/hk/archive/refs/tags/v2.5.0.tar.gz",
+    "maintainer": "@termux",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f145fc1f59/packages/hk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f145fc1f59/packages/hk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f145fc1f59/packages/hk/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/f145fc1f59/packages/hk/aws-lc-sys.diff"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/f145fc1f59/packages/hk/aws-lc-sys.diff"
+    ],
+    "auto_updated": true
   },
   {
     "name": "hledger",
@@ -17883,7 +17907,7 @@
   },
   {
     "name": "libdart",
-    "version": "6.19.5",
+    "version": "6.20.0",
     "description": "Dynamic Animation and Robotics Toolkit",
     "homepage": "https://dartsim.github.io/",
     "depends": [
@@ -17900,18 +17924,18 @@
       "octomap",
       "libtinyxml2"
     ],
-    "srcurl": "https://github.com/dartsim/dart/archive/refs/tags/v6.19.5.tar.gz",
+    "srcurl": "https://github.com/dartsim/dart/archive/refs/tags/v6.20.0.tar.gz",
     "maintainer": "Pooya Moradi <pvonmoradi@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/cdb6d3e338/packages/libdart",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cdb6d3e338/packages/libdart/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cdb6d3e338/packages/libdart/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3e7082774/packages/libdart",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3e7082774/packages/libdart/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3e7082774/packages/libdart/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/cdb6d3e338/packages/libdart/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/cdb6d3e338/packages/libdart/cmake-dart.pc.in.patch"
+      "https://github.com/termux/termux-packages/blob/b3e7082774/packages/libdart/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/b3e7082774/packages/libdart/cmake-dart.pc.in.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/cdb6d3e338/packages/libdart/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/cdb6d3e338/packages/libdart/cmake-dart.pc.in.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b3e7082774/packages/libdart/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b3e7082774/packages/libdart/cmake-dart.pc.in.patch"
     ],
     "auto_updated": true
   },
@@ -18608,21 +18632,17 @@
   },
   {
     "name": "libfdk-aac",
-    "version": "2.0.3",
+    "version": "3.0.0",
     "description": "Fraunhofer FDK AAC Codec Library",
     "homepage": "https://github.com/mstorsjo/fdk-aac",
     "depends": [],
-    "srcurl": "https://github.com/mstorsjo/fdk-aac/archive/refs/tags/v2.0.3.tar.gz",
+    "srcurl": "https://github.com/mstorsjo/fdk-aac/archive/refs/tags/v3.0.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c05895511/packages/libfdk-aac",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c05895511/packages/libfdk-aac/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c05895511/packages/libfdk-aac/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0c05895511/packages/libfdk-aac/libSBRdec-lpp_tran.cpp.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0c05895511/packages/libfdk-aac/libSBRdec-lpp_tran.cpp.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3c8c9d18fa/packages/libfdk-aac",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3c8c9d18fa/packages/libfdk-aac/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3c8c9d18fa/packages/libfdk-aac/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -19701,14 +19721,14 @@
     ],
     "srcurl": "https://github.com/libimobiledevice/libimobiledevice/releases/download/1.4.0/libimobiledevice-1.4.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/3454667d1a/packages/libimobiledevice",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3454667d1a/packages/libimobiledevice/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3454667d1a/packages/libimobiledevice/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0f4d3ed8b1/packages/libimobiledevice",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0f4d3ed8b1/packages/libimobiledevice/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0f4d3ed8b1/packages/libimobiledevice/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/3454667d1a/packages/libimobiledevice/common-userpref.c.patch"
+      "https://github.com/termux/termux-packages/blob/0f4d3ed8b1/packages/libimobiledevice/common-userpref.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/3454667d1a/packages/libimobiledevice/common-userpref.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0f4d3ed8b1/packages/libimobiledevice/common-userpref.c.patch"
     ],
     "auto_updated": true
   },
@@ -19722,9 +19742,9 @@
     ],
     "srcurl": "https://github.com/libimobiledevice/libimobiledevice-glue/releases/download/1.3.3/libimobiledevice-glue-1.3.3.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c9d744780/packages/libimobiledevice-glue",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c9d744780/packages/libimobiledevice-glue/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c9d744780/packages/libimobiledevice-glue/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e6bbae10c0/packages/libimobiledevice-glue",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e6bbae10c0/packages/libimobiledevice-glue/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e6bbae10c0/packages/libimobiledevice-glue/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -22005,17 +22025,17 @@
   },
   {
     "name": "libplist",
-    "version": "2.7.0",
+    "version": "2.8.0",
     "description": "A small portable C library to handle Apple Property List files in binary or XML format",
     "homepage": "https://libimobiledevice.org",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/libimobiledevice/libplist/releases/download/2.7.0/libplist-2.7.0.tar.bz2",
+    "srcurl": "https://github.com/libimobiledevice/libplist/releases/download/2.8.0/libplist-2.8.0.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a1d660219/packages/libplist",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a1d660219/packages/libplist/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a1d660219/packages/libplist/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a76d937d1/packages/libplist",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a76d937d1/packages/libplist/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a76d937d1/packages/libplist/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23650,9 +23670,9 @@
     ],
     "srcurl": "https://github.com/libimobiledevice/libtatsu/releases/download/1.0.5/libtatsu-1.0.5.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/15130a77c5/packages/libtatsu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/15130a77c5/packages/libtatsu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/15130a77c5/packages/libtatsu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/981eebc6d9/packages/libtatsu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/981eebc6d9/packages/libtatsu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/981eebc6d9/packages/libtatsu/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -24377,16 +24397,16 @@
     ],
     "srcurl": "https://github.com/libimobiledevice/libusbmuxd/releases/download/2.1.1/libusbmuxd-2.1.1.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4693269611/packages/libusbmuxd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4693269611/packages/libusbmuxd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4693269611/packages/libusbmuxd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a4c8a720fd/packages/libusbmuxd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a4c8a720fd/packages/libusbmuxd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a4c8a720fd/packages/libusbmuxd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4693269611/packages/libusbmuxd/include-usbmuxd-proto.h.patch",
-      "https://github.com/termux/termux-packages/blob/4693269611/packages/libusbmuxd/src-libusbmuxd.c.patch"
+      "https://github.com/termux/termux-packages/blob/a4c8a720fd/packages/libusbmuxd/include-usbmuxd-proto.h.patch",
+      "https://github.com/termux/termux-packages/blob/a4c8a720fd/packages/libusbmuxd/src-libusbmuxd.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4693269611/packages/libusbmuxd/include-usbmuxd-proto.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4693269611/packages/libusbmuxd/src-libusbmuxd.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a4c8a720fd/packages/libusbmuxd/include-usbmuxd-proto.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a4c8a720fd/packages/libusbmuxd/src-libusbmuxd.c.patch"
     ],
     "auto_updated": true
   },
@@ -28719,29 +28739,31 @@
   },
   {
     "name": "mise",
-    "version": "2026.10.4",
+    "version": "2026.10.8",
     "description": "dev tools, env vars, task runner",
     "homepage": "https://mise.jdx.dev/",
     "depends": [
       "bzip2",
       "openssl"
     ],
-    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.10.4.tar.gz",
+    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.10.8.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/57cedfa8ed/packages/mise",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/57cedfa8ed/packages/mise/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/57cedfa8ed/packages/mise/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f192cdb8a5/packages/mise",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f192cdb8a5/packages/mise/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f192cdb8a5/packages/mise/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/57cedfa8ed/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/57cedfa8ed/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/57cedfa8ed/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/57cedfa8ed/packages/mise/stat-mode-32-bit-android.patch"
+      "https://github.com/termux/termux-packages/blob/f192cdb8a5/packages/mise/decmpfs-android-libc.diff",
+      "https://github.com/termux/termux-packages/blob/f192cdb8a5/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/f192cdb8a5/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/f192cdb8a5/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/f192cdb8a5/packages/mise/stat-mode-32-bit-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/57cedfa8ed/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/57cedfa8ed/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/57cedfa8ed/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/57cedfa8ed/packages/mise/stat-mode-32-bit-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f192cdb8a5/packages/mise/decmpfs-android-libc.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f192cdb8a5/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f192cdb8a5/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f192cdb8a5/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/f192cdb8a5/packages/mise/stat-mode-32-bit-android.patch"
     ],
     "auto_updated": true
   },
@@ -31978,7 +32000,7 @@
   },
   {
     "name": "oidn",
-    "version": "2.4.1",
+    "version": "2.5.1",
     "description": "Intel® Open Image Denoise library",
     "homepage": "https://www.openimagedenoise.org",
     "depends": [
@@ -31986,18 +32008,18 @@
       "libllvm",
       "libtbb"
     ],
-    "srcurl": "https://github.com/OpenImageDenoise/oidn/releases/download/v2.4.1/oidn-2.4.1.src.tar.gz",
+    "srcurl": "https://github.com/OpenImageDenoise/oidn/releases/download/v2.5.1/oidn-2.5.1.src.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ee8296b366/packages/oidn",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ee8296b366/packages/oidn/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ee8296b366/packages/oidn/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/43287da0e4/packages/oidn",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/43287da0e4/packages/oidn/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/43287da0e4/packages/oidn/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ee8296b366/packages/oidn/0001-dummy-pthread-affinity.patch"
+      "https://github.com/termux/termux-packages/blob/43287da0e4/packages/oidn/0001-dummy-pthread-affinity.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ee8296b366/packages/oidn/0001-dummy-pthread-affinity.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/43287da0e4/packages/oidn/0001-dummy-pthread-affinity.patch"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "oils-for-unix",
@@ -34478,17 +34500,17 @@
   },
   {
     "name": "php-zephir-parser",
-    "version": "2.9.0",
+    "version": "2.9.1",
     "description": "The Zephir Parser delivered as a C extension for the PHP language",
     "homepage": "https://github.com/phalcon/php-zephir-parser",
     "depends": [
       "php"
     ],
-    "srcurl": "https://github.com/zephir-lang/php-zephir-parser/archive/refs/tags/v2.9.0.tar.gz",
+    "srcurl": "https://github.com/zephir-lang/php-zephir-parser/archive/refs/tags/v2.9.1.tar.gz",
     "maintainer": "ian4hu <hu2008yinxiang@163.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0da48ee286/packages/php-zephir-parser",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0da48ee286/packages/php-zephir-parser/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0da48ee286/packages/php-zephir-parser/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c4294e12e7/packages/php-zephir-parser",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c4294e12e7/packages/php-zephir-parser/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c4294e12e7/packages/php-zephir-parser/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -34577,7 +34599,7 @@
   },
   {
     "name": "picolisp",
-    "version": "26.6",
+    "version": "26.9",
     "description": "Lisp interpreter and application server framework",
     "homepage": "https://picolisp.com/wiki/?home",
     "depends": [
@@ -34586,16 +34608,16 @@
       "openssl",
       "readline"
     ],
-    "srcurl": "https://software-lab.de/picoLisp-26.6.tgz",
+    "srcurl": "https://software-lab.de/picoLisp-26.9.tgz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6b81a1438a/packages/picolisp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6b81a1438a/packages/picolisp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6b81a1438a/packages/picolisp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/58fed6df26/packages/picolisp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/58fed6df26/packages/picolisp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/58fed6df26/packages/picolisp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6b81a1438a/packages/picolisp/fix-bash-completion.patch"
+      "https://github.com/termux/termux-packages/blob/58fed6df26/packages/picolisp/fix-bash-completion.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6b81a1438a/packages/picolisp/fix-bash-completion.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/58fed6df26/packages/picolisp/fix-bash-completion.patch"
     ],
     "auto_updated": true
   },
@@ -37350,7 +37372,7 @@
   },
   {
     "name": "qemu-system-x86-64-headless",
-    "version": "1:11.0.3",
+    "version": "1:11.1.2",
     "description": "A generic and open source machine emulator and virtualizer (headless)",
     "homepage": "https://www.qemu.org",
     "depends": [
@@ -37382,54 +37404,56 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://download.qemu.org/qemu-11.0.3.tar.xz",
+    "srcurl": "https://download.qemu.org/qemu-11.1.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a30684d56/packages/qemu-system-x86-64-headless",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/186fa701cc/packages/qemu-system-x86-64-headless",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0000-android-config-support.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0001-fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0002-fix-soundcard.h-location.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0003-fix-time_nsec-defs.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0004-add-missing-telldir-seekdir.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0005-add-missing-sigorset.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0006-fix-sem.h-location.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0007-fix-syscalls.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0008-fix-struct-member-conflicts.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0009-disable-glob.h-include.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0010-add-missing-arch_prctl.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0011-mmap_min_addr-fallback.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0012-force-ucs2-little-endian.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0013-9pfs-dont-chmod-mapfile.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0014-disable-signalfd.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0015-workaround-android-ndk-patch.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0017-shm_open.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0018-libnfs-fix.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/packages/qemu-system-x86-64-headless/0019-no-timespec_get.patch"
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0000-android-config-support.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0001-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0002-fix-soundcard.h-location.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0003-fix-time_nsec-defs.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0004-add-missing-telldir-seekdir.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0005-add-missing-sigorset.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0006-fix-sem.h-location.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0007-fix-syscalls.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0008-fix-struct-member-conflicts.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0009-disable-glob.h-include.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0010-add-missing-arch_prctl.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0011-mmap_min_addr-fallback.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0012-force-ucs2-little-endian.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0013-9pfs-dont-chmod-mapfile.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0014-disable-signalfd.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0015-workaround-android-ndk-patch.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0017-shm_open.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0018-libnfs-fix.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0019-no-timespec_get.patch",
+      "https://github.com/termux/termux-packages/blob/186fa701cc/packages/qemu-system-x86-64-headless/0020-mlock2-use-syscall.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0000-android-config-support.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0001-fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0002-fix-soundcard.h-location.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0003-fix-time_nsec-defs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0004-add-missing-telldir-seekdir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0005-add-missing-sigorset.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0006-fix-sem.h-location.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0007-fix-syscalls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0008-fix-struct-member-conflicts.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0009-disable-glob.h-include.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0010-add-missing-arch_prctl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0011-mmap_min_addr-fallback.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0012-force-ucs2-little-endian.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0013-9pfs-dont-chmod-mapfile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0014-disable-signalfd.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0015-workaround-android-ndk-patch.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0017-shm_open.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0018-libnfs-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/packages/qemu-system-x86-64-headless/0019-no-timespec_get.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0000-android-config-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0001-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0002-fix-soundcard.h-location.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0003-fix-time_nsec-defs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0004-add-missing-telldir-seekdir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0005-add-missing-sigorset.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0006-fix-sem.h-location.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0007-fix-syscalls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0008-fix-struct-member-conflicts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0009-disable-glob.h-include.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0010-add-missing-arch_prctl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0011-mmap_min_addr-fallback.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0012-force-ucs2-little-endian.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0013-9pfs-dont-chmod-mapfile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0014-disable-signalfd.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0015-workaround-android-ndk-patch.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0017-shm_open.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0018-libnfs-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0019-no-timespec_get.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/186fa701cc/packages/qemu-system-x86-64-headless/0020-mlock2-use-syscall.patch"
     ],
     "auto_updated": false
   },
@@ -40109,26 +40133,26 @@
     ],
     "srcurl": "https://github.com/Dadoum/Sideloader/archive/ed89e287ec64d39f09cacc1d1903b8a5af074201.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/036f3e5f56/packages/sideloader",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a8772fe3d1/packages/sideloader",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
-      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
-      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
-      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
-      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
-      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
-      "https://github.com/termux/termux-packages/blob/036f3e5f56/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
+      "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
+      "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
+      "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
+      "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
+      "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
+      "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
+      "https://github.com/termux/termux-packages/blob/a8772fe3d1/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/036f3e5f56/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/0001-Sideloader-Downgrade-some-syntax.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/0002-Sideloader-Remove-glibc-getpass-call.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/0003-Sideloader-Bump-botan-to-master.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/0004-Sideloader-Vendorize-Provision-and-plist-d.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/0005-Sideloader-Add-filename-for-termux-libimobiledevice-.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/Provision-Remove-glibc-backtrace-call.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/a8772fe3d1/packages/sideloader/plist-d-Add-filename-for-termux-libplist-2.0.so.diff"
     ],
     "auto_updated": false
   },
@@ -42405,22 +42429,22 @@
   },
   {
     "name": "task-spooler",
-    "version": "1:1.0.3",
+    "version": "1:1.0.4",
     "description": "Task spooler is a Unix batch system where the tasks spooled run one after the other",
     "homepage": "https://vicerveza.homeunix.net/~viric/soft/ts/",
     "depends": [],
-    "srcurl": "https://vicerveza.homeunix.net/~viric/soft/ts/ts-1.0.3.tar.gz",
+    "srcurl": "https://vicerveza.homeunix.net/~viric/soft/ts/ts-1.0.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/66ddcb7d39/packages/task-spooler",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/66ddcb7d39/packages/task-spooler/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/66ddcb7d39/packages/task-spooler/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/796fa32f96/packages/task-spooler",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/796fa32f96/packages/task-spooler/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/796fa32f96/packages/task-spooler/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/66ddcb7d39/packages/task-spooler/fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/66ddcb7d39/packages/task-spooler/tsp.patch"
+      "https://github.com/termux/termux-packages/blob/796fa32f96/packages/task-spooler/fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/796fa32f96/packages/task-spooler/tsp.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/66ddcb7d39/packages/task-spooler/fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/66ddcb7d39/packages/task-spooler/tsp.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/796fa32f96/packages/task-spooler/fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/796fa32f96/packages/task-spooler/tsp.patch"
     ],
     "auto_updated": false
   },
@@ -45611,18 +45635,18 @@
     ],
     "srcurl": "git+https://github.com/libimobiledevice/usbmuxd",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4693269611/packages/usbmuxd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4693269611/packages/usbmuxd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4693269611/packages/usbmuxd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c9edd5a550/packages/usbmuxd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c9edd5a550/packages/usbmuxd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c9edd5a550/packages/usbmuxd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4693269611/packages/usbmuxd/src-conf.c.patch",
-      "https://github.com/termux/termux-packages/blob/4693269611/packages/usbmuxd/src-main.c.patch",
-      "https://github.com/termux/termux-packages/blob/4693269611/packages/usbmuxd/src-usbmuxd-proto.h.patch"
+      "https://github.com/termux/termux-packages/blob/c9edd5a550/packages/usbmuxd/src-conf.c.patch",
+      "https://github.com/termux/termux-packages/blob/c9edd5a550/packages/usbmuxd/src-main.c.patch",
+      "https://github.com/termux/termux-packages/blob/c9edd5a550/packages/usbmuxd/src-usbmuxd-proto.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4693269611/packages/usbmuxd/src-conf.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4693269611/packages/usbmuxd/src-main.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4693269611/packages/usbmuxd/src-usbmuxd-proto.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c9edd5a550/packages/usbmuxd/src-conf.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c9edd5a550/packages/usbmuxd/src-main.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c9edd5a550/packages/usbmuxd/src-usbmuxd-proto.h.patch"
     ],
     "auto_updated": true
   },
@@ -46206,26 +46230,28 @@
     ],
     "srcurl": "https://github.com/vim/vim/archive/refs/tags/v9.2.1150.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/963116d3f2/packages/vim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e3651c954f/packages/vim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
-      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/fix-writing-archive.patch",
-      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/revert-1fe0d1e.patch",
-      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/963116d3f2/packages/vim/vimtutor.patch"
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/fix-writing-archive.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/path-option.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/revert-1fe0d1e.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/packages/vim/vimtutor.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/fix-writing-archive.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/revert-1fe0d1e.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/963116d3f2/packages/vim/vimtutor.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/fix-writing-archive.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/path-option.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/revert-1fe0d1e.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/packages/vim/vimtutor.patch"
     ],
     "auto_updated": true
   },
@@ -47123,15 +47149,15 @@
   },
   {
     "name": "webtunnel",
-    "version": "0.0.5",
+    "version": "0.0.7",
     "description": "Pluggable Transport based on HTTP Upgrade(HTTPT)",
     "homepage": "https://torproject.org/",
     "depends": [],
-    "srcurl": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/-/archive/v0.0.5/webtunnel-v0.0.5.tar.bz2",
+    "srcurl": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/-/archive/v0.0.7/webtunnel-v0.0.7.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9962045ecb/packages/webtunnel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9962045ecb/packages/webtunnel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9962045ecb/packages/webtunnel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dfff679a86/packages/webtunnel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dfff679a86/packages/webtunnel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dfff679a86/packages/webtunnel/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -48196,7 +48222,7 @@
   },
   {
     "name": "yuma123",
-    "version": "2.13",
+    "version": "2.14",
     "description": "Provides an opensource YANG API in C",
     "homepage": "https://yuma123.org/",
     "depends": [
@@ -48205,54 +48231,56 @@
       "openssl",
       "readline"
     ],
-    "srcurl": "https://downloads.sourceforge.net/yuma123/yuma123_2.13.tar.gz",
+    "srcurl": "https://downloads.sourceforge.net/yuma123/yuma123_2.14.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7d6c0d056a/packages/yuma123",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3f8ba6042b/packages/yuma123",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-man-netconf-subsystem.1.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-man-netconfd.1.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-man-yangcli.1.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-man-yangdiff.1.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-man-yangdump.1.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-Makefile.am.patch32",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-agt-agt.h.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-agt-agt_ncxserver.h.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-mgr-mgr_ses.c.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-ncx-ncxconst.h.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-ncx-ncxmod.c.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-ncx-ncxmod.h.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-ncx-val.c.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-ncx-yangconst.h.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-subsys-netconf-subsystem.c.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-yangcli-yangcli.h.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-yangdiff-yangdiff.h.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-yangrpc-example-yangrpc-example.c.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-yangrpc-example-yangrpc-parse-example.c.patch",
-      "https://github.com/termux/termux-packages/blob/7d6c0d056a/packages/yuma123/netconf-src-ydump-yangdump.h.patch"
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/example-modules-ietf-interfaces-ietf-interfaces.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-man-netconf-subsystem.1.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-man-netconfd.1.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-man-yangcli.1.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-man-yangdiff.1.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-man-yangdump.1.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-Makefile.am.patch32",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-agt-agt.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-agt-agt_ncxserver.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-mgr-mgr_ses.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-ncx-ncxconst.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-ncx-ncxmod.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-ncx-ncxmod.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-ncx-val.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-ncx-yangconst.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-subsys-netconf-subsystem.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-yangcli-yangcli.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-yangdiff-yangdiff.h.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-yangrpc-example-yangrpc-example.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-yangrpc-example-yangrpc-parse-example.c.patch",
+      "https://github.com/termux/termux-packages/blob/3f8ba6042b/packages/yuma123/netconf-src-ydump-yangdump.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-man-netconf-subsystem.1.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-man-netconfd.1.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-man-yangcli.1.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-man-yangdiff.1.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-man-yangdump.1.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-Makefile.am.patch32",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-agt-agt.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-agt-agt_ncxserver.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-mgr-mgr_ses.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-ncx-ncxconst.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-ncx-ncxmod.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-ncx-ncxmod.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-ncx-val.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-ncx-yangconst.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-subsys-netconf-subsystem.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-yangcli-yangcli.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-yangdiff-yangdiff.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-yangrpc-example-yangrpc-example.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-yangrpc-example-yangrpc-parse-example.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7d6c0d056a/packages/yuma123/netconf-src-ydump-yangdump.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/example-modules-ietf-interfaces-ietf-interfaces.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-man-netconf-subsystem.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-man-netconfd.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-man-yangcli.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-man-yangdiff.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-man-yangdump.1.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-Makefile.am.patch32",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-agt-agt.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-agt-agt_ncxserver.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-mgr-mgr_ses.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-ncx-ncxconst.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-ncx-ncxmod.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-ncx-ncxmod.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-ncx-val.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-ncx-yangconst.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-subsys-netconf-subsystem.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-yangcli-yangcli.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-yangdiff-yangdiff.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-yangrpc-example-yangrpc-example.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-yangrpc-example-yangrpc-parse-example.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/3f8ba6042b/packages/yuma123/netconf-src-ydump-yangdump.h.patch"
     ],
     "auto_updated": false
   },
@@ -48319,7 +48347,7 @@
   },
   {
     "name": "zbar",
-    "version": "0.23.93",
+    "version": "0.23.94",
     "description": "Software suite for reading bar codes from various sources",
     "homepage": "https://github.com/mchehab/zbar",
     "depends": [
@@ -48327,17 +48355,13 @@
       "libiconv",
       "libjpeg-turbo"
     ],
-    "srcurl": "https://github.com/mchehab/zbar/archive/refs/tags/0.23.93.tar.gz",
+    "srcurl": "https://github.com/mchehab/zbar/archive/refs/tags/0.23.94.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/22603e44c9/packages/zbar",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/22603e44c9/packages/zbar/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/22603e44c9/packages/zbar/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/22603e44c9/packages/zbar/java-Makefile.am.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/22603e44c9/packages/zbar/java-Makefile.am.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/81f8cd9fc6/packages/zbar",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/81f8cd9fc6/packages/zbar/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/81f8cd9fc6/packages/zbar/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -53050,7 +53074,7 @@
   },
   {
     "name": "chromium",
-    "version": "154.0.8037.97",
+    "version": "155.0.8059.39",
     "description": "Chromium web browser",
     "homepage": "https://www.chromium.org/Home",
     "depends": [
@@ -53073,24 +53097,24 @@
       "pulseaudio",
       "zlib"
     ],
-    "srcurl": "https://github.com/chromium-linux-tarballs/chromium-tarballs/releases/download/154.0.8037.97/chromium-154.0.8037.97-linux.tar.xz",
+    "srcurl": "https://github.com/chromium-linux-tarballs/chromium-tarballs/releases/download/155.0.8059.39/chromium-155.0.8059.39-linux.tar.xz",
     "maintainer": "@licy183",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/70a514983a/x11-packages/chromium",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/70a514983a/x11-packages/chromium/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/70a514983a/x11-packages/chromium/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c6c4aa6e73/x11-packages/chromium",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c6c4aa6e73/x11-packages/chromium/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c6c4aa6e73/x11-packages/chromium/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/70a514983a/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
-      "https://github.com/termux/termux-packages/blob/70a514983a/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
-      "https://github.com/termux/termux-packages/blob/70a514983a/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
-      "https://github.com/termux/termux-packages/blob/70a514983a/x11-packages/chromium/9004-use-prebuilt-pdfium.patch",
-      "https://github.com/termux/termux-packages/blob/70a514983a/x11-packages/chromium/9999-sysroot-disable-target-check.diff"
+      "https://github.com/termux/termux-packages/blob/c6c4aa6e73/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
+      "https://github.com/termux/termux-packages/blob/c6c4aa6e73/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
+      "https://github.com/termux/termux-packages/blob/c6c4aa6e73/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
+      "https://github.com/termux/termux-packages/blob/c6c4aa6e73/x11-packages/chromium/9004-use-prebuilt-pdfium.patch",
+      "https://github.com/termux/termux-packages/blob/c6c4aa6e73/x11-packages/chromium/9999-sysroot-disable-target-check.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/70a514983a/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/70a514983a/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/70a514983a/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/70a514983a/x11-packages/chromium/9004-use-prebuilt-pdfium.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/70a514983a/x11-packages/chromium/9999-sysroot-disable-target-check.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/c6c4aa6e73/x11-packages/chromium/9001-use-prebuilt-snapshot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6c4aa6e73/x11-packages/chromium/9002-use-prebuilt-cross-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6c4aa6e73/x11-packages/chromium/9003-v8-use-prebuilt-cross-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6c4aa6e73/x11-packages/chromium/9004-use-prebuilt-pdfium.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c6c4aa6e73/x11-packages/chromium/9999-sysroot-disable-target-check.diff"
     ],
     "auto_updated": false
   },
@@ -61591,14 +61615,14 @@
     ],
     "srcurl": "https://download.kde.org/stable/frameworks/6.31/solid-6.31.0.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/1c028c6dd3/x11-packages/kf6-solid",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1c028c6dd3/x11-packages/kf6-solid/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1c028c6dd3/x11-packages/kf6-solid/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/79cd912ae9/x11-packages/kf6-solid",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/79cd912ae9/x11-packages/kf6-solid/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/79cd912ae9/x11-packages/kf6-solid/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/1c028c6dd3/x11-packages/kf6-solid/use-sessionbus.patch"
+      "https://github.com/termux/termux-packages/blob/79cd912ae9/x11-packages/kf6-solid/use-sessionbus.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/1c028c6dd3/x11-packages/kf6-solid/use-sessionbus.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/79cd912ae9/x11-packages/kf6-solid/use-sessionbus.patch"
     ],
     "auto_updated": true
   },
@@ -62171,9 +62195,9 @@
     ],
     "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kio-extras-26.08.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/462352e63c/x11-packages/kio-extras",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/462352e63c/x11-packages/kio-extras/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/462352e63c/x11-packages/kio-extras/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/76ca494ce8/x11-packages/kio-extras",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/76ca494ce8/x11-packages/kio-extras/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/76ca494ce8/x11-packages/kio-extras/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63733,7 +63757,7 @@
   },
   {
     "name": "kstars",
-    "version": "3.8.3",
+    "version": "3.8.5",
     "description": "KStars cross-platform Astronomy Software by KDE.",
     "homepage": "https://invent.kde.org/education/kstars",
     "depends": [
@@ -63766,11 +63790,11 @@
       "wcslib",
       "xplanet"
     ],
-    "srcurl": "https://invent.kde.org/education/kstars/-/archive/stable-3.8.3/kstars-stable-3.8.3.tar.gz",
+    "srcurl": "https://invent.kde.org/education/kstars/-/archive/stable-3.8.5/kstars-stable-3.8.5.tar.gz",
     "maintainer": "3ls-it <3ls-it@pm.me>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d5114ac75/x11-packages/kstars",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d5114ac75/x11-packages/kstars/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d5114ac75/x11-packages/kstars/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b51ee964cc/x11-packages/kstars",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b51ee964cc/x11-packages/kstars/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b51ee964cc/x11-packages/kstars/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -72260,7 +72284,7 @@
   },
   {
     "name": "qemu-system-x86-64",
-    "version": "1:11.0.3",
+    "version": "1:11.1.2",
     "description": "A generic and open source machine emulator and virtualizer",
     "homepage": "https://www.qemu.org",
     "depends": [
@@ -72301,54 +72325,56 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://download.qemu.org/qemu-11.0.3.tar.xz",
+    "srcurl": "https://download.qemu.org/qemu-11.1.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a30684d56/x11-packages/qemu-system-x86-64",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c7844bcc37/x11-packages/qemu-system-x86-64",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0000-android-config-support.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0017-shm_open.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch",
-      "https://github.com/termux/termux-packages/blob/7a30684d56/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch"
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0000-android-config-support.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0017-shm_open.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch",
+      "https://github.com/termux/termux-packages/blob/c7844bcc37/x11-packages/qemu-system-x86-64/0020-mlock2-use-syscall.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0000-android-config-support.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0017-shm_open.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7a30684d56/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0000-android-config-support.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0001-fix-hardcoded-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0002-fix-soundcard.h-location.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0003-fix-time_nsec-defs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0004-add-missing-telldir-seekdir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0005-add-missing-sigorset.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0006-fix-sem.h-location.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0007-fix-syscalls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0008-fix-struct-member-conflicts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0009-disable-glob.h-include.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0010-add-missing-arch_prctl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0011-mmap_min_addr-fallback.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0012-force-ucs2-little-endian.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0013-9pfs-dont-chmod-mapfile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0014-disable-signalfd.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0015-workaround-android-ndk-patch.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0016-Add-workaround-for-tagged-pointers-on-Android-12.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0017-shm_open.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0018-libnfs-fix.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0019-no-timespec_get.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c7844bcc37/x11-packages/qemu-system-x86-64/0020-mlock2-use-syscall.patch"
     ],
     "auto_updated": false
   },
@@ -75473,7 +75499,7 @@
   },
   {
     "name": "telegram-desktop",
-    "version": "7.3.0",
+    "version": "7.3.1",
     "description": "Telegram Desktop Client",
     "homepage": "https://desktop.telegram.org/",
     "depends": [
@@ -75513,30 +75539,30 @@
       "xxhash",
       "zlib"
     ],
-    "srcurl": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.0/tdesktop-7.3.0-full.tar.gz",
+    "srcurl": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.1/tdesktop-7.3.1-full.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a986eeaab0/x11-packages/telegram-desktop",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bbe5c64d8/x11-packages/telegram-desktop",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch",
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0008-disable-fido2.patch",
-      "https://github.com/termux/termux-packages/blob/a986eeaab0/x11-packages/telegram-desktop/0009-fix-cppgir-webview.patch"
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch",
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0008-disable-fido2.patch",
+      "https://github.com/termux/termux-packages/blob/0bbe5c64d8/x11-packages/telegram-desktop/0009-fix-cppgir-webview.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0008-disable-fido2.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a986eeaab0/x11-packages/telegram-desktop/0009-fix-cppgir-webview.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0001-use-prebuilt-cppgir.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0003-cppgir-namespace.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0004-libtd-no-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0005-libtg_owt-absl-20250814.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0006-rcc-invalid-token-parser.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0007-libxcb-no-versioned-soname.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0008-disable-fido2.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0bbe5c64d8/x11-packages/telegram-desktop/0009-fix-cppgir-webview.patch"
     ],
     "auto_updated": true
   },
@@ -76486,26 +76512,28 @@
     ],
     "srcurl": "https://github.com/vim/vim/archive/refs/tags/v9.2.1150.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a7d20c5789/x11-packages/vim-gtk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e3651c954f/x11-packages/vim-gtk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff",
-      "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/fix-writing-archive.patch",
-      "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/option.c.patch",
-      "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/revert-1fe0d1e.patch",
-      "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
-      "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/src-os_unix.h.patch",
-      "https://github.com/termux/termux-packages/blob/a7d20c5789/x11-packages/vim-gtk/vimtutor.patch"
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/fix-writing-archive.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/option.c.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/path-option.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/revert-1fe0d1e.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/src-os_unix.h.patch",
+      "https://github.com/termux/termux-packages/blob/e3651c954f/x11-packages/vim-gtk/vimtutor.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/fix-writing-archive.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/option.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/revert-1fe0d1e.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/src-os_unix.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/a7d20c5789/x11-packages/vim-gtk/vimtutor.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/configure-perl-ruby-tcl-cross-compiling.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/fix-writing-archive.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/option.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/path-option.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/revert-1fe0d1e.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/runtime-syntax-sh.vim.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/src-os_unix.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e3651c954f/x11-packages/vim-gtk/vimtutor.patch"
     ],
     "auto_updated": true
   },
