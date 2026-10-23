@@ -2357,6 +2357,7 @@
     "description": "Correct, reproducible, and fast builds for everyone",
     "homepage": "https://bazel.build/",
     "depends": [
+      "ca-certificates",
       "libarchive",
       "openjdk-21",
       "patch",
@@ -2365,60 +2366,60 @@
     ],
     "srcurl": "https://github.com/bazelbuild/bazel/releases/download/9.3.1/bazel-9.3.1-dist.zip",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ae715c5e8/packages/bazel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/edb4332629/packages/bazel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0001-strerror_r.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0002-impl-wait3.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0003-disable-sandbox.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0004-spawn.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0005-bazelrc-path.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0006-force-use-external-patch_tools.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0007-import-termux-patches.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0008-run-elf-cleaner-for-bundled-tools.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0009-compile-cpu_profiler-with-fPIC.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0010-disable-network-usage-monitor.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0011-fix-patches-import.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/0101-import-termux-cross-deps.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/absl.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/cares-config.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/cares.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/grpc.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/protobuf.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/rules_cc.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/z-absl.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/z-cares-config.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/z-cares.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/z-grpc.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/z-protobuf.patch",
-      "https://github.com/termux/termux-packages/blob/7ae715c5e8/packages/bazel/dep-patches/z-rules_cc.patch"
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0001-strerror_r.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0002-impl-wait3.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0003-disable-sandbox.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0004-spawn.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0005-bazelrc-path.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0006-force-use-external-patch_tools.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0007-import-termux-patches.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0008-run-elf-cleaner-for-bundled-tools.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0009-compile-cpu_profiler-with-fPIC.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0010-disable-network-usage-monitor.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0011-fix-patches-import.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/0101-import-termux-cross-deps.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/absl.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/cares-config.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/cares.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/grpc.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/protobuf.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/rules_cc.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/z-absl.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/z-cares-config.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/z-cares.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/z-grpc.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/z-protobuf.patch",
+      "https://github.com/termux/termux-packages/blob/edb4332629/packages/bazel/dep-patches/z-rules_cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0001-strerror_r.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0002-impl-wait3.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0003-disable-sandbox.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0004-spawn.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0005-bazelrc-path.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0006-force-use-external-patch_tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0007-import-termux-patches.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0008-run-elf-cleaner-for-bundled-tools.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0009-compile-cpu_profiler-with-fPIC.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0010-disable-network-usage-monitor.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0011-fix-patches-import.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/0101-import-termux-cross-deps.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/absl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/cares-config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/cares.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/grpc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/protobuf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/rules_cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/z-absl.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/z-cares-config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/z-cares.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/z-grpc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/z-protobuf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ae715c5e8/packages/bazel/dep-patches/z-rules_cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0001-strerror_r.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0002-impl-wait3.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0003-disable-sandbox.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0004-spawn.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0005-bazelrc-path.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0006-force-use-external-patch_tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0007-import-termux-patches.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0008-run-elf-cleaner-for-bundled-tools.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0009-compile-cpu_profiler-with-fPIC.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0010-disable-network-usage-monitor.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0011-fix-patches-import.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/0101-import-termux-cross-deps.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/absl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/cares-config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/cares.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/grpc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/protobuf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/rules_cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/z-absl.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/z-cares-config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/z-cares.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/z-grpc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/z-protobuf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/edb4332629/packages/bazel/dep-patches/z-rules_cc.patch"
     ],
     "auto_updated": true
   },
@@ -9878,22 +9879,22 @@
   },
   {
     "name": "fselect",
-    "version": "0.10.3",
+    "version": "0.10.4",
     "description": "Find files with SQL-like queries",
     "homepage": "https://fselect.rocks/",
     "depends": [
       "zlib"
     ],
-    "srcurl": "https://github.com/jhspetersson/fselect/archive/refs/tags/0.10.3.tar.gz",
+    "srcurl": "https://github.com/jhspetersson/fselect/archive/refs/tags/0.10.4.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2452998552/packages/fselect",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2452998552/packages/fselect/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2452998552/packages/fselect/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/60ee5c0ca1/packages/fselect",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/60ee5c0ca1/packages/fselect/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/60ee5c0ca1/packages/fselect/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2452998552/packages/fselect/libmimalloc-sys-tls.diff"
+      "https://github.com/termux/termux-packages/blob/60ee5c0ca1/packages/fselect/libmimalloc-sys-tls.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2452998552/packages/fselect/libmimalloc-sys-tls.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/60ee5c0ca1/packages/fselect/libmimalloc-sys-tls.diff"
     ],
     "auto_updated": true
   },
@@ -10554,15 +10555,15 @@
   },
   {
     "name": "geth",
-    "version": "1.17.9",
+    "version": "1.17.10",
     "description": "Go implementation of the Ethereum protocol",
     "homepage": "https://geth.ethereum.org/",
     "depends": [],
-    "srcurl": "https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.17.9.tar.gz",
+    "srcurl": "https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.17.10.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/68905d2c07/packages/geth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/68905d2c07/packages/geth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/68905d2c07/packages/geth/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ba9d10d7cd/packages/geth",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ba9d10d7cd/packages/geth/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ba9d10d7cd/packages/geth/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12297,15 +12298,15 @@
   },
   {
     "name": "gosec",
-    "version": "2.29.0",
+    "version": "2.30.0",
     "description": "Golang security checker",
     "homepage": "https://github.com/securego/gosec",
     "depends": [],
-    "srcurl": "https://github.com/securego/gosec/archive/refs/tags/v2.29.0.tar.gz",
+    "srcurl": "https://github.com/securego/gosec/archive/refs/tags/v2.30.0.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a45b6a4948/packages/gosec",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a45b6a4948/packages/gosec/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a45b6a4948/packages/gosec/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/574c1981bb/packages/gosec",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/574c1981bb/packages/gosec/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/574c1981bb/packages/gosec/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13676,23 +13677,23 @@
   },
   {
     "name": "hk",
-    "version": "2.8.0",
+    "version": "2.8.1",
     "description": "A tool for managing git hooks",
     "homepage": "https://hk.jdx.dev/",
     "depends": [
       "git",
       "zlib"
     ],
-    "srcurl": "https://github.com/jdx/hk/archive/refs/tags/v2.8.0.tar.gz",
+    "srcurl": "https://github.com/jdx/hk/archive/refs/tags/v2.8.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/47e8c2857e/packages/hk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/47e8c2857e/packages/hk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/47e8c2857e/packages/hk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/02ed25509c/packages/hk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02ed25509c/packages/hk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02ed25509c/packages/hk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/47e8c2857e/packages/hk/aws-lc-sys.diff"
+      "https://github.com/termux/termux-packages/blob/02ed25509c/packages/hk/aws-lc-sys.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/47e8c2857e/packages/hk/aws-lc-sys.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/02ed25509c/packages/hk/aws-lc-sys.diff"
     ],
     "auto_updated": true
   },
@@ -19256,20 +19257,20 @@
     ],
     "srcurl": "git+https://github.com/grpc/grpc",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9307ad900c/packages/libgrpc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9307ad900c/packages/libgrpc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9307ad900c/packages/libgrpc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6a2c4f6758/packages/libgrpc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6a2c4f6758/packages/libgrpc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6a2c4f6758/packages/libgrpc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9307ad900c/packages/libgrpc/CMakeLists.txt.patch",
-      "https://github.com/termux/termux-packages/blob/9307ad900c/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9307ad900c/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://github.com/termux/termux-packages/blob/9307ad900c/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://github.com/termux/termux-packages/blob/6a2c4f6758/packages/libgrpc/CMakeLists.txt.patch",
+      "https://github.com/termux/termux-packages/blob/6a2c4f6758/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://github.com/termux/termux-packages/blob/6a2c4f6758/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://github.com/termux/termux-packages/blob/6a2c4f6758/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9307ad900c/packages/libgrpc/CMakeLists.txt.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9307ad900c/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9307ad900c/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9307ad900c/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6a2c4f6758/packages/libgrpc/CMakeLists.txt.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6a2c4f6758/packages/libgrpc/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6a2c4f6758/packages/libgrpc/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6a2c4f6758/packages/libgrpc/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "auto_updated": true
   },
@@ -26895,7 +26896,7 @@
   },
   {
     "name": "lux-cli",
-    "version": "0.48.0",
+    "version": "0.49.0",
     "description": "A package manager for Lua, similar to luarocks",
     "homepage": "https://lux.lumen-labs.org",
     "depends": [
@@ -26907,11 +26908,11 @@
       "openssl",
       "xz-utils"
     ],
-    "srcurl": "https://github.com/lumen-oss/lux/archive/refs/tags/v0.48.0.tar.gz",
+    "srcurl": "https://github.com/lumen-oss/lux/archive/refs/tags/v0.49.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/357a2c89f8/packages/lux-cli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/357a2c89f8/packages/lux-cli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/357a2c89f8/packages/lux-cli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2edb23ded5/packages/lux-cli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2edb23ded5/packages/lux-cli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2edb23ded5/packages/lux-cli/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -28766,33 +28767,33 @@
   },
   {
     "name": "mise",
-    "version": "2026.10.17",
+    "version": "2026.10.18",
     "description": "dev tools, env vars, task runner",
     "homepage": "https://mise.jdx.dev/",
     "depends": [
       "bzip2",
       "openssl"
     ],
-    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.10.17.tar.gz",
+    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.10.18.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa83c7501c/packages/mise",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa83c7501c/packages/mise/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa83c7501c/packages/mise/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d224445395/packages/mise",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d224445395/packages/mise/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d224445395/packages/mise/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/fa83c7501c/packages/mise/decmpfs-android-libc.diff",
-      "https://github.com/termux/termux-packages/blob/fa83c7501c/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/fa83c7501c/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/fa83c7501c/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/fa83c7501c/packages/mise/stat-mode-32-bit-android.patch",
-      "https://github.com/termux/termux-packages/blob/fa83c7501c/packages/mise/syncfs-not-on-android.patch"
+      "https://github.com/termux/termux-packages/blob/d224445395/packages/mise/decmpfs-android-libc.diff",
+      "https://github.com/termux/termux-packages/blob/d224445395/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/d224445395/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/d224445395/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/d224445395/packages/mise/stat-mode-32-bit-android.patch",
+      "https://github.com/termux/termux-packages/blob/d224445395/packages/mise/syncfs-not-on-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/fa83c7501c/packages/mise/decmpfs-android-libc.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/fa83c7501c/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/fa83c7501c/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/fa83c7501c/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/fa83c7501c/packages/mise/stat-mode-32-bit-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/fa83c7501c/packages/mise/syncfs-not-on-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/d224445395/packages/mise/decmpfs-android-libc.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d224445395/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d224445395/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d224445395/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/d224445395/packages/mise/stat-mode-32-bit-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/d224445395/packages/mise/syncfs-not-on-android.patch"
     ],
     "auto_updated": true
   },
@@ -35043,17 +35044,17 @@
   },
   {
     "name": "pocketbase",
-    "version": "0.40.5",
+    "version": "0.40.6",
     "description": "An open source Go backend",
     "homepage": "https://github.com/pocketbase/pocketbase",
     "depends": [
       "resolv-conf"
     ],
-    "srcurl": "https://github.com/pocketbase/pocketbase/archive/refs/tags/v0.40.5.tar.gz",
+    "srcurl": "https://github.com/pocketbase/pocketbase/archive/refs/tags/v0.40.6.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d2fd1bd116/packages/pocketbase",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d2fd1bd116/packages/pocketbase/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d2fd1bd116/packages/pocketbase/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e950f8171e/packages/pocketbase",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e950f8171e/packages/pocketbase/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e950f8171e/packages/pocketbase/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -36525,20 +36526,20 @@
     ],
     "srcurl": "git+https://github.com/grpc/grpc",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/97cd9c26ca/packages/python-grpcio",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/97cd9c26ca/packages/python-grpcio/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/97cd9c26ca/packages/python-grpcio/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/98aa0fc71a/packages/python-grpcio",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/98aa0fc71a/packages/python-grpcio/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/98aa0fc71a/packages/python-grpcio/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/97cd9c26ca/packages/python-grpcio/setup.py.patch",
-      "https://github.com/termux/termux-packages/blob/97cd9c26ca/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://github.com/termux/termux-packages/blob/97cd9c26ca/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://github.com/termux/termux-packages/blob/97cd9c26ca/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://github.com/termux/termux-packages/blob/98aa0fc71a/packages/python-grpcio/setup.py.patch",
+      "https://github.com/termux/termux-packages/blob/98aa0fc71a/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://github.com/termux/termux-packages/blob/98aa0fc71a/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://github.com/termux/termux-packages/blob/98aa0fc71a/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/97cd9c26ca/packages/python-grpcio/setup.py.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/97cd9c26ca/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/97cd9c26ca/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/97cd9c26ca/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/98aa0fc71a/packages/python-grpcio/setup.py.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98aa0fc71a/packages/python-grpcio/src-core-credentials-transport-tls-load_system_roots_supported.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98aa0fc71a/packages/python-grpcio/src-core-credentials-transport-tls-ssl_utils.cc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/98aa0fc71a/packages/python-grpcio/src-core-lib-gpr-tmpfile_posix.cc.patch"
     ],
     "auto_updated": true
   },
@@ -59932,7 +59933,7 @@
   },
   {
     "name": "kddockwidgets",
-    "version": "2.5.0",
+    "version": "2.5.1",
     "description": "Dock Widget Framework for Qt",
     "homepage": "https://github.com/KDAB/KDDockWidgets",
     "depends": [
@@ -59942,11 +59943,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://github.com/KDAB/KDDockWidgets/releases/download/v2.5.0/kddockwidgets-2.5.0.tar.gz",
+    "srcurl": "https://github.com/KDAB/KDDockWidgets/releases/download/v2.5.1/kddockwidgets-2.5.1.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/559fc75144/x11-packages/kddockwidgets",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/559fc75144/x11-packages/kddockwidgets/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/559fc75144/x11-packages/kddockwidgets/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8c421499d3/x11-packages/kddockwidgets",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8c421499d3/x11-packages/kddockwidgets/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8c421499d3/x11-packages/kddockwidgets/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -72830,23 +72831,23 @@
   },
   {
     "name": "python-xvfbwrapper",
-    "version": "0.2.35",
+    "version": "0.2.36",
     "description": "Python wrapper for controlling Xvfb virtual displays",
     "homepage": "https://github.com/cgoldberg/xvfbwrapper",
     "depends": [
       "python",
       "xorg-server-xvfb"
     ],
-    "srcurl": "https://files.pythonhosted.org/packages/source/x/xvfbwrapper/xvfbwrapper-0.2.35.tar.gz",
+    "srcurl": "https://files.pythonhosted.org/packages/source/x/xvfbwrapper/xvfbwrapper-0.2.36.tar.gz",
     "maintainer": "termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/027a11a60d/x11-packages/python-xvfbwrapper",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/027a11a60d/x11-packages/python-xvfbwrapper/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/027a11a60d/x11-packages/python-xvfbwrapper/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5435d89bae/x11-packages/python-xvfbwrapper",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5435d89bae/x11-packages/python-xvfbwrapper/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5435d89bae/x11-packages/python-xvfbwrapper/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/027a11a60d/x11-packages/python-xvfbwrapper/android-tmpdir.patch"
+      "https://github.com/termux/termux-packages/blob/5435d89bae/x11-packages/python-xvfbwrapper/android-tmpdir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/027a11a60d/x11-packages/python-xvfbwrapper/android-tmpdir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5435d89bae/x11-packages/python-xvfbwrapper/android-tmpdir.patch"
     ],
     "auto_updated": true
   },
