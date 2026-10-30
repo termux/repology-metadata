@@ -131,7 +131,7 @@ check_package() {
         #   Remove (optional) versioning, as in TERMUX_PKG_DEPENDS="libfoo (>= 1.0)"
         #   Only print first option in case of "or", as in TERMUX_PKG_DEPENDS="openssh | dropbear"
         #   Replace comma with space
-	print_json_array   "depends" "$(sed -e 's@([^)]*)@@g' -e 's@|[^,$]*@,@g' -e 's@,@\n@g' <<<$TERMUX_PKG_DEPENDS | \
+	print_json_array   "depends" "$(sed -e 's@([^)]*)@@g' -e 's@|[^,$]*@,@g' -e 's@ *, *@\n@g' <<<$TERMUX_PKG_DEPENDS | \
 		grep -Fvx "$exclude_pkgs" | xargs)"
 
 	if [ "$TERMUX_PKG_SRCURL" != "" ]; then
