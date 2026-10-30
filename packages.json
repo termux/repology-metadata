@@ -578,7 +578,6 @@
     "description": "The Advanced Linux Sound Architecture (ALSA) - library",
     "homepage": "https://www.alsa-project.org",
     "depends": [
-      "libandroid-sysv-semaphore",
       "libandroid-shmem"
     ],
     "srcurl": "https://github.com/alsa-project/alsa-lib/archive/refs/tags/v1.2.16.1.tar.gz",
@@ -602,7 +601,6 @@
     "description": "The Advanced Linux Sound Architecture (ALSA) - plugins",
     "homepage": "https://www.alsa-project.org",
     "depends": [
-      "libandroid-sysv-semaphore",
       "libandroid-shmem",
       "alsa-lib",
       "pulseaudio"
@@ -2044,9 +2042,7 @@
     "version": "2.11.0",
     "description": "Runs list of commands in parallel and waits for their termination",
     "homepage": "https://github.com/slavaGanzin/await",
-    "depends": [
-      "libandroid-spawn"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/slavaGanzin/await/archive/refs/tags/2.11.0.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/668418722a/packages/await",
@@ -2062,7 +2058,6 @@
     "description": "Universal Command Line Interface for Amazon Web Services",
     "homepage": "https://aws.amazon.com/cli",
     "depends": [
-      "libandroid-posix-semaphore",
       "libandroid-support",
       "mandoc"
     ],
@@ -2936,7 +2931,6 @@
     "description": "Open-source software for volunteer computing",
     "homepage": "https://boinc.berkeley.edu/",
     "depends": [
-      "libandroid-execinfo",
       "libandroid-shmem",
       "libc++",
       "libcurl",
@@ -3400,9 +3394,7 @@
     "version": "1.38.0",
     "description": "Tiny versions of many common UNIX utilities into a single small executable",
     "homepage": "https://busybox.net/",
-    "depends": [
-      "libandroid-selinux"
-    ],
+    "depends": [],
     "srcurl": "https://busybox.net/downloads/busybox-1.38.0.tar.bz2",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/b68a22c101/packages/busybox",
@@ -3905,9 +3897,7 @@
     "version": "0.95",
     "description": "Program which reads MS-Word file and prints readable ASCII text to stdout",
     "homepage": "http://www.wagner.pp.ru/~vitus/software/catdoc/",
-    "depends": [
-      "libandroid-glob"
-    ],
+    "depends": [],
     "srcurl": "http://ftp.wagner.pp.ru/pub/catdoc/catdoc-0.95.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/9e88c24a99/packages/catdoc",
@@ -4034,7 +4024,6 @@
     "homepage": "https://benkibbey.wordpress.com/cboard/",
     "depends": [
       "libandroid-support",
-      "libandroid-glob",
       "gnuchess",
       "ncurses",
       "ncurses-ui-libs"
@@ -4233,7 +4222,6 @@
     "description": "CFEngine is a configuration management technology",
     "homepage": "https://cfengine.com/",
     "depends": [
-      "libandroid-glob",
       "liblmdb",
       "librsync",
       "libxml2",
@@ -4243,16 +4231,16 @@
     ],
     "srcurl": "git+https://github.com/cfengine/core",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e091e24762/packages/cfengine",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e091e24762/packages/cfengine/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e091e24762/packages/cfengine/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a265a27bf7/packages/cfengine",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a265a27bf7/packages/cfengine/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a265a27bf7/packages/cfengine/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e091e24762/packages/cfengine/pthread_cancel.patch",
-      "https://github.com/termux/termux-packages/blob/e091e24762/packages/cfengine/termux-os-name-human.patch"
+      "https://github.com/termux/termux-packages/blob/a265a27bf7/packages/cfengine/pthread_cancel.patch",
+      "https://github.com/termux/termux-packages/blob/a265a27bf7/packages/cfengine/termux-os-name-human.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e091e24762/packages/cfengine/pthread_cancel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e091e24762/packages/cfengine/termux-os-name-human.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/a265a27bf7/packages/cfengine/pthread_cancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/a265a27bf7/packages/cfengine/termux-os-name-human.patch"
     ],
     "auto_updated": false
   },
@@ -4514,7 +4502,6 @@
     "description": "chrony is an implementation of the Network Time Protocol (NTP)",
     "homepage": "https://chrony-project.org/",
     "depends": [
-      "libandroid-glob",
       "libandroid-shmem",
       "libcap",
       "libgnutls",
@@ -5023,7 +5010,6 @@
     "description": "Last.fm standalone scrobbler for the cmus music player",
     "homepage": "https://github.com/Arkq/cmusfm",
     "depends": [
-      "libandroid-spawn",
       "libcurl",
       "openssl"
     ],
@@ -5339,7 +5325,6 @@
     "description": "Basic file, shell and text manipulation utilities from the GNU project",
     "homepage": "https://www.gnu.org/software/coreutils/",
     "depends": [
-      "libandroid-selinux",
       "libandroid-support",
       "libgmp",
       "libiconv",
@@ -5477,7 +5462,6 @@
     "description": "tool for static C/C++ code analysis",
     "homepage": "https://github.com/danmar/cppcheck",
     "depends": [
-      "libandroid-execinfo",
       "libc++"
     ],
     "srcurl": "https://github.com/danmar/cppcheck/archive/refs/tags/2.22.0.tar.gz",
@@ -5762,7 +5746,6 @@
     "description": "C Shell with process control from 3BSD",
     "homepage": "https://packages.debian.org/sid/csh",
     "depends": [
-      "libandroid-glob",
       "libbsd"
     ],
     "srcurl": "https://deb.debian.org/debian/pool/main/c/csh/csh_20110502.orig.tar.gz",
@@ -5857,7 +5840,6 @@
     "description": "A fast inference engine for Transformer models",
     "homepage": "https://github.com/OpenNMT/CTranslate2",
     "depends": [
-      "libandroid-posix-semaphore",
       "libopenblas",
       "libc++",
       "python"
@@ -6511,7 +6493,6 @@
     "description": "A modern runtime for JavaScript and TypeScript",
     "homepage": "https://deno.land/",
     "depends": [
-      "libandroid-stub",
       "libffi",
       "libsqlite",
       "zlib"
@@ -6767,9 +6748,7 @@
     "version": "5.5",
     "description": "Monitor of events in file system directories",
     "homepage": "https://www.gnu.org.ua/software/direvent/",
-    "depends": [
-      "libandroid-glob"
-    ],
+    "depends": [],
     "srcurl": "https://mirrors.kernel.org/gnu/direvent/direvent-5.5.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/23f1d91b6c/packages/direvent",
@@ -7594,7 +7573,6 @@
     "description": "Small SSH server and client",
     "homepage": "https://matt.ucc.asn.au/dropbear/dropbear.html",
     "depends": [
-      "termux-auth",
       "zlib"
     ],
     "srcurl": "https://matt.ucc.asn.au/dropbear/releases/dropbear-2026.94.tar.bz2",
@@ -8019,7 +7997,6 @@
     "description": "Line based editor, browser, and mail client",
     "homepage": "https://edbrowse.org/",
     "depends": [
-      "libandroid-glob",
       "libcurl",
       "openssl",
       "pcre2",
@@ -8153,7 +8130,6 @@
     "description": "Full-Featured Text WWW Browser",
     "homepage": "https://github.com/rkd77/elinks",
     "depends": [
-      "libandroid-execinfo",
       "libexpat",
       "libiconv",
       "libidn",
@@ -8331,7 +8307,7 @@
   },
   {
     "name": "enblend",
-    "version": "4.2.0p20161007",
+    "version": "4.2.0",
     "description": "A tool for compositing images using a Burt&Adelson multiresolution spline",
     "homepage": "https://enblend.sourceforge.net/",
     "depends": [
@@ -8344,9 +8320,9 @@
     ],
     "srcurl": "https://dev.gentoo.org/~soap/distfiles/enblend-4.2.0_p20161007.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/adc6ec5fd2/packages/enblend",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/adc6ec5fd2/packages/enblend/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/adc6ec5fd2/packages/enblend/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/55b9990e4a/packages/enblend",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55b9990e4a/packages/enblend/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55b9990e4a/packages/enblend/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -8542,7 +8518,6 @@
     "description": "A small scripting language, to be used with an exec chain",
     "homepage": "https://skarnet.org/software/execline/",
     "depends": [
-      "libandroid-glob",
       "skalibs"
     ],
     "srcurl": "https://skarnet.org/software/execline/execline-2.10.0.0.tar.gz",
@@ -8955,7 +8930,6 @@
     "description": "A program designed to fetch mail from POP3 or IMAP servers, or receive local mail from stdin, and deliver it in various ways",
     "homepage": "https://github.com/nicm/fdm",
     "depends": [
-      "libandroid-glob",
       "libtdb",
       "openssl",
       "pcre2",
@@ -9646,7 +9620,7 @@
   },
   {
     "name": "foundry",
-    "version": "1.8.5",
+    "version": "1.8.7",
     "description": "A blazing fast, portable and modular toolkit for Ethereum application development",
     "homepage": "https://github.com/foundry-rs/foundry",
     "depends": [
@@ -9660,26 +9634,26 @@
       "boost",
       "libc++"
     ],
-    "srcurl": "https://github.com/foundry-rs/foundry/archive/refs/tags/v1.8.5.tar.gz",
+    "srcurl": "https://github.com/foundry-rs/foundry/archive/refs/tags/v1.8.7.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f4e94b7dc/packages/foundry",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f4e94b7dc/packages/foundry/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f4e94b7dc/packages/foundry/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1f834b992b/packages/foundry",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1f834b992b/packages/foundry/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1f834b992b/packages/foundry/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5f4e94b7dc/packages/foundry/aws-lc-sys.diff",
-      "https://github.com/termux/termux-packages/blob/5f4e94b7dc/packages/foundry/fs_read_write_lock.patch",
-      "https://github.com/termux/termux-packages/blob/5f4e94b7dc/packages/foundry/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/5f4e94b7dc/packages/foundry/svm-rs-termux.diff",
-      "https://github.com/termux/termux-packages/blob/5f4e94b7dc/packages/foundry/waitpid-any-patch.diff"
+      "https://github.com/termux/termux-packages/blob/1f834b992b/packages/foundry/aws-lc-sys.diff",
+      "https://github.com/termux/termux-packages/blob/1f834b992b/packages/foundry/fs_read_write_lock.patch",
+      "https://github.com/termux/termux-packages/blob/1f834b992b/packages/foundry/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/1f834b992b/packages/foundry/svm-rs-termux.diff",
+      "https://github.com/termux/termux-packages/blob/1f834b992b/packages/foundry/waitpid-any-patch.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5f4e94b7dc/packages/foundry/aws-lc-sys.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/5f4e94b7dc/packages/foundry/fs_read_write_lock.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5f4e94b7dc/packages/foundry/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/5f4e94b7dc/packages/foundry/svm-rs-termux.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/5f4e94b7dc/packages/foundry/waitpid-any-patch.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/1f834b992b/packages/foundry/aws-lc-sys.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1f834b992b/packages/foundry/fs_read_write_lock.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/1f834b992b/packages/foundry/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1f834b992b/packages/foundry/svm-rs-termux.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/1f834b992b/packages/foundry/waitpid-any-patch.diff"
     ],
-    "auto_updated": false
+    "auto_updated": true
   },
   {
     "name": "freecell-solver",
@@ -12818,7 +12792,6 @@
     "description": "An embeddable fulltext search engine",
     "homepage": "https://github.com/groonga/groonga/",
     "depends": [
-      "libandroid-execinfo",
       "libarrow-cpp",
       "libc++",
       "liblz4",
@@ -13128,7 +13101,6 @@
     "description": "Portable, embeddable Scheme implementation written in C",
     "homepage": "http://www.gnu.org/software/guile/",
     "depends": [
-      "libandroid-spawn",
       "libandroid-support",
       "libffi",
       "libgc",
@@ -13745,7 +13717,6 @@
     "description": "hledger-ui - terminal interface (TUI) for hledger, a robust, friendly plain text accounting app.",
     "homepage": "https://hledger.org/",
     "depends": [
-      "libandroid-posix-semaphore",
       "libandroid-utimes",
       "libffi",
       "libiconv",
@@ -14816,7 +14787,6 @@
     "description": "Utilities for controlling networking",
     "homepage": "https://wiki.linuxfoundation.org/networking/iproute2",
     "depends": [
-      "libandroid-glob",
       "libandroid-support"
     ],
     "srcurl": "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/snapshot/iproute2-7.3.0.tar.gz",
@@ -16651,128 +16621,6 @@
     "auto_updated": true
   },
   {
-    "name": "libandroid-complex-math",
-    "version": "0.2",
-    "description": "A shared library providing libm complex math functions",
-    "homepage": "https://android.googlesource.com/platform/bionic/+/refs/heads/master/libm/upstream-netbsd/lib/libm/complex",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/706caf5e5e/packages/libandroid-complex-math",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/706caf5e5e/packages/libandroid-complex-math/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/706caf5e5e/packages/libandroid-complex-math/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-execinfo",
-    "version": "0.1",
-    "description": "Shared library for the backtrace system function",
-    "homepage": "https://man7.org/linux/man-pages/man3/backtrace.3.html",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c4ce823ce6/packages/libandroid-execinfo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c4ce823ce6/packages/libandroid-execinfo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c4ce823ce6/packages/libandroid-execinfo/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-glob",
-    "version": "0.6",
-    "description": "Shared library for the glob(3) system function",
-    "homepage": "https://man7.org/linux/man-pages/man3/glob.3.html",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ee7f26236a/packages/libandroid-glob",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ee7f26236a/packages/libandroid-glob/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ee7f26236a/packages/libandroid-glob/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-posix-semaphore",
-    "version": "0.1",
-    "description": "Shared library for the posix semaphore system function",
-    "homepage": "https://man7.org/linux/man-pages/man7/sem_overview.7.html",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/951b902e40/packages/libandroid-posix-semaphore",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/951b902e40/packages/libandroid-posix-semaphore/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/951b902e40/packages/libandroid-posix-semaphore/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-selinux",
-    "version": "14.0.0.11",
-    "description": "Android fork of libselinux, an SELinux userland library",
-    "homepage": "https://selinuxproject.org",
-    "depends": [
-      "pcre2"
-    ],
-    "srcurl": "https://android.googlesource.com/platform/external/selinux",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/951b902e40/packages/libandroid-selinux",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/951b902e40/packages/libandroid-selinux/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/951b902e40/packages/libandroid-selinux/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/951b902e40/packages/libandroid-selinux/termux-build.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/951b902e40/packages/libandroid-selinux/termux-build.patch"
-    ],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-shmem",
-    "version": "0.7",
-    "description": "System V shared memory emulation on Android using ashmem",
-    "homepage": "https://github.com/termux/libandroid-shmem",
-    "depends": [],
-    "srcurl": "https://github.com/termux/libandroid-shmem/archive/refs/tags/v0.7.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b25e257208/packages/libandroid-shmem",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b25e257208/packages/libandroid-shmem/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b25e257208/packages/libandroid-shmem/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-spawn",
-    "version": "0.3",
-    "description": "Shared library for the posix_spawn system function",
-    "homepage": "https://man7.org/linux/man-pages/man3/posix_spawn.3.html",
-    "depends": [
-      "libc++"
-    ],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/151a3ebdb6/packages/libandroid-spawn",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/151a3ebdb6/packages/libandroid-spawn/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/151a3ebdb6/packages/libandroid-spawn/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-stub",
-    "version": "30",
-    "description": "Stub libandroid.so for non-Android certified environment",
-    "homepage": "https://android.googlesource.com/platform/frameworks/base/+/main/native/android",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2a2e503d18/packages/libandroid-stub",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2a2e503d18/packages/libandroid-stub/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2a2e503d18/packages/libandroid-stub/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
     "name": "libandroid-support",
     "version": "29",
     "description": "Library extending the Android C library (Bionic) for additional multibyte, locale and math support",
@@ -16783,49 +16631,6 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/packages/libandroid-support",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/packages/libandroid-support/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/packages/libandroid-support/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-sysv-semaphore",
-    "version": "0.1",
-    "description": "A shared library providing System V semaphores",
-    "homepage": "https://android.googlesource.com/platform/bionic/+/refs/heads/master/libc/bionic/sys_sem.cpp",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a6de2da108/packages/libandroid-sysv-semaphore",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a6de2da108/packages/libandroid-sysv-semaphore/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a6de2da108/packages/libandroid-sysv-semaphore/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-utimes",
-    "version": "0.4",
-    "description": "futimes, futimesat and lutimes from bionic",
-    "homepage": "https://github.com/termux/libandroid-utimes",
-    "depends": [],
-    "srcurl": "https://github.com/termux/libandroid-utimes/archive/refs/tags/v0.4.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/db965dfd1d/packages/libandroid-utimes",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/db965dfd1d/packages/libandroid-utimes/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/db965dfd1d/packages/libandroid-utimes/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "libandroid-wordexp",
-    "version": "0.1",
-    "description": "Shared library for the wordexp(3) system function",
-    "homepage": "https://man7.org/linux/man-pages/man3/wordexp.3.html",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a6de2da108/packages/libandroid-wordexp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a6de2da108/packages/libandroid-wordexp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a6de2da108/packages/libandroid-wordexp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -19416,7 +19221,6 @@
     "description": "A library to support hangul input method logic",
     "homepage": "https://github.com/libhangul/libhangul",
     "depends": [
-      "libandroid-glob",
       "libexpat",
       "libiconv"
     ],
@@ -19909,9 +19713,7 @@
     "version": "1.42.1",
     "description": "Development library for Janet",
     "homepage": "https://janet-lang.org",
-    "depends": [
-      "libandroid-spawn"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/janet-lang/janet/archive/refs/tags/v1.42.1.tar.gz",
     "maintainer": "Komo @mbekkomo",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/0ef61b9c54/packages/libjanet",
@@ -20086,7 +19888,6 @@
     "description": "Implements a programming model in C++ for writing performance portable applications",
     "homepage": "https://github.com/kokkos",
     "depends": [
-      "libandroid-execinfo",
       "libc++"
     ],
     "srcurl": "https://github.com/kokkos/kokkos/archive/refs/tags/5.2.2.tar.gz",
@@ -22135,7 +21936,6 @@
     "description": "A comprehensive set of C++ libraries that cover all modern-day programming needs",
     "homepage": "https://pocoproject.org/",
     "depends": [
-      "libandroid-posix-semaphore",
       "libc++",
       "libexpat",
       "libsqlite",
@@ -22168,9 +21968,7 @@
     "version": "1.19",
     "description": "Library for parsing cmdline parameters",
     "homepage": "https://www.linuxfromscratch.org/blfs/view/svn/general/popt.html",
-    "depends": [
-      "libandroid-glob"
-    ],
+    "depends": [],
     "srcurl": "http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/65a2f9c815/packages/libpopt",
@@ -24022,7 +23820,6 @@
     "description": "Libtorrent BitTorrent library",
     "homepage": "https://github.com/rakshasa/rtorrent/wiki",
     "depends": [
-      "libandroid-spawn",
       "libc++",
       "libcurl",
       "openssl",
@@ -24107,9 +23904,7 @@
     "version": "3.1.1",
     "description": "Like ldd(1), but prints a tree(1) like output",
     "homepage": "https://github.com/haampie/libtree",
-    "depends": [
-      "libandroid-glob"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/haampie/libtree/archive/refs/tags/v3.1.1.tar.gz",
     "maintainer": "@flosnvjx",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/0e205af0ec/packages/libtree-ldd",
@@ -24129,7 +23924,6 @@
     "description": "An extensible toolkit for MPEG transport streams",
     "homepage": "https://tsduck.io/",
     "depends": [
-      "libandroid-glob",
       "libc++",
       "libcurl",
       "libedit"
@@ -24462,9 +24256,7 @@
     "version": "1.53.0",
     "description": "Support library with a focus on asynchronous I/O",
     "homepage": "https://libuv.org",
-    "depends": [
-      "libandroid-spawn"
-    ],
+    "depends": [],
     "srcurl": "https://dist.libuv.org/dist/v1.53.0/libuv-v1.53.0.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/3ecb35cf69/packages/libuv",
@@ -24486,7 +24278,6 @@
     "description": "Linux libraries to handle media devices",
     "homepage": "https://git.linuxtv.org/v4l-utils.git",
     "depends": [
-      "libandroid-execinfo",
       "libandroid-glob",
       "libjpeg-turbo"
     ],
@@ -24788,9 +24579,7 @@
     "version": "5.9.0",
     "description": "A completely open audio compression format providing lossless, high-quality lossy, and a unique hybrid compression mode",
     "homepage": "https://www.wavpack.com/",
-    "depends": [
-      "libandroid-glob"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/dbry/WavPack/releases/download/5.9.0/wavpack-5.9.0.tar.xz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/a23faa2b64/packages/libwavpack",
@@ -25100,7 +24889,6 @@
     "description": "H.265/HEVC video stream encoder library",
     "homepage": "https://www.x265.org/",
     "depends": [
-      "libandroid-posix-semaphore",
       "libc++"
     ],
     "srcurl": "https://github.com/Multicorewareinc/x265/releases/download/4.3/x265_4.3.tar.gz",
@@ -25394,7 +25182,6 @@
     "description": "Library for parsing XML documents",
     "homepage": "https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home",
     "depends": [
-      "libandroid-glob",
       "libiconv",
       "zlib"
     ],
@@ -25871,7 +25658,6 @@
     "description": "Fast webserver with minimal memory footprint",
     "homepage": "https://www.lighttpd.net",
     "depends": [
-      "libandroid-glob",
       "libandroid-spawn",
       "libbz2",
       "libcrypt",
@@ -26077,7 +25863,6 @@
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggml-org/llama.cpp",
     "depends": [
-      "libandroid-spawn",
       "libc++",
       "libcurl"
     ],
@@ -26171,7 +25956,6 @@
     "description": "An advanced log file viewer for the small-scale",
     "homepage": "https://lnav.org/",
     "depends": [
-      "libandroid-execinfo",
       "libandroid-glob",
       "libandroid-spawn",
       "libandroid-utimes",
@@ -26539,7 +26323,7 @@
   },
   {
     "name": "lua-lgi",
-    "version": "0.9.2+p20260728",
+    "version": "0.9.2",
     "description": "Dynamic Lua binding to GObject libraries using GObject-Introspection",
     "homepage": "https://github.com/lgi-devs/lgi",
     "depends": [
@@ -26551,9 +26335,9 @@
     ],
     "srcurl": "https://github.com/lgi-devs/lgi/archive/7a2276f9657a50ee548a636f2e646f96ec748bbd.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/80ef22195d/packages/lua-lgi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/80ef22195d/packages/lua-lgi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/80ef22195d/packages/lua-lgi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/3eb29ebbc0/packages/lua-lgi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/3eb29ebbc0/packages/lua-lgi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/3eb29ebbc0/packages/lua-lgi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -28465,7 +28249,6 @@
     "description": "An open-source implementation of the OpenGL specification",
     "homepage": "https://www.mesa3d.org",
     "depends": [
-      "libandroid-shmem",
       "libc++",
       "libdrm",
       "libglvnd",
@@ -28852,7 +28635,6 @@
     "description": "A medium-level constraint modelling language",
     "homepage": "https://github.com/MiniZinc/libminizinc",
     "depends": [
-      "libandroid-spawn",
       "libc++",
       "zlib",
       "gecode"
@@ -28972,20 +28754,20 @@
   },
   {
     "name": "mktorrent",
-    "version": "1.1-p20210130",
+    "version": "1.1",
     "description": "command line utility to create BitTorrent metainfo files",
     "homepage": "https://github.com/Rudde/mktorrent",
     "depends": [],
     "srcurl": "git+https://github.com/Rudde/mktorrent",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/da5c097f4f/packages/mktorrent",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/da5c097f4f/packages/mktorrent/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/da5c097f4f/packages/mktorrent/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f04bc4fca/packages/mktorrent",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f04bc4fca/packages/mktorrent/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f04bc4fca/packages/mktorrent/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/da5c097f4f/packages/mktorrent/seekdir_telldir.patch"
+      "https://github.com/termux/termux-packages/blob/2f04bc4fca/packages/mktorrent/seekdir_telldir.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/da5c097f4f/packages/mktorrent/seekdir_telldir.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2f04bc4fca/packages/mktorrent/seekdir_telldir.patch"
     ],
     "auto_updated": false
   },
@@ -29049,7 +28831,6 @@
     "description": "A high-performance database kernel for query-intensive applications",
     "homepage": "https://www.monetdb.org/",
     "depends": [
-      "libandroid-sysv-semaphore",
       "libbz2",
       "libcurl",
       "libiconv",
@@ -29103,7 +28884,6 @@
     "description": "Utility for managing and monitoring processes, programs, files, directories and filesystems",
     "homepage": "https://mmonit.com/monit/",
     "depends": [
-      "libandroid-glob",
       "libandroid-support",
       "zlib",
       "openssl",
@@ -29674,7 +29454,6 @@
     "description": "Lightweight implementation of the Ruby language",
     "homepage": "https://mruby.org/",
     "depends": [
-      "libandroid-complex-math",
       "readline"
     ],
     "srcurl": "https://github.com/mruby/mruby/archive/refs/tags/4.0.0.tar.gz",
@@ -29904,7 +29683,6 @@
     "description": "Tool to monitor logfiles and command output in multiple windows in a terminal, colorize, filter and merge",
     "homepage": "http://www.vanheusden.com/multitail/",
     "depends": [
-      "libandroid-glob",
       "ncurses",
       "ncurses-ui-libs"
     ],
@@ -30567,36 +30345,6 @@
     "auto_updated": false
   },
   {
-    "name": "ndk-multilib",
-    "version": "30",
-    "description": "Multilib binaries for cross-compilation",
-    "homepage": "https://developer.android.com/tools/sdk/ndk/index.html",
-    "depends": [],
-    "srcurl": "https://dl.google.com/android/repository/android-ndk-r30-linux.zip",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3326ca2d0/packages/ndk-multilib",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3326ca2d0/packages/ndk-multilib/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3326ca2d0/packages/ndk-multilib/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "ndk-sysroot",
-    "version": "30",
-    "description": "System header and library files from the Android NDK needed for compiling C programs",
-    "homepage": "https://developer.android.com/tools/sdk/ndk/index.html",
-    "depends": [],
-    "srcurl": "https://dl.google.com/android/repository/android-ndk-r30-linux.zip",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3326ca2d0/packages/ndk-sysroot",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3326ca2d0/packages/ndk-sysroot/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3326ca2d0/packages/ndk-sysroot/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
     "name": "ne",
     "version": "3.3.4",
     "description": "Easy-to-use and powerful text editor",
@@ -30620,24 +30368,24 @@
   },
   {
     "name": "nelua",
-    "version": "2024.01.13",
+    "version": "20240113",
     "description": "Minimal, efficient, statically-typed and meta-programmable systems programming language",
     "homepage": "https://nelua.io",
     "depends": [],
     "srcurl": "https://github.com/edubart/nelua-lang/archive/refs/tags/20240113.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/9ac8b86d8c/packages/nelua",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9ac8b86d8c/packages/nelua/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9ac8b86d8c/packages/nelua/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/93711da6f4/packages/nelua",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93711da6f4/packages/nelua/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93711da6f4/packages/nelua/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/9ac8b86d8c/packages/nelua/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/9ac8b86d8c/packages/nelua/src_lua_loslib.c.patch",
-      "https://github.com/termux/termux-packages/blob/9ac8b86d8c/packages/nelua/src_lua_luaconf.h.patch"
+      "https://github.com/termux/termux-packages/blob/93711da6f4/packages/nelua/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/93711da6f4/packages/nelua/src_lua_loslib.c.patch",
+      "https://github.com/termux/termux-packages/blob/93711da6f4/packages/nelua/src_lua_luaconf.h.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/9ac8b86d8c/packages/nelua/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9ac8b86d8c/packages/nelua/src_lua_loslib.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/9ac8b86d8c/packages/nelua/src_lua_luaconf.h.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/93711da6f4/packages/nelua/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93711da6f4/packages/nelua/src_lua_loslib.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/93711da6f4/packages/nelua/src_lua_luaconf.h.patch"
     ],
     "auto_updated": false
   },
@@ -30903,7 +30651,6 @@
     "description": "NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data",
     "homepage": "https://www.unidata.ucar.edu/software/netcdf/",
     "depends": [
-      "libandroid-execinfo",
       "libcurl",
       "zlib"
     ],
@@ -31104,7 +30851,6 @@
     "description": "Lightweight HTTP server",
     "homepage": "https://www.nginx.org",
     "depends": [
-      "libandroid-glob",
       "libcrypt",
       "pcre2",
       "openssl",
@@ -31238,7 +30984,6 @@
     "description": "A small build system with a focus on speed",
     "homepage": "https://ninja-build.org",
     "depends": [
-      "libandroid-spawn",
       "libc++"
     ],
     "srcurl": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz",
@@ -31979,7 +31724,6 @@
     "description": "GNU Octave is a high-level language, primarily intended for numerical computations. (only CLI)",
     "homepage": "https://octave.org",
     "depends": [
-      "libandroid-complex-math",
       "arpack-ng",
       "clang",
       "bzip2",
@@ -32128,7 +31872,6 @@
     "description": "Bash-compatible Unix shell with more consistent syntax and semantics",
     "homepage": "https://oils.pub/",
     "depends": [
-      "libandroid-glob",
       "libc++",
       "readline"
     ],
@@ -32232,7 +31975,6 @@
     "description": "Get up and running with large language models",
     "homepage": "https://ollama.com/",
     "depends": [
-      "libandroid-spawn",
       "libc++"
     ],
     "srcurl": "git+https://github.com/ollama/ollama",
@@ -32367,7 +32109,6 @@
     "description": "Open Object Rexx",
     "homepage": "https://www.oorexx.org/",
     "depends": [
-      "libandroid-posix-semaphore",
       "libandroid-spawn",
       "libandroid-wordexp",
       "libc++",
@@ -32654,7 +32395,6 @@
     "description": "Java development kit and runtime",
     "homepage": "https://openjdk.java.net",
     "depends": [
-      "libandroid-shmem",
       "libandroid-spawn",
       "libiconv",
       "libjpeg-turbo",
@@ -32763,7 +32503,6 @@
     "description": "Java development kit and runtime",
     "homepage": "https://openjdk.java.net",
     "depends": [
-      "libandroid-shmem",
       "libandroid-spawn",
       "libiconv",
       "libjpeg-turbo",
@@ -32870,7 +32609,6 @@
     "description": "Java development kit and runtime",
     "homepage": "https://openjdk.java.net",
     "depends": [
-      "libandroid-shmem",
       "libandroid-spawn",
       "libiconv",
       "libjpeg-turbo",
@@ -33018,7 +32756,6 @@
     "description": "Open source Message Passing Interface implementation",
     "homepage": "https://www.open-mpi.org",
     "depends": [
-      "libandroid-posix-semaphore",
       "libandroid-shmem",
       "libevent",
       "zlib"
@@ -33535,7 +33272,6 @@
     "description": "Painless compression and decompression for your terminal",
     "homepage": "https://github.com/ouch-org/ouch",
     "depends": [
-      "libandroid-utimes",
       "libc++"
     ],
     "srcurl": "https://github.com/ouch-org/ouch/archive/refs/tags/0.8.3.tar.gz",
@@ -33928,7 +33664,7 @@
   },
   {
     "name": "pass-otp",
-    "version": "1.2.0-p20250809",
+    "version": "1.2.0",
     "description": "A pass/passage extension for managing one-time-password (OTP) tokens",
     "homepage": "https://github.com/tadfisher/pass-otp",
     "depends": [
@@ -33936,9 +33672,9 @@
     ],
     "srcurl": "https://github.com/tadfisher/pass-otp/archive/7bb50dbc4b6073f12f40be66a5ee371b9652a646.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2cda1aac3e/packages/pass-otp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2cda1aac3e/packages/pass-otp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2cda1aac3e/packages/pass-otp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e6adee3d3/packages/pass-otp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e6adee3d3/packages/pass-otp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e6adee3d3/packages/pass-otp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -34306,9 +34042,7 @@
     "version": "5.44.0",
     "description": "Capable, feature-rich programming language",
     "homepage": "https://www.perl.org/",
-    "depends": [
-      "libandroid-utimes"
-    ],
+    "depends": [],
     "srcurl": "https://www.cpan.org/src/5.0/perl-5.44.0.tar.xz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/fa23bdcacf/packages/perl",
@@ -34932,7 +34666,6 @@
     "description": "An alpm .files metadata explorer",
     "homepage": "https://github.com/falconindy/pkgfile",
     "depends": [
-      "libandroid-glob",
       "libandroid-utimes",
       "libarchive",
       "libcurl",
@@ -35234,7 +34967,6 @@
     "description": "A Standard ML implementation",
     "homepage": "https://www.polyml.org/",
     "depends": [
-      "libandroid-posix-semaphore",
       "libc++",
       "libffi",
       "libgmp"
@@ -35430,7 +35162,6 @@
     "description": "Object-relational SQL database",
     "homepage": "https://www.postgresql.org",
     "depends": [
-      "libandroid-execinfo",
       "libandroid-shmem",
       "libicu",
       "libpq",
@@ -35597,7 +35328,6 @@
     "description": "Utilities that give information about processes using the /proc filesystem",
     "homepage": "https://gitlab.com/procps-ng/procps",
     "depends": [
-      "libandroid-glob",
       "libandroid-support",
       "ncurses"
     ],
@@ -35718,7 +35448,6 @@
     "description": "Linux tool to show progress for cp, mv, dd and more",
     "homepage": "https://github.com/Xfennec/progress",
     "depends": [
-      "libandroid-wordexp",
       "ncurses"
     ],
     "srcurl": "https://github.com/Xfennec/progress/archive/refs/tags/v0.17.tar.gz",
@@ -35761,7 +35490,6 @@
     "description": "Emulate chroot, bind mount and binfmt_misc for non-root users",
     "homepage": "https://proot-me.github.io/",
     "depends": [
-      "libandroid-shmem",
       "libtalloc"
     ],
     "srcurl": "https://github.com/termux/proot/archive/v5.1.107.101.zip",
@@ -37096,7 +36824,6 @@
     "description": "Fundamental algorithms for scientific computing in Python",
     "homepage": "https://scipy.org/",
     "depends": [
-      "libandroid-complex-math",
       "libc++",
       "libopenblas",
       "python",
@@ -37821,7 +37548,6 @@
     "description": "UNIX-like reverse engineering framework and command-line toolset",
     "homepage": "https://www.radare.org/",
     "depends": [
-      "libandroid-spawn",
       "libuv"
     ],
     "srcurl": "https://github.com/radareorg/radare2/archive/refs/tags/6.2.4.tar.gz",
@@ -38338,7 +38064,6 @@
     "description": "In-memory data structure store used as a database, cache and message broker",
     "homepage": "https://redis.io/",
     "depends": [
-      "libandroid-execinfo",
       "libandroid-glob"
     ],
     "srcurl": "https://download.redis.io/releases/redis-8.10.3.tar.gz",
@@ -38392,9 +38117,7 @@
     "version": "1:06.03.06",
     "description": "Sophisticated calendar and alarm program",
     "homepage": "https://dianne.skoll.ca/projects/remind/",
-    "depends": [
-      "libandroid-glob"
-    ],
+    "depends": [],
     "srcurl": "https://dianne.skoll.ca/projects/remind/download/remind-06.03.06.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/3da46c4f13/packages/remind",
@@ -38410,7 +38133,6 @@
     "description": "A set of programs designed to make renaming of files faster and less cumbersome",
     "homepage": "https://www.nongnu.org/renameutils/",
     "depends": [
-      "libandroid-wordexp",
       "readline"
     ],
     "srcurl": "https://savannah.nongnu.org/download/renameutils/renameutils-0.12.0.tar.gz",
@@ -38520,7 +38242,6 @@
     "description": "Rednex Game Boy Development System - An assembly toolchain for the Nintendo Game Boy & Game Boy Color",
     "homepage": "https://rgbds.gbdev.io",
     "depends": [
-      "libandroid-spawn",
       "libandroid-support",
       "libc++",
       "libpng"
@@ -38921,7 +38642,6 @@
     "description": "RPM Package Manager",
     "homepage": "https://rpm.org/",
     "depends": [
-      "libandroid-glob",
       "libandroid-spawn",
       "libarchive",
       "libbz2",
@@ -39092,7 +38812,6 @@
     "description": "Ncurses BitTorrent client based on libTorrent",
     "homepage": "https://rakshasa.github.io/rtorrent/",
     "depends": [
-      "libandroid-spawn",
       "libc++",
       "libcurl",
       "libtorrent",
@@ -39151,11 +38870,10 @@
   },
   {
     "name": "ruby",
-    "version": "4.0.7",
+    "version": "4.0.9",
     "description": "Dynamic programming language with a focus on simplicity and productivity",
     "homepage": "https://www.ruby-lang.org/",
     "depends": [
-      "libandroid-execinfo",
       "libandroid-support",
       "libffi",
       "libgmp",
@@ -39164,34 +38882,34 @@
       "libyaml",
       "zlib"
     ],
-    "srcurl": "https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.7.tar.xz",
+    "srcurl": "https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.9.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e7c614859/packages/ruby",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/750b3fcdc9/packages/ruby",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/android-sdk-level.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/fix-paths.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/lib-rubygems-install_update_options.rb.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/libandroid-execinfo.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/mkmf.rb.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/process.c.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/tool-rbinstall.rb.diff",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/yjit-src-codegen.rs.patch",
-      "https://github.com/termux/termux-packages/blob/0e7c614859/packages/ruby/yjit-src-yjit.rs.patch"
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/android-sdk-level.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/fix-paths.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/lib-rubygems-install_update_options.rb.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/libandroid-execinfo.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/mkmf.rb.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/process.c.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/tool-rbinstall.rb.diff",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/yjit-src-codegen.rs.patch",
+      "https://github.com/termux/termux-packages/blob/750b3fcdc9/packages/ruby/yjit-src-yjit.rs.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/android-sdk-level.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/fix-paths.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/lib-rubygems-install_update_options.rb.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/libandroid-execinfo.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/mkmf.rb.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/process.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/tool-rbinstall.rb.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/yjit-src-codegen.rs.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/0e7c614859/packages/ruby/yjit-src-yjit.rs.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/android-sdk-level.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/fix-paths.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/lib-rubygems-install_update_options.rb.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/libandroid-execinfo.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/mkmf.rb.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/process.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/tool-rbinstall.rb.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/yjit-src-codegen.rs.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/750b3fcdc9/packages/ruby/yjit-src-yjit.rs.patch"
     ],
     "auto_updated": false
   },
@@ -39475,9 +39193,7 @@
     "version": "1.3",
     "description": "ninja-compatible build tool written in C",
     "homepage": "https://github.com/michaelforney/samurai",
-    "depends": [
-      "libandroid-spawn"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/michaelforney/samurai/archive/refs/tags/1.3.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/4b047fcc03/packages/samurai",
@@ -40207,7 +39923,6 @@
     "description": "Shell script analysis tool",
     "homepage": "https://www.shellcheck.net/",
     "depends": [
-      "libandroid-posix-semaphore",
       "libandroid-utimes",
       "libffi",
       "libgmp",
@@ -41009,7 +40724,6 @@
     "description": "Command line utility for converting between and applying effects to various audio files formats",
     "homepage": "https://codeberg.org/sox_ng/sox_ng",
     "depends": [
-      "libandroid-glob",
       "libao",
       "libflac",
       "libiconv",
@@ -41814,9 +41528,7 @@
     "version": "0.31.0",
     "description": "An easy-to-use CLI tool for building, operating, and automating Public Key Infrastructure (PKI) systems and workflows",
     "homepage": "https://smallstep.com/cli",
-    "depends": [
-      "termux-tools"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/smallstep/cli/releases/download/v0.31.0/step_0.31.0.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/d2fd1bd116/packages/step-cli",
@@ -42179,7 +41891,6 @@
     "description": "A Suite of Sparse matrix packages.",
     "homepage": "https://github.com/DrTimothyAldenDavis/SuiteSparse",
     "depends": [
-      "libandroid-complex-math",
       "libgmp",
       "libmpfr",
       "libopenblas"
@@ -42345,7 +42056,6 @@
     "description": "Most popular and complete prolog implementation",
     "homepage": "https://swi-prolog.org/",
     "depends": [
-      "libandroid-execinfo",
       "libarchive",
       "libcrypt",
       "libdb",
@@ -42452,7 +42162,6 @@
     "description": "A high-performance CPU-based implementation of the Vulkan graphics API",
     "homepage": "https://swiftshader.googlesource.com/SwiftShader",
     "depends": [
-      "libandroid-shmem",
       "libc++",
       "vulkan-loader-generic"
     ],
@@ -42680,7 +42389,6 @@
     "description": "Utility for managing your TODO list",
     "homepage": "https://taskwarrior.org",
     "depends": [
-      "libandroid-glob",
       "libc++",
       "libgnutls",
       "libuuid"
@@ -42696,26 +42404,26 @@
   },
   {
     "name": "tcc",
-    "version": "1:0.9.27-p20230415",
+    "version": "0.9.27",
     "description": "Tiny C Compiler",
     "homepage": "https://bellard.org/tcc/",
     "depends": [],
     "srcurl": "git+https://repo.or.cz/tinycc.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/77e788d29e/packages/tcc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/77e788d29e/packages/tcc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/77e788d29e/packages/tcc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4012a812fa/packages/tcc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4012a812fa/packages/tcc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4012a812fa/packages/tcc/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/77e788d29e/packages/tcc/Makefile.patch",
-      "https://github.com/termux/termux-packages/blob/77e788d29e/packages/tcc/configure.patch",
-      "https://github.com/termux/termux-packages/blob/77e788d29e/packages/tcc/include-tccdefs.h.patch",
-      "https://github.com/termux/termux-packages/blob/77e788d29e/packages/tcc/lib-bcheck.c.patch"
+      "https://github.com/termux/termux-packages/blob/4012a812fa/packages/tcc/Makefile.patch",
+      "https://github.com/termux/termux-packages/blob/4012a812fa/packages/tcc/configure.patch",
+      "https://github.com/termux/termux-packages/blob/4012a812fa/packages/tcc/include-tccdefs.h.patch",
+      "https://github.com/termux/termux-packages/blob/4012a812fa/packages/tcc/lib-bcheck.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/77e788d29e/packages/tcc/Makefile.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/77e788d29e/packages/tcc/configure.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/77e788d29e/packages/tcc/include-tccdefs.h.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/77e788d29e/packages/tcc/lib-bcheck.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4012a812fa/packages/tcc/Makefile.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4012a812fa/packages/tcc/configure.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4012a812fa/packages/tcc/include-tccdefs.h.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/4012a812fa/packages/tcc/lib-bcheck.c.patch"
     ],
     "auto_updated": false
   },
@@ -42941,9 +42649,7 @@
     "version": "1.0.0",
     "description": "A cryptoki/PKCS#11 library for Termux that uses Android Keystore as its backend",
     "homepage": "https://github.com/aeolwyr/tergent",
-    "depends": [
-      "termux-api"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/termux/tergent/archive/831e300e3d75a9618963bbefbaad49bf37e2cf3c.tar.gz",
     "maintainer": "@termux",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/26211c2358/packages/tergent",
@@ -42997,108 +42703,6 @@
     "auto_updated": true
   },
   {
-    "name": "termux-am",
-    "version": "0.8.1",
-    "description": "Android Oreo-compatible am command reimplementation",
-    "homepage": "https://github.com/termux/TermuxAm",
-    "depends": [],
-    "srcurl": "https://github.com/termux/TermuxAm/archive/refs/tags/v0.8.1.tar.gz",
-    "maintainer": "Michal Bednarski @michalbednarski",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0653ac200f/packages/termux-am",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0653ac200f/packages/termux-am/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0653ac200f/packages/termux-am/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-am-socket",
-    "version": "1.5.0",
-    "description": "A faster version of am with less features that only works while Termux is running",
-    "homepage": "https://github.com/termux/termux-am-socket",
-    "depends": [
-      "libc++"
-    ],
-    "srcurl": "https://github.com/termux/termux-am-socket/archive/refs/tags/1.5.0.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c74f85f3b/packages/termux-am-socket",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c74f85f3b/packages/termux-am-socket/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c74f85f3b/packages/termux-am-socket/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-api",
-    "version": "0.60.0",
-    "description": "Termux API commands (install also the Termux:API app)",
-    "homepage": "https://wiki.termux.com/wiki/Termux:API",
-    "depends": [
-      "bash",
-      "util-linux",
-      "termux-am"
-    ],
-    "srcurl": "https://github.com/termux/termux-api-package/archive/refs/tags/v0.60.0.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/519cedc66c/packages/termux-api",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/519cedc66c/packages/termux-api/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/519cedc66c/packages/termux-api/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-apt-repo",
-    "version": "0.5",
-    "description": "Script to create Termux apt repositories",
-    "homepage": "https://github.com/termux/termux-apt-repo",
-    "depends": [
-      "llvm",
-      "python",
-      "tar"
-    ],
-    "srcurl": "https://github.com/termux/termux-apt-repo/archive/refs/tags/v0.5.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a4c75a4736/packages/termux-apt-repo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a4c75a4736/packages/termux-apt-repo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a4c75a4736/packages/termux-apt-repo/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-auth",
-    "version": "1.5.0",
-    "description": "Password authentication library and utility for Termux",
-    "homepage": "https://github.com/termux/termux-auth",
-    "depends": [
-      "openssl"
-    ],
-    "srcurl": "https://github.com/termux/termux-auth/archive/refs/tags/v1.5.0.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/packages/termux-auth",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/packages/termux-auth/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/packages/termux-auth/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-core",
-    "version": "0.4.0",
-    "description": "Utils and libraries for Termux core",
-    "homepage": "https://github.com/termux/termux-core-package",
-    "depends": [],
-    "srcurl": "https://github.com/termux/termux-core-package/archive/refs/tags/v0.4.0.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bea39a4564/packages/termux-core",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bea39a4564/packages/termux-core/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bea39a4564/packages/termux-core/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
-  },
-  {
     "name": "termux-create-package",
     "version": "0.12.0",
     "description": "Utility to create Termux packages",
@@ -43138,94 +42742,6 @@
     "auto_updated": false
   },
   {
-    "name": "termux-exec",
-    "version": "1:2.5.0",
-    "description": "Utils and libraries for Termux exec including a LD_PRELOAD shared library for proper functioning of the Termux execution environment",
-    "homepage": "https://github.com/termux/termux-exec-package",
-    "depends": [],
-    "srcurl": "https://github.com/termux/termux-exec-package/archive/refs/tags/v2.5.0.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/992bb679e8/packages/termux-exec",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/992bb679e8/packages/termux-exec/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/992bb679e8/packages/termux-exec/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
-  },
-  {
-    "name": "termux-gui-bash",
-    "version": "0.1.2",
-    "description": "A bash library for Termux:GUI",
-    "homepage": "https://github.com/tareksander/termux-gui-bash",
-    "depends": [
-      "jq"
-    ],
-    "srcurl": "https://github.com/tareksander/termux-gui-bash/archive/refs/tags/0.1.2.tar.gz",
-    "maintainer": "@tareksander",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e172413180/packages/termux-gui-bash",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e172413180/packages/termux-gui-bash/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e172413180/packages/termux-gui-bash/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
-  },
-  {
-    "name": "termux-gui-c",
-    "version": "0.1.3",
-    "description": "A C library for the Termux:GUI plugin",
-    "homepage": "https://github.com/tareksander/termux-gui-c-bindings",
-    "depends": [
-      "abseil-cpp",
-      "libc++",
-      "libandroid-stub",
-      "libprotobuf"
-    ],
-    "srcurl": "https://github.com/tareksander/termux-gui-c-bindings/archive/refs/tags/0.1.3.tar.gz",
-    "maintainer": "@tareksander",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c88d24975f/packages/termux-gui-c",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c88d24975f/packages/termux-gui-c/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c88d24975f/packages/termux-gui-c/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
-  },
-  {
-    "name": "termux-gui-package",
-    "version": "0.1.6",
-    "description": "A Termux package containing utilities for Termux:GUI",
-    "homepage": "https://github.com/tareksander/termux-gui-package",
-    "depends": [
-      "python",
-      "python-pip"
-    ],
-    "srcurl": "https://github.com/tareksander/termux-gui-package/archive/refs/tags/0.1.6.tar.gz",
-    "maintainer": "@tareksander",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8acb573e7a/packages/termux-gui-package",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8acb573e7a/packages/termux-gui-package/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8acb573e7a/packages/termux-gui-package/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
-  },
-  {
-    "name": "termux-gui-pm",
-    "version": "1.0.0",
-    "description": "A graphical package manager for various package formats for Termux and proot-distro distros",
-    "homepage": "https://github.com/tareksander/termux-gui-pm",
-    "depends": [
-      "python",
-      "python-pip"
-    ],
-    "srcurl": "https://github.com/tareksander/termux-gui-pm/archive/refs/tags/1.0.0.tar.gz",
-    "maintainer": "@tareksander",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8acb573e7a/packages/termux-gui-pm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8acb573e7a/packages/termux-gui-pm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8acb573e7a/packages/termux-gui-pm/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": true
-  },
-  {
     "name": "termux-keyring",
     "version": "3.14",
     "description": "GPG public keys for the official Termux repositories",
@@ -43235,76 +42751,6 @@
     "package_sources_url": "https://github.com/termux/termux-packages/tree/574a661027/packages/termux-keyring",
     "package_recipe_url": "https://github.com/termux/termux-packages/blob/574a661027/packages/termux-keyring/build.sh",
     "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/574a661027/packages/termux-keyring/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-licenses",
-    "version": "2.2",
-    "description": "Contains LICENSE files for common licenses",
-    "homepage": "https://termux.dev",
-    "depends": [],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/26f95de5d3/packages/termux-licenses",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/26f95de5d3/packages/termux-licenses/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/26f95de5d3/packages/termux-licenses/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-services",
-    "version": "0.13",
-    "description": "Service daemon for Termux",
-    "homepage": "https://github.com/termux/termux-services/",
-    "depends": [
-      "coreutils",
-      "dpkg",
-      "runit"
-    ],
-    "srcurl": "https://github.com/termux/termux-services/archive/refs/tags/0.13.tar.gz",
-    "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/91fad586ce/packages/termux-services",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/91fad586ce/packages/termux-services/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/91fad586ce/packages/termux-services/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
-    "name": "termux-tools",
-    "version": "1.46.0+really1.45.0",
-    "description": "Basic system tools for Termux",
-    "homepage": "https://termux.dev/",
-    "depends": [
-      "bzip2",
-      "coreutils",
-      "curl",
-      "dash",
-      "diffutils",
-      "findutils",
-      "gawk",
-      "grep",
-      "gzip",
-      "less",
-      "procps",
-      "psmisc",
-      "sed",
-      "tar",
-      "termux-am",
-      "termux-am-socket",
-      "termux-core",
-      "termux-exec",
-      "util-linux",
-      "xz-utils",
-      "dialog"
-    ],
-    "srcurl": "https://github.com/termux/termux-tools/archive/refs/tags/v1.45.0.tar.gz",
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7c74f85f3b/packages/termux-tools",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7c74f85f3b/packages/termux-tools/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7c74f85f3b/packages/termux-tools/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -43652,7 +43098,6 @@
     "description": "Command-line time tracker",
     "homepage": "https://timewarrior.net/",
     "depends": [
-      "libandroid-glob",
       "libc++"
     ],
     "srcurl": "git+https://github.com/GothenburgBitFactory/timewarrior",
@@ -45225,7 +44670,6 @@
     "description": "A small and powerful JavaScript runtime",
     "homepage": "https://github.com/saghul/txiki.js",
     "depends": [
-      "libandroid-spawn",
       "libc++",
       "libcurl",
       "libffi"
@@ -45459,7 +44903,6 @@
     "description": "Command line tools for archive and file unarchiving and extraction",
     "homepage": "https://theunarchiver.com/command-line",
     "depends": [
-      "libandroid-utimes",
       "libbz2",
       "libc++",
       "libgnustep-base",
@@ -45962,7 +45405,6 @@
     "description": "Miscellaneous system utilities",
     "homepage": "https://en.wikipedia.org/wiki/Util-linux",
     "depends": [
-      "libandroid-glob",
       "libandroid-posix-semaphore",
       "libcap-ng",
       "libsmartcols",
@@ -46073,7 +45515,6 @@
     "description": "uWSGI application server container",
     "homepage": "https://projects.unbit.it/uwsgi",
     "depends": [
-      "libandroid-glob",
       "libandroid-sysv-semaphore",
       "libandroid-utimes",
       "libcap",
@@ -46171,7 +45612,6 @@
     "description": "In-memory data structure store used as a database, cache and message broker",
     "homepage": "https://valkey.io/",
     "depends": [
-      "libandroid-execinfo",
       "libandroid-glob"
     ],
     "srcurl": "https://github.com/valkey-io/valkey/archive/refs/tags/9.1.3.tar.gz",
@@ -46367,7 +45807,6 @@
     "description": "A collection of tools for the VGM file format",
     "homepage": "https://github.com/vgmrips/vgmtools",
     "depends": [
-      "libandroid-glob",
       "libc++",
       "zlib"
     ],
@@ -46901,22 +46340,6 @@
     "auto_updated": false
   },
   {
-    "name": "vulkan-loader",
-    "version": "0.0.3",
-    "description": "A metapackage that provides vulkan loader library",
-    "homepage": "https://github.com/termux/termux-packages",
-    "depends": [
-      "vulkan-loader-generic"
-    ],
-    "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d6985f5e1c/packages/vulkan-loader",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d6985f5e1c/packages/vulkan-loader/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d6985f5e1c/packages/vulkan-loader/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
     "name": "vulkan-loader-android",
     "version": "30",
     "description": "Vulkan Loader for Android",
@@ -47257,7 +46680,6 @@
     "description": "A proxy for Wayland clients",
     "homepage": "https://gitlab.freedesktop.org/mstoeckl/waypipe",
     "depends": [
-      "libandroid-spawn",
       "liblz4",
       "libwayland",
       "zstd"
@@ -48226,7 +47648,6 @@
     "description": "Tool aimed at helping malware researchers to identify and classify malware samples",
     "homepage": "https://github.com/VirusTotal/yara",
     "depends": [
-      "libandroid-posix-semaphore",
       "libmagic",
       "openssl"
     ],
@@ -49004,7 +48425,6 @@
     "description": "A program for interactively transferring files to a remote machine while using the secure shell (ssh)",
     "homepage": "https://zssh.sourceforge.net/",
     "depends": [
-      "libandroid-glob",
       "lrzsz",
       "openssh",
       "readline"
@@ -49629,7 +49049,6 @@
     "description": "hping is a command-line oriented TCP/IP packet assembler/analyzer.",
     "homepage": "http://www.hping.org/",
     "depends": [
-      "libandroid-shmem",
       "libpcap",
       "tcl"
     ],
@@ -49688,7 +49107,6 @@
     "description": "Hardware detection tool from openSUSE",
     "homepage": "https://github.com/openSUSE/hwinfo",
     "depends": [
-      "libandroid-shmem",
       "libuuid",
       "libx86emu",
       "perl"
@@ -49948,9 +49366,7 @@
     "version": "3.18.3",
     "description": "FUSE (Filesystem in Userspace) is an interface for userspace programs to export a filesystem to the Linux kernel",
     "homepage": "https://github.com/libfuse/libfuse",
-    "depends": [
-      "libandroid-spawn"
-    ],
+    "depends": [],
     "srcurl": "https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.18.3.tar.gz",
     "maintainer": "Henrik Grimler @Grimler91",
     "package_sources_url": "https://github.com/termux/termux-packages/tree/786c197c30/root-packages/libfuse3",
@@ -50347,7 +49763,6 @@
     "description": "a collection of programs for inspecting and manipulating configuration of PCI devices",
     "homepage": "https://mj.ucw.cz/sw/pciutils/",
     "depends": [
-      "libandroid-glob",
       "zlib"
     ],
     "srcurl": "https://mj.ucw.cz/download/linux/pci/pciutils-3.15.0.tar.gz",
@@ -50434,7 +49849,6 @@
     "description": "Utility programs (smartctl and smartd) to control and monitor storage systems",
     "homepage": "https://www.smartmontools.org/",
     "depends": [
-      "libandroid-glob",
       "libc++",
       "libcap-ng"
     ],
@@ -50716,7 +50130,7 @@
   },
   {
     "name": "veracrypt",
-    "version": "1.26.29",
+    "version": "1.26.30",
     "description": "VeraCrypt disk encryption manager for Termux",
     "homepage": "https://github.com/veracrypt/VeraCrypt",
     "depends": [
@@ -50725,24 +50139,24 @@
       "libdevmapper",
       "wxwidgets"
     ],
-    "srcurl": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.29/VeraCrypt_1.26.29_Source.tar.bz2",
+    "srcurl": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.30/VeraCrypt_1.26.30_Source.tar.bz2",
     "maintainer": "Infiniti151 <43163551+Infiniti151@users.noreply.github.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e5ad0ad6ca/root-packages/veracrypt",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e5ad0ad6ca/root-packages/veracrypt/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e5ad0ad6ca/root-packages/veracrypt/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e648dc0510/root-packages/veracrypt",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e648dc0510/root-packages/veracrypt/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e648dc0510/root-packages/veracrypt/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e5ad0ad6ca/root-packages/veracrypt/dmsetup-path-override.patch",
-      "https://github.com/termux/termux-packages/blob/e5ad0ad6ca/root-packages/veracrypt/loop-device-path-override.patch",
-      "https://github.com/termux/termux-packages/blob/e5ad0ad6ca/root-packages/veracrypt/pcsc-path-override.patch",
-      "https://github.com/termux/termux-packages/blob/e5ad0ad6ca/root-packages/veracrypt/remove-x86-simd-flags.patch",
-      "https://github.com/termux/termux-packages/blob/e5ad0ad6ca/root-packages/veracrypt/system-binary-path-override.patch"
+      "https://github.com/termux/termux-packages/blob/e648dc0510/root-packages/veracrypt/dmsetup-path-override.patch",
+      "https://github.com/termux/termux-packages/blob/e648dc0510/root-packages/veracrypt/loop-device-path-override.patch",
+      "https://github.com/termux/termux-packages/blob/e648dc0510/root-packages/veracrypt/pcsc-path-override.patch",
+      "https://github.com/termux/termux-packages/blob/e648dc0510/root-packages/veracrypt/remove-x86-simd-flags.patch",
+      "https://github.com/termux/termux-packages/blob/e648dc0510/root-packages/veracrypt/system-binary-path-override.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e5ad0ad6ca/root-packages/veracrypt/dmsetup-path-override.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e5ad0ad6ca/root-packages/veracrypt/loop-device-path-override.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e5ad0ad6ca/root-packages/veracrypt/pcsc-path-override.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e5ad0ad6ca/root-packages/veracrypt/remove-x86-simd-flags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/e5ad0ad6ca/root-packages/veracrypt/system-binary-path-override.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/e648dc0510/root-packages/veracrypt/dmsetup-path-override.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e648dc0510/root-packages/veracrypt/loop-device-path-override.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e648dc0510/root-packages/veracrypt/pcsc-path-override.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e648dc0510/root-packages/veracrypt/remove-x86-simd-flags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/e648dc0510/root-packages/veracrypt/system-binary-path-override.patch"
     ],
     "auto_updated": false
   },
@@ -50832,7 +50246,6 @@
     "description": "A library and command-line tools to create, extract, and modify Windows Imaging (WIM ) files",
     "homepage": "https://wimlib.net/",
     "depends": [
-      "libandroid-glob",
       "libandroid-utimes",
       "libfuse3",
       "liblzma",
@@ -50965,7 +50378,6 @@
     "description": "A Master of Orion (1993) game engine recreation",
     "homepage": "https://github.com/1oom-fork/1oom",
     "depends": [
-      "libandroid-shmem",
       "libsamplerate",
       "libx11",
       "libxext",
@@ -54721,7 +54133,6 @@
     "description": "Lightweight and customizable notification daemon",
     "homepage": "https://dunst-project.org/",
     "depends": [
-      "libandroid-wordexp",
       "dbus",
       "gdk-pixbuf",
       "glib",
@@ -55837,7 +55248,6 @@
     "description": "FAR Manager v2",
     "homepage": "https://github.com/elfmz/far2l",
     "depends": [
-      "libandroid-utimes",
       "libarchive",
       "libc++",
       "libuchardet"
@@ -56742,7 +56152,6 @@
     "description": "A free remote desktop protocol library and clients",
     "homepage": "https://www.freerdp.com/",
     "depends": [
-      "libandroid-shmem",
       "libcairo",
       "libicu",
       "libjpeg-turbo",
@@ -58029,7 +57438,7 @@
   },
   {
     "name": "grafx2",
-    "version": "2.9-p20260424",
+    "version": "2.9",
     "description": "The Ultimate 256-color bitmap paint program",
     "homepage": "https://gitlab.com/GrafX2/grafX2",
     "depends": [
@@ -58042,20 +57451,20 @@
     ],
     "srcurl": "git+https://gitlab.com/GrafX2/grafX2.git",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4f73f88e39/x11-packages/grafx2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4f73f88e39/x11-packages/grafx2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4f73f88e39/x11-packages/grafx2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/32561c88e3/x11-packages/grafx2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/32561c88e3/x11-packages/grafx2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/32561c88e3/x11-packages/grafx2/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/4f73f88e39/x11-packages/grafx2/generate-png-fonts.diff",
-      "https://github.com/termux/termux-packages/blob/4f73f88e39/x11-packages/grafx2/makefile-force-non-gnu-libiconv-linking-codepath.patch",
-      "https://github.com/termux/termux-packages/blob/4f73f88e39/x11-packages/grafx2/sdl2-config.patch",
-      "https://github.com/termux/termux-packages/blob/4f73f88e39/x11-packages/grafx2/src-factory.c.patch"
+      "https://github.com/termux/termux-packages/blob/32561c88e3/x11-packages/grafx2/generate-png-fonts.diff",
+      "https://github.com/termux/termux-packages/blob/32561c88e3/x11-packages/grafx2/makefile-force-non-gnu-libiconv-linking-codepath.patch",
+      "https://github.com/termux/termux-packages/blob/32561c88e3/x11-packages/grafx2/sdl2-config.patch",
+      "https://github.com/termux/termux-packages/blob/32561c88e3/x11-packages/grafx2/src-factory.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/4f73f88e39/x11-packages/grafx2/generate-png-fonts.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/4f73f88e39/x11-packages/grafx2/makefile-force-non-gnu-libiconv-linking-codepath.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4f73f88e39/x11-packages/grafx2/sdl2-config.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/4f73f88e39/x11-packages/grafx2/src-factory.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/32561c88e3/x11-packages/grafx2/generate-png-fonts.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/32561c88e3/x11-packages/grafx2/makefile-force-non-gnu-libiconv-linking-codepath.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/32561c88e3/x11-packages/grafx2/sdl2-config.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/32561c88e3/x11-packages/grafx2/src-factory.c.patch"
     ],
     "auto_updated": false
   },
@@ -59009,7 +58418,6 @@
     "description": "Generates status bar to use with i3bar",
     "homepage": "https://i3wm.org/i3status/",
     "depends": [
-      "libandroid-glob",
       "libconfuse",
       "libnl",
       "pulseaudio",
@@ -70335,7 +69743,7 @@
   },
   {
     "name": "oneko-sakura",
-    "version": "1.2.sakura.6",
+    "version": "1.2",
     "description": "oneko-sakurais modified version of oneko, KINOMOTO Sakura chases around your mouse cursor",
     "homepage": "http://www.daidouji.com/oneko",
     "depends": [
@@ -70345,14 +69753,14 @@
     ],
     "srcurl": "git+https://github.com/tie/oneko",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d8f5a5721c/x11-packages/oneko-sakura",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d8f5a5721c/x11-packages/oneko-sakura/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d8f5a5721c/x11-packages/oneko-sakura/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/29f907f775/x11-packages/oneko-sakura",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29f907f775/x11-packages/oneko-sakura/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29f907f775/x11-packages/oneko-sakura/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/d8f5a5721c/x11-packages/oneko-sakura/oneko.c.patch"
+      "https://github.com/termux/termux-packages/blob/29f907f775/x11-packages/oneko-sakura/oneko.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/d8f5a5721c/x11-packages/oneko-sakura/oneko.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/29f907f775/x11-packages/oneko-sakura/oneko.c.patch"
     ],
     "auto_updated": false
   },
@@ -74525,7 +73933,6 @@
     "description": "Produces a OGG encapsulated Theora/Vorbis recording of your desktop",
     "homepage": "https://github.com/Enselic/recordmydesktop",
     "depends": [
-      "libandroid-shmem",
       "libice",
       "libogg",
       "libpopt",
@@ -74959,7 +74366,7 @@
   },
   {
     "name": "sdl-image",
-    "version": "1.2.12-p20230130",
+    "version": "1.2.12",
     "description": "A simple library to load images of various formats as SDL surfaces",
     "homepage": "https://www.libsdl.org/projects/SDL_image/",
     "depends": [
@@ -74971,16 +74378,16 @@
     ],
     "srcurl": "git+https://github.com/libsdl-org/SDL_image",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/836855d75e/x11-packages/sdl-image",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/836855d75e/x11-packages/sdl-image/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/836855d75e/x11-packages/sdl-image/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c5e31a556/x11-packages/sdl-image",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c5e31a556/x11-packages/sdl-image/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c5e31a556/x11-packages/sdl-image/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "sdl-mixer",
-    "version": "1.2.12-p20221010",
+    "version": "1.2.12",
     "description": "A simple multi-channel audio mixer",
     "homepage": "https://www.libsdl.org/projects/SDL_mixer/release-1.2.html",
     "depends": [
@@ -74993,16 +74400,16 @@
     ],
     "srcurl": "git+https://github.com/libsdl-org/SDL_mixer",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/742b2c25e5/x11-packages/sdl-mixer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/742b2c25e5/x11-packages/sdl-mixer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/742b2c25e5/x11-packages/sdl-mixer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/95b682ddcf/x11-packages/sdl-mixer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/95b682ddcf/x11-packages/sdl-mixer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/95b682ddcf/x11-packages/sdl-mixer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "sdl-net",
-    "version": "1.2.8-p20260527",
+    "version": "1.2.8",
     "description": "A small sample cross-platform networking library",
     "homepage": "https://www.libsdl.org/projects/SDL_net/",
     "depends": [
@@ -75010,16 +74417,16 @@
     ],
     "srcurl": "git+https://github.com/libsdl-org/SDL_net",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5378d09de6/x11-packages/sdl-net",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5378d09de6/x11-packages/sdl-net/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5378d09de6/x11-packages/sdl-net/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/40a33277af/x11-packages/sdl-net",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/40a33277af/x11-packages/sdl-net/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/40a33277af/x11-packages/sdl-net/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
   },
   {
     "name": "sdl-ttf",
-    "version": "2.0.11-p20220526",
+    "version": "2.0.11",
     "description": "A companion library to SDL for working with TrueType (tm) fonts",
     "homepage": "https://www.libsdl.org/projects/SDL_ttf",
     "depends": [
@@ -75028,9 +74435,9 @@
     ],
     "srcurl": "git+https://github.com/libsdl-org/SDL_ttf",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0af797ea62/x11-packages/sdl-ttf",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0af797ea62/x11-packages/sdl-ttf/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0af797ea62/x11-packages/sdl-ttf/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/21e21f8076/x11-packages/sdl-ttf",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/21e21f8076/x11-packages/sdl-ttf/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/21e21f8076/x11-packages/sdl-ttf/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -75213,7 +74620,6 @@
     "description": "Simple DirectMedia Layer 3",
     "homepage": "https://www.libsdl.org",
     "depends": [
-      "libandroid-shmem",
       "libdecor",
       "libiconv",
       "libwayland",
@@ -75452,7 +74858,7 @@
   },
   {
     "name": "signon-ui",
-    "version": "0.17+git20231016",
+    "version": "0.17",
     "description": "UI component responsible for handling the user interactions which can happen during the login process of an online account",
     "homepage": "https://gitlab.com/accounts-sso/signon-ui",
     "depends": [
@@ -75469,9 +74875,9 @@
     ],
     "srcurl": "git+https://gitlab.com/accounts-sso/signon-ui",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/82e70cb81d/x11-packages/signon-ui",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/82e70cb81d/x11-packages/signon-ui/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/82e70cb81d/x11-packages/signon-ui/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cb293d20ca/x11-packages/signon-ui",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cb293d20ca/x11-packages/signon-ui/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cb293d20ca/x11-packages/signon-ui/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -76352,23 +75758,6 @@
     "auto_updated": true
   },
   {
-    "name": "termux-x11-nightly",
-    "version": "1.03.01",
-    "description": "Termux X11 add-on.",
-    "homepage": "https://github.com/termux/termux-x11",
-    "depends": [
-      "xkeyboard-config"
-    ],
-    "srcurl": "https://github.com/termux/termux-x11/releases/download/nightly/termux-x11-nightly-1.03.01-0-any.pkg.tar.xz",
-    "maintainer": "Twaik Yont @twaik",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/61203e7021/x11-packages/termux-x11-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/61203e7021/x11-packages/termux-x11-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/61203e7021/x11-packages/termux-x11-nightly/build.sh",
-    "package_patch_urls": [],
-    "package_patch_raw_urls": [],
-    "auto_updated": false
-  },
-  {
     "name": "texstudio",
     "version": "4.9.9",
     "description": "A fully featured LaTeX editor",
@@ -76706,7 +76095,6 @@
     "description": "Suite of VNC servers. Based on the VNC 4 branch of TightVNC.",
     "homepage": "https://tigervnc.org/",
     "depends": [
-      "libandroid-shmem",
       "libc++",
       "libgmp",
       "libgnutls",
@@ -77388,7 +76776,7 @@
   },
   {
     "name": "webkit2gtk-4.1",
-    "version": "2.54.1",
+    "version": "2.54.2",
     "description": "A full-featured port of the WebKit rendering engine",
     "homepage": "https://webkitgtk.org",
     "depends": [
@@ -77428,50 +76816,50 @@
       "woff2",
       "zlib"
     ],
-    "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.54.1.tar.xz",
+    "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.54.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/efa49783f4/x11-packages/webkit2gtk-4.1",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f82caf1171/x11-packages/webkit2gtk-4.1",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/OptionsGTK.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/WebKitImage.h.in.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/android-no-xwayland-dmabuf.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/fix-angle.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/gtk4-early-display.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/icu-76.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/no-aligned-alloc.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/skia-no-android.patch",
-      "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkit2gtk-4.1/wtf-no-android.patch"
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/OptionsGTK.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/WebKitImage.h.in.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/android-no-xwayland-dmabuf.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/fix-angle.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/gtk4-early-display.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/icu-76.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/no-aligned-alloc.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/skia-no-android.patch",
+      "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkit2gtk-4.1/wtf-no-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/OptionsGTK.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/WebKitImage.h.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/android-no-xwayland-dmabuf.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/fix-angle.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/gtk4-early-display.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/icu-76.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/no-aligned-alloc.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/skia-no-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkit2gtk-4.1/wtf-no-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/NetworkCacheBlobStorage.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/OptionsCommon.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/OptionsGTK.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/PlatformGTK.cmake.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/SharedMemoryUnix.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/WebKitImage.h.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/android-no-xwayland-dmabuf.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/fix-angle.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/gtk4-early-display.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/icu-76.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/jsc.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/no-aligned-alloc.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/pas_thread_local_cache.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/skia-no-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkit2gtk-4.1/wtf-no-android.patch"
     ],
     "auto_updated": false
   },
   {
     "name": "webkitgtk-6.0",
-    "version": "2.54.1",
+    "version": "2.54.2",
     "description": "A full-featured port of the WebKit rendering engine",
     "homepage": "https://webkitgtk.org",
     "depends": [
@@ -77510,11 +76898,11 @@
       "woff2",
       "zlib"
     ],
-    "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.54.1.tar.xz",
+    "srcurl": "https://webkitgtk.org/releases/webkitgtk-2.54.2.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/efa49783f4/x11-packages/webkitgtk-6.0",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/efa49783f4/x11-packages/webkitgtk-6.0/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/efa49783f4/x11-packages/webkitgtk-6.0/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f82caf1171/x11-packages/webkitgtk-6.0",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f82caf1171/x11-packages/webkitgtk-6.0/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f82caf1171/x11-packages/webkitgtk-6.0/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -77992,7 +77380,6 @@
     "description": "VNC server for real X displays",
     "homepage": "https://github.com/LibVNC/x11vnc",
     "depends": [
-      "libandroid-shmem",
       "libcairo",
       "libvncserver",
       "libx11",
@@ -78271,7 +77658,6 @@
     "description": "Utility libraries for XC Binding - Port of Xlib's XImage and XShmImage functions",
     "homepage": "https://xcb.freedesktop.org/",
     "depends": [
-      "libandroid-shmem",
       "libxcb",
       "xcb-util"
     ],
@@ -78759,11 +78145,11 @@
       "xfce4-panel",
       "zlib"
     ],
-    "srcurl": "https://archive.xfce.org/src/panel-plugins/xfce4-datetime-plugin/0.8/xfce4-datetime-plugin-0.8.3.tar.bz2",
+    "srcurl": "https://archive.xfce.org/src/archive/xfce4-datetime-plugin/0.8/xfce4-datetime-plugin-0.8.3.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a52981e26f/x11-packages/xfce4-datetime-plugin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a52981e26f/x11-packages/xfce4-datetime-plugin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a52981e26f/x11-packages/xfce4-datetime-plugin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0e1306a2df/x11-packages/xfce4-datetime-plugin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0e1306a2df/x11-packages/xfce4-datetime-plugin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0e1306a2df/x11-packages/xfce4-datetime-plugin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": false
@@ -79837,7 +79223,6 @@
     "description": "Xorg server",
     "homepage": "https://xorg.freedesktop.org/wiki/",
     "depends": [
-      "libandroid-shmem",
       "libdrm",
       "libpciaccess",
       "libpixman",
@@ -80341,7 +79726,6 @@
     "description": "An open source remote desktop protocol (RDP) server",
     "homepage": "https://github.com/neutrinolabs/xrdp",
     "depends": [
-      "libandroid-shmem",
       "libcrypt",
       "libx11",
       "libxfixes",
@@ -80498,7 +79882,6 @@
     "description": "Wayland X11 server",
     "homepage": "https://xorg.freedesktop.org/wiki/",
     "depends": [
-      "libandroid-shmem",
       "libdrm",
       "libepoxy",
       "libpciaccess",
