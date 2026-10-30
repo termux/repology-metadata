@@ -114,7 +114,7 @@ check_package() {
 
 	local path=$1
 	pushd $path > /dev/null
-	local pkg=$(basename $path)
+	local pkg=${path##*/}
 
 	TERMUX_PKG_MAINTAINER="Termux members @termux"
 	TERMUX_PKG_API_LEVEL=24
