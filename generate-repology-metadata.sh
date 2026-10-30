@@ -172,7 +172,7 @@ exclude_pkgs=$'\n'"$(env -C $TERMUX_PACKAGES_DIR grep -rlE '^TERMUX_PKG_GENERATE
 for repo_path in ${repo_paths[@]}; do
 	package_paths=($TERMUX_PACKAGES_DIR/$repo_path/*)
 	for package_path in "${package_paths[@]}"; do
-		[[ $'\n'"$exclude_pkgs"$'\n' == *$'\n'"${package_path#*/}"$'\n'* ]] && continue
+		[[ $'\n'"$exclude_pkgs"$'\n' == *$'\n'"${package_path##*/}"$'\n'* ]] && continue
 		if [ "$FIRST" = "yes" ]; then
 			FIRST=no
 		else
