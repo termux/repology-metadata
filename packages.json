@@ -6203,15 +6203,15 @@
   },
   {
     "name": "dasm",
-    "version": "2.20.17",
+    "version": "2.20.18",
     "description": "Macro assembler with support for several 8-bit microprocessors",
     "homepage": "https://dasm-dillon.sourceforge.io/",
     "depends": [],
-    "srcurl": "https://github.com/dasm-assembler/dasm/archive/refs/tags/v2.20.17.tar.gz",
+    "srcurl": "https://github.com/dasm-assembler/dasm/archive/refs/tags/v2.20.18.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c2f833289b/packages/dasm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c2f833289b/packages/dasm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c2f833289b/packages/dasm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b3eb033097/packages/dasm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b3eb033097/packages/dasm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b3eb033097/packages/dasm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -8542,17 +8542,17 @@
   },
   {
     "name": "exiftool",
-    "version": "13.60",
+    "version": "13.61",
     "description": "Utility for reading, writing and editing meta information in a wide variety of files.",
     "homepage": "https://exiftool.org/",
     "depends": [
       "perl"
     ],
-    "srcurl": "https://github.com/exiftool/exiftool/archive/refs/tags/13.60.tar.gz",
+    "srcurl": "https://github.com/exiftool/exiftool/archive/refs/tags/13.61.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6f641d6d20/packages/exiftool",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6f641d6d20/packages/exiftool/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6f641d6d20/packages/exiftool/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0220f1ac13/packages/exiftool",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0220f1ac13/packages/exiftool/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0220f1ac13/packages/exiftool/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -12350,15 +12350,15 @@
   },
   {
     "name": "gotty",
-    "version": "1.10.0",
+    "version": "1.11.0",
     "description": "Share your terminal as a web application",
     "homepage": "https://github.com/sorenisanerd/gotty",
     "depends": [],
-    "srcurl": "https://github.com/sorenisanerd/gotty/archive/refs/tags/v1.10.0.tar.gz",
+    "srcurl": "https://github.com/sorenisanerd/gotty/archive/refs/tags/v1.11.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a45b6a4948/packages/gotty",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a45b6a4948/packages/gotty/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a45b6a4948/packages/gotty/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bbbab79b0c/packages/gotty",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bbbab79b0c/packages/gotty/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bbbab79b0c/packages/gotty/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -18027,6 +18027,29 @@
     "auto_updated": false
   },
   {
+    "name": "libeatmydata",
+    "version": "131",
+    "description": "libeatmydata - because fsync() should be a no-op",
+    "homepage": "https://www.flamingspork.com/projects/libeatmydata/",
+    "depends": [
+      "dash"
+    ],
+    "srcurl": "https://github.com/stewartsmith/libeatmydata/archive/refs/tags/v131.tar.gz",
+    "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/74a426129b/packages/libeatmydata",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74a426129b/packages/libeatmydata/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74a426129b/packages/libeatmydata/build.sh",
+    "package_patch_urls": [
+      "https://github.com/termux/termux-packages/blob/74a426129b/packages/libeatmydata/no-pthread_testcancel.patch",
+      "https://github.com/termux/termux-packages/blob/74a426129b/packages/libeatmydata/no-tls.patch"
+    ],
+    "package_patch_raw_urls": [
+      "https://raw.githubusercontent.com/termux/termux-packages/74a426129b/packages/libeatmydata/no-pthread_testcancel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/74a426129b/packages/libeatmydata/no-tls.patch"
+    ],
+    "auto_updated": true
+  },
+  {
     "name": "libebml",
     "version": "1.4.7",
     "description": "Extensible Binary Meta Language library",
@@ -20405,23 +20428,19 @@
   },
   {
     "name": "libminizip",
-    "version": "1.3.2",
+    "version": "1.4",
     "description": "Mini zip and unzip based on zlib",
     "homepage": "https://www.winimage.com/zLibDll/minizip.html",
     "depends": [
       "zlib"
     ],
-    "srcurl": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.xz",
+    "srcurl": "https://github.com/madler/zlib/releases/download/v1.4/zlib-1.4.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ddcb22f0d5/packages/libminizip",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ddcb22f0d5/packages/libminizip/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ddcb22f0d5/packages/libminizip/build.sh",
-    "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/ddcb22f0d5/packages/libminizip/0001-include-ints.h.patch"
-    ],
-    "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/ddcb22f0d5/packages/libminizip/0001-include-ints.h.patch"
-    ],
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/267d5b8564/packages/libminizip",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/267d5b8564/packages/libminizip/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/267d5b8564/packages/libminizip/build.sh",
+    "package_patch_urls": [],
+    "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
@@ -28572,33 +28591,33 @@
   },
   {
     "name": "mise",
-    "version": "2026.11.1",
+    "version": "2026.11.2",
     "description": "dev tools, env vars, task runner",
     "homepage": "https://mise.jdx.dev/",
     "depends": [
       "bzip2",
       "openssl"
     ],
-    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.11.1.tar.gz",
+    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.11.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/96f93e90b8/packages/mise",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/96f93e90b8/packages/mise/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/96f93e90b8/packages/mise/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9cae946b14/packages/mise",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9cae946b14/packages/mise/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9cae946b14/packages/mise/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/96f93e90b8/packages/mise/decmpfs-android-libc.diff",
-      "https://github.com/termux/termux-packages/blob/96f93e90b8/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/96f93e90b8/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/96f93e90b8/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/96f93e90b8/packages/mise/stat-mode-32-bit-android.patch",
-      "https://github.com/termux/termux-packages/blob/96f93e90b8/packages/mise/syncfs-not-on-android.patch"
+      "https://github.com/termux/termux-packages/blob/9cae946b14/packages/mise/decmpfs-android-libc.diff",
+      "https://github.com/termux/termux-packages/blob/9cae946b14/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/9cae946b14/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/9cae946b14/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/9cae946b14/packages/mise/stat-mode-32-bit-android.patch",
+      "https://github.com/termux/termux-packages/blob/9cae946b14/packages/mise/syncfs-not-on-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/96f93e90b8/packages/mise/decmpfs-android-libc.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/96f93e90b8/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/96f93e90b8/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/96f93e90b8/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/96f93e90b8/packages/mise/stat-mode-32-bit-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/96f93e90b8/packages/mise/syncfs-not-on-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9cae946b14/packages/mise/decmpfs-android-libc.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cae946b14/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cae946b14/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cae946b14/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cae946b14/packages/mise/stat-mode-32-bit-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9cae946b14/packages/mise/syncfs-not-on-android.patch"
     ],
     "auto_updated": true
   },
@@ -30434,18 +30453,18 @@
       "tree-sitter-parsers",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/neovim/neovim/archive/1332ed9027.tar.gz",
+    "srcurl": "https://github.com/neovim/neovim/archive/893d90fced.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/88ecb5c74b/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/88ecb5c74b/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/88ecb5c74b/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/35b9ec4fd1/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/35b9ec4fd1/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/35b9ec4fd1/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/88ecb5c74b/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://github.com/termux/termux-packages/blob/88ecb5c74b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/35b9ec4fd1/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://github.com/termux/termux-packages/blob/35b9ec4fd1/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/88ecb5c74b/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/88ecb5c74b/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/35b9ec4fd1/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/35b9ec4fd1/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "auto_updated": true
   },
@@ -36571,18 +36590,18 @@
   },
   {
     "name": "python-pycryptodomex",
-    "version": "3.24.1",
+    "version": "3.24.2",
     "description": "A self-contained Python package of low-level cryptographic primitives",
     "homepage": "https://www.pycryptodome.org/",
     "depends": [
       "python",
       "python-pip"
     ],
-    "srcurl": "https://github.com/Legrandin/pycryptodome/archive/refs/tags/v3.24.1x.tar.gz",
+    "srcurl": "https://github.com/Legrandin/pycryptodome/archive/refs/tags/v3.24.2x.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e7231425a0/packages/python-pycryptodomex",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e7231425a0/packages/python-pycryptodomex/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e7231425a0/packages/python-pycryptodomex/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ee5a3a4b29/packages/python-pycryptodomex",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ee5a3a4b29/packages/python-pycryptodomex/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ee5a3a4b29/packages/python-pycryptodomex/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -44548,20 +44567,20 @@
   },
   {
     "name": "ty",
-    "version": "0.0.97",
+    "version": "0.0.98",
     "description": "An extremely fast Python type checker and language server, written in Rust",
     "homepage": "https://github.com/astral-sh/ty",
     "depends": [],
-    "srcurl": "https://github.com/astral-sh/ty/releases/download/0.0.97/source.tar.gz",
+    "srcurl": "https://github.com/astral-sh/ty/releases/download/0.0.98/source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/78e85aa8d1/packages/ty",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/78e85aa8d1/packages/ty/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/78e85aa8d1/packages/ty/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/03b12b7768/packages/ty",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03b12b7768/packages/ty/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03b12b7768/packages/ty/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/78e85aa8d1/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://github.com/termux/termux-packages/blob/03b12b7768/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/78e85aa8d1/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/03b12b7768/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "auto_updated": true
   },
@@ -49500,7 +49519,7 @@
   },
   {
     "name": "openvpn",
-    "version": "2.7.8",
+    "version": "2.7.9",
     "description": "An easy-to-use, robust, and highly configurable VPN (Virtual Private Network)",
     "homepage": "https://openvpn.net",
     "depends": [
@@ -49510,20 +49529,20 @@
       "net-tools",
       "openssl"
     ],
-    "srcurl": "https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.7.8.tar.gz",
+    "srcurl": "https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.7.9.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/90884f770c/root-packages/openvpn",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/90884f770c/root-packages/openvpn/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/90884f770c/root-packages/openvpn/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6db64317ff/root-packages/openvpn",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6db64317ff/root-packages/openvpn/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6db64317ff/root-packages/openvpn/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/90884f770c/root-packages/openvpn/src-openvpn-console_builtin.c.patch",
-      "https://github.com/termux/termux-packages/blob/90884f770c/root-packages/openvpn/src-openvpn-options.c.patch",
-      "https://github.com/termux/termux-packages/blob/90884f770c/root-packages/openvpn/src-openvpn-tun.c.patch"
+      "https://github.com/termux/termux-packages/blob/6db64317ff/root-packages/openvpn/src-openvpn-console_builtin.c.patch",
+      "https://github.com/termux/termux-packages/blob/6db64317ff/root-packages/openvpn/src-openvpn-options.c.patch",
+      "https://github.com/termux/termux-packages/blob/6db64317ff/root-packages/openvpn/src-openvpn-tun.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/90884f770c/root-packages/openvpn/src-openvpn-console_builtin.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/90884f770c/root-packages/openvpn/src-openvpn-options.c.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/90884f770c/root-packages/openvpn/src-openvpn-tun.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/6db64317ff/root-packages/openvpn/src-openvpn-console_builtin.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6db64317ff/root-packages/openvpn/src-openvpn-options.c.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/6db64317ff/root-packages/openvpn/src-openvpn-tun.c.patch"
     ],
     "auto_updated": true
   },
@@ -50306,7 +50325,7 @@
   },
   {
     "name": "akonadi",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Cross-desktop storage service for PIM data providing concurrent access",
     "homepage": "https://invent.kde.org/pim/akonadi",
     "depends": [
@@ -50328,18 +50347,18 @@
       "libxml2",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/akonadi-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/akonadi-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8953ffdead/x11-packages/akonadi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8953ffdead/x11-packages/akonadi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8953ffdead/x11-packages/akonadi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9248f83aec/x11-packages/akonadi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9248f83aec/x11-packages/akonadi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9248f83aec/x11-packages/akonadi/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8953ffdead/x11-packages/akonadi/disable-update-mime-types.patch",
-      "https://github.com/termux/termux-packages/blob/8953ffdead/x11-packages/akonadi/protocolgen-path.diff"
+      "https://github.com/termux/termux-packages/blob/9248f83aec/x11-packages/akonadi/disable-update-mime-types.patch",
+      "https://github.com/termux/termux-packages/blob/9248f83aec/x11-packages/akonadi/protocolgen-path.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8953ffdead/x11-packages/akonadi/disable-update-mime-types.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/8953ffdead/x11-packages/akonadi/protocolgen-path.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/9248f83aec/x11-packages/akonadi/disable-update-mime-types.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/9248f83aec/x11-packages/akonadi/protocolgen-path.diff"
     ],
     "auto_updated": true
   },
@@ -50412,7 +50431,7 @@
   },
   {
     "name": "akonadi-contacts",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Libraries and daemons to implement Contact Management in Akonadi",
     "homepage": "https://invent.kde.org/pim/akonadi-contacts",
     "depends": [
@@ -50438,11 +50457,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/akonadi-contacts-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/akonadi-contacts-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2a554cbfb/x11-packages/akonadi-contacts",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2a554cbfb/x11-packages/akonadi-contacts/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2a554cbfb/x11-packages/akonadi-contacts/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/01f1c4d974/x11-packages/akonadi-contacts",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/01f1c4d974/x11-packages/akonadi-contacts/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/01f1c4d974/x11-packages/akonadi-contacts/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50489,7 +50508,7 @@
   },
   {
     "name": "akonadi-mime",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Libraries and daemons to implement basic email handling",
     "homepage": "https://invent.kde.org/pim/akonadi-mime",
     "depends": [
@@ -50504,22 +50523,22 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/akonadi-mime-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/akonadi-mime-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/62873225e9/x11-packages/akonadi-mime",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/62873225e9/x11-packages/akonadi-mime/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/62873225e9/x11-packages/akonadi-mime/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/275a9e084d/x11-packages/akonadi-mime",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/275a9e084d/x11-packages/akonadi-mime/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/275a9e084d/x11-packages/akonadi-mime/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/62873225e9/x11-packages/akonadi-mime/disable-update-mime-types.patch"
+      "https://github.com/termux/termux-packages/blob/275a9e084d/x11-packages/akonadi-mime/disable-update-mime-types.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/62873225e9/x11-packages/akonadi-mime/disable-update-mime-types.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/275a9e084d/x11-packages/akonadi-mime/disable-update-mime-types.patch"
     ],
     "auto_updated": true
   },
   {
     "name": "akonadi-search",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Libraries and daemons to implement searching in Akonadi",
     "homepage": "https://invent.kde.org/pim/akonadi-search",
     "depends": [
@@ -50540,11 +50559,11 @@
       "libxapian",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/akonadi-search-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/akonadi-search-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/135b826d51/x11-packages/akonadi-search",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/135b826d51/x11-packages/akonadi-search/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/135b826d51/x11-packages/akonadi-search/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5eec8759be/x11-packages/akonadi-search",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5eec8759be/x11-packages/akonadi-search/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5eec8759be/x11-packages/akonadi-search/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50703,7 +50722,7 @@
   },
   {
     "name": "alligator",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Alligator is a convergent, cross-platform feed reader, supporting standard RSS/Atom feeds",
     "homepage": "https://apps.kde.org/alligator/",
     "depends": [
@@ -50719,11 +50738,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/alligator-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/alligator-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e88e4f2565/x11-packages/alligator",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e88e4f2565/x11-packages/alligator/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e88e4f2565/x11-packages/alligator/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c65a60bc9/x11-packages/alligator",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c65a60bc9/x11-packages/alligator/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c65a60bc9/x11-packages/alligator/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -50762,7 +50781,7 @@
   },
   {
     "name": "analitza",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A library to add mathematical features to your program",
     "homepage": "https://invent.kde.org/education/analitza",
     "depends": [
@@ -50771,18 +50790,18 @@
       "qt6-qtdeclarative",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/analitza-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/analitza-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/69ff62ad10/x11-packages/analitza",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/69ff62ad10/x11-packages/analitza/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/69ff62ad10/x11-packages/analitza/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b4d6913aa4/x11-packages/analitza",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b4d6913aa4/x11-packages/analitza/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b4d6913aa4/x11-packages/analitza/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "angelfish",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Web browser for Plasma Mobile",
     "homepage": "https://apps.kde.org/angelfish",
     "depends": [
@@ -50805,11 +50824,11 @@
       "qt6-qtdeclarative",
       "qt6-qtwebengine"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/angelfish-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/angelfish-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd63b429ca/x11-packages/angelfish",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd63b429ca/x11-packages/angelfish/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd63b429ca/x11-packages/angelfish/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/16c36125aa/x11-packages/angelfish",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/16c36125aa/x11-packages/angelfish/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/16c36125aa/x11-packages/angelfish/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -51036,7 +51055,7 @@
   },
   {
     "name": "artikulate",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Improve your pronunciation by listening to native speakers",
     "homepage": "https://invent.kde.org/education/artikulate",
     "depends": [
@@ -51055,11 +51074,11 @@
       "qt6-qtdeclarative",
       "qt6-qtmultimedia"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/artikulate-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/artikulate-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/03cef29e7d/x11-packages/artikulate",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/03cef29e7d/x11-packages/artikulate/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/03cef29e7d/x11-packages/artikulate/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9c53b8ac82/x11-packages/artikulate",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9c53b8ac82/x11-packages/artikulate/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9c53b8ac82/x11-packages/artikulate/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -51501,7 +51520,7 @@
   },
   {
     "name": "baloo-widgets",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Widgets for Baloo",
     "homepage": "https://invent.kde.org/libraries/baloo-widgets",
     "depends": [
@@ -51516,11 +51535,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/baloo-widgets-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/baloo-widgets-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/23ee15a372/x11-packages/baloo-widgets",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23ee15a372/x11-packages/baloo-widgets/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23ee15a372/x11-packages/baloo-widgets/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1332466d90/x11-packages/baloo-widgets",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1332466d90/x11-packages/baloo-widgets/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1332466d90/x11-packages/baloo-widgets/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -51570,7 +51589,7 @@
   },
   {
     "name": "blinken",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Memory Enhancement Game",
     "homepage": "https://invent.kde.org/education/blinken",
     "depends": [
@@ -51586,11 +51605,11 @@
       "qt6-qtmultimedia",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/blinken-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/blinken-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/90ee96a48a/x11-packages/blinken",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/90ee96a48a/x11-packages/blinken/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/90ee96a48a/x11-packages/blinken/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/55f35fc523/x11-packages/blinken",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55f35fc523/x11-packages/blinken/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55f35fc523/x11-packages/blinken/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -51998,7 +52017,7 @@
   },
   {
     "name": "calligra",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Office and graphic art suite by KDE",
     "homepage": "https://calligra.org/",
     "depends": [
@@ -52062,18 +52081,18 @@
       "shared-mime-info",
       "zlib"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/calligra-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/calligra-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f053f8a65/x11-packages/calligra",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f053f8a65/x11-packages/calligra/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f053f8a65/x11-packages/calligra/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/30d3bae758/x11-packages/calligra",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30d3bae758/x11-packages/calligra/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30d3bae758/x11-packages/calligra/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/5f053f8a65/x11-packages/calligra/disable-update-mime-types.patch",
-      "https://github.com/termux/termux-packages/blob/5f053f8a65/x11-packages/calligra/prepend-prefix-to-tmp-paths.patch"
+      "https://github.com/termux/termux-packages/blob/30d3bae758/x11-packages/calligra/disable-update-mime-types.patch",
+      "https://github.com/termux/termux-packages/blob/30d3bae758/x11-packages/calligra/prepend-prefix-to-tmp-paths.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/5f053f8a65/x11-packages/calligra/disable-update-mime-types.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/5f053f8a65/x11-packages/calligra/prepend-prefix-to-tmp-paths.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/30d3bae758/x11-packages/calligra/disable-update-mime-types.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/30d3bae758/x11-packages/calligra/prepend-prefix-to-tmp-paths.patch"
     ],
     "auto_updated": true
   },
@@ -52127,7 +52146,7 @@
   },
   {
     "name": "cantor",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "KDE Frontend to Mathematical Software",
     "homepage": "https://invent.kde.org/education/cantor",
     "depends": [
@@ -52162,18 +52181,18 @@
       "qt6-qttools",
       "qt6-qtwebengine"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/cantor-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/cantor-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/360df19ba6/x11-packages/cantor",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/360df19ba6/x11-packages/cantor/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/360df19ba6/x11-packages/cantor/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c1eabbd80d/x11-packages/cantor",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c1eabbd80d/x11-packages/cantor/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c1eabbd80d/x11-packages/cantor/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/360df19ba6/x11-packages/cantor/disable-update-mimetypes.patch",
-      "https://github.com/termux/termux-packages/blob/360df19ba6/x11-packages/cantor/discount-crossbuild.diff"
+      "https://github.com/termux/termux-packages/blob/c1eabbd80d/x11-packages/cantor/disable-update-mimetypes.patch",
+      "https://github.com/termux/termux-packages/blob/c1eabbd80d/x11-packages/cantor/discount-crossbuild.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/360df19ba6/x11-packages/cantor/disable-update-mimetypes.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/360df19ba6/x11-packages/cantor/discount-crossbuild.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/c1eabbd80d/x11-packages/cantor/disable-update-mimetypes.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/c1eabbd80d/x11-packages/cantor/discount-crossbuild.diff"
     ],
     "auto_updated": true
   },
@@ -53316,7 +53335,7 @@
   },
   {
     "name": "dolphin",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "KDE File Manager",
     "homepage": "https://invent.kde.org/system/dolphin",
     "depends": [
@@ -53357,11 +53376,11 @@
       "qt6-qtbase",
       "qt6-qtmultimedia"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/dolphin-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/dolphin-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f0d55a186f/x11-packages/dolphin",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f0d55a186f/x11-packages/dolphin/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f0d55a186f/x11-packages/dolphin/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/8498eeea5c/x11-packages/dolphin",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8498eeea5c/x11-packages/dolphin/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8498eeea5c/x11-packages/dolphin/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -53644,7 +53663,7 @@
   },
   {
     "name": "elisa",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A simple music player developed by KDE",
     "homepage": "https://apps.kde.org/elisa/",
     "depends": [
@@ -53669,11 +53688,11 @@
       "qt6-qtmultimedia",
       "vlc-qt"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/elisa-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/elisa-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/20af9b262f/x11-packages/elisa",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/20af9b262f/x11-packages/elisa/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/20af9b262f/x11-packages/elisa/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c4d150c77a/x11-packages/elisa",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c4d150c77a/x11-packages/elisa/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c4d150c77a/x11-packages/elisa/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54086,7 +54105,7 @@
   },
   {
     "name": "falkon",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Cross-platform QtWebEngine Browser",
     "homepage": "https://www.falkon.org/",
     "depends": [
@@ -54097,11 +54116,11 @@
       "qt6-qtwebsockets",
       "qt6-qtwebengine"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/falkon-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/falkon-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d1cdcc7bd0/x11-packages/falkon",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d1cdcc7bd0/x11-packages/falkon/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d1cdcc7bd0/x11-packages/falkon/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2772e97c13/x11-packages/falkon",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2772e97c13/x11-packages/falkon/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2772e97c13/x11-packages/falkon/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -54492,7 +54511,7 @@
   },
   {
     "name": "filelight",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "View disk usage information",
     "homepage": "https://apps.kde.org/filelight/",
     "depends": [
@@ -54509,11 +54528,11 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/filelight-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/filelight-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/446815dfc1/x11-packages/filelight",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/446815dfc1/x11-packages/filelight/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/446815dfc1/x11-packages/filelight/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b4bdf85a48/x11-packages/filelight",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b4bdf85a48/x11-packages/filelight/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b4bdf85a48/x11-packages/filelight/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -55437,7 +55456,7 @@
   },
   {
     "name": "ghostwriter",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Text editor for Markdown",
     "homepage": "https://ghostwriter.kde.org/",
     "depends": [
@@ -55452,11 +55471,11 @@
       "qt6-qtbase",
       "qt6-qtpositioning"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/ghostwriter-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/ghostwriter-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e21b425d9/x11-packages/ghostwriter",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e21b425d9/x11-packages/ghostwriter/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e21b425d9/x11-packages/ghostwriter/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/83c215c5b6/x11-packages/ghostwriter",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/83c215c5b6/x11-packages/ghostwriter/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/83c215c5b6/x11-packages/ghostwriter/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56370,7 +56389,7 @@
   },
   {
     "name": "grantleetheme",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Library for Grantlee theming support",
     "homepage": "https://invent.kde.org/pim/grantleetheme",
     "depends": [
@@ -56387,11 +56406,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/grantleetheme-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/grantleetheme-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/30406e00c9/x11-packages/grantleetheme",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/30406e00c9/x11-packages/grantleetheme/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/30406e00c9/x11-packages/grantleetheme/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2c48b8990c/x11-packages/grantleetheme",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2c48b8990c/x11-packages/grantleetheme/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2c48b8990c/x11-packages/grantleetheme/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -56973,7 +56992,7 @@
   },
   {
     "name": "gwenview",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Fast and easy to use image viewer by KDE",
     "homepage": "https://apps.kde.org/gwenview/",
     "depends": [
@@ -57016,11 +57035,11 @@
       "qt6-qtimageformats",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/gwenview-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/gwenview-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d662472cf3/x11-packages/gwenview",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d662472cf3/x11-packages/gwenview/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d662472cf3/x11-packages/gwenview/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7dc485f01f/x11-packages/gwenview",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7dc485f01f/x11-packages/gwenview/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7dc485f01f/x11-packages/gwenview/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -57533,7 +57552,7 @@
   },
   {
     "name": "itinerary",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Itinerary and boarding pass management application",
     "homepage": "https://invent.kde.org/pim/itinerary",
     "depends": [
@@ -57570,11 +57589,11 @@
       "qtkeychain",
       "zlib"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/itinerary-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/itinerary-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa7cb1a403/x11-packages/itinerary",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa7cb1a403/x11-packages/itinerary/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa7cb1a403/x11-packages/itinerary/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d199ff5b6f/x11-packages/itinerary",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d199ff5b6f/x11-packages/itinerary/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d199ff5b6f/x11-packages/itinerary/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -57607,7 +57626,7 @@
   },
   {
     "name": "kaccounts-integration",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Online account management system and its Plasma integration components",
     "homepage": "https://invent.kde.org/network/kaccounts-integration",
     "depends": [
@@ -57628,11 +57647,11 @@
       "signon-ui",
       "signond"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kaccounts-integration-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kaccounts-integration-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fa86d4248d/x11-packages/kaccounts-integration",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fa86d4248d/x11-packages/kaccounts-integration/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fa86d4248d/x11-packages/kaccounts-integration/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c18a76fae3/x11-packages/kaccounts-integration",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c18a76fae3/x11-packages/kaccounts-integration/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c18a76fae3/x11-packages/kaccounts-integration/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -57706,7 +57725,7 @@
   },
   {
     "name": "kalarm",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Personal alarm scheduler",
     "homepage": "https://invent.kde.org/pim/kalarm",
     "depends": [
@@ -57748,18 +57767,18 @@
       "qt6-qtbase",
       "vlc-qt"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kalarm-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kalarm-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/5f2975bb13/x11-packages/kalarm",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5f2975bb13/x11-packages/kalarm/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5f2975bb13/x11-packages/kalarm/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/62974c90a1/x11-packages/kalarm",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/62974c90a1/x11-packages/kalarm/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/62974c90a1/x11-packages/kalarm/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kalgebra",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Graph Calculator",
     "homepage": "https://invent.kde.org/education/kalgebra",
     "depends": [
@@ -57778,18 +57797,18 @@
       "qt6-qtdeclarative",
       "qt6-qtwebengine"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kalgebra-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kalgebra-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/75bee81a27/x11-packages/kalgebra",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/75bee81a27/x11-packages/kalgebra/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/75bee81a27/x11-packages/kalgebra/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cfee5166d4/x11-packages/kalgebra",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cfee5166d4/x11-packages/kalgebra/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cfee5166d4/x11-packages/kalgebra/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kalzium",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Periodic Table of Elements",
     "homepage": "https://invent.kde.org/education/kalzium",
     "depends": [
@@ -57816,18 +57835,18 @@
       "qt6-qtscxml",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kalzium-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kalzium-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dbaeaf3138/x11-packages/kalzium",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dbaeaf3138/x11-packages/kalzium/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dbaeaf3138/x11-packages/kalzium/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/422bf0749f/x11-packages/kalzium",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/422bf0749f/x11-packages/kalzium/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/422bf0749f/x11-packages/kalzium/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kanagram",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Letter Order Game",
     "homepage": "https://invent.kde.org/education/kanagram",
     "depends": [
@@ -57847,18 +57866,18 @@
       "qt6-qtmultimedia",
       "qt6-qtspeech"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kanagram-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kanagram-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4ded294bf2/x11-packages/kanagram",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4ded294bf2/x11-packages/kanagram/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4ded294bf2/x11-packages/kanagram/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d8d020456f/x11-packages/kanagram",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d8d020456f/x11-packages/kanagram/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d8d020456f/x11-packages/kanagram/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kate",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "KDE Advanced Text Editor",
     "homepage": "https://apps.kde.org/kate/",
     "depends": [
@@ -57893,18 +57912,18 @@
       "rust",
       "texlab"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kate-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kate-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ff1ce1521/x11-packages/kate",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ff1ce1521/x11-packages/kate/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ff1ce1521/x11-packages/kate/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/74d86e6153/x11-packages/kate",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74d86e6153/x11-packages/kate/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74d86e6153/x11-packages/kate/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kbruch",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Exercise Fractions",
     "homepage": "https://invent.kde.org/education/kbruch",
     "depends": [
@@ -57918,18 +57937,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kbruch-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kbruch-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8b287d1354/x11-packages/kbruch",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8b287d1354/x11-packages/kbruch/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8b287d1354/x11-packages/kbruch/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/68e0bed571/x11-packages/kbruch",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/68e0bed571/x11-packages/kbruch/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/68e0bed571/x11-packages/kbruch/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kcalc",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Scientific Calculator by KDE",
     "homepage": "https://apps.kde.org/kcalc/",
     "depends": [
@@ -57949,18 +57968,18 @@
       "libmpfr",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kcalc-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kcalc-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d48fd4cd40/x11-packages/kcalc",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d48fd4cd40/x11-packages/kcalc/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d48fd4cd40/x11-packages/kcalc/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fd19f96547/x11-packages/kcalc",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fd19f96547/x11-packages/kcalc/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fd19f96547/x11-packages/kcalc/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kcalutils",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "The KDE calendar utility library",
     "homepage": "https://invent.kde.org/pim/kcalutils",
     "depends": [
@@ -57975,18 +57994,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kcalutils-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kcalutils-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/729e0ee97c/x11-packages/kcalutils",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/729e0ee97c/x11-packages/kcalutils/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/729e0ee97c/x11-packages/kcalutils/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/20dcab052e/x11-packages/kcalutils",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/20dcab052e/x11-packages/kcalutils/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/20dcab052e/x11-packages/kcalutils/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kcolorchooser",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Color Chooser",
     "homepage": "https://invent.kde.org/graphics/kcolorchooser",
     "depends": [
@@ -57996,11 +58015,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kcolorchooser-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kcolorchooser-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/86f7394ed8/x11-packages/kcolorchooser",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/86f7394ed8/x11-packages/kcolorchooser/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/86f7394ed8/x11-packages/kcolorchooser/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/97c0d9ed03/x11-packages/kcolorchooser",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/97c0d9ed03/x11-packages/kcolorchooser/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/97c0d9ed03/x11-packages/kcolorchooser/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -58206,7 +58225,7 @@
   },
   {
     "name": "kdeconnect",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Adds communication between KDE and your smartphone",
     "homepage": "https://invent.kde.org/network/kdeconnect-kde",
     "depends": [
@@ -58246,11 +58265,11 @@
       "libc++",
       "libwayland"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kdeconnect-kde-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kdeconnect-kde-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/270e19c341/x11-packages/kdeconnect",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/270e19c341/x11-packages/kdeconnect/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/270e19c341/x11-packages/kdeconnect/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/31b1a3bc6f/x11-packages/kdeconnect",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/31b1a3bc6f/x11-packages/kdeconnect/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/31b1a3bc6f/x11-packages/kdeconnect/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -58276,24 +58295,24 @@
   },
   {
     "name": "kdeedu-data",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Common data for KDE Edu applications",
     "homepage": "https://invent.kde.org/education/kdeedu-data",
     "depends": [
       "hicolor-icon-theme"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kdeedu-data-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kdeedu-data-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0bf161d455/x11-packages/kdeedu-data",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0bf161d455/x11-packages/kdeedu-data/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0bf161d455/x11-packages/kdeedu-data/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/55e51d9b65/x11-packages/kdeedu-data",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55e51d9b65/x11-packages/kdeedu-data/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55e51d9b65/x11-packages/kdeedu-data/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kdegraphics-mobipocket",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A library to handle mobipocket files",
     "homepage": "https://invent.kde.org/graphics/kdegraphics-mobipocket",
     "depends": [
@@ -58301,18 +58320,18 @@
       "qt6-qt5compat",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kdegraphics-mobipocket-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kdegraphics-mobipocket-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d37c220336/x11-packages/kdegraphics-mobipocket",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d37c220336/x11-packages/kdegraphics-mobipocket/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d37c220336/x11-packages/kdegraphics-mobipocket/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/67d26fa1a9/x11-packages/kdegraphics-mobipocket",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/67d26fa1a9/x11-packages/kdegraphics-mobipocket/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/67d26fa1a9/x11-packages/kdegraphics-mobipocket/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kdegraphics-thumbnailers",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Thumbnailers for various graphics file formats",
     "homepage": "https://invent.kde.org/graphics/kdegraphics-thumbnailers",
     "depends": [
@@ -58326,18 +58345,18 @@
       "libkexiv2",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kdegraphics-thumbnailers-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kdegraphics-thumbnailers-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/23ed9770cb/x11-packages/kdegraphics-thumbnailers",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/23ed9770cb/x11-packages/kdegraphics-thumbnailers/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/23ed9770cb/x11-packages/kdegraphics-thumbnailers/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/29a0eb7fb2/x11-packages/kdegraphics-thumbnailers",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/29a0eb7fb2/x11-packages/kdegraphics-thumbnailers/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/29a0eb7fb2/x11-packages/kdegraphics-thumbnailers/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kdenlive",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A non-linear video editor for Linux using the MLT video framework",
     "homepage": "https://apps.kde.org/kdenlive/",
     "depends": [
@@ -58380,11 +58399,11 @@
       "qt6-qtsvg",
       "shared-mime-info"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kdenlive-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kdenlive-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ece3dd20bd/x11-packages/kdenlive",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ece3dd20bd/x11-packages/kdenlive/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ece3dd20bd/x11-packages/kdenlive/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/e56a5a944d/x11-packages/kdenlive",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e56a5a944d/x11-packages/kdenlive/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e56a5a944d/x11-packages/kdenlive/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -58598,7 +58617,7 @@
   },
   {
     "name": "kdialog",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A utility for displaying dialog boxes from shell scripts",
     "homepage": "https://invent.kde.org/utilities/kdialog",
     "depends": [
@@ -58616,11 +58635,11 @@
       "libx11",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kdialog-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kdialog-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8d55b66de6/x11-packages/kdialog",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8d55b66de6/x11-packages/kdialog/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8d55b66de6/x11-packages/kdialog/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/869b23a681/x11-packages/kdialog",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/869b23a681/x11-packages/kdialog/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/869b23a681/x11-packages/kdialog/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -58645,7 +58664,7 @@
   },
   {
     "name": "keditbookmarks",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Bookmark Organizer and Editor",
     "homepage": "https://invent.kde.org/utilities/keditbookmarks",
     "depends": [
@@ -58666,11 +58685,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/keditbookmarks-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/keditbookmarks-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7840ac0f78/x11-packages/keditbookmarks",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7840ac0f78/x11-packages/keditbookmarks/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7840ac0f78/x11-packages/keditbookmarks/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5ddcab9a82/x11-packages/keditbookmarks",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5ddcab9a82/x11-packages/keditbookmarks/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5ddcab9a82/x11-packages/keditbookmarks/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -60321,7 +60340,7 @@
   },
   {
     "name": "kfind",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "File search utility by KDE",
     "homepage": "https://invent.kde.org/utilities/kfind",
     "depends": [
@@ -60342,18 +60361,18 @@
       "qt6-qtbase",
       "qt6-qt5compat"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kfind-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kfind-26.08.3.tar.xz",
     "maintainer": "3ls-it <3ls-it@pm.me>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb5061a379/x11-packages/kfind",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb5061a379/x11-packages/kfind/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb5061a379/x11-packages/kfind/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2f9dd04163/x11-packages/kfind",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2f9dd04163/x11-packages/kfind/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2f9dd04163/x11-packages/kfind/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kgeography",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Geography Trainer",
     "homepage": "https://invent.kde.org/education/kgeography",
     "depends": [
@@ -60368,18 +60387,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kgeography-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kgeography-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c3410499a3/x11-packages/kgeography",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c3410499a3/x11-packages/kgeography/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c3410499a3/x11-packages/kgeography/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fbbeb372ea/x11-packages/kgeography",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fbbeb372ea/x11-packages/kgeography/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fbbeb372ea/x11-packages/kgeography/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kget",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Download Manager by KDE",
     "homepage": "https://apps.kde.org/kget/",
     "depends": [
@@ -60407,11 +60426,11 @@
       "qgpgme",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kget-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kget-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a301780b1a/x11-packages/kget",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a301780b1a/x11-packages/kget/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a301780b1a/x11-packages/kget/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/f179f8c98f/x11-packages/kget",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f179f8c98f/x11-packages/kget/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f179f8c98f/x11-packages/kget/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -60448,7 +60467,7 @@
   },
   {
     "name": "kgraphviewer",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A Graphviz dot graph file viewer",
     "homepage": "https://invent.kde.org/graphics/kgraphviewer",
     "depends": [
@@ -60465,18 +60484,18 @@
       "qt6-qtbase",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kgraphviewer-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kgraphviewer-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/094724d6da/x11-packages/kgraphviewer",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/094724d6da/x11-packages/kgraphviewer/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/094724d6da/x11-packages/kgraphviewer/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c1816fc62b/x11-packages/kgraphviewer",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c1816fc62b/x11-packages/kgraphviewer/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c1816fc62b/x11-packages/kgraphviewer/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "khangman",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Hangman Game",
     "homepage": "https://invent.kde.org/education/khangman",
     "depends": [
@@ -60493,11 +60512,11 @@
       "qt6-qtdeclarative",
       "qt6-qtmultimedia"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/khangman-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/khangman-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/aa0764dc30/x11-packages/khangman",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aa0764dc30/x11-packages/khangman/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aa0764dc30/x11-packages/khangman/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb3d395682/x11-packages/khangman",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb3d395682/x11-packages/khangman/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb3d395682/x11-packages/khangman/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -60555,7 +60574,7 @@
   },
   {
     "name": "kidentitymanagement",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Library to assist in handling user identities",
     "homepage": "https://invent.kde.org/pim/kidentitymanagement",
     "depends": [
@@ -60573,18 +60592,18 @@
       "qt6-qtbase",
       "qt6-qtdeclarative"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kidentitymanagement-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kidentitymanagement-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/ce25c3659a/x11-packages/kidentitymanagement",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ce25c3659a/x11-packages/kidentitymanagement/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ce25c3659a/x11-packages/kidentitymanagement/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/379590331a/x11-packages/kidentitymanagement",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/379590331a/x11-packages/kidentitymanagement/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/379590331a/x11-packages/kidentitymanagement/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kig",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Interactive Geometry",
     "homepage": "https://invent.kde.org/education/kig",
     "depends": [
@@ -60606,18 +60625,18 @@
       "qt6-qtbase",
       "qt6-qtsvg"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kig-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kig-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/dc0699dcfa/x11-packages/kig",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dc0699dcfa/x11-packages/kig/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dc0699dcfa/x11-packages/kig/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/d4394c8e9a/x11-packages/kig",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d4394c8e9a/x11-packages/kig/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d4394c8e9a/x11-packages/kig/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kigo",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Kigo is an open-source implementation of the popular Go game.",
     "homepage": "https://invent.kde.org/games/kigo",
     "depends": [
@@ -60639,11 +60658,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kigo-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kigo-26.08.3.tar.xz",
     "maintainer": "3ls-it <3ls-it@pm.me>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4bd97b620d/x11-packages/kigo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4bd97b620d/x11-packages/kigo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4bd97b620d/x11-packages/kigo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/6e600726b2/x11-packages/kigo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6e600726b2/x11-packages/kigo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6e600726b2/x11-packages/kigo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -60671,7 +60690,7 @@
   },
   {
     "name": "kimagemapeditor",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "HTML Image Map Editor",
     "homepage": "https://invent.kde.org/graphics/kimagemapeditor",
     "depends": [
@@ -60687,18 +60706,18 @@
       "qt6-qtbase",
       "qt6-qtwebengine"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kimagemapeditor-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kimagemapeditor-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/762b6a30b6/x11-packages/kimagemapeditor",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/762b6a30b6/x11-packages/kimagemapeditor/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/762b6a30b6/x11-packages/kimagemapeditor/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4639963879/x11-packages/kimagemapeditor",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4639963879/x11-packages/kimagemapeditor/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4639963879/x11-packages/kimagemapeditor/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kimap",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Job-based API for interacting with IMAP servers",
     "homepage": "https://invent.kde.org/pim/kimap",
     "depends": [
@@ -60710,11 +60729,11 @@
       "libsasl",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kimap-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kimap-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/de8a60ff7c/x11-packages/kimap",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/de8a60ff7c/x11-packages/kimap/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/de8a60ff7c/x11-packages/kimap/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/7bfd11ca9b/x11-packages/kimap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7bfd11ca9b/x11-packages/kimap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7bfd11ca9b/x11-packages/kimap/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -60766,7 +60785,7 @@
   },
   {
     "name": "kio-extras",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Additional components to increase the functionality of KIO",
     "homepage": "https://invent.kde.org/network/kio-extras",
     "depends": [
@@ -60804,11 +60823,11 @@
       "ripgrep-all",
       "taglib"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kio-extras-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kio-extras-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/34991444b0/x11-packages/kio-extras",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/34991444b0/x11-packages/kio-extras/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/34991444b0/x11-packages/kio-extras/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9e3b5f0225/x11-packages/kio-extras",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9e3b5f0225/x11-packages/kio-extras/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9e3b5f0225/x11-packages/kio-extras/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -60844,7 +60863,7 @@
   },
   {
     "name": "kiriki",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Kiriki is an addictive and fun dice game, designed to be played by as many as six players.",
     "homepage": "https://invent.kde.org/games/kiriki",
     "depends": [
@@ -60861,18 +60880,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kiriki-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kiriki-26.08.3.tar.xz",
     "maintainer": "3ls-it <3ls-it@pm.me>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/296edff584/x11-packages/kiriki",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/296edff584/x11-packages/kiriki/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/296edff584/x11-packages/kiriki/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fe755b50b2/x11-packages/kiriki",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fe755b50b2/x11-packages/kiriki/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fe755b50b2/x11-packages/kiriki/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kiten",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Japanese Reference/Study Tool",
     "homepage": "https://invent.kde.org/education/kiten",
     "depends": [
@@ -60890,18 +60909,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kiten-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kiten-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/bd34eff84d/x11-packages/kiten",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bd34eff84d/x11-packages/kiten/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bd34eff84d/x11-packages/kiten/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0188439f64/x11-packages/kiten",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0188439f64/x11-packages/kiten/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0188439f64/x11-packages/kiten/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kitinerary",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Data model and extraction system for travel reservation information",
     "homepage": "https://invent.kde.org/pim/kitinerary",
     "depends": [
@@ -60921,16 +60940,16 @@
       "qt6-qtdeclarative",
       "zlib"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kitinerary-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kitinerary-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/920567249d/x11-packages/kitinerary",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/920567249d/x11-packages/kitinerary/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/920567249d/x11-packages/kitinerary/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fabbb09004/x11-packages/kitinerary",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fabbb09004/x11-packages/kitinerary/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fabbb09004/x11-packages/kitinerary/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/920567249d/x11-packages/kitinerary/disable-update-mime-types.patch"
+      "https://github.com/termux/termux-packages/blob/fabbb09004/x11-packages/kitinerary/disable-update-mime-types.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/920567249d/x11-packages/kitinerary/disable-update-mime-types.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fabbb09004/x11-packages/kitinerary/disable-update-mime-types.patch"
     ],
     "auto_updated": true
   },
@@ -60984,7 +61003,7 @@
   },
   {
     "name": "kldap",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "LDAP access API for KDE",
     "homepage": "https://invent.kde.org/pim/kldap",
     "depends": [
@@ -60999,11 +61018,11 @@
       "qt6-qtbase",
       "qtkeychain"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kldap-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kldap-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/74e7005f79/x11-packages/kldap",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74e7005f79/x11-packages/kldap/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74e7005f79/x11-packages/kldap/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5bb067b440/x11-packages/kldap",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5bb067b440/x11-packages/kldap/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5bb067b440/x11-packages/kldap/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -61254,7 +61273,7 @@
   },
   {
     "name": "kmailtransport",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Mail Transport Service",
     "homepage": "https://invent.kde.org/pim/kmailtransport",
     "depends": [
@@ -61271,18 +61290,18 @@
       "qt6-qtbase",
       "qtkeychain"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kmailtransport-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kmailtransport-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e03d182db2/x11-packages/kmailtransport",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e03d182db2/x11-packages/kmailtransport/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e03d182db2/x11-packages/kmailtransport/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dcfe0d2418/x11-packages/kmailtransport",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dcfe0d2418/x11-packages/kmailtransport/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dcfe0d2418/x11-packages/kmailtransport/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "kmbox",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Library for accessing mail storages in MBox format",
     "homepage": "https://invent.kde.org/pim/kmbox",
     "depends": [
@@ -61290,11 +61309,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kmbox-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kmbox-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/81089875fd/x11-packages/kmbox",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/81089875fd/x11-packages/kmbox/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/81089875fd/x11-packages/kmbox/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/abe2feb779/x11-packages/kmbox",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/abe2feb779/x11-packages/kmbox/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/abe2feb779/x11-packages/kmbox/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -61661,7 +61680,7 @@
   },
   {
     "name": "konsole",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "KDE terminal emulator",
     "homepage": "https://apps.kde.org/konsole/",
     "depends": [
@@ -61688,11 +61707,11 @@
       "qt6-qtbase",
       "qt6-qtmultimedia"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/konsole-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/konsole-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/510a828021/x11-packages/konsole",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/510a828021/x11-packages/konsole/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/510a828021/x11-packages/konsole/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/340ddae81b/x11-packages/konsole",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/340ddae81b/x11-packages/konsole/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/340ddae81b/x11-packages/konsole/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -61976,7 +61995,7 @@
   },
   {
     "name": "kpimtextedit",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A textedit with PIM-specific features",
     "homepage": "https://invent.kde.org/pim/kpimtextedit",
     "depends": [
@@ -61993,11 +62012,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kpimtextedit-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kpimtextedit-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6db9344ba4/x11-packages/kpimtextedit",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6db9344ba4/x11-packages/kpimtextedit/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6db9344ba4/x11-packages/kpimtextedit/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5062e429ec/x11-packages/kpimtextedit",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5062e429ec/x11-packages/kpimtextedit/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5062e429ec/x11-packages/kpimtextedit/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -62035,7 +62054,7 @@
   },
   {
     "name": "kpkpass",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Apple Wallet Pass reader",
     "homepage": "https://invent.kde.org/pim/kpkpass",
     "depends": [
@@ -62043,16 +62062,16 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/kpkpass-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/kpkpass-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e8c4c13042/x11-packages/kpkpass",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e8c4c13042/x11-packages/kpkpass/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e8c4c13042/x11-packages/kpkpass/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0c853b7ec8/x11-packages/kpkpass",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0c853b7ec8/x11-packages/kpkpass/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0c853b7ec8/x11-packages/kpkpass/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e8c4c13042/x11-packages/kpkpass/disable-update-mime-types.patch"
+      "https://github.com/termux/termux-packages/blob/0c853b7ec8/x11-packages/kpkpass/disable-update-mime-types.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e8c4c13042/x11-packages/kpkpass/disable-update-mime-types.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0c853b7ec8/x11-packages/kpkpass/disable-update-mime-types.patch"
     ],
     "auto_updated": true
   },
@@ -62348,7 +62367,7 @@
   },
   {
     "name": "ksmtp",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Job-based library to send email through an SMTP server",
     "homepage": "https://invent.kde.org/pim/ksmtp",
     "depends": [
@@ -62359,11 +62378,11 @@
       "libsasl",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/ksmtp-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/ksmtp-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6931df50a3/x11-packages/ksmtp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6931df50a3/x11-packages/ksmtp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6931df50a3/x11-packages/ksmtp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/ec8cc4dc13/x11-packages/ksmtp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/ec8cc4dc13/x11-packages/ksmtp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/ec8cc4dc13/x11-packages/ksmtp/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63602,7 +63621,7 @@
   },
   {
     "name": "libgravatar",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "KDE PIM library providing Gravatar support",
     "homepage": "https://invent.kde.org/pim/libgravatar",
     "depends": [
@@ -63613,11 +63632,11 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libgravatar-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libgravatar-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/692bf120e3/x11-packages/libgravatar",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/692bf120e3/x11-packages/libgravatar/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/692bf120e3/x11-packages/libgravatar/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/a2199c3856/x11-packages/libgravatar",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a2199c3856/x11-packages/libgravatar/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a2199c3856/x11-packages/libgravatar/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63699,7 +63718,7 @@
   },
   {
     "name": "libkdcraw",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "C++ interface used to decode RAW pictures",
     "homepage": "https://invent.kde.org/graphics/libkdcraw",
     "depends": [
@@ -63707,18 +63726,18 @@
       "libraw",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libkdcraw-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libkdcraw-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7a14509ef2/x11-packages/libkdcraw",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7a14509ef2/x11-packages/libkdcraw/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7a14509ef2/x11-packages/libkdcraw/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/c64590632e/x11-packages/libkdcraw",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c64590632e/x11-packages/libkdcraw/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c64590632e/x11-packages/libkdcraw/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "libkdegames",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Common code and data for many KDE games",
     "homepage": "https://invent.kde.org/games/libkdegames",
     "depends": [
@@ -63738,18 +63757,18 @@
       "openal-soft",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libkdegames-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libkdegames-26.08.3.tar.xz",
     "maintainer": "3ls-it <3ls-it@pm.me>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8670077ce8/x11-packages/libkdegames",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8670077ce8/x11-packages/libkdegames/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8670077ce8/x11-packages/libkdegames/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fcbfb257c2/x11-packages/libkdegames",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fcbfb257c2/x11-packages/libkdegames/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fcbfb257c2/x11-packages/libkdegames/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "libkdepim",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Libraries for KDE PIM applications",
     "homepage": "https://invent.kde.org/pim/libkdepim",
     "depends": [
@@ -63758,18 +63777,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libkdepim-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libkdepim-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/93a9932d1a/x11-packages/libkdepim",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/93a9932d1a/x11-packages/libkdepim/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/93a9932d1a/x11-packages/libkdepim/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/cbcf934a91/x11-packages/libkdepim",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/cbcf934a91/x11-packages/libkdepim/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/cbcf934a91/x11-packages/libkdepim/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "libkeduvocdocument",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Common libraries for KDE Edu applications",
     "homepage": "https://invent.kde.org/education/libkeduvocdocument",
     "depends": [
@@ -63781,36 +63800,36 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libkeduvocdocument-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libkeduvocdocument-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/933f9b42e1/x11-packages/libkeduvocdocument",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/933f9b42e1/x11-packages/libkeduvocdocument/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/933f9b42e1/x11-packages/libkeduvocdocument/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2ba6c18376/x11-packages/libkeduvocdocument",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2ba6c18376/x11-packages/libkeduvocdocument/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2ba6c18376/x11-packages/libkeduvocdocument/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "libkexiv2",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A kde library to manipulate pictures metadata",
     "homepage": "https://invent.kde.org/graphics/libkexiv2",
     "depends": [
       "exiv2",
       "libc++"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libkexiv2-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libkexiv2-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8733d91885/x11-packages/libkexiv2",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8733d91885/x11-packages/libkexiv2/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8733d91885/x11-packages/libkexiv2/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/010ea46057/x11-packages/libkexiv2",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/010ea46057/x11-packages/libkexiv2/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/010ea46057/x11-packages/libkexiv2/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "libkgapi",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A KDE-based library for accessing various Google services via their public API",
     "homepage": "https://invent.kde.org/pim/libkgapi",
     "depends": [
@@ -63820,18 +63839,18 @@
       "libc++",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libkgapi-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libkgapi-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/87619a2b02/x11-packages/libkgapi",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87619a2b02/x11-packages/libkgapi/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87619a2b02/x11-packages/libkgapi/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/af1b6cccd2/x11-packages/libkgapi",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/af1b6cccd2/x11-packages/libkgapi/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/af1b6cccd2/x11-packages/libkgapi/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
   },
   {
     "name": "libkleo",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "KDE PIM cryptographic library",
     "homepage": "https://invent.kde.org/pim/libkleo",
     "depends": [
@@ -63848,11 +63867,11 @@
       "qgpgme",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libkleo-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libkleo-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/4edd3479f3/x11-packages/libkleo",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4edd3479f3/x11-packages/libkleo/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4edd3479f3/x11-packages/libkleo/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9591f8de2b/x11-packages/libkleo",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9591f8de2b/x11-packages/libkleo/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9591f8de2b/x11-packages/libkleo/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -63980,7 +63999,7 @@
   },
   {
     "name": "libktorrent",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "A BitTorrent protocol implementation",
     "homepage": "https://invent.kde.org/network/libktorrent",
     "depends": [
@@ -63994,16 +64013,16 @@
       "openssl",
       "qt6-qtbase"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/libktorrent-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/libktorrent-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/e6c4207c57/x11-packages/libktorrent",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/e6c4207c57/x11-packages/libktorrent/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/e6c4207c57/x11-packages/libktorrent/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9a4ffdbee2/x11-packages/libktorrent",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9a4ffdbee2/x11-packages/libktorrent/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9a4ffdbee2/x11-packages/libktorrent/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/e6c4207c57/x11-packages/libktorrent/fix-32-bit-builds.patch"
+      "https://github.com/termux/termux-packages/blob/9a4ffdbee2/x11-packages/libktorrent/fix-32-bit-builds.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/e6c4207c57/x11-packages/libktorrent/fix-32-bit-builds.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/9a4ffdbee2/x11-packages/libktorrent/fix-32-bit-builds.patch"
     ],
     "auto_updated": true
   },
@@ -67297,7 +67316,7 @@
   },
   {
     "name": "mimetreeparser",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "Parser for MIME trees",
     "homepage": "https://invent.kde.org/pim/mimetreeparser",
     "depends": [
@@ -67317,11 +67336,11 @@
       "qt6-qtdeclarative",
       "qt6-qtwebengine"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/mimetreeparser-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/mimetreeparser-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/c0cb8be941/x11-packages/mimetreeparser",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/c0cb8be941/x11-packages/mimetreeparser/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/c0cb8be941/x11-packages/mimetreeparser/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/15b1208e45/x11-packages/mimetreeparser",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/15b1208e45/x11-packages/mimetreeparser/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/15b1208e45/x11-packages/mimetreeparser/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -73571,7 +73590,7 @@
   },
   {
     "name": "signon-kwallet-extension",
-    "version": "26.08.2",
+    "version": "26.08.3",
     "description": "KWallet integration for signon framework",
     "homepage": "https://invent.kde.org/network/signon-kwallet-extension",
     "depends": [
@@ -73580,11 +73599,11 @@
       "qt6-qtbase",
       "signond"
     ],
-    "srcurl": "https://download.kde.org/stable/release-service/26.08.2/src/signon-kwallet-extension-26.08.2.tar.xz",
+    "srcurl": "https://download.kde.org/stable/release-service/26.08.3/src/signon-kwallet-extension-26.08.3.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/fdd200c5bc/x11-packages/signon-kwallet-extension",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fdd200c5bc/x11-packages/signon-kwallet-extension/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fdd200c5bc/x11-packages/signon-kwallet-extension/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/9f2213a17e/x11-packages/signon-kwallet-extension",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/9f2213a17e/x11-packages/signon-kwallet-extension/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/9f2213a17e/x11-packages/signon-kwallet-extension/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
