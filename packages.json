@@ -2052,27 +2052,27 @@
   },
   {
     "name": "awscli",
-    "version": "2.42.1",
+    "version": "2.42.2",
     "description": "Universal Command Line Interface for Amazon Web Services",
     "homepage": "https://aws.amazon.com/cli",
     "depends": [
       "libandroid-support",
       "mandoc"
     ],
-    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.42.1.tar.gz",
+    "srcurl": "https://github.com/aws/aws-cli/archive/refs/tags/2.42.2.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/445df146d4/packages/awscli",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/445df146d4/packages/awscli/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/445df146d4/packages/awscli/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/0ef2d10f8f/packages/awscli",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0ef2d10f8f/packages/awscli/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0ef2d10f8f/packages/awscli/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/445df146d4/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://github.com/termux/termux-packages/blob/445df146d4/packages/awscli/remove-aosp-dlls.patch",
-      "https://github.com/termux/termux-packages/blob/445df146d4/packages/awscli/remove-no-build-isolation.patch"
+      "https://github.com/termux/termux-packages/blob/0ef2d10f8f/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://github.com/termux/termux-packages/blob/0ef2d10f8f/packages/awscli/remove-aosp-dlls.patch",
+      "https://github.com/termux/termux-packages/blob/0ef2d10f8f/packages/awscli/remove-no-build-isolation.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/445df146d4/packages/awscli/bump-pyinstaller-6_21.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/445df146d4/packages/awscli/remove-aosp-dlls.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/445df146d4/packages/awscli/remove-no-build-isolation.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/0ef2d10f8f/packages/awscli/bump-pyinstaller-6_21.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ef2d10f8f/packages/awscli/remove-aosp-dlls.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/0ef2d10f8f/packages/awscli/remove-no-build-isolation.patch"
     ],
     "auto_updated": true
   },
@@ -5028,7 +5028,7 @@
   },
   {
     "name": "codex",
-    "version": "0.171.0",
+    "version": "0.172.0",
     "description": "Lightweight coding agent that runs in your terminal",
     "homepage": "https://github.com/openai/codex",
     "depends": [
@@ -5036,36 +5036,36 @@
       "libc++",
       "openssl"
     ],
-    "srcurl": "https://github.com/openai/codex/archive/refs/tags/rust-v0.171.0.tar.gz",
+    "srcurl": "https://github.com/openai/codex/archive/refs/tags/rust-v0.172.0.tar.gz",
     "maintainer": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7ce94ac8c9/packages/codex",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/2b0be97ec4/packages/codex",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/android-daemon-auto-start.patch",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/android-mxc-sdk-unsupported.patch",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/rust-cc-allow-warnings.diff",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/v8-patches/0002-install-sysroot.patch",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
-      "https://github.com/termux/termux-packages/blob/7ce94ac8c9/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/android-daemon-auto-start.patch",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/android-mxc-sdk-unsupported.patch",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/rust-cc-allow-warnings.diff",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/v8-patches/0002-install-sysroot.patch",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
+      "https://github.com/termux/termux-packages/blob/2b0be97ec4/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/android-daemon-auto-start.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/android-mxc-sdk-unsupported.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/rust-cc-allow-warnings.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/v8-patches/0002-install-sysroot.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7ce94ac8c9/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/android-daemon-auto-start.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/android-mxc-sdk-unsupported.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/rust-cc-allow-warnings.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/rusty-v8-search-files-with-target-suffix.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/v8-patches/0001-unset-BINDGEN_EXTRA_CLANG_ARGS-in-v8_s-bindgen.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/v8-patches/0002-install-sysroot.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/v8-patches/0003-allow-custom-ndk.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/v8-patches/0101-reland-jumbo-scripts.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/v8-patches/0102-reland-jumbo-cflags.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/2b0be97ec4/packages/codex/v8-patches/0103-reland-jumbo-for-v8.patch"
     ],
     "auto_updated": true
   },
@@ -9426,15 +9426,15 @@
   },
   {
     "name": "flyctl",
-    "version": "0.5.15",
+    "version": "0.5.16",
     "description": "Command line tools for fly.io services",
     "homepage": "https://fly.io",
     "depends": [],
-    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.5.15.tar.gz",
+    "srcurl": "https://github.com/superfly/flyctl/archive/refs/tags/v0.5.16.tar.gz",
     "maintainer": "Yaksh Bariya <thunder-coding@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/0382091fbb/packages/flyctl",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/0382091fbb/packages/flyctl/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/0382091fbb/packages/flyctl/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/1cce293034/packages/flyctl",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/1cce293034/packages/flyctl/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/1cce293034/packages/flyctl/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -13619,23 +13619,23 @@
   },
   {
     "name": "hk",
-    "version": "2.13.0",
+    "version": "2.14.0",
     "description": "A tool for managing git hooks",
     "homepage": "https://hk.jdx.dev/",
     "depends": [
       "git",
       "zlib"
     ],
-    "srcurl": "https://github.com/jdx/hk/archive/refs/tags/v2.13.0.tar.gz",
+    "srcurl": "https://github.com/jdx/hk/archive/refs/tags/v2.14.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/a5d1d88783/packages/hk",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/a5d1d88783/packages/hk/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/a5d1d88783/packages/hk/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/02594d36f6/packages/hk",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/02594d36f6/packages/hk/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/02594d36f6/packages/hk/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/a5d1d88783/packages/hk/aws-lc-sys.diff"
+      "https://github.com/termux/termux-packages/blob/02594d36f6/packages/hk/aws-lc-sys.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/a5d1d88783/packages/hk/aws-lc-sys.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/02594d36f6/packages/hk/aws-lc-sys.diff"
     ],
     "auto_updated": true
   },
@@ -18784,17 +18784,17 @@
   },
   {
     "name": "libgeos",
-    "version": "3.15.0",
+    "version": "3.15.1",
     "description": "Geometry Engine, C++ port of the Java Topology Suite",
     "homepage": "https://geos.osgeo.org/",
     "depends": [
       "libc++"
     ],
-    "srcurl": "https://github.com/libgeos/geos/releases/download/3.15.0/geos-3.15.0.tar.bz2",
+    "srcurl": "https://github.com/libgeos/geos/releases/download/3.15.1/geos-3.15.1.tar.bz2",
     "maintainer": "Henrik Grimler @Grimler91",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/407933b7b9/packages/libgeos",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/407933b7b9/packages/libgeos/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/407933b7b9/packages/libgeos/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/149768cef9/packages/libgeos",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/149768cef9/packages/libgeos/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/149768cef9/packages/libgeos/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -23896,7 +23896,7 @@
   },
   {
     "name": "libtorrent-rasterbar",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "description": "A feature complete C++ bittorrent implementation focusing on efficiency and scalability",
     "homepage": "https://libtorrent.org/",
     "depends": [
@@ -23905,16 +23905,16 @@
       "openssl",
       "python"
     ],
-    "srcurl": "https://github.com/arvidn/libtorrent/releases/download/v2.1.2/libtorrent-rasterbar-2.1.2.tar.gz",
+    "srcurl": "https://github.com/arvidn/libtorrent/releases/download/v2.1.3/libtorrent-rasterbar-2.1.3.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/f18a769ba3/packages/libtorrent-rasterbar",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/f18a769ba3/packages/libtorrent-rasterbar/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/f18a769ba3/packages/libtorrent-rasterbar/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/fc2b1fe654/packages/libtorrent-rasterbar",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/fc2b1fe654/packages/libtorrent-rasterbar/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/fc2b1fe654/packages/libtorrent-rasterbar/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/f18a769ba3/packages/libtorrent-rasterbar/bindings-python-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/fc2b1fe654/packages/libtorrent-rasterbar/bindings-python-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/f18a769ba3/packages/libtorrent-rasterbar/bindings-python-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/fc2b1fe654/packages/libtorrent-rasterbar/bindings-python-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -28687,31 +28687,31 @@
   },
   {
     "name": "mise",
-    "version": "2026.11.12",
+    "version": "2026.11.13",
     "description": "dev tools, env vars, task runner",
     "homepage": "https://mise.jdx.dev/",
     "depends": [
       "bzip2",
       "openssl"
     ],
-    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.11.12.tar.gz",
+    "srcurl": "https://github.com/jdx/mise/archive/refs/tags/v2026.11.13.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/6c26b0e070/packages/mise",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/6c26b0e070/packages/mise/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/6c26b0e070/packages/mise/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/352ba79a93/packages/mise",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/352ba79a93/packages/mise/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/352ba79a93/packages/mise/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/6c26b0e070/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://github.com/termux/termux-packages/blob/6c26b0e070/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/6c26b0e070/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://github.com/termux/termux-packages/blob/6c26b0e070/packages/mise/stat-mode-32-bit-android.patch",
-      "https://github.com/termux/termux-packages/blob/6c26b0e070/packages/mise/syncfs-not-on-android.patch"
+      "https://github.com/termux/termux-packages/blob/352ba79a93/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://github.com/termux/termux-packages/blob/352ba79a93/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/352ba79a93/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://github.com/termux/termux-packages/blob/352ba79a93/packages/mise/stat-mode-32-bit-android.patch",
+      "https://github.com/termux/termux-packages/blob/352ba79a93/packages/mise/syncfs-not-on-android.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/6c26b0e070/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/6c26b0e070/packages/mise/sonic-rs-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/6c26b0e070/packages/mise/sonic-simd-32-bit-x86.diff",
-      "https://raw.githubusercontent.com/termux/termux-packages/6c26b0e070/packages/mise/stat-mode-32-bit-android.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/6c26b0e070/packages/mise/syncfs-not-on-android.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/352ba79a93/packages/mise/rust-cc-do-not-concatenate-all-the-CFLAGS.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/352ba79a93/packages/mise/sonic-rs-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/352ba79a93/packages/mise/sonic-simd-32-bit-x86.diff",
+      "https://raw.githubusercontent.com/termux/termux-packages/352ba79a93/packages/mise/stat-mode-32-bit-android.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/352ba79a93/packages/mise/syncfs-not-on-android.patch"
     ],
     "auto_updated": true
   },
@@ -30548,18 +30548,18 @@
       "tree-sitter-parsers",
       "utf8proc"
     ],
-    "srcurl": "https://github.com/neovim/neovim/archive/b091c9b0a0.tar.gz",
+    "srcurl": "https://github.com/neovim/neovim/archive/6501a7547d.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/b6d5bb4718/packages/neovim-nightly",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b6d5bb4718/packages/neovim-nightly/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b6d5bb4718/packages/neovim-nightly/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/bb0da2560c/packages/neovim-nightly",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/bb0da2560c/packages/neovim-nightly/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/bb0da2560c/packages/neovim-nightly/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/b6d5bb4718/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://github.com/termux/termux-packages/blob/b6d5bb4718/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://github.com/termux/termux-packages/blob/bb0da2560c/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://github.com/termux/termux-packages/blob/bb0da2560c/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/b6d5bb4718/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/b6d5bb4718/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/bb0da2560c/packages/neovim-nightly/disable-checkhealth-locale-warning.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/bb0da2560c/packages/neovim-nightly/src-nvim-os-stdpaths.c.patch"
     ],
     "auto_updated": true
   },
@@ -31839,20 +31839,20 @@
   },
   {
     "name": "oh-my-posh",
-    "version": "33.3.1",
+    "version": "33.4.0",
     "description": "A prompt theme engine for any shell.",
     "homepage": "https://ohmyposh.dev",
     "depends": [],
-    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/refs/tags/v33.3.1.tar.gz",
+    "srcurl": "https://github.com/JanDeDobbeleer/oh-my-posh/archive/refs/tags/v33.4.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2458905e4a/packages/oh-my-posh",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2458905e4a/packages/oh-my-posh/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2458905e4a/packages/oh-my-posh/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/4324e42718/packages/oh-my-posh",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/4324e42718/packages/oh-my-posh/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/4324e42718/packages/oh-my-posh/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2458905e4a/packages/oh-my-posh/issue-26712.patch"
+      "https://github.com/termux/termux-packages/blob/4324e42718/packages/oh-my-posh/issue-26712.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2458905e4a/packages/oh-my-posh/issue-26712.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/4324e42718/packages/oh-my-posh/issue-26712.patch"
     ],
     "auto_updated": true
   },
@@ -33029,15 +33029,15 @@
   },
   {
     "name": "opentofu",
-    "version": "1.13.9",
+    "version": "1.13.10",
     "description": "Open source infrastructure as code tool",
     "homepage": "https://opentofu.org/",
     "depends": [],
-    "srcurl": "https://github.com/opentofu/opentofu/archive/refs/tags/v1.13.9.tar.gz",
+    "srcurl": "https://github.com/opentofu/opentofu/archive/refs/tags/v1.13.10.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/55a81f1851/packages/opentofu",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/55a81f1851/packages/opentofu/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/55a81f1851/packages/opentofu/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/892631daea/packages/opentofu",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/892631daea/packages/opentofu/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/892631daea/packages/opentofu/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -33594,26 +33594,26 @@
   },
   {
     "name": "parallel",
-    "version": "20261022",
+    "version": "20261122",
     "description": "GNU Parallel is a shell tool for executing jobs in parallel using one or more machines",
     "homepage": "https://www.gnu.org/software/parallel/",
     "depends": [
       "perl"
     ],
-    "srcurl": "https://mirrors.kernel.org/gnu/parallel/parallel-20261022.tar.bz2",
+    "srcurl": "https://mirrors.kernel.org/gnu/parallel/parallel-20261122.tar.bz2",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/2425cb8f0e/packages/parallel",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/2425cb8f0e/packages/parallel/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/2425cb8f0e/packages/parallel/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/b04642cbc2/packages/parallel",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/b04642cbc2/packages/parallel/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/b04642cbc2/packages/parallel/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/2425cb8f0e/packages/parallel/Makefile.in.patch",
-      "https://github.com/termux/termux-packages/blob/2425cb8f0e/packages/parallel/parallel.patch",
-      "https://github.com/termux/termux-packages/blob/2425cb8f0e/packages/parallel/sem.patch"
+      "https://github.com/termux/termux-packages/blob/b04642cbc2/packages/parallel/Makefile.in.patch",
+      "https://github.com/termux/termux-packages/blob/b04642cbc2/packages/parallel/parallel.patch",
+      "https://github.com/termux/termux-packages/blob/b04642cbc2/packages/parallel/sem.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/2425cb8f0e/packages/parallel/Makefile.in.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2425cb8f0e/packages/parallel/parallel.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/2425cb8f0e/packages/parallel/sem.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/b04642cbc2/packages/parallel/Makefile.in.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b04642cbc2/packages/parallel/parallel.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/b04642cbc2/packages/parallel/sem.patch"
     ],
     "auto_updated": true
   },
@@ -35688,7 +35688,7 @@
   },
   {
     "name": "prowlarr",
-    "version": "3.0.2.5780",
+    "version": "3.1.0.5799",
     "description": "An indexer manager/proxy built on the popular arr stack (server)",
     "homepage": "https://prowlarr.com",
     "depends": [
@@ -35698,11 +35698,11 @@
       "libesqlite3",
       "libcurl"
     ],
-    "srcurl": "https://github.com/Prowlarr/Prowlarr/archive/refs/tags/v3.0.2.5780.tar.gz",
+    "srcurl": "https://github.com/Prowlarr/Prowlarr/archive/refs/tags/v3.1.0.5799.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/87aa55ca0f/packages/prowlarr",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/87aa55ca0f/packages/prowlarr/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/87aa55ca0f/packages/prowlarr/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/74a1a49300/packages/prowlarr",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/74a1a49300/packages/prowlarr/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/74a1a49300/packages/prowlarr/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -37214,7 +37214,7 @@
   },
   {
     "name": "python-yt-dlp",
-    "version": "2026.10.26",
+    "version": "2026.11.23",
     "description": "A youtube-dl fork with additional features and fixes",
     "homepage": "https://github.com/yt-dlp/yt-dlp",
     "depends": [
@@ -37226,16 +37226,16 @@
       "python-pip",
       "python-pycryptodomex"
     ],
-    "srcurl": "https://github.com/yt-dlp/yt-dlp/archive/refs/tags/2026.10.26.tar.gz",
+    "srcurl": "https://github.com/yt-dlp/yt-dlp/archive/refs/tags/2026.11.23.tar.gz",
     "maintainer": "Joshua Kahn <tom@termux.dev>",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/78cbed89e4/packages/python-yt-dlp",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/78cbed89e4/packages/python-yt-dlp/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/78cbed89e4/packages/python-yt-dlp/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/141517a721/packages/python-yt-dlp",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/141517a721/packages/python-yt-dlp/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/141517a721/packages/python-yt-dlp/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/78cbed89e4/packages/python-yt-dlp/utils-_utils.py.patch"
+      "https://github.com/termux/termux-packages/blob/141517a721/packages/python-yt-dlp/utils-_utils.py.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/78cbed89e4/packages/python-yt-dlp/utils-_utils.py.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/141517a721/packages/python-yt-dlp/utils-_utils.py.patch"
     ],
     "auto_updated": true
   },
@@ -38303,15 +38303,15 @@
   },
   {
     "name": "restic-server",
-    "version": "0.14.0",
+    "version": "0.15.0",
     "description": "Restic's REST backend API server",
     "homepage": "https://restic.net/",
     "depends": [],
-    "srcurl": "https://github.com/restic/rest-server/archive/refs/tags/v0.14.0.tar.gz",
+    "srcurl": "https://github.com/restic/rest-server/archive/refs/tags/v0.15.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/d2fd1bd116/packages/restic-server",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/d2fd1bd116/packages/restic-server/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/d2fd1bd116/packages/restic-server/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5a25e096d8/packages/restic-server",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5a25e096d8/packages/restic-server/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5a25e096d8/packages/restic-server/build.sh",
     "package_patch_urls": [],
     "package_patch_raw_urls": [],
     "auto_updated": true
@@ -44749,20 +44749,20 @@
   },
   {
     "name": "ty",
-    "version": "0.0.108",
+    "version": "0.0.109",
     "description": "An extremely fast Python type checker and language server, written in Rust",
     "homepage": "https://github.com/astral-sh/ty",
     "depends": [],
-    "srcurl": "https://github.com/astral-sh/ty/releases/download/0.0.108/source.tar.gz",
+    "srcurl": "https://github.com/astral-sh/ty/releases/download/0.0.109/source.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/8c1e57daee/packages/ty",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/8c1e57daee/packages/ty/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/8c1e57daee/packages/ty/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/dd50591694/packages/ty",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/dd50591694/packages/ty/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/dd50591694/packages/ty/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/8c1e57daee/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://github.com/termux/termux-packages/blob/dd50591694/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/8c1e57daee/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
+      "https://raw.githubusercontent.com/termux/termux-packages/dd50591694/packages/ty/rust-cc-do-not-concatenate-all-the-CFLAGS.diff"
     ],
     "auto_updated": true
   },
@@ -48449,23 +48449,23 @@
   },
   {
     "name": "zstd",
-    "version": "1.5.7",
+    "version": "1.6.0",
     "description": "Zstandard compression",
     "homepage": "https://github.com/facebook/zstd",
     "depends": [
       "liblzma",
       "zlib"
     ],
-    "srcurl": "https://github.com/facebook/zstd/archive/refs/tags/v1.5.7.tar.gz",
+    "srcurl": "https://github.com/facebook/zstd/archive/refs/tags/v1.6.0.tar.gz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/aa55d55502/packages/zstd",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/aa55d55502/packages/zstd/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/aa55d55502/packages/zstd/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5b6ce0184f/packages/zstd",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5b6ce0184f/packages/zstd/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5b6ce0184f/packages/zstd/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/aa55d55502/packages/zstd/build-cmake-contrib-CMakeLists.txt.patch"
+      "https://github.com/termux/termux-packages/blob/5b6ce0184f/packages/zstd/build-cmake-contrib-CMakeLists.txt.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/aa55d55502/packages/zstd/build-cmake-contrib-CMakeLists.txt.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5b6ce0184f/packages/zstd/build-cmake-contrib-CMakeLists.txt.patch"
     ],
     "auto_updated": true
   },
@@ -72066,7 +72066,7 @@
   },
   {
     "name": "qt6-qtbase",
-    "version": "6.12.0",
+    "version": "6.12.1",
     "description": "A cross-platform application and UI framework",
     "homepage": "https://www.qt.io/",
     "depends": [
@@ -72103,48 +72103,48 @@
       "zlib",
       "zstd"
     ],
-    "srcurl": "https://download.qt.io/official_releases/qt/6.12/6.12.0/submodules/qtbase-everywhere-src-6.12.0.tar.xz",
+    "srcurl": "https://download.qt.io/official_releases/qt/6.12/6.12.1/submodules/qtbase-everywhere-src-6.12.1.tar.xz",
     "maintainer": "@termux",
-    "package_sources_url": "https://github.com/termux/termux-packages/tree/7afeff7c63/x11-packages/qt6-qtbase",
-    "package_recipe_url": "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/build.sh",
-    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/build.sh",
+    "package_sources_url": "https://github.com/termux/termux-packages/tree/5082030a3a/x11-packages/qt6-qtbase",
+    "package_recipe_url": "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/build.sh",
+    "package_recipe_url_raw": "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/build.sh",
     "package_patch_urls": [
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/do-not-use-cross-tools-paths-ondevice-for-reverse-deps.patch",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/force-qicutimezoneprivate.patch",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-global-qlogging.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-gui-platform-unix-qdesktopunixservices.cpp.patch",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixtheme.cpp.patch.beforehostbuild",
-      "https://github.com/termux/termux-packages/blob/7afeff7c63/x11-packages/qt6-qtbase/ssl_certificate_path.patch"
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/do-not-use-cross-tools-paths-ondevice-for-reverse-deps.patch",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/force-qicutimezoneprivate.patch",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-global-qlogging.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-gui-platform-unix-qdesktopunixservices.cpp.patch",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixtheme.cpp.patch.beforehostbuild",
+      "https://github.com/termux/termux-packages/blob/5082030a3a/x11-packages/qt6-qtbase/ssl_certificate_path.patch"
     ],
     "package_patch_raw_urls": [
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/do-not-use-cross-tools-paths-ondevice-for-reverse-deps.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/force-qicutimezoneprivate.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-global-qlogging.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-gui-platform-unix-qdesktopunixservices.cpp.patch",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixtheme.cpp.patch.beforehostbuild",
-      "https://raw.githubusercontent.com/termux/termux-packages/7afeff7c63/x11-packages/qt6-qtbase/ssl_certificate_path.patch"
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/cmake-QtInstallHelpers.cmake.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/do-not-use-cross-tools-paths-ondevice-for-reverse-deps.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/force-qicutimezoneprivate.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-configure.cmake.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-global-qlogging.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-global-qsystemdection.h.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qfilesystemengine_unix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qstandardpaths_unix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qstorageinfo_linux.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-io-qtemporaryfile_p.h.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-ipc-qsharedmemory_posix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-corelib-thread-qthread_unix.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-dbus-qdbusserver.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-gui-CMakeLists.txt.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-gui-platform-unix-qdesktopunixservices.cpp.patch",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/src-gui-platform-unix-qgenericunixtheme.cpp.patch.beforehostbuild",
+      "https://raw.githubusercontent.com/termux/termux-packages/5082030a3a/x11-packages/qt6-qtbase/ssl_certificate_path.patch"
     ],
     "auto_updated": true
   },
